@@ -56,8 +56,10 @@ Como he dicho doy por hecho que sabéis hacer un formulario de envío de datos P
 
 Primero de todo debemos cargar los ficheros necesarios para utilizar las funciones de wordpress:
 
-[php]require_once('../blog/wp-config.php');
-require_once('../blog/wp-includes/registration.php');[/php]
+~~~php
+require_once('../blog/wp-config.php');
+require_once('../blog/wp-includes/registration.php');
+~~~
 
 Donde "<strong>../blog/</strong>" corresponde a la ruta relativa de vuestro WordPress.
 
@@ -65,11 +67,14 @@ Una vez añadidos los ficheros necesarios (<em>wp-config.php</em> carga las vari
 
 <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_create_user" target="_blank">Simple</a>:
 
-[php]wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);[/php]
+~~~php
+wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);
+~~~
 
 <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Compleja</a> (podéis ver todas las variables posibles en el <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Codex de WordPress</a>):
 
-[php]// Rellenamos un array con los datos que queramos añadir
+~~~php
+// Rellenamos un array con los datos que queramos añadir
 $datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login
 'user_pass'=>$_POST['pass'], // Contraseña
 'user_url'=>$_POST['url'], // Website del usuario
@@ -79,7 +84,8 @@ $datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login
 'last_name'=>$_POST['apellidos'], // Apellidos
 'role'=>'contributor');
 // Insertamos los datos
-wp_insert_user($datos);[/php]
+wp_insert_user($datos);
+~~~
 
 Fijaros en la propiedad "role". Es para designar los permisos del usuario (que podéis consultar en <a title="Roles &amp; Capabilities @ Wordpress Codex" href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">esta página</a>). Si no la ponéis pondrá la que tengáis por defecto configurada en el blog.
 
@@ -91,17 +97,20 @@ A continuación os dejo el código completo para ambas funciones (para hacer cop
 
 Simple..
 
-[php]
+~~~php
+
 // Añadimos los ficheros necesarios
 require_once('../blog/wp-config.php');
 require_once('../blog/wp-includes/registration.php');
 // Insertamos los datos
 wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);
-// $id_usuario = wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);[/php]
+// $id_usuario = wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);
+~~~
 
 Compleja..
 
-[php]// Añadimos los ficheros necesarios
+~~~php
+// Añadimos los ficheros necesarios
 require_once('../blog/wp-config.php');
 require_once('../blog/wp-includes/registration.php');
 // Rellenamos un array con los datos que queramos añadir
@@ -115,7 +124,8 @@ $datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login
 'role'=>'contributor');
 // Insertamos los datos
 wp_insert_user($datos);
-// $id_usuario = wp_insert_user($datos)[/php]
+// $id_usuario = wp_insert_user($datos)
+~~~
 
 Páginas de referencia:
 <blockquote>

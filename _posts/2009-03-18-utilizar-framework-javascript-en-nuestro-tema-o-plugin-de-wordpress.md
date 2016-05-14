@@ -49,7 +49,9 @@ Wordpress tiene una función llamada "wp_enqueue_script" que se encargará de im
 
 <a id="more"></a><a id="more-219"></a>
 Vemos la función:
-`[php]wp_enqueue_script( 'handle', 'src', 'deps', 'ver');[/php]`
+`~~~php
+wp_enqueue_script( 'handle', 'src', 'deps', 'ver');
+~~~`
 
 Y sus parámetros:
 
@@ -75,11 +77,13 @@ Dado que últimamente estoy trasteando con jQuery os mostraré un pequeño ejemp
 
 Primero de todo importemos jQuery en nuestro tema. Abramos el fichero "header.php" y antes de llamar a la función "wp_head();" llamemos a wp_enqueue_script:
 
-`[php]<?php
+`~~~php
+<?php
 wp_enqueue_script('jquery');
 wp_head();
 ?>
-[/php]`
+
+~~~`
 
 Con esto Wordpress insertará una etiqueta <script> en la sección <head> de la página haciendo referencia a la librería jQuery.
 
@@ -105,19 +109,23 @@ Este pequeño ejemplo, insertado en nuestra cabecera del tema, ocultaría la cap
 
 Imaginemos que en lugar de estar insertado en la cabecera quisiéramos tener nuestro código en un fichero a parte, guardado en alguna carpeta del tema, o del plugin. Por supuesto, lo primero que haríamos es eliminar las etiquetas "script" de nuestro código, dado que será un fichero .js. Una vez guardado nuestro código en un fichero js y éste subido a alguna carpeta en el servidor (en principio en la carpeta del tema o plugin) lo importamos con wp_enqueue_script:
 
-`[php]<?php
+`~~~php
+<?php
 wp_enqueue_script('jquery');
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery'));
 wp_head();
 ?>
-[/php]`
+
+~~~`
 
 Recordad que si estáis programando una extensión de jquery debéis pasar un array como tercer parámetro (deps) a la función indicando los ficheros de los que depende vuestra librería. Si hubierais programado una extensión de una extensión deberíais indicarlo así:
 
-`[php]<?php
+`~~~php
+<?php
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery','extension-jquery'));
 ?>
-[/php]`
+
+~~~`
 
 Espero que os sirva, salud!
 <blockquote>

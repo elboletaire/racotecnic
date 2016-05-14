@@ -48,7 +48,8 @@ Bien pues vamos a ello. Empecemos por el controlador. Simplemente tenéis que te
 
 <a id="more"></a><a id="more-1614"></a>
 
-[php]<?php
+~~~php
+<?php
 class PagsController extends AppController
 {
     var $helpers = array('Javascript');
@@ -57,11 +58,13 @@ class PagsController extends AppController
     {
         $this->set('pags', $this->paginate());
     }
-}[/php]
+}
+~~~
 
 Ya veis que no tiene ninguna complicación. La vista tampoco es nada del otro mundo:
 
-[php]<table id='pags'>
+~~~php
+<table id='pags'>
     <thead>
         <tr>
             <th><?php echo $paginator->sort('id') ?></th>
@@ -91,18 +94,22 @@ Ya veis que no tiene ninguna complicación. La vista tampoco es nada del otro mu
 <div class='ajax-loader'>
 	<?php echo $this->Html->image('loader.gif', array('alt' => 'Cargando...','style' => 'display: none')) ?>
 </div>
-[/php]
+
+~~~
 
 Bien, ya tenemos la parte sencilla. Vamos al intríngulis de la cuestión: el JavaScript (o el <em>jQuery</em>, mejor dicho..).
 
 En la vista que tenemos creada, vamos a cargar <em>jQuery </em>y el plugin de historial, que debéis tener ya descargados en vuestra carpeta <em>js</em>:
 
-[php]<?php
-$this->Javascript->link(array('jquery-1.4.2.min', 'jquery.history'), false);[/php]
+~~~php
+<?php
+$this->Javascript->link(array('jquery-1.4.2.min', 'jquery.history'), false);
+~~~
 
 Y ahora, la paginación con Ajax. Debajo de la línea que acabamos de añadir para cargar <em>jQuery </em>y el <em>History plugin</em> añadid lo siguiente:
 
-[php]
+~~~php
+
 $script = '
 jQuery(function($) { // paso $ para no tener problemas con otros frameworks JS
 	$.history.init(function(url){
@@ -125,7 +132,8 @@ jQuery(function($) { // paso $ para no tener problemas con otros frameworks JS
 	});
 });
 ';
-$this->Javascript->codeBlock($script, array('inline' => false));[/php]
+$this->Javascript->codeBlock($script, array('inline' => false));
+~~~
 
 Bien, ¿qué estamos haciendo aquí? Voy a explicarlo paso por paso.
 

@@ -32,7 +32,8 @@ En el directorio <em>/app/models/datasources/dbo/</em>* cread un fichero llamado
 
 <em>* Nota: es posible que el directorio dbo tampoco exista y tengáis que crearlo.</em>
 
-[php]<?php // /app/models/datasources/dbo/dbo_sin_conexion.php
+~~~php
+<?php // /app/models/datasources/dbo/dbo_sin_conexion.php
 class DboSinConexion extends DboSource
 {
 	function connect()
@@ -49,14 +50,17 @@ class DboSinConexion extends DboSource
 	{
 		return true;
 	}
-}[/php]
+}
+~~~
 
 Ahora modificad vuestro fichero database.php (en <em>/app/config/</em>) para indicarle que utilizaremos este fichero para "conectarnos a la base de datos":
 
-[php]<?php // /app/config/database.php
+~~~php
+<?php // /app/config/database.php
 class DATABASE_CONFIG {
 
 	var $default = array('driver' => 'sin_conexion');
-}[/php]
+}
+~~~
 
 Y listo, ya tenemos CakePHP funcionando sin conexión a la base de datos :)

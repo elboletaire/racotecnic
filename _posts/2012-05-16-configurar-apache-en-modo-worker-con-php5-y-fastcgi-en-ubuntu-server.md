@@ -26,8 +26,10 @@ excerpt: "Quizás hayáis escuchado hablar del módulo <a title=\"Apache MPM wor
   diferencias entre MPMs en: <a href=\"http://httpd.apache.org/docs/2.2/mpm.html\"
   rel=\"nofollow external\">http://httpd.apache.org/docs/2.2/mpm.html</a>.\r\n\r\nPaquetes
   que necesitamos:\r\n
-<ul>\r\n\t<li>apache2</li>\r\n\t<li>apache2-mpm-worker</li>\r\n\t<li>libapache2-mod-fcgid</li>\r\n\t<li>php5-cli</li>\r\n\t<li>php5-cgi</li>\r\n</ul>\r\n[bash]sudo
-  apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi[/bash]\r\n\r\nUna
+<ul>\r\n\t<li>apache2</li>\r\n\t<li>apache2-mpm-worker</li>\r\n\t<li>libapache2-mod-fcgid</li>\r\n\t<li>php5-cli</li>\r\n\t<li>php5-cgi</li>\r\n</ul>\r\n~~~bash
+sudo
+  apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi
+~~~\r\n\r\nUna
   vez instalados, vamos a configurar apache para que ejecute ficheros php utilizando
   el módulo fastCGI:\r\n"
 wordpress_id: 2053
@@ -68,12 +70,16 @@ Paquetes que necesitamos:
 <li>php5-cgi</li>
 </ul>
 
-[bash]sudo apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi[/bash]
+~~~bash
+sudo apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi
+~~~
 
 Una vez instalados, vamos a configurar apache para que ejecute ficheros php utilizando el módulo fastCGI:
 <a id="more"></a><a id="more-2053"></a>
 
-[bash]sudo nano /etc/apache/conf.d/php[/bash]
+~~~bash
+sudo nano /etc/apache/conf.d/php
+~~~
 
 Pegad esto:
 
@@ -105,21 +111,28 @@ Action application/x-httpd-php /cgi-bin/php5[/code]</blockquote>
 
 Reiniciad apache:
 
-[bash]sudo service apache2 restart[/bash]
+~~~bash
+sudo service apache2 restart
+~~~
 
 Y para acabar de finiquitar, provad un fichero php en vuestro servidor:
 
-[bash]sudo echo '<?php phpinfo()' > /var/www/index.php[/bash]
+~~~bash
+sudo echo '<?php phpinfo()' > /var/www/index.php
+~~~
 
 Si el parámetro no funciona simplemente cread un fichero index.php en vuestro webroot con el contenido
 
-[php]<?php phpinfo();[/php]
+~~~php
+<?php phpinfo();
+~~~
 
 Accedéis a <a href="http://localhost" rel="nofollow external">http://localhost</a> <em>et voilà</em>; Apache2 con módulo MPM-worker y PHP5 con FastCGI funcionando.
 
 Si queréis verificar que realmente apache está funcionando en modo worker, podéis ejecutar el comando
 
-[bash]:~$ apache2 -l
+~~~bash
+:~$ apache2 -l
 Compiled in modules:
   core.c
   mod_log_config.c
@@ -127,7 +140,7 @@ Compiled in modules:
   worker.c
   http_core.c
   mod_so.c
-[/bash]
+~~~
 
 Fijaros que está cargado el módulo <strong>worker.c</strong>. Os recuerdo que por defecto apache viene con <strong>prefork.c</strong> por defecto.
 

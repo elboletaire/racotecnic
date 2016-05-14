@@ -14,7 +14,9 @@ author_url: http://www.underave.net
 excerpt: "Haciendo un poco de orden por el ordenador he encontrado una función que
   hice para el último trabajo en el que estuve. Me dedicaba sobre todo a crear aplicaciones
   de entrada de datos mediante PHP, así que me pasaba el día recuperando información
-  POST.\r\n\r\nHarto de pasarme el día haciendo esto:\r\n\r\n[php]$variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);[/php]\r\n\r\n...decidí
+  POST.\r\n\r\nHarto de pasarme el día haciendo esto:\r\n\r\n~~~php
+$variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);
+~~~\r\n\r\n...decidí
   hacer una función que me hiciera la tarea un poco más sencilla; aquí está:\r\n\r\n"
 wordpress_id: 525
 wordpress_url: http://racotecnic.underave.net/?p=525
@@ -33,12 +35,15 @@ Haciendo un poco de orden por el ordenador he encontrado una función que hice p
 
 Harto de pasarme el día haciendo esto:
 
-[php]$variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);[/php]
+~~~php
+$variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);
+~~~
 
 ...decidí hacer una función que me hiciera la tarea un poco más sencilla; aquí está:
 
 <a id="more"></a><a id="more-525"></a>
-[php]function fillPost($keys,$exclude = null)
+~~~php
+function fillPost($keys,$exclude = null)
 {
 	$array = array();
 	// Fem un bucle amb tota la informació post
@@ -67,7 +72,8 @@ Harto de pasarme el día haciendo esto:
 		}else return $_POST[$keys];
 	}
 	return $array;
-}[/php]
+}
+~~~
 <h2>¿Qué hace?</h2>
 
 Recupera toda la información POST y la vuelca en un array según las claves que le hayamos especificado. Este array generado es un array asociativo con las mismas claves que las recibidas vía POST.
@@ -134,9 +140,11 @@ Un array asociativo.</blockquote>
 <h2>Ejemplos</h2>
 
 Recuperando algunas claves $_POST:
-[php]$datos = array('nombre','password','email');
+~~~php
+$datos = array('nombre','password','email');
 $post = fillPost($datos);
-print_r($post);[/php]
+print_r($post);
+~~~
 Salida aproximada:
 
 Array
@@ -147,9 +155,11 @@ Array
 )
 
 Recuperando todas las claves $_POST menos algunas:
-[php]$excluir = array('nombre','password','email');
+~~~php
+$excluir = array('nombre','password','email');
 $post = fillPost('ALL',$excluir);
-print_r($post);[/php]
+print_r($post);
+~~~
 Salida aproximada:
 
 Array

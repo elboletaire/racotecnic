@@ -31,8 +31,10 @@ excerpt: "<a href=\"http://www.racotecnic.com/wp-content/uploads/2011/09/prova2.
 <ul>\r\n\t<li>Vnc4server</li>\r\n\t<li>Firefox</li>\r\n\t<li>ImageMagick</li>\r\n</ul>\r\nCon
   VNCServer crearemos una instancia virtual en la que ejecutaremos Firefox para, posteriormente,
   tomar la captura de la pantalla con el método import de imagemagick.\r\n\r\nInstalad
-  los paquetes como haríais habitualmente...\r\n\r\n[bash]sudo apt-get install vnc4server
-  firefox imagemagick[/bash]\r\n\r\n"
+  los paquetes como haríais habitualmente...\r\n\r\n~~~bash
+sudo apt-get install vnc4server
+  firefox imagemagick
+~~~\r\n\r\n"
 wordpress_id: 2011
 wordpress_url: http://www.racotecnic.com/?p=2011
 date: '2011-09-11 13:18:28 +0200'
@@ -67,7 +69,9 @@ Con VNCServer crearemos una instancia virtual en la que ejecutaremos Firefox par
 
 Instalad los paquetes como haríais habitualmente...
 
-[bash]sudo apt-get install vnc4server firefox imagemagick[/bash]
+~~~bash
+sudo apt-get install vnc4server firefox imagemagick
+~~~
 
 <a id="more"></a><a id="more-2011"></a>
 
@@ -75,7 +79,8 @@ Si trabajáis con ubuntu server os va a doler porque firefox baja un huevo de pa
 
 Una vez instalados todos los paquetes, vamos a crear nuestro script para generar screenshots:
 
-[bash]#!/bin/bash
+~~~bash
+#!/bin/bash
 
 display=':23'
 export DISPLAY=':23'
@@ -95,7 +100,8 @@ while read -a line ; do
 	import -window root '${line[0]}'.jpg
 done < listado.txt
 
-vncserver -kill $display[/bash]
+vncserver -kill $display
+~~~
 
 ¿Qué hace este script?
 <ol>
@@ -122,9 +128,11 @@ Cuando tengáis los screenshots probablemente os daréis cuenta de que la imagen
 
 Para evitar esto he estado probando con parámetro `-screen` en lugar de `-window` pero supongo que no hace lo que pensaba que hacía xD. Así que la única solución que se me ocurre es que ejecutéis una instancia de VNCServer con firefox para poder ocultarle todas las barras posibles (la de navegación y la de favoritos).
 
-[bash]export DISPLAY=':23'
+~~~bash
+export DISPLAY=':23'
 vncserver -geometry 1280x1024 -depth 24 -name 'screenshoots' :23 &amp;
-firefox -display :23 -width 1280 -height 1024 -url 'about:blank' &amp;[/bash]
+firefox -display :23 -width 1280 -height 1024 -url 'about:blank' &amp;
+~~~
 
 Una vez esté corriendo utilizad vuestro cliente de vnc habitual (yo utilizo <a href="http://www.tightvnc.com/" rel="nofollow external">TightVNC</a>) y conectaros para poder configurar firefox. En el caso de TightVNC, para indicar el display que estamos utilizando simplemente hay que concatenarlo al final de la ip o nombre de host ([IP|HOST]:DISPLAY), por ejemplo `192.168.1.2:23`
 

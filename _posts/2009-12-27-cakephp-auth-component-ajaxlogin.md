@@ -16,10 +16,12 @@ excerpt: "Si habéis leído mi tutorial sobre la <a href=\"http://www.racotecnic
   los métodos <em>add</em> y <em>ajax_add</em>, ya que pensé que el único modo que
   había de mostrar un error de sesión al usuario era separando los métodos para, a
   uno de ellos darle permisos de acceso y al otro no.\r\n\r\nDe este modo podía mostrar
-  un error de \"sesión expirada\" al usuario, así:\r\n\r\n[php]$user = $this->Auth->user();\r\nif(!empty($user)){\r\n\t//
+  un error de \"sesión expirada\" al usuario, así:\r\n\r\n~~~php
+$user = $this->Auth->user();\r\nif(!empty($user)){\r\n\t//
   Código para añadir el elemento\r\n}else{\r\n\t$message = '<b>' .
   __('Error',true) . ':</b> ' . __('Tu sesión ha expirado,
-  vuelve a iniciarla por favor',true);\r\n\t$data = $this->data;\r\n\t$this->set('sessionTimeOut',compact('message','data'));\r\n}[/php]\r\n\r\n"
+  vuelve a iniciarla por favor',true);\r\n\t$data = $this->data;\r\n\t$this->set('sessionTimeOut',compact('message','data'));\r\n}
+~~~\r\n\r\n"
 wordpress_id: 1269
 wordpress_url: http://racotecnic.underave.net/?p=1269
 date: '2009-12-27 15:10:01 +0100'
@@ -38,14 +40,16 @@ Si habéis leído mi tutorial sobre la <a href="http://www.racotecnic.com/2009/1
 
 De este modo podía mostrar un error de "sesión expirada" al usuario, así:
 
-[php]$user = $this->Auth->user();
+~~~php
+$user = $this->Auth->user();
 if(!empty($user)){
 	// Código para añadir el elemento
 }else{
 	$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado, vuelve a iniciarla por favor',true);
 	$data = $this->data;
 	$this->set('sessionTimeOut',compact('message','data'));
-}[/php]
+}
+~~~
 
 <a id="more"></a><a id="more-1269"></a>
 
@@ -53,13 +57,17 @@ Pues bien, acabo de descubrir que el componente <em>Auth</em> tiene una variable
 
 Esta variable debéis configurarla en vuestro <em>beforeFilter</em> (probablemente del <em>AppController</em> aunque puede que prefiráis hacerlo en cada controlador por separado):
 
-[php]$this->Auth->ajaxLogin = '/ajax/ajax_login';[/php]
+~~~php
+$this->Auth->ajaxLogin = '/ajax/ajax_login';
+~~~
 
 Y después crear la vista correspondiente. La vista correspondiente al tutorial de subida de ficheros con uploadify y validación ajax sería así:
 
-[php]<?php // /app/views/ajax/ajax_login.ctp
+~~~php
+<?php // /app/views/ajax/ajax_login.ctp
 $message = __('La teva sessió ha expirat. Torna a iniciar-la siusplau',true);
 $sessionTimeOut = compact('message');
-echo json_encode(compact('sessionTimeOut'));[/php]
+echo json_encode(compact('sessionTimeOut'));
+~~~
 
 El método <em>json_encode</em> es de PHP 5.2, así que si tenéis una versión anterior de PHP tendréis que utilizar el Helper de JavaScript para mostrar el resultado en JSON.

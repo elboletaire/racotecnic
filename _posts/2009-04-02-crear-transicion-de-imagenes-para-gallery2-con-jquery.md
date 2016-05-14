@@ -55,7 +55,9 @@ En esa misma página podéis ver un ejemplo de cómo utilizar el bloque de imág
 <a id="more"></a><a id="more-403"></a>
 El código es el siguiente:
 
-[php]@readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage&amp;g2_show=none&amp;g2_maxSize=130');[/php]
+~~~php
+@readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage&amp;g2_show=none&amp;g2_maxSize=130');
+~~~
 
 Utilizad el botón "show source" <img class="alignnone" src="http://racotecnic.underave.net/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> situado en la parte derecha del código para verlo entero.
 
@@ -76,9 +78,11 @@ main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage|randomImage|rando
 
 Así pues guardamos esta línea en un fichero que llamaremos "random_image.php":
 
-[php]<?php
+~~~php
+<?php
 @readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage|randomImage|randomImage&amp;g2_show=none&amp;g2_maxSize=130');
-?>[/php]
+?>
+~~~
 
 Ahora pasaremos a hacer el código en JavaScript (utilizando jQuery, por supuesto) para hacer la transición de imágenes.
 
@@ -134,15 +138,18 @@ a img {
 
 Finalmente incluimos el fichero random_image.php en la <em>capa</em> para que muestre las imágenes la primera vez que accedamos a la página:
 
-[php]<div id='capa'>
+~~~php
+<div id='capa'>
 <?php
 	include 'random_image.php';
 ?>
-</div>[/php]
+</div>
+~~~
 
 Aquí podéis ver el documento HTML/PHP entero:
 
-[php]<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+~~~php
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
   'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='es' lang='es'>
 	<head>
@@ -184,7 +191,8 @@ Aquí podéis ver el documento HTML/PHP entero:
 	</div>
 	<div id='subcapa'></div>
 </body>
-</html>[/php]
+</html>
+~~~
 
 Y ya está! Ya tenéis vuestra transición de imágenes para Gallery2. Podéis jugar con el CSS y mostrar cuadrículas con imágenes (consultad el <a title="Ir al códex de Gallery2" href="http://codex.gallery2.org/" target="_blank">Codex de Gallery</a> para más detalles), así como trastear las múltiples opciones de Image Block para mostrar el contenido que queráis.
 

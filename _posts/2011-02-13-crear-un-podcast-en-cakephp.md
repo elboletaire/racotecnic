@@ -50,7 +50,8 @@ Suponiendo que habéis leído <a href="http://www.racotecnic.com/2011/01/unir-fi
 
 Lo primero que haremos es escribir la información ID3 a nuestro fichero de podcast. Para el ejemplo utilizaré el componente que tengo hecho para <a href="http://getid3.org" target="_self">getid3</a> y que he(mos) utilizado anteriormente. Lo podéis descargar del post anterior o de <a href="https://github.com/elboletaire/CakePHP-Getid3-Component" target="_self">github</a>.<a id="more"></a><a id="more-1760"></a>
 
-[php]<?php
+~~~php
+<?php
 // .. aquí tendríamos la carga del mp3 al servidor o la unión de los mp3 ..
 // ....
 // Escribimos la información id3..
@@ -87,7 +88,7 @@ else
 {
 	pr($this->Getid3->errors);
 }
-[/php]
+~~~
 
 Con algún programa para gestionar etiquetas <em>id3 </em>(como <a href="http://kid3.sourceforge.net/" target="_self">kid3</a> por ejemplo) o con un simple reproductor podréis comprobar si se han escrito correctamente las etiquetas <em>id3</em>.
 
@@ -95,7 +96,8 @@ Ahora necesitamos crear una plantilla (<em>layout</em>) para nuestro podcast, ya
 
 Para no complicarnos mucho y para hacer este layout lo más versátil posible simplemente concatenaremos los elementos que nos interesen delante del contenido (cada ítem del podcast). Así que a partir del <a href="http://book.cakephp.org/view/1461/Creating-an-RSS-feed-with-the-RssHelper" target="_self">layout de RSS de CakePHP</a>...
 
-[php highlight="13,14,15,16,17,18,19,20,21"]<?php // /app/views/layouts/xml/podcast.ctp
+~~~php
+<?php // /app/views/layouts/xml/podcast.ctp
 
 echo $this->Rss->header();
 if (!isset($documentData)) {
@@ -116,7 +118,8 @@ if ( !empty($beforeContent) &amp;&amp; is_array($beforeContent) )
 	}
 }
 $channel = $this->Rss->channel(array(), $channelData, $before . $content_for_layout);
-echo $this->Rss->document($documentData,$channel);[/php]
+echo $this->Rss->document($documentData,$channel);
+~~~
 
 Lo único que he hecho es añadir las líneas 13 a 20 y la variable `$before` en la línea 21.
 
@@ -126,7 +129,8 @@ Del mismo modo que con el layout, utilizo como base <a href="http://book.cakephp
 
 Aquí viene la vista:
 
-[php]<?php // /app/views/podcasts/podcasts/index.ctp
+~~~php
+<?php // /app/views/podcasts/podcasts/index.ctp
 // Pasamos info a la variable documentData del layout
 $this->set('documentData', array('xmlns:itunes' => 'http://www.itunes.com/dtds/podcast-1.0.dtd'));
 // Pasamos información a la variable channelData del layout
@@ -201,7 +205,8 @@ foreach ($podcasts as $podcast)
 
 	echo  $this->Xml->elem('item', null, $item);
 }
-[/php]
+
+~~~
 
 Fijaros bien que todas las URL que he creado las he hecho especificando el segundo parámetro del método "url"; de este modo nos devolverá siempre URL absolutas en lugar de relativas (que es como debe ser en un RSS).
 
@@ -209,15 +214,18 @@ Bien, con esto tendríamos las vistas pero tenemos que decirle a cake que nos la
 
 Para hacerle entender a Cake que queremos que distinga las direcciones terminadas en .pod tenemos que abrir nuestro fichero de rutas (<em>routes.php</em>) y añadir la siguiente línea:
 
-[php]<?php // /app/config/routes.php
+~~~php
+<?php // /app/config/routes.php
 Router::parseExtensions('pod');
 // Si queréis utilizar más extensiones, como rss u otras
 // que necesitéis simplemente id añadiendo parámetros:
-// Router::parseExtensions('pod','rss','mrss');[/php]
+// Router::parseExtensions('pod','rss','mrss');
+~~~
 
 En nuestro controlador necesitaremos cargar el componente <em>Request Handler</em> que nos permitirá distinguir desde el controlador los accesos a una página terminada en <strong>.pod</strong>:
 
-[php]<?php // /app/controllers/podcasts_controller.php
+~~~php
+<?php // /app/controllers/podcasts_controller.php
 class PodcastsController extends AppController
 {
 	var $components = array('Getid3', 'RequestHandler');
@@ -237,7 +245,8 @@ class PodcastsController extends AppController
 		// Si no es podcast hacemos el render normal
 		else $this->render();
 	}
-}[/php]
+}
+~~~
 
 Como podéis ver el método "prefers" nos permite distinguir entre una terminación u otra. Así pues, si añadiésemos la terminación "jpeg", haríamos <em>$this->RequestHandler->prefers("jpeg")</em> para averiguar si el usuario accede a través de ella.
 

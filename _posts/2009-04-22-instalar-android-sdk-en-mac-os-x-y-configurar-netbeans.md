@@ -49,13 +49,17 @@ Una vez descargado lo descomprimimos y lo copiamos donde queramos. En mi caso lo
 
 Ahora debemos editar nuestro fichero ".profile" situado en nuestra carpeta de Inicio. Para ello abramos una terminal y tecleemos:
 
-[bash]nano .profile[/bash]
+~~~bash
+nano .profile
+~~~
 
 Si está en blanco no os preocupéis, el fichero no viene creado por defecto y si no lo habéis editado anteriormente no existirá.
 
 Ahora hay que añadir una línea a este fichero para indicar dónde tenemos las librerías de Android. Modificad "/Applications/Android" por vuestra ruta:
 
-[bash]export PATH=${PATH}:/Applications/Android/Tools[/bash]
+~~~bash
+export PATH=${PATH}:/Applications/Android/Tools
+~~~
 
 Guardamos el fichero (con "control + o") y salimos de nano ("control + x"). Necesitamos reiniciar la sesión para que los cambios tengan efecto, así que ya sabéis... <em>manzanita / Cerrar sesión de x</em>.
 

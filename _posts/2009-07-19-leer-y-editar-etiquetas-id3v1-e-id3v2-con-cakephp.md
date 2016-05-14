@@ -144,7 +144,8 @@ Ahora que ya tenemos nuestro plugin en la aplicación debemos crear un component
 
 Para hacerlo utilizaremos como referencia las demos "demo.basic.php" y "demo.simple.write.php". Recordad que hay que substituir los <em>require</em> e <em>includes</em> por App::import(). Este es el resultado que he obtenido yo:
 
-[php]<?php
+~~~php
+<?php
 class Getid3Component extends Object
 {
 	function __construct()	{
@@ -208,21 +209,25 @@ class Getid3Component extends Object
 			return $tagwriter->errors;
 		}
 	}
-}[/php]
+}
+~~~
 
 Recordad que los componentes van en la carpeta <i>app/controllers/components</i> y que el nombre de este fichero deberá ser <i>getid3.php</i>.
 
 Ahora que ya tenemos nuestro componente vayamos al controlador sobre el que queramos utilizarlo y añadamoslo al resto de componentes:
 
-[php]<?php
+~~~php
+<?php
 class AudiosController extends AppController
 {
 	var $name = 'Audios';
 	var $components = array('Upload','Getid3');
-[/php]
+
+~~~
 
 Y sólo nos queda saber cómo utilizarlo:
-[php]$datos = array(
+~~~php
+$datos = array(
 				'album'=>'Nombre del álbum',
 				'title'=>'Título del tema',
 				'artist'=>'Artista',
@@ -230,12 +235,14 @@ Y sólo nos queda saber cómo utilizarlo:
 				'genre'=>'Estilo',
 				'comment'=>'Comentario');
 	$this->Getid2->write('rutadelfichero.mp3',$datos);
-[/php]
+
+~~~
 
 Y para leer los datos de un mp3:
 [php light="true"]
 $this->Getid2->extract('rutadelfichero.mp3')
-[/php]
+
+~~~
 
 Que nos dará una salida similar a <a href="http://www.racotecnic.com/2009/07/leer-y-editar-etiquetas-id3v1-y-id3v2-con-cakephp/#sortida">ésta</a>.
 

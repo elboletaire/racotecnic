@@ -72,7 +72,8 @@ You can still improve it a lot, especially in terms of code, but as it works and
 <a id="more"></a><a id="more-1455"></a>
 <h3>Usage:</h3>
 
-[php]<?php // /app/controllers/foo_controller.php
+~~~php
+<?php // /app/controllers/foo_controller.php
 class FooController extends AppController
 {
 	var $name = 'Foo';
@@ -90,7 +91,8 @@ class FooController extends AppController
 			// ... more stuff ...
 		}
 	}
-}[/php]
+}
+~~~
 
 <strong>Original files used for demonstrations:</strong>
 <img class="size-full wp-image-1464 aligncenter" title="imatge23" src="{{ site.url }}/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" />
@@ -99,9 +101,11 @@ class FooController extends AppController
 
 <img class="alignnone size-full wp-image-1461" title="resizecrop" src="{{ site.url }}/uploads/2010/04/resizecrop.jpeg" alt="" width="300" height="200" />
 
-[php]$this->Watermark->setImage($image_path);
+~~~php
+$this->Watermark->setImage($image_path);
 $this->Watermark->resize(array('type' => 'resizecrop'), 'size' => array('300', '200'));
-$this->Watermark->generate($dest_path);[/php]
+$this->Watermark->generate($dest_path);
+~~~
 <h5>Resize types:</h5>
 
 <ul>
@@ -116,46 +120,57 @@ $this->Watermark->generate($dest_path);[/php]
 
 <img class="size-full wp-image-1466 aligncenter" title="rotate" src="{{ site.url }}/uploads/2010/04/rotate.jpeg" alt="" width="655" height="655" />
 
-[php]$this->Watermark->setImage($image_path);
+~~~php
+$this->Watermark->setImage($image_path);
 $this->Watermark->rotateImage(array('degrees' => 45));
-$this->Watermark->generate($dest_path);[/php]
+$this->Watermark->generate($dest_path);
+~~~
 <h4>Apply watermark:</h4>
 
 <img class="alignnone size-full wp-image-1472" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.jpeg" alt="" width="425" height="500" />
 
-[php]$this->Watermark->setImage($image_path);
+~~~php
+$this->Watermark->setImage($image_path);
 $this->Watermark->setWatermark(array('file' => $watermark_file, 'position' => 'bottom right', 'size' => '150%'));
 $this->Watermark->applyWatermark();
-$this->Watermark->generate($dest_path);[/php]
+$this->Watermark->generate($dest_path);
+~~~
 <h4>All together:</h4>
 
 <img class="alignnone size-full wp-image-1473" title="all_together" src="{{ site.url }}/uploads/2010/04/all_together.jpeg" alt="" width="355" height="354" />
 
-[php]$this->Watermark->setImage($image_path);
+~~~php
+$this->Watermark->setImage($image_path);
 $this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));
 $this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));
 $this->Watermark->applyWatermark();
 $this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));
 $this->Watermark->generate($dest_path);
-[/php]
+
+~~~
 
 Changing order:
 
 <img class="alignnone size-full wp-image-1475" title="all_together2" src="{{ site.url }}/uploads/2010/04/all_together2.jpeg" alt="" width="300" height="200" />
 
-[php]$this->Watermark->setImage($image_path);
+~~~php
+$this->Watermark->setImage($image_path);
 $this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));
 $this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));
 $this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));
 $this->Watermark->applyWatermark();
-$this->Watermark->generate($dest_path);[/php]
+$this->Watermark->generate($dest_path);
+~~~
 <h4>Show image instead of saving it:</h4>
 
-[php]$this->Watermark->setImage($image_path);
-$this->Watermark->generate(); // Without params[/php]
+~~~php
+$this->Watermark->setImage($image_path);
+$this->Watermark->generate(); // Without params
+~~~
 <h4>With errors:</h4>
 
-[php]// every component method return false on error
+~~~php
+// every component method return false on error
 if ( !$this->Watermark->setImage($image_path) )
 {
 	// whatever
@@ -170,4 +185,5 @@ if ( !$this->Watermark->resize(array('type' => 'resizecrop', 'size' => 250)) )
 if ( !$this->Watermark->generate() )
 {
 	// ...
-}[/php]
+}
+~~~

@@ -35,7 +35,9 @@ Podéis instalar la versión más reciente estable de PHP 5.4 en vuestro Ubuntu 
 
 Añadid el repositorio siguiendo estos pasos y debería funcionar (provado en Ubuntu 12.04):
 
-[bash]sudo add-apt-repository ppa:ondrej/php5[/bash]
+~~~bash
+sudo add-apt-repository ppa:ondrej/php5
+~~~
 <blockquote>
 <b>Nota (a 23/11/2013):</b> Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: `ppa:ondrej/php5-oldstable`</blockquote>
 
@@ -43,10 +45,14 @@ Si no tenéis el comando `add-apt-repository` es porque no tenéis el paquete `p
 
 Una vez añadido el repositorio actualizáis la lista de paquetes:
 
-[bash]sudo apt-get update[/bash]
+~~~bash
+sudo apt-get update
+~~~
 
 E instaláis php5:
 
-[bash]sudo apt-get install php5 php5-cli php5-whatever[/bash]
+~~~bash
+sudo apt-get install php5 php5-cli php5-whatever
+~~~
 
 Probado en Ubuntu 11.10 y 12.04 x64 tanto con el módulo de apache mod_php5 como con fastFCGI (con apache en modo worker).

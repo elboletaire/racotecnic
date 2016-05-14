@@ -49,7 +49,8 @@ Al igual que con el anterior tutorial voy a dar por hecho que sabéis hacer un f
 <a id="more"></a><a id="more-151"></a>
 Primero de todo cargamos ficheros necesarios e inicializamos la constante "IN_PHPBB":
 
-[php]// Iniciamos la constante IN_PHPBB
+~~~php
+// Iniciamos la constante IN_PHPBB
 define('IN_PHPBB', true);
 // Indicamos la carpeta donde se encuentra nuestro phpBB3
 $phpbb_root_path = '../forums/';
@@ -61,11 +62,13 @@ require_once($phpbb_root_path . 'common.' . $phpEx);
 // las funciones para añadir usuarios)
 require_once($phpbb_root_path . 'includes/functions_user.' . $phpEx);
 // Definimos la diferencia horaria con el servidor (explicado más adelante)
-define ('UTC',1);[/php]
+define ('UTC',1);
+~~~
 
 Ya tenemos lo más importante. Ahora pasaremos a hacer un par de comprobaciones: validar la existencia del usuario y verificar el e-mail. Ambas verificaciones serán llevadas a cabo con funciones de phpBB (cargadas en las líneas anteriores).
 
-[php]
+~~~php
+
 // Variables recogidas del formulario
 $nick = $_POST['nombre_de_usuario'];
 $email = $_POST['email'];
@@ -98,7 +101,8 @@ if ($error){
 	// y finalizo la ejecución
 	exit;
 }
-[/php]
+
+~~~
 
 La función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionvalidate_username" target="_blank">validate_username</a> retorna una cadena si el nombre de usuario ya existe o false en caso de que no exista. Lo que no he logrado averiguar es si hay distintas frases o solo una "USERNAME_TAKEN" (si alguien sabe de alguna otra le agradeceré que me lo indique), por eso mismo lo trato como true o false.
 
@@ -106,7 +110,8 @@ Por otro lado, la función <a title="Ver detalles de la función" href="http://a
 
 Pasemos al propio registro del usuario. Antes de hacerlo debéis saber que os mostraré cómo hacer para registrar a un usuario inactivo. Si queréis registrar al usuario activado directamente, simplemente omitid las líneas que os indique.
 
-[php]// Encriptamos la contraseña
+~~~php
+// Encriptamos la contraseña
 $hash = phpbb_hash($pass);
 // Generamos un código de activación para la cuenta
 $actkey = substr(md5(time()), 0, 13);
@@ -125,7 +130,8 @@ $dades_forum = array('username'=>$nick, // Nombre de usuario
 // Añadimos el usuario
 if (!$user_id = user_add($dades_forum))
   die('Error inesperado al registrarte');
-echo 'Usuario registrado correctamente! Tu ID de usuario es ' . $user_id . ' y tu clave de activación ' . $actkey;[/php]
+echo 'Usuario registrado correctamente! Tu ID de usuario es ' . $user_id . ' y tu clave de activación ' . $actkey;
+~~~
 
 <small>Las líneas comentadas con dos asteriscos (//**) son aquellas que se descartan o varían cuando queremos registrar un usuario con la cuenta ya activa (explicado más adelante).</small>
 
@@ -140,8 +146,10 @@ Ahora, por pasos:
 <li>Para terminar, la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionuser_add" target="_blank">user_add</a> devuelve la nueva ID del usuario creado. Con ella y con la clave de activación guardada anteriormente podemos crear un enlace de activación:</li>
 </ul>
 
-[php]<?php
-echo '<a href='../forums/ucp.php?mode=activate&amp;u=' . $user_id . '&amp;k=' . $actkey . ''>Haz clic aquí para activar tu cuenta</a>';[/php]
+~~~php
+<?php
+echo '<a href='../forums/ucp.php?mode=activate&amp;u=' . $user_id . '&amp;k=' . $actkey . ''>Haz clic aquí para activar tu cuenta</a>';
+~~~
 
 Una vez terminado el registro podemos enviar este enlace al usuario vía e-mail para que active su cuenta.
 <blockquote>

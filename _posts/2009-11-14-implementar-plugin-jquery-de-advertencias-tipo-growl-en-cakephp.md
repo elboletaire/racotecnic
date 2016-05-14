@@ -125,18 +125,21 @@ Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistem
 	<?php echo $cakeDebug; ?>
 	<script src='http://static.woopra.com/js/woopra.js' type='text/javascript'></script>
 </body>
-</html>[/php]
+</html>
+~~~
 
 Las líneas marcadas en azul son las que os interesan. El resto podéis ignorarlas perfectamente.
 
 En la <strong>línea 9</strong> he añadido las librerías jQuery y Gritter. Recordad que para poder utilizar el <em>Helper</em>de JavasCript desde cualquier parte deberéis haber añadido dicho Helper en vuestro <em>AppController</em>:
 
-[php]<?php // /app/app_controller.php
+~~~php
+<?php // /app/app_controller.php
 class AppController extends Controller {
 	var $helpers = array('Html','Javascript'); // Cake 1.2
 	var $helpers = array('Html'); // Cake 1.3
 }
-[/php]
+
+~~~
 
 En la <strong>línea 10</strong> creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre <a title="Subida de ficheros con uploadify y validación Ajax en CakePHP" href="http://www.racotecnic.com/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/"><strong>cómo subir múltiples imágenes con uploadify en CakePHP</strong></a> quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
 
@@ -150,7 +153,8 @@ Como no quiero alargar mucho el tutorial haré sólo un par de <em>layouts</em>,
 
 <strong>Notificaciones informativas:</strong>
 
-[php]// /app/views/layouts/flash_info.ctp (Cake 1.2)
+~~~php
+// /app/views/layouts/flash_info.ctp (Cake 1.2)
 // /app/views/elements/flash_info.ctp (Cake 1.3)
 <?php echo $javascript->codeBlock('
 // $this->Html->scriptBlock en Cake 1.3
@@ -161,11 +165,13 @@ $(function(){
 		image: webroot + 'img/info_48.png',
 		sticky: true
 	});
-});') ?>[/php]
+});') ?>
+~~~
 
 <strong>Notificaciones de error:</strong>
 
-[php]// /app/views/layouts/flash_error.ctp (Cake 1.2)
+~~~php
+// /app/views/layouts/flash_error.ctp (Cake 1.2)
 // /app/views/elements/flash_info.ctp (Cake 1.3)
 <?php echo $javascript->codeBlock('
 // $this->Html->scriptBlock en Cake 1.3
@@ -176,7 +182,8 @@ $(function(){
 		image: webroot + 'img/error_48.png',
 		sticky: true
 	});
-});') ?>[/php]
+});') ?>
+~~~
 
 Como podéis ver he utilizado la variable webroot para poder acceder fácilmente a nuestro directorio de imágenes. De todos modos, y dado que estamos insertando el JavaScript mediante PHP, podríamos haber hecho $this->webroot. También he activado la variable <em>sticky</em> de gritter para dejar la notificación mostrada en pantalla hasta que el usuario la cierre manualmente, ya que considero que los flashMessage deben comportarse así. Cuando trabajo con Ajax no utilizo la variable <em>sticky</em>.
 
@@ -188,7 +195,8 @@ Pues con esto habríamos terminado. Ahora cada vez que queráis mostrar notifica
 $this->Session->setFlash('Esto es un mensaje de error', 'flash_error');
 
 // Notificación informativa
-$this->Session->setFlash('Esto es un mensaje informativo', 'flash_info');[/php]
+$this->Session->setFlash('Esto es un mensaje informativo', 'flash_info');
+~~~
 
 Pues ya está, ya lo tenemos ^^
 

@@ -84,7 +84,8 @@ Para gestionar la subida de ficheros necesitaréis un <em>Component</em> (o bien
 
 Aquí viene el código del controlador, en mi caso "images_controller":
 
-`[php]<?php
+`~~~php
+<?php
 class ImagesController extends AppController
 {
 	var $name = 'Images';
@@ -148,7 +149,8 @@ class ImagesController extends AppController
 	}
 }
 
-[/php]`
+
+~~~`
 
 Si no entendéis algo podéis referiros a la <a href="http://api.cakephp.org" target="_blank" title="Ir a la API">api</a> y al <a href="http://book.cakephp.org" target="_blank" title="Ir al libro de recetas de Cake">libro de recetas</a> de Cake o, en caso de ser con la generación de imágenes a la ayuda del <a title="Image Upload Component para CakePHP" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">Image Upload Component</a>.
 
@@ -172,7 +174,8 @@ Como segundo parámetro se le pasa un array, también asociativo, con las opcion
 
 Aquí tenéis el código que he utilizado para la vista:
 
-`[php]	<h2><?php __('Pujar imatges') ?></h2>
+`~~~php
+	<h2><?php __('Pujar imatges') ?></h2>
 	<?= $form->create('Image',array('action'=>'add')) ?>
 	<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div>
 	<div id='uploaded' style='display:none'>
@@ -182,13 +185,15 @@ Aquí tenéis el código que he utilizado para la vista:
 		<?= $form->submit(__('Guardar',true)); ?>
 	</div>
 	<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
-	<?=$form->end() ?>[/php]`
+	<?=$form->end() ?>
+~~~`
 
 Como veis he creado un formulario que envía a la acción <em>add</em> del controlador. Dentro de este he creado una primera capa donde se cargará uploadify (con la id "imageFile") seguida de una capa donde irán apareciendo las imágenes (en la capa "files" para ser más exactos) que se vayan subiendo. Esta capa está oculta (style="display:none") ya que no nos interesa que el usuario la vea hasta que hayamos recibido el primer fichero.
 
 Ahora que ya tenemos el formulario insertemos el JavaScript para que todo funcione (en la misma vista). Primero os pongo la metodología para el Helper y después el equivalente en HTML / JavaScript:
 
-`[php]<?= $uploadify->startUploader(
+`~~~php
+<?= $uploadify->startUploader(
 	array('imageFile'=>'img/'),
 	array('imageFile'=>array(
 		'buttonText'=>__('Cercar fitxers',true),
@@ -205,7 +210,8 @@ Ahora que ya tenemos el formulario insertemos el JavaScript para que todo funcio
             alert(c.name+\' \'+d.type+\' Limit: \'+Math.round(d.sizeLimit/1024)+\'KB\');
          else alert(\'error \'+d.type+\': \'+d.text);}',
 		 'onComplete'=>'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append(\'' . $html->image('thumb/'+response+'') . '<input type='text' value='\'+response+\'' /><input type='hidden' value='\'+response+\'' />\');}',
-		 'onAllComplete'=>'function(){$('input[type=\\\'submit\\\']').removeAttr('disabled');}'))) ?>[/php]`
+		 'onAllComplete'=>'function(){$('input[type=\\\'submit\\\']').removeAttr('disabled');}'))) ?>
+~~~`
 
 Equivalente en JavaScript:
 
@@ -243,7 +249,8 @@ Finalmente la función <em>onAllComplete</em> se encarga de eliminar el atributo
 <a name="ampliacio"></a>
 Aquí tenéis la vista al completo con el helper:
 
-`[php]
+`~~~php
+
 <?= $uploadify->startUploader(
 	array('imageFile'=>'img/'),
 	array('imageFile'=>array(
@@ -272,7 +279,8 @@ Aquí tenéis la vista al completo con el helper:
 	<?= $form->submit(__('Guardar',true)); ?>
 </div>
 <?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
-<?=$form->end() ?>[/php]`
+<?=$form->end() ?>
+~~~`
 
 Y con Javascript:
 

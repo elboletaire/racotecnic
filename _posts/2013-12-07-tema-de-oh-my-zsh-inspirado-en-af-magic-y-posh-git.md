@@ -40,11 +40,15 @@ Muestra los datos <a title="Detalles sobre posh-git" href="https://github.com/da
 
 Para instalarlo simplemente <a title="Descargar tema zsh de racotecnic" href="https://github.com/elboletaire/zsh-theme-racotecnic/raw/master/racotecnic.zsh-theme" rel="nofollow external">tenéis que descargarlo</a> en vuestro directorio `.oh-my-zsh/themes` y modificar la variable `ZSH_THEME` para cargar el template:
 
-[bash]ZSH_THEME='racotecnic'[/bash]
+~~~bash
+ZSH_THEME='racotecnic'
+~~~
 
 Guardáis el fichero `.zshrc` y lo recargáis para que surta efecto:
 
-[bash]source ~/.zshrc[/bash]
+~~~bash
+source ~/.zshrc
+~~~
 
 Ea :)
 

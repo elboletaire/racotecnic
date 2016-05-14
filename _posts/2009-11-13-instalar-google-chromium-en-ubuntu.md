@@ -15,10 +15,12 @@ excerpt: "Si queréis disfrutar de <strong>Google Chrome</strong> en vuestro ubu
   sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los
   repositorios o directamente instalando un paquete Deb.\r\n\r\nPrimero de todo debemos
   editar nuestro fichero de recursos de los repositorios:\r\n\r\n[bash light=\"true\"]sudo
-  nano /etc/apt/sources.list[/bash]\r\n\r\nY añadimos un par de líneas:\r\n\r\n[bash
+  nano /etc/apt/sources.list
+~~~\r\n\r\nY añadimos un par de líneas:\r\n\r\n[bash
   gutter=\"false\"]deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION
   main\r\ndeb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION
-  main[/bash]\r\n\r\n"
+  main
+~~~\r\n\r\n"
 wordpress_id: 973
 wordpress_url: http://racotecnic.underave.net/?p=973
 date: '2009-11-13 15:45:35 +0100'
@@ -37,12 +39,14 @@ Si queréis disfrutar de <strong>Google Chrome</strong> en vuestro ubuntu sin ne
 
 Primero de todo debemos editar nuestro fichero de recursos de los repositorios:
 
-[bash light="true"]sudo nano /etc/apt/sources.list[/bash]
+[bash light="true"]sudo nano /etc/apt/sources.list
+~~~
 
 Y añadimos un par de líneas:
 
 [bash gutter="false"]deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main
-deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main[/bash]
+deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main
+~~~
 
 <a id="more"></a><a id="more-973"></a>
 La variable "NOMBRE_DE_VERSION" debéis substituirla por vuestra versión. Google Chromium está disponible para las siguientes versiones de Ubuntu:
@@ -56,7 +60,8 @@ La variable "NOMBRE_DE_VERSION" debéis substituirla por vuestra versión. Googl
 
 Ahora que tenemos el repositorio añadido debemos añadir la clave GPG:
 
-[bash light="true"]sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xfbef0d696de1c72ba5a835fe5a9bf3bb4e5e17b5[/bash]
+[bash light="true"]sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xfbef0d696de1c72ba5a835fe5a9bf3bb4e5e17b5
+~~~
 
 Si este paso se ha hecho correctamente (debería, a no ser que modifiquen la clave :S) habrás visto algo así en tu consola:
 
@@ -65,11 +70,13 @@ gpg: requesting key 4E5E17B5 from hkp server keyserver.ubuntu.com
 gpg: key 4E5E17B5: public key 'Launchpad PPA for chromium-daily' imported
 gpg: no s'han trobat claus amb confiança absoluta
 gpg: Nombre total processat: 1
-gpg:               importades: 1  (RSA: 1)[/bash]
+gpg:               importades: 1  (RSA: 1)
+~~~
 
 Ahora simplemente hacemos un update e instalamos:
 
 [bash light="true"]sudo aptitude update
-sudo aptitude install chromium-browser[/bash]
+sudo aptitude install chromium-browser
+~~~
 
 ¡Listo! Ya tenemos Google Chromium instalado en nuestro sistema :)

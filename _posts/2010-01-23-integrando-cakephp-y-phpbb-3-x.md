@@ -162,19 +162,22 @@ Es decir, <strong>doy por supuesto que ya tenéis un sistema de usuarios funcion
 
 Además de la parte encargada de la gestión de usuarios vamos a tener que crear un modelo para el foro. Este sólo debe contener el nombre del modelo y debemos indicarle que no va a utilizar base de datos:
 
-[php]<?php // /app/models/forum.php
+~~~php
+<?php // /app/models/forum.php
 class Forum extends AppModel
 {
 	var $name = 'Forum';
 	var $useDbConfig = 'forums';
 	var $useTable = false;
-}[/php]
+}
+~~~
 
 Como podéis ver, además de haber indicado el nombre del modelo y haber desactivado el uso de base de datos en éste, he indicado que utilice la configuración de base de datos <em>forums</em>. Con esto indicamos al modelo que, en caso de utilizar la base de datos, la configuración que utilizaremos será la <em>forums</em>.
 
 Podéis añadir tantas configuraciones de conexión a la base de datos como queráis, simplemente cread una variable con el nombre que queráis de conexión conteniendo los datos necesarios en el fichero <em>/app/config/database.php</em>:
 
-[php]<?php // /app/config/database.php
+~~~php
+<?php // /app/config/database.php
 class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'mysql',
@@ -193,7 +196,8 @@ class DATABASE_CONFIG {
 		'database' => 'BASE_DE_DATOS',
 		'prefix' => 'phpbb_'
 	);
-}[/php]
+}
+~~~
 
 Si vuestras tablas del foro tienen un prefijo (como es mi caso) aseguraros de especificar la opción "prefix" en el array de conexión a la base de datos.
 <h4 id="phpbb-segon">Creando el componente phpBB3<a class="amunt" href="#amunt">arriba</a></h4>
@@ -485,7 +489,8 @@ class PhpBB3Component extends Object
 
 		return $output;
 	}
-}[/php]
+}
+~~~
 
 Aunque veáis mucho código, no os asustéis. La mayoría de estos métodos son para encriptar la contraseña. Los métodos que nosotros utilizaremos serán <strong>login</strong>, <strong>logout</strong>, <strong>register</strong> y <strong>userExists</strong>.
 
@@ -498,19 +503,22 @@ Los usuarios los registraremos activados para ahorrarnos complicaciones. Dejo en
 
 Empecemos con la vista <strong>register.ctp</strong>:
 
-[php]<?= $form->create('User',array('action'=>'register')) ?>
+~~~php
+<?= $form->create('User',array('action'=>'register')) ?>
 <?= $form->input('User.username', array('label'=>__('Nombre de usuario',true))) ?>
 <!-- Indicamos value = '' a la contraseña para que no se rellene el campo automáticamente en caso de haber algún error en los datos -->
 <?= $form->input('User.password', array('label'=>__('Contraseña',true),'type'=>'password','value'=>'')) ?>
 <?= $form->input('User.confirm_passwd', array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>'')) ?>
 <?= $form->input('User.email', array('label'=>__('E-mail',true))) ?>
-<?= $form->end(__('Registrarse',true)) ?>[/php]
+<?= $form->end(__('Registrarse',true)) ?>
+~~~
 
 Sencillo, ¿no?
 
 Creemos las validaciones que nos interesen en nuestro modelo <strong>user</strong>:
 
-[php]<?php // /app/models/user.php
+~~~php
+<?php // /app/models/user.php
 class User extends AppModel {
 	var $name = 'User';
 	var $validate = array(
@@ -580,7 +588,8 @@ class User extends AppModel {
 		return $valid;
 	}
 }
-[/php]
+
+~~~
 
 Los métodos <strong>identicalFieldValues</strong> y <strong>checkUnique</strong> son los encargados de verificar si las dos contraseñas coinciden y si el usuario existe en la base de datos.
 
@@ -593,7 +602,8 @@ Si tenéis cualquier duda sobre la creación del modelo podéis dirigiros a la d
 
 Vamos a por el método <strong>register</strong>. Este puede variar mucho según la aplicación que queráis hacer... por ejemplo, en el caso de <a href="http://www.underave.net">underave</a> verifico que el usuario no está registrado ni en el foro ni en la página principal, ya que cuando hicimos el cambio cometimos el error de hacerlo así. En el ejemplo doy por supuesto que si el usuario no existe en la base de datos principal, no existirá en el foro. De todos modos veréis cómo hacer para verificar la existencia de un usuario (todo el primer trozo comentado):
 
-[php]// /app/controllers/users_controller.php
+~~~php
+// /app/controllers/users_controller.php
 class UsersController extends AppController
 {
 	var $name = 'Users';
@@ -641,7 +651,8 @@ class UsersController extends AppController
 			}
 		}
 	}
-}[/php]
+}
+~~~
 
 Como podéis ver en el ejemplo, una vez he registrado al usuario en el foro me quedo con la ID del usuario creado y es entonces cuando registro al usuario en el sistema, para poder disponer de esta ID.
 
@@ -662,11 +673,15 @@ Básicamente lo que hay que hacer es renombrar la clase <strong>cache</strong>. 
 
 Abrid <em>phpBB3/includes/cache.php</em> y buscad lo siguiente (en la línea 23 aproximadamente):
 
-[php]class cache extends acm[/php]
+~~~php
+class cache extends acm
+~~~
 
 Substituidlo por:
 
-[php]class fcache extends acm[/php]
+~~~php
+class fcache extends acm
+~~~
 
 Guardad el fichero y cerradlo. Ahora abrid estos ficheros:
 
@@ -678,11 +693,15 @@ Guardad el fichero y cerradlo. Ahora abrid estos ficheros:
 
 Buscad esto en cada uno de ellos:
 
-[php]new cache();[/php]
+~~~php
+new cache();
+~~~
 
 Y reemplazadlo por:
 
-[php]new fcache();[/php]
+~~~php
+new fcache();
+~~~
 
 Hecho esto (y una vez guardados los ficheros, por supuesto..) subís los ficheros al servidor y el foro debería seguir funcionando correctamente.
 
@@ -692,26 +711,35 @@ Hecho esto (y una vez guardados los ficheros, por supuesto..) subís los fichero
 
 Del mismo modo que con la caché, la mejor forma de solucionar esto es modificando phpBB3. Abrid el fichero phpBB3/includes/session.php y buscad lo siguiente (en la línea 1376 aproximadamente):
 
-[php]class user extends session[/php]
+~~~php
+class user extends session
+~~~
 
 Y reemplazadlo por...
 
-[php]class fuser extends session[/php]
+~~~php
+class fuser extends session
+~~~
 
 Ahora abrid el fichero <em>phpBB3/common.php</em> y buscad lo siguiente:
 
-[php]new user();[/php]
+~~~php
+new user();
+~~~
 
 Y reemplazadlo por:
 
-[php]new fuser();[/php]
+~~~php
+new fuser();
+~~~
 
 Ahora sí que sí :D. Vuestro registro de usuarios, así como vuestra instalación de phpBB, deberían funcionar perfectamente ;)
 <h4 id="phpbb-cinque">Login de usuarios<a class="amunt" href="#amunt">arriba</a></h4>
 
 Bien, ahora pasaremos a la creación de la vista <strong>login.ctp</strong>:
 
-[php]<?php // /app/views/users/login.ctp
+~~~php
+<?php // /app/views/users/login.ctp
 echo $form->create('User',array('action'=>'login'));
 echo $form->input('User.username', array('label'=>__('Nombre',true)));
 // Utilizamos 'pass' para que Auth no nos encripte la contraseña automáticamente
@@ -722,7 +750,8 @@ echo $form->hidden('User.referer',array('value'=>@$_SERVER['HTTP_REFERER']));
 echo $form->input('User.remember_me',array('type'=>'checkbox','label'=>__('Recordar entre sesiones',true)));
 echo $form->end(__('Iniciar sesión',true));
 ?>
-[/php]
+
+~~~
 
 Es importante que guardemos la contraseña con un nombre de campo distinto a <em>password</em> ya que necesitamos la contraseña sin encriptar para poder iniciar sesión en el foro.
 
@@ -760,7 +789,8 @@ function logout()
 	$this->PhpBB3->logout();
 	$this->redirect($this->Auth->logout());
 }
-[/php]
+
+~~~
 
 En las <strong>líneas 13 a 17</strong> lo que hago es verificar si el usuario viene de mi dominio principal. Lo hago así porque en mi caso tengo los foros en un subdominio. Si no es vuestro caso deberéis modificar la expresión regular para que se ajuste a vuestras necesidades.
 
@@ -790,7 +820,8 @@ El método que crearemos ahora será para cambiar la contraseña ya que el cambi
 
 Para cambiar cualquier dato de los usuarios del foro sería interesante tener un método en nuestro modelo Forum:
 
-[php]	// /app/models/forum.php
+~~~php
+	// /app/models/forum.php
 /**
  * Actualiza un dato ($field) de un usuario a
  * partir de su $id en el foro con el valor $value
@@ -806,22 +837,26 @@ function setUserField($id, $field, $value)
 	$this->primaryKey = 'user_id';
 	$this->id = $id;
 	return $this->saveField($field, $value);
-}[/php]
+}
+~~~
 
 Añadamos una vista para el cambio de contraseña:
 
-[php]// /app/views/users/change_password.ctp
+~~~php
+// /app/views/users/change_password.ctp
 <?php
 echo $form->create('User',array('action'=>'changePassword'));
 echo $form->input('old_passwd',array('label'=>__('Contraseña actual',true),'type'=>'password','type','value'=>''));
 echo $form->input('password',array('label'=>__('Contraseña',true),'type'=>'password','value'=>''));
 echo $form->input('confirm_passwd',array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>''));
 echo $form->end(__('Cambiar contraseña',true));
-?>[/php]
+?>
+~~~
 
 Y aquí viene el método de cambiar contraseña (está creado en el controlador usuarios pero no estaría de más separarlo un poco entre modelo y controlador):
 
-[php]// /app/controllers/users_controller.php
+~~~php
+// /app/controllers/users_controller.php
 function changePassword()
 {
 	if (!empty($this->data)){
@@ -847,7 +882,8 @@ function changePassword()
 			$this->User->invalidate('old_passwd',__('La contraseña no es correcta',true));
 		}
 	}
-}[/php]
+}
+~~~
 
 Con esto ya podéis cambiar la contraseña en todo el sistema y ya sabéis cómo hacer para modificar el resto de datos. Al actualizar la contraseña he utilizado <em>user_password</em> como nombre de celda. Consultad vuestra base de datos de phpBB para saber los nombres de las celdas a actualizar.
 

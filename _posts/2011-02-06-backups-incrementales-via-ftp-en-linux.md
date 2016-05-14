@@ -17,10 +17,12 @@ excerpt: "Recientemente he decidido pagar un servidor compartido para hacer las 
   como rsync o similares.\r\n\r\nDespués de buscar un rato la única solución viable
   que he encontrado ha sido lftp, ya que es el único modo que he encontrado de hacer
   copias incrementales vía FTP.\r\n\r\nlftp tiene un método llamado \"mirror\" que
-  es el que nos permitirá hacer esto. Un ejemplo sencillo de su uso sería...\r\n\r\n[bash]lftp
+  es el que nos permitirá hacer esto. Un ejemplo sencillo de su uso sería...\r\n\r\n~~~bash
+lftp
   -c 'set ftp:list-options -a;\r\n\t\topen ftp://usuarioftp:passwordftp@hostftp;\r\n\t\tlcd
   /directorio/donde/copiar;\r\n\t\tcd /directorio/local/a/copiar;\r\n\t\tmirror --reverse
-  \\\r\n\t\t       --delete;\r\n\t\tclose -a;'[/bash]\r\n\r\nComo también quería
+  \\\r\n\t\t       --delete;\r\n\t\tclose -a;'
+~~~\r\n\r\nComo también quería
   hacer backups de MySQL he decidido entretenerme un rato y hacer mi primer script
   de bash para hacer copias de mysql y directorios del sistema periódicamente (cada
   dos días a través de un cron).\r\n\r\nPara utilizar el script necesitaréis tener
@@ -49,19 +51,22 @@ Después de buscar un rato la única solución viable que he encontrado ha sido 
 
 lftp tiene un método llamado "mirror" que es el que nos permitirá hacer esto. Un ejemplo sencillo de su uso sería...
 
-[bash]lftp -c 'set ftp:list-options -a;
+~~~bash
+lftp -c 'set ftp:list-options -a;
 		open ftp://usuarioftp:passwordftp@hostftp;
 		lcd /directorio/donde/copiar;
 		cd /directorio/local/a/copiar;
 		mirror --reverse \
 		       --delete;
-		close -a;'[/bash]
+		close -a;'
+~~~
 
 Como también quería hacer backups de MySQL he decidido entretenerme un rato y hacer mi primer script de bash para hacer copias de mysql y directorios del sistema periódicamente (cada dos días a través de un cron).
 
 Para utilizar el script necesitaréis tener instalado en vuestro servidor linux los paquetes lftp y mailx (o hairloom-mailx); este último servirá para enviarnos un e-mail en caso de error en la subida de nuestros backups. <a id="more"></a><a id="more-1811"></a>
 
-[bash]#!/bin/bash
+~~~bash
+#!/bin/bash
 
 # :: General Backup Setup ::
 BACKUP=/tmp/backup.$$
@@ -189,6 +194,7 @@ if [ $DOSYSTEM == 1 ]; then
 		fi
 	done
 fi
-[/bash]
+
+~~~
 
 Como he dicho, es el primer script de bash que he hecho en la vida (a parte de alguno otro realmente tonto..) así que si me proponéis ideas para mejorarlo o encontráis algún error os agradecería que me lo comentarais :)

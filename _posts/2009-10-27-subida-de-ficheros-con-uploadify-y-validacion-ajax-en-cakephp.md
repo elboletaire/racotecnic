@@ -137,15 +137,18 @@ ENGINE = InnoDB;[/sql]
 
 Y sus modelos correspondientes, image.php y tempfile.php:
 
-[php]// /app/models/tempfile.php
+~~~php
+// /app/models/tempfile.php
 <?php
 class Tempfile extends AppModel
 {
 	var $name = 'Tempfile';
 }
-[/php]
 
-[php]// /app/models/image.php
+~~~
+
+~~~php
+// /app/models/image.php
 <?php
 class Image extends AppModel {
 	var $name = 'Image';
@@ -158,7 +161,8 @@ class Image extends AppModel {
 			'length'=>array(
 				'rule'=>array('maxLength',100),
 				'message'=>'La descripción no puede tener más de 255 caracteres')));
-}[/php]
+}
+~~~
 
 Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a tamaño completo, otra para las miniaturas y otra para los ficheros temporales (las miniaturas que mostraremos al usuario). Creadlas en la carpeta <em>img</em> y dadles permiso de escritura:
 
@@ -170,7 +174,8 @@ Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a
 
 Ahora pasamos a la vista para añadir imágenes:
 
-[php]// /app/views/images/add.ctp
+~~~php
+// /app/views/images/add.ctp
 <?php
 $javascript->codeBlock('var webroot=''.$this->webroot.'';var sessionId = '' . $session->id() .'';',array('inline'=>false));
 $javascript->link(
@@ -191,7 +196,8 @@ $javascript->link(
 			<div id='ajaxLoad' style='display:none;'><?= $html->image('ajax_load.gif', array('alt' =>__('Carregant...',true))) ?></div>
 			<?= $form->end(array('label'=>__('Guardar',true),'disabled'=>'disabled')) ?>
 	</div>
-</div>[/php]
+</div>
+~~~
 
 La primera línea es para iniciar dos variables de JavaScript, una de ellas con la ruta webroot y la otra con la id de la sesión de PHP. Quizás os interese poner esta porción de código en vuestro layout para aprovecharlo desde cualquier controlador/vista del proyecto.
 
@@ -302,7 +308,8 @@ Cuando todos los ficheros han terminado de subir mostramos un mensaje (con clase
 
 Pasemos al controlador. Primero la construcción de éste, su función beforeRender (importante, lo expliqué en el anterior tutorial), el método <em>add</em> (vacío) y el método <em>upload</em>:
 
-[php]// /app/controllers/images_controller.php
+~~~php
+// /app/controllers/images_controller.php
 <?php
 class ImagesController extends AppController
 {
@@ -424,7 +431,8 @@ class ImagesController extends AppController
 			$this->render('/ajax/upload');
 		}
 	}
-}[/php]
+}
+~~~
 
 A parte de los comentarios y el código (que hablan por sí solos.. ;) ) quiero comentar un par de cosillas...
 
@@ -440,7 +448,8 @@ Digo esto porque lo que hago yo es meter todos los ficheros relacionados con aja
 
 Vamos a por el fichero upload.ctp:
 
-[php]// /app/views/ajax/upload.ctp
+~~~php
+// /app/views/ajax/upload.ctp
 <?php
 $output = array();
 if(isset($errors)) {
@@ -461,7 +470,8 @@ if(isset($errors)) {
 //	$output = Set::insert($output, 'sessionTimeOut', array('message' => $sessionTimeOut['message']));
 //}
 // Fin Auth
-echo $javascript->object($output);[/php]
+echo $javascript->object($output);
+~~~
 
 Este fichero es el encargado de convertir el array que le enviemos desde el controlador con la información (ya sea un error o un mensaje de éxito) a JSON. La salida que generará será algo así:
 
@@ -592,7 +602,8 @@ El último método es el encargado de enviar el formulario mediante Ajax.
 
 De la vista ya no tenemos que tocar nada más así que pasemos al método <em>ajaxAdd</em> del controlador.
 
-[php] // /app/controllers/images_controller.php
+~~~php
+ // /app/controllers/images_controller.php
 function ajaxAdd()
 {
 	Configure::write('debug', 0);
@@ -667,7 +678,8 @@ function ajaxAdd()
 		}
 		$this->render('/ajax/form_validation_array');
 	}else $this->redirect('/');
-}[/php]
+}
+~~~
 
 Este es un poco más complicado que el de upload por una simple razón: tenemos un array de datos en lugar de un único dato.
 
@@ -677,7 +689,8 @@ A parte de eso y como a menudo digo... el código habla por sí solo y además e
 
 Por último nos falta crear la vista "form_validation_array" que, del mismo modo que en el método upload, se encargará de convertir el array resultante a JSON:
 
-[php]// /app/views/ajax/form_validation_array.ctp
+~~~php
+// /app/views/ajax/form_validation_array.ctp
 <?php
 $output = array();
 if(isset($errors)) {
@@ -710,7 +723,8 @@ if(isset($errors)) {
 //	));
 //}
 // fin Auth
-echo $javascript->object($output);[/php]
+echo $javascript->object($output);
+~~~
 
 Y su salida aproximada:
 

@@ -19,7 +19,8 @@ excerpt: "¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de
   target=\"_blank\">página oficial</a> (está disponible para Windows y en código fuente).
   Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.\r\n\r\nPara
   utilizarlo recomiendo que utilicéis la opción de normalizado automático, la \"-r\":\r\n\r\n[bash
-  light=\"true\"]mp3gain -r *.mp3[/bash]\r\n\r\nHaciendo esto dentro de una carpeta
+  light=\"true\"]mp3gain -r *.mp3
+~~~\r\n\r\nHaciendo esto dentro de una carpeta
   con mp3 normalizaréis cada uno de ellos a un volumen estándar.\r\n\r\n"
 wordpress_id: 908
 wordpress_url: http://racotecnic.underave.net/?p=908
@@ -44,7 +45,8 @@ Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" h
 
 Para utilizarlo recomiendo que utilicéis la opción de normalizado automático, la "-r":
 
-[bash light="true"]mp3gain -r *.mp3[/bash]
+[bash light="true"]mp3gain -r *.mp3
+~~~
 
 Haciendo esto dentro de una carpeta con mp3 normalizaréis cada uno de ellos a un volumen estándar.
 
@@ -86,15 +88,18 @@ Applying mp3 gain change of -1 to 16 Korby - Journeys.mp3...
 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3
 Applying mp3 gain change of -4 to 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3...
 18 Sikotik - Roow.mp3
-[19/19] 97% of 5572608 bytes analyzed[/bash]
+[19/19] 97% of 5572608 bytes analyzed
+~~~
 
 Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:
-[bash]find . -type d -print |
+~~~bash
+find . -type d -print |
 while read dirname
 do
   cd '$dirname'
   mp3gain -r -k *.mp3
   cd -
-done[/bash]
+done
+~~~
 
 Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b><em>use at your own risk</em></b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)

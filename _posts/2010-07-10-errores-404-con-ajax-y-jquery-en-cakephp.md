@@ -15,7 +15,8 @@ excerpt: "En este tutorial aprenderéis a <strong>gestionar los errores de CakeP
   con y sin Ajax.</strong>\r\n\r\nLo primero de todo que tenéis que hacer es poner
   el debug a cero en vuestro fichero core.php, ya que <strong>con debug > 0 no
   funcionaría</strong>.\r\n\r\nAhora pasemos a crear (si no existe) el fichero <strong>/app/app_error.php</strong>
-  con el siguiente contenido.\r\n\r\n[php]<?php // /app/app_error.php\r\nclass
+  con el siguiente contenido.\r\n\r\n~~~php
+<?php // /app/app_error.php\r\nclass
   AppError extends ErrorHandler\r\n{\r\n\tfunction error404($params)\r\n\t{\r\n\t\t//
   Importamos RequestHandler para verificar si la conexión es mediante Ajax\r\n\t\tApp::import('Component',
   'RequestHandler');\r\n\t\t$this->RequestHandler = new RequestHandlerComponent();\r\n\t\tif
@@ -25,7 +26,8 @@ excerpt: "En este tutorial aprenderéis a <strong>gestionar los errores de CakeP
   crearemos\r\n\t\t\t$this->controller->set('params', $params);\r\n\t\t\t$this->controller->layout
   = 'ajax';\r\n\t\t\t// Renderizamos la vista\r\n\t\t\t$this->_outputMessage('ajax_error404');\r\n\t\t}\r\n\t\t//
   Aquí iría la gestión del error sin Ajax, en nuestro caso llamamos al método padre.\r\n\t\telse
-  parent::error404($params);\r\n\t}\r\n}[/php]\r\n\r\nPasemos a la creación de la
+  parent::error404($params);\r\n\t}\r\n}
+~~~\r\n\r\nPasemos a la creación de la
   vista... <strong>/app/views/errors/ajax_error404.ctp</strong>"
 wordpress_id: 1583
 wordpress_url: http://racotecnic.underave.net/?p=1583
@@ -49,7 +51,8 @@ Lo primero de todo que tenéis que hacer es poner el debug a cero en vuestro fic
 
 Ahora pasemos a crear (si no existe) el fichero <strong>/app/app_error.php</strong> con el siguiente contenido.
 
-[php]<?php // /app/app_error.php
+~~~php
+<?php // /app/app_error.php
 class AppError extends ErrorHandler
 {
 	function error404($params)
@@ -70,13 +73,16 @@ class AppError extends ErrorHandler
 		// Aquí iría la gestión del error sin Ajax, en nuestro caso llamamos al método padre.
 		else parent::error404($params);
 	}
-}[/php]
+}
+~~~
 
 Pasemos a la creación de la vista... <strong>/app/views/errors/ajax_error404.ctp</strong><a id="more"></a><a id="more-1583"></a>
 
-[php]<?php // /app/views/errors/ajax_error404.ctp
+~~~php
+<?php // /app/views/errors/ajax_error404.ctp
 $error404 = array('message' => __('The requested address was not found on this server.',true), 'params' => $params);
-echo $this->Javascript->object($error404);[/php]
+echo $this->Javascript->object($error404);
+~~~
 
 Tan simple como eso : )
 

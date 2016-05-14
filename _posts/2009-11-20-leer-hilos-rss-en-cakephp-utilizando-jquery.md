@@ -87,7 +87,8 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title'));
 		$this->render(join('/', $path));
 	}
-}[/php]
+}
+~~~
 
 Para ahorrar tiempo he añadido ya —en azul— un par de cosas que vamos a necesitar.
 
@@ -96,7 +97,8 @@ En la <b>línea 5</b> he añadido el "<a href="http://book.cakephp.org/view/174/
 En la <b>línea 6</b> he inicializado la variable <i>$cacheDuration</i> donde almacenamos el tiempo de actualización de la caché (3 horas en el caso del ejemplo). Si lo preferís podéis iniciarla más adelante como una variable normal dentro de un método en lugar de crearla como variable de clase.
 
 Sabiendo esto, pasemos a la creación del resto de métodos del controlador <i>PagesController</i>:
-[php]// continuación de /app/controllers/pages_controller.php
+~~~php
+// continuación de /app/controllers/pages_controller.php
 function beforeFilter()
 {
 	// Desactivamos debug para todo el controlador
@@ -176,29 +178,34 @@ private function _getFeeds($url)
 	}
 	// Devolvemos el hilo
 	return $out;
-  }[/php]
+  }
+~~~
 
 Como siempre digo, el código habla por si solo y para el resto están los comentarios ;) Sólo cabría mencionar un par de cosas:
 
 El layout <em>ajax.ctp</em> (línea 19) no hace falta que lo creéis ya que CakePHP ya lo incluye en su núcleo.
 
 El fichero <em>json.ctp</em> (línea 49) sólo contiene el <i>echo</i> de un <i>json_encode</i>:
-[php]<?php // /app/views/ajax/json.ctp
-echo json_encode($data) ?>[/php]
+~~~php
+<?php // /app/views/ajax/json.ctp
+echo json_encode($data) ?>
+~~~
 
 El fichero <i>json.ctp</i> lo he creado en la carpeta ajax porque todo lo relacionado con ajax lo meto en la carpeta /app/views/ajax/ para tenerlo todo en el mismo sitio. A demás, son ficheros tan genéricos que los utilizo desde casi todas las secciones así que ya me va bien tenerlos en una carpeta por separado.
 
 Si lo preferís, en lugar de crear la vista json, podéis optar por hacer un <i>echo</i> de un <i>json_encode</i> en el controlador directamente, aunque eso rompe un poco con el patrón MVC.
 
 <strong>Para que el método rss funcione es importante que creemos una ruta hacia /rss</strong>:
-[php]// /app/config/routes.php
+~~~php
+// /app/config/routes.php
 Router::connect('/rss/:feed',
 	array('controller'=>'pages','action'=>'rss'),
 	array(
 		'feed'=>'[a-z]+',
 		'pass'=>array('feed')
 	)
-);[/php]
+);
+~~~
 
 Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi caso la he llamado <i>blogs.ctp</i>):
 [php highlight="2,5,6,7"]// /app/views/pages/blogs.ctp
@@ -220,7 +227,8 @@ Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi c
 <?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/psico.png', array('alt'=>'Psico Actividad', 'class'=>'titol_blog')),'http://psicoactividad.underave.net',array('target'=>'_blank'),false,false) ?>
 <ul class='blogs' id='psico'>
 	<li><?php __('Cargando') ?>...</li>
-</ul>[/php]
+</ul>
+~~~
 
 En la <b>línea 2</b> he añadido el fichero javascript que se encargará de cargar los hilos RSS (y será el siguiente paso del tutorial).
 

@@ -20,7 +20,8 @@ excerpt: "Hace ya mucho que existe seguramente, pero con lo escondido que lo ten
   vez descargado cambiadle el nombre a la carpeta por 'debug_kit' y ponedla en cualquiera
   de los directorios \"plugins\" de vuestra aplicación (/plugins y /app/plugins).
   Una vez copiado simplemente tenéis que cargar el componente Toolbar:\r\n\r\n[php
-  light=\"true\"]var $components = array('DebugKit.Toolbar');[/php]\r\n\r\n... y aseguraros
+  light=\"true\"]var $components = array('DebugKit.Toolbar');
+~~~\r\n\r\n... y aseguraros
   que vuestro nivel de debug es 2 (Configure::write('debug', 2);).\r\n\r\nEdit: si
   estáis utilizando el elemento sql_dump eliminadlo de vuestro template. De lo contrario
   no se mostrarán las consultas en el DebugKit.\r\n
@@ -50,7 +51,8 @@ Para descargarlo podéis hacerlo desde GitHub: <a href="https://github.com/cakep
 
 Una vez descargado cambiadle el nombre a la carpeta por 'debug_kit' y ponedla en cualquiera de los directorios "plugins" de vuestra aplicación (/plugins y /app/plugins). Una vez copiado simplemente tenéis que cargar el componente Toolbar:
 
-[php light="true"]var $components = array('DebugKit.Toolbar');[/php]
+[php light="true"]var $components = array('DebugKit.Toolbar');
+~~~
 
 ... y aseguraros que vuestro nivel de debug es 2 (Configure::write('debug', 2);).
 
