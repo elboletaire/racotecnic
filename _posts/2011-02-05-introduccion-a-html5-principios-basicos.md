@@ -18,8 +18,9 @@ excerpt: "<img class=\"alignleft size-thumbnail wp-image-1771\" title=\"HTML5\" 
   cursos los da gente anónima y desinteresada, por lo que en general no son docentes
   sino gente con conocimientos y ganas de explicar cosas.\r\nEs maravilloso que existan
   iniciativas de este tipo.\r\n\r\nAsí que sin más preámbulos, me dispongo a dejar
-  constancia de lo aprendido en la primera clase.\r\n\r\n<h3>¿Que hay de nuevo en
-  HTML5?</h3>\r\nEl principal cambio en el que nos centraremos hoy radica en los elementos
+  constancia de lo aprendido en la primera clase.\r\n\r\n
+## ¿Que hay de nuevo en
+  HTML5?\r\nEl principal cambio en el que nos centraremos hoy radica en los elementos
   de la nueva semántica: Es decir, en el HTML vamos a empezar a utilizar unas etiquetas
   que son mucho más específicas (en lugar de los ambiguos DIV a los que estábamos
   acostumbrados).\r\n\r\nEsto no significa que dejemos de utilizar DIVs, sino que
@@ -51,7 +52,8 @@ Estos cursos los da gente anónima y desinteresada, por lo que en general no son
 Es maravilloso que existan iniciativas de este tipo.
 
 Así que sin más preámbulos, me dispongo a dejar constancia de lo aprendido en la primera clase.
-<h3>¿Que hay de nuevo en HTML5?</h3>
+
+## ¿Que hay de nuevo en HTML5?
 
 El principal cambio en el que nos centraremos hoy radica en los elementos de la nueva semántica: Es decir, en el HTML vamos a empezar a utilizar unas etiquetas que son mucho más específicas (en lugar de los ambiguos DIV a los que estábamos acostumbrados).
 
@@ -66,7 +68,8 @@ Su mismo nombre ya nos dice más o menos dónde irán ubicadas.
 En <a href="http://www.w3schools.com/html5/html5_reference.asp">w3schools</a> tienen una lista completa de todas las etiquetas nuevas.
 
 Vamos a comparar como se creaba antes la estructura de una web y como se hará com HTML5:<a id="more"></a><a id="more-1770"></a>
-<h3>Antigua estructura:</h3>
+
+## Antigua estructura:
 
 <img class="size-full wp-image-1779" title="html5_1" src="http://www.racotecnic.com/wp-content/uploads/2011/02/html5_11.png" alt="" width="270" height="251" />
 
@@ -83,7 +86,8 @@ Vamos a comparar como se creaba antes la estructura de una web y como se hará c
 <div id='footer'>
 Elementos típicos del footer</div>
 [/xhtml]
-<h3>Nueva estructura:</h3>
+
+## Nueva estructura:
 
 <img class="size-full wp-image-1780" title="html5_2" src="http://www.racotecnic.com/wp-content/uploads/2011/02/html5_2.png" alt="" width="270" height="251" />
 
@@ -102,7 +106,8 @@ Elementos típicos del footer</footer>
 [/xhtml]
 
 Como podéis observar, las etiquetas son mucho más semánticas y específicas.
-<h3>Ejemplos reales : típicos usos:</h3>
+
+## Ejemplos reales : típicos usos:
 
 ### <header>
 
@@ -165,7 +170,8 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 		<small>&amp;copy;2010 Xpenta.com. Design by dpam23</small>
 	</footer>
 [/xhtml]
-<h3>Mínima expresión de página en HTML5</h3>
+
+## Mínima expresión de página en HTML5
 
 [xhtml]
 <!doctype html>
@@ -183,7 +189,8 @@ Hoy dictare la clase de html5. Desayunare , Y volveré a la cama.
 [/xhtml]
 
 Aquí podemos observar que las directrices básicas son mucho más escuetas (como por ejemplo el doctype).
-<h3>Estilando HTML5 con CSS:</h3>
+
+## Estilando HTML5 con CSS:
 
 Bien, ahora que ya tenemos un poco más clara la estructura de etiquetas en HTML5, tendremos que aplicarle estilos.
 
@@ -228,7 +235,8 @@ Lo que más sorprende de este nuevo sistema, es que por defecto CSS asume que es
 	     display: block;
 	}
 [/css]
-<h3>Peculiaridades de Internet explorer (IE) y HTML5</h3>
+
+## Peculiaridades de Internet explorer (IE) y HTML5
 
 Con las versiones actuales de IE, siguiendo las instrucciones anteriormente expuestas, la página permanecerá sin estilos. O mejor dicho, tendrán estilos aquellos elementos típicos de HTML4 (span, div, a...) pero dejará sin estilos los nuevos de HTML5 (header, footer, section, canvas...)
 
@@ -245,7 +253,8 @@ para evitar esto, tendremos que añadir un script al documento:
 De esta manera, y son motivo aparente, los elementos cojerán los estilos indicados en el CSS.
 Tendremos que crear una línea para cada elemento que queramos crear.
 Este script lo podemos poner con los típicos condicionales para que sólo los lea IE, pero si los dejamos para todos los navegadores no pasa nada.
-<h3>DEMO: Ejemplo práctico</h3>
+
+## DEMO: Ejemplo práctico
 
 Todo esto está muy bien, pero ¿y si lo vemos todo junto?
 Os dejo una página sencilla en HTML5 y algo de CSS3.
@@ -253,7 +262,8 @@ Es el primer ejercicio que nos han pedido, veremos a ver que nota me ponen!
 : )
 
 <a href="http://www.racotecnic.com/tutorials/2011/HTML5/" title="HTML5 example">http://www.racotecnic.com/tutorials/2011/HTML5/</a>
-<h3>Documentación interesante:</h3>
+
+## Documentación interesante:
 <blockquote>
 
 <ul>

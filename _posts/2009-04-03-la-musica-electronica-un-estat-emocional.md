@@ -25,8 +25,9 @@ excerpt: "<blockquote><em>Aquest article prové de l'audioblog, clausurat per de
   fa cinc, deu, quinze anys... sempre ha estat involucrada en la música electrònica.
   Però la tecnologia mai ha definit com és de bo algú, allò que realment importa sempre
   ha estat la persona que s’asseu davant d’aquesta tecnologia.</blockquote>\r\n
-<em>Richie Hawtin, Hotel Arts Barcelona (2001)</em>\r\n\r\n<h3><a
-  name=\"presentacio\"></a>Presentació</h3>\r\nAquest treball de recerca, orientat
+<em>Richie Hawtin, Hotel Arts Barcelona (2001)</em>\r\n\r\n
+## <a
+  name=\"presentacio\"></a>Presentació\r\nAquest treball de recerca, orientat
   a la recopilació d’informació i opinions sobre la música electrònica actual, pretén,
   primerament, explicar què és i quins efectes té la música com a tal, i seguidament,
   en què consisteix la música electrònica i quins són els seus antecedents històrics,
@@ -69,7 +70,8 @@ Entrada escrita originalment per <strong><a href="http://madame.musicavermella.c
 Molts col·legues i amics meus es queixen de que amb el software que hi ha avui dia qualsevol pot convertir-se en un artista electrònic; creuen que les noves generacions de productors ho han tingut tot més fàcil... Per Déu! És el mateix argument que els productors de rock utilitzaven contra mi, contra la nostra generació. Ens deien que no érem músics de veritat perquè utilitzàvem màquines; que ells eren millors perquè sabien tocar la guitarra. I ara, la mateixa gent, a la que deien això fa deu anys, es queixa de les facilitats que ofereix el nou software. La tecnologia sempre ha estat aquí: fa cinc, deu, quinze anys... sempre ha estat involucrada en la música electrònica. Però la tecnologia mai ha definit com és de bo algú, allò que realment importa sempre ha estat la persona que s’asseu davant d’aquesta tecnologia.</blockquote>
 
 <em>Richie Hawtin, Hotel Arts Barcelona (2001)</em>
-<h3><a name="presentacio"></a>Presentació</h3>
+
+## <a name="presentacio"></a>Presentació
 
 Aquest treball de recerca, orientat a la recopilació d’informació i opinions sobre la música electrònica actual, pretén, primerament, explicar què és i quins efectes té la música com a tal, i seguidament, en què consisteix la música electrònica i quins són els seus antecedents històrics, a més de la relació que pot tenir la música electrònica actual amb el “xamanisme” i els estats alterats de consciència en la música. Així, la fusió de tota aquesta informació ha d’esdevenir la font de documentació sobre la qual fonamentar quines són o poden ser les raons de la capacitat emotiva d’aquest tipus de música i, sobretot, fins a quin punt aquesta varietat musical pot esdevenir un estat anímic, emocional, molt més ampli del que entenem estrictament per música. La recopilació de la informació present ha estat adquirida gràcies a diferents fonts d’informació: per un costat, el consell i recomanacions de músics experts i relacionats amb el camp de la musicoteràpia, i per l’altre, en el coneixement intern dels moviments de musica electrònica, des dels més usuals fins a col·lectius concrets i fins i tot il·legals. L’elaboració de l’estudi ha estat gratament satisfactòria i nodridora a nivell de coneixements, i considero que, tot i les dificultats, la seva realització ha estat un gran pas de cara a l’orientació dels meu plantejaments de futur.
 Així doncs, iniciem la recerca amb un conjunt d’informació referent a la descripció de la música i els seus efectes,  seguida d’una breu explicació de les diferents tendències musicals que s’originaren durant el segle XX (concretament en la seva segona meitat, arran de moviments avantguardistes, ja que gran part dels seus plantejaments foren el principi del que actualment entenem per música electrònica i, possiblement, aquesta última hagi gaudit de la capacitat de popularitzar i estendre els principis musicals de què parlaven aquestes tendències), per introduir-nos en l’explicació de la música electrònica actual i la possible conclusió que d’ella en puguem extreure referent als seus estats emocionals conseqüents.
@@ -123,7 +125,8 @@ Així doncs, iniciem la recerca amb un conjunt d’informació referent a la des
 <li><a href="#estat_emocional">La música electrònica, un estat emocional</a></li>
 <li><a href="#bibliografia">Bibliografia</a></li>
 </ul>
-<h3><a name="musica_definicio"></a>La música; definició</h3>
+
+## <a name="musica_definicio"></a>La música; definició
 
 La música és vibració, i vibració equival a vida. És la millor imatge del que és la vida del ser humà. En aquest sentit, el ritme equivaldria a l’esquelet com a suport d’un cos –melodia, i l’harmonia seria equivalent a l’ànima. Es podria dir que la música és l’estètica materialització de la vida, perquè la música és en un instant i deixa de ser-ho al següent, com la vida. I aquest instant musical pot estar tenyit de qualsevol emoció humana, especialment tot allò més inexpressable.
 
@@ -131,7 +134,8 @@ Els avantguardistes defineixen la música com “qualsevol forma de comportament
 Què fa que uns sons es converteixin en música? Aquesta pregunta no és fàcil de contestar, ni existeix consens en aquests moments sobre per què els avantguardistes han pogut introduir el soroll en la música. Soroll en la música? Per què ha pogut arribar-se fins a aquesta situació? Potser sigui conseqüència de l’entorn general de desmitificació de tot. En música pot ser positiu si d’aquí neixen noves formes, fruit de transformacions, sempre i quan es mantingui l’essència humana de l’art: l’expressió estètica dels sentiments humans.
 
 Definició tècnica de la música: música és la tècnica o l’art de reunir o executar combinacions intel·ligibles de tons en forma organitzada i estructurada, amb una gamma d’infinita varietat del ritme, melodia, volum i qualitat tonal.
-<h3><a name="melodia"></a>La melodia</h3>
+
+## <a name="melodia"></a>La melodia
 
 La melodia consisteix en una sèrie de tons amb sentit. La qualitat expressiva d’una melodia pot estar construïda per tensions tonals i l’efecte general d’elevació i caiguda tonal. La qualitat del to ve determinada per la proporcionada relació entre forces oposades: l’energia instintiva contra les inhibicions. En el llenguatge, una veu ferma expressa major força afectiva que una veu dèbil, que pot expressar inhibició i ansietat. La qualitat expressiva de la melodia sembla que va unida a moviments ascendents (que podrien iniciar serenitat, elevació...) i moviments descendents (que podrien significar dignitat, solemnitat...). Des del punt de vista psicoanalític, allò ascendent significa retrocés, fugida d’una mateix, mentre que els moviments descendents són com una presa de consciència, tornada cap a un mateix.**
 **
@@ -170,7 +174,8 @@ Quan percudim una nota en un instrument es genera un so principal, que és el to
 Els tons parcials són, entre d’altres, els que aporten “profunditat” a la música. Per exemple, la música estèreo es diferencia de la “no estèreo” per la impressió de profunditat que imprimeix la música gravada. Aquesta qualitat, naturalment, la posseeix la música viva, la riquesa dels tons parcials de la qual ja ha intentat imitar tant com sigui possible la música estereofònica. La cadència d’aquests tons fa que la música no estereofònica tingui un timbre metàl·lic, com el d’alguna cosa plana, sense relleu o profunditat. En canvi, l’emoció humana és provocada amb més facilitat per la música viva, amb instruments de qualitat, amb bones condicions acústiques, o també per la música estereofònica.
 El mitjà d’execució de l’intèrpret és bàsic. Hi ha intèrprets freds, que no saben transmetre les seves vivències emocionals, dels que diem que no saben connectar amb l’oient, que “no et diuen res”. L’oient només se sent realment satisfet quan, després d’un concert, d’alguna manera, s’ha sentit protagonista del diàleg entre el compositor de l’obra, l’intèrpret, i ell mateix; diàleg vivencial, que és molt més que emotiu, perquè allò essencial de la música és suggerir no només emocions, sinó també vivències; això és l’art.
 Les qualitats expressives de l’intèrpret, més que la tècnica, són essencials, especialment en musicoteràpia: la modulació, el matís, la manera infinitament canviant de polsar l’instrument, la forma de respirar i ajustar les cordes vocals o regular l’obertura bucal del cantant, etc. Tot el que contribueixi a “donar vida”, a expressar vivències, a emocionar, que és el contrari de mecanitzar. Per això es fuig de la música de cassettes de mala qualitat, perquè el seu so és metàl·lic, pla, sense profunditat.
-<h3><a name="harmonia"></a>L’harmonia</h3>
+
+## <a name="harmonia"></a>L’harmonia
 
 En música, s’entén com  harmonia un grup de tons que sonen simultàniament i amb significat musical. Per altra banda, el contrapunt fa al·lusió a la simultaneïtat  de melodies combinades, no de sons individuals. Harmonia i contrapunt representen dos aspectes d’un mateix tema. La percepció de l’harmonia es produeix en termes de “totalitat”: no es perceb interval per interval, sinó com a un sol so, excepte si un s’ho proposa.
 Des del punt de vista de la repercussió psicològica, són bàsics els conceptes de consonància i dissonància. Aquest dos conceptes van lligats al de l’interval i són la base de la melodia. Els intervals poden ser consonants o dissonants; els consonants acostumen a simbolitzar ordre, equilibri, procés..., mentre que els intervals dissonants representarien la inquietud, el desig, l’horror. Els músics consideren generalment els sons consonants com a sedants i passius, mentre que els dissonants serien productors  d’agitació i activitat. En aquest sentit, els fragments musicals amb domini consonant expressen estats de calma, estabilitat, plenitud...
@@ -179,7 +184,8 @@ Una persona que frueixi apassionadament de les dissonàncies podria ser que sofr
 L’efecte positiu de la dissonància consisteix en actuar com a crida a l’atenció, sempre i quan no sigui una cosa habitual per a l’oient. Pot tenir un efecte catàrtic –en el sentit de que pot ajudar a eliminar tensions -, evocar situacions traumàtiques i permetre que es facin visibles en la consciència sentiments subconscients pertorbants.
 Les dissonàncies no tenen el mateix sentit negatiu per tots. Nietzsche parlava del “meravellós significat de la dissonància musical”, i suggeria que en ella resideix “la clau essencial per expressar la tragèdia”. Per un músic com Schönberg la dissonància suposava la recerca de nous camins en la música; ell deia: “el que distingeix dissonàncies de consonàncies no és el grau de major o menor bellesa, sinó un major o menor grau de comprensibilitat”. Per altra banda, Landin compartia  amb altres especialistes l’opinió de que la consonància i la dissonància eren degudes a condicionaments socials.
 Tot i això, no només en els humans sinó també en els animals superiors, la música consonant no només és la seva preferida, sinó també la que millor contribueix al seu desenvolupament integral. En canvi, les dissonàncies bloquegen i generen seriosos problemes a aquest desenvolupament, cosa que ens indica que no estem davant d’un simple condicionament cultural, sinó que es tracta també d’una afinitat innata cap allò consonant i, contràriament, és evident un rebuig, també innat, cap a la discòrdia, allò dissonant.
-<h3><a name="tonalitat"></a>La tonalitat</h3>
+
+## <a name="tonalitat"></a>La tonalitat
 
 “És el fenomen psicoacústic que permet a l’oient organitzar els sons al voltant d’una clau. L’harmonia, certament, no requereix de tonalitat,, però en gran part de la música occidental l’harmonia i la tonalitat estan estretament relacionades” (Radocy).
 Precisament la teoria dels “mètodes” és la base científica de la musicoteràpia. Ja des de l’època dels pitagòrics, els filòsofs grecs estaven convençuts del poder de la música per canviar l’estat d’ànim; segons el mètode o patró en el que estigués composta una obra musical, així seria l’estat d’ànim que provocaria. Per exemple, el sentir comú del segle passat, recollit per Alain, demostra que els mètodes (tonalitats) “majors” suggereixen obertura, alegria, determinació...,mentre que els mètodes “menors” indiquen depressió, tristesa, tensió. La relació en detall seria la següent:
@@ -198,11 +204,13 @@ Mètode:			Representa o suggereix:
 <li>SI BEMOLL MENOR:	Ens introdueix al misteri, a la complexitat dels sentiments indecisos, turmentats, inexpressables.</li>
 <li>RE MAJOR:			Brillant, optimisme.</li>
 </ul>
-<h3><a name="tempo"></a>El tempo</h3>
+
+## <a name="tempo"></a>El tempo
 
 Es refereix a la rapidesa o velocitat amb la que succeeixen els tons musicals, o sigui, la velocitat que s’imprimeix en una peça musical. Una mateixa peça pot ser executada més o menys acceleradament, independentment del ritme de la mateixa, que seguirà sent el mateix. Tempo i ritme són termes diferents.
 En la musicoteràpia, el tempo és molt important, ja que d’ell depèn, en part, l’efecte sedant o relaxant que pugui tenir. Per exemple, si es canta acceleradament una cançó de bona nit als nadons, perd, per aquest fet, tot el seu valor sedant, per molt que la seva melodia ho continuï sent. El tempo és també un reflex de l’estat d’ànim de l’intèrpret i el seu temps vital, la qual cosa sembla ser genètica o connatural en cadascú.
-<h3><a name="ritme"></a>El ritme</h3>
+
+## <a name="ritme"></a>El ritme
 
 En contrast amb la noció del tempo, el ritme és l’organització de les relacions del temps. En realitat, el ritme és l’element menys “musical” de la música; es pot considerar com un component extramusical, si bé representa l’esquelet de la mateixa. El més essencial de la música és la melodia i l’harmonia, mentre que el ritme té un caràcter funcional d’organitzador i en aquest sentit és pel que té importància en la música.
 La primera i l’última experiència del ritme la tenim en la respiració, a més del ritme cardíac, cerebral, etc. Fora de nosaltres tindríem el ritme còsmic, l’horari, l’estacional... Tot i això, qualsevol d’aquests fets només es constitueixen en estructures rítmiques quan són percebudes pel ser humà.
@@ -220,11 +228,13 @@ En realitat, la percepció rítmica és una disposició instintiva per agrupar r
 <li>El ritme pot endormiscar o estimular, segons els casos, i pot portar a una forma primària d’èxtasi i autohipnosi.</li>
 <li>“El ritme musical no és només repetició, sinó més aviat l’expressió de la lluita contra l’automatisme repetitiu perceptiu motor”; “El ritme com a reagrupador d’allò successiu expressa així la lluita contra la fragmentació i la indiferenciació” (Lecourt).</li>
 </ol>
-<h3><a name="efectes"></a>Efectes de la música sobre l'ésser humà</h3>
+
+## <a name="efectes"></a>Efectes de la música sobre l'ésser humà
 
 La música mai pot ser considerada un luxe, sinó una necessitat fonamental del ser humà. Influeix en l’home des d’abans de néixer i els seus efectes es deixen  notar en tots els nivells.
 Comparant els resultats dels efectes de la música, en la nostra cultura, com els que mostrava l’home abans de l’existència de la música gravada, i més encara després de la comercialització dels transistors, crida l’atenció el fet de que la seva repetició hagi decrescut, la qual cosa era previsible. La resposta fisiològica deguda a la repetició d’uns mateixos estímuls fa que els efectes siguin menys intensos, i més quan és impossible d’esperar la reacció fisiològica de la reacció emocional que provoca la música. Per tot això, els resultat s’han d’agafar com a quelcom relatiu.
-<h3><a name="emocio_sentiment_significat"></a>Emoció, sentiment i significat en la música</h3>
+
+## <a name="emocio_sentiment_significat"></a>Emoció, sentiment i significat en la música
 
 Aquest és el tema més controvertit de la psicologia de la música perquè en ell convergeixen la psicologia, la filosofia, la música, l’estètica i la psiquiatria.
 
@@ -241,7 +251,8 @@ Tot i així, perquè tingui significat estètic, la tensió ha de ser seguida  p
 </ol>
 </li>
 </ul>
-<h3><a name="capacitat_per_mourens"></a>Capacitat de la música per moure el ser humà</h3>
+
+## <a name="capacitat_per_mourens"></a>Capacitat de la música per moure el ser humà
 
 A través de la història de la musicoteràpia es constata un fet comú, i és la capacitat de la música per produir efectes en l’ésser humà, a tots els nivells: biològic, fisiològic, psicològic, intel·lectual, social, espiritual.
 
@@ -352,7 +363,8 @@ A la dècada de 1980 ja existien nombrosos sintetitzadors comercials. La majoria
 L’ús més significatiu dels ordinadors ha estat la síntesi d’ones sonores. Emmagatzemades com a números, les ones sonores es converteixen en voltatges que comanden els altaveus. Encara que els ordinadors puguin utilitzar-se també per controlar sintetitzadors analògics i altres equips de so com els mescladors, la síntesi digital directa és la que més interès ha despertat en els compositors perquè tots els sons poden gravar-se, resintetitzar-se, i modificar-se d’aquesta manera.
 Els avenços de les tècniques digitals d’àudio i la versatilitat de la síntesi de sons de l’ordinador han seguit ampliant les oportunitats en aquest camp per als compositors i intèrprets de música culta i popular. L’emmagatzematge digital i el control de sons obtinguts mitjançant micròfons enriqueix les opcions pels compositors de musique concrète i de compositors sonoro-textuals. La naturalesa experimental d’una gran part de la música electroacústica s’està reduint al temps que els compositors poden accedir amb una facilitat cada cop més elevada a sistemes de cost reduït. Finalment, la distinció entre música en viu i música gravada ha perdut tota la seva importància.</li>
 </ul>
-<h3><a name="antecedents_musica_electronica"></a>Antecedents històrics de la música electrònica</h3>
+
+## <a name="antecedents_musica_electronica"></a>Antecedents històrics de la música electrònica
 
 ### <strong><a name="introduccio_avantguardisme"></a>Petita introducció a l’Avantguardisme</strong>
 
@@ -387,7 +399,8 @@ La figura més important en l’evolució de la música aleatòria és John Cage
 Cage viatjà a Europa en diverses ocasions durant els anys cinquanta i les seves idees tingueren un impacte important sobre una sèrie de joves compositors europeus d’aleshores, entre els quals s’hi trobaven Pierre Boulez i Karlheinz Stockhausen. Però mentre l’aproximació de Cage cap a la indeterminació ha estat sempre essencialment assistemàtica, fins i tot de caràcter místic, els europeus es decantaren per una concepció més teòrica de la música aleatòria, amb un espectre de possibilitats més limitat.
 
 El grau de llibertat d’acció concedit en l’intèrpret pot variar molt en la música aleatòria i es troba estretament relacionat amb el sistema notacional utilitzat. Determinades partitures son purament gràfiques, i hi manca per complet qualsevol tipus de notació tradicional. D’aquesta manera, es permet a l’intèrpret que interpreti la “partitura” més o menys lliurement, amb poques instruccions específiques, en el cas de que n’hi hagi alguna. Altres obres, com les partitures “instructives”, són completament verbals. El més habitual és, tot i així, trobar una barreja de notació tradicional i gràfica, amb alguns elements especificats, mentre que d’altres queden en mans de la lliure elecció de l’intèrpret.
-<h3><a name="musica_electronica"></a>La música electrònica: definició i estils principals</h3>
+
+## <a name="musica_electronica"></a>La música electrònica: definició i estils principals
 
 ### **La música electrònica. Què és?**
 
@@ -459,7 +472,8 @@ Musicalment el jungle es caracteritza per contenir un conjunt d’accelerats rit
 <h5>**L’schranz**</h5>
 
 L’schranz és un estil de música electrònica derivat del techno. La primera persona en definir aquest estil fou Chris Liebing (Alemanya). Aquest estil és relativament ràpid, amb una velocitat que oscil·la entre els 150 i 170 BPM. Té un so potent, que quasi arriba al punt de la saturació; això s’aconsegueix mitjançant sintetitzadors i percussions distorsionades a més de l’ús de compressors de so. Aquest estil musical té una gran debilitat pels “bombos” i se serveix de tot tipus de sons per crear un ambient de “brutícia” clarament influït pel so industrial. És provablement la contundència i el caoticisme en la seva màxima potència. Alguns temes s’allunyen de la música techno característica per aproximar-se a sons d’estils musicals com el hardcore (electrònica).
-<h3><a name="xamans"></a>Tradicions xamàniques, raves i possible relació</h3>
+
+## <a name="xamans"></a>Tradicions xamàniques, raves i possible relació
 <blockquote>
 <em>"La música, i la situació de la dansa del trànsit, és l’establiment d’un espai ritual fora de les convencions de la societat ordinària; és el xamanisme nou "</em>.</blockquote>
 
@@ -588,7 +602,8 @@ Actualment, però, això ja no passa. Internet ha destruït aquest “ritual”.
 Amb el temps es va anar escampant, van sorgir més pàgines i algun col·lectiu organitzador (el grup d'amics va passar a ser un grup de gent amb identitat pròpia com a col·lectiu organitzador de raves) es feia la seva, i allà anunciava les festes. Va començar com una mena de carrera a veure qui feia la millor festa, la millor decoració, la millor música, i amb això van començar a aparèixer flyers per tot arreu, ja no només a comptats establiments de discs i alguna pàgina a internet. Les festes es van començar a estendre massa, 'el xaman perdia el control de la tribu'. Amb l’expansió del fenomen, van sorgir encara més col·lectius nous, més pagines, més i més... El fet de no saber on es podria anar de festa fins cap allà les deu o onze de la nit del dissabte s'ha acabat. Ja se sap qui organitza una rave, on i quan des d'una o dues setmanes. La tribu ja està “descontrolada” del tot.
 
 Avui dia qualsevol persona pot anar a una rave. Qualsevol membre de la tribu pot fer el que li sembli perquè ja no depèn del xaman per poder entrar al món oníric; només ha de fer un parell de “clics”, i ja es comença a notar el possible desenvolupament. Però això només es pot aplicar a l'escena raver visible, perquè, qui sap si encara existeix aquell grup d'amics, amb un generador, uns plats, uns altaveus i una pila de discs de vinil, que mantenen en secret les seves excursions de retrobada amb la terra?
-<h3><a name="estat_emocional"></a>La música electrònica, un estat emocional</h3>
+
+## <a name="estat_emocional"></a>La música electrònica, un estat emocional
 <blockquote>
 <em>“I ara se’m dibuixa el somriure, perquè jo sóc capaç de posar-me nerviós i eufòric, ser feliç i creatiu amb una cançó. Una cançó, sí! Una simple cançó que, com tot el que jo vull, em canvia la percepció de les coses. La força d’una melodia (o conjunt d’aquestes) que té el poder de fer de mi un esclau del so. A volums desmesurats. Esclau del so, orgullós de condició i conseqüències: jo quedaré sord i amb el cap ple de colors. Vosaltres oïdors del que us manen escoltar i amb un sol color en ment.”</em></blockquote>
 
@@ -607,7 +622,8 @@ Després de veure com, amb la popularització de la música electrònica, s’ha
 La música electrònica, encara que no sola, ha simbolitzat un moviment estètic i de pensament, des de la seva aparició, que ha transformat moltes de les perspectives de la música i del pensament musical; gràcies a la possibilitat de manipulació dels sons mitjançant ordinadors, sintetitzadors, compressors, etc., s’han adquirit una quantitat de qualitats tímbriques, d’intensitat, d’obtenció de centenars de nous ritmes que l’home per naturalesa no sabria reproduir, i altres qualitats que fan d’aquesta música una absoluta revolució sonora. És també molt important, però, el moviment ideològic i situacional que aquest estil musical ha desprès amb el temps. És necessari especificar que quan ens referim al moviment ideològic característic de la música electrònica, parlem del que realment ha intentat transmetre (explicat anteriorment) i no el que ha esdevingut. Així, la reproducció d’aquesta música es converteix en quelcom més que un acte lúdic: esdevé una crítica principalment al sistema occidental, i un model de vida, pensament, comportament alternatius a la realitat que es viu. Es planteja el respecte mutu entre persones, ideologies, tendències, classe social, estètica, etc. Apareix l’experimentació excessiva amb substàncies psicotròpiques variades, que es converteixen en una eina més, junt amb la música, d’evasió personal al món real (humà principalment), amb el que no es vol conviure o se’n rebutja el funcionament, la qual cosa presenta aspectes molt negatius pel que fa a la salut dels seus consumidors, però que alhora potencia de manera extraordinària la capacitat d’emocionar-se, de relacionar-se amb la gent, d’entendre molts dels aspecte transmesos pel moviment rave. Lligat a la crítica sistemàtica, apareix també l’oposició a la música comercial i privatitzada, i es manifesta la predominància de la música lliure, de la cultura lliure: apareixen també combinats en les festes rave gran quantitat d’activitats artístiques com malabars, pintura, projeccions audiovisuals, escenografia...
 
 Així, aquest estil musical es converteix en un estat mental/emocional representat i canalitzat pel so, per la música, on tots els que formen part de l’esdeveniment es converteixen en un membre més del sentiment col·lectiu d’aquesta dansa individual, on no és necessari compartir passos de ball ni coreografies per saber fins a quin punt l’emoció transmesa per la música és entesa pel global dels assistents. Així mateix, la gran capacitat que tenen semblants esdeveniments musicals en la seva més pura essència per representar en l’entorn ambients psicodèlics i extraordinaris, fa que el públic, un altre cop, tingui motius per descobrir com aïllar la seva persona del món “real”. La monotonia de la música provoca en la persona una habituació en l’ambient que tan aviat pot ser repulsiva com fantàstica (depenent de cadascú), i quan l’individu se sent còmode en l’ambient de la música, s’adapta a la seva repetitivitat, de tal manera que els canvis més insignificants (melòdics, rítmics...) són percebuts amb una intensitat desmesurada, i és així com aquesta música es converteix en la simplicitat perfecta, ja que atribueix a un detall minúscul la capacitat de provocar grans sensacions: l’emoció sonora.
-<h3><a name="bibliografia"></a>Bibliografia</h3>
+
+## <a name="bibliografia"></a>Bibliografia
 
 <ul>
 <li>Compendio de musicoterapia (volumen I-II) – Serafina Poch Blasco.</li>

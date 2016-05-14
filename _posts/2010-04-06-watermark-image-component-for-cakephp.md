@@ -19,10 +19,12 @@ excerpt: "<blockquote>**Note: **This Component has been updated and you
   and resize images**.\r\n\r\nYou can still improve it a lot, especially in
   terms of code, but as it works and I have little time, I can barely make improvements.<img
   class=\"alignright\" title=\"all_together\" src=\"http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg\"
-  alt=\"\" width=\"171\" height=\"170\" />\r\n<h3>Tested from:</h3>\r\n
+  alt=\"\" width=\"171\" height=\"170\" />\r\n
+## Tested from:\r\n
 <ul>\r\n\t<li>Linux
   php 5.2.10</li>\r\n\t<li>Linux php 5.2.13</li>\r\n\t<li>Windows php 5.3.1</li>\r\n\t<li>Windows
-  php 5.3.2</li>\r\n</ul>\r\n<h3>Well Known Bugs:</h3>\r\n
+  php 5.3.2</li>\r\n</ul>\r\n
+## Well Known Bugs:\r\n
 <ul>\r\n\t<li><del>Uses
   the method <a rel=\"nofollow\" href=\"http://php.net/manual/en/function.mime-content-type.php\"
   target=\"_blank\">mime_content_type</a> that as they say in php.net: <em>This function
@@ -30,7 +32,8 @@ excerpt: "<blockquote>**Note: **This Component has been updated and you
   target=\"_blank\">Fileinfo</a> provides the same functionality (and more) in a much
   cleaner way.</em></del> **[ SOLVED ]**</li>\r\n\t<li>By rotating a
   transparent PNG image at an angle that is not a multiple of 90º the extra generated
-  background is not transparent.</li>\r\n</ul>\r\n<h3>Download:</h3>\r\n<a rel=\"nofollow\"
+  background is not transparent.</li>\r\n</ul>\r\n
+## Download:\r\n<a rel=\"nofollow\"
   href=\"http://github.com/elboletaire/Watimage/archives/master\" target=\"_blank\">http://github.com/elboletaire/Watimage/archives/master</a>\r\n\r\n"
 wordpress_id: 1455
 wordpress_url: http://racotecnic.underave.net/?p=1455
@@ -51,7 +54,8 @@ tags:
 Time ago I created a **CakePHP component for applying watermarks to images**. Slowly I extended it and now in addition to applying watermarks is used to **rotate and resize images**.
 
 You can still improve it a lot, especially in terms of code, but as it works and I have little time, I can barely make improvements.<img class="alignright" title="all_together" src="http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="171" height="170" />
-<h3>Tested from:</h3>
+
+## Tested from:
 
 <ul>
 <li>Linux php 5.2.10</li>
@@ -59,18 +63,21 @@ You can still improve it a lot, especially in terms of code, but as it works and
 <li>Windows php 5.3.1</li>
 <li>Windows php 5.3.2</li>
 </ul>
-<h3>Well Known Bugs:</h3>
+
+## Well Known Bugs:
 
 <ul>
 <li><del>Uses the method <a rel="nofollow" href="http://php.net/manual/en/function.mime-content-type.php" target="_blank">mime_content_type</a> that as they say in php.net: <em>This function has been deprecated as the PECL extension <a rel="nofollow" href="http://www.php.net/manual/en/ref.fileinfo.php" target="_blank">Fileinfo</a> provides the same functionality (and more) in a much cleaner way.</em></del> **[ SOLVED ]**</li>
 <li>By rotating a transparent PNG image at an angle that is not a multiple of 90º the extra generated background is not transparent.</li>
 </ul>
-<h3>Download:</h3>
+
+## Download:
 
 <a rel="nofollow" href="http://github.com/elboletaire/Watimage/archives/master" target="_blank">http://github.com/elboletaire/Watimage/archives/master</a>
 
 <a id="more"></a><a id="more-1455"></a>
-<h3>Usage:</h3>
+
+## Usage:
 
 ~~~php
 <?php // /app/controllers/foo_controller.php

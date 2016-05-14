@@ -104,7 +104,8 @@ El formato **Eurorack**, basados en los <span style="color: #666699;">**bastidor
 Una vez vista las caracteriticas propias de cada fabricante, llega la gran pregunta: ¿Qué queremos que haga nuestro modular? Al ser un sintetizador creado por modulos indepedendientes, a nivel físico, entre ellos, podemos crear des de una caja de ritmos, o un procesador de señal externa, o sintetizador puro y duro. En este caso vamos usarlo tanto para crear sonidos propios, como para la modificación de una señal externa que le entre al modular.
 
 A modo de curiosidad-ejemplo, un modular hecho para funcionar como caja de ritmos. Como se puede observar se han susituido los componentes/modulos de un sintetizador (VCO, VCA) por modulos que contienen los samples con los sonidos de la caja. Por experencia propia, estas cajas son las más divertidas con las que me he podido encontrar, quien tenga cualquier modelo de las cajas <a href="http://img38.imageshack.us/img38/2223/15092009112.jpg" target="_blank">Vermona DRM</a>, lo sabe. ;)<img class="aligncenter size-full wp-image-1029" src="{{ site.url }}/uploads/2009/11/PlugPlay_13.jpg" alt="Modular Drum Machine" width="600" height="335" />
-<h3>**OSCILADOR CONTROLADO POR VOLTAJE - VCO:**</h3>
+
+## **OSCILADOR CONTROLADO POR VOLTAJE - VCO:**
 
 El VCO, <em>el corazón de un sintetizador</em>, es un circuito electrónico que tiene una señal de salida, cuya frecuencia depende del valor de la amplitud de una tensión de entrada. <img class="alignleft" src="http://farm1.static.flickr.com/76/185348936_7ace4daa75.jpg?v=0" alt="" width="375" height="500" />Un módulo de VCO típico proporciona simultáneamente diferentes tipos de formas de onda a sus salidas. Las formas de onda más comunes son: <span style="color: #666699;">**Sinoidal**, **cuadrada**, **triángular** </span>y <span style="color: #808080;"><strong><span style="color: #666699;">diente de sierra (<em>sawtooths</em>)</span></strong><span style="color: #333333;">, llegando </span></span>algunos incluso a proporcionar estas ondas invertidas, e incluso sawtooths no invertidas.
 
@@ -117,7 +118,7 @@ Como se puede observar en la imagen un VCO standar tiene las siguientes entradas
 <li>Una entrada de sincronización .</li>
 <li>En algunos casos, en este modulo Doepfer no esta presente, existe un knob adicional llamado <span style="color: #666699;">**Fine Tuning**</span> para los ajustes discretos de la frecuencia.</li>
 </ul>
-<h3 style="text-align: left;">**AMPLIFICADOR CONTROLADO POR VOLTAJE - VCA:**</h3>
+<h3 style="text-align: left;">**AMPLIFICADOR CONTROLADO POR VOLTAJE - VCA:**
 
 <img class="alignleft" src="http://www.doepfer.de/A1323.gif" alt="" width="138" height="461" />
 
@@ -132,9 +133,12 @@ Vista la representación gráfica de las dos funciones para expresar el como aum
 Como se puede observar , en el <em><span style="color: #666699;">**modo linear**</span></em> <span style="text-decoration: underline;">el aumento de la ganancia es contastante respecto al voltage que se le de</span>. Mientras que en modo exponecial, al ser una función donde uno de los valores del polinomio esta elevado a un valor, en este caso respecto al voltage, la función se vuelve parabolica, por lo que el aumento de la ganacia no será constante. Si dejamos el tema modular a un lado, y miramos las propiedades de la parabola que crea podemos sacar la siguiente conclusión para el <em><span style="color: #666699;">**modo exponecial**</span></em>: <em><span style="color: #000000;"><span style="text-decoration: underline;">A mayor valor del voltage más rápido crece la ganacia</span></span></em>. Como curiosidad este tipo de funciones, <em>Exp</em> o <em>Lin</em>, también se da en las diversas fases de las envolventes e incluso pueden llegar a dar una respuesta negativa o postiva.
 
 Para hacerlo más "visual"; En este caso más audible :P. He echado mano de mi Dave Smith Evolver para que se pueda apreciar la diferencia "practica" de los dos modos.
-<h3></h3>
-<h3></h3>
-<h3>**GENERADOR DE ENVOLVENTES - EG:**</h3>
+
+##
+
+##
+
+## **GENERADOR DE ENVOLVENTES - EG:**
 
 Un generador de envolvente es un circuito que genera una señal susceptible de controlar algún parámetro dentro de un sistema de síntesis. Normalmente, un EG se dispara con un evento <em><span style="color: #666699;">**note on**</span></em> , y por lo general, ataca a un VCA, a un VCF, etc.
 

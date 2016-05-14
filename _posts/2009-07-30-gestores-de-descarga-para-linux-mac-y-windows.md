@@ -17,9 +17,10 @@ excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.unde
   existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os
   servirán como **gestores de descarga** para páginas como **megaupload
   o rapidshare**. A continuación os expongo un par más que encuentro bastante
-  interesantes.\r\n<h3><img class=\"alignleft size-full wp-image-1205\" title=\"tucan_logo\"
+  interesantes.\r\n
+## <img class=\"alignleft size-full wp-image-1205\" title=\"tucan_logo\"
   src=\"{{ site.url }}/uploads/2009/07/tucan_logo.png\"
-  alt=\"tucan_logo\" width=\"150\" height=\"150\" />Tucan Manager</h3>\r\nSoftware
+  alt=\"tucan_logo\" width=\"150\" height=\"150\" />Tucan Manager\r\nSoftware
   libre español desarrollado en python. Disponible para Windows y Linux.\r\n\r\nMuy
   sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, zshare,
   filefactory, mediafire, gigasize y rapidshare y permite el uso de cuentas premium
@@ -43,7 +44,8 @@ tags:
 Hace unos días <a title="Ver entrada" href="http://racotecnic.underave.net/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/" target="_self">gerno nos explicaba</a> cómo facilitarnos las descargas mediante el plugin Illimitux y la aplicación FreeRapid Downloader.
 
 A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como **gestores de descarga** para páginas como **megaupload o rapidshare**. A continuación os expongo un par más que encuentro bastante interesantes.
-<h3><img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager</h3>
+
+## <img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager
 
 Software libre español desarrollado en python. Disponible para Windows y Linux.
 
@@ -56,7 +58,8 @@ Muy sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, z
 <img class="aligncenter size-full wp-image-1206" title="tucan_screen2" src="{{ site.url }}/uploads/2009/07/tucan_screen2.png" alt="tucan_screen2" width="579" height="336" />
 
 <a href="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150"><img class="alignnone" title="JDownloader logo" src="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150" alt="" width="169" height="169" align="right" /></a>
-<h3>jDownloader</h3>
+
+## jDownloader
 
 Desarrollado en Java* y con prestaciones similares a FreeRapid Downloader.
 

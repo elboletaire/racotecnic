@@ -67,7 +67,8 @@ Todo ello utilizando las versiones de 64 bits, pero procuraré poneros los enlac
 Antes de empezar es importantísimo que comprobéis que tenéis todas las actualizaciones del sistema al día. Especialmente interesa tener <em>.NET Framework</em> instalado y actualizado para poder correr cualquiera de las aplicaciones que vamos a instalar. En mi caso la última actualización fue .NET Framework 4.5.2.</blockquote>
 
 <a id="more"></a><a id="more-2326"></a>
-<h3><a id="user-content-estructura-de-la-instalación" class="anchor" href="#estructura-de-la-instalaci%C3%B3n"></a>Estructura de la instalación</h3>
+
+## <a id="user-content-estructura-de-la-instalación" class="anchor" href="#estructura-de-la-instalaci%C3%B3n"></a>Estructura de la instalación
 
 Podéis escoger instalar cada cosa donde os dé la gana, pero procurad tenerlo en cuenta a la hora de configurar cada cosa.
 
@@ -78,7 +79,8 @@ Para hacer las cosas sencillas y por tenerlo todo ordenado yo siempre he seguido
     C:\httpd\www    -> Directorio raíz de todos mis proyectos en desarrollo
 
 MySQL dejo que se instale donde quiera ya que no me preocupa tener copia de sus ficheros. Evidentemente hago copia de seguridad de las bases de datos pero no es el tema que nos concierne ahora.
-<h3><a id="user-content-instalando-apache" class="anchor" href="#instalando-apache"></a>Instalando Apache</h3>
+
+## <a id="user-content-instalando-apache" class="anchor" href="#instalando-apache"></a>Instalando Apache
 
 Desde hace relativamente poco la descarga de binarios de Apache ya no se realiza desde el sitio oficial. En su lugar ellos mismos te recomiendan varios sites alternativos desde los que efectuar la descarga.
 
@@ -190,7 +192,8 @@ Para hacer que `ApacheMonitor` se ejecute cuando arranquéis el ordenador única
 <a href="http://www.racotecnic.com/wp-content/uploads/2015/03/apache_monitor.png"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/apache_monitor.png" alt="En català no és pas tant redundant, oi?" width="233" height="77" class="aligncenter size-full wp-image-2334" /></a>
 
 Hecho. Si os da el gusanillo reiniciad el ordenador y acceded de nuevo a <a href="http://localhost">http://localhost</a> para comprobar que todo sigue funcionando OK.
-<h3><a id="user-content-instalando-php" class="anchor" href="#instalando-php"></a>Instalando PHP</h3>
+
+## <a id="user-content-instalando-php" class="anchor" href="#instalando-php"></a>Instalando PHP
 
 Id a la <a href="http://windows.php.net/download/">página de descargas de PHP para windows</a> y descargad todas las versiones de PHP que queráis tener instaladas.
 
@@ -255,7 +258,8 @@ Utilizando `ApacheMonitor` reiniciad Apache. Cread un fichero `index.php` en el 
 </div>
 
 Y acceded a <a href="http://localhost">http://localhost</a> para verificar que PHP funciona correctamente.
-<h3><a id="user-content-utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales" class="anchor" href="#utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales"></a>Utilizando distintas versiones de PHP en nuestros servidores virtuales</h3>
+
+## <a id="user-content-utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales" class="anchor" href="#utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales"></a>Utilizando distintas versiones de PHP en nuestros servidores virtuales
 
 Ahora que ya tenéis Apache y la versión de PHP por defecto corriendo, llega el momento de explicaros cómo cambiar entre versiones de PHP.
 
@@ -311,7 +315,8 @@ Finalmente reiniciad apache utilizando ApacheMonitor y acceded con vuestro naveg
 Estoy seguro de que sí :)
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2015/03/php.loc_.png"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/php.loc_-1024x732.png" alt="php.loc" class="aligncenter size-large wp-image-2336" /></a>
-<h3><a id="user-content-instalar-mysql" class="anchor" href="#instalar-mysql"></a>Instalar MySQL</h3>
+
+## <a id="user-content-instalar-mysql" class="anchor" href="#instalar-mysql"></a>Instalar MySQL
 
 Descargad el <a href="http://dev.mysql.com/downloads/windows/installer/5.6.html">instalador de MySQL</a> y procurad instalar lo que os interese (con el servidor ya basta).
 
@@ -320,7 +325,8 @@ Podéis optar por escoger la instalación por defecto para desarrolladores (os i
 En el caso de mi instalación escojo únicamente el servidor de MySQL en su versión x64.
 
 Y para instalar, "siguiente, siguiente, siguiente"...
-<h3><a id="user-content-enlaces-útiles-y-referencias" class="anchor" href="#enlaces-%C3%BAtiles-y-referencias"></a>Enlaces útiles y referencias</h3>
+
+## <a id="user-content-enlaces-útiles-y-referencias" class="anchor" href="#enlaces-%C3%BAtiles-y-referencias"></a>Enlaces útiles y referencias
 
 Me gustaría enlazar a las referencias pero no puedo ya que hace demasiado tiempo que ando haciendo todo este proceso de memoria y no recuerdo exactamente de dónde saqué la información. Sé que al final lo hice funcionar gracias a alguien que explicaba cómo correr FastCGI en Linux, pero ni de coña lograría encontrar el enlace original.
 

@@ -10,15 +10,17 @@ author:
   url: ''
 author_login: manuso245
 author_email: manuso245@gmail.com
-excerpt: "<h3>Requisitos<img class=\"alignright size-full wp-image-1861\" title=\"android-logo\"
+excerpt: "
+## Requisitos<img class=\"alignright size-full wp-image-1861\" title=\"android-logo\"
   src=\"http://www.racotecnic.com/wp-content/uploads/2011/03/android-logo.jpg\" alt=\"\"
-  width=\"158\" height=\"178\" /></h3>\r\n<ol>\r\n\t<li>Ubuntu 9.10. Testeado por
+  width=\"158\" height=\"178\" />\r\n<ol>\r\n\t<li>Ubuntu 9.10. Testeado por
   otros usuarios en 10.04</li>\r\n\t<li><a href=\"http://developer.android.com/sdk/index.html\">Android
   SDK y platform-tools</a> concretamente la herramienta <a href=\"http://developer.android.com/guide/developing/tools/adb.html\">ADB</a>
   (Android Debug Bridge)</li>\r\n\t<li>Un dispositivo Android, en mi caso una <a href=\"http://www.toshiba-multimedia.com/es/journe-tabletas-marcos-digitales/folio100/\">Tablet
   Toshiba Folio 100</a> con Android 2.2 con el SO cambiado (el test se realizó con
-  el <a href=\"http://dext3r.komodin.org/\">TNTModFolio de Dexter</a>)</li>\r\n</ol>\r\n<h3>Definición
-  Conceptual</h3>\r\nNuestro problema principal era que teníamos una web desarrollada
+  el <a href=\"http://dext3r.komodin.org/\">TNTModFolio de Dexter</a>)</li>\r\n</ol>\r\n
+## Definición
+  Conceptual\r\nNuestro problema principal era que teníamos una web desarrollada
   en un servidor de test y para acceder a ella necesitábamos modificar el archivo
   <<<em>hosts</em>>> para añadir una directiva de nombres.\r\n\r\nLo primero
   que apreciamos en la Tablet de Toshiba fue que no podíamos acceder al market ni
@@ -47,13 +49,15 @@ tags:
 - Ubuntu
 - ADB
 ---
-<h3>Requisitos<img class="alignright size-full wp-image-1861" title="android-logo" src="http://www.racotecnic.com/wp-content/uploads/2011/03/android-logo.jpg" alt="" width="158" height="178" /></h3>
+
+## Requisitos<img class="alignright size-full wp-image-1861" title="android-logo" src="http://www.racotecnic.com/wp-content/uploads/2011/03/android-logo.jpg" alt="" width="158" height="178" />
 <ol>
 <li>Ubuntu 9.10. Testeado por otros usuarios en 10.04</li>
 <li><a href="http://developer.android.com/sdk/index.html">Android SDK y platform-tools</a> concretamente la herramienta <a href="http://developer.android.com/guide/developing/tools/adb.html">ADB</a> (Android Debug Bridge)</li>
 <li>Un dispositivo Android, en mi caso una <a href="http://www.toshiba-multimedia.com/es/journe-tabletas-marcos-digitales/folio100/">Tablet Toshiba Folio 100</a> con Android 2.2 con el SO cambiado (el test se realizó con el <a href="http://dext3r.komodin.org/">TNTModFolio de Dexter</a>)</li>
 </ol>
-<h3>Definición Conceptual</h3>
+
+## Definición Conceptual
 
 Nuestro problema principal era que teníamos una web desarrollada en un servidor de test y para acceder a ella necesitábamos modificar el archivo <<<em>hosts</em>>> para añadir una directiva de nombres.
 
@@ -62,7 +66,8 @@ Lo primero que apreciamos en la Tablet de Toshiba fue que no podíamos acceder a
 El TNTMod te permite tener permisos <em>root </em>en tu dispositivo pero para modificar los archivos de sistema hay que ser un poco más creativo.
 
 El único método que me ha dado resultado es el uso y configuración de ADB, una aplicación estilo <em>putty </em>para acceder mediante <em>Shell </em>o comando típicos como <em>pull </em>o <em>push </em>a los archivos de SO de un dispositivo Android. Mediante ADB es posible conectarse con un terminal a los archivos de sistema y comprobar la ruta del archivo hosts. También permite traértelo al pc local, modificarlo y después volverlo a meter en el sistema de archivos del dispositivo.<a id="more"></a><a id="more-1859"></a>
-<h3>Procedimiento</h3>
+
+## Procedimiento
 
 Primero de todo hay que descargar e instalar android SDK (necesitarrás JAVA SDK):
 
@@ -128,7 +133,8 @@ Remontamos el FS como rw para poder escribir o hacer pushes:
 [shell]# mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system[/shell]
 
 **YA TENEMOS ACCESO COMPLETO**
-<h3>Cosas a tener en cuenta</h3>
+
+## Cosas a tener en cuenta
 
 Si apagamos el dispositivo habrá que hacer otra vez la parte del mount ya que el dispositivo por defecto monta /system en ro. Si se desea dejar permanentemente en rw modificar reglas de mount.
 
