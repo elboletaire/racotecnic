@@ -20,10 +20,14 @@ categories:
 tags:
 - Recursos
 ---
-<p><a title="Ir a la página Webresourcesdepot.com" rel="nofollow" href="http://webresourcesdepot.com" target="_blank">WebResourcesDepot</a>, un interesante blog en el que podemos encontrar una infinidad de recursos para nuestros proyectos web. Estos recursos nos pueden servir tanto para el diseño como para el desarrollo adaptándolos a las nuestras aplicaciones ya que la mayoría son de código abierto.</p>
-<p>Tengo que mencionar  que es un blog muy activo ya que publican una media de 2 recursos cada día.</p>
-<p style="text-align: center"><a title="Webresourcesdepot.com" href="http://webresourcesdepot.com" target="_blank"><img src="http://img121.imageshack.us/img121/5660/webresourcesdepot.jpg" alt="Captura de Webresourcesdepot.com" /></a></p>
+
+<a title="Ir a la página Webresourcesdepot.com" rel="nofollow" href="http://webresourcesdepot.com" target="_blank">WebResourcesDepot</a>, un interesante blog en el que podemos encontrar una infinidad de recursos para nuestros proyectos web. Estos recursos nos pueden servir tanto para el diseño como para el desarrollo adaptándolos a las nuestras aplicaciones ya que la mayoría son de código abierto.
+
+Tengo que mencionar  que es un blog muy activo ya que publican una media de 2 recursos cada día.
+
+<a title="Webresourcesdepot.com" href="http://webresourcesdepot.com" target="_blank"><img src="http://img121.imageshack.us/img121/5660/webresourcesdepot.jpg" alt="Captura de Webresourcesdepot.com" /></a>
 <blockquote>
+
 <ul>
 <li>Web Resources Depot: <a title="Ir a la página Webresourcesdepot.com" rel="nofollow" href="http://webresourcesdepot.com" target="_blank">www.webresourcesdepot.com</a></li>
 </ul>

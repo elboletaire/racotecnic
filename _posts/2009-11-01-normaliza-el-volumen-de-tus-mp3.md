@@ -35,13 +35,20 @@ tags:
 - Shell
 - Consola
 ---
-<p>¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los altavoces porque cada canción tiene un volumen distinto??</p>
-<p>Con mp3gain podéis <strong>normalizar el volumen</strong> de vuestros <strong>mp3</strong> muy fácilmente (para los usuarios que manejen habitualmente la consola.. claro xD).</p>
-<p>Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" href="http://sourceforge.net/projects/mp3gain/" target="_blank">página oficial</a> (está disponible para Windows y en código fuente). Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.</p>
-<p>Para utilizarlo recomiendo que utilicéis la opción de normalizado automático, la "-r":</p>
-<p>[bash light="true"]mp3gain -r *.mp3[/bash]</p>
-<p>Haciendo esto dentro de una carpeta con mp3 normalizaréis cada uno de ellos a un volumen estándar.</p>
-<p><a id="more"></a><a id="more-908"></a><br />
+
+¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los altavoces porque cada canción tiene un volumen distinto??
+
+Con mp3gain podéis <strong>normalizar el volumen</strong> de vuestros <strong>mp3</strong> muy fácilmente (para los usuarios que manejen habitualmente la consola.. claro xD).
+
+Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" href="http://sourceforge.net/projects/mp3gain/" target="_blank">página oficial</a> (está disponible para Windows y en código fuente). Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.
+
+Para utilizarlo recomiendo que utilicéis la opción de normalizado automático, la "-r":
+
+[bash light="true"]mp3gain -r *.mp3[/bash]
+
+Haciendo esto dentro de una carpeta con mp3 normalizaréis cada uno de ellos a un volumen estándar.
+
+<a id="more"></a><a id="more-908"></a><br />
 [bash light="true"]01 Freeson - Mozart is Back.mp3<br />
 Applying mp3 gain change of -1 to 01 Freeson - Mozart is Back.mp3...<br />
 02 TDF - Just a trip.mp3<br />
@@ -79,13 +86,15 @@ Applying mp3 gain change of -1 to 16 Korby - Journeys.mp3...<br />
 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3<br />
 Applying mp3 gain change of -4 to 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3...<br />
 18 Sikotik - Roow.mp3<br />
-[19/19] 97% of 5572608 bytes analyzed[/bash]</p>
-<p>Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:<br />
+[19/19] 97% of 5572608 bytes analyzed[/bash]
+
+Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:<br />
 [bash]find . -type d -print |<br />
 while read dirname<br />
 do<br />
-  cd &quot;$dirname&quot;<br />
+  cd '$dirname'<br />
   mp3gain -r -k *.mp3<br />
   cd -<br />
-done[/bash]</p>
-<p>Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b><em>use at your own risk</em></b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)</p>
+done[/bash]
+
+Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b><em>use at your own risk</em></b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)

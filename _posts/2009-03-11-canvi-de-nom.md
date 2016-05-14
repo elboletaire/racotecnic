@@ -20,7 +20,11 @@ categories:
 tags:
 - Gestions blog
 ---
-<p>Donat que alguns dels usuaris del blog no aportaran temes d'informàtica com a tal, sinó més aviat relacionats amb visuals, animació, telefonia... a partir d'ara el racó informàtic passa a ser racó tècnic, per tal d'englobar més temes.</p>
-<p>Podreu continuar accedint des de l'adreça racoinformatic.underave.net però a més n'hem habilitat una altra:</p>
-<p><a href="http://racotecnic.underave.net" target="_self">http://racotecnic.underave.net</a></p>
-<p>Salut!</p>
+
+Donat que alguns dels usuaris del blog no aportaran temes d'informàtica com a tal, sinó més aviat relacionats amb visuals, animació, telefonia... a partir d'ara el racó informàtic passa a ser racó tècnic, per tal d'englobar més temes.
+
+Podreu continuar accedint des de l'adreça racoinformatic.underave.net però a més n'hem habilitat una altra:
+
+<a href="http://racotecnic.underave.net" target="_self">http://racotecnic.underave.net</a>
+
+Salut!

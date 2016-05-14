@@ -21,9 +21,12 @@ categories:
 tags:
 - Recursos
 ---
-<p>M´estreno al blog!<br />
+
+M´estreno al blog!<br />
 En aquesta entrada us presento una web de recursos força completa.<br />
 Feu-hi una ullada,   sota aquest curiós disseny trobareu moltíssims enllaços separats per categories.<br />
-Tota una troballa!</p>
-<p><a title="Blue Vertigo" href="http://www.bluevertigo.com.ar/" target="_blank"><img class="aligncenter size-full wp-image-200" title="bluevertigo_home" src="http://racoinformatic.underave.net/wp-content/uploads/2009/03/bluevertigo_home.gif" alt="bluevertigo_home" width="360" height="340" /></a></p>
-<p style="text-align: center;"><a href="http://www.bluevertigo.com.ar/" target="_blank">http://www.bluevertigo.com.ar/</a></p>
+Tota una troballa!
+
+<a title="Blue Vertigo" href="http://www.bluevertigo.com.ar/" target="_blank"><img class="aligncenter size-full wp-image-200" title="bluevertigo_home" src="http://racoinformatic.underave.net/wp-content/uploads/2009/03/bluevertigo_home.gif" alt="bluevertigo_home" width="360" height="340" /></a>
+
+<a href="http://www.bluevertigo.com.ar/" target="_blank">http://www.bluevertigo.com.ar/</a>

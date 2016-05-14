@@ -24,7 +24,9 @@ tags:
 - ejemplos diseño web
 - web site design
 ---
-<p><a href="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a></p>
+
+<a href="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a>
+
 <ul>
 <li><a rel="nofollow" href="http://www.webdesign-inspiration.com/" target="_blank">http://www.webdesign-inspiration.com/</a></li>
 <li><a rel="nofollow" href="http://theodin.co.uk/blog/design/inspirational-cut-line-web-design.html" target="_blank">http://theodin.co.uk/</a>(Cut line)</li>

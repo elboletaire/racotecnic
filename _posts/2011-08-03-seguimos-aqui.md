@@ -19,7 +19,11 @@ categories:
 - General
 tags: []
 ---
-<p>Aunque la cosa parezca estar un poco muerta, seguimos por aquí!</p>
-<p>Como todos sabemos el tiempo es oro y el oro escasea últimamente así que por A o por B no hemos podido estar muy por actualizar el blog.</p>
-<p>Yo mismo hace ya tiempo que tengo ganas de hacer algunas entradas de CakePHP, que desde las últimas que hice creo que he avanzado notablemente. Entre ellas me gustaría eliminar las que corren por aquí de subidas de ficheros, que me dan auténtico repelús cada vez que las veo.. y hacer una con un sencillo sistema de permisos para CakePHP pero con las ventajas de cualquier sistema de permisos avanzados (grupos de usuarios, permisos y demás).</p>
-<p>Pues eso, pasad un buen verano y cuando volváis de vacaciones no olvidéis echar un vistazo al racó! :D</p>
+
+Aunque la cosa parezca estar un poco muerta, seguimos por aquí!
+
+Como todos sabemos el tiempo es oro y el oro escasea últimamente así que por A o por B no hemos podido estar muy por actualizar el blog.
+
+Yo mismo hace ya tiempo que tengo ganas de hacer algunas entradas de CakePHP, que desde las últimas que hice creo que he avanzado notablemente. Entre ellas me gustaría eliminar las que corren por aquí de subidas de ficheros, que me dan auténtico repelús cada vez que las veo.. y hacer una con un sencillo sistema de permisos para CakePHP pero con las ventajas de cualquier sistema de permisos avanzados (grupos de usuarios, permisos y demás).
+
+Pues eso, pasad un buen verano y cuando volváis de vacaciones no olvidéis echar un vistazo al racó! :D

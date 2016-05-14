@@ -25,30 +25,38 @@ tags:
 - CakePHP 1.3
 - CakePHP 1.2
 ---
-<p>Si queréis hacer una aplicación de <strong>CakePHP sin utilizar conexión a base de datos</strong> podéis hacerlo mediante la creación de un nuevo <em>datasource</em>.</p>
-<p>En el directorio <em>/app/models/datasources/dbo/</em>* cread un fichero llamado <em>dbo_sin_conexion.php</em> con el siguiente contenido:</p>
-<p><em>* Nota: es posible que el directorio dbo tampoco exista y tengáis que crearlo.</em></p>
-<p>[php]&lt;?php // /app/models/datasources/dbo/dbo_sin_conexion.php<br />
+
+Si queréis hacer una aplicación de <strong>CakePHP sin utilizar conexión a base de datos</strong> podéis hacerlo mediante la creación de un nuevo <em>datasource</em>.
+
+En el directorio <em>/app/models/datasources/dbo/</em>* cread un fichero llamado <em>dbo_sin_conexion.php</em> con el siguiente contenido:
+
+<em>* Nota: es posible que el directorio dbo tampoco exista y tengáis que crearlo.</em>
+
+[php]<?php // /app/models/datasources/dbo/dbo_sin_conexion.php<br />
 class DboSinConexion extends DboSource<br />
 {<br />
 	function connect()<br />
 	{<br />
-		$this-&gt;connected = true;<br />
-		return $this-&gt;connected;<br />
+		$this->connected = true;<br />
+		return $this->connected;<br />
 	}<br />
 	function disconnect()<br />
 	{<br />
-		$this-&gt;connected = false;<br />
-		return !$this-&gt;connected;<br />
+		$this->connected = false;<br />
+		return !$this->connected;<br />
 	}<br />
 	function isConnected()<br />
 	{<br />
 		return true;<br />
 	}<br />
-}[/php]</p>
-<p>Ahora modificad vuestro fichero database.php (en <em>/app/config/</em>) para indicarle que utilizaremos este fichero para "conectarnos a la base de datos":</p>
-<p>[php]&lt;?php // /app/config/database.php<br />
-class DATABASE_CONFIG {</p>
-<p>	var $default = array('driver' =&gt; 'sin_conexion');<br />
-}[/php]</p>
-<p>Y listo, ya tenemos CakePHP funcionando sin conexión a la base de datos :)</p>
+}[/php]
+
+Ahora modificad vuestro fichero database.php (en <em>/app/config/</em>) para indicarle que utilizaremos este fichero para "conectarnos a la base de datos":
+
+[php]<?php // /app/config/database.php<br />
+class DATABASE_CONFIG {
+
+	var $default = array('driver' => 'sin_conexion');<br />
+}[/php]
+
+Y listo, ya tenemos CakePHP funcionando sin conexión a la base de datos :)

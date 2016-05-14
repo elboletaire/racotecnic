@@ -21,14 +21,19 @@ categories:
 tags:
 - Concursos
 ---
-<p>Los ganadores del segundo concurso son...</p>
-<p>13% [ 38 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fort</span></span> (user <span style="font-style: italic;">therkore</span>) - Kora's Queen<br />
+
+Los ganadores del segundo concurso son...
+
+13% [ 38 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fort</span></span> (user <span style="font-style: italic;">therkore</span>) - Kora's Queen<br />
 9% [ 29 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fernival</span></span> - Bastardos<br />
 9% [ 27 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Hiry</span></span> (user <span style="font-style: italic;">daniel jesus</span>) - Le logement, un droit pas un privilège<br />
-8% [ 25 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Pinyol</span></span> - Disk-o-</p>
-<p>Felicidades! Si no lo hemos hecho, pronto nos pondremos en contacto con vosotros para daros detalles sobre el vinilo.</p>
-<p>Al resto de participantes, gracias por participar y sobretodo, no perdáis los ánimos! El siguiente concurso puede ser el vuestro!</p>
-<p>Os dejamos el enlace de descarga del álbum de este segundo concurso. Con todos los nombres y etiquetas de los ficheros bien puestos y ordenados según valoración:</p>
+8% [ 25 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Pinyol</span></span> - Disk-o-
+
+Felicidades! Si no lo hemos hecho, pronto nos pondremos en contacto con vosotros para daros detalles sobre el vinilo.
+
+Al resto de participantes, gracias por participar y sobretodo, no perdáis los ánimos! El siguiente concurso puede ser el vuestro!
+
+Os dejamos el enlace de descarga del álbum de este segundo concurso. Con todos los nombres y etiquetas de los ficheros bien puestos y ordenados según valoración:
 <div style="margin: 0px; padding: 6px;">
 <ol>
 <li>Fort - Kora's Queen.mp3</li>

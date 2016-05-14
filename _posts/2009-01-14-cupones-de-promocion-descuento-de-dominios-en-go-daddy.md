@@ -21,7 +21,9 @@ tags:
 - DNS
 - Dominis
 ---
-<p>Para que no os salgan tan caros los dominios este año ;)</p>
+
+Para que no os salgan tan caros los dominios este año ;)
+
 <ul>
 <li><strong>OYH3</strong> - $2.50 off / $7.45 any .COM (renewals too)</li>
 <li><strong>BTPS7</strong> - 20% any order of $50 or more</li>
@@ -37,7 +39,9 @@ tags:
 <li><strong>hash3</strong> - $7.45 .com registration</li>
 <li><strong>gdd1101c</strong> - 10% off any order of $40 or more</li>
 </ul>
-<blockquote><p>Fuente y más descuentos:</p>
+<blockquote>
+Fuente y más descuentos:
+
 <ul>
 <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank">Godaddy promo code and coupon list for 2009</a></li>
 <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank">GoDaddy Coupon Code</a></li>

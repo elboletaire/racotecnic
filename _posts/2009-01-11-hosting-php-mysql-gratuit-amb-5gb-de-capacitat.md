@@ -22,10 +22,15 @@ tags:
 - MySQL
 - Hosting
 ---
-<p><em>(si no entiendes catalán puedes utilizar el traductor situado en la barra lateral)</em></p>
-<p>Quan vaig començar amb les meves primeres webs penjades a Internet (dic penjades a Internet perquè les primeres que vaig fer les vaig fer a la meva màquina i mai van sortir d'allà xD) vaig descobrir una pàgina que oferia 1GB de capacitat amb servei FTP, bases de dades MySQL i PHP.</p>
-<p>El problema és que per aquella època anava bastant malament, sovint no et podies connectar a la pàgina i vaig acabar desistint.</p>
-<p>Ara fa poc hi vaig tornar a entrar i han millorat considerablement el seu servei. A part de que sembla que no falla com ho feia (m'hi he registrat i he estat fent proves sense problemes) ara ofereixen moltes més coses:</p>
+
+<em>(si no entiendes catalán puedes utilizar el traductor situado en la barra lateral)</em>
+
+Quan vaig començar amb les meves primeres webs penjades a Internet (dic penjades a Internet perquè les primeres que vaig fer les vaig fer a la meva màquina i mai van sortir d'allà xD) vaig descobrir una pàgina que oferia 1GB de capacitat amb servei FTP, bases de dades MySQL i PHP.
+
+El problema és que per aquella època anava bastant malament, sovint no et podies connectar a la pàgina i vaig acabar desistint.
+
+Ara fa poc hi vaig tornar a entrar i han millorat considerablement el seu servei. A part de que sembla que no falla com ho feia (m'hi he registrat i he estat fent proves sense problemes) ara ofereixen moltes més coses:
+
 <ul>
 <li><strong>5500 MB d'espai</strong></li>
 <li><strong>200 GB de transferència</strong> mensual</li>
@@ -39,7 +44,11 @@ tags:
 <li>Servei d'<strong>estadístiques</strong></li>
 <li><strong>Sense publicitat</strong></li>
 </ul>
-<p>L'instal·lador automàtic d'scripts ens permet instal·lar scripts com ara Wordpress, phpBB, Joomla... en pocs clics i sense tenir que pujar els fitxers al servidor via FTP.</p>
-<p>A més ens permeten escollir entre diferents dominis per a generar el nostre domini principal i també registren un compte amb el teu nom d'<em>usuari.co.cc</em> (per exemple "<em>booletaire.co.cc</em>") i en vinculen automàticament les DNS amb el subdomini de byethost (que podria ser "<em>booletaire.byethost22.com</em>" [segons el domini principal que haguem escollit]).</p>
-<p>En definitiva, trobo que és una bona alternativa si esteu buscant hosting gratuït ;)</p>
-<p><a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a></p>
+
+L'instal·lador automàtic d'scripts ens permet instal·lar scripts com ara Wordpress, phpBB, Joomla... en pocs clics i sense tenir que pujar els fitxers al servidor via FTP.
+
+A més ens permeten escollir entre diferents dominis per a generar el nostre domini principal i també registren un compte amb el teu nom d'<em>usuari.co.cc</em> (per exemple "<em>booletaire.co.cc</em>") i en vinculen automàticament les DNS amb el subdomini de byethost (que podria ser "<em>booletaire.byethost22.com</em>" [segons el domini principal que haguem escollit]).
+
+En definitiva, trobo que és una bona alternativa si esteu buscant hosting gratuït ;)
+
+<a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a>

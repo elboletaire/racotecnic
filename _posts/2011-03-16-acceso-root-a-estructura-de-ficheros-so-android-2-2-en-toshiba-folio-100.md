@@ -20,7 +20,7 @@ excerpt: "<h3>Requisitos<img class=\"alignright size-full wp-image-1861\" title=
   el <a href=\"http://dext3r.komodin.org/\">TNTModFolio de Dexter</a>)</li>\r\n</ol>\r\n<h3>Definición
   Conceptual</h3>\r\nNuestro problema principal era que teníamos una web desarrollada
   en un servidor de test y para acceder a ella necesitábamos modificar el archivo
-  &lt;&lt;<em>hosts</em>&gt;&gt; para añadir una directiva de nombres.\r\n\r\nLo primero
+  <<<em>hosts</em>>> para añadir una directiva de nombres.\r\n\r\nLo primero
   que apreciamos en la Tablet de Toshiba fue que no podíamos acceder al market ni
   a las google apps ya que viene restringido de fábrica. Nos decantamos, así, por
   instalar un mod del SO desarrollado por Dexter. Estos mods tienen una eficacia y
@@ -54,45 +54,62 @@ tags:
 <li>Un dispositivo Android, en mi caso una <a href="http://www.toshiba-multimedia.com/es/journe-tabletas-marcos-digitales/folio100/">Tablet Toshiba Folio 100</a> con Android 2.2 con el SO cambiado (el test se realizó con el <a href="http://dext3r.komodin.org/">TNTModFolio de Dexter</a>)</li>
 </ol>
 <h3>Definición Conceptual</h3>
-<p>Nuestro problema principal era que teníamos una web desarrollada en un servidor de test y para acceder a ella necesitábamos modificar el archivo &lt;&lt;<em>hosts</em>&gt;&gt; para añadir una directiva de nombres.</p>
-<p>Lo primero que apreciamos en la Tablet de Toshiba fue que no podíamos acceder al market ni a las google apps ya que viene restringido de fábrica. Nos decantamos, así, por instalar un mod del SO desarrollado por Dexter. Estos mods tienen una eficacia y mejoras contrastadas y nos decidimos finalmente por el TNTMod.</p>
-<p>El TNTMod te permite tener permisos <em>root </em>en tu dispositivo pero para modificar los archivos de sistema hay que ser un poco más creativo.</p>
-<p>El único método que me ha dado resultado es el uso y configuración de ADB, una aplicación estilo <em>putty </em>para acceder mediante <em>Shell </em>o comando típicos como <em>pull </em>o <em>push </em>a los archivos de SO de un dispositivo Android. Mediante ADB es posible conectarse con un terminal a los archivos de sistema y comprobar la ruta del archivo hosts. También permite traértelo al pc local, modificarlo y después volverlo a meter en el sistema de archivos del dispositivo.<a id="more"></a><a id="more-1859"></a></p>
+
+Nuestro problema principal era que teníamos una web desarrollada en un servidor de test y para acceder a ella necesitábamos modificar el archivo <<<em>hosts</em>>> para añadir una directiva de nombres.
+
+Lo primero que apreciamos en la Tablet de Toshiba fue que no podíamos acceder al market ni a las google apps ya que viene restringido de fábrica. Nos decantamos, así, por instalar un mod del SO desarrollado por Dexter. Estos mods tienen una eficacia y mejoras contrastadas y nos decidimos finalmente por el TNTMod.
+
+El TNTMod te permite tener permisos <em>root </em>en tu dispositivo pero para modificar los archivos de sistema hay que ser un poco más creativo.
+
+El único método que me ha dado resultado es el uso y configuración de ADB, una aplicación estilo <em>putty </em>para acceder mediante <em>Shell </em>o comando típicos como <em>pull </em>o <em>push </em>a los archivos de SO de un dispositivo Android. Mediante ADB es posible conectarse con un terminal a los archivos de sistema y comprobar la ruta del archivo hosts. También permite traértelo al pc local, modificarlo y después volverlo a meter en el sistema de archivos del dispositivo.<a id="more"></a><a id="more-1859"></a>
 <h3>Procedimiento</h3>
-<p>Primero de todo hay que descargar e instalar android SDK (necesitarrás JAVA SDK):</p>
+
+Primero de todo hay que descargar e instalar android SDK (necesitarrás JAVA SDK):
+
 <ul>
 <li>Descargar tar.gz para Linux</li>
 <li>Extraer en carpeta personal</li>
-<li>Acceder a <code>/home/carpeta_personal/android-sdk/tools/android</code></li>
+<li>Acceder a `/home/carpeta_personal/android-sdk/tools/android`</li>
 <li>Instalar todos paquetes disponibles</li>
 </ul>
-<p>Ahora es momento de conectar la Toshiba Folio 100 al PC y hacer lo siguiente...</p>
+
+Ahora es momento de conectar la Toshiba Folio 100 al PC y hacer lo siguiente...
+
 <ul>
-<li>Activar el USB DEBUG en Android (<strong><em>Ajustes -&gt; Aplicaciones -&gt; Desarrollo)</em></strong></li>
-<li><code>/home/carpeta_personal/android-sdk/platform-tool/adb devices</code></li>
+<li>Activar el USB DEBUG en Android (<strong><em>Ajustes -> Aplicaciones -> Desarrollo)</em></strong></li>
+<li>`/home/carpeta_personal/android-sdk/platform-tool/adb devices`</li>
 <li>Nos devolverá una salida de este tipo: <strong><em>???????? No Permissions</em></strong></li>
 </ul>
-<p>Hay que configurar el driver para que reconozca la Tablet:</p>
+
+Hay que configurar el driver para que reconozca la Tablet:
+
 <ul>
-<li>Entrar en <code>/etc/udev/rules.d/</code></li>
-<li>Dentro de este directorio tiene que haber un fichero llamado <code>51-android.rules</code> o con otro número.</li>
+<li>Entrar en `/etc/udev/rules.d/`</li>
+<li>Dentro de este directorio tiene que haber un fichero llamado `51-android.rules` o con otro número.</li>
 <li> Editamos este fichero para añadir la siguiente línea:<br />
-[shell]SUBSYSTEMS==&quot;usb&quot;, ATTRS{idVendor}==&quot;0bb4&quot;,ATTRS{idProduct}==&quot;0c97&quot;, MODE=&quot;0666&quot;[/shell]</li>
+[shell]SUBSYSTEMS=='usb', ATTRS{idVendor}=='0bb4',ATTRS{idProduct}=='0c97', MODE='0666'[/shell]</li>
 </ul>
-<p>Como, seguramente, no sabremos el idVendor y el idProduct del dispositivo hacemos:</p>
-<p>[shell]$ lsusb[/shell]</p>
-<p>Esto nos mostrará la información de los dispositivos usb conectados.</p>
-<p>Seguidamente le damos permisos y reiniciamos el server de ADB:</p>
-<p>[shell]$ sudo chmod a+r /etc/udev/rules.d/51-android.rules<br />
+
+Como, seguramente, no sabremos el idVendor y el idProduct del dispositivo hacemos:
+
+[shell]$ lsusb[/shell]
+
+Esto nos mostrará la información de los dispositivos usb conectados.
+
+Seguidamente le damos permisos y reiniciamos el server de ADB:
+
+[shell]$ sudo chmod a+r /etc/udev/rules.d/51-android.rules<br />
 $ sudo ~/android-sdk/tools/adb kill-server<br />
 $ sudo ~/android-sdk/tools/adb start-server<br />
 * daemon not running. starting it now on port 5037 *<br />
 * daemon started successfully *<br />
 $ ~/android-sdk/tools/adb devices<br />
 List of devices attached<br />
-HT03JNX00008 device[/shell]</p>
-<p>Una vez tenemos el dispositivo vamos a acceder a él:</p>
-<p>[shell highlight="10"]$ ~/android-sdk/tools/adb shell<br />
+HT03JNX00008 device[/shell]
+
+Una vez tenemos el dispositivo vamos a acceder a él:
+
+[shell highlight="10"]$ ~/android-sdk/tools/adb shell<br />
 $ su<br />
 # mount<br />
 rootfs / rootfs ro 0 0<br />
@@ -104,11 +121,16 @@ tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0<br />
 /dev/block/mtdblock3 /system yaffs2 ro 0 0<br />
 /dev/block/mtdblock5 /data yaffs2 rw,nosuid,nodev 0 0<br />
 /dev/block/mtdblock4 /cache yaffs2 rw,nosuid,nodev 0 0<br />
-/dev/block/mmcblk0p1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1000,fmask=0711,dmask=0700,codepage=cp437,iocharset=iso8859-1,utf8 0 0[/shell]</p>
-<p>Remontamos el FS como rw para poder escribir o hacer pushes:</p>
-<p>[shell]# mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system[/shell]</p>
-<p><strong>YA TENEMOS ACCESO COMPLETO</strong></p>
+/dev/block/mmcblk0p1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1000,fmask=0711,dmask=0700,codepage=cp437,iocharset=iso8859-1,utf8 0 0[/shell]
+
+Remontamos el FS como rw para poder escribir o hacer pushes:
+
+[shell]# mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system[/shell]
+
+<strong>YA TENEMOS ACCESO COMPLETO</strong>
 <h3>Cosas a tener en cuenta</h3>
-<p>Si apagamos el dispositivo habrá que hacer otra vez la parte del mount ya que el dispositivo por defecto monta /system en ro. Si se desea dejar permanentemente en rw modificar reglas de mount.</p>
-<p>En todo momento del proceso hay que activar el modo debug de USB en la distro de Android que utilicemos.</p>
+
+Si apagamos el dispositivo habrá que hacer otra vez la parte del mount ya que el dispositivo por defecto monta /system en ro. Si se desea dejar permanentemente en rw modificar reglas de mount.
+
+En todo momento del proceso hay que activar el modo debug de USB en la distro de Android que utilicemos.
 <div id="_mcePaste" class="mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;"><img class="aligncenter size-full wp-image-1864" title="android" src="http://www.racotecnic.com/wp-content/uploads/2011/03/android.jpg" alt="" width="570" height="356" /></div>

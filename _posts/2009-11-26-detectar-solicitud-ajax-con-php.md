@@ -23,11 +23,14 @@ tags:
 - Ajax
 - Snippet
 ---
-<p>Si queréis <strong>detectar las solicitudes AJAX mediante PHP</strong> podéis hacerlo mediante la variable <em>HTTP_X_REQUESTED_WITH</em>:</p>
-<p>[php]/* Verificamos si hay ajax  */<br />
+
+Si queréis <strong>detectar las solicitudes AJAX mediante PHP</strong> podéis hacerlo mediante la variable <em>HTTP_X_REQUESTED_WITH</em>:
+
+[php]/* Verificamos si hay ajax  */<br />
 if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp; strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {<br />
 	/* Contenido ajax */<br />
 }else{<br />
 	/* Contenido normal */<br />
-}[/php]</p>
-<p>Id con cuidado porque algunos servidores no proporcionan la variable <em>HTTP_X_REQUESTED_WITH</em>, así que haced alguna prueba antes de ir con toda la confianza a usarlo directamente en vuestra aplicación ;)</p>
+}[/php]
+
+Id con cuidado porque algunos servidores no proporcionan la variable <em>HTTP_X_REQUESTED_WITH</em>, así que haced alguna prueba antes de ir con toda la confianza a usarlo directamente en vuestra aplicación ;)

@@ -20,11 +20,17 @@ categories:
 - Audio
 tags: []
 ---
-<p>El <a title="Maybe it's broken... :\&quot; data-mce-href=" href="http://audioblog.underave.net" target="_blank">Audioblog*</a> de underave ha sido, hasta el día de hoy, un punto de encuentro donde algunos Djs y Productores se habrán dejado caer alguna que otra vez, ya fuera para leer novedades sobre música, o para inspirarse con alguna de las entradas reflexivas que contenía.</p>
-<p>La inspiración por parte de los redactores colaboradores duró un año y desde entonces no se le ha dado más uso que el de consulta de sus antiguos contenidos.</p>
-<p>Desde <a title="Underave" href="http://www.underave.net" target="_blank">underave</a> decidimos ya hace tiempo clausurar el blog por tal de poder destinar los recursos que ocupaba para otros fines.</p>
-<p>Es por eso que hoy escribo esta entrada, para notificaros que todos los contenidos rescatables de dicho blog han sido traspasados a aquí, al Racó Tècnic, donde podréis consultarlos bajo la categoría "General".</p>
-<p>A continuación os dejo un listado con los artículos rescatados:</p>
+
+El <a title="Maybe it's broken... :\' data-mce-href=" href="http://audioblog.underave.net" target="_blank">Audioblog*</a> de underave ha sido, hasta el día de hoy, un punto de encuentro donde algunos Djs y Productores se habrán dejado caer alguna que otra vez, ya fuera para leer novedades sobre música, o para inspirarse con alguna de las entradas reflexivas que contenía.
+
+La inspiración por parte de los redactores colaboradores duró un año y desde entonces no se le ha dado más uso que el de consulta de sus antiguos contenidos.
+
+Desde <a title="Underave" href="http://www.underave.net" target="_blank">underave</a> decidimos ya hace tiempo clausurar el blog por tal de poder destinar los recursos que ocupaba para otros fines.
+
+Es por eso que hoy escribo esta entrada, para notificaros que todos los contenidos rescatables de dicho blog han sido traspasados a aquí, al Racó Tècnic, donde podréis consultarlos bajo la categoría "General".
+
+A continuación os dejo un listado con los artículos rescatados:
+
 <ul>
 <li><a href="../2010/01/sintesis-fm-el-patito-feo-de-la-sintetizacion-parte-1/" rel="bookmark">Síntesis FM: El patito feo de la sintetización. (Parte 1)</a></li>
 <li><a class="title" href="../2009/12/arnold-steiner-a-k-a-as1/" rel="bookmark">Arnold Steiner a.k.a AS1</a></li>
@@ -35,4 +41,5 @@ tags: []
 <li><a class="title" href="../2009/04/north-korean-speedcore/" rel="bookmark">North-Korean SPEEDCORE</a></li>
 <li><a class="title" href="../2009/03/derechos-de-autor/" rel="bookmark">Derechos de Autor</a></li>
 </ul>
-<p>* El enlace está puesto simbólicamente ya que voy a eliminar el blog ahora mismo xD</p>
+
+* El enlace está puesto simbólicamente ya que voy a eliminar el blog ahora mismo xD

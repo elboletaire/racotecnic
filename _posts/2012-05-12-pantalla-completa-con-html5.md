@@ -29,10 +29,14 @@ tags:
 - Webkit
 - fullscreen
 ---
-<p>El modo pantalla completa es un modo bastante molón que quizás ya hayáis visto en algunas páginas (como fb por ejemplo; el botón de pantalla completa de las fotos).</p>
-<p>Por ahora sólo es compatible con navegadores basados en Gecko (como Firefox) y Webkit (como Chrome).</p>
-<p>Sabiendo esto, simplemente tendremos que poner algún IF :)</p>
-<p>[js]<br />
+
+El modo pantalla completa es un modo bastante molón que quizás ya hayáis visto en algunas páginas (como fb por ejemplo; el botón de pantalla completa de las fotos).
+
+Por ahora sólo es compatible con navegadores basados en Gecko (como Firefox) y Webkit (como Chrome).
+
+Sabiendo esto, simplemente tendremos que poner algún IF :)
+
+[js]<br />
     fullscreen = function(e){<br />
           if (e.webkitRequestFullScreen) {<br />
             e.webkitRequestFullScreen();<br />
@@ -57,4 +61,4 @@ Podéis probarlo haciendo click <a href="#fullscreen" id="ejemplo-fullscreen">aq
         fullscreen(document.getElementById('content'));<br />
         return false;<br />
     }<br />
-</script></p>
+</script>

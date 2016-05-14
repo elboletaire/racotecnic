@@ -31,13 +31,18 @@ categories:
 tags:
 - Llibres
 ---
-<p><img class="aligncenter size-full wp-image-892" title="getting_real" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/getting_real.jpg" alt="getting_real" width="400" height="266" /></p>
-<p>No soy muy dado a aconsejar libros, pero para este caso creo que haré una excepción.</p>
-<p><strong>Getting real</strong> es un libro que explica técnicas, procesos, ideas,  costes y un sinfín de consejos sobre como se debe crear una aplicación web.<br />
-Entre los creadores del libro podemos destacar David Heinemeier Hansson, creador de <a href="http://es.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">Ruby on rails</a> y Jeff Bezos, CEO de <a href="http://www.amazon.com/" target="_blank">Amazon.com</a>.</p>
-<p><a id="more"></a><a id="more-889"></a><br />
+
+<img class="aligncenter size-full wp-image-892" title="getting_real" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/getting_real.jpg" alt="getting_real" width="400" height="266" />
+
+No soy muy dado a aconsejar libros, pero para este caso creo que haré una excepción.
+
+<strong>Getting real</strong> es un libro que explica técnicas, procesos, ideas,  costes y un sinfín de consejos sobre como se debe crear una aplicación web.<br />
+Entre los creadores del libro podemos destacar David Heinemeier Hansson, creador de <a href="http://es.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">Ruby on rails</a> y Jeff Bezos, CEO de <a href="http://www.amazon.com/" target="_blank">Amazon.com</a>.
+
+<a id="more"></a><a id="more-889"></a><br />
 Es difícil resumir el contenido del libro, así que os dejo la introducción de su web (traducida al castellano), y el enlace para poder leer el libro on-line en castellano también (o algo bastante parecido).<br />
-De todas formas si buscáis un poco seguro que encontráis el PDF por la red (por lo menos en inglés).</p>
+De todas formas si buscáis un poco seguro que encontráis el PDF por la red (por lo menos en inglés).
+
 <ul>
 <blockquote>
 <li> <strong>Informe del libro:</strong> Getting Real son la filosofia, de comercialización, diseño, programación y marqueting, de 37signals.com , unos dessarrolladores de aplicaciones web uasadas por más de un millón de personas y empresas de 37 países.</li>
@@ -45,6 +50,7 @@ De todas formas si buscáis un poco seguro que encontráis el PDF por la red (po
 <li><strong>¿Que hay para mí?</strong> todos aquellos que trabajan en aplicaciones web, incluyendo empresarios, diseñadores, programadores, ejecutivos o vendedores, encontrarán valor, nuevas perspectivas, y la inspiración de este práctico libro.</li>
 </blockquote>
 </ul>
+
 <ul>
 <blockquote>
 <li><strong>Libro en castellano: </strong><a href="http://gettingreal.37signals.com/GR_esp.php" target="_blank" rel="nofollow">Getting real (Castellano)</a></li>

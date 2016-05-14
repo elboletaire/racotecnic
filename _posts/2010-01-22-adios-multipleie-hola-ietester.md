@@ -23,11 +23,16 @@ tags:
 - Internet Explorer
 - IE6
 ---
-<p>Acabo de descubrir IETester, una aplicación para Windows (compatible con todas sus versiones) con la que podéis comprobar cómo se ven vuestras webs desde Internet Explorer (desde la versión 5.5 hasta la 8).</p>
-<p>Si habéis probado 'MultipleIE' sabréis lo <em>magníficamente bien</em> que va y probablemente también sabréis que dejó de funcionar con Windows Vista.</p>
-<p>No me enrollo más, os dejo aquí una imagen y el enlace para que lo probéis ya mismo:</p>
-<p style="text-align: center;"><a href="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" target="_blank"><img class="aligncenter" title="IETester" src="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" alt="IETester" width="595" height="344" /></a></p>
+
+Acabo de descubrir IETester, una aplicación para Windows (compatible con todas sus versiones) con la que podéis comprobar cómo se ven vuestras webs desde Internet Explorer (desde la versión 5.5 hasta la 8).
+
+Si habéis probado 'MultipleIE' sabréis lo <em>magníficamente bien</em> que va y probablemente también sabréis que dejó de funcionar con Windows Vista.
+
+No me enrollo más, os dejo aquí una imagen y el enlace para que lo probéis ya mismo:
+
+<a href="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" target="_blank"><img class="aligncenter" title="IETester" src="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" alt="IETester" width="595" height="344" /></a>
 <blockquote>
+
 <ul>
 <li>Web oficial: <a href="http://www.my-debugbar.com/wiki/IETester/HomePage" target="_blank" rel="nofollow">http://www.my-debugbar.com/wiki/IETester/HomePage</a></li>
 </ul>

@@ -24,6 +24,13 @@ tags:
 - edge prototype
 - canvas
 ---
-<p>Adobe está desarrollando un IDE para crear animaciones en canvas (HTML5). Echad un ojo porque se ve realmente interesante.</p>
-<p><object width="600" height="350"><param name="movie" value="http://images.tv.adobe.com/swf/player.swf"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="FlashVars" value="fileID=8185&context=64&embeded=true&environment=production"></param><embed src="http://images.tv.adobe.com/swf/player.swf" flashvars="fileID=8185&context=64&embeded=true&environment=production" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="350"></embed></object></p>
-<p>Si es que nos incitan a olvidar flash!! xD</p>
+
+Adobe está desarrollando un IDE para crear animaciones en canvas (HTML5). Echad un ojo porque se ve realmente interesante.
+
+<object width="600" height="350">
+</param>
+</param>
+</param>
+</param><embed src="http://images.tv.adobe.com/swf/player.swf" flashvars="fileID=8185&context=64&embeded=true&environment=production" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="350"></embed></object>
+
+Si es que nos incitan a olvidar flash!! xD

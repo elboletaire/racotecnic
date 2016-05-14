@@ -15,7 +15,8 @@ excerpt: "La empresa <strong>Pablo Software Solutions</strong> ha creado el edit
   Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo
   Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto
   para aquellos que acaban de empezar en estos temas. Algunas de las características
-  más significativas son:\r\n<ul>\r\n\t<li>Fácil configuración mediante la construcción
+  más significativas son:\r\n
+<ul>\r\n\t<li>Fácil configuración mediante la construcción
   en un asistente para configuración de servidor FTP, con varias páginas para configurar,
   la gestión de usuarios o su seguridad</li>\r\n\t<li>También a traves de un asistente
   se crean nuevas cuentas de usuario</li>\r\n\t<li>Apoyo a los sistemas que forman
@@ -42,7 +43,9 @@ tags:
 - FTP Server
 - Administració remota
 ---
-<p>La empresa <strong>Pablo Software Solutions</strong> ha creado el editor de FTPs <span style="color: #ff6600;"><strong>Quick ‘n Easy FTP Server Lite</strong></span>. Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto para aquellos que acaban de empezar en estos temas. Algunas de las características más significativas son:</p>
+
+La empresa <strong>Pablo Software Solutions</strong> ha creado el editor de FTPs <span style="color: #ff6600;"><strong>Quick ‘n Easy FTP Server Lite</strong></span>. Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto para aquellos que acaban de empezar en estos temas. Algunas de las características más significativas son:
+
 <ul>
 <li>Fácil configuración mediante la construcción en un asistente para configuración de servidor FTP, con varias páginas para configurar, la gestión de usuarios o su seguridad</li>
 <li>También a traves de un asistente se crean nuevas cuentas de usuario</li>
@@ -59,7 +62,11 @@ tags:
 <li>El servidor FTP se puede utilizar para desencadenar acciones como reproducir un sonido o ejecutar una aplicación.</li>
 <li>Sin límite de conexiones.</li>
 </ul>
-<p><a id="more"></a><a id="more-489"></a></p>
-<p style="text-align: center;"><a href="http://www.filebuzz.com/software_screenshot/full/quick__n_easy_ftp_server-60877.jpg"><img class="aligncenter" title="Quick and easy FTP server" src="http://www.filebuzz.com/software_screenshot/full/quick__n_easy_ftp_server-60877.jpg" alt="" width="468" height="359" /></a></p>
-<p style="text-align: center;"><a href="http://www.softpedia.com/screenshots/Quick-n-Easy-FTP-Server_3.png"><img class="aligncenter" title="Quick and easy FTP server configuration" src="http://www.softpedia.com/screenshots/Quick-n-Easy-FTP-Server_3.png" alt="" width="469" height="359" /></a></p>
-<blockquote><p><a title="Descargar quick 'n easy FTP server" href="http://www.pablosoftwaresolutions.com/html/quick__n_easy_ftp_server.html">Descargar Quick ‘n Easy FTP Server Lite </a></p></blockquote>
+
+<a id="more"></a><a id="more-489"></a>
+
+<a href="http://www.filebuzz.com/software_screenshot/full/quick__n_easy_ftp_server-60877.jpg"><img class="aligncenter" title="Quick and easy FTP server" src="http://www.filebuzz.com/software_screenshot/full/quick__n_easy_ftp_server-60877.jpg" alt="" width="468" height="359" /></a>
+
+<a href="http://www.softpedia.com/screenshots/Quick-n-Easy-FTP-Server_3.png"><img class="aligncenter" title="Quick and easy FTP server configuration" src="http://www.softpedia.com/screenshots/Quick-n-Easy-FTP-Server_3.png" alt="" width="469" height="359" /></a>
+<blockquote>
+<a title="Descargar quick 'n easy FTP server" href="http://www.pablosoftwaresolutions.com/html/quick__n_easy_ftp_server.html">Descargar Quick ‘n Easy FTP Server Lite </a></blockquote>

@@ -20,9 +20,13 @@ categories:
 tags:
 - Startup
 ---
-<p>Techcrunch es una web de visita obligada para todos aquellos que queremos saber el funcionamiento y las novedades de los mayores <a href="http://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_startup" target="_blank">Startups</a> de la red.</p>
-<p>Noticias  interesantes, novedades, empresas que empiezan (pero que darán que hablar),  y curiosidades de otras que llevan ya tiempo partiendo la pana.</p>
-<p><img class="aligncenter size-medium wp-image-826" title="techcrunch" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/techcrunch-300x187.png" alt="techcrunch" width="300" height="187" /></p>
+
+Techcrunch es una web de visita obligada para todos aquellos que queremos saber el funcionamiento y las novedades de los mayores <a href="http://es.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_startup" target="_blank">Startups</a> de la red.
+
+Noticias  interesantes, novedades, empresas que empiezan (pero que darán que hablar),  y curiosidades de otras que llevan ya tiempo partiendo la pana.
+
+<img class="aligncenter size-medium wp-image-826" title="techcrunch" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/techcrunch-300x187.png" alt="techcrunch" width="300" height="187" />
+
 <ul>
 <blockquote>
 <li><strong>Techcrunch:</strong> <a href="http://www.techcrunch.com/" target="_blank" rel="nofollow">http://www.techcrunch.com/</a></li>

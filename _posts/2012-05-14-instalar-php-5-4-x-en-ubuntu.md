@@ -28,14 +28,25 @@ tags:
 - Ubuntu 11.10
 - Ubuntu Oneiric
 ---
-<p>Podéis instalar la versión más reciente estable de PHP 5.4 en vuestro Ubuntu muy fácilmente gracias a este repositorio:</p>
-<p><a href="https://launchpad.net/~ondrej/+archive/php5" rel="nofollow external">https://launchpad.net/~ondrej/+archive/php5</a></p>
-<p>Añadid el repositorio siguiendo estos pasos y debería funcionar (provado en Ubuntu 12.04):</p>
-<p>[bash]sudo add-apt-repository ppa:ondrej/php5[/bash]</p>
-<blockquote><p><b>Nota (a 23/11/2013):</b> Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: <code>ppa:ondrej/php5-oldstable</code></p></blockquote>
-<p>Si no tenéis el comando <code>add-apt-repository</code> es porque no tenéis el paquete <code>python-software-properties</code> instalado. Instaladlo con aptitude si es así y podréis ejecutar el comando sin problemas.</p>
-<p>Una vez añadido el repositorio actualizáis la lista de paquetes:</p>
-<p>[bash]sudo apt-get update[/bash]</p>
-<p>E instaláis php5:</p>
-<p>[bash]sudo apt-get install php5 php5-cli php5-whatever[/bash]</p>
-<p>Probado en Ubuntu 11.10 y 12.04 x64 tanto con el módulo de apache mod_php5 como con fastFCGI (con apache en modo worker).</p>
+
+Podéis instalar la versión más reciente estable de PHP 5.4 en vuestro Ubuntu muy fácilmente gracias a este repositorio:
+
+<a href="https://launchpad.net/~ondrej/+archive/php5" rel="nofollow external">https://launchpad.net/~ondrej/+archive/php5</a>
+
+Añadid el repositorio siguiendo estos pasos y debería funcionar (provado en Ubuntu 12.04):
+
+[bash]sudo add-apt-repository ppa:ondrej/php5[/bash]
+<blockquote>
+<b>Nota (a 23/11/2013):</b> Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: `ppa:ondrej/php5-oldstable`</blockquote>
+
+Si no tenéis el comando `add-apt-repository` es porque no tenéis el paquete `python-software-properties` instalado. Instaladlo con aptitude si es así y podréis ejecutar el comando sin problemas.
+
+Una vez añadido el repositorio actualizáis la lista de paquetes:
+
+[bash]sudo apt-get update[/bash]
+
+E instaláis php5:
+
+[bash]sudo apt-get install php5 php5-cli php5-whatever[/bash]
+
+Probado en Ubuntu 11.10 y 12.04 x64 tanto con el módulo de apache mod_php5 como con fastFCGI (con apache en modo worker).

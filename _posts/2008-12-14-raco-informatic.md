@@ -19,4 +19,5 @@ categories:
 - General
 tags: []
 ---
-<p>I vet aquí que un dia ens vàrem arreplegar uns quants i vam començar a compartir els nostres coneixements...</p>
+
+I vet aquí que un dia ens vàrem arreplegar uns quants i vam començar a compartir els nostres coneixements...

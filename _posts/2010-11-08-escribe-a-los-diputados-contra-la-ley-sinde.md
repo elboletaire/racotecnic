@@ -19,9 +19,10 @@ categories:
 - General
 tags: []
 ---
-<p>
+
+
 Rellenando el siguiente formulario puedes enviar un mensaje a los diputados/as del congreso español en relación a la aprobación de la <a href="http://red-sostenible.net/index.php/Documentacion">Ley Sinde</a>. Escríbeles lo que consideres oportuno pero sé respetuoso, solo de esta manera nuestras peticiones serán escuchadas.<br />
-Una vez rellenado y enviado el formulario, entra en tu correo, tendrás que verificar un enlace para completar el envio.</p>
+Una vez rellenado y enviado el formulario, entra en tu correo, tendrás que verificar un enlace para completar el envio.
 <form id="new_message" class="new_message" action="http://xmailer.hacktivistas.net/es/message/mailer" method="post">
 <table class="nom">
 <tbody>
@@ -50,10 +51,13 @@ Una vez rellenado y enviado el formulario, entra en tu correo, tendrás que veri
 </tr>
 </tbody>
 </table>
-<p><a href="http://xmailer.hacktivistas.net/es/privacy">Política de Privacidad</a></p>
-<p><a href="http://code.autistici.org/svn/hamlab/xmailer/">xMailer</a> copyleft <a href="http://hacktivistas.net/">Isaac Hacksimov</a> 2009-2010, licencia <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>, powered by <a href="http://hacktivistas.net/">Hacktivistas.net</a></fieldset>
+
+<a href="http://xmailer.hacktivistas.net/es/privacy">Política de Privacidad</a>
+
+<a href="http://code.autistici.org/svn/hamlab/xmailer/">xMailer</a> copyleft <a href="http://hacktivistas.net/">Isaac Hacksimov</a> 2009-2010, licencia <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>, powered by <a href="http://hacktivistas.net/">Hacktivistas.net</a></fieldset>
 </form>
 <blockquote>
+
 <ul>
 <li> Vía:  <a rel="nofollow" href=" http://hacktivistas.net/node/53"> http://hacktivistas.net/node/53</a></li>
 <li> Más info:  <a rel="nofollow" href="http://xmailer.hacktivistas.net/">http://xmailer.hacktivistas.net/</a></li>
