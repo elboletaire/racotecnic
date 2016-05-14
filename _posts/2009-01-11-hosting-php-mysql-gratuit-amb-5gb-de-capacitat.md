@@ -23,8 +23,6 @@ tags:
 - Hosting
 ---
 
-<em>(si no entiendes catalán puedes utilizar el traductor situado en la barra lateral)</em>
-
 Quan vaig començar amb les meves primeres webs penjades a Internet (dic penjades a Internet perquè les primeres que vaig fer les vaig fer a la meva màquina i mai van sortir d'allà xD) vaig descobrir una pàgina que oferia 1GB de capacitat amb servei FTP, bases de dades MySQL i PHP.
 
 El problema és que per aquella època anava bastant malament, sovint no et podies connectar a la pàgina i vaig acabar desistint.
@@ -32,17 +30,17 @@ El problema és que per aquella època anava bastant malament, sovint no et podi
 Ara fa poc hi vaig tornar a entrar i han millorat considerablement el seu servei. A part de que sembla que no falla com ho feia (m'hi he registrat i he estat fent proves sense problemes) ara ofereixen moltes més coses:
 
 <ul>
-<li><strong>5500 MB d'espai</strong></li>
-<li><strong>200 GB de transferència</strong> mensual</li>
-<li>Compte <strong>FTP</strong> amb <strong>gestor de fitxers</strong> online</li>
-<li>Tauler de control amb <strong>instal·lador</strong> automàtic d'scripts (<strong>Fantastico</strong>)</li>
-<li>Suport amb <strong>PHP</strong></li>
-<li>Suport amb <strong>MySQL</strong> (fins a 50 bases de dades) amb <strong>phpMyAdmin</strong></li>
-<li>Suport tècnic gratuït</li>
-<li>Addon domains, Parked Domains i Subdominis (fins a 50 tots tres)</li>
-<li>Comptes d'<strong>e-mail</strong> (<strong>il·limitats</strong> amb webmail i <strong>records MX</strong> personals)</li>
-<li>Servei d'<strong>estadístiques</strong></li>
-<li><strong>Sense publicitat</strong></li>
+  <li><strong>5500 MB d'espai</strong></li>
+  <li><strong>200 GB de transferència</strong> mensual</li>
+  <li>Compte <strong>FTP</strong> amb <strong>gestor de fitxers</strong> online</li>
+  <li>Tauler de control amb <strong>instal·lador</strong> automàtic d'scripts (<strong>Fantastico</strong>)</li>
+  <li>Suport amb <strong>PHP</strong></li>
+  <li>Suport amb <strong>MySQL</strong> (fins a 50 bases de dades) amb <strong>phpMyAdmin</strong></li>
+  <li>Suport tècnic gratuït</li>
+  <li>Addon domains, Parked Domains i Subdominis (fins a 50 tots tres)</li>
+  <li>Comptes d'<strong>e-mail</strong> (<strong>il·limitats</strong> amb webmail i <strong>records MX</strong> personals)</li>
+  <li>Servei d'<strong>estadístiques</strong></li>
+  <li><strong>Sense publicitat</strong></li>
 </ul>
 
 L'instal·lador automàtic d'scripts ens permet instal·lar scripts com ara Wordpress, phpBB, Joomla... en pocs clics i sense tenir que pujar els fitxers al servidor via FTP.
