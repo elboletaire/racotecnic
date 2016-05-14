@@ -109,7 +109,6 @@ $this->Javascript->link(array('jquery-1.4.2.min', 'jquery.history'), false);
 Y ahora, la paginación con Ajax. Debajo de la línea que acabamos de añadir para cargar <em>jQuery </em>y el <em>History plugin</em> añadid lo siguiente:
 
 ~~~php
-
 $script = '
 jQuery(function($) { // paso $ para no tener problemas con otros frameworks JS
 	$.history.init(function(url){
