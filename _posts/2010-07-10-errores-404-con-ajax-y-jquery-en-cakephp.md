@@ -88,7 +88,8 @@ Tan simple como eso : )
 
 Finalmente, añadamos esto a nuestro template por defecto, o a nuestra hoja javascript común:
 
-[js]jQuery(document).ready(function($) {
+~~~javascript
+jQuery(document).ready(function($) {
 	// Ajax not found
 	$(this).ajaxError(function(event, request, opts){
 		if ( request.status == 404 )
@@ -96,7 +97,8 @@ Finalmente, añadamos esto a nuestro template por defecto, o a nuestra hoja java
 			alert(eval('(' + request.responseText + ')').message);
 		}
 	});
-});[/js]
+});
+~~~
 
 Con esto mostraremos una alerta mostrando el texto que hayamos definido en nuestro app_error al usuario que intente adquirir una url no existente en nuestra aplicación CakePHP.
 

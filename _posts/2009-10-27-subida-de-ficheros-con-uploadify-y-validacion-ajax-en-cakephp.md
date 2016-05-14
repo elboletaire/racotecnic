@@ -207,7 +207,8 @@ También hemos creado una capa oculta llamada "ajaxLoad" que contiene una imagen
 
 Ahora que tenemos la vista empezaremos su fichero JavaScript images.js. Digo empezaremos porque iremos por partes, primero haremos la subida de ficheros y luego la validación con Ajax.
 
-[js]// /app/webroot/js/page_specific/images.js
+~~~javascript
+// /app/webroot/js/page_specific/images.js
 $(function(){
 	/**
 	 * Validació amb Ajax
@@ -292,7 +293,8 @@ $(function(){
 			$(':submit').removeAttr('disabled');
 		}
 	});
-});[/js]
+});
+~~~
 
 La función **flashMessage** sirve para generar una capa "flashMessage" dinámica justo encima de la capa con clase ".add-info".
 
@@ -475,7 +477,8 @@ echo $javascript->object($output);
 
 Este fichero es el encargado de convertir el array que le enviemos desde el controlador con la información (ya sea un error o un mensaje de éxito) a JSON. La salida que generará será algo así:
 
-[js] // En caso de éxito
+~~~javascript
+ // En caso de éxito
 {
 	'success':
 	{
@@ -490,7 +493,8 @@ Este fichero es el encargado de convertir el array que le enviemos desde el cont
 		'message':'Error subiendo el fichero',
 		'data':'nombre_de_fichero.jpg'
 	}
-}[/js]
+}
+~~~
 
 El campo "data" no lo utilizaremos en este caso, pero está ahí para que veáis que se pueden enviar tantos datos de respuesta como queráis.
 
@@ -500,7 +504,8 @@ Ahora nos faltaría hacer la validación con Ajax de nuestro formulario.
 
 Empezaremos por acabar de completar el fichero JavaScript. Al fichero images.js añadidle las siguientes funciones:
 
-[js]// Continuación del fichero /app/webroot/js/page_specific/images.js
+~~~javascript
+// Continuación del fichero /app/webroot/js/page_specific/images.js
 // Convierte una_frase a unaFrase
 function camelize(string) {
 	var a = string.split('_'), i;
@@ -586,7 +591,8 @@ $('#ImageAddForm').submit(function(){
 		'json'
 	);
 	return false;
-});[/js]
+});
+~~~
 
 La función **camelize** es la encargada de convertir las cadenas como_esta a cadenas comoEsta. Esto nos sirve para encontrar la id del textbox al que está vinculado el error a partir de los errores retornados en JSON.
 
@@ -728,7 +734,8 @@ echo $javascript->object($output);
 
 Y su salida aproximada:
 
-[js]// Si ha habido algún error (fijaros que una de las imágenes se ha guardado correctamente)
+~~~javascript
+// Si ha habido algún error (fijaros que una de las imágenes se ha guardado correctamente)
 {'errors':{
 	'message':'<b>Error:<\/b> Hay campos que no son v\u00e1lidos, compru\u00e9balos por favor.',
 	'data':{
@@ -754,7 +761,8 @@ Y su salida aproximada:
 {'success':{
 	'message':'<b>Todas las im\u00e1genes han sido guardadas correctamente<\/b>'
 }}
-[/js]
+
+~~~
 
 Pues ya está! Si habéis seguido todos los pasos correctamente deberíais tener vuestro upload funcionando.
 

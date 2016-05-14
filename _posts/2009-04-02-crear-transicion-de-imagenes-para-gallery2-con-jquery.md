@@ -98,7 +98,8 @@ Básicamente nuestra función de JavaScript debe hacer:
 
 Llamaremos a esta función randomImages() (por ejemplo) y más adelante utilizaremos un contador para ejecutar dicha función indefinidamente.
 
-[js]function randomImages(){
+~~~javascript
+function randomImages(){
 // Cargamos el fichero random_image.php en la subcapa y lo ocultamos
 	$('#subcapa').load('random_image.php').hide();
 // Hacemos un fadeOut de la capa de 2000 milisegundos y al terminar ejecutamos una función
@@ -108,7 +109,8 @@ Llamaremos a esta función randomImages() (por ejemplo) y más adelante utilizar
 // Cargamos el contenido de la subcapa en la capa y hacemos un fadeIn de 2000 milisegundos
 		$('#capa').html($('#subcapa').html()).fadeIn(2000);
 	});
-}[/js]
+}
+~~~
 
 De nuevo, utilizad el botón "Show Source" <img class="alignnone" src="http://racotecnic.underave.net/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> para ver el código y los comentarios al completo.
 
@@ -116,7 +118,9 @@ He puesto 2000 milisegundos de tiempo para dar más o menos tiempo a cargar al s
 
 Ahora que ya tenemos nuestra función utilizaremos la función <em>setInterval(String fn, int interval)</em>. El primer parámetro de ésta es el nombre de la función (pasado como cadena de texto) y el segundo es el intervalo de tiempo que tarda en ejecutarse dicha función entre ejecución y ejecución.
 
-[js]setInterval('randomImages()', 7000);[/js]
+~~~javascript
+setInterval('randomImages()', 7000);
+~~~
 
 Ya tenemos todo el JavaScript que necesitaremos. Ahora sólo hace falta darle un poco de CSS e incluir el fichero PHP que hemos generado antes.
 

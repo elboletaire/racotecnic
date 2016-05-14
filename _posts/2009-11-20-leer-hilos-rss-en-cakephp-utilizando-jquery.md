@@ -235,7 +235,8 @@ En la <b>línea 2</b> he añadido el fichero javascript que se encargará de car
 En las <b>líneas 5, 6 y 7</b> (y luego se repite para cada blog) he añadido una lista de elementos con una ID cada uno.<strong> Esta ID debe coincidir con las opciones que hayáis puesto en el <i>switch</i> del método <i>rss</i></strong> (en <i>pages_controller.php</i>).
 
 Sólo nos queda hacer el fichero JavaScript encargado de cargar los hilos:
-[js]// /app/webroot/js/page_specific/blogs.js
+~~~javascript
+// /app/webroot/js/page_specific/blogs.js
 $(function(){
 	// ID de cada blog (debe coincidir con las ID de la vista y las del controlador)
 	var blogs = ['underave','zeta','psico','raco'];
@@ -255,7 +256,8 @@ $(function(){
 			});
 		});
 	});
-});[/js]
+});
+~~~
 
 El trozo de item.title.subtr(0,1).toUpperCase() + item.title..... es una pijada mía para que salga sólo la primera letra en mayúscula y el resto en minúscula. Si lo queréis sacar simplemente poned "item.title" y ya estará ;)
 

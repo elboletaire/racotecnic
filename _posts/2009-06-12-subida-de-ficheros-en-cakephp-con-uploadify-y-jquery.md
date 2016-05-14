@@ -215,7 +215,8 @@ Ahora que ya tenemos el formulario insertemos el JavaScript para que todo funcio
 
 Equivalente en JavaScript:
 
-`[js]$(document).ready(function() {
+~~~javascript
+$(document).ready(function() {
 	$('#imageFile').fileUpload ({
 		'uploader' : '/js/uploadify/uploader.swf',
 		'script' : 'upload/<?= $session->id() ?>',
@@ -237,7 +238,8 @@ Equivalente en JavaScript:
 		'folder': 'img/'
 	});
 });
-[/js]`
+
+~~~
 
 Sobre todo fijaros en que le paso como segundo parámetro a la url "upload" la id de la sesión actual. Esto junto con el beforeFilter del controlador puede ser vital para que os funcione correctamente uploadify con Cake.
 
@@ -284,7 +286,8 @@ Aquí tenéis la vista al completo con el helper:
 
 Y con Javascript:
 
-`[js]<script type='text/javascript'>
+~~~javascript
+<script type='text/javascript'>
 $(document).ready(function() {
 	$('#imageFile').fileUpload ({
 		'uploader' : '/js/uploadify/uploader.swf',
@@ -318,7 +321,8 @@ $(document).ready(function() {
 	<?= $form->submit(__('Guardar',true)); ?>
 </div>
 <?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
-<?=$form->end() ?>[/js]`
+<?=$form->end() ?>
+~~~
 
 Vale, recordemos un poco todo lo que hemos hecho para ver que no nos hemos dejado nada:
 

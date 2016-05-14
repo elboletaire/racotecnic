@@ -82,19 +82,23 @@ Lo siguiente que haremos es importar nuestro código con las funciones que tenga
 
 Esto es porque, por ejemplo, Prototype y jQuery utilizan el mismo método de llamada, el dólar "$". Debemos cambiar éste método en jQuery para que funcione correctamente el código, para ello utilizaremos el método nonConflict de jQuery, así:
 
-`[js]<script type='text/javascript'>
+~~~javascript
+<script type='text/javascript'>
 $miMetodoDeLlamadaJquery = jQuery.noConflict();
-</script>[/js]`
+</script>
+~~~
 
 Evidentemente no es nada recomendable poner un método de llamada tan largo ;) Yo utilizaría $jQ:
 
-`[js]<script type='text/javascript'>
+~~~javascript
+<script type='text/javascript'>
 $jQ = jQuery.noConflict();
 
 $jQ(function(){
 	$jQ('div#search').hide();
 }
-</script>[/js]`
+</script>
+~~~
 
 Este pequeño ejemplo, insertado en nuestra cabecera del tema, ocultaría la capa con id="search".
 

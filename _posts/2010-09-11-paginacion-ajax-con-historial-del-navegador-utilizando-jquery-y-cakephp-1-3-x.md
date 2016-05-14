@@ -143,16 +143,20 @@ Por esto, dentro del método `$.history.init()` ejecutamos nuestro método de ca
 
 Después de eso, llamamos al método `$.ajax()` para hacer nuestra petición Ajax. De aquí todo está explicado en la documentación, salvo esta línea:
 
-[js]$('#pags').html($(data).find('#pags'));[/js]
+~~~javascript
+$('#pags').html($(data).find('#pags'));
+~~~
 
 Aquí indicamos que queremos reemplazar todo el contenido de la tabla <em>#pags</em> con ese mismo contenido de nuestra petición Ajax (de ahí el `$(data).find("#pags")` donde filtramos "#pags" de "data" [nuestra respuesta Ajax]).
 
 Por último, en este trozo de código:
 
-[js]$('a[href*=/page:]').live('click', function(e) {
+~~~javascript
+$('a[href*=/page:]').live('click', function(e) {
         $.history.load($(this).attr('href'));
         e.preventDefault(); // return false;
-    });[/js]
+    });
+~~~
 
 Estamos indicando que siempre que se pulse un enlace que contenga en su ruta (href) "/page:" se dispare el método `$.history.load()`, al que le pasamos la url del enlace que estemos pulsando.
 
