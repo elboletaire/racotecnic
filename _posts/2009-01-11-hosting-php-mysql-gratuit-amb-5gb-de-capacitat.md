@@ -29,19 +29,17 @@ El problema és que per aquella època anava bastant malament, sovint no et podi
 
 Ara fa poc hi vaig tornar a entrar i han millorat considerablement el seu servei. A part de que sembla que no falla com ho feia (m'hi he registrat i he estat fent proves sense problemes) ara ofereixen moltes més coses:
 
-<ul>
-  <li><strong>5500 MB d'espai</strong></li>
-  <li><strong>200 GB de transferència</strong> mensual</li>
-  <li>Compte <strong>FTP</strong> amb <strong>gestor de fitxers</strong> online</li>
-  <li>Tauler de control amb <strong>instal·lador</strong> automàtic d'scripts (<strong>Fantastico</strong>)</li>
-  <li>Suport amb <strong>PHP</strong></li>
-  <li>Suport amb <strong>MySQL</strong> (fins a 50 bases de dades) amb <strong>phpMyAdmin</strong></li>
-  <li>Suport tècnic gratuït</li>
-  <li>Addon domains, Parked Domains i Subdominis (fins a 50 tots tres)</li>
-  <li>Comptes d'<strong>e-mail</strong> (<strong>il·limitats</strong> amb webmail i <strong>records MX</strong> personals)</li>
-  <li>Servei d'<strong>estadístiques</strong></li>
-  <li><strong>Sense publicitat</strong></li>
-</ul>
+- **5500 MB d'espai**
+- **200 GB de transferència** mensual
+- Compte **FTP** amb **gestor de fitxers** online
+- Tauler de control amb **instal·lador** automàtic d'scripts (**Fantastico**)
+- Suport amb **PHP**
+- Suport amb **MySQL** (fins a 50 bases de dades) amb **phpMyAdmin**
+- Suport tècnic gratuït
+- Addon domains, Parked Domains i Subdominis (fins a 50 tots tres)
+- Comptes d'**e-mail** (**il·limitats** amb webmail i **records MX** personals)
+- Servei d'**estadístiques**
+- **Sense publicitat**
 
 L'instal·lador automàtic d'scripts ens permet instal·lar scripts com ara Wordpress, phpBB, Joomla... en pocs clics i sense tenir que pujar els fitxers al servidor via FTP.
 

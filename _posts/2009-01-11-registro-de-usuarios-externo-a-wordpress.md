@@ -11,21 +11,13 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "<blockquote><i><b>Nota:</b> Esta entrada se refiere a la versión de Wordpress
-  2.6.x. Es posible que estos métodos esten obsoletos -y por ello no funcione- en
-  versiones más recientes de WP.</i></blockquote>\r\n\r\nEstos días me estoy dedicando
-  (entre otras cosas...) a unificar el registro de usuarios de la página <a title=\"Visitar
-  underave.net\" href=\"http://www.underave.net\" target=\"_blank\">www.underave.net</a>
-  debido a que utilizamos distintas plataformas PHP (<a title=\"Visitar phpBB.com\"
-  href=\"http://www.phpbb.com\" target=\"_blank\">phpBB</a>, <a title=\"Visitar wordpress.org\"
-  href=\"http://www.wordpress.org\" target=\"_blank\">Wordpress</a> y <a title=\"Visitar
-  mediawiki.org\" href=\"http://www.mediawiki.org\" target=\"_blank\">MediaWiki</a>).\r\n\r\nEn
-  este post explicaré cómo registrar usuarios desde un formulario externo a WordPress.\r\n\r\nPero
-  explicaré lo justo y necesario (es decir, únicamente el código requerido para registrar
-  los usuarios tras mandar los datos vía POST desde un formulario), como siempre,
-  todo lo demás lo podéis encontrar fácilmente <a title=\"Búsqueda en google 'datos
-  GET POST HTML PHP'\" href=\"http://www.google.com/search?hl=ca&amp;q=enviar+datos+get+post+php+html&amp;btnG=Cerca&amp;lr=\"
-  target=\"_blank\">utilizando google</a>.\r\n\r\n"
+excerpt: "Estos días me estoy dedicando (entre otras cosas...) a unificar el
+  registro de usuarios de la página www.underave.net
+  debido a que utilizamos distintas plataformas PHP (phpBB, Wordpress y MediaWiki).
+  En este post explicaré cómo registrar usuarios desde un formulario externo a WordPress.
+  Pero explicaré lo justo y necesario (es decir, únicamente el código requerido
+  para registrar los usuarios tras mandar los datos vía POST desde un formulario),
+  como siempre, todo lo demás lo podéis encontrar fácilmente utilizando google."
 wordpress_id: 92
 wordpress_url: http://racoinformatic.underave.net/?p=92
 date: '2009-01-11 04:51:22 +0100'
@@ -40,7 +32,9 @@ tags:
 - Administració usuaris
 ---
 
-><i><b>Nota:</b> Esta entrada se refiere a la versión de Wordpress 2.6.x. Es posible que estos métodos esten obsoletos -y por ello no funcione- en versiones más recientes de WP.</i>
+> **Nota:** Esta entrada se refiere a la versión de Wordpress 2.6.x. Es posible
+que estos métodos esten obsoletos —y por ello no funcione— en versiones más
+recientes de WP.
 
 Estos días me estoy dedicando (entre otras cosas...) a unificar el registro de usuarios de la página <a title="Visitar underave.net" href="http://www.underave.net" target="_blank">www.underave.net</a> debido a que utilizamos distintas plataformas PHP (<a title="Visitar phpBB.com" href="http://www.phpbb.com" target="_blank">phpBB</a>, <a title="Visitar wordpress.org" href="http://www.wordpress.org" target="_blank">Wordpress</a> y <a title="Visitar mediawiki.org" href="http://www.mediawiki.org" target="_blank">MediaWiki</a>).
 
@@ -62,7 +56,7 @@ require_once('../blog/wp-config.php');
 require_once('../blog/wp-includes/registration.php');
 ~~~
 
-Donde "<strong>../blog/</strong>" corresponde a la ruta relativa de vuestro WordPress.
+Donde "**../blog/**" corresponde a la ruta relativa de vuestro WordPress.
 
 Una vez añadidos los ficheros necesarios (<em>wp-config.php</em> carga las variables de WordPress y algunos ficheros necesarios y el fichero <em>registration.php</em> nos permite utilizar las funciones de registro de usuarios) tan solo tenemos que llamar a la función para registrar usuarios. Tenemos dos opciones: la sencilla (<em>wp_create_user</em>) con sólo dos parámetros y la compleja (<em>wp_insert_user</em>) dónde le podemos pasar todos los detalles del usuario en un array asociativo.
 

@@ -24,26 +24,24 @@ tags:
 
 Para que no os salgan tan caros los dominios este año ;)
 
-<ul>
-<li><strong>OYH3</strong> - $2.50 off / $7.45 any .COM (renewals too)</li>
-<li><strong>BTPS7</strong> - 20% any order of $50 or more</li>
-<li><strong>BTPS255</strong> - 25% off any order of $100 or more</li>
-<li><strong>OYH1</strong> - 10% off whatever</li>
-<li><strong>OYH2</strong> - $5 off a $30 purchase</li>
-<li><strong>BTPS4</strong> - 10% off anything</li>
-<li><strong>chill1</strong> - 10% off</li>
-<li><strong>chill2</strong> - $5 off $30</li>
-<li><strong>chill3</strong> - $7.45 .coms</li>
-<li><strong>hash1</strong> - 10% off</li>
-<li><strong>hash2</strong> - $5 off $30</li>
-<li><strong>hash3</strong> - $7.45 .com registration</li>
-<li><strong>gdd1101c</strong> - 10% off any order of $40 or more</li>
-</ul>
-<blockquote>
-Fuente y más descuentos:
+- **OYH3** - $2.50 off / $7.45 any .COM (renewals too)
+- **BTPS7** - 20% any order of $50 or more
+- **BTPS255** - 25% off any order of $100 or more
+- **OYH1** - 10% off whatever
+- **OYH2** - $5 off a $30 purchase
+- **BTPS4** - 10% off anything
+- **chill1** - 10% off
+- **chill2** - $5 off $30
+- **chill3** - $7.45 .coms
+- **hash1** - 10% off
+- **hash2** - $5 off $30
+- **hash3** - $7.45 .com registration
+- **gdd1101c** - 10% off any order of $40 or more
 
-<ul>
-<li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank">Godaddy promo code and coupon list for 2009</a></li>
-<li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank">GoDaddy Coupon Code</a></li>
-</ul>
+<blockquote>
+  Fuente y más descuentos:
+  <ul>
+    <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank">Godaddy promo code and coupon list for 2009</a></li>
+    <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank">GoDaddy Coupon Code</a></li>
+  </ul>
 </blockquote>

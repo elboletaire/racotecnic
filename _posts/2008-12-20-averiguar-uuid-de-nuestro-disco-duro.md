@@ -13,13 +13,11 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "Hoy me he encontrado con un problema que me ha llevado de cabeza un buen
   rato. Era una tontería, pero desde luego no era nada lógico.\r\n\r\nRecientemente
-  instalé un disco duro de 1TB y al <a title=\"Búsqueda en google por 'configurar
-  fstab'\" href=\"http://www.google.com/search?ie=UTF-8&amp;oe=UTF-8&amp;sourceid=navclient&amp;gfns=1&amp;q=configurar+fstab\"
-  target=\"_blank\">configurar fstab</a> lo hice utilizando la ruta a los dispositivos
-  (tipo \"/dev/sdd1\" y similares).\r\n\r\nTras llevar mi ordenador unos días sin
+  instalé un disco duro de 1TB y al configurar fstab lo hice utilizando la ruta a los dispositivos
+  (tipo \"/dev/sdd1\" y similares). Tras llevar mi ordenador unos días sin
   apagarse, hoy lo he actualizado y al reiniciar me había cambiado los destinos de
   los discos duros. Es decir, sde ha pasado a ser sdc, sdc a ser sdd... y así con
-  varios de ellos (desde luego, no lo encuentro nada lógico :S )\r\n\r\n"
+  varios de ellos."
 wordpress_id: 63
 wordpress_url: http://racoinformatic.underave.net/?p=63
 date: '2008-12-20 03:03:41 +0100'
@@ -38,6 +36,7 @@ Recientemente instalé un disco duro de 1TB y al <a title="Búsqueda en google p
 Tras llevar mi ordenador unos días sin apagarse, hoy lo he actualizado y al reiniciar me había cambiado los destinos de los discos duros. Es decir, sde ha pasado a ser sdc, sdc a ser sdd... y así con varios de ellos (desde luego, no lo encuentro nada lógico :S )
 
 <a id="more"></a><a id="more-63"></a>
+
 La solución ha sido reemplazar estas rutas por "<a title="UUID en Wikipedia" href="http://en.wikipedia.org/wiki/UUID" target="_blank">UUID</a>". Para averiguar dicho identificador debéis hacer lo siguiente:
 
     user@user:~$ ls -l /dev/disk/by-uuid/
