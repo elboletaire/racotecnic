@@ -100,23 +100,23 @@ Este pequeño ejemplo, insertado en nuestra cabecera del tema, ocultaría la cap
 
 Imaginemos que en lugar de estar insertado en la cabecera quisiéramos tener nuestro código en un fichero a parte, guardado en alguna carpeta del tema, o del plugin. Por supuesto, lo primero que haríamos es eliminar las etiquetas "script" de nuestro código, dado que será un fichero .js. Una vez guardado nuestro código en un fichero js y éste subido a alguna carpeta en el servidor (en principio en la carpeta del tema o plugin) lo importamos con wp_enqueue_script:
 
-`~~~php
+~~~php
 <?php
 wp_enqueue_script('jquery');
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery'));
 wp_head();
 ?>
 
-~~~`
+~~~
 
 Recordad que si estáis programando una extensión de jquery debéis pasar un array como tercer parámetro (deps) a la función indicando los ficheros de los que depende vuestra librería. Si hubierais programado una extensión de una extensión deberíais indicarlo así:
 
-`~~~php
+~~~php
 <?php
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery','extension-jquery'));
 ?>
 
-~~~`
+~~~
 
 Espero que os sirva, salud!
 <blockquote>
