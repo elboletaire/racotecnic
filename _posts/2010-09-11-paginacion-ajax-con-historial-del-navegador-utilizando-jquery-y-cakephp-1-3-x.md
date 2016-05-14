@@ -12,7 +12,7 @@ author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "<a href=\"http://racotecnic.com/tutorials/cake13/pags\"><img class=\"size-full
-  wp-image-1621 alignright\" title=\"pagination\" src=\"http://racotecnic.com/wp-content/uploads/2010/09/pagination.png\"
+  wp-image-1621 alignright\" title=\"pagination\" src=\"{{ site.url }}/uploads/2010/09/pagination.png\"
   alt=\"\" width=\"279\" height=\"126\" /></a>Voy a explicaros una manera sencilla
   de hacer la paginación de vuestras webs y aplicaciones hechas con CakePHP en Ajax
   utilizando jQuery y un plugin para que el historial del navegador funcione correctamente.\r\n\r\nPara
@@ -40,7 +40,7 @@ tags:
 - Paginació
 ---
 
-<a href="http://racotecnic.com/tutorials/cake13/pags"><img class="size-full wp-image-1621 alignright" title="pagination" src="http://racotecnic.com/wp-content/uploads/2010/09/pagination.png" alt="" width="279" height="126" /></a>Voy a explicaros una manera sencilla de hacer la paginación de vuestras webs y aplicaciones hechas con CakePHP en Ajax utilizando jQuery y un plugin para que el historial del navegador funcione correctamente.
+<a href="http://racotecnic.com/tutorials/cake13/pags"><img class="size-full wp-image-1621 alignright" title="pagination" src="{{ site.url }}/uploads/2010/09/pagination.png" alt="" width="279" height="126" /></a>Voy a explicaros una manera sencilla de hacer la paginación de vuestras webs y aplicaciones hechas con CakePHP en Ajax utilizando jQuery y un plugin para que el historial del navegador funcione correctamente.
 
 Para <a href="http://racotecnic.com/tutorials/cake13/pags">mi ejemplo</a> he utilizado <a rel="nofollow external" href="http://github.com/cakephp/cakephp/downloads">CakePHP 1.3.3</a> y <a rel="nofollow external" href="http://jquery.com/">jQuery 1.4.2</a>. El plugin que comentaba anteriormente se llama jQuery History Plugin y lo podéis <a rel="external nofollow" href="http://github.com/tkyk/jquery-history-plugin">descargar de gitHub</a>.
 

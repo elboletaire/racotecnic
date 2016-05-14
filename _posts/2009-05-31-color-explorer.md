@@ -24,7 +24,7 @@ tags:
 
 Gracias al blog de <a title="Visitar el blog de mantis" href="http://www.mantistechs.com/blog/2009/05/13/color-explorer-la-herramienta-definitiva-para-paletas-de-color.html" target="_blank">mantis</a> he descubierto "Color Explorer".
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png"><img class="size-medium wp-image-614 aligncenter" title="captura-color-explorer-e280a2-color-matching-mozilla-firefox" src="http://racotecnic.underave.net/wp-content/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox-300x163.png" alt="captura-color-explorer-e280a2-color-matching-mozilla-firefox" width="300" height="163" /></a>
+<a href="{{ site.url }}/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png"><img class="size-medium wp-image-614 aligncenter" title="captura-color-explorer-e280a2-color-matching-mozilla-firefox" src="{{ site.url }}/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox-300x163.png" alt="captura-color-explorer-e280a2-color-matching-mozilla-firefox" width="300" height="163" /></a>
 
 Todos sabemos que la elección de colores es un punto determinante de un diseño, no sólo por los significados de los colores si no por que estos acompañen al visitante de forma agradable y no produciéndole terribles dolores de cabeza.
 

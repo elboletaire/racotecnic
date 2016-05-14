@@ -18,7 +18,7 @@ excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.unde
   servirán como <strong>gestores de descarga</strong> para páginas como <strong>megaupload
   o rapidshare</strong>. A continuación os expongo un par más que encuentro bastante
   interesantes.\r\n<h3><img class=\"alignleft size-full wp-image-1205\" title=\"tucan_logo\"
-  src=\"http://racotecnic.underave.net/wp-content/uploads/2009/07/tucan_logo.png\"
+  src=\"{{ site.url }}/uploads/2009/07/tucan_logo.png\"
   alt=\"tucan_logo\" width=\"150\" height=\"150\" />Tucan Manager</h3>\r\nSoftware
   libre español desarrollado en python. Disponible para Windows y Linux.\r\n\r\nMuy
   sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, zshare,
@@ -43,7 +43,7 @@ tags:
 Hace unos días <a title="Ver entrada" href="http://racotecnic.underave.net/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/" target="_self">gerno nos explicaba</a> cómo facilitarnos las descargas mediante el plugin Illimitux y la aplicación FreeRapid Downloader.
 
 A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como <strong>gestores de descarga</strong> para páginas como <strong>megaupload o rapidshare</strong>. A continuación os expongo un par más que encuentro bastante interesantes.
-<h3><img class="alignleft size-full wp-image-1205" title="tucan_logo" src="http://racotecnic.underave.net/wp-content/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager</h3>
+<h3><img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager</h3>
 
 Software libre español desarrollado en python. Disponible para Windows y Linux.
 
@@ -53,7 +53,7 @@ Muy sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, z
 
 <a id="more"></a><a id="more-718"></a>
 
-<img class="aligncenter size-full wp-image-1206" title="tucan_screen2" src="http://racotecnic.underave.net/wp-content/uploads/2009/07/tucan_screen2.png" alt="tucan_screen2" width="579" height="336" />
+<img class="aligncenter size-full wp-image-1206" title="tucan_screen2" src="{{ site.url }}/uploads/2009/07/tucan_screen2.png" alt="tucan_screen2" width="579" height="336" />
 
 <a href="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150"><img class="alignnone" title="JDownloader logo" src="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150" alt="" width="169" height="169" align="right" /></a>
 <h3>jDownloader</h3>
@@ -68,4 +68,4 @@ Además tiene varios plugins interesantes, como el de interfaz web (con el que p
 
 <a title="JDownloader" rel="nofollow" href="http://www.jdownloader.org" target="_blank">www.jdownloader.org</a>
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2009/07/JDownloader.png"><img class="alignnone size-full wp-image-721" title="JDownloader" src="http://racotecnic.underave.net/wp-content/uploads/2009/07/JDownloader.png" alt="JDownloader" width="589" height="377" /></a>
+<a href="{{ site.url }}/uploads/2009/07/JDownloader.png"><img class="alignnone size-full wp-image-721" title="JDownloader" src="{{ site.url }}/uploads/2009/07/JDownloader.png" alt="JDownloader" width="589" height="377" /></a>

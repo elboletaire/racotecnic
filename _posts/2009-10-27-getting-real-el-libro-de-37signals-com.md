@@ -12,7 +12,7 @@ author_login: DPAM23
 author_email: dpam23@hotmail.com
 author_url: http://
 excerpt: "<img class=\"aligncenter size-full wp-image-892\" title=\"getting_real\"
-  src=\"http://racotecnic.underave.net/wp-content/uploads/2009/10/getting_real.jpg\"
+  src=\"{{ site.url }}/uploads/2009/10/getting_real.jpg\"
   alt=\"getting_real\" width=\"400\" height=\"266\" />\r\n\r\nNo soy muy dado a aconsejar
   libros, pero para este caso creo que haré una excepción.\r\n\r\n<strong>Getting
   real</strong> es un libro que explica técnicas, procesos, ideas,  costes y un sinfín
@@ -32,7 +32,7 @@ tags:
 - Llibres
 ---
 
-<img class="aligncenter size-full wp-image-892" title="getting_real" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/getting_real.jpg" alt="getting_real" width="400" height="266" />
+<img class="aligncenter size-full wp-image-892" title="getting_real" src="{{ site.url }}/uploads/2009/10/getting_real.jpg" alt="getting_real" width="400" height="266" />
 
 No soy muy dado a aconsejar libros, pero para este caso creo que haré una excepción.
 

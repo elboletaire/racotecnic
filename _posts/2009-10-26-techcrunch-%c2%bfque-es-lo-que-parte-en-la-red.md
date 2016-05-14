@@ -25,7 +25,7 @@ Techcrunch es una web de visita obligada para todos aquellos que queremos saber 
 
 Noticias  interesantes, novedades, empresas que empiezan (pero que darán que hablar),  y curiosidades de otras que llevan ya tiempo partiendo la pana.
 
-<img class="aligncenter size-medium wp-image-826" title="techcrunch" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/techcrunch-300x187.png" alt="techcrunch" width="300" height="187" />
+<img class="aligncenter size-medium wp-image-826" title="techcrunch" src="{{ site.url }}/uploads/2009/10/techcrunch-300x187.png" alt="techcrunch" width="300" height="187" />
 
 <ul>
 <blockquote>

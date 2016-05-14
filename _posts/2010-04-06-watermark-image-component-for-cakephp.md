@@ -93,11 +93,11 @@ class FooController extends AppController<br />
 }[/php]
 
 <strong>Original files used for demonstrations:</strong><br />
-<img class="size-full wp-image-1464 aligncenter" title="imatge23" src="http://racotecnic.com/wp-content/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" /><br />
-<img class="alignnone size-full wp-image-1470" title="watermark" src="http://racotecnic.com/wp-content/uploads/2010/04/watermark.png" alt="" width="177" height="50" />
+<img class="size-full wp-image-1464 aligncenter" title="imatge23" src="{{ site.url }}/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" /><br />
+<img class="alignnone size-full wp-image-1470" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.png" alt="" width="177" height="50" />
 <h4>Resize:</h4>
 
-<img class="alignnone size-full wp-image-1461" title="resizecrop" src="http://racotecnic.com/wp-content/uploads/2010/04/resizecrop.jpeg" alt="" width="300" height="200" />
+<img class="alignnone size-full wp-image-1461" title="resizecrop" src="{{ site.url }}/uploads/2010/04/resizecrop.jpeg" alt="" width="300" height="200" />
 
 [php]$this->Watermark->setImage($image_path);<br />
 $this->Watermark->resize(array('type' => 'resizecrop'), 'size' => array('300', '200'));<br />
@@ -114,14 +114,14 @@ $this->Watermark->generate($dest_path);[/php]
 <em>* Resizing criteria extracted from <a rel="nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">iamkoa labs image upload component</a></em>
 <h4>Rotate:</h4>
 
-<img class="size-full wp-image-1466 aligncenter" title="rotate" src="http://racotecnic.com/wp-content/uploads/2010/04/rotate.jpeg" alt="" width="655" height="655" />
+<img class="size-full wp-image-1466 aligncenter" title="rotate" src="{{ site.url }}/uploads/2010/04/rotate.jpeg" alt="" width="655" height="655" />
 
 [php]$this->Watermark->setImage($image_path);<br />
 $this->Watermark->rotateImage(array('degrees' => 45));<br />
 $this->Watermark->generate($dest_path);[/php]
 <h4>Apply watermark:</h4>
 
-<img class="alignnone size-full wp-image-1472" title="watermark" src="http://racotecnic.com/wp-content/uploads/2010/04/watermark.jpeg" alt="" width="425" height="500" />
+<img class="alignnone size-full wp-image-1472" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.jpeg" alt="" width="425" height="500" />
 
 [php]$this->Watermark->setImage($image_path);<br />
 $this->Watermark->setWatermark(array('file' => $watermark_file, 'position' => 'bottom right', 'size' => '150%'));<br />
@@ -129,7 +129,7 @@ $this->Watermark->applyWatermark();<br />
 $this->Watermark->generate($dest_path);[/php]
 <h4>All together:</h4>
 
-<img class="alignnone size-full wp-image-1473" title="all_together" src="http://racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="355" height="354" />
+<img class="alignnone size-full wp-image-1473" title="all_together" src="{{ site.url }}/uploads/2010/04/all_together.jpeg" alt="" width="355" height="354" />
 
 [php]$this->Watermark->setImage($image_path);<br />
 $this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));<br />
@@ -141,7 +141,7 @@ $this->Watermark->generate($dest_path);<br />
 
 Changing order:
 
-<img class="alignnone size-full wp-image-1475" title="all_together2" src="http://racotecnic.com/wp-content/uploads/2010/04/all_together2.jpeg" alt="" width="300" height="200" />
+<img class="alignnone size-full wp-image-1475" title="all_together2" src="{{ site.url }}/uploads/2010/04/all_together2.jpeg" alt="" width="300" height="200" />
 
 [php]$this->Watermark->setImage($image_path);<br />
 $this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));<br />

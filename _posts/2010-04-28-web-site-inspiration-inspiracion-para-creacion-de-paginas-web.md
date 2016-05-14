@@ -25,7 +25,7 @@ tags:
 - web site design
 ---
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="http://racotecnic.underave.net/wp-content/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a>
+<a href="{{ site.url }}/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="{{ site.url }}/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a>
 
 <ul>
 <li><a rel="nofollow" href="http://www.webdesign-inspiration.com/" target="_blank">http://www.webdesign-inspiration.com/</a></li>

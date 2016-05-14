@@ -32,7 +32,7 @@ Además  por si esto fuera poco, crean un vídeo presentación (cosa que está 
 
 Conectad el audio  y echadle un vistazo, de verdad que vale la pena.
 
-<img class="aligncenter size-full wp-image-1164" title="snappages" src="http://racotecnic.underave.net/wp-content/uploads/2009/11/snappages.png" alt="snappages" width="460" height="358" />
+<img class="aligncenter size-full wp-image-1164" title="snappages" src="{{ site.url }}/uploads/2009/11/snappages.png" alt="snappages" width="460" height="358" />
 <blockquote>
 
 <ul>

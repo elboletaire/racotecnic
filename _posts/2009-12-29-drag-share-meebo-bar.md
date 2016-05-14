@@ -35,7 +35,7 @@ Una herramienta para que los mismos usuarios puedan compartir nuestros trabajos.
 
 ¡Estupendo!
 
-<img class="size-full wp-image-1276  aligncenter" title="meebo_bar" src="http://racotecnic.underave.net/wp-content/uploads/2009/12/meebo_bar.png" alt="" width="451" height="124" />
+<img class="size-full wp-image-1276  aligncenter" title="meebo_bar" src="{{ site.url }}/uploads/2009/12/meebo_bar.png" alt="" width="451" height="124" />
 
 Además tampoco os perdáis la Meebo Chat Bar , que emula la barra de chat del facebook. Parece muy muy potente y está también visible en la web anteriormente citada.
 <blockquote>

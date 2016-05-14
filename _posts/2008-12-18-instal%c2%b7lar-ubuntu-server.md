@@ -25,9 +25,9 @@ Escullo ubuntu perquè
 Com que és versió servidor no
   té entorn gràfic, per tant pots fer servir qualsevol cpu que tinguis tirada per
   casa (aquell pentium II que encara deus guardar a l'armari ;) ).\r\n\r\nBé doncs,
-  anem per feina...\r\n\r\n<a href=\"http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png\"><img
+  anem per feina...\r\n\r\n<a href=\"{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png\"><img
   class=\"size-full wp-image-36 aligncenter\" title=\"captura-sun-xvm-virtualbox-ubuntu-hwvirtex\"
-  src=\"http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png\"
+  src=\"{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png\"
   alt=\"Instal·lació d'ubuntu server\" width=\"576\" height=\"432\" /></a>\r\n\r\n"
 wordpress_id: 33
 wordpress_url: http://racoinformatic.underave.net/?p=33
@@ -50,7 +50,7 @@ Com que és versió servidor no té entorn gràfic, per tant pots fer servir qua
 
 Bé doncs, anem per feina...
 
-<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png"><img class="size-full wp-image-36 aligncenter" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png" alt="Instal·lació d'ubuntu server" width="576" height="432" /></a>
+<a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png"><img class="size-full wp-image-36 aligncenter" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex.png" alt="Instal·lació d'ubuntu server" width="576" height="432" /></a>
 
 <a id="more"></a><a id="more-33"></a>
 
@@ -89,21 +89,31 @@ Escullo <a href="http://es.wikipedia.org/wiki/ReiserFS" target="_blank">ReiserFS
 
 Al final us haurà d'haver quedat una taula de particions similar a la següent (teniu en compte que estic treballant amb una màquina virtual que només té 10GB d'espai):
 
-[caption id="attachment_42" align="aligncenter" width="576" caption="Taula de particions"]<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6.png"><img class="size-full wp-image-42" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6.png" alt="Taula de particions" width="576" height="432" /></a>[/caption]
+<figure>
+  <a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6.png"><img class="size-full wp-image-42" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-6.png" alt="Taula de particions" width="576" height="432" /></a>
+  <figcaption>
+    Taula de particions
+  </figcaption>
+</figure>
 
 Seleccioneu "Finish partitioning" i començarà a instal·lar el sistema base.
 
-<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7.png"><img class="aligncenter size-full wp-image-43" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7.png" alt="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7" width="563" height="136" /> </a><br />
+<a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7.png"><img class="aligncenter size-full wp-image-43" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7.png" alt="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-7" width="563" height="136" /> </a><br />
 Un cop acabada la instal·lació dels paquets bàsics ens demanarà informació sobre l'usuari que voldrem emprar (nom, contrassenya...) i ens preguntarà si volem crear una carpeta privada encriptada per a ocultar millor les dades. Això ho deixo al vostre criteri, encara que si només voleu el servidor com a servidor web no trobo que faci falta.
 
 Ara passarà a configurar "apt" per començar a descarregar paquets d'internet, ens demanarà la configuració del servidor intermediari (proxy), com segurament no en tindrem el deixem en blanc i continuem. Ens pregunta què volem fer a l'hora d'actualitzar el sistema, escollim "No automatic updates" ja que sempre és millor fer-les manualment. La tercera opció, <a href="http://www.canonical.com/projects/landscape" target="_blank">Landscape</a>, és una eina d'administració de <a href="http://www.canonical.com/" target="_blank">Canonical</a>, no he tingut el gust de provar-la però no pinta gens malament, ara... has de pagar 150$ anuals per cada node que vulguis administrar amb Landscape.
 
-[caption id="attachment_44" align="aligncenter" width="576" caption="Instal·lació d&#39;altres paquets"]<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8.png"><img class="size-full wp-image-44" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8.png" alt="Instal·lació d'altres paquets" width="576" height="432" /></a>[/caption]
+<figure>
+  <a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8.png"><img class="size-full wp-image-44" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-8.png" alt="Instal·lació d'altres paquets" width="576" height="432" /></a>
+  <figcaption>
+    Instal·lació d&#39;altres paquets
+  </figcaption>
+</figure>
 
 Ara escollirem els paquets addicionals que vulguem instal·lar. Donat que aquest mini manual és per a instal·lar només Ubuntu server, no marcaré cap paquet. La meva intenció és ensenyar-vos a instal·lar aquests paquets des de la consola més endavant, però si necessiteu ¡JA! un servidor web, marqueu la segona opció, <a href="http://ca.wikipedia.org/wiki/LAMP" target="_blank">LAMP</a> server (Linux Apache + MySQL + PHP, Python i/o Ruby).
 
 Acabem la instal·lació prement continuar.
 
-<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9.png"><img class="aligncenter size-full wp-image-45" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9.png" alt="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9" width="557" height="129" /></a>
+<a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9.png"><img class="aligncenter size-full wp-image-45" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9.png" alt="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-9" width="557" height="129" /></a>
 
 Bé, com heu pogut veure, no ha estat res que no poguéssiu haver fet vosaltres sols.

@@ -15,9 +15,9 @@ excerpt: "En este blog os explicare todo el proceso para proyectar en distintas 
   Night en Mephisto.\r\n\r\nPrimero diseñamos la instalación visual donde vamos a
   proyectar.\r\n\r\nCreamos un plano con el diseño de las telas, creando la forma
   deseada donde proyectaremos, aquí os muestro nuestra instalación:\r\n
-<a href=\"http://racotecnic.underave.net/wp-content/uploads/2009/04/mephisto-escenario1.jpg\"><img
+<a href=\"{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg\"><img
   class=\"size-full wp-image-468 aligncenter\" title=\"F:A_FIUZZSindar2008DeconewMephisto
-  escenario02.dwg Model (1\" src=\"http://racotecnic.underave.net/wp-content/uploads/2009/04/mephisto-escenario1.jpg\"
+  escenario02.dwg Model (1\" src=\"{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg\"
   alt=\"F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1\" width=\"482\"
   height=\"275\" /></a>\r\n\r\n"
 wordpress_id: 466
@@ -40,7 +40,7 @@ Primero diseñamos la instalación visual donde vamos a proyectar.
 
 Creamos un plano con el diseño de las telas, creando la forma deseada donde proyectaremos, aquí os muestro nuestra instalación:
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2009/04/mephisto-escenario1.jpg"><img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="http://racotecnic.underave.net/wp-content/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" /></a>
+<a href="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg"><img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" /></a>
 
 <a id="more"></a><a id="more-466"></a><br />
 Nosotros creamos las imágenes con el software AEE (Adobe alter effects).

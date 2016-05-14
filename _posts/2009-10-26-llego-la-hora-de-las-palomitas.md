@@ -62,11 +62,11 @@ Si queréis podéis seguir leyendo más sobre el producto en <a rel="nofollow" h
 <a id="more"></a><a id="more-837"></a><br />
 En fin, que es como una pequeña estación multimedia conectada a internet en la que podemos tener el bittorrent descargando películas a la vez que estamos viendo vídeos del youtube (o descargándolos).. tiene conexiones para varios USB, además de huecos para discos duro SATA para ampliarle la capacidad al gusto de cada uno... tiene decenas de especificaciones más... en esta imagen podéis ver algunas de ellas:
 
-<img class="size-full wp-image-840 aligncenter" title="caracteristicas_popcornhour" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" width="498" height="260" />
+<img class="size-full wp-image-840 aligncenter" title="caracteristicas_popcornhour" src="{{ site.url }}/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" width="498" height="260" />
 
 Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quejan de que el PopCorn Hour <strong>se calienta en exceso</strong> aunque dicen que añadiendo un ventilador desaparecen los problemas.
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_03.jpg"><img class="alignnone size-thumbnail wp-image-838" title="A110_03" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_03-150x150.jpg" alt="A110_03" width="150" height="150" /></a><a href="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_04.jpg"><img class="alignnone size-thumbnail wp-image-839" title="A110_04" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_04-150x150.jpg" alt="A110_04" width="150" height="150" /></a>
+<a href="{{ site.url }}/uploads/2009/10/A110_03.jpg"><img class="alignnone size-thumbnail wp-image-838" title="A110_03" src="{{ site.url }}/uploads/2009/10/A110_03-150x150.jpg" alt="A110_03" width="150" height="150" /></a><a href="{{ site.url }}/uploads/2009/10/A110_04.jpg"><img class="alignnone size-thumbnail wp-image-839" title="A110_04" src="{{ site.url }}/uploads/2009/10/A110_04-150x150.jpg" alt="A110_04" width="150" height="150" /></a>
 <blockquote>
 
 <ul>

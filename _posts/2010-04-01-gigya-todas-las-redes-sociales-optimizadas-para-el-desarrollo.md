@@ -24,8 +24,8 @@ excerpt: "¿Cuántas veces has tenido que integrar una de tus aplicaciones web c
   target=\"_blank\">MySpace</a> o cualquier otra de las redes sociales que puedes
   integrar con Gigya.\r\n\r\nPara utilizarlo simplemente necesitas registrarte en
   su web y añadir aquellos servicios que quieras utilizar desde el panel de control:\r\n
-<a href=\"http://racotecnic.underave.net/wp-content/uploads/2010/04/gigya_1.png\"><img
-  class=\"size-medium wp-image-1447 aligncenter\" title=\"gigya_1\" src=\"http://racotecnic.underave.net/wp-content/uploads/2010/04/gigya_1-300x159.png\"
+<a href=\"{{ site.url }}/uploads/2010/04/gigya_1.png\"><img
+  class=\"size-medium wp-image-1447 aligncenter\" title=\"gigya_1\" src=\"{{ site.url }}/uploads/2010/04/gigya_1-300x159.png\"
   alt=\"\" width=\"300\" height=\"159\" /></a>"
 wordpress_id: 1446
 wordpress_url: http://racotecnic.underave.net/?p=1446
@@ -55,7 +55,7 @@ Con <a rel="nofollow" href="http://www.gigya.com" target="_blank">Gigya</a> tien
 
 Para utilizarlo simplemente necesitas registrarte en su web y añadir aquellos servicios que quieras utilizar desde el panel de control:
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2010/04/gigya_1.png"><img class="size-medium wp-image-1447 aligncenter" title="gigya_1" src="http://racotecnic.underave.net/wp-content/uploads/2010/04/gigya_1-300x159.png" alt="" width="300" height="159" /></a><a id="more"></a><a id="more-1446"></a>Además de la integración que podáis hacer vosotros mismos junto con la <a rel="nofollow" href="http://wiki.gigya.com/" target="_blank">documentación de Gigya</a> podéis encontrar plugins e integraciones ya hechas para CMS como <a rel="nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">Wordpress</a> o <a rel="nofollow" href="http://extensions.joomla.org/extensions/external-contents/widgets/3168">Joomla</a>.
+<a href="{{ site.url }}/uploads/2010/04/gigya_1.png"><img class="size-medium wp-image-1447 aligncenter" title="gigya_1" src="{{ site.url }}/uploads/2010/04/gigya_1-300x159.png" alt="" width="300" height="159" /></a><a id="more"></a><a id="more-1446"></a>Además de la integración que podáis hacer vosotros mismos junto con la <a rel="nofollow" href="http://wiki.gigya.com/" target="_blank">documentación de Gigya</a> podéis encontrar plugins e integraciones ya hechas para CMS como <a rel="nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">Wordpress</a> o <a rel="nofollow" href="http://extensions.joomla.org/extensions/external-contents/widgets/3168">Joomla</a>.
 
 [cb type="company"]Gigya[/cb]
 <blockquote>

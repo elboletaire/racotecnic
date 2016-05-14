@@ -67,6 +67,6 @@ Una vez agregado seleccionáis la pestaña <em>Complementos disponibles</em>, bu
 
 Cuando lo tengáis instalado, al crear un nuevo proyecto, podréis seleccionar <em>Android Application</em> como plantilla de proyecto.
 
-<a href="http://racotecnic.underave.net/wp-content/uploads/2009/04/nuevo-proyecto-android.png"><img class="size-full wp-image-477 aligncenter" title="nuevo-proyecto-android" src="http://racotecnic.underave.net/wp-content/uploads/2009/04/nuevo-proyecto-android.png" alt="nuevo-proyecto-android" width="375" height="95" /></a>
+<a href="{{ site.url }}/uploads/2009/04/nuevo-proyecto-android.png"><img class="size-full wp-image-477 aligncenter" title="nuevo-proyecto-android" src="{{ site.url }}/uploads/2009/04/nuevo-proyecto-android.png" alt="nuevo-proyecto-android" width="375" height="95" /></a>
 
 *Esto está mal dicho, ya que aunque la aplicación la desarrollemos en Java luego ésta es traducida a un lenguaje comprensible por los dispositivos con S.O. Android.

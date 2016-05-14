@@ -23,7 +23,7 @@ excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) <a title=\"Leer la entrada e
   por este mensaje.\r\n\r\nVayamos a Mi PC / Panel de Control / Actualizaciones automáticas
   y habilitemos la casilla \"Notificarme, pero no descargarlas ni instalarlas...\"\r\n
 <img class=\"size-medium wp-image-704 aligncenter\"
-  title=\"Actualizaciones de windows\" src=\"http://racotecnic.underave.net/wp-content/uploads/2009/07/Captura.png\"
+  title=\"Actualizaciones de windows\" src=\"{{ site.url }}/uploads/2009/07/Captura.png\"
   alt=\"Actualizaciones de windows\" />\r\n\r\n"
 wordpress_id: 703
 wordpress_url: http://racotecnic.underave.net/?p=703
@@ -44,7 +44,7 @@ Como ya he dicho esto es la medida de prevención, por ello necesitaremos una in
 
 Vayamos a Mi PC / Panel de Control / Actualizaciones automáticas y habilitemos la casilla "Notificarme, pero no descargarlas ni instalarlas..."
 
-<img class="size-medium wp-image-704 aligncenter" title="Actualizaciones de windows" src="http://racotecnic.underave.net/wp-content/uploads/2009/07/Captura.png" alt="Actualizaciones de windows" />
+<img class="size-medium wp-image-704 aligncenter" title="Actualizaciones de windows" src="{{ site.url }}/uploads/2009/07/Captura.png" alt="Actualizaciones de windows" />
 
 <a id="more"></a><a id="more-703"></a><br />
 ¿Porqué hacemos esto? Porque el mensaje de Windows Original no es más que una actualización del sistema, si evitamos descargarla e instalarla ya no tendremos que preocuparnos más por ello (sólo intenta instalarse una vez).
