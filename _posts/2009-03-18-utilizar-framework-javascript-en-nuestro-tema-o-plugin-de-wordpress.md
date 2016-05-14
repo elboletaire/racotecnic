@@ -48,20 +48,18 @@ wp_enqueue_script( 'handle', 'src', 'deps', 'ver');
 
 Y sus parámetros:
 
-<ul>
-<li>**handle:** Nombre del script, en minúscula.</li>
-<li>**src:** (opcional) Ruta al script desde el directorio raíz de Wordpress. Ejemplo: '/wp-contents/themes/nombredeltema/lib/functions.js'. Este parámetro solo es requerido para los scripts que no están incluidos en wordpress. Por defecto está como false.</li>
-<li>**deps:** (opcional) array conteniendo los "handle" de los cuales este escript depende (es decir, aquellos escripts que deben ser cargados antes que el nuestro). Éste parámetro sólo lo utilizaremos para importar ficheros JavaScript desconocidos para Wordpress (nuestro fichero de funciones, por ejemplo). Falso por defecto.</li>
-<li>**ver:** (opcional) Cadena con la versión del script. Por defecto en falso.</li>
-</ul>
+- **handle:** Nombre del script, en minúscula.
+- **src:** (opcional) Ruta al script desde el directorio raíz de Wordpress. Ejemplo: '/wp-contents/themes/nombredeltema/lib/functions.js'. Este parámetro solo es requerido para los scripts que no están incluidos en wordpress. Por defecto está como false.
+- **deps:** (opcional) array conteniendo los "handle" de los cuales este escript depende (es decir, aquellos escripts que deben ser cargados antes que el nuestro). Éste parámetro sólo lo utilizaremos para importar ficheros JavaScript desconocidos para Wordpress (nuestro fichero de funciones, por ejemplo). Falso por defecto.
+- **ver:** (opcional) Cadena con la versión del script. Por defecto en falso.
 
 Algunos de los "handle" que podéis utilizar son:
 
 <ul>
-<li><a title="Visitar web oficial jQuery" href="http://www.jquery.com/" target="_blank">jquery</a></li>
-<li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank">scriptacolous</a></li>
-<li><a title="Visitar web oficial Prototype" href="http://www.prototypejs.org/" target="_blank">prototype</a></li>
-<li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank">swfupload</a></li>
+  <li><a title="Visitar web oficial jQuery" href="http://www.jquery.com/" target="_blank">jquery</a></li>
+  <li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank">scriptacolous</a></li>
+  <li><a title="Visitar web oficial Prototype" href="http://www.prototypejs.org/" target="_blank">prototype</a></li>
+  <li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank">swfupload</a></li>
 </ul>
 
 Podéis ver <a title="Ver lista completa" href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script#Parameters" target="_blank">una lista completa</a> en el <a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank">Codex de Wordpress</a>.
@@ -109,8 +107,6 @@ Imaginemos que en lugar de estar insertado en la cabecera quisiéramos tener nue
 wp_enqueue_script('jquery');
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery'));
 wp_head();
-?>
-
 ~~~
 
 Recordad que si estáis programando una extensión de jquery debéis pasar un array como tercer parámetro (deps) a la función indicando los ficheros de los que depende vuestra librería. Si hubierais programado una extensión de una extensión deberíais indicarlo así:
@@ -118,17 +114,15 @@ Recordad que si estáis programando una extensión de jquery debéis pasar un ar
 ~~~php
 <?php
 wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery','extension-jquery'));
-?>
-
 ~~~
 
 Espero que os sirva, salud!
-<blockquote>
-Páginas de referencia:
 
-<ul>
-<li><a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank">Codex Wordpress</a></li>
-<li><a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">Referencia función wp_enqueue_script</a></li>
-<li><a title="Visitar documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank">jQuery API</a></li>
-</ul>
+<blockquote>
+  Páginas de referencia:
+  <ul>
+    <li><a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank">Codex Wordpress</a></li>
+    <li><a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">Referencia función wp_enqueue_script</a></li>
+    <li><a title="Visitar documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank">jQuery API</a></li>
+  </ul>
 </blockquote>

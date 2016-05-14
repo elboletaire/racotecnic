@@ -11,27 +11,11 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "
-<ul>\r\n\t<li><a href=\"#intro\">Introducción</a></li>\r\n\t<li><a href=\"#pasos\">Primeros
-  pasos (tarjetas compatibles) </a></li>\r\n\t<li><a href=\"#madwifi\">Instalar driver
-  Madwifi</a>\r\n
-<ul>\r\n\t<li><a href=\"#monitor\">Activar modo monitor</a></li>\r\n</ul>\r\n</li>\r\n\t<li><a
-  href=\"#installaircrack\">Instalar aircrack-ng</a></li>\r\n\t<li><a href=\"#wep\">Crackeando
-  redes WEP</a>\r\n
-<ul>\r\n\t<li><a href=\"#monitor\">Activar modo monitor</a></li>\r\n\t<li><a
-  href=\"#airodump\">Escanear redes y capturar paquetes</a></li>\r\n\t<li><a href=\"#macfilter\">Comprobar
-  bloqueo MAC</a></li>\r\n\t<li><a href=\"#injection\">Inyección de paquetes (sin
-  bloqueo MAC)</a></li>\r\n\t<li><a href=\"#macinjection\">Inyección de paquetes (con
-  bloqueo MAC)</a></li>\r\n\t<li><a href=\"#macchange\">Cambiar dirección MAC de la
-  interfaz de red</a></li>\r\n\t<li><a href=\"#authentication\">Autenticación en el
-  router</a></li>\r\n\t<li><a href=\"#aircrack\">Averiguando la clave con aircrack-ng</a></li>\r\n</ul>\r\n</li>\r\n\t<li><a
-  href=\"#descargas\">Descarga de ficheros</a></li>\r\n\t<li><a href=\"#referencias\">Páginas
-  de referencia</a></li>\r\n</ul>\r\n<a name=\"intro\"></a>Hace poco me volví a interesar
-  por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas)
-  que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar
-  debéis tener presente que esto es ilegal en la mayor parte de los países así que
-  si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**.
-  Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.\r\n\r\n"
+excerpt: "Hace poco me volví a interesar por este tema y me costó tanto lograrlo
+  (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una
+  entrada reuniendo todos los pasos. Antes de continuar debéis tener presente
+  que esto es ilegal en la mayor parte de los países así que si vais a hacer
+  uso de ello **deberá ser sobre VUESTRA red WiFi**."
 wordpress_id: 286
 wordpress_url: http://racotecnic.underave.net/?p=286
 date: '2009-03-19 19:40:51 +0100'
@@ -45,75 +29,91 @@ tags:
 - WEP
 ---
 
-<ul>
-<li><a href="#intro">Introducción</a></li>
-<li><a href="#pasos">Primeros pasos (tarjetas compatibles) </a></li>
-<li><a href="#madwifi">Instalar driver Madwifi</a>
+- [Introducción](#intro)
+- [Primeros pasos (tarjetas compatibles) ](#pasos)
+- [Instalar driver Madwifi](#madwifi)
+  + [Activar modo monitor](#monitor)
+- [Instalar aircrack-ng](#installaircrack)
+- [Crackeando redes WEP](#wep)
+  + [Activar modo monitor](#monitor)
+  + [Escanear redes y capturar paquetes](#airodump)
+  + [Comprobar bloqueo MAC](#macfilter)
+  + [Inyección de paquetes (sin bloqueo MAC)](#injection)
+  + [Inyección de paquetes (con bloqueo MAC)](#macinjection)
+  + [Cambiar dirección MAC de la interfaz de red](#macchange)
+  + [Autenticación en el router](#authentication)
+  + [Averiguando la clave con aircrack-ng](#aircrack)
+- [Descarga de ficheros](#descargas)
+- [Páginas de referencia](#referencias)
 
-<ul>
-<li><a href="#monitor">Activar modo monitor</a></li>
-</ul>
-</li>
-<li><a href="#installaircrack">Instalar aircrack-ng</a></li>
-<li><a href="#wep">Crackeando redes WEP</a>
-
-<ul>
-<li><a href="#monitor">Activar modo monitor</a></li>
-<li><a href="#airodump">Escanear redes y capturar paquetes</a></li>
-<li><a href="#macfilter">Comprobar bloqueo MAC</a></li>
-<li><a href="#injection">Inyección de paquetes (sin bloqueo MAC)</a></li>
-<li><a href="#macinjection">Inyección de paquetes (con bloqueo MAC)</a></li>
-<li><a href="#macchange">Cambiar dirección MAC de la interfaz de red</a></li>
-<li><a href="#authentication">Autenticación en el router</a></li>
-<li><a href="#aircrack">Averiguando la clave con aircrack-ng</a></li>
-</ul>
-</li>
-<li><a href="#descargas">Descarga de ficheros</a></li>
-<li><a href="#referencias">Páginas de referencia</a></li>
-</ul>
-
-<a name="intro"></a>Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**. Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.
+<a name="intro"></a> Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**. Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.
 
 <a id="more"></a><a id="more-286"></a>
-<h3><a name="pasos"></a>Primeros pasos</h3>
 
-El primer paso será averiguar si nuestra tarjeta WiFi permite que la activemos en modo monitor. El modo monitor nos permite hacer un tipo de ataque que reduce considerablemente el tiempo de obtención de las claves (de unos días a unos minutos). No obstante, con cualquier tarjeta podéis obtener claves, el problema es que con una tarjeta sin modo monitor tardaréis días o semanas (o quizás nunca la consigáis).  En <a title="Ver listado de tarjetas en elhacker.net" href="http://hwagm.elhacker.net/htm/tarjetas.htm" target="_blank">este enlace</a> hay un buen listado de tarjetas inalámbricas dónde se nos indica cuáles están preparadas para hacer inyección (modo monitor) y cuáles no. Si vuestra tarjeta está en esta lista y en la celda de "Inyección" pone "Lx", ¡premio! Vuestra tarjeta permite la inyección de tráfico. Yo realizaré las pruebas con una D-link DWL con chipset Atheros (cuesta unos 25€ en cualquier tienda de informática).  Ahora que sabemos que nuestra tarjeta es compatible debemos instalar los drivers "Madwifi" para dicha tarjeta, ya que son los que nos permiten la inyección de tráfico y el uso de la aplicación aircrack-ng (la utilizada para averiguar las claves wifi).  Antes de poder instalar estos drivers necesitáis las herramientas de compilación y las cabeceras necesarias de linux (sin ello la instalación no se completaría). Así que accedemos a una terminal como administrador (tecleando "su" en ella) e instalamos las herramientas mencionadas:
+## <a name="pasos"></a>Primeros pasos
 
+El primer paso será averiguar si nuestra tarjeta WiFi permite que la activemos en modo monitor. El modo monitor nos permite hacer un tipo de ataque que reduce considerablemente el tiempo de obtención de las claves (de unos días a unos minutos). No obstante, con cualquier tarjeta podéis obtener claves, el problema es que con una tarjeta sin modo monitor tardaréis días o semanas (o quizás nunca la consigáis).
+
+En <a title="Ver listado de tarjetas en elhacker.net" href="http://hwagm.elhacker.net/htm/tarjetas.htm" target="_blank">este enlace</a> hay un buen listado de tarjetas inalámbricas dónde se nos indica cuáles están preparadas para hacer inyección (modo monitor) y cuáles no.
+
+Si vuestra tarjeta está en esta lista y en la celda de "Inyección" pone "Lx", ¡premio! Vuestra tarjeta permite la inyección de tráfico.
+
+Yo realizaré las pruebas con una D-link DWL con chipset Atheros (cuesta unos 25€ en cualquier tienda de informática).
+
+Ahora que sabemos que nuestra tarjeta es compatible debemos instalar los drivers "Madwifi" para dicha tarjeta, ya que son los que nos permiten la inyección de tráfico y el uso de la aplicación aircrack-ng (la utilizada para averiguar las claves wifi).
+
+Antes de poder instalar estos drivers necesitáis las herramientas de compilación y las cabeceras necesarias de linux (sin ello la instalación no se completaría). Así que accedemos a una terminal como administrador (tecleando "su" en ella) e instalamos las herramientas mencionadas:
+
+~~~bash
 aptitude install build-essential linux-headers-$(uname -r)
-<h3><a name="madwifi"></a>Instalar driver Madwifi</h3>
+~~~
+
+## <a name="madwifi"></a>Instalar driver Madwifi
 
 Una vez instaladas las cabeceras procedemos a la instalación de Madwifi. Para ello descarguemos la última versión de la web <a title="Ir a la página del proyecto Madwifi" href="http://www.madwifi-project.org" target="_blank">madwifi-project</a>, actualmente la última versión (y la que estoy utilizando yo) es la siguiente:  <a title="Descargar drivers madwifi" href="http://snapshots.madwifi-project.org/madwifi-hal-0.10.5.6/madwifi-hal-0.10.5.6-r3942-20090205.tar.gz">madwifi-hal-0.10.5.6-r3942-20090205.tar.gz</a> Descargad el fichero en la carpeta /tmp/ (por ejemplo) y acceded a ella mediante consola para descomprimir e instalar el fichero:
 
-<span style="color: #999999;">#ACCEDEMOS A LA CARPETA DONDE HEMOS DESCARGADO MADWIFI</span>
+~~~bash
+#ACCEDEMOS A LA CARPETA DONDE HEMOS DESCARGADO MADWIFI
 cd /tmp/
-<span style="color: #999999;">#DESCOMPRIMIMOS MADWIFI</span>
+#DESCOMPRIMIMOS MADWIFI
 tar -xvvzf madwifi-hal-0.10.5.6-r3942-20090205.tar.gz
-<span style="color: #999999;">#ACCEDEMOS A LA CARPETA GENERADA</span>
+#ACCEDEMOS A LA CARPETA GENERADA
 cd madwifi-hal-0.10.5.6-r3942-20090205
-<span style="color: #999999;">#COMPILAMOS E INSTALAMOS</span>
-make &amp;&amp; make install
+#COMPILAMOS E INSTALAMOS
+make && make install
+~~~
 
-Si estáis reinstalando el driver recordad eliminar el anterior antes de hacer "make &amp;&amp; make install":
+Si estáis reinstalando el driver recordad eliminar el anterior antes de hacer `make && make install`:
 
+~~~bash
 rmmod -w ath_pci.ko
+~~~
 
 Ahora que ya lo tenemos instalado debemos añadir el módulo al kernel de linux:
 
+~~~bash
 modprobe ath_pci
+~~~
 
 Y para añadirlo siempre que arranque el sistema, lo añadimos en el fichero modules situado en la carpeta etc:
 
+~~~bash
 echo ath_pci >> /etc/modules
+~~~
 
 Éste último comando escribe "ath_pci" al final del fichero modules. Si ya habíais instalado anteriormente Madwifi seguramente no sea necesario este paso (comprobad el contenido del fichero con "cat /etc/modules").
-<h3><a name="installaircrack"></a>Instalar aircrack-ng</h3>
+
+## <a name="installaircrack"></a>Instalar aircrack-ng
 
 ¡Ya tenemos instalado Madwifi! Lo siguiente que haremos será instalar aircrack-ng:
 
+~~~bash
 aptitude -y install aircrack-ng
+~~~
 
 Menuda complicación, ¿eh? :D
-<h3><a name="wep"></a>Crackeando redes WEP</h3>
+
+## <a name="wep"></a>Crackeando redes WEP
 
 Antes de continuar a delante quiero recordaros lo que ya he dicho al principio...  **La mayoría de países no permiten hacer esto, así que si vais a hacerlo debe ser con consentimiento del dueño de la red que vayáis a atacar.**
 <h4><a name="monitor"></a>Activar modo monitor</h4>
@@ -280,7 +280,8 @@ Y.. presto! Ya tenemos nuestra clave:
     Contraseña desencriptada (clic para ampliar)
   </figcaption>
 </figure>
-<h3><a name="descargas"></a>Descarga de ficheros</h3>
+
+## <a name="descargas"></a>Descarga de ficheros
 
 En caso de que no pudierais utilizar "aptitude" porque la máquina desde la cual queréis hacer los ataques no tiene conexión a internet podéis descargar todos los programas que he ido mencionando desde la página de paquetes de ubuntu:
 <blockquote>
@@ -297,7 +298,8 @@ En el caso de los linux-headers debéis descargar la versión correspondiente a 
 uname -r
 
 Recordad destruir la interfaz y reactivarla en modo standalone una vez tengáis la contraseña para poderos conectar normalmente al AP.
-<h3><a name="referencias"></a>Páginas de referencia</h3>
+
+## <a name="referencias"></a>Páginas de referencia
 <blockquote>
 
 <ul>
