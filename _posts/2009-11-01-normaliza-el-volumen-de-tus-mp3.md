@@ -48,53 +48,53 @@ Para utilizarlo recomiendo que utilicéis la opción de normalizado automático,
 
 Haciendo esto dentro de una carpeta con mp3 normalizaréis cada uno de ellos a un volumen estándar.
 
-<a id="more"></a><a id="more-908"></a><br />
-[bash light="true"]01 Freeson - Mozart is Back.mp3<br />
-Applying mp3 gain change of -1 to 01 Freeson - Mozart is Back.mp3...<br />
-02 TDF - Just a trip.mp3<br />
-Applying mp3 gain change of -4 to 02 TDF - Just a trip.mp3...<br />
-03 Madame - Bleeding Trees.mp3<br />
-Applying mp3 gain change of -2 to 03 Madame - Bleeding Trees.mp3...<br />
-04 Dj Fane a.k.a Skrachnbass - Shit Me Good.mp3<br />
-Applying mp3 gain change of -3 to 04 Dj Fane a.k.a Skrachnbass - Shit Me Good.mp3...<br />
-05 Naw - Skorch The Floor!.mp3<br />
-Applying mp3 gain change of -6 to 05 Naw - Skorch The Floor!.mp3...<br />
-06 Pisu - Dubstep Warrior.mp3<br />
-Applying mp3 gain change of -3 to 06 Pisu - Dubstep Warrior.mp3...<br />
-07 Dijeyow - Lookgyal.mp3<br />
-Applying mp3 gain change of -4 to 07 Dijeyow - Lookgyal.mp3...<br />
-08 Oddiohm - 2levels.mp3<br />
-Applying mp3 gain change of -5 to 08 Oddiohm - 2levels.mp3...<br />
-09 M_Box - Decadence Live.mp3<br />
-Applying mp3 gain change of -2 to 09 M_Box - Decadence Live.mp3...<br />
-10 Dj Danik - Chun Li Stage.mp3<br />
-Applying mp3 gain change of -5 to 10 Dj Danik - Chun Li Stage.mp3...<br />
-11 Murdarah - Ladera Da Morte.mp3<br />
-Applying mp3 gain change of -5 to 11 Murdarah - Ladera Da Morte.mp3...<br />
-12 Fernival - Tempfesta.mp3<br />
-Applying mp3 gain change of -3 to 12 Fernival - Tempfesta.mp3...<br />
-13 Jera - Gentleman.mp3<br />
-Applying mp3 gain change of -4 to 13 Jera - Gentleman.mp3...<br />
-13 Montek - Know Your Limits.mp3<br />
-Applying mp3 gain change of -7 to 13 Montek - Know Your Limits.mp3...<br />
-14 Pinyol - Elepumbab.mp3<br />
-Applying mp3 gain change of 1 to 14 Pinyol - Elepumbab.mp3...<br />
-15 Icebreaker - Melamina Sunrise.mp3<br />
-Applying mp3 gain change of -4 to 15 Icebreaker - Melamina Sunrise.mp3...<br />
-16 Korby - Journeys.mp3<br />
-Applying mp3 gain change of -1 to 16 Korby - Journeys.mp3...<br />
-17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3<br />
-Applying mp3 gain change of -4 to 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3...<br />
-18 Sikotik - Roow.mp3<br />
+<a id="more"></a><a id="more-908"></a>
+[bash light="true"]01 Freeson - Mozart is Back.mp3
+Applying mp3 gain change of -1 to 01 Freeson - Mozart is Back.mp3...
+02 TDF - Just a trip.mp3
+Applying mp3 gain change of -4 to 02 TDF - Just a trip.mp3...
+03 Madame - Bleeding Trees.mp3
+Applying mp3 gain change of -2 to 03 Madame - Bleeding Trees.mp3...
+04 Dj Fane a.k.a Skrachnbass - Shit Me Good.mp3
+Applying mp3 gain change of -3 to 04 Dj Fane a.k.a Skrachnbass - Shit Me Good.mp3...
+05 Naw - Skorch The Floor!.mp3
+Applying mp3 gain change of -6 to 05 Naw - Skorch The Floor!.mp3...
+06 Pisu - Dubstep Warrior.mp3
+Applying mp3 gain change of -3 to 06 Pisu - Dubstep Warrior.mp3...
+07 Dijeyow - Lookgyal.mp3
+Applying mp3 gain change of -4 to 07 Dijeyow - Lookgyal.mp3...
+08 Oddiohm - 2levels.mp3
+Applying mp3 gain change of -5 to 08 Oddiohm - 2levels.mp3...
+09 M_Box - Decadence Live.mp3
+Applying mp3 gain change of -2 to 09 M_Box - Decadence Live.mp3...
+10 Dj Danik - Chun Li Stage.mp3
+Applying mp3 gain change of -5 to 10 Dj Danik - Chun Li Stage.mp3...
+11 Murdarah - Ladera Da Morte.mp3
+Applying mp3 gain change of -5 to 11 Murdarah - Ladera Da Morte.mp3...
+12 Fernival - Tempfesta.mp3
+Applying mp3 gain change of -3 to 12 Fernival - Tempfesta.mp3...
+13 Jera - Gentleman.mp3
+Applying mp3 gain change of -4 to 13 Jera - Gentleman.mp3...
+13 Montek - Know Your Limits.mp3
+Applying mp3 gain change of -7 to 13 Montek - Know Your Limits.mp3...
+14 Pinyol - Elepumbab.mp3
+Applying mp3 gain change of 1 to 14 Pinyol - Elepumbab.mp3...
+15 Icebreaker - Melamina Sunrise.mp3
+Applying mp3 gain change of -4 to 15 Icebreaker - Melamina Sunrise.mp3...
+16 Korby - Journeys.mp3
+Applying mp3 gain change of -1 to 16 Korby - Journeys.mp3...
+17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3
+Applying mp3 gain change of -4 to 17 Monolith Vs Bunkertronics - Lifesupport System (Bunkersphere Bodymix).mp3...
+18 Sikotik - Roow.mp3
 [19/19] 97% of 5572608 bytes analyzed[/bash]
 
-Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:<br />
-[bash]find . -type d -print |<br />
-while read dirname<br />
-do<br />
-  cd '$dirname'<br />
-  mp3gain -r -k *.mp3<br />
-  cd -<br />
+Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:
+[bash]find . -type d -print |
+while read dirname
+do
+  cd '$dirname'
+  mp3gain -r -k *.mp3
+  cd -
 done[/bash]
 
 Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b><em>use at your own risk</em></b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)

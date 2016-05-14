@@ -60,12 +60,12 @@ Per instal·lar-lo accedim a la <a href="https://addons.mozilla.org/ca/firefox/a
 
 Una vegada instal·lat ja podeu accedir a les diferents pàgines de descàrrega o streaming i saltar-vos les limitacions. A continuació explico quines limitacions elimina:
 
-<span style="text-decoration: underline;">Megavideo</span>: <em>Per a megavideo redirecciona les pàgines a illimitux.net i les pots visualitzar sense problemes i descarregar l'arxiu original. Permet la visualització amb el reproductor de illimitux o amb el de Megavideo.<br />
+<span style="text-decoration: underline;">Megavideo</span>: <em>Per a megavideo redirecciona les pàgines a illimitux.net i les pots visualitzar sense problemes i descarregar l'arxiu original. Permet la visualització amb el reproductor de illimitux o amb el de Megavideo.
 </em>
 
 <span style="text-decoration: underline;">Veoh</span>: <em>Anula la restricció de temps de la web i permet visualitzar les pel·lícules sense el programa Veoh TV. No permet, però. avançar fins al punt desitjat. La visualització és del tirón i només pots pausar/reanudar.</em>
 
-<span style="text-decoration: underline;">Megaupload</span>: <em>Permet les descàrregues sense limitació de temps i sense límit de descàrregues. Per funcionar correctament no pots tenir activada la opció de "unbridle videos automatically" ja que no funcionarà correctament.<br />
+<span style="text-decoration: underline;">Megaupload</span>: <em>Permet les descàrregues sense limitació de temps i sense límit de descàrregues. Per funcionar correctament no pots tenir activada la opció de "unbridle videos automatically" ja que no funcionarà correctament.
 </em>
 
 <span style="text-decoration: underline;">Rapidshare</span>:<em> Enllaça directament les pàgines i no has de fer la combinació de click's, però realment no evita cap limitació.</em>

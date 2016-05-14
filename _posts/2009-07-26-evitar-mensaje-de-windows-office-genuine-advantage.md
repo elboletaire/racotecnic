@@ -46,7 +46,7 @@ Vayamos a Mi PC / Panel de Control / Actualizaciones automáticas y habilitemos 
 
 <img class="size-medium wp-image-704 aligncenter" title="Actualizaciones de windows" src="{{ site.url }}/uploads/2009/07/Captura.png" alt="Actualizaciones de windows" />
 
-<a id="more"></a><a id="more-703"></a><br />
+<a id="more"></a><a id="more-703"></a>
 ¿Porqué hacemos esto? Porque el mensaje de Windows Original no es más que una actualización del sistema, si evitamos descargarla e instalarla ya no tendremos que preocuparnos más por ello (sólo intenta instalarse una vez).
 
 Así pues tendremos que fijarnos a la hora de instalar las actualizaciones. La actualización en concreto se llama "Herramienta de notificación del programa de ventajas de Windows Original".

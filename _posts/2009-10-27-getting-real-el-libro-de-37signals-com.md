@@ -36,11 +36,11 @@ tags:
 
 No soy muy dado a aconsejar libros, pero para este caso creo que haré una excepción.
 
-<strong>Getting real</strong> es un libro que explica técnicas, procesos, ideas,  costes y un sinfín de consejos sobre como se debe crear una aplicación web.<br />
+<strong>Getting real</strong> es un libro que explica técnicas, procesos, ideas,  costes y un sinfín de consejos sobre como se debe crear una aplicación web.
 Entre los creadores del libro podemos destacar David Heinemeier Hansson, creador de <a href="http://es.wikipedia.org/wiki/Ruby_on_Rails" target="_blank">Ruby on rails</a> y Jeff Bezos, CEO de <a href="http://www.amazon.com/" target="_blank">Amazon.com</a>.
 
-<a id="more"></a><a id="more-889"></a><br />
-Es difícil resumir el contenido del libro, así que os dejo la introducción de su web (traducida al castellano), y el enlace para poder leer el libro on-line en castellano también (o algo bastante parecido).<br />
+<a id="more"></a><a id="more-889"></a>
+Es difícil resumir el contenido del libro, así que os dejo la introducción de su web (traducida al castellano), y el enlace para poder leer el libro on-line en castellano también (o algo bastante parecido).
 De todas formas si buscáis un poco seguro que encontráis el PDF por la red (por lo menos en inglés).
 
 <ul>

@@ -36,29 +36,29 @@ Por ahora sólo es compatible con navegadores basados en Gecko (como Firefox) y 
 
 Sabiendo esto, simplemente tendremos que poner algún IF :)
 
-[js]<br />
-    fullscreen = function(e){<br />
-          if (e.webkitRequestFullScreen) {<br />
-            e.webkitRequestFullScreen();<br />
-          } else if(e.mozRequestFullScreen) {<br />
-            e.mozRequestFullScreen();<br />
-          }<br />
-      }<br />
-    document.getElementById('ejemplo-fullscreen').onclick = function(){<br />
-        fullscreen(document.getElementById('content'));<br />
-    }<br />
-[/js]<br />
-Podéis probarlo haciendo click <a href="#fullscreen" id="ejemplo-fullscreen">aquí</a><br />
-<script><br />
-    fullscreen = function(e){<br />
-          if (e.webkitRequestFullScreen) {<br />
-            e.webkitRequestFullScreen();<br />
-          } else if(e.mozRequestFullScreen) {<br />
-            e.mozRequestFullScreen();<br />
-          }<br />
-      }<br />
-    document.getElementById('ejemplo-fullscreen').onclick = function(){<br />
-        fullscreen(document.getElementById('content'));<br />
-        return false;<br />
-    }<br />
+[js]
+    fullscreen = function(e){
+          if (e.webkitRequestFullScreen) {
+            e.webkitRequestFullScreen();
+          } else if(e.mozRequestFullScreen) {
+            e.mozRequestFullScreen();
+          }
+      }
+    document.getElementById('ejemplo-fullscreen').onclick = function(){
+        fullscreen(document.getElementById('content'));
+    }
+[/js]
+Podéis probarlo haciendo click <a href="#fullscreen" id="ejemplo-fullscreen">aquí</a>
+<script>
+    fullscreen = function(e){
+          if (e.webkitRequestFullScreen) {
+            e.webkitRequestFullScreen();
+          } else if(e.mozRequestFullScreen) {
+            e.mozRequestFullScreen();
+          }
+      }
+    document.getElementById('ejemplo-fullscreen').onclick = function(){
+        fullscreen(document.getElementById('content'));
+        return false;
+    }
 </script>

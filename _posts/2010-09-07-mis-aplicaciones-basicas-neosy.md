@@ -117,7 +117,7 @@ Web: <a href="http://www.winrar.es/" target="_blank">http://www.winrar.es/</a>
 
 Además de todas estas, tambien suelo instalar: <a href="http://calibre-ebook.com/" target="_blank">Calibre</a>, <a href="http://explore.live.com/windows-live-messenger" target="_blank">Messenger</a>, <a href="http://www.skype.com/intl/es/home/" target="_blank">Skype</a>, <a href="http://www.codecguide.com/about_kl.htm" target="_blank">K-Lite Codek Pack</a>, <a href="http://store.steampowered.com/about/" target="_blank">Steam</a>. Todas estas son las aplicaciones gratuitas. Las de pago que suelo tener instaladas son las siguientes: Adobe Master Collection, Nero, Guitar Pro y VMware.
 
-<strong>Aviso:<br />
+<strong>Aviso:
 </strong>
 
 <a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank">Neosy</a>

@@ -49,47 +49,47 @@ Lo primero de todo que tenéis que hacer es poner el debug a cero en vuestro fic
 
 Ahora pasemos a crear (si no existe) el fichero <strong>/app/app_error.php</strong> con el siguiente contenido.
 
-[php]<?php // /app/app_error.php<br />
-class AppError extends ErrorHandler<br />
-{<br />
-	function error404($params)<br />
-	{<br />
-		// Importamos RequestHandler para verificar si la conexión es mediante Ajax<br />
-		App::import('Component', 'RequestHandler');<br />
-		$this->RequestHandler = new RequestHandlerComponent();<br />
-		if ($this->RequestHandler->isAjax())<br />
-		{<br />
-			// En caso de ser Ajax creamos la cabecera 404<br />
-			$this->controller->header('HTTP/1.0 404 Not Found');<br />
-			// y pasamos algunas variables a la vista que ahora crearemos<br />
-			$this->controller->set('params', $params);<br />
-			$this->controller->layout = 'ajax';<br />
-			// Renderizamos la vista<br />
-			$this->_outputMessage('ajax_error404');<br />
-		}<br />
-		// Aquí iría la gestión del error sin Ajax, en nuestro caso llamamos al método padre.<br />
-		else parent::error404($params);<br />
-	}<br />
+[php]<?php // /app/app_error.php
+class AppError extends ErrorHandler
+{
+	function error404($params)
+	{
+		// Importamos RequestHandler para verificar si la conexión es mediante Ajax
+		App::import('Component', 'RequestHandler');
+		$this->RequestHandler = new RequestHandlerComponent();
+		if ($this->RequestHandler->isAjax())
+		{
+			// En caso de ser Ajax creamos la cabecera 404
+			$this->controller->header('HTTP/1.0 404 Not Found');
+			// y pasamos algunas variables a la vista que ahora crearemos
+			$this->controller->set('params', $params);
+			$this->controller->layout = 'ajax';
+			// Renderizamos la vista
+			$this->_outputMessage('ajax_error404');
+		}
+		// Aquí iría la gestión del error sin Ajax, en nuestro caso llamamos al método padre.
+		else parent::error404($params);
+	}
 }[/php]
 
 Pasemos a la creación de la vista... <strong>/app/views/errors/ajax_error404.ctp</strong><a id="more"></a><a id="more-1583"></a>
 
-[php]<?php // /app/views/errors/ajax_error404.ctp<br />
-$error404 = array('message' => __('The requested address was not found on this server.',true), 'params' => $params);<br />
+[php]<?php // /app/views/errors/ajax_error404.ctp
+$error404 = array('message' => __('The requested address was not found on this server.',true), 'params' => $params);
 echo $this->Javascript->object($error404);[/php]
 
 Tan simple como eso : )
 
 Finalmente, añadamos esto a nuestro template por defecto, o a nuestra hoja javascript común:
 
-[js]jQuery(document).ready(function($) {<br />
-	// Ajax not found<br />
-	$(this).ajaxError(function(event, request, opts){<br />
-		if ( request.status == 404 )<br />
-		{<br />
-			alert(eval('(' + request.responseText + ')').message);<br />
-		}<br />
-	});<br />
+[js]jQuery(document).ready(function($) {
+	// Ajax not found
+	$(this).ajaxError(function(event, request, opts){
+		if ( request.status == 404 )
+		{
+			alert(eval('(' + request.responseText + ')').message);
+		}
+	});
 });[/js]
 
 Con esto mostraremos una alerta mostrando el texto que hayamos definido en nuestro app_error al usuario que intente adquirir una url no existente en nuestra aplicación CakePHP.

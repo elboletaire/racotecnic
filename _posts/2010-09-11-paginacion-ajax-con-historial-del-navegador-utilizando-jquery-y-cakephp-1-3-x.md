@@ -48,83 +48,83 @@ Bien pues vamos a ello. Empecemos por el controlador. Simplemente tenéis que te
 
 <a id="more"></a><a id="more-1614"></a>
 
-[php]<?php<br />
-class PagsController extends AppController<br />
-{<br />
+[php]<?php
+class PagsController extends AppController
+{
     var $helpers = array('Javascript');
 
-    public function index()<br />
-    {<br />
-        $this->set('pags', $this->paginate());<br />
-    }<br />
+    public function index()
+    {
+        $this->set('pags', $this->paginate());
+    }
 }[/php]
 
 Ya veis que no tiene ninguna complicación. La vista tampoco es nada del otro mundo:
 
-[php]<table id='pags'><br />
-    <thead><br />
-        <tr><br />
-            <th><?php echo $paginator->sort('id') ?></th><br />
-            <th><?php echo $paginator->sort('title') ?></th><br />
-            <th><?php echo $paginator->sort('conent') ?></th><br />
-            <th><?php echo $paginator->sort('created') ?></th><br />
-            <th><?php echo $paginator->sort('modified') ?></th><br />
-        </tr><br />
-    </thead><br />
-    <tbody><br />
-        <?php foreach ( $pags as $pag ): ?><br />
-        <tr><br />
-            <td><?php echo $pag['Pag']['id'] ?></td><br />
-            <td><?php echo $pag['Pag']['title'] ?></td><br />
-            <td><?php echo $pag['Pag']['conent'] ?></td><br />
-            <td><?php echo $pag['Pag']['created'] ?></td><br />
-            <td><?php echo $pag['Pag']['modified'] ?></td><br />
-        </tr><br />
-        <?php endforeach ?><br />
-        <tr><br />
-            <td><?php echo $paginator->prev('« Anterior') ?></td><br />
-            <td colspan='3'><?php echo $paginator->numbers() ?></td><br />
-            <td><?php echo $paginator->next('Siguiente »') ?></td><br />
-        </tr><br />
-    </tbody><br />
-</table><br />
-<div class='ajax-loader'><br />
-	<?php echo $this->Html->image('loader.gif', array('alt' => 'Cargando...','style' => 'display: none')) ?><br />
-</div><br />
+[php]<table id='pags'>
+    <thead>
+        <tr>
+            <th><?php echo $paginator->sort('id') ?></th>
+            <th><?php echo $paginator->sort('title') ?></th>
+            <th><?php echo $paginator->sort('conent') ?></th>
+            <th><?php echo $paginator->sort('created') ?></th>
+            <th><?php echo $paginator->sort('modified') ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ( $pags as $pag ): ?>
+        <tr>
+            <td><?php echo $pag['Pag']['id'] ?></td>
+            <td><?php echo $pag['Pag']['title'] ?></td>
+            <td><?php echo $pag['Pag']['conent'] ?></td>
+            <td><?php echo $pag['Pag']['created'] ?></td>
+            <td><?php echo $pag['Pag']['modified'] ?></td>
+        </tr>
+        <?php endforeach ?>
+        <tr>
+            <td><?php echo $paginator->prev('« Anterior') ?></td>
+            <td colspan='3'><?php echo $paginator->numbers() ?></td>
+            <td><?php echo $paginator->next('Siguiente »') ?></td>
+        </tr>
+    </tbody>
+</table>
+<div class='ajax-loader'>
+	<?php echo $this->Html->image('loader.gif', array('alt' => 'Cargando...','style' => 'display: none')) ?>
+</div>
 [/php]
 
 Bien, ya tenemos la parte sencilla. Vamos al intríngulis de la cuestión: el JavaScript (o el <em>jQuery</em>, mejor dicho..).
 
 En la vista que tenemos creada, vamos a cargar <em>jQuery </em>y el plugin de historial, que debéis tener ya descargados en vuestra carpeta <em>js</em>:
 
-[php]<?php<br />
+[php]<?php
 $this->Javascript->link(array('jquery-1.4.2.min', 'jquery.history'), false);[/php]
 
 Y ahora, la paginación con Ajax. Debajo de la línea que acabamos de añadir para cargar <em>jQuery </em>y el <em>History plugin</em> añadid lo siguiente:
 
-[php]<br />
-$script = '<br />
-jQuery(function($) { // paso $ para no tener problemas con otros frameworks JS<br />
-	$.history.init(function(url){<br />
-		if ( url == '' ) url = ''.$this->Html->url(array('controller' => 'pags', 'action' => 'index')).''; // si no recibimos URL tenemos que cargar el índice<br />
-                $('.ajax-loader img').fadeIn(); // mostramos el gif animado<br />
-		$.ajax({<br />
-			type: 'GET',<br />
-			url: url,<br />
-			dataType: 'html',<br />
-			success: function(data) {<br />
-				$('#pags').html($(data).find('#pags'));<br />
-		                $('.ajax-loader img').fadeOut(); // ocultamos el gif animado<br />
-			}<br />
-		});<br />
+[php]
+$script = '
+jQuery(function($) { // paso $ para no tener problemas con otros frameworks JS
+	$.history.init(function(url){
+		if ( url == '' ) url = ''.$this->Html->url(array('controller' => 'pags', 'action' => 'index')).''; // si no recibimos URL tenemos que cargar el índice
+                $('.ajax-loader img').fadeIn(); // mostramos el gif animado
+		$.ajax({
+			type: 'GET',
+			url: url,
+			dataType: 'html',
+			success: function(data) {
+				$('#pags').html($(data).find('#pags'));
+		                $('.ajax-loader img').fadeOut(); // ocultamos el gif animado
+			}
+		});
 	});
 
-	$('a[href*=/page:]').live('click', function(e) {<br />
-		$.history.load($(this).attr('href'));<br />
-		e.preventDefault(); // return false;<br />
-	});<br />
-});<br />
-';<br />
+	$('a[href*=/page:]').live('click', function(e) {
+		$.history.load($(this).attr('href'));
+		e.preventDefault(); // return false;
+	});
+});
+';
 $this->Javascript->codeBlock($script, array('inline' => false));[/php]
 
 Bien, ¿qué estamos haciendo aquí? Voy a explicarlo paso por paso.
@@ -141,9 +141,9 @@ Aquí indicamos que queremos reemplazar todo el contenido de la tabla <em>#pags<
 
 Por último, en este trozo de código:
 
-[js]$('a[href*=/page:]').live('click', function(e) {<br />
-        $.history.load($(this).attr('href'));<br />
-        e.preventDefault(); // return false;<br />
+[js]$('a[href*=/page:]').live('click', function(e) {
+        $.history.load($(this).attr('href'));
+        e.preventDefault(); // return false;
     });[/js]
 
 Estamos indicando que siempre que se pulse un enlace que contenga en su ruta (href) "/page:" se dispare el método `$.history.load()`, al que le pasamos la url del enlace que estemos pulsando.
@@ -174,7 +174,7 @@ Algún día trataré de hacer un tutorial explicando esto con detalle ;)
 <blockquote>
 <strong>Edit:</strong> Cuando escribí esto no recordaba que la nueva versión de CakePHP lleva helpers para jQuery y para todo lo relacionado con Ajax. En cuanto pueda investigo cómo va el asunto y creo un tutorial con ello, pero mientras tanto...
 
-<a href="http://book.cakephp.org/view/1592/Js" target="_blank" rel="nofollow">http://book.cakephp.org/view/1592/Js</a><br />
+<a href="http://book.cakephp.org/view/1592/Js" target="_blank" rel="nofollow">http://book.cakephp.org/view/1592/Js</a>
 <a href="http://book.cakephp.org/view/1434/HTML" target="_blank" rel="nofollow">hhttp://book.cakephp.org/view/1434/HTML</a>
 
 Podéis ir echando un vistazo por vuestra cuenta :D</blockquote>

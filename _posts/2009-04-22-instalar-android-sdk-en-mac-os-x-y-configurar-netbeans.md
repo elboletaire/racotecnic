@@ -44,7 +44,7 @@ La versión actual es la 1.1 y mi versión de Java la 1.5 (no puedo actualizar d
 
 <a title="Ir a la página" href="http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip" target="_blank">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>
 
-<a id="more"></a><a id="more-476"></a><br />
+<a id="more"></a><a id="more-476"></a>
 Una vez descargado lo descomprimimos y lo copiamos donde queramos. En mi caso lo he copiado en /Applications/Android
 
 Ahora debemos editar nuestro fichero ".profile" situado en nuestra carpeta de Inicio. Para ello abramos una terminal y tecleemos:

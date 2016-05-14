@@ -21,7 +21,7 @@ tags: []
 ---
 
 
-Rellenando el siguiente formulario puedes enviar un mensaje a los diputados/as del congreso español en relación a la aprobación de la <a href="http://red-sostenible.net/index.php/Documentacion">Ley Sinde</a>. Escríbeles lo que consideres oportuno pero sé respetuoso, solo de esta manera nuestras peticiones serán escuchadas.<br />
+Rellenando el siguiente formulario puedes enviar un mensaje a los diputados/as del congreso español en relación a la aprobación de la <a href="http://red-sostenible.net/index.php/Documentacion">Ley Sinde</a>. Escríbeles lo que consideres oportuno pero sé respetuoso, solo de esta manera nuestras peticiones serán escuchadas.
 Una vez rellenado y enviado el formulario, entra en tu correo, tendrás que verificar un enlace para completar el envio.
 <form id="new_message" class="new_message" action="http://xmailer.hacktivistas.net/es/message/mailer" method="post">
 <table class="nom">

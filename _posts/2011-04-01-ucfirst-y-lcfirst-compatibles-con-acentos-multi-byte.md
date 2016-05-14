@@ -43,25 +43,25 @@ El caso es que los de PHP al hacer los métodos <a title="PHP: MultiByte String 
 
 Ambos métodos me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)<a id="more"></a><a id="more-1873"></a>
 
-[php]// First letter uppercase<br />
-if ( !function_exists('mb_ucfirst') ) {<br />
-	function mb_ucfirst($str, $to_lower = false, $charset = 'utf-8')<br />
-	{<br />
-		$first = mb_strtoupper(mb_substr($str, 0, 1, $charset), $charset);<br />
-		$end = mb_substr($str, 1, mb_strlen($str, $charset), $charset);<br />
-		// Convert them all to lowercase (if specified)<br />
-		if ( $to_lower ) {<br />
-			$end = mb_strtolower($end, $charset);<br />
-		}<br />
-		return $first . $end;<br />
-	}<br />
-}<br />
-// First letter lowercase<br />
-if ( !function_exists('mb_lcfirst') ) {<br />
-	function mb_lcfirst($str, $charset = 'utf-8'){<br />
-		$first = mb_strtolower(mb_substr($str, 0, 1, $charset), $charset);<br />
-		return $first . mb_substr($str, 1, mb_strlen($str, $charset), $charset);<br />
-	}<br />
+[php]// First letter uppercase
+if ( !function_exists('mb_ucfirst') ) {
+	function mb_ucfirst($str, $to_lower = false, $charset = 'utf-8')
+	{
+		$first = mb_strtoupper(mb_substr($str, 0, 1, $charset), $charset);
+		$end = mb_substr($str, 1, mb_strlen($str, $charset), $charset);
+		// Convert them all to lowercase (if specified)
+		if ( $to_lower ) {
+			$end = mb_strtolower($end, $charset);
+		}
+		return $first . $end;
+	}
+}
+// First letter lowercase
+if ( !function_exists('mb_lcfirst') ) {
+	function mb_lcfirst($str, $charset = 'utf-8'){
+		$first = mb_strtolower(mb_substr($str, 0, 1, $charset), $charset);
+		return $first . mb_substr($str, 1, mb_strlen($str, $charset), $charset);
+	}
 }[/php]
 
 Como podréis ver al método `mb_ucfirst` le he añadido un parámetro `$to_lower` que sirve para convertir el resto de la frase a minúscula (muy útil contra hoygans).

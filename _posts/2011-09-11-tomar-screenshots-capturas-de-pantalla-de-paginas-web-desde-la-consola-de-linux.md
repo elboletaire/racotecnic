@@ -77,22 +77,22 @@ Una vez instalados todos los paquetes, vamos a crear nuestro script para generar
 
 [bash]#!/bin/bash
 
-display=':23'<br />
+display=':23'
 export DISPLAY=':23'
 
-vncserver -geometry 1280x1024 -depth 24 -name 'screenshoots' $display &amp;<br />
-# esperamos a que cargue vnc sin problemas...<br />
-sleep 5<br />
-# cargamos firefox con una página en blanco<br />
+vncserver -geometry 1280x1024 -depth 24 -name 'screenshoots' $display &amp;
+# esperamos a que cargue vnc sin problemas...
+sleep 5
+# cargamos firefox con una página en blanco
 firefox -display $display -width 1280 -height 1024 -url 'about:blank' &amp;
 
-while read -a line ; do<br />
-	echo 'Carregant... ${line[1]}'<br />
-	firefox -remote 'openURL(${line[1]})'<br />
-	# o bien... firefox -display $display '${line[1]}'<br />
-	sleep 5<br />
-	echo 'Desant... ${line[0]}.jpg'<br />
-	import -window root '${line[0]}'.jpg<br />
+while read -a line ; do
+	echo 'Carregant... ${line[1]}'
+	firefox -remote 'openURL(${line[1]})'
+	# o bien... firefox -display $display '${line[1]}'
+	sleep 5
+	echo 'Desant... ${line[0]}.jpg'
+	import -window root '${line[0]}'.jpg
 done < listado.txt
 
 vncserver -kill $display[/bash]
@@ -108,10 +108,10 @@ vncserver -kill $display[/bash]
 
 El fichero "listado.txt" deberá estar en el mismo directorio que el script y ser en este formato:
 
-[text]underave	http://www.underave.net<br />
-musicavermella	http://www.musicavermella.com<br />
-thefuture	http://www.thefutureimperfect.com<br />
-snooppets	http://www.snooppets.com<br />
+[text]underave	http://www.underave.net
+musicavermella	http://www.musicavermella.com
+thefuture	http://www.thefutureimperfect.com
+snooppets	http://www.snooppets.com
 [/text]
 
 <strong>Es importante que este fichero tenga un salto de línea al final</strong>, sino la última url dará error.
@@ -122,8 +122,8 @@ Cuando tengáis los screenshots probablemente os daréis cuenta de que la imagen
 
 Para evitar esto he estado probando con parámetro `-screen` en lugar de `-window` pero supongo que no hace lo que pensaba que hacía xD. Así que la única solución que se me ocurre es que ejecutéis una instancia de VNCServer con firefox para poder ocultarle todas las barras posibles (la de navegación y la de favoritos).
 
-[bash]export DISPLAY=':23'<br />
-vncserver -geometry 1280x1024 -depth 24 -name 'screenshoots' :23 &amp;<br />
+[bash]export DISPLAY=':23'
+vncserver -geometry 1280x1024 -depth 24 -name 'screenshoots' :23 &amp;
 firefox -display :23 -width 1280 -height 1024 -url 'about:blank' &amp;[/bash]
 
 Una vez esté corriendo utilizad vuestro cliente de vnc habitual (yo utilizo <a href="http://www.tightvnc.com/" rel="nofollow external">TightVNC</a>) y conectaros para poder configurar firefox. En el caso de TightVNC, para indicar el display que estamos utilizando simplemente hay que concatenarlo al final de la ip o nombre de host ([IP|HOST]:DISPLAY), por ejemplo `192.168.1.2:23`

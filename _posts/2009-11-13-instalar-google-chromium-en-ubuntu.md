@@ -41,10 +41,10 @@ Primero de todo debemos editar nuestro fichero de recursos de los repositorios:
 
 Y añadimos un par de líneas:
 
-[bash gutter="false"]deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main<br />
+[bash gutter="false"]deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main
 deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main[/bash]
 
-<a id="more"></a><a id="more-973"></a><br />
+<a id="more"></a><a id="more-973"></a>
 La variable "NOMBRE_DE_VERSION" debéis substituirla por vuestra versión. Google Chromium está disponible para las siguientes versiones de Ubuntu:
 
 <ul>
@@ -60,16 +60,16 @@ Ahora que tenemos el repositorio añadido debemos añadir la clave GPG:
 
 Si este paso se ha hecho correctamente (debería, a no ser que modifiquen la clave :S) habrás visto algo así en tu consola:
 
-[bash light="true"]Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /etc/apt/secring.gpg --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --recv-keys --keyserver keyserver.ubuntu.com 0xfbef0d696de1c72ba5a835fe5a9bf3bb4e5e17b5<br />
-gpg: requesting key 4E5E17B5 from hkp server keyserver.ubuntu.com<br />
-gpg: key 4E5E17B5: public key 'Launchpad PPA for chromium-daily' imported<br />
-gpg: no s'han trobat claus amb confiança absoluta<br />
-gpg: Nombre total processat: 1<br />
+[bash light="true"]Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /etc/apt/secring.gpg --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --recv-keys --keyserver keyserver.ubuntu.com 0xfbef0d696de1c72ba5a835fe5a9bf3bb4e5e17b5
+gpg: requesting key 4E5E17B5 from hkp server keyserver.ubuntu.com
+gpg: key 4E5E17B5: public key 'Launchpad PPA for chromium-daily' imported
+gpg: no s'han trobat claus amb confiança absoluta
+gpg: Nombre total processat: 1
 gpg:               importades: 1  (RSA: 1)[/bash]
 
 Ahora simplemente hacemos un update e instalamos:
 
-[bash light="true"]sudo aptitude update<br />
+[bash light="true"]sudo aptitude update
 sudo aptitude install chromium-browser[/bash]
 
 ¡Listo! Ya tenemos Google Chromium instalado en nuestro sistema :)

@@ -75,43 +75,43 @@ tags:
 - CakePHP 1.2
 ---
 
-<script type="text/javascript"><br />
-// <![CDATA[<br />
-	jQuery(function(){<br />
-		jQuery("#registre-phpbb legend").css('cursor', 'pointer').click(function(){<br />
-			jQuery(this).next().slideToggle();<br />
-			if(jQuery(this).text() == 'Ocultar')<br />
-			{<br />
-				jQuery(this).text('Mostrar');<br />
-			}<br />
-			else<br />
-			{<br />
-				jQuery(this).text('Ocultar');<br />
-			}<br />
-		});<br />
-		jQuery(".amunt").click(function(){<br />
-			MGJS.goTop();<br />
-			return false;<br />
-		});<br />
-	});<br />
-// ]]><br />
+<script type="text/javascript">
+// <![CDATA[
+	jQuery(function(){
+		jQuery("#registre-phpbb legend").css('cursor', 'pointer').click(function(){
+			jQuery(this).next().slideToggle();
+			if(jQuery(this).text() == 'Ocultar')
+			{
+				jQuery(this).text('Mostrar');
+			}
+			else
+			{
+				jQuery(this).text('Ocultar');
+			}
+		});
+		jQuery(".amunt").click(function(){
+			MGJS.goTop();
+			return false;
+		});
+	});
+// ]]>
 </script>
 <style type="text/css">
-	.amunt {<br />
-		float: right;<br />
-		font-size: .8em;<br />
-	}<br />
-	#registre-phpbb {<br />
-		width: 300px;<br />
-		-moz-border-radius: 7px;<br />
-		border: 1px solid #cccccc;<br />
-		float: left;<br />
-		background-color: #f7f7f7;<br />
-		margin: 20px 0;<br />
-	}<br />
-	#imatge-cakephp {<br />
-		float: right;<br />
-	}<br />
+	.amunt {
+		float: right;
+		font-size: .8em;
+	}
+	#registre-phpbb {
+		width: 300px;
+		-moz-border-radius: 7px;
+		border: 1px solid #cccccc;
+		float: left;
+		background-color: #f7f7f7;
+		margin: 20px 0;
+	}
+	#imatge-cakephp {
+		float: right;
+	}
 </style>
 <fieldset id="registre-phpbb">
 <legend style="padding: 0 5px;">Ocultar</legend>
@@ -162,37 +162,37 @@ Es decir, <strong>doy por supuesto que ya tenéis un sistema de usuarios funcion
 
 Además de la parte encargada de la gestión de usuarios vamos a tener que crear un modelo para el foro. Este sólo debe contener el nombre del modelo y debemos indicarle que no va a utilizar base de datos:
 
-[php]<?php // /app/models/forum.php<br />
-class Forum extends AppModel<br />
-{<br />
-	var $name = 'Forum';<br />
-	var $useDbConfig = 'forums';<br />
-	var $useTable = false;<br />
+[php]<?php // /app/models/forum.php
+class Forum extends AppModel
+{
+	var $name = 'Forum';
+	var $useDbConfig = 'forums';
+	var $useTable = false;
 }[/php]
 
 Como podéis ver, además de haber indicado el nombre del modelo y haber desactivado el uso de base de datos en éste, he indicado que utilice la configuración de base de datos <em>forums</em>. Con esto indicamos al modelo que, en caso de utilizar la base de datos, la configuración que utilizaremos será la <em>forums</em>.
 
 Podéis añadir tantas configuraciones de conexión a la base de datos como queráis, simplemente cread una variable con el nombre que queráis de conexión conteniendo los datos necesarios en el fichero <em>/app/config/database.php</em>:
 
-[php]<?php // /app/config/database.php<br />
-class DATABASE_CONFIG {<br />
-	var $default = array(<br />
-		'driver' => 'mysql',<br />
-		'persistent' => false,<br />
-		'host' => 'localhost',<br />
-		'login' => 'USUARIO',<br />
-		'password' => 'CONTRASEÑA',<br />
-		'database' => 'BASE_DE_DATOS'<br />
-	);<br />
-	var $forums = array(<br />
-		'driver' => 'mysql',<br />
-		'persistent' => false,<br />
-		'host' => 'localhost',<br />
-		'login' => 'USUARIO',<br />
-		'password' => 'CONTRASEÑA',<br />
-		'database' => 'BASE_DE_DATOS',<br />
-		'prefix' => 'phpbb_'<br />
-	);<br />
+[php]<?php // /app/config/database.php
+class DATABASE_CONFIG {
+	var $default = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'USUARIO',
+		'password' => 'CONTRASEÑA',
+		'database' => 'BASE_DE_DATOS'
+	);
+	var $forums = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'USUARIO',
+		'password' => 'CONTRASEÑA',
+		'database' => 'BASE_DE_DATOS',
+		'prefix' => 'phpbb_'
+	);
 }[/php]
 
 Si vuestras tablas del foro tienen un prefijo (como es mi caso) aseguraros de especificar la opción "prefix" en el array de conexión a la base de datos.
@@ -206,285 +206,285 @@ Esto está muy bien cuando añadimos el foro <strong>después</strong> de haber 
 
 Cread, pues, el componente <em>php_b_b3.php</em> con el siguiente contenido:
 
-[php highlight="11"]<?php // /app/controllers/components/php_b_b3.php<br />
-/**<br />
-* Created by Willson Sheldon => http://bakery.cakephp.org/articles/view/phpbb3-api-bridge<br />
-* Modified by Òscar Casajuana a.k.a. elboletaire => http://www.underave.net<br />
-*/<br />
-class PhpBB3Component extends Object<br />
+[php highlight="11"]<?php // /app/controllers/components/php_b_b3.php
+/**
+* Created by Willson Sheldon => http://bakery.cakephp.org/articles/view/phpbb3-api-bridge
+* Modified by Òscar Casajuana a.k.a. elboletaire => http://www.underave.net
+*/
+class PhpBB3Component extends Object
 {
 
-	var $controller;<br />
-	var $model;<br />
+	var $controller;
+	var $model;
 	var $phpBBpath = '/ruta/a/tu/instalacion/de/phpBB3/';
 
-	/**<br />
-	 * Inicia la sesión en phpBB3<br />
-	 * @param string $username<br />
-	 * @param string $password<br />
-	 * @param bool $remember [optional] Recordar entre sesiones<br />
-	 */<br />
-	public function login($username, $password, $remember = false)<br />
-	{<br />
-		$this->auth->login($username, $password, $remember);<br />
+	/**
+	 * Inicia la sesión en phpBB3
+	 * @param string $username
+	 * @param string $password
+	 * @param bool $remember [optional] Recordar entre sesiones
+	 */
+	public function login($username, $password, $remember = false)
+	{
+		$this->auth->login($username, $password, $remember);
 	}
 
-	/**<br />
-	 * Cierra la sesión en phpBB<br />
-	 */<br />
-	public function logout()<br />
-	{<br />
-		$this->user->session_kill();<br />
-		$this->user->session_begin();<br />
+	/**
+	 * Cierra la sesión en phpBB
+	 */
+	public function logout()
+	{
+		$this->user->session_kill();
+		$this->user->session_begin();
 	}
 
-	/**<br />
-	 * Registra un usuario en el sistema<br />
-	 * @param array $data Datos del usuario<br />
-	 * @return id del usuario en caso de éxito; falso en caso contrario<br />
-	 */<br />
-	public function register($data)<br />
-	{<br />
-		// Paràmetres per defecte<br />
-		// Grup usuaris registrats<br />
-		if(!isset($data['group_id']) || empty($data['group_id'])) $data['group_id'] = 5;<br />
-		// Franja horària GMT+01<br />
-		if(!isset($data['user_timezone']) || empty($data['user_timezone'])) $data['user_timezone'] = 1;<br />
-		// Horari d'estiu desactivat<br />
-		if(!isset($data['user_dst']) || empty($data['user_dst'])) $data['user_dst'] = 0;<br />
-		if(!isset($data['user_lang']) || empty($data['user_lang'])) $data['user_lang'] = 'es';<br />
-		// Usuari inactiu per defecte<br />
-		if(!isset($data['user_type']) || empty($data['user_type'])) $data['user_type'] = 1;<br />
-		// Això millor no tocar-ho<br />
-		if(!isset($data['user_style']) || empty($data['user_style'])) $data['user_style'] = 2;<br />
-		$userData = array(<br />
-            'username' => $data['username'],<br />
-			'username_clean' => strtolower($data['username']),<br />
-            'user_password' => $this->phpbb_hash($data['user_password']),<br />
-            'user_email' => $data['user_email'],<br />
-			'user_ip'=>$_SERVER['REMOTE_ADDR'],<br />
-            'group_id' => $data['group_id'], //Registered users group<br />
-            'user_timezone' => $data['user_timezone'],<br />
-            'user_dst' => $data['user_dst'],<br />
-            'user_lang' => $data['user_lang'],<br />
-            'user_type' => $data['user_type'],<br />
-            'user_actkey' => '',<br />
-            'user_dateformat' => 'D d M Y, g:i a',<br />
-            'user_style' => 2,<br />
-            'user_regdate' => time(),<br />
-        );<br />
- 		$userId = user_add($userData);<br />
-		if(empty($userId)) return false;<br />
-		else<br />
-		{<br />
-			// Actualitzem darrer usuari registrat al phpBB<br />
-			update_last_username();<br />
-			return $userId;<br />
-		}<br />
+	/**
+	 * Registra un usuario en el sistema
+	 * @param array $data Datos del usuario
+	 * @return id del usuario en caso de éxito; falso en caso contrario
+	 */
+	public function register($data)
+	{
+		// Paràmetres per defecte
+		// Grup usuaris registrats
+		if(!isset($data['group_id']) || empty($data['group_id'])) $data['group_id'] = 5;
+		// Franja horària GMT+01
+		if(!isset($data['user_timezone']) || empty($data['user_timezone'])) $data['user_timezone'] = 1;
+		// Horari d'estiu desactivat
+		if(!isset($data['user_dst']) || empty($data['user_dst'])) $data['user_dst'] = 0;
+		if(!isset($data['user_lang']) || empty($data['user_lang'])) $data['user_lang'] = 'es';
+		// Usuari inactiu per defecte
+		if(!isset($data['user_type']) || empty($data['user_type'])) $data['user_type'] = 1;
+		// Això millor no tocar-ho
+		if(!isset($data['user_style']) || empty($data['user_style'])) $data['user_style'] = 2;
+		$userData = array(
+            'username' => $data['username'],
+			'username_clean' => strtolower($data['username']),
+            'user_password' => $this->phpbb_hash($data['user_password']),
+            'user_email' => $data['user_email'],
+			'user_ip'=>$_SERVER['REMOTE_ADDR'],
+            'group_id' => $data['group_id'], //Registered users group
+            'user_timezone' => $data['user_timezone'],
+            'user_dst' => $data['user_dst'],
+            'user_lang' => $data['user_lang'],
+            'user_type' => $data['user_type'],
+            'user_actkey' => '',
+            'user_dateformat' => 'D d M Y, g:i a',
+            'user_style' => 2,
+            'user_regdate' => time(),
+        );
+ 		$userId = user_add($userData);
+		if(empty($userId)) return false;
+		else
+		{
+			// Actualitzem darrer usuari registrat al phpBB
+			update_last_username();
+			return $userId;
+		}
 	}
 
-	/**<br />
-	 * Encripta una contraseña utilizando el<br />
-	 * método de encriptación de phpBB3<br />
-	 * @param string $password<br />
-	 * @return contraseña encriptada<br />
-	 */<br />
-	public function phpbb_hash($password)<br />
+	/**
+	 * Encripta una contraseña utilizando el
+	 * método de encriptación de phpBB3
+	 * @param string $password
+	 * @return contraseña encriptada
+	 */
+	public function phpbb_hash($password)
 	{
 
-		$itoa64 = './0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';<br />
-		$random_state = $this->unique_id();<br />
-		$random = '';<br />
+		$itoa64 = './0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		$random_state = $this->unique_id();
+		$random = '';
 		$count = 6;
 
-		if (($fh = @fopen ( '/dev/urandom', 'rb' )))<br />
-		{<br />
-			$random = fread ($fh, $count);<br />
-			fclose ($fh);<br />
+		if (($fh = @fopen ( '/dev/urandom', 'rb' )))
+		{
+			$random = fread ($fh, $count);
+			fclose ($fh);
 		}
 
-		if (strlen($random) < $count)<br />
-		{<br />
-			$random = '';<br />
-			for($i=0;$i<$count;$i+=16)<br />
-			{<br />
-				$random_state = md5($this->unique_id () . $random_state);<br />
-				$random .= pack('H*', md5($random_state));<br />
-			}<br />
-			$random = substr($random, 0, $count);<br />
+		if (strlen($random) < $count)
+		{
+			$random = '';
+			for($i=0;$i<$count;$i+=16)
+			{
+				$random_state = md5($this->unique_id () . $random_state);
+				$random .= pack('H*', md5($random_state));
+			}
+			$random = substr($random, 0, $count);
 		}
 
 		$hash = $this->_hash_crypt_private($password, $this->_hash_gensalt_private($random, $itoa64 ), $itoa64);
 
-		if (strlen($hash) == 34)<br />
-		{<br />
-			return $hash;<br />
+		if (strlen($hash) == 34)
+		{
+			return $hash;
 		}
 
-		return md5($password);<br />
+		return md5($password);
 	}
 
-	/**<br />
-	 * Verifica la existencia de un usuario<br />
-	 * @param string $username<br />
-	 * @return<br />
-	 */<br />
-	public function userExists($username)<br />
-	{<br />
-		if (user_get_id_name(false, $username) == 'NO_USERS')<br />
-		{<br />
-			return false;<br />
-		}<br />
-		else<br />
-		{<br />
-			return true;<br />
-		}<br />
+	/**
+	 * Verifica la existencia de un usuario
+	 * @param string $username
+	 * @return
+	 */
+	public function userExists($username)
+	{
+		if (user_get_id_name(false, $username) == 'NO_USERS')
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 
-	/**<br />
-	 * Carga los ficheros necesarios de phpBB3<br />
-	 */<br />
-	function startup(&amp;$controller)<br />
-	{<br />
-        	$this->controller = &amp;$controller;<br />
+	/**
+	 * Carga los ficheros necesarios de phpBB3
+	 */
+	function startup(&amp;$controller)
+	{
+        	$this->controller = &amp;$controller;
 		define('IN_PHPBB', true);
 
 		global $phpbb_root_path, $phpEx, $db, $config, $user, $auth, $cache, $template;
 
-		$phpbb_root_path = $this->phpBBpath;<br />
-		$phpEx = substr(strrchr(__FILE__, '.'), 1);<br />
+		$phpbb_root_path = $this->phpBBpath;
+		$phpEx = substr(strrchr(__FILE__, '.'), 1);
 		require_once($phpbb_root_path . 'common.' . $phpEx);
 
-		$this->table_prefix = $table_prefix;<br />
-		$this->auth = $auth;<br />
+		$this->table_prefix = $table_prefix;
+		$this->auth = $auth;
 		$this->user = $user;
 
-		// Start session management<br />
-		$this->user->session_begin();<br />
-		$this->auth->acl($user->data);<br />
+		// Start session management
+		$this->user->session_begin();
+		$this->auth->acl($user->data);
 		$this->user->setup();
 
-		require_once($phpbb_root_path .'includes/functions_user.php');<br />
+		require_once($phpbb_root_path .'includes/functions_user.php');
 	}
 
-	private function unique_id($extra = 'c')<br />
-	{<br />
-		static $dss_seeded = false;<br />
+	private function unique_id($extra = 'c')
+	{
+		static $dss_seeded = false;
 		global $config;
 
-		$val = $config ['rand_seed'] . microtime ();<br />
-		$val = md5 ( $val );<br />
+		$val = $config ['rand_seed'] . microtime ();
+		$val = md5 ( $val );
 		$config ['rand_seed'] = md5 ( $config ['rand_seed'] . $val . $extra );
 
-		$dss_seeded = true;<br />
-		return substr ( $val, 4, 16 );<br />
+		$dss_seeded = true;
+		return substr ( $val, 4, 16 );
 	}
 
-	/**<br />
-	 * Generate salt for hash generation<br />
-	 */<br />
-	private function _hash_gensalt_private($input,&amp;$itoa64,$iteration_count_log2 = 6)<br />
-	{<br />
-		if ($iteration_count_log2 < 4 || $iteration_count_log2 > 31)<br />
-		{<br />
-			$iteration_count_log2 = 8;<br />
+	/**
+	 * Generate salt for hash generation
+	 */
+	private function _hash_gensalt_private($input,&amp;$itoa64,$iteration_count_log2 = 6)
+	{
+		if ($iteration_count_log2 < 4 || $iteration_count_log2 > 31)
+		{
+			$iteration_count_log2 = 8;
 		}
 
-		$output = '$H$';<br />
-		$output .= $itoa64 [min($iteration_count_log2 + ((PHP_VERSION >= 5) ? 5 : 3), 30)];<br />
+		$output = '$H$';
+		$output .= $itoa64 [min($iteration_count_log2 + ((PHP_VERSION >= 5) ? 5 : 3), 30)];
 		$output .= $this->_hash_encode64($input, 6, $itoa64);
 
-		return $output;<br />
+		return $output;
 	}
 
-	/**<br />
-	 * Encode hash<br />
-	 */<br />
-	private function _hash_encode64($input,$count,&amp;$itoa64)<br />
-	{<br />
-		$output = '';<br />
-		$i = 0;<br />
-		do<br />
-		{<br />
-			$value = ord ( $input [$i ++] );<br />
-			$output .= $itoa64 [$value &amp; 0x3f];<br />
-			if ($i < $count)<br />
-			{<br />
-				$value |= ord ( $input [$i] ) << 8;<br />
-			}<br />
-			$output .= $itoa64 [($value >> 6) &amp; 0x3f];<br />
-			if ($i ++ >= $count)<br />
-			{<br />
-				break;<br />
-			}<br />
-			if ($i < $count)<br />
-			{<br />
-				$value |= ord ( $input [$i] ) << 16;<br />
-			}<br />
-			$output .= $itoa64 [($value >> 12) &amp; 0x3f];<br />
-			if ($i ++ >= $count)<br />
-			{<br />
-				break;<br />
-			}<br />
-			$output .= $itoa64 [( $value >> 18 ) &amp; 0x3f];<br />
+	/**
+	 * Encode hash
+	 */
+	private function _hash_encode64($input,$count,&amp;$itoa64)
+	{
+		$output = '';
+		$i = 0;
+		do
+		{
+			$value = ord ( $input [$i ++] );
+			$output .= $itoa64 [$value &amp; 0x3f];
+			if ($i < $count)
+			{
+				$value |= ord ( $input [$i] ) << 8;
+			}
+			$output .= $itoa64 [($value >> 6) &amp; 0x3f];
+			if ($i ++ >= $count)
+			{
+				break;
+			}
+			if ($i < $count)
+			{
+				$value |= ord ( $input [$i] ) << 16;
+			}
+			$output .= $itoa64 [($value >> 12) &amp; 0x3f];
+			if ($i ++ >= $count)
+			{
+				break;
+			}
+			$output .= $itoa64 [( $value >> 18 ) &amp; 0x3f];
 		} while ( $i < $count );
 
-		return $output;<br />
+		return $output;
 	}
 
-	/**<br />
-	 * The crypt function/replacement<br />
-	 */<br />
-	private function _hash_crypt_private($password,$setting,&amp;$itoa64)<br />
-	{<br />
+	/**
+	 * The crypt function/replacement
+	 */
+	private function _hash_crypt_private($password,$setting,&amp;$itoa64)
+	{
 		$output = '*';
 
-		// Check for correct hash<br />
-		if (substr ( $setting, 0, 3 ) != '$H$')<br />
-		{<br />
-			return $output;<br />
-		}<br />
-		$count_log2 = strpos ( $itoa64, $setting [3] );<br />
-		if ($count_log2 < 7 || $count_log2 > 30)<br />
-		{<br />
-			return $output;<br />
-		}<br />
-		$count = 1 << $count_log2;<br />
+		// Check for correct hash
+		if (substr ( $setting, 0, 3 ) != '$H$')
+		{
+			return $output;
+		}
+		$count_log2 = strpos ( $itoa64, $setting [3] );
+		if ($count_log2 < 7 || $count_log2 > 30)
+		{
+			return $output;
+		}
+		$count = 1 << $count_log2;
 		$salt = substr ( $setting, 4, 8 );
 
-		if ( strlen ( $salt ) != 8 )<br />
-		{<br />
-			return $output;<br />
-		}<br />
-		/**<br />
-		 * We're kind of forced to use MD5 here since it's the only<br />
-		 * cryptographic primitive available in all versions of PHP<br />
-		 * currently in use.  To implement our own low-level crypto<br />
-		 * in PHP would result in much worse performance and<br />
-		 * consequently in lower iteration counts and hashes that are<br />
-		 * quicker to crack (by non-PHP code).<br />
-		 */<br />
-		if (PHP_VERSION >= 5)<br />
-		{<br />
-			$hash = md5 ( $salt . $password, true );<br />
-			do<br />
-			{<br />
-				$hash = md5 ( $hash . $password, true );<br />
-			} while ( -- $count );<br />
-		}<br />
-		else<br />
-		{<br />
-			$hash = pack ( 'H*', md5 ( $salt . $password ) );<br />
-			do<br />
-			{<br />
-				$hash = pack ( 'H*', md5 ( $hash . $password ) );<br />
-			} while ( -- $count );<br />
-		}<br />
-		$output = substr ( $setting, 0, 12 );<br />
+		if ( strlen ( $salt ) != 8 )
+		{
+			return $output;
+		}
+		/**
+		 * We're kind of forced to use MD5 here since it's the only
+		 * cryptographic primitive available in all versions of PHP
+		 * currently in use.  To implement our own low-level crypto
+		 * in PHP would result in much worse performance and
+		 * consequently in lower iteration counts and hashes that are
+		 * quicker to crack (by non-PHP code).
+		 */
+		if (PHP_VERSION >= 5)
+		{
+			$hash = md5 ( $salt . $password, true );
+			do
+			{
+				$hash = md5 ( $hash . $password, true );
+			} while ( -- $count );
+		}
+		else
+		{
+			$hash = pack ( 'H*', md5 ( $salt . $password ) );
+			do
+			{
+				$hash = pack ( 'H*', md5 ( $hash . $password ) );
+			} while ( -- $count );
+		}
+		$output = substr ( $setting, 0, 12 );
 		$output .= $this->_hash_encode64 ( $hash, 16, $itoa64 );
 
-		return $output;<br />
-	}<br />
+		return $output;
+	}
 }[/php]
 
 Aunque veáis mucho código, no os asustéis. La mayoría de estos métodos son para encriptar la contraseña. Los métodos que nosotros utilizaremos serán <strong>login</strong>, <strong>logout</strong>, <strong>register</strong> y <strong>userExists</strong>.
@@ -498,88 +498,88 @@ Los usuarios los registraremos activados para ahorrarnos complicaciones. Dejo en
 
 Empecemos con la vista <strong>register.ctp</strong>:
 
-[php]<?= $form->create('User',array('action'=>'register')) ?><br />
-<?= $form->input('User.username', array('label'=>__('Nombre de usuario',true))) ?><br />
-<!-- Indicamos value = '' a la contraseña para que no se rellene el campo automáticamente en caso de haber algún error en los datos --><br />
-<?= $form->input('User.password', array('label'=>__('Contraseña',true),'type'=>'password','value'=>'')) ?><br />
-<?= $form->input('User.confirm_passwd', array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>'')) ?><br />
-<?= $form->input('User.email', array('label'=>__('E-mail',true))) ?><br />
+[php]<?= $form->create('User',array('action'=>'register')) ?>
+<?= $form->input('User.username', array('label'=>__('Nombre de usuario',true))) ?>
+<!-- Indicamos value = '' a la contraseña para que no se rellene el campo automáticamente en caso de haber algún error en los datos -->
+<?= $form->input('User.password', array('label'=>__('Contraseña',true),'type'=>'password','value'=>'')) ?>
+<?= $form->input('User.confirm_passwd', array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>'')) ?>
+<?= $form->input('User.email', array('label'=>__('E-mail',true))) ?>
 <?= $form->end(__('Registrarse',true)) ?>[/php]
 
 Sencillo, ¿no?
 
 Creemos las validaciones que nos interesen en nuestro modelo <strong>user</strong>:
 
-[php]<?php // /app/models/user.php<br />
-class User extends AppModel {<br />
-	var $name = 'User';<br />
-	var $validate = array(<br />
-		'username'	=>	array(<br />
-						'length'		=>	array(<br />
-											'rule'		=> array('between', 3, 23),<br />
-											'message'	=>'El nombre debe contener entre 3 y 23 caracteres'<br />
-											),<br />
-						'exists'		=>	array(<br />
-											'rule'		=> array('checkUnique','username'),<br />
-											'message'	=> 'El nombre de usuario ya existe'<br />
-											)<br />
-						),<br />
-		'email'		=>	array(<br />
-							'El e-mail introducido no es válido' => VALID_EMAIL,<br />
-							'El e-mail es obligatorio' => VALID_NOT_EMPTY,<br />
-							'exists'		=> array(<br />
-												'rule'		=> array('checkUnique','email'),<br />
-												'message'	=> 'Ya hay un usuario registrado con este e-mail'<br />
-												)<br />
-  							),<br />
-		'confirm_passwd' => array('identicalFieldValues'	=> array(<br />
-													'rule'=>array('identicalFieldValues','password'),<br />
-													'message'=>'Las contraseñas introducidas no coinciden'<br />
-													)<br />
-							),<br />
-		'password'	=>	array('length'		=>	array(<br />
-											'rule'		=> array('minLength', 6),<br />
-											'message'	=>'La contraseña debe contener al menos 6 caracteres'<br />
-											)<br />
-						)<br />
-		);<br />
-	/**<br />
-	* Verifica si dos campos son iguales<br />
-	*/<br />
-	function identicalFieldValues( $field = array(), $compare_field = null )<br />
-	{<br />
-		foreach( $field as $key => $value )<br />
-		{<br />
-			$v1 = $value;<br />
-			$v2 = $this->data[$this->name][$compare_field];<br />
-			if($v1 !== $v2)<br />
-			{<br />
-				return FALSE;<br />
-			}<br />
-			else<br />
-			{<br />
-				continue;<br />
-			}<br />
-		}<br />
-		return TRUE;<br />
+[php]<?php // /app/models/user.php
+class User extends AppModel {
+	var $name = 'User';
+	var $validate = array(
+		'username'	=>	array(
+						'length'		=>	array(
+											'rule'		=> array('between', 3, 23),
+											'message'	=>'El nombre debe contener entre 3 y 23 caracteres'
+											),
+						'exists'		=>	array(
+											'rule'		=> array('checkUnique','username'),
+											'message'	=> 'El nombre de usuario ya existe'
+											)
+						),
+		'email'		=>	array(
+							'El e-mail introducido no es válido' => VALID_EMAIL,
+							'El e-mail es obligatorio' => VALID_NOT_EMPTY,
+							'exists'		=> array(
+												'rule'		=> array('checkUnique','email'),
+												'message'	=> 'Ya hay un usuario registrado con este e-mail'
+												)
+  							),
+		'confirm_passwd' => array('identicalFieldValues'	=> array(
+													'rule'=>array('identicalFieldValues','password'),
+													'message'=>'Las contraseñas introducidas no coinciden'
+													)
+							),
+		'password'	=>	array('length'		=>	array(
+											'rule'		=> array('minLength', 6),
+											'message'	=>'La contraseña debe contener al menos 6 caracteres'
+											)
+						)
+		);
+	/**
+	* Verifica si dos campos son iguales
+	*/
+	function identicalFieldValues( $field = array(), $compare_field = null )
+	{
+		foreach( $field as $key => $value )
+		{
+			$v1 = $value;
+			$v2 = $this->data[$this->name][$compare_field];
+			if($v1 !== $v2)
+			{
+				return FALSE;
+			}
+			else
+			{
+				continue;
+			}
+		}
+		return TRUE;
 	}
 
-	/**<br />
-	* Verifica si un dato existe en la base de datos<br />
-	* @param $data         Dato con el que comparar<br />
-	* @param $fieldName    Nombre de celda a verificar<br />
-	* @return bool<br />
-	*/<br />
-	function checkUnique($data, $fieldName )<br />
-	{<br />
-		$valid = false;<br />
-		if(isset($fieldName) &amp;&amp; $this->hasField($fieldName))<br />
-		{<br />
-			$valid = $this->isUnique(array($fieldName => $data));<br />
-		}<br />
-		return $valid;<br />
-	}<br />
-}<br />
+	/**
+	* Verifica si un dato existe en la base de datos
+	* @param $data         Dato con el que comparar
+	* @param $fieldName    Nombre de celda a verificar
+	* @return bool
+	*/
+	function checkUnique($data, $fieldName )
+	{
+		$valid = false;
+		if(isset($fieldName) &amp;&amp; $this->hasField($fieldName))
+		{
+			$valid = $this->isUnique(array($fieldName => $data));
+		}
+		return $valid;
+	}
+}
 [/php]
 
 Los métodos <strong>identicalFieldValues</strong> y <strong>checkUnique</strong> son los encargados de verificar si las dos contraseñas coinciden y si el usuario existe en la base de datos.
@@ -593,54 +593,54 @@ Si tenéis cualquier duda sobre la creación del modelo podéis dirigiros a la d
 
 Vamos a por el método <strong>register</strong>. Este puede variar mucho según la aplicación que queráis hacer... por ejemplo, en el caso de <a href="http://www.underave.net">underave</a> verifico que el usuario no está registrado ni en el foro ni en la página principal, ya que cuando hicimos el cambio cometimos el error de hacerlo así. En el ejemplo doy por supuesto que si el usuario no existe en la base de datos principal, no existirá en el foro. De todos modos veréis cómo hacer para verificar la existencia de un usuario (todo el primer trozo comentado):
 
-[php]// /app/controllers/users_controller.php<br />
-class UsersController extends AppController<br />
-{<br />
-	var $name = 'Users';<br />
+[php]// /app/controllers/users_controller.php
+class UsersController extends AppController
+{
+	var $name = 'Users';
 	var $components = array('Auth','PhpBB3');
 
-	function register()<br />
-	{<br />
-		$this->pageTitle = __('Registro',true) . ' | ' . __('Usuarios',true);<br />
-		if(!empty($this->data))<br />
-		{<br />
-			// Guardamos la contraseña sin encriptar para registrar al usuario en el foro<br />
-			$password = $this->data['User']['confirm_passwd'];<br />
-// 			Si nos interesa, verificamos la existencia del usuario en el foro<br />
-//			if($this->phpBB->userExists($this->data['User']['username']))<br />
-//				$this->User->invalidate('username','exists');<br />
-			// Cargamos los datos del usuario en el modelo<br />
-			$this->User->set($this->data);<br />
-			// En caso de pasar las validaciones...<br />
-			if($this->User->validates())<br />
-			{<br />
-				// Registramos el usuario en el foro<br />
-				$datos = array(<br />
-					'username'		=> $this->data['User']['username'],<br />
-					'user_password'	=> $password,<br />
-					'user_email'	=> $this->data['User']['email']<br />
-				);<br />
-				if($userForumId = $this->PhpBB3->register($datos))<br />
-				{<br />
-					// En caso de haber registrado al usuario correctamente guardamos la variable con su id del foro<br />
-					$this->data['User']['forum_id'] = $userForumId;<br />
-					if($this->User->save($this->data,false))<br />
-					{<br />
-						$this->Session->setFlash(__('Usuario registrado correctamente',true));<br />
-						$this->redirect('/');<br />
-					}<br />
-					else<br />
-					{<br />
-						$this->Session->setFlash(__('Ha habido algún error al registrarte...',true));<br />
-					}<br />
-				}<br />
-				else<br />
-				{<br />
-					$this->Session->setFlash(__('Ha habido algún error al registrarte...',true));<br />
-				}<br />
-			}<br />
-		}<br />
-	}<br />
+	function register()
+	{
+		$this->pageTitle = __('Registro',true) . ' | ' . __('Usuarios',true);
+		if(!empty($this->data))
+		{
+			// Guardamos la contraseña sin encriptar para registrar al usuario en el foro
+			$password = $this->data['User']['confirm_passwd'];
+// 			Si nos interesa, verificamos la existencia del usuario en el foro
+//			if($this->phpBB->userExists($this->data['User']['username']))
+//				$this->User->invalidate('username','exists');
+			// Cargamos los datos del usuario en el modelo
+			$this->User->set($this->data);
+			// En caso de pasar las validaciones...
+			if($this->User->validates())
+			{
+				// Registramos el usuario en el foro
+				$datos = array(
+					'username'		=> $this->data['User']['username'],
+					'user_password'	=> $password,
+					'user_email'	=> $this->data['User']['email']
+				);
+				if($userForumId = $this->PhpBB3->register($datos))
+				{
+					// En caso de haber registrado al usuario correctamente guardamos la variable con su id del foro
+					$this->data['User']['forum_id'] = $userForumId;
+					if($this->User->save($this->data,false))
+					{
+						$this->Session->setFlash(__('Usuario registrado correctamente',true));
+						$this->redirect('/');
+					}
+					else
+					{
+						$this->Session->setFlash(__('Ha habido algún error al registrarte...',true));
+					}
+				}
+				else
+				{
+					$this->Session->setFlash(__('Ha habido algún error al registrarte...',true));
+				}
+			}
+		}
+	}
 }[/php]
 
 Como podéis ver en el ejemplo, una vez he registrado al usuario en el foro me quedo con la ID del usuario creado y es entonces cuando registro al usuario en el sistema, para poder disponer de esta ID.
@@ -711,55 +711,55 @@ Ahora sí que sí :D. Vuestro registro de usuarios, así como vuestra instalaci�
 
 Bien, ahora pasaremos a la creación de la vista <strong>login.ctp</strong>:
 
-[php]<?php // /app/views/users/login.ctp<br />
-echo $form->create('User',array('action'=>'login'));<br />
-echo $form->input('User.username', array('label'=>__('Nombre',true)));<br />
-// Utilizamos 'pass' para que Auth no nos encripte la contraseña automáticamente<br />
-echo $form->input('User.pass', array('label'=>__('Contraseña',true), 'type'=>'password'));<br />
-// Guardamos el referer para saber si el usuario viene del foro y así poderle enviar de nuevo al finalizar el login<br />
-echo $form->hidden('User.referer',array('value'=>@$_SERVER['HTTP_REFERER']));<br />
-// Nota: Recordar entre sesiones funciona en el foro. Si no tenéis algún componente o método para recordar sesiones en Cake, quizás os interese utilizar alguno.<br />
-echo $form->input('User.remember_me',array('type'=>'checkbox','label'=>__('Recordar entre sesiones',true)));<br />
-echo $form->end(__('Iniciar sesión',true));<br />
-?><br />
+[php]<?php // /app/views/users/login.ctp
+echo $form->create('User',array('action'=>'login'));
+echo $form->input('User.username', array('label'=>__('Nombre',true)));
+// Utilizamos 'pass' para que Auth no nos encripte la contraseña automáticamente
+echo $form->input('User.pass', array('label'=>__('Contraseña',true), 'type'=>'password'));
+// Guardamos el referer para saber si el usuario viene del foro y así poderle enviar de nuevo al finalizar el login
+echo $form->hidden('User.referer',array('value'=>@$_SERVER['HTTP_REFERER']));
+// Nota: Recordar entre sesiones funciona en el foro. Si no tenéis algún componente o método para recordar sesiones en Cake, quizás os interese utilizar alguno.
+echo $form->input('User.remember_me',array('type'=>'checkbox','label'=>__('Recordar entre sesiones',true)));
+echo $form->end(__('Iniciar sesión',true));
+?>
 [/php]
 
 Es importante que guardemos la contraseña con un nombre de campo distinto a <em>password</em> ya que necesitamos la contraseña sin encriptar para poder iniciar sesión en el foro.
 
 Pasemos al método <em>login</em> de nuestro controlador de usuarios. Ya que estamos, también añadiremos el de <em>logout</em>:
 
-[php highlight="13,14,15,16,17"]// /app/controllers/users_controller.php<br />
-function login()<br />
-{<br />
-	if (!empty($this->data))<br />
-	{<br />
-		// Guardamos la contraseña encriptada para iniciar sesión en Cake<br />
-		$this->data['User']['password'] = $this->Auth->password($this->data['User']['pass']);<br />
-		// Iniciamos sesión en Cake<br />
-		if ($this->Auth->login($this->data))<br />
-		{<br />
-			// Iniciamos sesión en PhpBB. Si tenemos el campo 'remember_me' se lo pasamos como tercer parámetro.<br />
-			$this->PhpBB3->login($this->data['User']['username'], $this->data['User']['pass'], $this->data['User']['remember_me']);<br />
-			$this->Session->setFlash('Sessió iniciada correctament','flash_info',array(),'auth');<br />
-			// Verifico si el usuario viene del dominio principal<br />
-			if(!preg_match('/^http:\/\/(www\.)?underave\.net/', $this->data['User']['referer']) &amp;&amp; !empty($this->data['User']['referer']))<br />
-			{<br />
-				// Limpio la URL de posibles ids de sesión del foro (para evitar que éste cierre la sesión por seguridad)<br />
-				$referer = preg_replace('/^(.+)sid=[0-9a-z]+/i', '$1', $this->data['User']['referer']);<br />
-			// Si viene del dominio principal lo redirigiremos con el método Auth->redirect()<br />
-			}<br />
+[php highlight="13,14,15,16,17"]// /app/controllers/users_controller.php
+function login()
+{
+	if (!empty($this->data))
+	{
+		// Guardamos la contraseña encriptada para iniciar sesión en Cake
+		$this->data['User']['password'] = $this->Auth->password($this->data['User']['pass']);
+		// Iniciamos sesión en Cake
+		if ($this->Auth->login($this->data))
+		{
+			// Iniciamos sesión en PhpBB. Si tenemos el campo 'remember_me' se lo pasamos como tercer parámetro.
+			$this->PhpBB3->login($this->data['User']['username'], $this->data['User']['pass'], $this->data['User']['remember_me']);
+			$this->Session->setFlash('Sessió iniciada correctament','flash_info',array(),'auth');
+			// Verifico si el usuario viene del dominio principal
+			if(!preg_match('/^http:\/\/(www\.)?underave\.net/', $this->data['User']['referer']) &amp;&amp; !empty($this->data['User']['referer']))
+			{
+				// Limpio la URL de posibles ids de sesión del foro (para evitar que éste cierre la sesión por seguridad)
+				$referer = preg_replace('/^(.+)sid=[0-9a-z]+/i', '$1', $this->data['User']['referer']);
+			// Si viene del dominio principal lo redirigiremos con el método Auth->redirect()
+			}
 			else $referer = $this->Auth->redirect();
 
-			$this->redirect($referer);<br />
-		}<br />
-	}<br />
+			$this->redirect($referer);
+		}
+	}
 }
 
-function logout()<br />
-{<br />
-	$this->PhpBB3->logout();<br />
-	$this->redirect($this->Auth->logout());<br />
-}<br />
+function logout()
+{
+	$this->PhpBB3->logout();
+	$this->redirect($this->Auth->logout());
+}
 [/php]
 
 En las <strong>líneas 13 a 17</strong> lo que hago es verificar si el usuario viene de mi dominio principal. Lo hago así porque en mi caso tengo los foros en un subdominio. Si no es vuestro caso deberéis modificar la expresión regular para que se ajuste a vuestras necesidades.
@@ -772,9 +772,9 @@ En directorio de la cookie aseguraros que apunta a la raíz del dominio: <strong
 
 Ahora debéis aseguraros que en vuestro php.ini (o utilizando el método php ini_set) tenéis las cookies también configuradas como en el foro:
 
-[sourcecode language="plain"]; The path for which the cookie is valid.<br />
-session.cookie_path = /<br />
-; The domain for which the cookie is valid.<br />
+[sourcecode language="plain"]; The path for which the cookie is valid.
+session.cookie_path = /
+; The domain for which the cookie is valid.
 session.cookie_domain = .underave.net[/sourcecode]
 
 Hecho esto y subido vuestro php.ini al servidor (antes de subirlo quizás os interese echar un ojo al resto de opciones para ver qué se cuece por ahí) el login de usuarios ya debe funcionar sin problema alguno :)
@@ -790,63 +790,63 @@ El método que crearemos ahora será para cambiar la contraseña ya que el cambi
 
 Para cambiar cualquier dato de los usuarios del foro sería interesante tener un método en nuestro modelo Forum:
 
-[php]	// /app/models/forum.php<br />
-/**<br />
- * Actualiza un dato ($field) de un usuario a<br />
- * partir de su $id en el foro con el valor $value<br />
- *<br />
- * @param integer $id of user<br />
- * @param string $field to update<br />
- * @param mixed $value<br />
- * @return boolean true on success, false on failure<br />
- */<br />
-function setUserField($id, $field, $value)<br />
-{<br />
-	$this->setSource('users');<br />
-	$this->primaryKey = 'user_id';<br />
-	$this->id = $id;<br />
-	return $this->saveField($field, $value);<br />
+[php]	// /app/models/forum.php
+/**
+ * Actualiza un dato ($field) de un usuario a
+ * partir de su $id en el foro con el valor $value
+ *
+ * @param integer $id of user
+ * @param string $field to update
+ * @param mixed $value
+ * @return boolean true on success, false on failure
+ */
+function setUserField($id, $field, $value)
+{
+	$this->setSource('users');
+	$this->primaryKey = 'user_id';
+	$this->id = $id;
+	return $this->saveField($field, $value);
 }[/php]
 
 Añadamos una vista para el cambio de contraseña:
 
-[php]// /app/views/users/change_password.ctp<br />
-<?php<br />
-echo $form->create('User',array('action'=>'changePassword'));<br />
-echo $form->input('old_passwd',array('label'=>__('Contraseña actual',true),'type'=>'password','type','value'=>''));<br />
-echo $form->input('password',array('label'=>__('Contraseña',true),'type'=>'password','value'=>''));<br />
-echo $form->input('confirm_passwd',array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>''));<br />
-echo $form->end(__('Cambiar contraseña',true));<br />
+[php]// /app/views/users/change_password.ctp
+<?php
+echo $form->create('User',array('action'=>'changePassword'));
+echo $form->input('old_passwd',array('label'=>__('Contraseña actual',true),'type'=>'password','type','value'=>''));
+echo $form->input('password',array('label'=>__('Contraseña',true),'type'=>'password','value'=>''));
+echo $form->input('confirm_passwd',array('label'=>__('Confirma la contraseña',true),'type'=>'password','value'=>''));
+echo $form->end(__('Cambiar contraseña',true));
 ?>[/php]
 
 Y aquí viene el método de cambiar contraseña (está creado en el controlador usuarios pero no estaría de más separarlo un poco entre modelo y controlador):
 
-[php]// /app/controllers/users_controller.php<br />
-function changePassword()<br />
-{<br />
-	if (!empty($this->data)){<br />
-		// Buscamos el usuario actual en la base de datos<br />
-		$user = $this->User->findById($this->Auth->user('id'));<br />
-		// Cargamos los datos en el modelo (para validarlos)<br />
-		$this->User->set($this->data);<br />
-		// Encriptamos la contraseña antigua para validarla<br />
-		$this->data['User']['old_passwd'] = $this->Auth->password($this->data['User']['old_passwd']);<br />
-		// Validamos y verificamos que la contraseña introducida coincide con la de la BDD<br />
-		if ($this->User->validates() &amp;&amp; $this->data['User']['old_passwd'] == $user['User']['password']) {<br />
-			$password = $this->data['User']['password'];<br />
-			// Actualizamos la contraseña del foro<br />
-			$this->Forum->setUserField($user['User']['forums_id'], 'user_password', $this->Auth->password($this->data['User']['password']));<br />
-			// Actualizamos la contraseña del sistema<br />
-			$this->User->updateAll(array('User.password'=>'''.$this->Auth->password($password).'''),array('User.id'=>$user['User']['id']));<br />
-			$this->Session->setFlash(__('Tu contraseña ha sido cambiada con éxito',true),'flash_info');<br />
-			$this->redirect(array('controller'=>'users','action'=>'profile'));<br />
-		}<br />
-		// Si la contraseña no coincide con la guardada en la BDD mostramos error.<br />
-		if($this->data['User']['old_passwd'] != $user['User']['password'])<br />
-		{<br />
-			$this->User->invalidate('old_passwd',__('La contraseña no es correcta',true));<br />
-		}<br />
-	}<br />
+[php]// /app/controllers/users_controller.php
+function changePassword()
+{
+	if (!empty($this->data)){
+		// Buscamos el usuario actual en la base de datos
+		$user = $this->User->findById($this->Auth->user('id'));
+		// Cargamos los datos en el modelo (para validarlos)
+		$this->User->set($this->data);
+		// Encriptamos la contraseña antigua para validarla
+		$this->data['User']['old_passwd'] = $this->Auth->password($this->data['User']['old_passwd']);
+		// Validamos y verificamos que la contraseña introducida coincide con la de la BDD
+		if ($this->User->validates() &amp;&amp; $this->data['User']['old_passwd'] == $user['User']['password']) {
+			$password = $this->data['User']['password'];
+			// Actualizamos la contraseña del foro
+			$this->Forum->setUserField($user['User']['forums_id'], 'user_password', $this->Auth->password($this->data['User']['password']));
+			// Actualizamos la contraseña del sistema
+			$this->User->updateAll(array('User.password'=>'''.$this->Auth->password($password).'''),array('User.id'=>$user['User']['id']));
+			$this->Session->setFlash(__('Tu contraseña ha sido cambiada con éxito',true),'flash_info');
+			$this->redirect(array('controller'=>'users','action'=>'profile'));
+		}
+		// Si la contraseña no coincide con la guardada en la BDD mostramos error.
+		if($this->data['User']['old_passwd'] != $user['User']['password'])
+		{
+			$this->User->invalidate('old_passwd',__('La contraseña no es correcta',true));
+		}
+	}
 }[/php]
 
 Con esto ya podéis cambiar la contraseña en todo el sistema y ya sabéis cómo hacer para modificar el resto de datos. Al actualizar la contraseña he utilizado <em>user_password</em> como nombre de celda. Consultad vuestra base de datos de phpBB para saber los nombres de las celdas a actualizar.

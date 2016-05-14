@@ -37,36 +37,36 @@ Harto de pasarme el día haciendo esto:
 
 ...decidí hacer una función que me hiciera la tarea un poco más sencilla; aquí está:
 
-<a id="more"></a><a id="more-525"></a><br />
-[php]function fillPost($keys,$exclude = null)<br />
-{<br />
-	$array = array();<br />
-	// Fem un bucle amb tota la informació post<br />
-	foreach ($_POST as $key=>$val){<br />
-		// Si la variable keys és un array<br />
-		if (is_array($keys)){<br />
-			// I la clau actual és dins de l'array, llavors afegim la clau i el valor en el nou array<br />
-			if (in_array($key, $keys)) $array[$key] = $val;<br />
-		// Si no és array i el seu contingut és exactament ALL<br />
-		}elseif($keys==='ALL'){<br />
-			// Si l'exclude és especificat<br />
-			if (isset($exclude)){<br />
-				// És un array<br />
-				if(is_array($exclude)){<br />
-					// I la clau actual NO hi és en l'array, llavors afegim la clau i el valor en el nou array<br />
-					if (!in_array($key,$exclude)) $array[$key] = $val;<br />
-				// Sinó és un array<br />
-				}else{<br />
-					if ($key!=$exclude) $array[$key] = $val;<br />
-				}<br />
-			// Si no especifiquem l'exclude afegim tots els valors<br />
-			}else{<br />
-				$array[$key] = $val;<br />
-			}<br />
-		// Si no és cap de les anteriors (únicament especifiquem una clau) la retornem amb el seu valor<br />
-		}else return $_POST[$keys];<br />
-	}<br />
-	return $array;<br />
+<a id="more"></a><a id="more-525"></a>
+[php]function fillPost($keys,$exclude = null)
+{
+	$array = array();
+	// Fem un bucle amb tota la informació post
+	foreach ($_POST as $key=>$val){
+		// Si la variable keys és un array
+		if (is_array($keys)){
+			// I la clau actual és dins de l'array, llavors afegim la clau i el valor en el nou array
+			if (in_array($key, $keys)) $array[$key] = $val;
+		// Si no és array i el seu contingut és exactament ALL
+		}elseif($keys==='ALL'){
+			// Si l'exclude és especificat
+			if (isset($exclude)){
+				// És un array
+				if(is_array($exclude)){
+					// I la clau actual NO hi és en l'array, llavors afegim la clau i el valor en el nou array
+					if (!in_array($key,$exclude)) $array[$key] = $val;
+				// Sinó és un array
+				}else{
+					if ($key!=$exclude) $array[$key] = $val;
+				}
+			// Si no especifiquem l'exclude afegim tots els valors
+			}else{
+				$array[$key] = $val;
+			}
+		// Si no és cap de les anteriors (únicament especifiquem una clau) la retornem amb el seu valor
+		}else return $_POST[$keys];
+	}
+	return $array;
 }[/php]
 <h2>¿Qué hace?</h2>
 
@@ -79,13 +79,13 @@ También funciona a la inversa, es decir... si le pasámos como parámetro $keys
 <blockquote>
 <h5><em><span style="color: #888888;">array</span> fillPost ( <span style="color: #888888;">array/string</span> $keys [, <span style="color: #888888;">array/string</span> $exclude ] )</em></h5>
 
-<strong><em>keys</em></strong><br />
+<strong><em>keys</em></strong>
 Una cadena de texto o un array de cadenas de texto indicando las claves que deseamos. Si utilizamos "<em>ALL</em>" recuperamos toda la información.
 
-<strong><em>exclude</em></strong><br />
+<strong><em>exclude</em></strong>
 Una cadena de texto o un array de cadenas de texto indicando las claves que NO deseamos incluir (útil utilizando "<em>ALL</em>" como parámetro <em>keys</em>.
 
-<strong><em>Variables que retorna</em></strong><br />
+<strong><em>Variables que retorna</em></strong>
 Un array asociativo.</blockquote>
 <h5>Comentarios del código (traducidos)</h5>
 
@@ -133,10 +133,10 @@ Un array asociativo.</blockquote>
 </ul>
 <h2>Ejemplos</h2>
 
-Recuperando algunas claves $_POST:<br />
-[php]$datos = array('nombre','password','email');<br />
-$post = fillPost($datos);<br />
-print_r($post);[/php]<br />
+Recuperando algunas claves $_POST:
+[php]$datos = array('nombre','password','email');
+$post = fillPost($datos);
+print_r($post);[/php]
 Salida aproximada:
 
 Array
@@ -146,10 +146,10 @@ Array
     ['email'] => "Valor de la variable $_POST['email']"
 )
 
-Recuperando todas las claves $_POST menos algunas:<br />
-[php]$excluir = array('nombre','password','email');<br />
-$post = fillPost('ALL',$excluir);<br />
-print_r($post);[/php]<br />
+Recuperando todas las claves $_POST menos algunas:
+[php]$excluir = array('nombre','password','email');
+$post = fillPost('ALL',$excluir);
+print_r($post);[/php]
 Salida aproximada:
 
 Array

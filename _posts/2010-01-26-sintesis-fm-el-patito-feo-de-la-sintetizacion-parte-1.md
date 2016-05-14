@@ -98,7 +98,7 @@ Uno de los sonidos, bajo mi punto de vista, más bonitos de estos instrumentos, 
 
 Por cierto, os dejo aquí la foto de mi <span style="color: #666699;"><strong>DX-7S </strong></span> junto a sus compañeros de estudio.
 
-<span style="color: #666699;"><span style="color: #000000;"><span style="color: #666699;"><span style="color: #000000;"><a href="http://www.racotecnic.com/wp-content/uploads/2011/07/IMG_5375.jpg"><img class="aligncenter size-medium wp-image-1988" title="Estudio" src="http://www.racotecnic.com/wp-content/uploads/2011/07/IMG_5375-300x225.jpg" alt="Estudio" width="300" height="225" /></a><a href="http://audioblog.underave.net/wp-content/uploads/2010/01/IMG_5375.jpg"><br />
+<span style="color: #666699;"><span style="color: #000000;"><span style="color: #666699;"><span style="color: #000000;"><a href="http://www.racotecnic.com/wp-content/uploads/2011/07/IMG_5375.jpg"><img class="aligncenter size-medium wp-image-1988" title="Estudio" src="http://www.racotecnic.com/wp-content/uploads/2011/07/IMG_5375-300x225.jpg" alt="Estudio" width="300" height="225" /></a><a href="http://audioblog.underave.net/wp-content/uploads/2010/01/IMG_5375.jpg">
 </a></span></span></span></span>
 
 Hasta la siguiente entrega.

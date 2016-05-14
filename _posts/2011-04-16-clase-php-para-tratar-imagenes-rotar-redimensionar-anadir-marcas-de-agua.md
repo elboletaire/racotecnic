@@ -70,64 +70,64 @@ Si queréis utilizar la clase desde CakePHP simplemente tenéis que descomentar 
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png"><img class="size-full wp-image-1899 aligncenter" title="test1" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png" alt="" width="322" height="546" /></a>
 
-[php]$wm = new Watermark();<br />
-$wm->setImage('test.png');<br />
-$wm->setWatermark(array('file' => 'watermark.png', 'position' => 'top right'));<br />
-$wm->applyWatermark();<br />
-if ( !$wm->generate('test1.png') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
+[php]$wm = new Watermark();
+$wm->setImage('test.png');
+$wm->setWatermark(array('file' => 'watermark.png', 'position' => 'top right'));
+$wm->applyWatermark();
+if ( !$wm->generate('test1.png') ) {
+	// handle error...
+	print_r($wm->errors);
 }[/php]
 <h4>Redimensionando</h4>
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png"><img class="size-full wp-image-1900 aligncenter" title="test2" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png" alt="" width="400" height="200" /></a>
 
-[php]$wm = new Watermark('test.png');<br />
-$wm->resize(array('type' => 'resizecrop', 'size' => array(400, 200)));<br />
-if ( !$wm->generate('test2.png') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
+[php]$wm = new Watermark('test.png');
+$wm->resize(array('type' => 'resizecrop', 'size' => array(400, 200)));
+if ( !$wm->generate('test2.png') ) {
+	// handle error...
+	print_r($wm->errors);
 }[/php]
 <h4>Rotando</h4>
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png"><img class="size-full wp-image-1901 aligncenter" title="test3" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png" alt="" width="400" height="234" /></a>
 
-[php]$wm = new Watermark('test.png');<br />
-$wm->rotate(90);<br />
-if ( !$wm->generate('test3.png') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
-}<br />
+[php]$wm = new Watermark('test.png');
+$wm->rotate(90);
+if ( !$wm->generate('test3.png') ) {
+	// handle error...
+	print_r($wm->errors);
+}
 [/php]
 <h4>Guardando en otros formatos</h4>
 
-[php]$wm = new Watermark('test.png');<br />
-if ( !$wm->generate('test4.jpg') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
+[php]$wm = new Watermark('test.png');
+if ( !$wm->generate('test4.jpg') ) {
+	// handle error...
+	print_r($wm->errors);
 }[/php]
 <h4>Espejo</h4>
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test5.png"><img class="size-medium wp-image-1903 aligncenter" title="test5" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test5-176x300.png" alt="" width="176" height="300" /></a>
 
-[php]$wm = new Watermark('test.png');<br />
-$wm->flip('vertical');<br />
-if ( !$wm->generate('test5.png') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
+[php]$wm = new Watermark('test.png');
+$wm->flip('vertical');
+if ( !$wm->generate('test5.png') ) {
+	// handle error...
+	print_r($wm->errors);
 }[/php]
 <h4>Todo junto</h4>
 
 <img class="aligncenter size-full wp-image-1904" title="test6" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test6.png" alt="" width="341" height="341" />
 
-[php]$wm = new Watermark('test.png', 'watermark.png');<br />
-$wm->resize(array('type' => 'resizecrop', 'size' => 400));<br />
-$wm->flip('horizontal');<br />
-$wm->rotate(90);<br />
-$wm->applyWatermark();<br />
-if ( !$wm->generate('test6.png') ) {<br />
-	// handle error...<br />
-	print_r($wm->errors);<br />
+[php]$wm = new Watermark('test.png', 'watermark.png');
+$wm->resize(array('type' => 'resizecrop', 'size' => 400));
+$wm->flip('horizontal');
+$wm->rotate(90);
+$wm->applyWatermark();
+if ( !$wm->generate('test6.png') ) {
+	// handle error...
+	print_r($wm->errors);
 }[/php]
 
 Gracias a <a href="#comment-36188" >los comentarios de Francisco</a> he podido arreglar la clase para que trate correctamente las transparencias.

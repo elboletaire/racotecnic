@@ -49,12 +49,12 @@ Después de buscar un rato la única solución viable que he encontrado ha sido 
 
 lftp tiene un método llamado "mirror" que es el que nos permitirá hacer esto. Un ejemplo sencillo de su uso sería...
 
-[bash]lftp -c 'set ftp:list-options -a;<br />
-		open ftp://usuarioftp:passwordftp@hostftp;<br />
-		lcd /directorio/donde/copiar;<br />
-		cd /directorio/local/a/copiar;<br />
-		mirror --reverse \<br />
-		       --delete;<br />
+[bash]lftp -c 'set ftp:list-options -a;
+		open ftp://usuarioftp:passwordftp@hostftp;
+		lcd /directorio/donde/copiar;
+		cd /directorio/local/a/copiar;
+		mirror --reverse \
+		       --delete;
 		close -a;'[/bash]
 
 Como también quería hacer backups de MySQL he decidido entretenerme un rato y hacer mi primer script de bash para hacer copias de mysql y directorios del sistema periódicamente (cada dos días a través de un cron).
@@ -63,132 +63,132 @@ Para utilizar el script necesitaréis tener instalado en vuestro servidor linux 
 
 [bash]#!/bin/bash
 
-# :: General Backup Setup ::<br />
-BACKUP=/tmp/backup.$$<br />
-NOW=$(date +'%Y%m%d')<br />
-EMAILID='tu_correo@ejemplo.com'<br />
-DOMYSQL=1 # 0 para no hacer copia de seguridad de mysql<br />
-DOSYSTEM=1 # 0 para no hacer copia de seguridad del sistema<br />
+# :: General Backup Setup ::
+BACKUP=/tmp/backup.$$
+NOW=$(date +'%Y%m%d')
+EMAILID='tu_correo@ejemplo.com'
+DOMYSQL=1 # 0 para no hacer copia de seguridad de mysql
+DOSYSTEM=1 # 0 para no hacer copia de seguridad del sistema
 DEBUG=0 # 1 activa un poco de debug (pero solo un poco xD)
 
-# :: File System Backup Setup ::<br />
-FOLDERS=( '/home/usuario/Documentos' '/home/usuario/Imágenes' )<br />
-# FTP destination folder<br />
+# :: File System Backup Setup ::
+FOLDERS=( '/home/usuario/Documentos' '/home/usuario/Imágenes' )
+# FTP destination folder
 SFOLDER='directorio_destino_donde_guardar_la_copia'
 
-# :: MySQL Backup Setup ::<br />
-MUSER='usuarioSQL'<br />
-MPASS='pass'<br />
-MHOST='localhost'<br />
-# MySQL FTP destination folder<br />
+# :: MySQL Backup Setup ::
+MUSER='usuarioSQL'
+MPASS='pass'
+MHOST='localhost'
+# MySQL FTP destination folder
 MFOLDER='directorio_destino_donde_guardar_los_sql'
 
-# :: FTP server Setup ::<br />
-# Root FTP folder<br />
-RCD='/directorio_raiz_del_servidor'<br />
-FUSER='usuario'<br />
-FPASS='contraseña'<br />
-FHOST='servidor.dominio'<br />
+# :: FTP server Setup ::
+# Root FTP folder
+RCD='/directorio_raiz_del_servidor'
+FUSER='usuario'
+FPASS='contraseña'
+FHOST='servidor.dominio'
 FOPTIONS='set ftp:list-options -a;set ftp:ssl-allow no' #;set net:limit-total-rate 61440'
 
 # end config
 
-# :: Binaries ::<br />
-MYSQL='$(which mysql)'<br />
-MYSQLDUMP='$(which mysqldump)'<br />
-GZIP='$(which gzip)'<br />
+# :: Binaries ::
+MYSQL='$(which mysql)'
+MYSQLDUMP='$(which mysqldump)'
+GZIP='$(which gzip)'
 FTP='$(which lftp)'
 
-debug() {<br />
-	if [ $DEBUG == 1 ]; then<br />
-		echo $1<br />
-	fi<br />
+debug() {
+	if [ $DEBUG == 1 ]; then
+		echo $1
+	fi
 }
 
-if [ $DOMYSQL == 1 ]; then<br />
-	# Create backup folder<br />
-	debug 'Creating backup folder ${BACKUP}'<br />
+if [ $DOMYSQL == 1 ]; then
+	# Create backup folder
+	debug 'Creating backup folder ${BACKUP}'
 	[ ! -d $BACKUP ] &amp;&amp; mkdir -p '${BACKUP}' || :
 
-	# Start MySQL backup<br />
-	debug 'Showing databases...'<br />
-	DBS='$($MYSQL -u $MUSER -h $MHOST -p$MPASS -Bse 'show databases')'<br />
-	for db in $DBS<br />
-	do<br />
-	 if [ $db != 'information_schema' ]; then<br />
-	 debug 'Creating $db.sql.gz backup file'<br />
-	 FILE=$BACKUP/$db.sql.gz<br />
-	 $MYSQLDUMP -u $MUSER -h $MHOST -p$MPASS $db | $GZIP -9 > $FILE<br />
-	 chmod 755 $FILE<br />
-	 fi<br />
-	done<br />
-	# Start FTP backup using lftp<br />
-	debug 'Starting FTP transaction for MySQL backup files...'<br />
-	$FTP -c '$FOPTIONS;<br />
-	open ftp://$FUSER:$FPASS@$FHOST;<br />
-	lcd $BACKUP;<br />
-	cd $RCD/$MFOLDER;<br />
-	mkdir ${NOW};<br />
-	cd ${NOW};<br />
-	mirror  --reverse \<br />
-			--delete;<br />
+	# Start MySQL backup
+	debug 'Showing databases...'
+	DBS='$($MYSQL -u $MUSER -h $MHOST -p$MPASS -Bse 'show databases')'
+	for db in $DBS
+	do
+	 if [ $db != 'information_schema' ]; then
+	 debug 'Creating $db.sql.gz backup file'
+	 FILE=$BACKUP/$db.sql.gz
+	 $MYSQLDUMP -u $MUSER -h $MHOST -p$MPASS $db | $GZIP -9 > $FILE
+	 chmod 755 $FILE
+	 fi
+	done
+	# Start FTP backup using lftp
+	debug 'Starting FTP transaction for MySQL backup files...'
+	$FTP -c '$FOPTIONS;
+	open ftp://$FUSER:$FPASS@$FHOST;
+	lcd $BACKUP;
+	cd $RCD/$MFOLDER;
+	mkdir ${NOW};
+	cd ${NOW};
+	mirror  --reverse \
+			--delete;
 	close -a;'
 
-	# Find out if ftp mysql backup failed or not<br />
-	if [ '$?' != '0' ]; then<br />
-	 debug 'FTP upload failed'<br />
-	 T=/tmp/backup.fail<br />
-	 echo 'Date: $(date)'>$T<br />
-	 echo 'Hostname: $(hostname)' >>$T<br />
-	 echo 'Backup failed' >>$T<br />
-	 mail  -s 'MYSQL BACKUP FAILED' '$EMAILID' <$T<br />
-	 rm -f $T<br />
+	# Find out if ftp mysql backup failed or not
+	if [ '$?' != '0' ]; then
+	 debug 'FTP upload failed'
+	 T=/tmp/backup.fail
+	 echo 'Date: $(date)'>$T
+	 echo 'Hostname: $(hostname)' >>$T
+	 echo 'Backup failed' >>$T
+	 mail  -s 'MYSQL BACKUP FAILED' '$EMAILID' <$T
+	 rm -f $T
 	fi
 
-	# Delete files<br />
-	debug 'Removing files...'<br />
-	if [ $DEBUG ]; then<br />
-		rm -frv $BACKUP<br />
-	else<br />
-		rm -fr $BACKUP<br />
-	fi<br />
+	# Delete files
+	debug 'Removing files...'
+	if [ $DEBUG ]; then
+		rm -frv $BACKUP
+	else
+		rm -fr $BACKUP
+	fi
 fi
 
-if [ $DOSYSTEM == 1 ]; then<br />
-	# Start System Backup<br />
-	# Get number of folders<br />
-	FELEM=${#FOLDERS[@]}<br />
-	for (( i=0;i<$FELEM;i++)); do<br />
-		THISFOLDER=${FOLDERS[${i}]}<br />
-		if [ -d $THISFOLDER ]; then<br />
-			debug '$THISFOLDER exists'<br />
-			REMOTEFOLDER=( $(echo $THISFOLDER | tr '/' ' ') )<br />
-			REMOTEFOLDER=${REMOTEFOLDER[${#REMOTEFOLDER[@]}-1]}<br />
-			debug 'Using $REMOTEFOLDER as remote folder name'<br />
-			debug 'Starting FTP transaction from $THISFOLDER to $RCD/$SFOLDER/$REMOTEFOLDER'<br />
-			# FTP transfer<br />
-			$FTP -c '$FOPTIONS;<br />
-				open ftp://$FUSER:$FPASS@$FHOST;<br />
-				lcd $THISFOLDER;<br />
-				cd $RCD/$SFOLDER;<br />
-				mkdir $REMOTEFOLDER;<br />
-				cd $REMOTEFOLDER;<br />
-				mirror  --reverse \<br />
-						--delete;<br />
-				close -a;'<br />
-			# Find out if ftp system backup failed<br />
-			if [ '$?' != '0' ]; then<br />
-			 debug 'File system backup failed'<br />
-			 T=/tmp/backup.fail<br />
-			 echo 'Date: $(date)'>$T<br />
-			 echo 'Hostname: $(hostname)' >>$T<br />
-			 echo 'Backup failed on dir $THISFOLDER' >>$T<br />
-			 mail  -s 'SYSTEM BACKUP FAILED' '$EMAILID' <$T<br />
-			 rm -f $T<br />
-			fi<br />
-		fi<br />
-	done<br />
-fi<br />
+if [ $DOSYSTEM == 1 ]; then
+	# Start System Backup
+	# Get number of folders
+	FELEM=${#FOLDERS[@]}
+	for (( i=0;i<$FELEM;i++)); do
+		THISFOLDER=${FOLDERS[${i}]}
+		if [ -d $THISFOLDER ]; then
+			debug '$THISFOLDER exists'
+			REMOTEFOLDER=( $(echo $THISFOLDER | tr '/' ' ') )
+			REMOTEFOLDER=${REMOTEFOLDER[${#REMOTEFOLDER[@]}-1]}
+			debug 'Using $REMOTEFOLDER as remote folder name'
+			debug 'Starting FTP transaction from $THISFOLDER to $RCD/$SFOLDER/$REMOTEFOLDER'
+			# FTP transfer
+			$FTP -c '$FOPTIONS;
+				open ftp://$FUSER:$FPASS@$FHOST;
+				lcd $THISFOLDER;
+				cd $RCD/$SFOLDER;
+				mkdir $REMOTEFOLDER;
+				cd $REMOTEFOLDER;
+				mirror  --reverse \
+						--delete;
+				close -a;'
+			# Find out if ftp system backup failed
+			if [ '$?' != '0' ]; then
+			 debug 'File system backup failed'
+			 T=/tmp/backup.fail
+			 echo 'Date: $(date)'>$T
+			 echo 'Hostname: $(hostname)' >>$T
+			 echo 'Backup failed on dir $THISFOLDER' >>$T
+			 mail  -s 'SYSTEM BACKUP FAILED' '$EMAILID' <$T
+			 rm -f $T
+			fi
+		fi
+	done
+fi
 [/bash]
 
 Como he dicho, es el primer script de bash que he hecho en la vida (a parte de alguno otro realmente tonto..) así que si me proponéis ideas para mejorarlo o encontráis algún error os agradecería que me lo comentarais :)

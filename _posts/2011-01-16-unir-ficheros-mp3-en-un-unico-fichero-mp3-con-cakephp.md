@@ -64,215 +64,215 @@ Descomprimid el contenido del fichero que descarguéis en Getid3 y ponedlo en la
 
 Ahora necesitaremos el método para unir los mp3. Lo podéis encontrar en la carpeta de demos de getid3. De todos modos os dejo aquí un pequeño componente que tengo yo para utilizar getid3:
 
-[php]<br />
-<?php<br />
-// /app/controllers/components/getid3.php<br />
-class Getid3Component extends Object<br />
-{<br />
+[php]
+<?php
+// /app/controllers/components/getid3.php
+class Getid3Component extends Object
+{
 	public $errors = array();
 
-	function __construct()<br />
-	{<br />
-		set_time_limit(20*3600);<br />
-		ignore_user_abort(false);<br />
+	function __construct()
+	{
+		set_time_limit(20*3600);
+		ignore_user_abort(false);
 	}
 
-	function error($text)<br />
-	{<br />
-		array_push($this->errors, $text);<br />
+	function error($text)
+	{
+		array_push($this->errors, $text);
 	}
 
-	function extract($filename)<br />
+	function extract($filename)
 	{
 
-		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));<br />
-		// Initialize getID3 engine<br />
-		$getID3 = new getID3;<br />
+		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));
+		// Initialize getID3 engine
+		$getID3 = new getID3;
 		$getID3->setOption(array('encoding' => Configure::read('App.encoding')));
 
-		// Analyze file and store returned data in $ThisFileInfo<br />
+		// Analyze file and store returned data in $ThisFileInfo
 		$ThisFileInfo = $getID3->analyze($filename);
 
-		return $ThisFileInfo;<br />
+		return $ThisFileInfo;
 	}
 
 	function read($filename) { return $this->extract($filename); }
 
-	function getId3Clean($filename)<br />
-	{<br />
+	function getId3Clean($filename)
+	{
 		$info = $this->read($filename);
 
-		$id3 = array();<br />
-		foreach ( $info['tags'] as $tag )<br />
-		{<br />
-			foreach ( $tag as $key => $val )<br />
-			{<br />
-				if ( empty($id3[$key]) )<br />
-				{<br />
-					$id3[$key] = $val[0];<br />
-				}<br />
-				else<br />
-				{<br />
-					if ( strlen($val[0]) > strlen($id3[$key]) )<br />
-					{<br />
-						$id3[$key] = $val[0];<br />
-					}<br />
-				}<br />
-			}<br />
-		}<br />
-		return $id3;<br />
+		$id3 = array();
+		foreach ( $info['tags'] as $tag )
+		{
+			foreach ( $tag as $key => $val )
+			{
+				if ( empty($id3[$key]) )
+				{
+					$id3[$key] = $val[0];
+				}
+				else
+				{
+					if ( strlen($val[0]) > strlen($id3[$key]) )
+					{
+						$id3[$key] = $val[0];
+					}
+				}
+			}
+		}
+		return $id3;
 	}
 
-	function getCustomTags($filename)<br />
-	{<br />
-		$id3 = $this->getId3Clean($filename);<br />
-		$vars = array(<br />
-			'description'	=> 'content_group_description',<br />
-			'set'			=> 'part_of_a_set'<br />
-		);<br />
-		foreach ( $vars as $k => $v )<br />
-		{<br />
-			if ( !empty($id3[$v]) )<br />
-			{<br />
-				$id3[$k] = $id3[$v];<br />
-				unset($id3[$v]);<br />
-			}<br />
-		}<br />
-		return $id3;<br />
+	function getCustomTags($filename)
+	{
+		$id3 = $this->getId3Clean($filename);
+		$vars = array(
+			'description'	=> 'content_group_description',
+			'set'			=> 'part_of_a_set'
+		);
+		foreach ( $vars as $k => $v )
+		{
+			if ( !empty($id3[$v]) )
+			{
+				$id3[$k] = $id3[$v];
+				unset($id3[$v]);
+			}
+		}
+		return $id3;
 	}
 
-	function write($filename, $data)<br />
-	{<br />
+	function write($filename, $data)
+	{
 		App::import('vendor','getid3/getid3/getid3');
 
-		// Initialize getID3 engine<br />
-		$getID3 = new getID3;<br />
+		// Initialize getID3 engine
+		$getID3 = new getID3;
 		$getID3->setOption(array('encoding'=>Configure::read('App.encoding')));
 
 		App::import('vendor','getid3/getid3',array('file'=>'write.php'));
 
-		// Initialize getID3 tag-writing module<br />
+		// Initialize getID3 tag-writing module
 		$tagwriter = new getid3_writetags;
 
-		//$tagwriter->filename       = '/path/to/file.mp3';<br />
-		$tagwriter->filename       = $filename;<br />
+		//$tagwriter->filename       = '/path/to/file.mp3';
+		$tagwriter->filename       = $filename;
 		$tagwriter->tagformats     = array('id3v1', 'id3v2.3');
 
-		// set various options (optional)<br />
-		$tagwriter->overwrite_tags = true;<br />
-		$tagwriter->tag_encoding   = Configure::read('App.encoding');<br />
+		// set various options (optional)
+		$tagwriter->overwrite_tags = true;
+		$tagwriter->tag_encoding   = Configure::read('App.encoding');
 		$tagwriter->remove_other_tags = true;
 
-		// populate data array<br />
-		$TagData['title'][]   = !empty($data['title'])?$data['title']:null;<br />
-		$TagData['artist'][]  = !empty($data['artist'])?$data['artist']:null;<br />
-		$TagData['album'][]   = !empty($data['album'])?$data['album']:null;;<br />
-		$TagData['year'][]    = !empty($data['year'])?$data['year']:null;;<br />
-		$TagData['genre'][]   = !empty($data['genre'])?$data['genre']:null;;<br />
-		$TagData['comment'][] = 'from www.underave.net';<br />
+		// populate data array
+		$TagData['title'][]   = !empty($data['title'])?$data['title']:null;
+		$TagData['artist'][]  = !empty($data['artist'])?$data['artist']:null;
+		$TagData['album'][]   = !empty($data['album'])?$data['album']:null;;
+		$TagData['year'][]    = !empty($data['year'])?$data['year']:null;;
+		$TagData['genre'][]   = !empty($data['genre'])?$data['genre']:null;;
+		$TagData['comment'][] = 'from www.underave.net';
 		$TagData['track'][]   = !empty($data['track'])?$data['track']:null;;
 
 		$tagwriter->tag_data = $TagData;
 
-		// write tags<br />
-		if ($tagwriter->WriteTags()) {<br />
-			if (!empty($tagwriter->warnings)) {<br />
-				return $tagwriter->warnings;<br />
-			}<br />
-			return true;<br />
-		} else {<br />
-			return $tagwriter->errors;<br />
-		}<br />
+		// write tags
+		if ($tagwriter->WriteTags()) {
+			if (!empty($tagwriter->warnings)) {
+				return $tagwriter->warnings;
+			}
+			return true;
+		} else {
+			return $tagwriter->errors;
+		}
 	}
 
-	function joinMp3($file_out, $files_in)<br />
-	{<br />
-		foreach ( $files_in as $nextinputfilename ) {<br />
-			if ( !is_readable($nextinputfilename) ) {<br />
-				$this->error('Cannot read '' . $nextinputfilename . ''');<br />
-			}<br />
-		}<br />
+	function joinMp3($file_out, $files_in)
+	{
+		foreach ( $files_in as $nextinputfilename ) {
+			if ( !is_readable($nextinputfilename) ) {
+				$this->error('Cannot read '' . $nextinputfilename . ''');
+			}
+		}
 		if ( !empty($this->errors) ) return false;
 
-		if ( !is_writeable(dirname($file_out)) ) {<br />
-			$this->error('Cannot write '' . $file_out . ''');<br />
-			return false;<br />
+		if ( !is_writeable(dirname($file_out)) ) {
+			$this->error('Cannot write '' . $file_out . ''');
+			return false;
 		}
 
-		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));<br />
-		if ( $fp_output = @fopen($file_out, 'wb') ) {<br />
-			// Initialize getID3 engine<br />
-			$getID3 = new getID3;<br />
+		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));
+		if ( $fp_output = @fopen($file_out, 'wb') ) {
+			// Initialize getID3 engine
+			$getID3 = new getID3;
 			foreach ($files_in as $nextinputfilename) {
 
-				$current_file_info = $getID3->analyze($nextinputfilename);<br />
+				$current_file_info = $getID3->analyze($nextinputfilename);
 				if ($current_file_info['fileformat'] == 'mp3') {
 
 					if ($fp_source = @fopen($nextinputfilename, 'rb')) {
 
 						$current_output_position = ftell($fp_output);
 
-						// copy audio data from first file<br />
-						fseek($fp_source, $current_file_info['avdataoffset'], SEEK_SET);<br />
-						while ( !feof($fp_source) &amp;&amp; (ftell($fp_source) < $current_file_info['avdataend']) ) {<br />
-							fwrite($fp_output, fread($fp_source, 32768));<br />
+						// copy audio data from first file
+						fseek($fp_source, $current_file_info['avdataoffset'], SEEK_SET);
+						while ( !feof($fp_source) &amp;&amp; (ftell($fp_source) < $current_file_info['avdataend']) ) {
+							fwrite($fp_output, fread($fp_source, 32768));
 						}
 
-						fclose($fp_source);<br />
-						// trim post-audio data (if any) copied from first file that we don't need or want<br />
-						$end_offset = $current_output_position + ($current_file_info['avdataend'] - $current_file_info['avdataoffset']);<br />
-						fseek($fp_output, $end_offset, SEEK_SET);<br />
-						ftruncate($fp_output, $end_offset);<br />
-					} else {<br />
-						$this->error('failed to open ''.$nextinputfilename.'' for reading');<br />
-						fclose($fp_output);<br />
+						fclose($fp_source);
+						// trim post-audio data (if any) copied from first file that we don't need or want
+						$end_offset = $current_output_position + ($current_file_info['avdataend'] - $current_file_info['avdataoffset']);
+						fseek($fp_output, $end_offset, SEEK_SET);
+						ftruncate($fp_output, $end_offset);
+					} else {
+						$this->error('failed to open ''.$nextinputfilename.'' for reading');
+						fclose($fp_output);
 						return false;
 
-					}<br />
-				} else {<br />
-					$this->error('''.$nextinputfilename.'' is not MP3 format');<br />
-					fclose($fp_output);<br />
-					return false;<br />
-				}<br />
-			}<br />
-		} else {<br />
-			$this->error('failed to open ''.$file_out.'' for writing');<br />
-			return false;<br />
-		}<br />
-		fclose($fp_output);<br />
-		return true;<br />
-	}<br />
-}<br />
+					}
+				} else {
+					$this->error('''.$nextinputfilename.'' is not MP3 format');
+					fclose($fp_output);
+					return false;
+				}
+			}
+		} else {
+			$this->error('failed to open ''.$file_out.'' for writing');
+			return false;
+		}
+		fclose($fp_output);
+		return true;
+	}
+}
 [/php]
 
 Con este componente podéis tanto unir mp3 como leer y escribir etiquetas id3.
 
 Evidentemente, antes de poder utilizar el componente debéis declararlo en el array de componentes de vuestro controlador:
 
-[php]<br />
-class FooController extends AppController {<br />
-	$components = array('Getid3');<br />
+[php]
+class FooController extends AppController {
+	$components = array('Getid3');
 }[/php]
 
 Para unir mp3 en un solo fichero no tenéis más que pasarle como primer parámetro la ruta del fichero de salida y como segundo parámetro pasarle un array con las ubicaciones de los ficheros mp3:
 
-[php]<br />
-$destino = WWW_ROOT . 'files' . DS . 'podcasts' . DS . 'fichero_destino.mp3';<br />
-$mp3 = array(<br />
-	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero1.mp3',<br />
-	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero2.mp3',<br />
-	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero3.mp3',<br />
-	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero4.mp3',<br />
-	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero5.mp3'<br />
-);<br />
-if ( $this->Getid3->joinMp3($destino, $mp3) )<br />
-{<br />
-	// fichero creado correctamente<br />
-}<br />
-else<br />
-{<br />
-	pr($this->Getid3->errors);<br />
-}<br />
+[php]
+$destino = WWW_ROOT . 'files' . DS . 'podcasts' . DS . 'fichero_destino.mp3';
+$mp3 = array(
+	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero1.mp3',
+	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero2.mp3',
+	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero3.mp3',
+	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero4.mp3',
+	WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero5.mp3'
+);
+if ( $this->Getid3->joinMp3($destino, $mp3) )
+{
+	// fichero creado correctamente
+}
+else
+{
+	pr($this->Getid3->errors);
+}
 [/php]
 
 Y con esto termina este sencillo tutorial sobre <strong>cómo crear un podcast a partir de varios mp3</strong>.

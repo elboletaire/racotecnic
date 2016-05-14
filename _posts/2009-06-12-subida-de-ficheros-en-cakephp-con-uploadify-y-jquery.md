@@ -12,7 +12,7 @@ author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "<blockquote>\r\n\t<em>Entrada actualizada a 18 de junio de 2009. Los cambios
-  son desde <a href=\"#ampliacio\">aquí</a></em><br />\r\n\t<b>Existe una entrada
+  son desde <a href=\"#ampliacio\">aquí</a></em>\r\n\t<b>Existe una entrada
   más reciente relacionada con este tema: <a href=\"/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/\"
   target=\"_top\">Subida de ficheros con Uploadify y validación Ajax en CakePHP</a></b>\r\n</blockquote>\r\n\r\nDespués
   de mucho tiempo liado con el fin de curso y tras mucho investigar con CakePHP por
@@ -48,7 +48,7 @@ tags:
 - Uploadify
 ---
 <blockquote>
-	<em>Entrada actualizada a 18 de junio de 2009. Los cambios son desde <a href="#ampliacio">aquí</a></em><br />
+	<em>Entrada actualizada a 18 de junio de 2009. Los cambios son desde <a href="#ampliacio">aquí</a></em>
 	<b>Existe una entrada más reciente relacionada con este tema: <a href="/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/" target="_top">Subida de ficheros con Uploadify y validación Ajax en CakePHP</a></b>
 </blockquote>
 
@@ -58,7 +58,7 @@ Si no conocíais CakePHP y os ha interesado el tema echad un ojo a <a title="Vis
 
 En este artículo explicaré cómo integrar <a title="Página web oficial de uploadify" href="http://www.uploadify.com/" target="_blank">uploadify</a>, un sistema de carga de ficheros con Flash y JavaScript (utilizando el <em>framework</em> <a title="Página web oficial de jQuery" href="http://jquery.com/" target="_blank">jQuery</a>) a CakePHP para permitirnos cargar múltiples ficheros sin tener que refrescar la página, así como poder cargar ficheros de gran tamaño.
 
-<a id="more"></a><a id="more-617"></a><br />
+<a id="more"></a><a id="more-617"></a>
 Antes de empezar, sobreentiendo que tenéis conocimientos sobre CakePHP, así como que habéis utilizado algún sistema de carga de ficheros con flash, tipo <a title="Página web oficial de uploadify" href="http://www.uploadify.com/" target="_blank">uploadify</a> o <a title="Página web oficial de swfUpload" href="http://swfupload.org/" target="_blank">swfupload</a> alguna vez en vuestra vida (aunque no haya sido con Cake). Tampoco estaría de más tener conocimientos de jQuery, para poder gestionar las subidas de ficheros de forma asíncrona. También asumo que ya tenéis CakePHP funcionando en algun servidor.
 
 Dicho esto, empecemos...
@@ -84,68 +84,68 @@ Para gestionar la subida de ficheros necesitaréis un <em>Component</em> (o bien
 
 Aquí viene el código del controlador, en mi caso "images_controller":
 
-`[php]<?php<br />
-class ImagesController extends AppController<br />
-{<br />
-	var $name = 'Images';<br />
-	var $components = array('Upload');<br />
+`[php]<?php
+class ImagesController extends AppController
+{
+	var $name = 'Images';
+	var $components = array('Upload');
 	var $helpers = array('Uploadify');
 
-	function beforeFilter()<br />
-	{<br />
-		// Si la acción es subir ficheros<br />
-		if($this->action == 'upload'){<br />
-			if (isset($this->params['pass'][0])){<br />
-				// Iniciamos la sesión con el id de sesión pasado como parámetro<br />
-				$this->Session->id($this->params['pass'][0]);<br />
-				$this->Session->start();<br />
-			}else{<br />
-				$this->redirect('/');<br />
-			}<br />
-		}<br />
-		// Cargamos el beforeFilter superior (en AppController o Controller)<br />
-		parent::beforeFilter();<br />
+	function beforeFilter()
+	{
+		// Si la acción es subir ficheros
+		if($this->action == 'upload'){
+			if (isset($this->params['pass'][0])){
+				// Iniciamos la sesión con el id de sesión pasado como parámetro
+				$this->Session->id($this->params['pass'][0]);
+				$this->Session->start();
+			}else{
+				$this->redirect('/');
+			}
+		}
+		// Cargamos el beforeFilter superior (en AppController o Controller)
+		parent::beforeFilter();
 	}
 
-	function upload()<br />
-	{<br />
-		// Desactivamos el rendering de la vista para este método<br />
-		$this->autoRender = false;<br />
-		if (isset($this->params['form']['Filedata'])){<br />
-			// Creamos una miniatura<br />
-			$thumb = $this->Upload->upload($this->params['form']['Filedata'],'img/thumb/', null, array('type' => 'resizecrop', 'size' => array('150', '150'), 'output' => 'jpg'));<br />
-			// Si no se crea correctamente<br />
-			if ($thumb)<br />
-				// Generamos un log con los errores<br />
-				$this->log('L'usuari ' . $this->Auth->user('username') .<br />
-					' ha tingut errors intentant crear una miniatura: ' .<br />
-					implode(' | ', $this->Upload->errors),'upload');<br />
-			else{<br />
-				// Si la miniatura se ha creado subimos el fichero a tamaño original<br />
-				$result = $this->Upload->upload($this->params['form']['Filedata'],'img/',$this->Upload->result);<br />
-				if (!$result){<br />
-					// Si la imagen se sube correctamente enviamos el nombre de ésta al usuario<br />
-					echo $this->Upload->result;<br />
-					exit;<br />
-				}else{<br />
-					// En caso contrario generamos un log de error<br />
-					$this->log('L'usuari ' . $this->Auth->user('username') .<br />
-						' ha tingut errors intentant pujar una imatge: ' .<br />
-						implode(' | ', $this->Upload->errors),'upload');<br />
-					echo __('Error pujant el fitxer');<br />
-					exit;<br />
-				}<br />
-			}<br />
-		}<br />
+	function upload()
+	{
+		// Desactivamos el rendering de la vista para este método
+		$this->autoRender = false;
+		if (isset($this->params['form']['Filedata'])){
+			// Creamos una miniatura
+			$thumb = $this->Upload->upload($this->params['form']['Filedata'],'img/thumb/', null, array('type' => 'resizecrop', 'size' => array('150', '150'), 'output' => 'jpg'));
+			// Si no se crea correctamente
+			if ($thumb)
+				// Generamos un log con los errores
+				$this->log('L'usuari ' . $this->Auth->user('username') .
+					' ha tingut errors intentant crear una miniatura: ' .
+					implode(' | ', $this->Upload->errors),'upload');
+			else{
+				// Si la miniatura se ha creado subimos el fichero a tamaño original
+				$result = $this->Upload->upload($this->params['form']['Filedata'],'img/',$this->Upload->result);
+				if (!$result){
+					// Si la imagen se sube correctamente enviamos el nombre de ésta al usuario
+					echo $this->Upload->result;
+					exit;
+				}else{
+					// En caso contrario generamos un log de error
+					$this->log('L'usuari ' . $this->Auth->user('username') .
+						' ha tingut errors intentant pujar una imatge: ' .
+						implode(' | ', $this->Upload->errors),'upload');
+					echo __('Error pujant el fitxer');
+					exit;
+				}
+			}
+		}
 	}
 
-	function add()<br />
-	{<br />
-		// Guardamos los datos en la base de datos<br />
-		if(!empty($this->data)){<br />
-			$this->Image->save($this->data);<br />
-		}<br />
-	}<br />
+	function add()
+	{
+		// Guardamos los datos en la base de datos
+		if(!empty($this->data)){
+			$this->Image->save($this->data);
+		}
+	}
 }
 
 [/php]`
@@ -172,65 +172,65 @@ Como segundo parámetro se le pasa un array, también asociativo, con las opcion
 
 Aquí tenéis el código que he utilizado para la vista:
 
-`[php]	<h2><?php __('Pujar imatges') ?></h2><br />
-	<?= $form->create('Image',array('action'=>'add')) ?><br />
-	<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div><br />
-	<div id='uploaded' style='display:none'><br />
+`[php]	<h2><?php __('Pujar imatges') ?></h2>
+	<?= $form->create('Image',array('action'=>'add')) ?>
+	<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div>
+	<div id='uploaded' style='display:none'>
 		<div id='files'>
 
-		</div><br />
-		<?= $form->submit(__('Guardar',true)); ?><br />
-	</div><br />
-	<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?><br />
+		</div>
+		<?= $form->submit(__('Guardar',true)); ?>
+	</div>
+	<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
 	<?=$form->end() ?>[/php]`
 
 Como veis he creado un formulario que envía a la acción <em>add</em> del controlador. Dentro de este he creado una primera capa donde se cargará uploadify (con la id "imageFile") seguida de una capa donde irán apareciendo las imágenes (en la capa "files" para ser más exactos) que se vayan subiendo. Esta capa está oculta (style="display:none") ya que no nos interesa que el usuario la vea hasta que hayamos recibido el primer fichero.
 
 Ahora que ya tenemos el formulario insertemos el JavaScript para que todo funcione (en la misma vista). Primero os pongo la metodología para el Helper y después el equivalente en HTML / JavaScript:
 
-`[php]<?= $uploadify->startUploader(<br />
-	array('imageFile'=>'img/'),<br />
-	array('imageFile'=>array(<br />
-		'buttonText'=>__('Cercar fitxers',true),<br />
-		'script'=>'upload/' . $session->id(),<br />
-		'fileExt'=>'*.jpg;*.jpeg;*.png;*.gif',<br />
-		'fileDesc'=>'Fitxers d\\\'imatge',<br />
-		'multi'=>'true',<br />
-		'onError'=>'function (a, b, c, d) {<br />
-         if (d.status == 404)<br />
-            alert(\'Could not find upload script. Use a path relative to: ' . getcwd() . '\');<br />
-         else if (d.type === 'HTTP')<br />
-            alert(\'error \'+d.type+\': \'+d.status);<br />
-         else if (d.type ==='File Size')<br />
-            alert(c.name+\' \'+d.type+\' Limit: \'+Math.round(d.sizeLimit/1024)+\'KB\');<br />
-         else alert(\'error \'+d.type+\': \'+d.text);}',<br />
-		 'onComplete'=>'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append(\'' . $html->image('thumb/'+response+'') . '<input type='text' value='\'+response+\'' /><input type='hidden' value='\'+response+\'' />\');}',<br />
+`[php]<?= $uploadify->startUploader(
+	array('imageFile'=>'img/'),
+	array('imageFile'=>array(
+		'buttonText'=>__('Cercar fitxers',true),
+		'script'=>'upload/' . $session->id(),
+		'fileExt'=>'*.jpg;*.jpeg;*.png;*.gif',
+		'fileDesc'=>'Fitxers d\\\'imatge',
+		'multi'=>'true',
+		'onError'=>'function (a, b, c, d) {
+         if (d.status == 404)
+            alert(\'Could not find upload script. Use a path relative to: ' . getcwd() . '\');
+         else if (d.type === 'HTTP')
+            alert(\'error \'+d.type+\': \'+d.status);
+         else if (d.type ==='File Size')
+            alert(c.name+\' \'+d.type+\' Limit: \'+Math.round(d.sizeLimit/1024)+\'KB\');
+         else alert(\'error \'+d.type+\': \'+d.text);}',
+		 'onComplete'=>'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append(\'' . $html->image('thumb/'+response+'') . '<input type='text' value='\'+response+\'' /><input type='hidden' value='\'+response+\'' />\');}',
 		 'onAllComplete'=>'function(){$('input[type=\\\'submit\\\']').removeAttr('disabled');}'))) ?>[/php]`
 
 Equivalente en JavaScript:
 
-`[js]$(document).ready(function() {<br />
-	$('#imageFile').fileUpload ({<br />
-		'uploader' : '/js/uploadify/uploader.swf',<br />
-		'script' : 'upload/<?= $session->id() ?>',<br />
-		'buttonText' : 'Cercar fitxers',<br />
-		'onError' : function (a, b, c, d) {<br />
-         if (d.status == 404)<br />
-            alert('Could not find upload script. Use a path relative to: <?= getcwd() ?>');<br />
-         else if (d.type === 'HTTP')<br />
-            alert('error '+d.type+': '+d.status);<br />
-         else if (d.type ==='File Size')<br />
-            alert(c.name+' '+d.type+' Limit: '+Math.round(d.sizeLimit/1024)+'KB');<br />
-         else alert('error '+d.type+': '+d.text);},<br />
-		'onComplete' : 'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append('<img src='/img/thumb/'+response+'' alt='' /><input type='text' value=''+response+'' /><input type='hidden' value=''+response+'' />');},<br />
-		'onAllComplete' : 'function(){$('input[type=\'submit\']').removeAttr('disabled');}',<br />
-		'cancelImg' : '/js/uploadify/cancel.png',<br />
-		'fileExt' : '*.jpg;*.jpeg;*.png;*.gif',<br />
-		'fileDesc' : 'Fitxers d\'imatge',<br />
-		'multi' : 'true',<br />
-		'folder': 'img/'<br />
-	});<br />
-});<br />
+`[js]$(document).ready(function() {
+	$('#imageFile').fileUpload ({
+		'uploader' : '/js/uploadify/uploader.swf',
+		'script' : 'upload/<?= $session->id() ?>',
+		'buttonText' : 'Cercar fitxers',
+		'onError' : function (a, b, c, d) {
+         if (d.status == 404)
+            alert('Could not find upload script. Use a path relative to: <?= getcwd() ?>');
+         else if (d.type === 'HTTP')
+            alert('error '+d.type+': '+d.status);
+         else if (d.type ==='File Size')
+            alert(c.name+' '+d.type+' Limit: '+Math.round(d.sizeLimit/1024)+'KB');
+         else alert('error '+d.type+': '+d.text);},
+		'onComplete' : 'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append('<img src='/img/thumb/'+response+'' alt='' /><input type='text' value=''+response+'' /><input type='hidden' value=''+response+'' />');},
+		'onAllComplete' : 'function(){$('input[type=\'submit\']').removeAttr('disabled');}',
+		'cancelImg' : '/js/uploadify/cancel.png',
+		'fileExt' : '*.jpg;*.jpeg;*.png;*.gif',
+		'fileDesc' : 'Fitxers d\'imatge',
+		'multi' : 'true',
+		'folder': 'img/'
+	});
+});
 [/js]`
 
 Sobre todo fijaros en que le paso como segundo parámetro a la url "upload" la id de la sesión actual. Esto junto con el beforeFilter del controlador puede ser vital para que os funcione correctamente uploadify con Cake.
@@ -239,77 +239,77 @@ He declarado tres funciones a ejecutar con uploadify: <em>onError</em>, <em>onCo
 
 La función <em>onComplete</em> se encarga de hacer visible la capa "uploaded" y de ir insertando en ella las miniaturas de las imágenes que se vayan subiendo (ubicadas en la carpeta /webroot/img/thumb/). A demás de insertar las imágenes genera un textbox con el nombre del fichero, para que el usuario pueda poner el nombre deseado y un campo oculto con el nombre del fichero (para poder guardar su ruta en la base de datos).
 
-Finalmente la función <em>onAllComplete</em> se encarga de eliminar el atributo "disabled" del botón de envío del formulario.<br />
-<a name="ampliacio"></a><br />
+Finalmente la función <em>onAllComplete</em> se encarga de eliminar el atributo "disabled" del botón de envío del formulario.
+<a name="ampliacio"></a>
 Aquí tenéis la vista al completo con el helper:
 
-`[php]<br />
-<?= $uploadify->startUploader(<br />
-	array('imageFile'=>'img/'),<br />
-	array('imageFile'=>array(<br />
-		'buttonText'=>__('Cercar fitxers',true),<br />
-		'script'=>'upload/' . $session->id(),<br />
-		'fileExt'=>'*.jpg;*.jpeg;*.png;*.gif',<br />
-		'fileDesc'=>'Fitxers d\\\'imatge',<br />
-		'multi'=>'true',<br />
-		'onError'=>'function (a, b, c, d) {<br />
-         if (d.status == 404)<br />
-            alert(\'Could not find upload script. Use a path relative to: ' . getcwd() . '\');<br />
-         else if (d.type === 'HTTP')<br />
-            alert(\'error \'+d.type+\': \'+d.status);<br />
-         else if (d.type ==='File Size')<br />
-            alert(c.name+\' \'+d.type+\' Limit: \'+Math.round(d.sizeLimit/1024)+\'KB\');<br />
-         else alert(\'error \'+d.type+\': \'+d.text);}',<br />
-		 'onComplete'=>'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append(\'' . $html->image('thumb/'+response+'') . '<input type='text' value='\'+response+\'' /><input type='hidden' value='\'+response+\'' />\');}',<br />
-		 'onAllComplete'=>'function(){$('input[type=\\\'submit\\\']').removeAttr('disabled');}'))) ?><br />
-<h2><?php __('Pujar imatges') ?></h2><br />
-<?= $form->create('Image',array('action'=>'add')) ?><br />
-<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div><br />
-<div id='uploaded' style='display:none'><br />
+`[php]
+<?= $uploadify->startUploader(
+	array('imageFile'=>'img/'),
+	array('imageFile'=>array(
+		'buttonText'=>__('Cercar fitxers',true),
+		'script'=>'upload/' . $session->id(),
+		'fileExt'=>'*.jpg;*.jpeg;*.png;*.gif',
+		'fileDesc'=>'Fitxers d\\\'imatge',
+		'multi'=>'true',
+		'onError'=>'function (a, b, c, d) {
+         if (d.status == 404)
+            alert(\'Could not find upload script. Use a path relative to: ' . getcwd() . '\');
+         else if (d.type === 'HTTP')
+            alert(\'error \'+d.type+\': \'+d.status);
+         else if (d.type ==='File Size')
+            alert(c.name+\' \'+d.type+\' Limit: \'+Math.round(d.sizeLimit/1024)+\'KB\');
+         else alert(\'error \'+d.type+\': \'+d.text);}',
+		 'onComplete'=>'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append(\'' . $html->image('thumb/'+response+'') . '<input type='text' value='\'+response+\'' /><input type='hidden' value='\'+response+\'' />\');}',
+		 'onAllComplete'=>'function(){$('input[type=\\\'submit\\\']').removeAttr('disabled');}'))) ?>
+<h2><?php __('Pujar imatges') ?></h2>
+<?= $form->create('Image',array('action'=>'add')) ?>
+<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div>
+<div id='uploaded' style='display:none'>
 	<div id='files'>
 
-	</div><br />
-	<?= $form->submit(__('Guardar',true)); ?><br />
-</div><br />
-<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?><br />
+	</div>
+	<?= $form->submit(__('Guardar',true)); ?>
+</div>
+<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
 <?=$form->end() ?>[/php]`
 
 Y con Javascript:
 
-`[js]<script type='text/javascript'><br />
-$(document).ready(function() {<br />
-	$('#imageFile').fileUpload ({<br />
-		'uploader' : '/js/uploadify/uploader.swf',<br />
-		'script' : 'upload/<?= $session->id() ?>',<br />
-		'buttonText' : 'Cercar fitxers',<br />
-		'onError' : function (a, b, c, d) {<br />
-         if (d.status == 404)<br />
-            alert('Could not find upload script. Use a path relative to: <?= getcwd() ?>');<br />
-         else if (d.type === 'HTTP')<br />
-            alert('error '+d.type+': '+d.status);<br />
-         else if (d.type ==='File Size')<br />
-            alert(c.name+' '+d.type+' Limit: '+Math.round(d.sizeLimit/1024)+'KB');<br />
-         else alert('error '+d.type+': '+d.text);},<br />
-		'onComplete' : 'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append('<img src='/img/thumb/'+response+'' alt='' /><input type='text' value=''+response+'' /><input type='hidden' value=''+response+'' />');},<br />
-		'onAllComplete' : 'function(){$('input[type=\'submit\']').removeAttr('disabled');}',<br />
-		'cancelImg' : '/js/uploadify/cancel.png',<br />
-		'fileExt' : '*.jpg;*.jpeg;*.png;*.gif',<br />
-		'fileDesc' : 'Fitxers d\'imatge',<br />
-		'multi' : 'true',<br />
-		'folder': 'img/'<br />
-	});<br />
-});<br />
-</script><br />
-<h2><?php __('Pujar imatges') ?></h2><br />
-<?= $form->create('Image',array('action'=>'add')) ?><br />
-<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div><br />
-<div id='uploaded' style='display:none'><br />
+`[js]<script type='text/javascript'>
+$(document).ready(function() {
+	$('#imageFile').fileUpload ({
+		'uploader' : '/js/uploadify/uploader.swf',
+		'script' : 'upload/<?= $session->id() ?>',
+		'buttonText' : 'Cercar fitxers',
+		'onError' : function (a, b, c, d) {
+         if (d.status == 404)
+            alert('Could not find upload script. Use a path relative to: <?= getcwd() ?>');
+         else if (d.type === 'HTTP')
+            alert('error '+d.type+': '+d.status);
+         else if (d.type ==='File Size')
+            alert(c.name+' '+d.type+' Limit: '+Math.round(d.sizeLimit/1024)+'KB');
+         else alert('error '+d.type+': '+d.text);},
+		'onComplete' : 'function(evt, queueID, fileObj, response, data){$('#uploaded').show();$('#uploaded #files').append('<img src='/img/thumb/'+response+'' alt='' /><input type='text' value=''+response+'' /><input type='hidden' value=''+response+'' />');},
+		'onAllComplete' : 'function(){$('input[type=\'submit\']').removeAttr('disabled');}',
+		'cancelImg' : '/js/uploadify/cancel.png',
+		'fileExt' : '*.jpg;*.jpeg;*.png;*.gif',
+		'fileDesc' : 'Fitxers d\'imatge',
+		'multi' : 'true',
+		'folder': 'img/'
+	});
+});
+</script>
+<h2><?php __('Pujar imatges') ?></h2>
+<?= $form->create('Image',array('action'=>'add')) ?>
+<div id='imageFile'><?php __('Necessites JavaScript i Flash per poder pujar fitxers') ?></div>
+<div id='uploaded' style='display:none'>
 	<div id='files'>
 
-	</div><br />
-	<?= $form->submit(__('Guardar',true)); ?><br />
-</div><br />
-<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?><br />
+	</div>
+	<?= $form->submit(__('Guardar',true)); ?>
+</div>
+<?= $html->link(__('Enviar',true),'javascript:$('#imageFile').fileUploadStart()'); ?>
 <?=$form->end() ?>[/js]`
 
 Vale, recordemos un poco todo lo que hemos hecho para ver que no nos hemos dejado nada:

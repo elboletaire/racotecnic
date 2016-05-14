@@ -55,38 +55,38 @@ Si no tenéis ni idea de Cake pero utilizáis un poco el tarro seguro que podré
 
 Para este tutorial sólo necesitáis <a rel="nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (yo utilizo la v. 1.3.2) y <a rel="nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (en mi caso la v. 1.2.4.8284 [1.2.5 stable]).
 
-<a id="more"></a><a id="more-1177"></a><br />
+<a id="more"></a><a id="more-1177"></a>
 Vamos a utilizar nuestro fichero <i>pages_controller.php</i> para gestionar los hilos. Si no lo tenéis creado, creadlo. Recordad que debéis hacerlo en la carpeta <i>/app/controllers/</i> y que el contenido de este fichero debe ser, para empezar, idéntico que el fichero <i>/cake/libs/controller/pages_controller.php</i>; algo así:
 
-[php highlight="5,6"]<?php // /app/controllers/pages_controller.php<br />
-class PagesController extends AppController {<br />
-	var $name = 'Pages';<br />
-	var $uses = array();<br />
-	var $components = array('RequestHandler');<br />
+[php highlight="5,6"]<?php // /app/controllers/pages_controller.php
+class PagesController extends AppController {
+	var $name = 'Pages';
+	var $uses = array();
+	var $components = array('RequestHandler');
 	var $cacheDuration = '+3 hours';
 
-	function display()<br />
-	{<br />
+	function display()
+	{
 		$path = func_get_args();
 
-		$count = count($path);<br />
-		if (!$count) {<br />
-			$this->redirect('/');<br />
-		}<br />
+		$count = count($path);
+		if (!$count) {
+			$this->redirect('/');
+		}
 		$page = $subpage = $title = null;
 
-		if (!empty($path[0])) {<br />
-			$page = $path[0];<br />
-		}<br />
-		if (!empty($path[1])) {<br />
-			$subpage = $path[1];<br />
-		}<br />
-		if (!empty($path[$count - 1])) {<br />
-			$title = Inflector::humanize($path[$count - 1]);<br />
-		}<br />
-		$this->set(compact('page', 'subpage', 'title'));<br />
-		$this->render(join('/', $path));<br />
-	}<br />
+		if (!empty($path[0])) {
+			$page = $path[0];
+		}
+		if (!empty($path[1])) {
+			$subpage = $path[1];
+		}
+		if (!empty($path[$count - 1])) {
+			$title = Inflector::humanize($path[$count - 1]);
+		}
+		$this->set(compact('page', 'subpage', 'title'));
+		$this->render(join('/', $path));
+	}
 }[/php]
 
 Para ahorrar tiempo he añadido ya —en azul— un par de cosas que vamos a necesitar.
@@ -95,158 +95,158 @@ En la <b>línea 5</b> he añadido el "<a href="http://book.cakephp.org/view/174/
 
 En la <b>línea 6</b> he inicializado la variable <i>$cacheDuration</i> donde almacenamos el tiempo de actualización de la caché (3 horas en el caso del ejemplo). Si lo preferís podéis iniciarla más adelante como una variable normal dentro de un método en lugar de crearla como variable de clase.
 
-Sabiendo esto, pasemos a la creación del resto de métodos del controlador <i>PagesController</i>:<br />
-[php]// continuación de /app/controllers/pages_controller.php<br />
-function beforeFilter()<br />
-{<br />
-	// Desactivamos debug para todo el controlador<br />
-	Configure::write('debug',0);<br />
-	// En caso de utilizar el componente Auth, damos permiso a las secciones necesarias<br />
-	//$this->Auth->allowedActions = array('rss');<br />
-	parent::beforeFilter();<br />
+Sabiendo esto, pasemos a la creación del resto de métodos del controlador <i>PagesController</i>:
+[php]// continuación de /app/controllers/pages_controller.php
+function beforeFilter()
+{
+	// Desactivamos debug para todo el controlador
+	Configure::write('debug',0);
+	// En caso de utilizar el componente Auth, damos permiso a las secciones necesarias
+	//$this->Auth->allowedActions = array('rss');
+	parent::beforeFilter();
 }
 
-function rss($name = null, $limit = 8, $cache = true)<br />
-{<br />
-	// Desactivamos auto render de las vistas<br />
-	$this->autoRender = false;<br />
-	$options = compact('limit','cache');<br />
-	// Si la solicitud es Ajax<br />
-	if($this->RequestHandler->isAjax()){<br />
-		// Cargamos layout ajax.ctp<br />
-		$this->layout = 'ajax';<br />
-		// Url según nombre recibido por parámetro<br />
-		switch($name){<br />
-			case 'psico':<br />
-				$url = 'http://psicoactividad.underave.net/feed';<br />
-				break;<br />
-			case 'zeta':<br />
-				$url = 'http://planzeta.underave.net/feed';<br />
-				break;<br />
-			case 'raco':<br />
-				$url = 'http://www.racotecnic.com/feed';<br />
-				break;<br />
-			case 'underave':<br />
-			default:<br />
-				$url = 'http://blog.underave.net/feed';<br />
-		}<br />
-		// Obtenemos los hilos<br />
-		if((isset($options['cache']) &amp;&amp; $options['cache'] == false) || ($feeds = Cache::read('$name.feed')) == false){<br />
-			$feeds = $this->_getFeeds($url);<br />
-			// Si el parámetro cache es true guardamos en caché<br />
-			if($options['cache'] == true){<br />
-				Cache::set(array('duration' => $this->cacheDuration));<br />
-				Cache::write('$name.feed',$feeds);<br />
-			}<br />
-		}<br />
-		// Limitamos los resultados<br />
-		if(isset($options['limit']) &amp;&amp; count($feeds) > $options['limit'])<br />
-			$feeds = array_slice($feeds, 0, $options['limit']);<br />
-		// Guardamos la variable $data<br />
-		$this->set('data', $feeds);<br />
-		// Cargamos fichero json.ctp<br />
-		$this->render('/ajax/json');<br />
-	}else $this->redirect('/');<br />
+function rss($name = null, $limit = 8, $cache = true)
+{
+	// Desactivamos auto render de las vistas
+	$this->autoRender = false;
+	$options = compact('limit','cache');
+	// Si la solicitud es Ajax
+	if($this->RequestHandler->isAjax()){
+		// Cargamos layout ajax.ctp
+		$this->layout = 'ajax';
+		// Url según nombre recibido por parámetro
+		switch($name){
+			case 'psico':
+				$url = 'http://psicoactividad.underave.net/feed';
+				break;
+			case 'zeta':
+				$url = 'http://planzeta.underave.net/feed';
+				break;
+			case 'raco':
+				$url = 'http://www.racotecnic.com/feed';
+				break;
+			case 'underave':
+			default:
+				$url = 'http://blog.underave.net/feed';
+		}
+		// Obtenemos los hilos
+		if((isset($options['cache']) &amp;&amp; $options['cache'] == false) || ($feeds = Cache::read('$name.feed')) == false){
+			$feeds = $this->_getFeeds($url);
+			// Si el parámetro cache es true guardamos en caché
+			if($options['cache'] == true){
+				Cache::set(array('duration' => $this->cacheDuration));
+				Cache::write('$name.feed',$feeds);
+			}
+		}
+		// Limitamos los resultados
+		if(isset($options['limit']) &amp;&amp; count($feeds) > $options['limit'])
+			$feeds = array_slice($feeds, 0, $options['limit']);
+		// Guardamos la variable $data
+		$this->set('data', $feeds);
+		// Cargamos fichero json.ctp
+		$this->render('/ajax/json');
+	}else $this->redirect('/');
 }
 
-private function _getFeeds($url)<br />
-{<br />
-	// Configuramos la conexión curl<br />
-	$ch = curl_init();<br />
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);<br />
-	curl_setopt($ch, CURLOPT_HEADER, 0);<br />
-	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);<br />
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);<br />
-	curl_setopt($ch, CURLOPT_URL, $url);<br />
-	// Ejecutamos la conexión<br />
-	$feed = curl_exec($ch);<br />
-	curl_close($ch);<br />
-	// En caso de error detenemos ejecución<br />
-	if(!$feed)  return false;<br />
-	// Creamos objeto SimpleXmlElement<br />
-	$xml = new SimpleXmlElement($feed);<br />
-	// Leemos el hilo RSS y lo guardamos en la variable $out<br />
-	foreach($xml->channel->item as $item){<br />
-		$out[] = array(<br />
-			'title' 		=> (string)$item->title,<br />
-			'description' 	=> (string)$item->description,<br />
-			'pubDate' 		=> strtotime($item->pubDate),<br />
-			'link' 			=> (string)$item->link<br />
-		);<br />
-	}<br />
-	// Devolvemos el hilo<br />
-	return $out;<br />
+private function _getFeeds($url)
+{
+	// Configuramos la conexión curl
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	// Ejecutamos la conexión
+	$feed = curl_exec($ch);
+	curl_close($ch);
+	// En caso de error detenemos ejecución
+	if(!$feed)  return false;
+	// Creamos objeto SimpleXmlElement
+	$xml = new SimpleXmlElement($feed);
+	// Leemos el hilo RSS y lo guardamos en la variable $out
+	foreach($xml->channel->item as $item){
+		$out[] = array(
+			'title' 		=> (string)$item->title,
+			'description' 	=> (string)$item->description,
+			'pubDate' 		=> strtotime($item->pubDate),
+			'link' 			=> (string)$item->link
+		);
+	}
+	// Devolvemos el hilo
+	return $out;
   }[/php]
 
 Como siempre digo, el código habla por si solo y para el resto están los comentarios ;) Sólo cabría mencionar un par de cosas:
 
 El layout <em>ajax.ctp</em> (línea 19) no hace falta que lo creéis ya que CakePHP ya lo incluye en su núcleo.
 
-El fichero <em>json.ctp</em> (línea 49) sólo contiene el <i>echo</i> de un <i>json_encode</i>:<br />
-[php]<?php // /app/views/ajax/json.ctp<br />
+El fichero <em>json.ctp</em> (línea 49) sólo contiene el <i>echo</i> de un <i>json_encode</i>:
+[php]<?php // /app/views/ajax/json.ctp
 echo json_encode($data) ?>[/php]
 
 El fichero <i>json.ctp</i> lo he creado en la carpeta ajax porque todo lo relacionado con ajax lo meto en la carpeta /app/views/ajax/ para tenerlo todo en el mismo sitio. A demás, son ficheros tan genéricos que los utilizo desde casi todas las secciones así que ya me va bien tenerlos en una carpeta por separado.
 
 Si lo preferís, en lugar de crear la vista json, podéis optar por hacer un <i>echo</i> de un <i>json_encode</i> en el controlador directamente, aunque eso rompe un poco con el patrón MVC.
 
-<strong>Para que el método rss funcione es importante que creemos una ruta hacia /rss</strong>:<br />
-[php]// /app/config/routes.php<br />
-Router::connect('/rss/:feed',<br />
-	array('controller'=>'pages','action'=>'rss'),<br />
-	array(<br />
-		'feed'=>'[a-z]+',<br />
-		'pass'=>array('feed')<br />
-	)<br />
+<strong>Para que el método rss funcione es importante que creemos una ruta hacia /rss</strong>:
+[php]// /app/config/routes.php
+Router::connect('/rss/:feed',
+	array('controller'=>'pages','action'=>'rss'),
+	array(
+		'feed'=>'[a-z]+',
+		'pass'=>array('feed')
+	)
 );[/php]
 
-Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi caso la he llamado <i>blogs.ctp</i>):<br />
-[php highlight="2,5,6,7"]// /app/views/pages/blogs.ctp<br />
-<?php $javascript->link('page_specific/blogs',false) ?><br />
+Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi caso la he llamado <i>blogs.ctp</i>):
+[php highlight="2,5,6,7"]// /app/views/pages/blogs.ctp
+<?php $javascript->link('page_specific/blogs',false) ?>
 
-<?php echo $html->link('Leer hilos RSS en CakePHP utilizando jQuery','http://www.racotecnic.com/2009/11/leer-hilos-rss-en-cakephp-utilizando-jquery') ?><br />
-<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/raco.png', array('alt'=>'Racó Tècnic', 'class'=>'titol_blog')),'http://www.racotecnic.com',array('target'=>'_blank'),false,false) ?><br />
-<ul class='blogs' id='raco'><br />
-	<li><?php __('Cargando') ?>...</li><br />
-</ul><br />
-<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/unde.png', array('alt'=>'Underave\'s Blog: Be underground', 'class'=>'titol_blog')),'http://blog.underave.net',null,false,false) ?><br />
-<ul class='blogs' id='underave'><br />
-	<li><?php __('Cargando') ?>...</li><br />
-</ul><br />
-<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/zeta.png', array('alt'=>'Plan [Zeta]', 'class'=>'titol_blog')),'http://planzeta.underave.net',array('target'=>'_blank'),false,false) ?><br />
-<ul class='blogs' id='zeta'><br />
-	<li><?php __('Cargando') ?>...</li><br />
-</ul><br />
-<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/psico.png', array('alt'=>'Psico Actividad', 'class'=>'titol_blog')),'http://psicoactividad.underave.net',array('target'=>'_blank'),false,false) ?><br />
-<ul class='blogs' id='psico'><br />
-	<li><?php __('Cargando') ?>...</li><br />
+<?php echo $html->link('Leer hilos RSS en CakePHP utilizando jQuery','http://www.racotecnic.com/2009/11/leer-hilos-rss-en-cakephp-utilizando-jquery') ?>
+<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/raco.png', array('alt'=>'Racó Tècnic', 'class'=>'titol_blog')),'http://www.racotecnic.com',array('target'=>'_blank'),false,false) ?>
+<ul class='blogs' id='raco'>
+	<li><?php __('Cargando') ?>...</li>
+</ul>
+<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/unde.png', array('alt'=>'Underave\'s Blog: Be underground', 'class'=>'titol_blog')),'http://blog.underave.net',null,false,false) ?>
+<ul class='blogs' id='underave'>
+	<li><?php __('Cargando') ?>...</li>
+</ul>
+<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/zeta.png', array('alt'=>'Plan [Zeta]', 'class'=>'titol_blog')),'http://planzeta.underave.net',array('target'=>'_blank'),false,false) ?>
+<ul class='blogs' id='zeta'>
+	<li><?php __('Cargando') ?>...</li>
+</ul>
+<?php echo $html->link($html->image('http://www.underave.net/barna23/img/blogs/psico.png', array('alt'=>'Psico Actividad', 'class'=>'titol_blog')),'http://psicoactividad.underave.net',array('target'=>'_blank'),false,false) ?>
+<ul class='blogs' id='psico'>
+	<li><?php __('Cargando') ?>...</li>
 </ul>[/php]
 
 En la <b>línea 2</b> he añadido el fichero javascript que se encargará de cargar los hilos RSS (y será el siguiente paso del tutorial).
 
 En las <b>líneas 5, 6 y 7</b> (y luego se repite para cada blog) he añadido una lista de elementos con una ID cada uno.<strong> Esta ID debe coincidir con las opciones que hayáis puesto en el <i>switch</i> del método <i>rss</i></strong> (en <i>pages_controller.php</i>).
 
-Sólo nos queda hacer el fichero JavaScript encargado de cargar los hilos:<br />
-[js]// /app/webroot/js/page_specific/blogs.js<br />
-$(function(){<br />
-	// ID de cada blog (debe coincidir con las ID de la vista y las del controlador)<br />
-	var blogs = ['underave','zeta','psico','raco'];<br />
-	$.each(blogs, function(i, blog){<br />
-		// Obtenemos JSON para cada blog<br />
-		$.getJSON(webroot+'rss/'+blog,function(data){<br />
-			// Ocultamos el texto 'Cargando...'<br />
-			$('#'+blog).fadeOut('normal',function(){<br />
-				// Eliminamos el texto 'Cargando...'<br />
-				$(this).html('');<br />
-				// Añadimos un ítem a la lista por cada enlace recibido<br />
-				$.each(data, function(i, item){<br />
-					$('<li><a href=''+item.link+'' target='_top'>'+item.title.substr(0,1).toUpperCase() + item.title.substr(1,item.title.length).toLowerCase()+'</a></li>').appendTo('#'+blog);<br />
-				});<br />
-				// Lo mostramos todo<br />
-				$(this).fadeIn('normal');<br />
-			});<br />
-		});<br />
-	});<br />
+Sólo nos queda hacer el fichero JavaScript encargado de cargar los hilos:
+[js]// /app/webroot/js/page_specific/blogs.js
+$(function(){
+	// ID de cada blog (debe coincidir con las ID de la vista y las del controlador)
+	var blogs = ['underave','zeta','psico','raco'];
+	$.each(blogs, function(i, blog){
+		// Obtenemos JSON para cada blog
+		$.getJSON(webroot+'rss/'+blog,function(data){
+			// Ocultamos el texto 'Cargando...'
+			$('#'+blog).fadeOut('normal',function(){
+				// Eliminamos el texto 'Cargando...'
+				$(this).html('');
+				// Añadimos un ítem a la lista por cada enlace recibido
+				$.each(data, function(i, item){
+					$('<li><a href=''+item.link+'' target='_top'>'+item.title.substr(0,1).toUpperCase() + item.title.substr(1,item.title.length).toLowerCase()+'</a></li>').appendTo('#'+blog);
+				});
+				// Lo mostramos todo
+				$(this).fadeIn('normal');
+			});
+		});
+	});
 });[/js]
 
 El trozo de item.title.subtr(0,1).toUpperCase() + item.title..... es una pijada mía para que salga sólo la primera letra en mayúscula y el resto en minúscula. Si lo queréis sacar simplemente poned "item.title" y ya estará ;)

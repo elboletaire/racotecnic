@@ -47,7 +47,7 @@ En este post explicaré cómo registrar usuarios desde un formulario externo a W
 
 Pero explicaré lo justo y necesario (es decir, únicamente el código requerido para registrar los usuarios tras mandar los datos vía POST desde un formulario), como siempre, todo lo demás lo podéis encontrar fácilmente <a title="Búsqueda en google 'datos GET POST HTML PHP'" href="http://www.google.com/search?hl=ca&amp;q=enviar+datos+get+post+php+html&amp;btnG=Cerca&amp;lr=" target="_blank">utilizando google</a>.
 
-<a id="more"></a><a id="more-92"></a><br />
+<a id="more"></a><a id="more-92"></a>
 Empecemos...
 
 Como he dicho doy por hecho que sabéis hacer un formulario de envío de datos POST. Por si acaso aquí tenéis una útil ayuda:
@@ -56,7 +56,7 @@ Como he dicho doy por hecho que sabéis hacer un formulario de envío de datos P
 
 Primero de todo debemos cargar los ficheros necesarios para utilizar las funciones de wordpress:
 
-[php]require_once('../blog/wp-config.php');<br />
+[php]require_once('../blog/wp-config.php');
 require_once('../blog/wp-includes/registration.php');[/php]
 
 Donde "<strong>../blog/</strong>" corresponde a la ruta relativa de vuestro WordPress.
@@ -69,16 +69,16 @@ Una vez añadidos los ficheros necesarios (<em>wp-config.php</em> carga las vari
 
 <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Compleja</a> (podéis ver todas las variables posibles en el <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Codex de WordPress</a>):
 
-[php]// Rellenamos un array con los datos que queramos añadir<br />
-$datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login<br />
-'user_pass'=>$_POST['pass'], // Contraseña<br />
-'user_url'=>$_POST['url'], // Website del usuario<br />
-'user_email'=>$_POST['email'], // E-mail<br />
-'display_name'=>$_POST['nick'], // Nombre a mostrar del usuario en comentarios y mensajes<br />
-'first_name '=>$_POST['nombre'], // Nombre del usuario<br />
-'last_name'=>$_POST['apellidos'], // Apellidos<br />
-'role'=>'contributor');<br />
-// Insertamos los datos<br />
+[php]// Rellenamos un array con los datos que queramos añadir
+$datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login
+'user_pass'=>$_POST['pass'], // Contraseña
+'user_url'=>$_POST['url'], // Website del usuario
+'user_email'=>$_POST['email'], // E-mail
+'display_name'=>$_POST['nick'], // Nombre a mostrar del usuario en comentarios y mensajes
+'first_name '=>$_POST['nombre'], // Nombre del usuario
+'last_name'=>$_POST['apellidos'], // Apellidos
+'role'=>'contributor');
+// Insertamos los datos
 wp_insert_user($datos);[/php]
 
 Fijaros en la propiedad "role". Es para designar los permisos del usuario (que podéis consultar en <a title="Roles &amp; Capabilities @ Wordpress Codex" href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">esta página</a>). Si no la ponéis pondrá la que tengáis por defecto configurada en el blog.
@@ -91,30 +91,30 @@ A continuación os dejo el código completo para ambas funciones (para hacer cop
 
 Simple..
 
-[php]<br />
-// Añadimos los ficheros necesarios<br />
-require_once('../blog/wp-config.php');<br />
-require_once('../blog/wp-includes/registration.php');<br />
-// Insertamos los datos<br />
-wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);<br />
+[php]
+// Añadimos los ficheros necesarios
+require_once('../blog/wp-config.php');
+require_once('../blog/wp-includes/registration.php');
+// Insertamos los datos
+wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);
 // $id_usuario = wp_create_user($_POST['usuario'],$_POST['contrasenya'],$_POST['email']);[/php]
 
 Compleja..
 
-[php]// Añadimos los ficheros necesarios<br />
-require_once('../blog/wp-config.php');<br />
-require_once('../blog/wp-includes/registration.php');<br />
-// Rellenamos un array con los datos que queramos añadir<br />
-$datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login<br />
-'user_pass'=>$_POST['pass'], // Contraseña<br />
-'user_url'=>$_POST['url'], // Website del usuario<br />
-'user_email'=>$_POST['email'], // E-mail<br />
-'display_name'=>$_POST['nick'], // Nombre a mostrar del usuario en comentarios y mensajes<br />
-'first_name '=>$_POST['nombre'], // Nombre del usuario<br />
-'last_name'=>$_POST['apellidos'], // Apellidos<br />
-'role'=>'contributor');<br />
-// Insertamos los datos<br />
-wp_insert_user($datos);<br />
+[php]// Añadimos los ficheros necesarios
+require_once('../blog/wp-config.php');
+require_once('../blog/wp-includes/registration.php');
+// Rellenamos un array con los datos que queramos añadir
+$datos = array('user_login'=>$_POST['nick'], // Nombre de usuario para login
+'user_pass'=>$_POST['pass'], // Contraseña
+'user_url'=>$_POST['url'], // Website del usuario
+'user_email'=>$_POST['email'], // E-mail
+'display_name'=>$_POST['nick'], // Nombre a mostrar del usuario en comentarios y mensajes
+'first_name '=>$_POST['nombre'], // Nombre del usuario
+'last_name'=>$_POST['apellidos'], // Apellidos
+'role'=>'contributor');
+// Insertamos los datos
+wp_insert_user($datos);
 // $id_usuario = wp_insert_user($datos)[/php]
 
 Páginas de referencia:

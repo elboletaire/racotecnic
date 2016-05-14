@@ -24,9 +24,9 @@ tags:
 
 Los ganadores del segundo concurso son...
 
-13% [ 38 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fort</span></span> (user <span style="font-style: italic;">therkore</span>) - Kora's Queen<br />
-9% [ 29 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fernival</span></span> - Bastardos<br />
-9% [ 27 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Hiry</span></span> (user <span style="font-style: italic;">daniel jesus</span>) - Le logement, un droit pas un privilège<br />
+13% [ 38 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fort</span></span> (user <span style="font-style: italic;">therkore</span>) - Kora's Queen
+9% [ 29 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Fernival</span></span> - Bastardos
+9% [ 27 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Hiry</span></span> (user <span style="font-style: italic;">daniel jesus</span>) - Le logement, un droit pas un privilège
 8% [ 25 ] <span style="font-weight: bold;"><span style="color: #ff8000;">Pinyol</span></span> - Disk-o-
 
 Felicidades! Si no lo hemos hecho, pronto nos pondremos en contacto con vosotros para daros detalles sobre el vinilo.

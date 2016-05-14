@@ -72,35 +72,35 @@ You can still improve it a lot, especially in terms of code, but as it works and
 <a id="more"></a><a id="more-1455"></a>
 <h3>Usage:</h3>
 
-[php]<?php // /app/controllers/foo_controller.php<br />
-class FooController extends AppController<br />
-{<br />
-	var $name = 'Foo';<br />
-	// Remember to initialize the component<br />
+[php]<?php // /app/controllers/foo_controller.php
+class FooController extends AppController
+{
+	var $name = 'Foo';
+	// Remember to initialize the component
 	var $components = array('Watermark');
 
-	public function upload()<br />
-	{<br />
-		// ... upload stuff<br />
-		if ( $is_uploaded )<br />
-		{<br />
-			$this->Watermark->setImage($image_path);<br />
-			$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array(450,450)));<br />
-			$this->Watermark->generate($dest_path);<br />
-			// ... more stuff ...<br />
-		}<br />
-	}<br />
+	public function upload()
+	{
+		// ... upload stuff
+		if ( $is_uploaded )
+		{
+			$this->Watermark->setImage($image_path);
+			$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array(450,450)));
+			$this->Watermark->generate($dest_path);
+			// ... more stuff ...
+		}
+	}
 }[/php]
 
-<strong>Original files used for demonstrations:</strong><br />
-<img class="size-full wp-image-1464 aligncenter" title="imatge23" src="{{ site.url }}/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" /><br />
+<strong>Original files used for demonstrations:</strong>
+<img class="size-full wp-image-1464 aligncenter" title="imatge23" src="{{ site.url }}/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" />
 <img class="alignnone size-full wp-image-1470" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.png" alt="" width="177" height="50" />
 <h4>Resize:</h4>
 
 <img class="alignnone size-full wp-image-1461" title="resizecrop" src="{{ site.url }}/uploads/2010/04/resizecrop.jpeg" alt="" width="300" height="200" />
 
-[php]$this->Watermark->setImage($image_path);<br />
-$this->Watermark->resize(array('type' => 'resizecrop'), 'size' => array('300', '200'));<br />
+[php]$this->Watermark->setImage($image_path);
+$this->Watermark->resize(array('type' => 'resizecrop'), 'size' => array('300', '200'));
 $this->Watermark->generate($dest_path);[/php]
 <h5>Resize types:</h5>
 
@@ -116,58 +116,58 @@ $this->Watermark->generate($dest_path);[/php]
 
 <img class="size-full wp-image-1466 aligncenter" title="rotate" src="{{ site.url }}/uploads/2010/04/rotate.jpeg" alt="" width="655" height="655" />
 
-[php]$this->Watermark->setImage($image_path);<br />
-$this->Watermark->rotateImage(array('degrees' => 45));<br />
+[php]$this->Watermark->setImage($image_path);
+$this->Watermark->rotateImage(array('degrees' => 45));
 $this->Watermark->generate($dest_path);[/php]
 <h4>Apply watermark:</h4>
 
 <img class="alignnone size-full wp-image-1472" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.jpeg" alt="" width="425" height="500" />
 
-[php]$this->Watermark->setImage($image_path);<br />
-$this->Watermark->setWatermark(array('file' => $watermark_file, 'position' => 'bottom right', 'size' => '150%'));<br />
-$this->Watermark->applyWatermark();<br />
+[php]$this->Watermark->setImage($image_path);
+$this->Watermark->setWatermark(array('file' => $watermark_file, 'position' => 'bottom right', 'size' => '150%'));
+$this->Watermark->applyWatermark();
 $this->Watermark->generate($dest_path);[/php]
 <h4>All together:</h4>
 
 <img class="alignnone size-full wp-image-1473" title="all_together" src="{{ site.url }}/uploads/2010/04/all_together.jpeg" alt="" width="355" height="354" />
 
-[php]$this->Watermark->setImage($image_path);<br />
-$this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));<br />
-$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));<br />
-$this->Watermark->applyWatermark();<br />
-$this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));<br />
-$this->Watermark->generate($dest_path);<br />
+[php]$this->Watermark->setImage($image_path);
+$this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));
+$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));
+$this->Watermark->applyWatermark();
+$this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));
+$this->Watermark->generate($dest_path);
 [/php]
 
 Changing order:
 
 <img class="alignnone size-full wp-image-1475" title="all_together2" src="{{ site.url }}/uploads/2010/04/all_together2.jpeg" alt="" width="300" height="200" />
 
-[php]$this->Watermark->setImage($image_path);<br />
-$this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));<br />
-$this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));<br />
-$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));<br />
-$this->Watermark->applyWatermark();<br />
+[php]$this->Watermark->setImage($image_path);
+$this->Watermark->setWatermark(array('file' => 'watermark.png', 'position' => 'bottom right', 'size' => '150%'));
+$this->Watermark->rotateImage(array('degrees' => 45, 'bgcolor' => 0));
+$this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '200')));
+$this->Watermark->applyWatermark();
 $this->Watermark->generate($dest_path);[/php]
 <h4>Show image instead of saving it:</h4>
 
-[php]$this->Watermark->setImage($image_path);<br />
+[php]$this->Watermark->setImage($image_path);
 $this->Watermark->generate(); // Without params[/php]
 <h4>With errors:</h4>
 
-[php]// every component method return false on error<br />
-if ( !$this->Watermark->setImage($image_path) )<br />
-{<br />
-	// whatever<br />
-	print_r($this->Watermark->errors);<br />
+[php]// every component method return false on error
+if ( !$this->Watermark->setImage($image_path) )
+{
+	// whatever
+	print_r($this->Watermark->errors);
 }
 
-if ( !$this->Watermark->resize(array('type' => 'resizecrop', 'size' => 250)) )<br />
-{<br />
-	// ...<br />
+if ( !$this->Watermark->resize(array('type' => 'resizecrop', 'size' => 250)) )
+{
+	// ...
 }
 
-if ( !$this->Watermark->generate() )<br />
-{<br />
-	// ...<br />
+if ( !$this->Watermark->generate() )
+{
+	// ...
 }[/php]

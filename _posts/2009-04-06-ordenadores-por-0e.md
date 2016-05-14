@@ -43,7 +43,7 @@ Pues bien, con unos mínimos conocimientos técnicos, resulta que podemos tener 
 
 Vamos a partir de la base de que los ordenadores actuales están sobredimensionados para lo que se usan. Usando un símil automovílistico, comprar un ordenador nuevo es como usar un coche con el motor de un ferrari, el equipamiento de un mercedes y el maletero de un camión para ir y venir de trabajar a 2 km de casa. Con un ordenador de ultima generacion que este equipado con 17 núcleos, chorrocientos terabytes de ram y un pozo sin fondo de disco duro vas a terminar haciendo exactamente lo mismo que con un ordenador de hace 4-5 años: ver tetas en Internet.
 
-<a id="more"></a><a id="more-437"></a><br />
+<a id="more"></a><a id="more-437"></a>
 Así que comencemos nuestro viaje:
 
 Vamos al punto limpio de nuestra localidad con cualquier excusa. Hemos sacado el aceite de la freidora o llegamos con unos cartones que hemos cogido en el contenedor de la esquina debajo del brazo.
@@ -54,7 +54,7 @@ Estos operarios deben estar bastante subcontratados ya que hasta ahora siempre h
 
 Eligiendo nuestro tesoro:
 
-Por si alguien no conoce lo que es un punto limpio es una especie de mini-vertedero ordenado.<br />
+Por si alguien no conoce lo que es un punto limpio es una especie de mini-vertedero ordenado.
 Hay una serie de contenedores (como contenedores de obra pero más grandes, aproximadamente del tamaño del remolque de un camión mediano. De hecho es lo que son) ordenados por tipo de deshechos (ropa, escombros, papel-cartón y nuestro objetivo: Aparatos eléctricos). La gente llega con su coche, aparca de culo y al contenedor con lo que sobra. También hay contenedores de aceite, pilas, tubos fluorescentes y productos químicos por si alguno tiene conciencia ecológica. Se supone que reciclan lo que llevas.
 
 Así que te plantas en el contenedor de aparatos eléctricos y echas un ojo a ver que hay. A mi nunca me ha fallado pero puede que necesites más de una visita. Creo que los contenedores los recogen una vez por semana, así que los sábados a ultima hora de la mañana puede ser un buen día porque es cuando la gente tiene tiempo de hacer estas cosas.
@@ -89,14 +89,14 @@ En todo caso si has rescatado 2, hay un 98% de posibilidades de que tengas un or
 
 Por si alguien tiene dudas, esto lo estoy escribiendo desde :
 
-P-IV 2800<br />
-Placa base ASUS<br />
-1 gb de ram (traia 512 + 512 que le he puesto de otro rescatado de la basura)<br />
-60+40 gb de disco duro (tenía el de 40 desconectado, pero funciona perfectamente)<br />
-Gráfica Nvidia de 128 MB<br />
-Sonido integrado con salida 5.1<br />
-Tarjeta Firewire (yo creo que les timaron porque no tenia software para ello)<br />
-Tarjeta TV<br />
+P-IV 2800
+Placa base ASUS
+1 gb de ram (traia 512 + 512 que le he puesto de otro rescatado de la basura)
+60+40 gb de disco duro (tenía el de 40 desconectado, pero funciona perfectamente)
+Gráfica Nvidia de 128 MB
+Sonido integrado con salida 5.1
+Tarjeta Firewire (yo creo que les timaron porque no tenia software para ello)
+Tarjeta TV
 Tarjeta de red de telefonica (chip realtek)
 
 Averia que tenia: Demasiado messenger.

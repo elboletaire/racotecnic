@@ -47,8 +47,8 @@ Al hacerlo olvidaros de hacer "echo '<script type="text/javascript>...</script>;
 
 Wordpress tiene una función llamada "wp_enqueue_script" que se encargará de importar en la cabecera del blog el JavaScript que queramos. Ésta misma función se encargará de ordenar los scripts en la cabecera automáticamente y, en caso de ser un script creado por nosotros, deberemos indicar qué escripts van delante de éste (para hacer así un fichero de funciones externo para jQuery, por ejemplo).
 
-<a id="more"></a><a id="more-219"></a><br />
-Vemos la función:<br />
+<a id="more"></a><a id="more-219"></a>
+Vemos la función:
 `[php]wp_enqueue_script( 'handle', 'src', 'deps', 'ver');[/php]`
 
 Y sus parámetros:
@@ -75,10 +75,10 @@ Dado que últimamente estoy trasteando con jQuery os mostraré un pequeño ejemp
 
 Primero de todo importemos jQuery en nuestro tema. Abramos el fichero "header.php" y antes de llamar a la función "wp_head();" llamemos a wp_enqueue_script:
 
-`[php]<?php<br />
-wp_enqueue_script('jquery');<br />
-wp_head();<br />
-?><br />
+`[php]<?php
+wp_enqueue_script('jquery');
+wp_head();
+?>
 [/php]`
 
 Con esto Wordpress insertará una etiqueta <script> en la sección <head> de la página haciendo referencia a la librería jQuery.
@@ -87,36 +87,36 @@ Lo siguiente que haremos es importar nuestro código con las funciones que tenga
 
 Esto es porque, por ejemplo, Prototype y jQuery utilizan el mismo método de llamada, el dólar "$". Debemos cambiar éste método en jQuery para que funcione correctamente el código, para ello utilizaremos el método nonConflict de jQuery, así:
 
-`[js]<script type='text/javascript'><br />
-$miMetodoDeLlamadaJquery = jQuery.noConflict();<br />
+`[js]<script type='text/javascript'>
+$miMetodoDeLlamadaJquery = jQuery.noConflict();
 </script>[/js]`
 
 Evidentemente no es nada recomendable poner un método de llamada tan largo ;) Yo utilizaría $jQ:
 
-`[js]<script type='text/javascript'><br />
+`[js]<script type='text/javascript'>
 $jQ = jQuery.noConflict();
 
-$jQ(function(){<br />
-	$jQ('div#search').hide();<br />
-}<br />
+$jQ(function(){
+	$jQ('div#search').hide();
+}
 </script>[/js]`
 
 Este pequeño ejemplo, insertado en nuestra cabecera del tema, ocultaría la capa con id="search".
 
 Imaginemos que en lugar de estar insertado en la cabecera quisiéramos tener nuestro código en un fichero a parte, guardado en alguna carpeta del tema, o del plugin. Por supuesto, lo primero que haríamos es eliminar las etiquetas "script" de nuestro código, dado que será un fichero .js. Una vez guardado nuestro código en un fichero js y éste subido a alguna carpeta en el servidor (en principio en la carpeta del tema o plugin) lo importamos con wp_enqueue_script:
 
-`[php]<?php<br />
-wp_enqueue_script('jquery');<br />
-wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery'));<br />
-wp_head();<br />
-?><br />
+`[php]<?php
+wp_enqueue_script('jquery');
+wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery'));
+wp_head();
+?>
 [/php]`
 
 Recordad que si estáis programando una extensión de jquery debéis pasar un array como tercer parámetro (deps) a la función indicando los ficheros de los que depende vuestra librería. Si hubierais programado una extensión de una extensión deberíais indicarlo así:
 
-`[php]<?php<br />
-wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery','extension-jquery'));<br />
-?><br />
+`[php]<?php
+wp_enqueue_script('misfunciones','/wp-content/themes/mitema/lib/functions.js',array('jquery','extension-jquery'));
+?>
 [/php]`
 
 Espero que os sirva, salud!

@@ -59,7 +59,7 @@ Así, el NMT permite compartir, reproducir o hacer “streaming” de sus conten
 
 Si queréis podéis seguir leyendo más sobre el producto en <a rel="nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">su web oficial (en castellano)</a>.
 
-<a id="more"></a><a id="more-837"></a><br />
+<a id="more"></a><a id="more-837"></a>
 En fin, que es como una pequeña estación multimedia conectada a internet en la que podemos tener el bittorrent descargando películas a la vez que estamos viendo vídeos del youtube (o descargándolos).. tiene conexiones para varios USB, además de huecos para discos duro SATA para ampliarle la capacidad al gusto de cada uno... tiene decenas de especificaciones más... en esta imagen podéis ver algunas de ellas:
 
 <img class="size-full wp-image-840 aligncenter" title="caracteristicas_popcornhour" src="{{ site.url }}/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" width="498" height="260" />

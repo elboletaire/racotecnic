@@ -42,7 +42,7 @@ tags:
 
 Para indicar la máquina virtual debéis poner "<em>-vm</em>" seguido de un salto de línea y la ruta de la máquina virtual de java deseada (en mi caso "<em>/usr/lib64/jvm/java-6-sun/bin/java</em>".
 
-<a id="more"></a><a id="more-520"></a><br />
+<a id="more"></a><a id="more-520"></a>
 En linux y mac*:
 
 <strong>-vm

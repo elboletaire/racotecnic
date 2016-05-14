@@ -40,7 +40,7 @@ Realmente es muy simple solucionar este problema. A continuación os pongo dos .
 
 Sólo hace falta que desplacéis los comentarios "begin wordpress" i "end wordpress" (en negrita) para que engloben únicamente el código de wordpress:
 
-<a id="more"></a><a id="more-185"></a><br />
+<a id="more"></a><a id="more-185"></a>
 EJEMPLO 1:
 
 <strong># BEGIN WordPress</strong>

@@ -38,13 +38,13 @@ Si habéis leído mi tutorial sobre la <a href="http://www.racotecnic.com/2009/1
 
 De este modo podía mostrar un error de "sesión expirada" al usuario, así:
 
-[php]$user = $this->Auth->user();<br />
-if(!empty($user)){<br />
-	// Código para añadir el elemento<br />
-}else{<br />
-	$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado, vuelve a iniciarla por favor',true);<br />
-	$data = $this->data;<br />
-	$this->set('sessionTimeOut',compact('message','data'));<br />
+[php]$user = $this->Auth->user();
+if(!empty($user)){
+	// Código para añadir el elemento
+}else{
+	$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado, vuelve a iniciarla por favor',true);
+	$data = $this->data;
+	$this->set('sessionTimeOut',compact('message','data'));
 }[/php]
 
 <a id="more"></a><a id="more-1269"></a>
@@ -57,9 +57,9 @@ Esta variable debéis configurarla en vuestro <em>beforeFilter</em> (probablemen
 
 Y después crear la vista correspondiente. La vista correspondiente al tutorial de subida de ficheros con uploadify y validación ajax sería así:
 
-[php]<?php // /app/views/ajax/ajax_login.ctp<br />
-$message = __('La teva sessió ha expirat. Torna a iniciar-la siusplau',true);<br />
-$sessionTimeOut = compact('message');<br />
+[php]<?php // /app/views/ajax/ajax_login.ctp
+$message = __('La teva sessió ha expirat. Torna a iniciar-la siusplau',true);
+$sessionTimeOut = compact('message');
 echo json_encode(compact('sessionTimeOut'));[/php]
 
 El método <em>json_encode</em> es de PHP 5.2, así que si tenéis una versión anterior de PHP tendréis que utilizar el Helper de JavaScript para mostrar el resultado en JSON.

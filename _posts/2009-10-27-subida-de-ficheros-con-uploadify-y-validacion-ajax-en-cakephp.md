@@ -58,7 +58,7 @@ Si queréis podéis ver el resultado del tutorial que voy a explicar en este enl
 </ul>
 </blockquote>
 
-<a id="more"></a><a id="more-746"></a><br />
+<a id="more"></a><a id="more-746"></a>
 Pongámonos a ello. Primero de todo, como siempre, ¿qué necesitamos?
 
 <ul>
@@ -118,46 +118,46 @@ Creemos entonces una tabla <em>tempfiles</em> con dos campos (id y <em>location<
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2009/09/model_tempfiles.png"><img class="alignnone size-full wp-image-757" style="vertical-align: middle;" title="model_tempfiles" src="http://www.racotecnic.com/wp-content/uploads/2009/09/model_tempfiles.png" alt="model_tempfiles" width="143" height="88" /></a><a href="http://www.racotecnic.com/wp-content/uploads/2009/09/model_images.png"><img class="alignnone size-full wp-image-756" style="vertical-align: middle;" title="model_images" src="http://www.racotecnic.com/wp-content/uploads/2009/09/model_images.png" alt="model_images" width="158" height="184" /></a>
 
-[sql]CREATE  TABLE IF NOT EXISTS `images` (<br />
-  `id` INT NOT NULL AUTO_INCREMENT,<br />
-  `name` VARCHAR(45) NOT NULL ,<br />
-  `description` VARCHAR(255) NULL ,<br />
-  `tags` TEXT NULL ,<br />
-  `file` VARCHAR(100) NULL ,<br />
-  `created` DATETIME NULL ,<br />
-  `modified` DATETIME NULL ,<br />
-  PRIMARY KEY (`id`) )<br />
+[sql]CREATE  TABLE IF NOT EXISTS `images` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL ,
+  `description` VARCHAR(255) NULL ,
+  `tags` TEXT NULL ,
+  `file` VARCHAR(100) NULL ,
+  `created` DATETIME NULL ,
+  `modified` DATETIME NULL ,
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
-CREATE  TABLE IF NOT EXISTS `tempfiles` (<br />
-  `id` INT NOT NULL AUTO_INCREMENT,<br />
-  `location` VARCHAR(350) NULL ,<br />
-  PRIMARY KEY (`id`) )<br />
+CREATE  TABLE IF NOT EXISTS `tempfiles` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `location` VARCHAR(350) NULL ,
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;[/sql]
 
 Y sus modelos correspondientes, image.php y tempfile.php:
 
-[php]// /app/models/tempfile.php<br />
-<?php<br />
-class Tempfile extends AppModel<br />
-{<br />
-	var $name = 'Tempfile';<br />
-}<br />
+[php]// /app/models/tempfile.php
+<?php
+class Tempfile extends AppModel
+{
+	var $name = 'Tempfile';
+}
 [/php]
 
-[php]// /app/models/image.php<br />
-<?php<br />
-class Image extends AppModel {<br />
-	var $name = 'Image';<br />
-	var $validate = array(<br />
-		'name'=>array(<br />
-			'length'=>array(<br />
-				'rule'=>array('between',3,45),<br />
-				'message'=>'El nombre debe contener entre 3 y 45 caracteres')),<br />
-		'description'=>array(<br />
-			'length'=>array(<br />
-				'rule'=>array('maxLength',100),<br />
-				'message'=>'La descripción no puede tener más de 255 caracteres')));<br />
+[php]// /app/models/image.php
+<?php
+class Image extends AppModel {
+	var $name = 'Image';
+	var $validate = array(
+		'name'=>array(
+			'length'=>array(
+				'rule'=>array('between',3,45),
+				'message'=>'El nombre debe contener entre 3 y 45 caracteres')),
+		'description'=>array(
+			'length'=>array(
+				'rule'=>array('maxLength',100),
+				'message'=>'La descripción no puede tener más de 255 caracteres')));
 }[/php]
 
 Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a tamaño completo, otra para las miniaturas y otra para los ficheros temporales (las miniaturas que mostraremos al usuario). Creadlas en la carpeta <em>img</em> y dadles permiso de escritura:
@@ -170,27 +170,27 @@ Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a
 
 Ahora pasamos a la vista para añadir imágenes:
 
-[php]// /app/views/images/add.ctp<br />
-<?php<br />
-$javascript->codeBlock('var webroot=''.$this->webroot.'';var sessionId = '' . $session->id() .'';',array('inline'=>false));<br />
-$javascript->link(<br />
-	array(<br />
-		'jquery-1.3.2.min',<br />
-		'swfobject',<br />
-		'jquery.uploadify.min',<br />
-		'page_specific/images'<br />
-	), false);<br />
-?><br />
-<div id='add-images' class='add-info'><br />
-	<? __('Subir imágenes') ?><br />
-	<div class='contenido'><br />
-			<?= $form->create() ?><br />
-			<div class='input upload'><br />
-				<div id='imageFile'><?php __('Necesitas JavaScript y Flash para poder subir ficheros') ?></div><br />
-			</div><br />
-			<div id='ajaxLoad' style='display:none;'><?= $html->image('ajax_load.gif', array('alt' =>__('Carregant...',true))) ?></div><br />
-			<?= $form->end(array('label'=>__('Guardar',true),'disabled'=>'disabled')) ?><br />
-	</div><br />
+[php]// /app/views/images/add.ctp
+<?php
+$javascript->codeBlock('var webroot=''.$this->webroot.'';var sessionId = '' . $session->id() .'';',array('inline'=>false));
+$javascript->link(
+	array(
+		'jquery-1.3.2.min',
+		'swfobject',
+		'jquery.uploadify.min',
+		'page_specific/images'
+	), false);
+?>
+<div id='add-images' class='add-info'>
+	<? __('Subir imágenes') ?>
+	<div class='contenido'>
+			<?= $form->create() ?>
+			<div class='input upload'>
+				<div id='imageFile'><?php __('Necesitas JavaScript y Flash para poder subir ficheros') ?></div>
+			</div>
+			<div id='ajaxLoad' style='display:none;'><?= $html->image('ajax_load.gif', array('alt' =>__('Carregant...',true))) ?></div>
+			<?= $form->end(array('label'=>__('Guardar',true),'disabled'=>'disabled')) ?>
+	</div>
 </div>[/php]
 
 La primera línea es para iniciar dos variables de JavaScript, una de ellas con la ruta webroot y la otra con la id de la sesión de PHP. Quizás os interese poner esta porción de código en vuestro layout para aprovecharlo desde cualquier controlador/vista del proyecto.
@@ -201,91 +201,91 @@ También hemos creado una capa oculta llamada "ajaxLoad" que contiene una imagen
 
 Ahora que tenemos la vista empezaremos su fichero JavaScript images.js. Digo empezaremos porque iremos por partes, primero haremos la subida de ficheros y luego la validación con Ajax.
 
-[js]// /app/webroot/js/page_specific/images.js<br />
-$(function(){<br />
-	/**<br />
-	 * Validació amb Ajax<br />
-	 */<br />
+[js]// /app/webroot/js/page_specific/images.js
+$(function(){
+	/**
+	 * Validació amb Ajax
+	 */
 	var _loadingDiv = $('#ajaxLoad');
 
-	// Muestra la capa #flashMessage encima de la capa con clase .add-info<br />
-	function flashMessage(message,classe){<br />
-		$(document.createElement('div'))<br />
-			.css('display', 'none')<br />
-			.attr('id','flashMessage')<br />
-			.addClass(classe)<br />
-			.html(message)<br />
-			.insertBefore($('.add-info')).fadeIn();<br />
+	// Muestra la capa #flashMessage encima de la capa con clase .add-info
+	function flashMessage(message,classe){
+		$(document.createElement('div'))
+			.css('display', 'none')
+			.attr('id','flashMessage')
+			.addClass(classe)
+			.html(message)
+			.insertBefore($('.add-info')).fadeIn();
 	}
 
-// Sólo para Auth<br />
-//	function onTimeOut(data){<br />
-//		flashMessage(data.message,'error');<br />
-//	    window.setTimeout(function() {<br />
-//	        window.location.href = webroot + 'users/login';<br />
-//	    }, 2500);<br />
-//	}<br />
+// Sólo para Auth
+//	function onTimeOut(data){
+//		flashMessage(data.message,'error');
+//	    window.setTimeout(function() {
+//	        window.location.href = webroot + 'users/login';
+//	    }, 2500);
+//	}
 // Fin Auth
 
-	// Contador de IDs<br />
-	var item = 0;<br />
-	$('#imageFile').uploadify({<br />
-		'uploader' : webroot + 'flash/uploadify.swf',<br />
-		'script' : webroot +'images/upload/'+sessionId,<br />
-		'buttonText' : 'Buscar imágenes',<br />
-		'cancelImg' : webroot + 'img/botons/cancel.png',<br />
-		'auto' : 'true',<br />
-		'multi' : 'true',<br />
-		'simUploadLimit' : 3,<br />
-		'queueSizeLimit' : 10,<br />
-		'sizeLimit' : 800*1024,<br />
-		'fileExt' : '*.jpg;*.png;*.jpeg;*.gif',<br />
-		'fileDesc' : 'Imágenes',<br />
-		'onComplete' : function(evt, queueId, fileObj, response, data){<br />
-			// Interpretamos la respuesta JSON como un objeto<br />
-			var imageObj = eval('(' + response + ')');<br />
-			if (imageObj.success){<br />
-				$('.input.upload').append(<br />
-					// Creamos una capa que contenga la imagen resultante de fondo<br />
-					$('<div></div>').css({<br />
-						'background': 'left center no-repeat url(' + webroot + 'img/upload/tmp/' + imageObj.success.data + ')',<br />
-						'width': '385px'<br />
-					}).attr('id','imatge'+item)<br />
-						// Creamos una capa con los inputs<br />
-						.append($('<div></div>').css({<br />
-							'margin-left': '105px'<br />
-							// Afegim missatge d'èxit i inputs<br />
-						}).append(imageObj.success.message + '<br/>' +<br />
-							'<label for='ImageName'+item+''>Nombre de la imagen<em>*</em></label>'+<br />
-							'<input maxlength='45' type='text' name='data[Image][name]['+item+']' value='' +<br />
-							imageObj.success.data.replace(/\.([a-zA-Z]){3,4}$/,'') + '' id='ImageName'+item+'' />' +<br />
-							'<label for='ImageDescription'+item+''>Descripción (255 caracteres máximo)</label>' +<br />
-							'<input maxlength='255' type='text' name='data[Image][description]['+item+']' id='ImageDescription'+item+'' />' +<br />
-							'<label for='ImageTags'+item+''>Etiquetas (separadas por comas)</label>' +<br />
-							'<textarea name='data[Image][tags]['+item+']' id='ImageTags'+item+''></textarea>' +<br />
-							'<input type='hidden' name='data[Image][file]['+item+']' value='' + imageObj.success.data + '' />' +<br />
-							'<div style='clear:both'></div>'<br />
-						)<br />
-					)<br />
-				);<br />
-				// Incrementamos contador de ids<br />
-				item++;<br />
-			}else if (imageObj.errors) {<br />
-				// En caso de error mostramos flashmessage<br />
-				flashMessage(imageObj.errors.message,'error');<br />
-			}<br />
-// Sólo para Auth<br />
-//			else if (imageObj.sessionTimeOut){<br />
-//				onTimeOut(imageObj.sessionTimeOut);<br />
-//			}<br />
-// Fin auth<br />
-			},<br />
-		'onAllComplete' : function(evt, data){<br />
-			flashMessage('Se han subido todas las imágenes. Recuerda enviar el formulario','info');<br />
-			$('#imageFile, #imageFileUploader').fadeOut('fast');<br />
-			$(':submit').removeAttr('disabled');<br />
-		}<br />
-	});<br />
+	// Contador de IDs
+	var item = 0;
+	$('#imageFile').uploadify({
+		'uploader' : webroot + 'flash/uploadify.swf',
+		'script' : webroot +'images/upload/'+sessionId,
+		'buttonText' : 'Buscar imágenes',
+		'cancelImg' : webroot + 'img/botons/cancel.png',
+		'auto' : 'true',
+		'multi' : 'true',
+		'simUploadLimit' : 3,
+		'queueSizeLimit' : 10,
+		'sizeLimit' : 800*1024,
+		'fileExt' : '*.jpg;*.png;*.jpeg;*.gif',
+		'fileDesc' : 'Imágenes',
+		'onComplete' : function(evt, queueId, fileObj, response, data){
+			// Interpretamos la respuesta JSON como un objeto
+			var imageObj = eval('(' + response + ')');
+			if (imageObj.success){
+				$('.input.upload').append(
+					// Creamos una capa que contenga la imagen resultante de fondo
+					$('<div></div>').css({
+						'background': 'left center no-repeat url(' + webroot + 'img/upload/tmp/' + imageObj.success.data + ')',
+						'width': '385px'
+					}).attr('id','imatge'+item)
+						// Creamos una capa con los inputs
+						.append($('<div></div>').css({
+							'margin-left': '105px'
+							// Afegim missatge d'èxit i inputs
+						}).append(imageObj.success.message + '' +
+							'<label for='ImageName'+item+''>Nombre de la imagen<em>*</em></label>'+
+							'<input maxlength='45' type='text' name='data[Image][name]['+item+']' value='' +
+							imageObj.success.data.replace(/\.([a-zA-Z]){3,4}$/,'') + '' id='ImageName'+item+'' />' +
+							'<label for='ImageDescription'+item+''>Descripción (255 caracteres máximo)</label>' +
+							'<input maxlength='255' type='text' name='data[Image][description]['+item+']' id='ImageDescription'+item+'' />' +
+							'<label for='ImageTags'+item+''>Etiquetas (separadas por comas)</label>' +
+							'<textarea name='data[Image][tags]['+item+']' id='ImageTags'+item+''></textarea>' +
+							'<input type='hidden' name='data[Image][file]['+item+']' value='' + imageObj.success.data + '' />' +
+							'<div style='clear:both'></div>'
+						)
+					)
+				);
+				// Incrementamos contador de ids
+				item++;
+			}else if (imageObj.errors) {
+				// En caso de error mostramos flashmessage
+				flashMessage(imageObj.errors.message,'error');
+			}
+// Sólo para Auth
+//			else if (imageObj.sessionTimeOut){
+//				onTimeOut(imageObj.sessionTimeOut);
+//			}
+// Fin auth
+			},
+		'onAllComplete' : function(evt, data){
+			flashMessage('Se han subido todas las imágenes. Recuerda enviar el formulario','info');
+			$('#imageFile, #imageFileUploader').fadeOut('fast');
+			$(':submit').removeAttr('disabled');
+		}
+	});
 });[/js]
 
 La función <strong>flashMessage</strong> sirve para generar una capa "flashMessage" dinámica justo encima de la capa con clase ".add-info".
@@ -302,128 +302,128 @@ Cuando todos los ficheros han terminado de subir mostramos un mensaje (con clase
 
 Pasemos al controlador. Primero la construcción de éste, su función beforeRender (importante, lo expliqué en el anterior tutorial), el método <em>add</em> (vacío) y el método <em>upload</em>:
 
-[php]// /app/controllers/images_controller.php<br />
-<?php<br />
-class ImagesController extends AppController<br />
-{<br />
-	var $name = 'Images';<br />
-	// ¡Importante cargar RequestHandler!!<br />
-	var $components = array('Upload','RequestHandler');<br />
-	// Helpers necesarios<br />
-	var $helpers = array('Html','Form','Javascript');<br />
-	// Modelos a utilizar<br />
+[php]// /app/controllers/images_controller.php
+<?php
+class ImagesController extends AppController
+{
+	var $name = 'Images';
+	// ¡Importante cargar RequestHandler!!
+	var $components = array('Upload','RequestHandler');
+	// Helpers necesarios
+	var $helpers = array('Html','Form','Javascript');
+	// Modelos a utilizar
 	var $uses = array('Image','Tempfile');
 
-	function beforeFilter()<br />
-	{<br />
-		if($this->action == 'upload'){<br />
-			if (isset($this->params['pass'][0])){<br />
-				$this->Session->id($this->params['pass'][0]);<br />
-				$this->Session->start();<br />
-			}else{<br />
-				$this->redirect('/');<br />
-			}<br />
-		}<br />
-		// Si utilizamos Auth debemos dar permiso a todo el mundo a las acciones 'upload' y 'ajaxAdd'<br />
-		//$this->Auth->allowedActions = array('upload','ajaxAdd');<br />
-		parent::beforeFilter();<br />
+	function beforeFilter()
+	{
+		if($this->action == 'upload'){
+			if (isset($this->params['pass'][0])){
+				$this->Session->id($this->params['pass'][0]);
+				$this->Session->start();
+			}else{
+				$this->redirect('/');
+			}
+		}
+		// Si utilizamos Auth debemos dar permiso a todo el mundo a las acciones 'upload' y 'ajaxAdd'
+		//$this->Auth->allowedActions = array('upload','ajaxAdd');
+		parent::beforeFilter();
 	}
 
-	function add()<br />
-	{<br />
-		$this->pageTitle = __('Añadir imágenes');<br />
+	function add()
+	{
+		$this->pageTitle = __('Añadir imágenes');
 	}
 
-	function upload()<br />
-	{<br />
-		// Desactivamos el debug (necesario siempre que trabajamos con Ajax)<br />
-		Configure::write('debug', 0);<br />
-		//header('Content-type: text/x-json');<br />
-		$this->autoRender = false;<br />
-		$this->layout = 'ajax';<br />
-		if (isset($this->params['form']['Filedata'])){<br />
-// Si utilizáis Auth eliminad estos comentarios<br />
-//			$user = $this->Auth->user();<br />
-//			if (!empty($user)){<br />
-// Fin Auth<br />
-				// Creamos la primera miniatura<br />
-				$thumb = $this->Upload->upload(<br />
-					$this->params['form']['Filedata'],'img/upload/thumb/', null,<br />
-					array(<br />
-						'type' => 'resizecrop',<br />
-						'size' => array(400,250),<br />
-						'output' => 'jpg',<br />
-						'quality'=>80),<br />
-					array('jpg','jpeg','png','gif'));<br />
-				// Si no se crea correctamente gestionamos los errores<br />
-				if (!empty($this->Upload->errors)){<br />
-					// Error que mostraremos al usuario<br />
-					$message = __('Error subiendo el fichero',true);<br />
-					// Guardamos el nombre original del fichero<br />
-					$data = $this->params['form']['Filedata']['name'];<br />
-					$this->set('errors', compact('message','data'));<br />
-					// Creamos un log con el auténtico error<br />
-					$this->log('Error creando la miniatura: ' .<br />
-						implode(' | ',$this->Upload->errors),'upload/images');<br />
-				} else {<br />
-					// Si se ha guardado correctamente guardamos el 'fichero temporal' en la BD<br />
-					$file = $this->Upload->result;<br />
-					$location = realpath(WWW_ROOT . 'img/upload/thumb/' . $file);<br />
-					$tempfile['location'] = $location;<br />
-					$this->Tempfile->save($tempfile,false);<br />
-					// Generamos una miniatura temporal (la que mostraremos al usuario al guardar las imágenes)<br />
-					$tempThumb = $this->Upload->upload(<br />
-						$this->params['form']['Filedata'],'img/upload/tmp/', null,<br />
-						array(<br />
-							'type' => 'resizecrop',<br />
-							'size' => array(100,150),<br />
-							'output' => 'jpg',<br />
-							'quality'=>80),<br />
-						array('jpg','jpeg','png','gif'));<br />
-					if(!empty($this->Upload->errors)){<br />
-						// Si tiene errores lo guardamos en un log. A mi parecer, aquí no nos interesa mostrar error al usuario (ya que en realidad es una imagen temporal que más adelante borraremos)<br />
-						$this->log('Error creando la miniatura temporal: ' .<br />
-							implode(' | ',$this->Upload->errors),'upload/images');<br />
-					} else {<br />
-						// Si no hay errores guardamos el 'fichero temporal'<br />
-						$location = realpath(WWW_ROOT . 'img/upload/tmp/' . $this->Upload->result);<br />
-						$tempfile['location'] = $location;<br />
-						// Es importante hacer el 'create' a partir de la segunda vez<br />
-						$this->Tempfile->create($tempfile);<br />
-						$this->Tempfile->save();<br />
-					}<br />
-					// Si se ha creado la primera miniatura subimos la original a la carpeta deseada<br />
-					$result = $this->Upload->upload($this->params['form']['Filedata'], 'img/upload/full/', $this->Upload->result);<br />
-					if (!empty($this->Upload->errors)){<br />
-						// Si no se guarda generamos log<br />
-						$this->log('Error subiendo la imagen: ' .<br />
-							implode(' | ',$this->Upload->errors),'upload/images');<br />
-						// Y mostramos mensaje de error al usuario<br />
-						$message = __('Error subiendo el fichero',true);<br />
-						$data = $this->params['form']['Filedata']['name'];<br />
-						$this->set('errors', compact('message','data'));<br />
-					}else{<br />
-						// Guardamos 'fichero temporal'<br />
-						$data = $this->Upload->result;<br />
-						$location = realpath(WWW_ROOT . 'img/upload/full/' . $data);<br />
-						$tempfile['location'] = $location;<br />
-						$this->Tempfile->create($tempfile);<br />
-						$this->Tempfile->save();<br />
-						// Mostramos mensaje de éxito al usuario<br />
-						$message = sprintf(__('%s subido correctamente.',true),'<b>' . $this->params['form']['Filedata']['name'] . '</b>');<br />
-						$this->set('success',compact('data','message'));<br />
-					}<br />
-				}<br />
-// Si utilizáis Auth eliminad estos comentarios<br />
-//			}else{<br />
-//    			$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado. Vuelve a iniciarla por favor',true);<br />
-//				$this->set('sessionTimeOut',compact('message'));<br />
-//			}<br />
-// Fin Auth<br />
-			// Renderizamos la vista (/views/ajax/upload.ctp)<br />
-			$this->render('/ajax/upload');<br />
-		}<br />
-	}<br />
+	function upload()
+	{
+		// Desactivamos el debug (necesario siempre que trabajamos con Ajax)
+		Configure::write('debug', 0);
+		//header('Content-type: text/x-json');
+		$this->autoRender = false;
+		$this->layout = 'ajax';
+		if (isset($this->params['form']['Filedata'])){
+// Si utilizáis Auth eliminad estos comentarios
+//			$user = $this->Auth->user();
+//			if (!empty($user)){
+// Fin Auth
+				// Creamos la primera miniatura
+				$thumb = $this->Upload->upload(
+					$this->params['form']['Filedata'],'img/upload/thumb/', null,
+					array(
+						'type' => 'resizecrop',
+						'size' => array(400,250),
+						'output' => 'jpg',
+						'quality'=>80),
+					array('jpg','jpeg','png','gif'));
+				// Si no se crea correctamente gestionamos los errores
+				if (!empty($this->Upload->errors)){
+					// Error que mostraremos al usuario
+					$message = __('Error subiendo el fichero',true);
+					// Guardamos el nombre original del fichero
+					$data = $this->params['form']['Filedata']['name'];
+					$this->set('errors', compact('message','data'));
+					// Creamos un log con el auténtico error
+					$this->log('Error creando la miniatura: ' .
+						implode(' | ',$this->Upload->errors),'upload/images');
+				} else {
+					// Si se ha guardado correctamente guardamos el 'fichero temporal' en la BD
+					$file = $this->Upload->result;
+					$location = realpath(WWW_ROOT . 'img/upload/thumb/' . $file);
+					$tempfile['location'] = $location;
+					$this->Tempfile->save($tempfile,false);
+					// Generamos una miniatura temporal (la que mostraremos al usuario al guardar las imágenes)
+					$tempThumb = $this->Upload->upload(
+						$this->params['form']['Filedata'],'img/upload/tmp/', null,
+						array(
+							'type' => 'resizecrop',
+							'size' => array(100,150),
+							'output' => 'jpg',
+							'quality'=>80),
+						array('jpg','jpeg','png','gif'));
+					if(!empty($this->Upload->errors)){
+						// Si tiene errores lo guardamos en un log. A mi parecer, aquí no nos interesa mostrar error al usuario (ya que en realidad es una imagen temporal que más adelante borraremos)
+						$this->log('Error creando la miniatura temporal: ' .
+							implode(' | ',$this->Upload->errors),'upload/images');
+					} else {
+						// Si no hay errores guardamos el 'fichero temporal'
+						$location = realpath(WWW_ROOT . 'img/upload/tmp/' . $this->Upload->result);
+						$tempfile['location'] = $location;
+						// Es importante hacer el 'create' a partir de la segunda vez
+						$this->Tempfile->create($tempfile);
+						$this->Tempfile->save();
+					}
+					// Si se ha creado la primera miniatura subimos la original a la carpeta deseada
+					$result = $this->Upload->upload($this->params['form']['Filedata'], 'img/upload/full/', $this->Upload->result);
+					if (!empty($this->Upload->errors)){
+						// Si no se guarda generamos log
+						$this->log('Error subiendo la imagen: ' .
+							implode(' | ',$this->Upload->errors),'upload/images');
+						// Y mostramos mensaje de error al usuario
+						$message = __('Error subiendo el fichero',true);
+						$data = $this->params['form']['Filedata']['name'];
+						$this->set('errors', compact('message','data'));
+					}else{
+						// Guardamos 'fichero temporal'
+						$data = $this->Upload->result;
+						$location = realpath(WWW_ROOT . 'img/upload/full/' . $data);
+						$tempfile['location'] = $location;
+						$this->Tempfile->create($tempfile);
+						$this->Tempfile->save();
+						// Mostramos mensaje de éxito al usuario
+						$message = sprintf(__('%s subido correctamente.',true),'<b>' . $this->params['form']['Filedata']['name'] . '</b>');
+						$this->set('success',compact('data','message'));
+					}
+				}
+// Si utilizáis Auth eliminad estos comentarios
+//			}else{
+//    			$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado. Vuelve a iniciarla por favor',true);
+//				$this->set('sessionTimeOut',compact('message'));
+//			}
+// Fin Auth
+			// Renderizamos la vista (/views/ajax/upload.ctp)
+			$this->render('/ajax/upload');
+		}
+	}
 }[/php]
 
 A parte de los comentarios y el código (que hablan por sí solos.. ;) ) quiero comentar un par de cosillas...
@@ -440,46 +440,46 @@ Digo esto porque lo que hago yo es meter todos los ficheros relacionados con aja
 
 Vamos a por el fichero upload.ctp:
 
-[php]// /app/views/ajax/upload.ctp<br />
-<?php<br />
-$output = array();<br />
-if(isset($errors)) {<br />
-	$output = Set::insert($output, 'errors',<br />
-		array(<br />
-			'message' => $errors['message'],<br />
-			'data' => $errors['data']<br />
-		));<br />
-} elseif (isset($success)) {<br />
-	$output = Set::insert($output, 'success',<br />
-		array(<br />
-			'message' => $success['message'],<br />
-			'data' => $success['data']<br />
-		));<br />
-}<br />
-// Sólo para Auth<br />
-//elseif (isset($sessionTimeOut)){<br />
-//	$output = Set::insert($output, 'sessionTimeOut', array('message' => $sessionTimeOut['message']));<br />
-//}<br />
-// Fin Auth<br />
+[php]// /app/views/ajax/upload.ctp
+<?php
+$output = array();
+if(isset($errors)) {
+	$output = Set::insert($output, 'errors',
+		array(
+			'message' => $errors['message'],
+			'data' => $errors['data']
+		));
+} elseif (isset($success)) {
+	$output = Set::insert($output, 'success',
+		array(
+			'message' => $success['message'],
+			'data' => $success['data']
+		));
+}
+// Sólo para Auth
+//elseif (isset($sessionTimeOut)){
+//	$output = Set::insert($output, 'sessionTimeOut', array('message' => $sessionTimeOut['message']));
+//}
+// Fin Auth
 echo $javascript->object($output);[/php]
 
 Este fichero es el encargado de convertir el array que le enviemos desde el controlador con la información (ya sea un error o un mensaje de éxito) a JSON. La salida que generará será algo así:
 
-[js] // En caso de éxito<br />
-{<br />
-	'success':<br />
-	{<br />
-		'message':'<b>nombre_de_fichero.jpg<\/b> subido correctamente.',<br />
-		'data':'nombre_de_fichero.jpg'<br />
-	}<br />
-}<br />
-// En caso de error<br />
-{<br />
-	'errors':<br />
-	{<br />
-		'message':'Error subiendo el fichero',<br />
-		'data':'nombre_de_fichero.jpg'<br />
-	}<br />
+[js] // En caso de éxito
+{
+	'success':
+	{
+		'message':'<b>nombre_de_fichero.jpg<\/b> subido correctamente.',
+		'data':'nombre_de_fichero.jpg'
+	}
+}
+// En caso de error
+{
+	'errors':
+	{
+		'message':'Error subiendo el fichero',
+		'data':'nombre_de_fichero.jpg'
+	}
 }[/js]
 
 El campo "data" no lo utilizaremos en este caso, pero está ahí para que veáis que se pueden enviar tantos datos de respuesta como queráis.
@@ -490,92 +490,92 @@ Ahora nos faltaría hacer la validación con Ajax de nuestro formulario.
 
 Empezaremos por acabar de completar el fichero JavaScript. Al fichero images.js añadidle las siguientes funciones:
 
-[js]// Continuación del fichero /app/webroot/js/page_specific/images.js<br />
-// Convierte una_frase a unaFrase<br />
-function camelize(string) {<br />
-	var a = string.split('_'), i;<br />
-	s = [];<br />
-	for (i=0; i<a.length; i++){<br />
-		s.push(a[i].charAt(0).toUpperCase() + a[i].substring(1));<br />
-	}<br />
-	s = s.join('');<br />
-	return s;<br />
+[js]// Continuación del fichero /app/webroot/js/page_specific/images.js
+// Convierte una_frase a unaFrase
+function camelize(string) {
+	var a = string.split('_'), i;
+	s = [];
+	for (i=0; i<a.length; i++){
+		s.push(a[i].charAt(0).toUpperCase() + a[i].substring(1));
+	}
+	s = s.join('');
+	return s;
 }
 
-// Decide qué función ejecutar según los datos recibidos (si es 'error' o 'success')<br />
-function afterValidate(data, status){<br />
-	console.log(data);<br />
-	console.log(webroot + 'images/ajaxAdd');<br />
-	$('.error-message, #flashMessage').remove();<br />
-	if (data.errors || data.saved) {<br />
-		if(data.saved){<br />
-			onSaved(data.saved);<br />
-		}<br />
-		onError(data.errors);<br />
-	} else if (data.success) {<br />
-		onSuccess(data.success);<br />
-	}<br />
-// Auth<br />
-//	 else if (data.sessionTimeOut){<br />
-//		onTimeOut(data.sessionTimeOut);<br />
-//	}<br />
-// fin Auth<br />
+// Decide qué función ejecutar según los datos recibidos (si es 'error' o 'success')
+function afterValidate(data, status){
+	console.log(data);
+	console.log(webroot + 'images/ajaxAdd');
+	$('.error-message, #flashMessage').remove();
+	if (data.errors || data.saved) {
+		if(data.saved){
+			onSaved(data.saved);
+		}
+		onError(data.errors);
+	} else if (data.success) {
+		onSuccess(data.success);
+	}
+// Auth
+//	 else if (data.sessionTimeOut){
+//		onTimeOut(data.sessionTimeOut);
+//	}
+// fin Auth
 }
 
-// Esta función sirve para eliminar imágenes de la pantalla<br />
-// del usuario cuando estas han sido guardadas correctamente<br />
-function onSaved(data){<br />
-	$.each(data, function(id, item){<br />
-		$('#imatge'+id).slideUp('slow',function(){<br />
-			$(this).css({'background': 'none'})<br />
-				.html('<b class='ok'>'+item.message+'</b>').slideDown('slow');<br />
-		});<br />
-	});<br />
+// Esta función sirve para eliminar imágenes de la pantalla
+// del usuario cuando estas han sido guardadas correctamente
+function onSaved(data){
+	$.each(data, function(id, item){
+		$('#imatge'+id).slideUp('slow',function(){
+			$(this).css({'background': 'none'})
+				.html('<b class='ok'>'+item.message+'</b>').slideDown('slow');
+		});
+	});
 }
 
-// En caso de error hacemos un bucle entre los errores y<br />
-// los mostramos cada uno en su input correspondiente<br />
-function onError(data){<br />
-	flashMessage(data.message,'error');<br />
-	$('.add-info :submit').removeAttr('disabled');<br />
-	$('#ajaxLoad').fadeOut();<br />
-	$.each(data.data, function(key){<br />
-		$.each(data.data[key], function(model, errors){<br />
-			for (fieldName in this) {<br />
-				var element = $('#' + camelize(model + '_' + fieldName) + key);<br />
-				var _insert = $(document.createElement('div')).insertAfter(element).hide()<br />
-				.addClass('error-message').text(this[fieldName]).slideDown();<br />
-			}<br />
-		});<br />
-	});<br />
+// En caso de error hacemos un bucle entre los errores y
+// los mostramos cada uno en su input correspondiente
+function onError(data){
+	flashMessage(data.message,'error');
+	$('.add-info :submit').removeAttr('disabled');
+	$('#ajaxLoad').fadeOut();
+	$.each(data.data, function(key){
+		$.each(data.data[key], function(model, errors){
+			for (fieldName in this) {
+				var element = $('#' + camelize(model + '_' + fieldName) + key);
+				var _insert = $(document.createElement('div')).insertAfter(element).hide()
+				.addClass('error-message').text(this[fieldName]).slideDown();
+			}
+		});
+	});
 };
 
-// En caso de guardarse todo correctamente mostramos mensaje<br />
-// y redirigimos al usuario donde queramos<br />
-function onSuccess(data){<br />
-	$('#ImageAddForm').slideUp('slow');<br />
-	flashMessage(data.message,'info');<br />
-	$('#ajaxLoad').fadeOut();<br />
-	window.setTimeout(function() {<br />
-		window.location.href = webroot + 'images/index';<br />
-	}, 1500);<br />
+// En caso de guardarse todo correctamente mostramos mensaje
+// y redirigimos al usuario donde queramos
+function onSuccess(data){
+	$('#ImageAddForm').slideUp('slow');
+	flashMessage(data.message,'info');
+	$('#ajaxLoad').fadeOut();
+	window.setTimeout(function() {
+		window.location.href = webroot + 'images/index';
+	}, 1500);
 };
 
-// Envío del formulario mediante Ajax<br />
-$('#ImageAddForm').submit(function(){<br />
-	// Desactivamos el botón de submit<br />
-	$('.add-info :submit').attr('disabled','disabled');<br />
-	// Mostramos imagen de carga<br />
-	$('#ajaxLoad').fadeIn();<br />
-	// Eliminamos (si hubiera) mensajes de error<br />
-	$('#flashMessage').fadeOut();<br />
-	$('.error-message').slideUp();<br />
-	$.post(webroot + 'images/ajaxAdd',<br />
-		$(this).serializeArray(),<br />
-		afterValidate,<br />
-		'json'<br />
-	);<br />
-	return false;<br />
+// Envío del formulario mediante Ajax
+$('#ImageAddForm').submit(function(){
+	// Desactivamos el botón de submit
+	$('.add-info :submit').attr('disabled','disabled');
+	// Mostramos imagen de carga
+	$('#ajaxLoad').fadeIn();
+	// Eliminamos (si hubiera) mensajes de error
+	$('#flashMessage').fadeOut();
+	$('.error-message').slideUp();
+	$.post(webroot + 'images/ajaxAdd',
+		$(this).serializeArray(),
+		afterValidate,
+		'json'
+	);
+	return false;
 });[/js]
 
 La función <strong>camelize</strong> es la encargada de convertir las cadenas como_esta a cadenas comoEsta. Esto nos sirve para encontrar la id del textbox al que está vinculado el error a partir de los errores retornados en JSON.
@@ -592,81 +592,81 @@ El último método es el encargado de enviar el formulario mediante Ajax.
 
 De la vista ya no tenemos que tocar nada más así que pasemos al método <em>ajaxAdd</em> del controlador.
 
-[php] // /app/controllers/images_controller.php<br />
-function ajaxAdd()<br />
-{<br />
-	Configure::write('debug', 0);<br />
-	$this->autoRender = false;<br />
-	$this->layout = 'ajax';<br />
-	if ($this->RequestHandler->isAjax()){<br />
-		if (!empty($this->data)){<br />
-			// Si utilizáis Auth eliminad estos comentarios<br />
-			//$user = $this->Auth->user();<br />
-			//if (!empty($user)){<br />
-				// Inicializamos las variables que contendrán errores y demás información<br />
-				$data = $dataOk = array();<br />
-				$error = false;<br />
-				// Iniciamos un bucle con todas las imágenes que recibamos<br />
-				foreach($this->data['Image']['name'] as $key=>$name){<br />
-					// Nombre de fichero<br />
-					$imageFile = $this->data['Image']['file'][$key];<br />
-					// Datos a guardar de la imagen<br />
-					$imageData = array(<br />
-						'Image'=>array(<br />
-							'name'		=> $name,<br />
-							'tags'		=> $this->data['Image']['tags'][$key],<br />
-							'description'=>$this->data['Image']['description'][$key],<br />
-							'file'		=> $imageFile));<br />
-					// Inicializamos el modelo (importante ya que estamos haciendo un bucle)<br />
-					$this->Image->create($imageData);<br />
-					// Validamos los campos<br />
-					if ($this->Image->validates()){<br />
-						// Guardamos la imagen en la base de datos<br />
-						$image = $this->Image->save($imageData);<br />
-						if (!empty($image)){<br />
-							// Eliminamos los 'ficheros temporales'<br />
-							$location = array('tmp','full','thumb');<br />
-							foreach ($location as $dir){<br />
-								$loc = realpath(WWW_ROOT . 'img/upload/' . $dir . '/' . $imageFile);<br />
-								// Si la carpeta es 'tmp' eliminamos la imagen del servidor<br />
-								if($dir == 'tmp'){<br />
-									if (!unlink($loc)) $this->log('Error eliminando miniatura temporal ' . $imageFile);<br />
-									else $this->Tempfile->deleteAll(array('Tempfile.location'=>$loc));<br />
-								}else $this->Tempfile->deleteAll(array('Tempfile.location'=>$loc));<br />
-							}<br />
-							// Mensaje a mostrar cuando una sola imagen es guardada<br />
-							$message = sprintf(__('Imagen %s guardada correctamente',true),$imageFile);<br />
-							$dataOk[$key] = array('message'=>$message,'data'=>$imageFile);<br />
-						}<br />
-					}else {<br />
-						// Errores<br />
-						$error = true;<br />
-						$Image = $this->Image->invalidFields();<br />
-						$data[$key] = compact('Image');<br />
-					}<br />
-				}<br />
-				// Si no tenemos errores..<br />
-				if(!$error){<br />
-					$message = '<b>' . __('Todas las imágenes han sido guardadas correctamente', true) . '</b>';<br />
-					$data = $this->data;<br />
-					$this->set('success',compact('message','data'));<br />
-				} else {<br />
-					$message = '<b>' . __('Error',true) . ':</b> ' . __('Hay campos que no son válidos, compruébalos por favor.',true);<br />
-					$set = compact('message','data');<br />
-					// Si tenemos algunas imágenes guardadas y otras no guardamos la variable dataOk<br />
-					if(!empty($dataOk)) $set = array_merge($set,compact('dataOk'));<br />
-					$this->set('errors',$set);<br />
-				}<br />
-// Auth<br />
-//        		}else{<br />
-//        			$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado. Vuelve a iniciarla por favor',true);<br />
-//					$data = $this->data;<br />
-//					$this->set('sessionTimeOut',compact('message','data'));<br />
-//        		}<br />
-// fin Auth<br />
-		}<br />
-		$this->render('/ajax/form_validation_array');<br />
-	}else $this->redirect('/');<br />
+[php] // /app/controllers/images_controller.php
+function ajaxAdd()
+{
+	Configure::write('debug', 0);
+	$this->autoRender = false;
+	$this->layout = 'ajax';
+	if ($this->RequestHandler->isAjax()){
+		if (!empty($this->data)){
+			// Si utilizáis Auth eliminad estos comentarios
+			//$user = $this->Auth->user();
+			//if (!empty($user)){
+				// Inicializamos las variables que contendrán errores y demás información
+				$data = $dataOk = array();
+				$error = false;
+				// Iniciamos un bucle con todas las imágenes que recibamos
+				foreach($this->data['Image']['name'] as $key=>$name){
+					// Nombre de fichero
+					$imageFile = $this->data['Image']['file'][$key];
+					// Datos a guardar de la imagen
+					$imageData = array(
+						'Image'=>array(
+							'name'		=> $name,
+							'tags'		=> $this->data['Image']['tags'][$key],
+							'description'=>$this->data['Image']['description'][$key],
+							'file'		=> $imageFile));
+					// Inicializamos el modelo (importante ya que estamos haciendo un bucle)
+					$this->Image->create($imageData);
+					// Validamos los campos
+					if ($this->Image->validates()){
+						// Guardamos la imagen en la base de datos
+						$image = $this->Image->save($imageData);
+						if (!empty($image)){
+							// Eliminamos los 'ficheros temporales'
+							$location = array('tmp','full','thumb');
+							foreach ($location as $dir){
+								$loc = realpath(WWW_ROOT . 'img/upload/' . $dir . '/' . $imageFile);
+								// Si la carpeta es 'tmp' eliminamos la imagen del servidor
+								if($dir == 'tmp'){
+									if (!unlink($loc)) $this->log('Error eliminando miniatura temporal ' . $imageFile);
+									else $this->Tempfile->deleteAll(array('Tempfile.location'=>$loc));
+								}else $this->Tempfile->deleteAll(array('Tempfile.location'=>$loc));
+							}
+							// Mensaje a mostrar cuando una sola imagen es guardada
+							$message = sprintf(__('Imagen %s guardada correctamente',true),$imageFile);
+							$dataOk[$key] = array('message'=>$message,'data'=>$imageFile);
+						}
+					}else {
+						// Errores
+						$error = true;
+						$Image = $this->Image->invalidFields();
+						$data[$key] = compact('Image');
+					}
+				}
+				// Si no tenemos errores..
+				if(!$error){
+					$message = '<b>' . __('Todas las imágenes han sido guardadas correctamente', true) . '</b>';
+					$data = $this->data;
+					$this->set('success',compact('message','data'));
+				} else {
+					$message = '<b>' . __('Error',true) . ':</b> ' . __('Hay campos que no son válidos, compruébalos por favor.',true);
+					$set = compact('message','data');
+					// Si tenemos algunas imágenes guardadas y otras no guardamos la variable dataOk
+					if(!empty($dataOk)) $set = array_merge($set,compact('dataOk'));
+					$this->set('errors',$set);
+				}
+// Auth
+//        		}else{
+//        			$message = '<b>' . __('Error',true) . ':</b> ' . __('Tu sesión ha expirado. Vuelve a iniciarla por favor',true);
+//					$data = $this->data;
+//					$this->set('sessionTimeOut',compact('message','data'));
+//        		}
+// fin Auth
+		}
+		$this->render('/ajax/form_validation_array');
+	}else $this->redirect('/');
 }[/php]
 
 Este es un poco más complicado que el de upload por una simple razón: tenemos un array de datos en lugar de un único dato.
@@ -677,69 +677,69 @@ A parte de eso y como a menudo digo... el código habla por sí solo y además e
 
 Por último nos falta crear la vista "form_validation_array" que, del mismo modo que en el método upload, se encargará de convertir el array resultante a JSON:
 
-[php]// /app/views/ajax/form_validation_array.ctp<br />
-<?php<br />
-$output = array();<br />
-if(isset($errors)) {<br />
-	// Si hay errores<br />
-	$output = Set::insert($output, 'errors', array('message' => $errors['message']));<br />
-	foreach ($errors['data'] as $key => $item) {<br />
-		foreach($item as $model => $errs){<br />
-			foreach ($errs as $field => $message) {<br />
-				$output['errors']['data'][$key][$model][$field] = $message;<br />
-			}<br />
-		}<br />
-	}<br />
-	// En caso de haberse guardado alguna imagen<br />
-	if(!empty($errors['dataOk'])){<br />
-		foreach($errors['dataOk'] as $key => $item){<br />
-			foreach($item as $field => $message){<br />
-				$output['saved'][$key][$field] = $message;<br />
-			}<br />
-		}<br />
-	}<br />
-// Si todas se han guardado correctamente...<br />
-}elseif (isset($success)) {<br />
-	$output = Set::insert($output, 'success', array('message' => $success['message']));<br />
-}<br />
-// Sólo para Auth<br />
-//elseif (!isset($auth)){<br />
-//	$output = Set::insert($output, 'sessionTimeOut', array(<br />
-//        'message' => $sessionTimeOut['message'],<br />
-//        'data' => $sessionTimeOut['data']<br />
-//	));<br />
-//}<br />
-// fin Auth<br />
+[php]// /app/views/ajax/form_validation_array.ctp
+<?php
+$output = array();
+if(isset($errors)) {
+	// Si hay errores
+	$output = Set::insert($output, 'errors', array('message' => $errors['message']));
+	foreach ($errors['data'] as $key => $item) {
+		foreach($item as $model => $errs){
+			foreach ($errs as $field => $message) {
+				$output['errors']['data'][$key][$model][$field] = $message;
+			}
+		}
+	}
+	// En caso de haberse guardado alguna imagen
+	if(!empty($errors['dataOk'])){
+		foreach($errors['dataOk'] as $key => $item){
+			foreach($item as $field => $message){
+				$output['saved'][$key][$field] = $message;
+			}
+		}
+	}
+// Si todas se han guardado correctamente...
+}elseif (isset($success)) {
+	$output = Set::insert($output, 'success', array('message' => $success['message']));
+}
+// Sólo para Auth
+//elseif (!isset($auth)){
+//	$output = Set::insert($output, 'sessionTimeOut', array(
+//        'message' => $sessionTimeOut['message'],
+//        'data' => $sessionTimeOut['data']
+//	));
+//}
+// fin Auth
 echo $javascript->object($output);[/php]
 
 Y su salida aproximada:
 
-[js]// Si ha habido algún error (fijaros que una de las imágenes se ha guardado correctamente)<br />
-{'errors':{<br />
-	'message':'<b>Error:<\/b> Hay campos que no son v\u00e1lidos, compru\u00e9balos por favor.',<br />
-	'data':{<br />
-		'0':{<br />
-			'Image':{<br />
-				'name':'El nombre debe contener entre 3 y 45 caracteres'<br />
-				}<br />
-		},'2':{<br />
-			'Image':{<br />
-				'name':'El nombre debe contener entre 3 y 45 caracteres'<br />
-				}<br />
-			}<br />
-		}<br />
-	},'saved':{<br />
-		'1':{<br />
-			'message':'Imagen 1165589284_f0.jpg guardada correctamente',<br />
-			'data':'1165589284_f0.jpg'<br />
-		}<br />
-	}<br />
+[js]// Si ha habido algún error (fijaros que una de las imágenes se ha guardado correctamente)
+{'errors':{
+	'message':'<b>Error:<\/b> Hay campos que no son v\u00e1lidos, compru\u00e9balos por favor.',
+	'data':{
+		'0':{
+			'Image':{
+				'name':'El nombre debe contener entre 3 y 45 caracteres'
+				}
+		},'2':{
+			'Image':{
+				'name':'El nombre debe contener entre 3 y 45 caracteres'
+				}
+			}
+		}
+	},'saved':{
+		'1':{
+			'message':'Imagen 1165589284_f0.jpg guardada correctamente',
+			'data':'1165589284_f0.jpg'
+		}
+	}
 }
 
-// Si todo ha ido bien<br />
-{'success':{<br />
-	'message':'<b>Todas las im\u00e1genes han sido guardadas correctamente<\/b>'<br />
-}}<br />
+// Si todo ha ido bien
+{'success':{
+	'message':'<b>Todas las im\u00e1genes han sido guardadas correctamente<\/b>'
+}}
 [/js]
 
 Pues ya está! Si habéis seguido todos los pasos correctamente deberíais tener vuestro upload funcionando.

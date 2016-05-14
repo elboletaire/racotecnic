@@ -40,45 +40,45 @@ tags:
 
 Hoy mismo he necesitado de una validación para verificar si un dato ya existe en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis utilizar "isUnique") no lleva una validación en su núcleo para estos menesteres he tenido que crearla y ahora la comparto con vosotros:
 
-[php]/**<br />
- * Verifica si un campo existe en la base de datos<br />
- * Si estamos editando se excluye el valor guardado en la validación<br />
- * @param array $data<br />
- * @param string $field Nom de la cel·la a verificar<br />
- * @return<br />
+[php]/**
+ * Verifica si un campo existe en la base de datos
+ * Si estamos editando se excluye el valor guardado en la validación
+ * @param array $data
+ * @param string $field Nom de la cel·la a verificar
+ * @return
  */
 
-public function checkUnique($data)<br />
-{<br />
-	$field = array_pop(array_keys($data));<br />
+public function checkUnique($data)
+{
+	$field = array_pop(array_keys($data));
 	$data = array_pop(array_values($data));
 
-	// Si estem editant...<br />
-	if(isset($this->data[$this->name]['id']))<br />
-	{<br />
-		if ($field == $this->field($field, array($this->name . '.id' => $this->data[$this->name]['id'])))<br />
-		{<br />
-			return true;<br />
-		}<br />
-	}<br />
-	// Si no estem editant...<br />
-	if($this->hasField($field)) {<br />
-		return $this->isUnique(array($field => $data));<br />
-	}<br />
+	// Si estem editant...
+	if(isset($this->data[$this->name]['id']))
+	{
+		if ($field == $this->field($field, array($this->name . '.id' => $this->data[$this->name]['id'])))
+		{
+			return true;
+		}
+	}
+	// Si no estem editant...
+	if($this->hasField($field)) {
+		return $this->isUnique(array($field => $data));
+	}
 }[/php]
 
 <a id="more"></a><a id="more-1406"></a>
 
 Para utilizarlo no tenéis más que añadir el trozo de código en el modelo deseado (normalmente en AppModel, para poder utilizarlo desde cualquier modelo) y añadir la validación en el modelo que queráis:
 
-[php]var $validate = array('NOMBRE DE LA CELDA A VALIDAR' => array(<br />
-	'rule'		=> 'checkUnique',<br />
+[php]var $validate = array('NOMBRE DE LA CELDA A VALIDAR' => array(
+	'rule'		=> 'checkUnique',
 	'message' 	=> 'Blahblahblah'));[/php]
 
 Un ejemplo muy común:
 
-[php]var $validate = array('username' => array(<br />
-	'rule'		=> 'checkUnique',<br />
+[php]var $validate = array('username' => array(
+	'rule'		=> 'checkUnique',
 	'message' 	=> 'Ya existe un usuario registrado con este nombre!'));[/php]
 
 Que lo disfrutéis :)

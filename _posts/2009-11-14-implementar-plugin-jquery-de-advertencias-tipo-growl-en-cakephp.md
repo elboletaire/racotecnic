@@ -48,7 +48,7 @@ tags:
 - Gritter
 - CakePHP 1.2
 ---
-<blockquote><strong>Nota para usuarios de CakePHP 1.3:</strong> he puesto algunos comentarios y notas como esta en el código y en el tutorial.<br />
+<blockquote><strong>Nota para usuarios de CakePHP 1.3:</strong> he puesto algunos comentarios y notas como esta en el código y en el tutorial.
 Tened en cuenta también (por si no lo sabéis..) que el helper de JavaScript ya no se utiliza para incrustar y cargar código en la variable `$scripts_for_layout`. Así mismo no estaría de más que reemplazarais el modo en que se utilizan los helpers en las vistas (es decir, utilizar $this->Html en lugar de $html por ejemplo).</blockquote>
 
 Voy a explicaros una forma sencilla reemplazar vuestras capas <strong><em>flashMessage</em></strong> por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl.
@@ -64,7 +64,7 @@ Para los que no lo sepáis, <a rel="nofollow" href="http://www.growl.info/" targ
 
 <a href="</dd">Hay varios plugins de jQuery que imitan Growl. En </a><a title="6 jQuery growl-like notification systems" rel="nofollow" href="http://webtoolkit4.me/2009/08/13/jquery-growl-likenotification-systems/" target="_blank">este enlace</a> podéis encontrar los que probablemente sean los más conocidos y utilizados. Para el ejemplo que voy a hacer me he valido de <a title="Gritter" rel="nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a>, que es el plugin que, a mi parecer, más se asemeja a Growl.
 
-<a id="more"></a><a id="more-986"></a><br />
+<a id="more"></a><a id="more-986"></a>
 ¿Qué necesitáis para este tutorial?
 
 <ul>
@@ -90,52 +90,52 @@ Fijaros que he renombrado el fichero CSS. Además de renombrarlo habrá que modi
 
 Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistema de notificaciones principal de CakePHP tenemos que modificar nuestro <em>layout</em> de HTML principal para cargar los JavaScripts en la cabecera:
 
-[php highlight="9,10,12,20,21"]// /app/views/layout/default.ctp<br />
-<?php echo '<?xml version='1.1' encoding='' . Configure::read('App.encoding') . ''?>' ?><br />
-<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'><br />
-<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='es-es'><br />
-<html xmlns='http://www.w3.org/1999/xhtml'><br />
-    <head><br />
-    	<?php echo $html->charset(); ?><br />
-		<title><?php echo $title_for_layout ?> | Ejemplos CakePHP | Racó Tècnic</title><br />
-		<?php echo $javascript->link(array('jquery-1.3.2.min','jquery.gritter.min')) ?><br />
-		<?php echo $javascript->codeBlock('var webroot=''.$this->webroot.'';') ?><br />
-		<?php echo $scripts_for_layout; ?><br />
-		<?php echo $html->css(array('main','gritter')) ?><br />
-	</head><br />
-<body><br />
-	<div id='container'><br />
-		<div id='header'><br />
-			<h1><?php echo $html->link(__('Ejemplos CakePHP, Racó Tècnic', true), 'http://www.racotecnic.com'); ?></h1><br />
-		</div><br />
-		<div id='content'><br />
-			<?php $session->flash(); // Cake 1.2 ?><br />
-			<?php echo $this->Session->flash(); // Cake 1.3 ?><br />
-			<?php echo $content_for_layout; ?><br />
-		</div><br />
-		<div id='footer'><br />
-			<?php echo $html->link(<br />
-					$html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border'=>'0')),<br />
-					'http://www.cakephp.org/',<br />
-					array('target'=>'_blank'), null, false<br />
-				);<br />
-			?><br />
-		</div><br />
-	</div><br />
-	<?php echo $cakeDebug; ?><br />
-	<script src='http://static.woopra.com/js/woopra.js' type='text/javascript'></script><br />
-</body><br />
+[php highlight="9,10,12,20,21"]// /app/views/layout/default.ctp
+<?php echo '<?xml version='1.1' encoding='' . Configure::read('App.encoding') . ''?>' ?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='es-es'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+    	<?php echo $html->charset(); ?>
+		<title><?php echo $title_for_layout ?> | Ejemplos CakePHP | Racó Tècnic</title>
+		<?php echo $javascript->link(array('jquery-1.3.2.min','jquery.gritter.min')) ?>
+		<?php echo $javascript->codeBlock('var webroot=''.$this->webroot.'';') ?>
+		<?php echo $scripts_for_layout; ?>
+		<?php echo $html->css(array('main','gritter')) ?>
+	</head>
+<body>
+	<div id='container'>
+		<div id='header'>
+			<h1><?php echo $html->link(__('Ejemplos CakePHP, Racó Tècnic', true), 'http://www.racotecnic.com'); ?></h1>
+		</div>
+		<div id='content'>
+			<?php $session->flash(); // Cake 1.2 ?>
+			<?php echo $this->Session->flash(); // Cake 1.3 ?>
+			<?php echo $content_for_layout; ?>
+		</div>
+		<div id='footer'>
+			<?php echo $html->link(
+					$html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border'=>'0')),
+					'http://www.cakephp.org/',
+					array('target'=>'_blank'), null, false
+				);
+			?>
+		</div>
+	</div>
+	<?php echo $cakeDebug; ?>
+	<script src='http://static.woopra.com/js/woopra.js' type='text/javascript'></script>
+</body>
 </html>[/php]
 
 Las líneas marcadas en azul son las que os interesan. El resto podéis ignorarlas perfectamente.
 
 En la <strong>línea 9</strong> he añadido las librerías jQuery y Gritter. Recordad que para poder utilizar el <em>Helper</em>de JavasCript desde cualquier parte deberéis haber añadido dicho Helper en vuestro <em>AppController</em>:
 
-[php]<?php // /app/app_controller.php<br />
-class AppController extends Controller {<br />
-	var $helpers = array('Html','Javascript'); // Cake 1.2<br />
-	var $helpers = array('Html'); // Cake 1.3<br />
-}<br />
+[php]<?php // /app/app_controller.php
+class AppController extends Controller {
+	var $helpers = array('Html','Javascript'); // Cake 1.2
+	var $helpers = array('Html'); // Cake 1.3
+}
 [/php]
 
 En la <strong>línea 10</strong> creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre <a title="Subida de ficheros con uploadify y validación Ajax en CakePHP" href="http://www.racotecnic.com/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/"><strong>cómo subir múltiples imágenes con uploadify en CakePHP</strong></a> quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
@@ -150,32 +150,32 @@ Como no quiero alargar mucho el tutorial haré sólo un par de <em>layouts</em>,
 
 <strong>Notificaciones informativas:</strong>
 
-[php]// /app/views/layouts/flash_info.ctp (Cake 1.2)<br />
-// /app/views/elements/flash_info.ctp (Cake 1.3)<br />
-<?php echo $javascript->codeBlock('<br />
-// $this->Html->scriptBlock en Cake 1.3<br />
-$(function(){<br />
-	$.gritter.add({<br />
-		title: '' . __('Información',true) . '',<br />
-		text: '' . $content_for_layout . '', // Cake 1.2. La variable es $message en la 1.3<br />
-		image: webroot + 'img/info_48.png',<br />
-		sticky: true<br />
-	});<br />
+[php]// /app/views/layouts/flash_info.ctp (Cake 1.2)
+// /app/views/elements/flash_info.ctp (Cake 1.3)
+<?php echo $javascript->codeBlock('
+// $this->Html->scriptBlock en Cake 1.3
+$(function(){
+	$.gritter.add({
+		title: '' . __('Información',true) . '',
+		text: '' . $content_for_layout . '', // Cake 1.2. La variable es $message en la 1.3
+		image: webroot + 'img/info_48.png',
+		sticky: true
+	});
 });') ?>[/php]
 
 <strong>Notificaciones de error:</strong>
 
-[php]// /app/views/layouts/flash_error.ctp (Cake 1.2)<br />
-// /app/views/elements/flash_info.ctp (Cake 1.3)<br />
-<?php echo $javascript->codeBlock('<br />
-// $this->Html->scriptBlock en Cake 1.3<br />
-$(function(){<br />
-	$.gritter.add({<br />
-		title: '' . __('Error',true) . '',<br />
-		text: '' . $content_for_layout . '', // Cake 1.2. La variable es $message en la 1.3<br />
-		image: webroot + 'img/error_48.png',<br />
-		sticky: true<br />
-	});<br />
+[php]// /app/views/layouts/flash_error.ctp (Cake 1.2)
+// /app/views/elements/flash_info.ctp (Cake 1.3)
+<?php echo $javascript->codeBlock('
+// $this->Html->scriptBlock en Cake 1.3
+$(function(){
+	$.gritter.add({
+		title: '' . __('Error',true) . '',
+		text: '' . $content_for_layout . '', // Cake 1.2. La variable es $message en la 1.3
+		image: webroot + 'img/error_48.png',
+		sticky: true
+	});
 });') ?>[/php]
 
 Como podéis ver he utilizado la variable webroot para poder acceder fácilmente a nuestro directorio de imágenes. De todos modos, y dado que estamos insertando el JavaScript mediante PHP, podríamos haber hecho $this->webroot. También he activado la variable <em>sticky</em> de gritter para dejar la notificación mostrada en pantalla hasta que el usuario la cierre manualmente, ya que considero que los flashMessage deben comportarse así. Cuando trabajo con Ajax no utilizo la variable <em>sticky</em>.
@@ -184,10 +184,10 @@ En estos ejemplos he utilizado lo básico al configurar Growl. Id a su página s
 
 Pues con esto habríamos terminado. Ahora cada vez que queráis mostrar notificaciones simplemente tendréis que especificar la plantilla a utilizar como segundo parámetro del método <em>$this->Session->setFlash()</em>:
 
-[php gutter="false"]// Notificación de error<br />
+[php gutter="false"]// Notificación de error
 $this->Session->setFlash('Esto es un mensaje de error', 'flash_error');
 
-// Notificación informativa<br />
+// Notificación informativa
 $this->Session->setFlash('Esto es un mensaje informativo', 'flash_info');[/php]
 
 Pues ya está, ya lo tenemos ^^

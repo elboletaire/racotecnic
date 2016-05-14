@@ -42,7 +42,7 @@ Se trata de los <em><strong>adaptadores multimedia</strong></em> (los llamo así
 
 Estos adaptadores –de menor tamaño que un disco duro externo normal– tienen un par de tomas USB para "convertirlas en discos duros multimedia".
 
-<a id="more"></a><a id="more-793"></a><br />
+<a id="more"></a><a id="more-793"></a>
 Es decir, copiamos contenido multimedia en nuestro <em>pen</em> o disco duro portátil, conectamos éste al adaptador multimedia (previamente conectado a la TV) y listo, ya podemos ver contenido multimedia descargado de internet en la televisión.
 
 Además de la gran ventaja que ofrece el hecho de poder utilizar cualquier disco duro como disco duro multimedia, este adaptador lee la mayoría de formatos que podemos encontrar en internet; entre ellos <a rel="nofollow" href="http://es.wikipedia.org/wiki/Matroska" target="_blank">matroska</a>*, y gracias a esto y a la salida HDMI del adaptador podremos ver películas en Full HD con gran facilidad.

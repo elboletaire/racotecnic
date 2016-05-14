@@ -48,7 +48,7 @@ El fallo se encuentra en el soporte “legacy” que permite ejecutar  aplicacio
 
 Con un código que va en contra de dichas suposiciones, un usuario  malicioso puede realizar un cambio de contexto y <strong>ejecutar código  con derechos de Sistema</strong>, que están por encima incluso del de  los administradores.
 
-<a id="more"></a><a id="more-1286"></a><br />
+<a id="more"></a><a id="more-1286"></a>
 <strong>Tavis Ormandy</strong>, el investigador que detectó el  fallo, <strong>notificó a Microsoft en junio de 2009</strong> de este  problema, y al poco le confirmaron que estaba en lo cierto. En todo este  tiempo, no se ha publicado parche al respecto, lo que ha motivado a  Ormandy el hacer pública la vulnerabilidad para forzar a que desde  Redmond se pongan las pilas.
 
 Los principales afectados son aquellas empresas que mantienen los  sistemas de sus empleados con privilegios limitados. Para usuarios  domésticos, que habitualmente usan cuentas de administrador, la cosa no  afecta demasiado, porque escalar privilegios no es necesario para poner  en riesgo el sistema.

@@ -70,37 +70,37 @@ Paquetes que necesitamos:
 
 [bash]sudo apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi[/bash]
 
-Una vez instalados, vamos a configurar apache para que ejecute ficheros php utilizando el módulo fastCGI:<br />
+Una vez instalados, vamos a configurar apache para que ejecute ficheros php utilizando el módulo fastCGI:
 <a id="more"></a><a id="more-2053"></a>
 
 [bash]sudo nano /etc/apache/conf.d/php[/bash]
 
 Pegad esto:
 
-[code]<br />
-<Directory /usr/share><br />
-        AddHandler fcgid-script .php<br />
-        FCGIWrapper /usr/lib/cgi-bin/php5 .php<br />
-        Options ExecCGI FollowSymlinks Indexes<br />
+[code]
+<Directory /usr/share>
+        AddHandler fcgid-script .php
+        FCGIWrapper /usr/lib/cgi-bin/php5 .php
+        Options ExecCGI FollowSymlinks Indexes
 </Directory>
 
-<Files ~ (\.php)><br />
-        AddHandler fcgid-script .php<br />
-        FCGIWrapper /usr/lib/cgi-bin/php5 .php<br />
-        Options +ExecCGI<br />
-        allow from all<br />
-</Files><br />
+<Files ~ (\.php)>
+        AddHandler fcgid-script .php
+        FCGIWrapper /usr/lib/cgi-bin/php5 .php
+        Options +ExecCGI
+        allow from all
+</Files>
 [/code]
 <blockquote>
 <strong>Nota:</strong> Al actualizar a php 5.4 he necesitado descomentar el último trozo del fichero de configuración `/etc/apache2/mods-enabled/php5_cgi.conf` ya que sinó me descargaba los ficheros php en lugar de ejecutarlos. El trozo al que me refiero es este:
 
-[code]ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/<br />
-<Directory '/usr/lib/cgi-bin'><br />
-	AllowOverride None<br />
-	Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch<br />
-	Order allow,deny<br />
-	Allow from all<br />
-</Directory><br />
+[code]ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+<Directory '/usr/lib/cgi-bin'>
+	AllowOverride None
+	Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+	Order allow,deny
+	Allow from all
+</Directory>
 Action application/x-httpd-php /cgi-bin/php5[/code]</blockquote>
 
 Reiniciad apache:
@@ -119,14 +119,14 @@ Accedéis a <a href="http://localhost" rel="nofollow external">http://localhost<
 
 Si queréis verificar que realmente apache está funcionando en modo worker, podéis ejecutar el comando
 
-[bash]:~$ apache2 -l<br />
-Compiled in modules:<br />
-  core.c<br />
-  mod_log_config.c<br />
-  mod_logio.c<br />
-  worker.c<br />
-  http_core.c<br />
-  mod_so.c<br />
+[bash]:~$ apache2 -l
+Compiled in modules:
+  core.c
+  mod_log_config.c
+  mod_logio.c
+  worker.c
+  http_core.c
+  mod_so.c
 [/bash]
 
 Fijaros que está cargado el módulo <strong>worker.c</strong>. Os recuerdo que por defecto apache viene con <strong>prefork.c</strong> por defecto.

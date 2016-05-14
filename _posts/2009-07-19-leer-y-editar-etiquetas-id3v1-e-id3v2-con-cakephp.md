@@ -144,97 +144,97 @@ Ahora que ya tenemos nuestro plugin en la aplicación debemos crear un component
 
 Para hacerlo utilizaremos como referencia las demos "demo.basic.php" y "demo.simple.write.php". Recordad que hay que substituir los <em>require</em> e <em>includes</em> por App::import(). Este es el resultado que he obtenido yo:
 
-[php]<?php<br />
-class Getid3Component extends Object<br />
-{<br />
-	function __construct()	{<br />
-		set_time_limit(20*3600);<br />
-		ignore_user_abort(false);<br />
+[php]<?php
+class Getid3Component extends Object
+{
+	function __construct()	{
+		set_time_limit(20*3600);
+		ignore_user_abort(false);
 	}
 
-	function extract($filename)	{<br />
-		// Importamos el fichero getid3.php que contiene la classe getID3<br />
-		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));<br />
-		// Initialize getID3 engine<br />
+	function extract($filename)	{
+		// Importamos el fichero getid3.php que contiene la classe getID3
+		App::import('vendor','getid3/getid3',array('file'=>'getid3.php'));
+		// Initialize getID3 engine
 		$getID3 = new getID3;
 
-		// Analyze file and store returned data in $ThisFileInfo<br />
-		$ThisFileInfo = $getID3->analyze($filename);<br />
-		// Devolvemos un array con toda la información del fichero<br />
-		return $ThisFileInfo;<br />
+		// Analyze file and store returned data in $ThisFileInfo
+		$ThisFileInfo = $getID3->analyze($filename);
+		// Devolvemos un array con toda la información del fichero
+		return $ThisFileInfo;
 	}
 
-	function write($filename, $data)<br />
-	{<br />
+	function write($filename, $data)
+	{
 		App::import('vendor','getid3/getid3/getid3');
 
-		// Initialize getID3 engine<br />
-		$getID3 = new getID3;<br />
-		// Indicamos a getID3 que utilice la codificación de Cake<br />
+		// Initialize getID3 engine
+		$getID3 = new getID3;
+		// Indicamos a getID3 que utilice la codificación de Cake
 		$getID3->setOption(array('encoding'=>Configure::read('App.encoding')));
 
 		App::import('vendor','getid3/getid3',array('file'=>'write.php'));
 
-		// Initialize getID3 tag-writing module<br />
+		// Initialize getID3 tag-writing module
 		$tagwriter = new getid3_writetags;
 
-		//$tagwriter->filename       = $filename;<br />
-		$tagwriter->filename       = $filename;<br />
+		//$tagwriter->filename       = $filename;
+		$tagwriter->filename       = $filename;
 		$tagwriter->tagformats     = array('id3v1', 'id3v2.3');
 
-		// set various options (optional)<br />
-		$tagwriter->overwrite_tags = true;<br />
-		$tagwriter->tag_encoding   = Configure::read('App.encoding');<br />
+		// set various options (optional)
+		$tagwriter->overwrite_tags = true;
+		$tagwriter->tag_encoding   = Configure::read('App.encoding');
 		$tagwriter->remove_other_tags = true;
 
-		// populate data array<br />
-		$TagData['title'][]   = $data['title'];<br />
-		$TagData['artist'][]  = $data['artist'];<br />
-		$TagData['album'][]   = $data['album'];<br />
-		$TagData['year'][]    = $data['year'];<br />
-		$TagData['genre'][]   = $data['genre'];<br />
-		$TagData['comment'][] = $data['comment'];<br />
+		// populate data array
+		$TagData['title'][]   = $data['title'];
+		$TagData['artist'][]  = $data['artist'];
+		$TagData['album'][]   = $data['album'];
+		$TagData['year'][]    = $data['year'];
+		$TagData['genre'][]   = $data['genre'];
+		$TagData['comment'][] = $data['comment'];
 		$TagData['track'][]   = $data['track'];
 
 		$tagwriter->tag_data = $TagData;
 
-		// write tags<br />
-		if ($tagwriter->WriteTags()) {<br />
-			if (!empty($tagwriter->warnings)) {<br />
-				return $tagwriter->warnings;<br />
-			}<br />
-			return true;<br />
-		} else {<br />
-			return $tagwriter->errors;<br />
-		}<br />
-	}<br />
+		// write tags
+		if ($tagwriter->WriteTags()) {
+			if (!empty($tagwriter->warnings)) {
+				return $tagwriter->warnings;
+			}
+			return true;
+		} else {
+			return $tagwriter->errors;
+		}
+	}
 }[/php]
 
 Recordad que los componentes van en la carpeta <i>app/controllers/components</i> y que el nombre de este fichero deberá ser <i>getid3.php</i>.
 
 Ahora que ya tenemos nuestro componente vayamos al controlador sobre el que queramos utilizarlo y añadamoslo al resto de componentes:
 
-[php]<?php<br />
-class AudiosController extends AppController<br />
-{<br />
-	var $name = 'Audios';<br />
-	var $components = array('Upload','Getid3');<br />
+[php]<?php
+class AudiosController extends AppController
+{
+	var $name = 'Audios';
+	var $components = array('Upload','Getid3');
 [/php]
 
-Y sólo nos queda saber cómo utilizarlo:<br />
-[php]$datos = array(<br />
-				'album'=>'Nombre del álbum',<br />
-				'title'=>'Título del tema',<br />
-				'artist'=>'Artista',<br />
-				'year'=>'Año',<br />
-				'genre'=>'Estilo',<br />
-				'comment'=>'Comentario');<br />
-	$this->Getid2->write('rutadelfichero.mp3',$datos);<br />
+Y sólo nos queda saber cómo utilizarlo:
+[php]$datos = array(
+				'album'=>'Nombre del álbum',
+				'title'=>'Título del tema',
+				'artist'=>'Artista',
+				'year'=>'Año',
+				'genre'=>'Estilo',
+				'comment'=>'Comentario');
+	$this->Getid2->write('rutadelfichero.mp3',$datos);
 [/php]
 
-Y para leer los datos de un mp3:<br />
-[php light="true"]<br />
-$this->Getid2->extract('rutadelfichero.mp3')<br />
+Y para leer los datos de un mp3:
+[php light="true"]
+$this->Getid2->extract('rutadelfichero.mp3')
 [/php]
 
 Que nos dará una salida similar a <a href="http://www.racotecnic.com/2009/07/leer-y-editar-etiquetas-id3v1-y-id3v2-con-cakephp/#sortida">ésta</a>.
@@ -253,537 +253,537 @@ Páginas de referencia:
 </ul>
 </blockquote>
 
-<!--more--><br />
-<a name="sortida"></a><br />
-Salida de mi fichero de prueba mp3:<br />
-[plain]Array<br />
-(<br />
-    [GETID3_VERSION] => 1.7.9-20090308<br />
-    [filesize] => 263776<br />
-    [avdataoffset] => 4096<br />
-    [avdataend] => 263648<br />
-    [fileformat] => mp3<br />
-    [audio] => Array<br />
-        (<br />
-            [dataformat] => mp3<br />
-            [channels] => 2<br />
-            [sample_rate] => 44100<br />
-            [bitrate] => 128000<br />
-            [channelmode] => stereo<br />
-            [bitrate_mode] => cbr<br />
-            [lossless] =><br />
-            [encoder_options] => CBR128<br />
-            [compression_ratio] => 0.0907029478458<br />
-            [streams] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [dataformat] => mp3<br />
-                            [channels] => 2<br />
-                            [sample_rate] => 44100<br />
-                            [bitrate] => 128000<br />
-                            [channelmode] => stereo<br />
-                            [bitrate_mode] => cbr<br />
-                            [lossless] =><br />
-                            [encoder_options] => CBR128<br />
-                            [compression_ratio] => 0.0907029478458<br />
+<!--more-->
+<a name="sortida"></a>
+Salida de mi fichero de prueba mp3:
+[plain]Array
+(
+    [GETID3_VERSION] => 1.7.9-20090308
+    [filesize] => 263776
+    [avdataoffset] => 4096
+    [avdataend] => 263648
+    [fileformat] => mp3
+    [audio] => Array
+        (
+            [dataformat] => mp3
+            [channels] => 2
+            [sample_rate] => 44100
+            [bitrate] => 128000
+            [channelmode] => stereo
+            [bitrate_mode] => cbr
+            [lossless] =>
+            [encoder_options] => CBR128
+            [compression_ratio] => 0.0907029478458
+            [streams] => Array
+                (
+                    [0] => Array
+                        (
+                            [dataformat] => mp3
+                            [channels] => 2
+                            [sample_rate] => 44100
+                            [bitrate] => 128000
+                            [channelmode] => stereo
+                            [bitrate_mode] => cbr
+                            [lossless] =>
+                            [encoder_options] => CBR128
+                            [compression_ratio] => 0.0907029478458
                         )
 
                 )
 
         )
 
-    [tags] => Array<br />
-        (<br />
-            [id3v1] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => Títol del tema<br />
+    [tags] => Array
+        (
+            [id3v1] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => Títol del tema
                         )
 
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
                         )
 
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
                         )
 
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
+                    [year] => Array
+                        (
+                            [0] => 2009
                         )
 
-                    [comment] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
+                    [comment] => Array
+                        (
+                            [0] => from www.underave.net
                         )
 
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
-                        )
-
-                )
-
-            [id3v2] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => Títol del tema<br />
-                        )
-
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
-                        )
-
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
-                        )
-
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
-                        )
-
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
-                        )
-
-                    [comments] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
+                    [genre] => Array
+                        (
+                            [0] => Techno
                         )
 
                 )
 
-        )
-
-    [encoding] => ISO-8859-1<br />
-    [filename] => Bong0.mp3<br />
-    [filepath] => /public_html/waste/v3.2/app/webroot/files/mp3<br />
-    [filenamepath] => /public_html/waste/v3.2/app/webroot/files/mp3/Bong0.mp3<br />
-    [id3v2] => Array<br />
-        (<br />
-            [header] => 1<br />
-            [flags] => Array<br />
-                (<br />
-                    [unsynch] =><br />
-                    [exthead] =><br />
-                    [experim] =><br />
-                )
-
-            [majorversion] => 3<br />
-            [minorversion] => 0<br />
-            [headerlength] => 4096<br />
-            [tag_offset_start] => 0<br />
-            [tag_offset_end] => 4096<br />
-            [encoding] => UTF-8<br />
-            [comments] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => Títol del tema<br />
+            [id3v2] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => Títol del tema
                         )
 
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
                         )
 
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
                         )
 
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
+                    [year] => Array
+                        (
+                            [0] => 2009
                         )
 
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
+                    [genre] => Array
+                        (
+                            [0] => Techno
                         )
 
-                    [comments] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
-                        )
-
-                )
-
-            [TIT2] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TIT2<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��T���t�o�l� �d�e�l� �t�e�m�a�<br />
-                            [datalength] => 31<br />
-                            [dataoffset] => 10<br />
-                            [framenamelong] => Title/songname/content description<br />
-                            [framenameshort] => title<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [TPE1] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TPE1<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��J�o� �m�a�t�e�i�x�<br />
-                            [datalength] => 21<br />
-                            [dataoffset] => 51<br />
-                            [framenamelong] => Lead performer(s)/Soloist(s)<br />
-                            [framenameshort] => artist<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [TALB] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TALB<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��M�u�a�h�a�h�a�h�a�h�a�h�<br />
-                            [datalength] => 27<br />
-                            [dataoffset] => 82<br />
-                            [framenamelong] => Album/Movie/Show title<br />
-                            [framenameshort] => album<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [TYER] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TYER<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��2�0�0�9�<br />
-                            [datalength] => 11<br />
-                            [dataoffset] => 119<br />
-                            [framenamelong] => Year<br />
-                            [framenameshort] => year<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [TCON] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TCON<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��T�e�c�h�n�o�<br />
-                            [datalength] => 15<br />
-                            [dataoffset] => 140<br />
-                            [framenamelong] => Content type<br />
-                            [framenameshort] => genre<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [COMM] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => COMM<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] => ��f�r�o�m� �w�w�w�.�u�n�d�e�r�a�v�e�.�n�e�t�<br />
-                            [datalength] => 50<br />
-                            [dataoffset] => 165<br />
-                            [framenamelong] => Comments<br />
-                            [framenameshort] => comments<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                            [language] => eng<br />
-                            [languagename] => English<br />
-                            [description] =><br />
-                        )
-
-                )
-
-            [TRCK] => Array<br />
-                (<br />
-                    [0] => Array<br />
-                        (<br />
-                            [frame_name] => TRCK<br />
-                            [frame_flags_raw] => 0<br />
-                            [data] =><br />
-                            [datalength] => 1<br />
-                            [dataoffset] => 225<br />
-                            [framenamelong] => Track number/Position in set<br />
-                            [framenameshort] => track_number<br />
-                            [flags] => Array<br />
-                                (<br />
-                                    [TagAlterPreservation] =><br />
-                                    [FileAlterPreservation] =><br />
-                                    [ReadOnly] =><br />
-                                    [compression] =><br />
-                                    [Encryption] =><br />
-                                    [GroupingIdentity] =><br />
-                                )
-
-                            [encodingid] => 1<br />
-                            [encoding] => UTF-16<br />
-                        )
-
-                )
-
-            [padding] => Array<br />
-                (<br />
-                    [start] => 236<br />
-                    [length] => 3860<br />
-                    [valid] => 1<br />
-                )
-
-        )
-
-    [id3v1] => Array<br />
-        (<br />
-            [title] => Títol del tema<br />
-            [artist] => Jo mateix<br />
-            [album] => Muahahahahah<br />
-            [year] => 2009<br />
-            [comment] => from www.underave.net<br />
-            [genre] => Techno<br />
-            [comments] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => Títol del tema<br />
-                        )
-
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
-                        )
-
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
-                        )
-
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
-                        )
-
-                    [comment] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
-                        )
-
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
-                        )
-
-                )
-
-            [padding_valid] => 1<br />
-            [tag_offset_end] => 263776<br />
-            [tag_offset_start] => 263648<br />
-            [encoding] => ISO-8859-1<br />
-        )
-
-    [mime_type] => audio/mpeg<br />
-    [mpeg] => Array<br />
-        (<br />
-            [audio] => Array<br />
-                (<br />
-                    [raw] => Array<br />
-                        (<br />
-                            [synch] => 4094<br />
-                            [version] => 3<br />
-                            [layer] => 1<br />
-                            [protection] => 0<br />
-                            [bitrate] => 9<br />
-                            [sample_rate] => 0<br />
-                            [padding] => 0<br />
-                            [private] => 0<br />
-                            [channelmode] => 0<br />
-                            [modeextension] => 0<br />
-                            [copyright] => 0<br />
-                            [original] => 1<br />
-                            [emphasis] => 0<br />
-                        )
-
-                    [version] => 1<br />
-                    [layer] => 3<br />
-                    [channelmode] => stereo<br />
-                    [channels] => 2<br />
-                    [sample_rate] => 44100<br />
-                    [protection] => 1<br />
-                    [private] =><br />
-                    [modeextension] =><br />
-                    [copyright] =><br />
-                    [original] => 1<br />
-                    [emphasis] => none<br />
-                    [crc] => 54304<br />
-                    [padding] =><br />
-                    [bitrate] => 128000<br />
-                    [framelength] => 417<br />
-                    [bitrate_mode] => cbr<br />
-                )
-
-        )
-
-    [playtime_seconds] => 16.222<br />
-    [tags_html] => Array<br />
-        (<br />
-            [id3v1] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => T&amp;iacute;tol del tema<br />
-                        )
-
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
-                        )
-
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
-                        )
-
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
-                        )
-
-                    [comment] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
-                        )
-
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
-                        )
-
-                )
-
-            [id3v2] => Array<br />
-                (<br />
-                    [title] => Array<br />
-                        (<br />
-                            [0] => T&amp;#237;tol del tema<br />
-                        )
-
-                    [artist] => Array<br />
-                        (<br />
-                            [0] => Jo mateix<br />
-                        )
-
-                    [album] => Array<br />
-                        (<br />
-                            [0] => Muahahahahah<br />
-                        )
-
-                    [year] => Array<br />
-                        (<br />
-                            [0] => 2009<br />
-                        )
-
-                    [genre] => Array<br />
-                        (<br />
-                            [0] => Techno<br />
-                        )
-
-                    [comments] => Array<br />
-                        (<br />
-                            [0] => from www.underave.net<br />
+                    [comments] => Array
+                        (
+                            [0] => from www.underave.net
                         )
 
                 )
 
         )
 
-    [bitrate] => 128000<br />
-    [playtime_string] => 0:16<br />
-)<br />
+    [encoding] => ISO-8859-1
+    [filename] => Bong0.mp3
+    [filepath] => /public_html/waste/v3.2/app/webroot/files/mp3
+    [filenamepath] => /public_html/waste/v3.2/app/webroot/files/mp3/Bong0.mp3
+    [id3v2] => Array
+        (
+            [header] => 1
+            [flags] => Array
+                (
+                    [unsynch] =>
+                    [exthead] =>
+                    [experim] =>
+                )
+
+            [majorversion] => 3
+            [minorversion] => 0
+            [headerlength] => 4096
+            [tag_offset_start] => 0
+            [tag_offset_end] => 4096
+            [encoding] => UTF-8
+            [comments] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => Títol del tema
+                        )
+
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
+                        )
+
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
+                        )
+
+                    [year] => Array
+                        (
+                            [0] => 2009
+                        )
+
+                    [genre] => Array
+                        (
+                            [0] => Techno
+                        )
+
+                    [comments] => Array
+                        (
+                            [0] => from www.underave.net
+                        )
+
+                )
+
+            [TIT2] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TIT2
+                            [frame_flags_raw] => 0
+                            [data] => ��T���t�o�l� �d�e�l� �t�e�m�a�
+                            [datalength] => 31
+                            [dataoffset] => 10
+                            [framenamelong] => Title/songname/content description
+                            [framenameshort] => title
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [TPE1] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TPE1
+                            [frame_flags_raw] => 0
+                            [data] => ��J�o� �m�a�t�e�i�x�
+                            [datalength] => 21
+                            [dataoffset] => 51
+                            [framenamelong] => Lead performer(s)/Soloist(s)
+                            [framenameshort] => artist
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [TALB] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TALB
+                            [frame_flags_raw] => 0
+                            [data] => ��M�u�a�h�a�h�a�h�a�h�a�h�
+                            [datalength] => 27
+                            [dataoffset] => 82
+                            [framenamelong] => Album/Movie/Show title
+                            [framenameshort] => album
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [TYER] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TYER
+                            [frame_flags_raw] => 0
+                            [data] => ��2�0�0�9�
+                            [datalength] => 11
+                            [dataoffset] => 119
+                            [framenamelong] => Year
+                            [framenameshort] => year
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [TCON] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TCON
+                            [frame_flags_raw] => 0
+                            [data] => ��T�e�c�h�n�o�
+                            [datalength] => 15
+                            [dataoffset] => 140
+                            [framenamelong] => Content type
+                            [framenameshort] => genre
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [COMM] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => COMM
+                            [frame_flags_raw] => 0
+                            [data] => ��f�r�o�m� �w�w�w�.�u�n�d�e�r�a�v�e�.�n�e�t�
+                            [datalength] => 50
+                            [dataoffset] => 165
+                            [framenamelong] => Comments
+                            [framenameshort] => comments
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                            [language] => eng
+                            [languagename] => English
+                            [description] =>
+                        )
+
+                )
+
+            [TRCK] => Array
+                (
+                    [0] => Array
+                        (
+                            [frame_name] => TRCK
+                            [frame_flags_raw] => 0
+                            [data] =>
+                            [datalength] => 1
+                            [dataoffset] => 225
+                            [framenamelong] => Track number/Position in set
+                            [framenameshort] => track_number
+                            [flags] => Array
+                                (
+                                    [TagAlterPreservation] =>
+                                    [FileAlterPreservation] =>
+                                    [ReadOnly] =>
+                                    [compression] =>
+                                    [Encryption] =>
+                                    [GroupingIdentity] =>
+                                )
+
+                            [encodingid] => 1
+                            [encoding] => UTF-16
+                        )
+
+                )
+
+            [padding] => Array
+                (
+                    [start] => 236
+                    [length] => 3860
+                    [valid] => 1
+                )
+
+        )
+
+    [id3v1] => Array
+        (
+            [title] => Títol del tema
+            [artist] => Jo mateix
+            [album] => Muahahahahah
+            [year] => 2009
+            [comment] => from www.underave.net
+            [genre] => Techno
+            [comments] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => Títol del tema
+                        )
+
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
+                        )
+
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
+                        )
+
+                    [year] => Array
+                        (
+                            [0] => 2009
+                        )
+
+                    [comment] => Array
+                        (
+                            [0] => from www.underave.net
+                        )
+
+                    [genre] => Array
+                        (
+                            [0] => Techno
+                        )
+
+                )
+
+            [padding_valid] => 1
+            [tag_offset_end] => 263776
+            [tag_offset_start] => 263648
+            [encoding] => ISO-8859-1
+        )
+
+    [mime_type] => audio/mpeg
+    [mpeg] => Array
+        (
+            [audio] => Array
+                (
+                    [raw] => Array
+                        (
+                            [synch] => 4094
+                            [version] => 3
+                            [layer] => 1
+                            [protection] => 0
+                            [bitrate] => 9
+                            [sample_rate] => 0
+                            [padding] => 0
+                            [private] => 0
+                            [channelmode] => 0
+                            [modeextension] => 0
+                            [copyright] => 0
+                            [original] => 1
+                            [emphasis] => 0
+                        )
+
+                    [version] => 1
+                    [layer] => 3
+                    [channelmode] => stereo
+                    [channels] => 2
+                    [sample_rate] => 44100
+                    [protection] => 1
+                    [private] =>
+                    [modeextension] =>
+                    [copyright] =>
+                    [original] => 1
+                    [emphasis] => none
+                    [crc] => 54304
+                    [padding] =>
+                    [bitrate] => 128000
+                    [framelength] => 417
+                    [bitrate_mode] => cbr
+                )
+
+        )
+
+    [playtime_seconds] => 16.222
+    [tags_html] => Array
+        (
+            [id3v1] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => T&amp;iacute;tol del tema
+                        )
+
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
+                        )
+
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
+                        )
+
+                    [year] => Array
+                        (
+                            [0] => 2009
+                        )
+
+                    [comment] => Array
+                        (
+                            [0] => from www.underave.net
+                        )
+
+                    [genre] => Array
+                        (
+                            [0] => Techno
+                        )
+
+                )
+
+            [id3v2] => Array
+                (
+                    [title] => Array
+                        (
+                            [0] => T&amp;#237;tol del tema
+                        )
+
+                    [artist] => Array
+                        (
+                            [0] => Jo mateix
+                        )
+
+                    [album] => Array
+                        (
+                            [0] => Muahahahahah
+                        )
+
+                    [year] => Array
+                        (
+                            [0] => 2009
+                        )
+
+                    [genre] => Array
+                        (
+                            [0] => Techno
+                        )
+
+                    [comments] => Array
+                        (
+                            [0] => from www.underave.net
+                        )
+
+                )
+
+        )
+
+    [bitrate] => 128000
+    [playtime_string] => 0:16
+)
 [/plain]

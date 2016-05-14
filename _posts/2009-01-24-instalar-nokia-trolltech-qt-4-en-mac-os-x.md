@@ -49,7 +49,7 @@ Antes de continuar debéis saber que existe un instalador para Mac, está en la 
 
 Primero de todo debemos descargar el conjunto de desarrollo de Mac Xcode. Es un fichero .dmg de aproximadamente 1GB que podéis descargar gratuitamente de la <a title="Apple Developer Connection" href="http://connect.apple.com" target="_blank">página web de desarrollo de mac</a> (necesitáis estar registrados).
 
-<a id="more"></a><a id="more-170"></a><br />
+<a id="more"></a><a id="more-170"></a>
 Una vez registrados, en la seción <em>Downloads / Development Tools</em> buscamos la última versión de "Xcode Developer Tools" (actualmente es la versión 3.2.1).
 
 Esto lo hacemos porque para instalar las Qts necesitamos el compilador gcc/g++ y viene en éste paquete. Instalaremos "System Tools" y "Unix Development Support" (ocupa aproximadamente 2,5GB).

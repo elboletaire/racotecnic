@@ -37,7 +37,7 @@ Recientemente instalé un disco duro de 1TB y al <a title="Búsqueda en google p
 
 Tras llevar mi ordenador unos días sin apagarse, hoy lo he actualizado y al reiniciar me había cambiado los destinos de los discos duros. Es decir, sde ha pasado a ser sdc, sdc a ser sdd... y así con varios de ellos (desde luego, no lo encuentro nada lógico :S )
 
-<a id="more"></a><a id="more-63"></a><br />
+<a id="more"></a><a id="more-63"></a>
 La solución ha sido reemplazar estas rutas por "<a title="UUID en Wikipedia" href="http://en.wikipedia.org/wiki/UUID" target="_blank">UUID</a>". Para averiguar dicho identificador debéis hacer lo siguiente:
 
     user@user:~$ ls -l /dev/disk/by-uuid/

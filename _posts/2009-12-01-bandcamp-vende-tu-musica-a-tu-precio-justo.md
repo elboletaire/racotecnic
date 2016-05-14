@@ -31,14 +31,14 @@ Quizás muchos al leer esto piensen: <em>"Ya estamos otra vez; Ya nos esta vendi
 
 Fuera de lo graciosa y <em>"cool"</em> que pueda ser esa autodefinición. <span style="color: #666699;"><em>Bandcamp</em><strong> </strong><span style="color: #000000;">ofrece una serie de ventajas que otros sites de esta índole no tienen. La principal es dominio de tu música, aunque cabe también destacar su motor de busqueda.</span></span>
 
-<span style="color: #666699;"><span style="color: #000000;">Sobre la parte más "informática" del asunto cabe destacar:<br />
+<span style="color: #666699;"><span style="color: #000000;">Sobre la parte más "informática" del asunto cabe destacar:
 </span></span>
 
 <ul>
 <li>Como host, tiene un hosting ilimitado. Es decir, puedes subir todo lo quieras, no tiene limite.<span style="color: #666699;"><span style="color: #000000;"> También permite customizar dominios.</span></span></li>
-<li><span style="color: #666699;"><span style="color: #000000;">Gracias a su motor busqueda es capaz de generar estadisticas al instante de lo que esta pasando en tu web. Como por ejemplo donde se inserta tu música, que es lo que se descarga, y crear un ranking de los temas más populares.<br />
+<li><span style="color: #666699;"><span style="color: #000000;">Gracias a su motor busqueda es capaz de generar estadisticas al instante de lo que esta pasando en tu web. Como por ejemplo donde se inserta tu música, que es lo que se descarga, y crear un ranking de los temas más populares.
 </span></span></li>
-<li><span style="color: #666699;"><span style="color: #000000;">También debido a su motor de busqueda, <span style="color: #666699;"><em>Bandcamp</em></span> es capaz de ponerse el primero de los links al realizar cualquier busqueda en Google de tu nombre/grupo. Por lo que directamente irán a para a tu página, no a la de un tercero.<br />
+<li><span style="color: #666699;"><span style="color: #000000;">También debido a su motor de busqueda, <span style="color: #666699;"><em>Bandcamp</em></span> es capaz de ponerse el primero de los links al realizar cualquier busqueda en Google de tu nombre/grupo. Por lo que directamente irán a para a tu página, no a la de un tercero.
 </span></span></li>
 </ul>
 

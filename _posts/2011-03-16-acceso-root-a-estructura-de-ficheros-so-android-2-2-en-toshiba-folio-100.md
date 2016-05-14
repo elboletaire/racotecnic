@@ -86,7 +86,7 @@ Hay que configurar el driver para que reconozca la Tablet:
 <ul>
 <li>Entrar en `/etc/udev/rules.d/`</li>
 <li>Dentro de este directorio tiene que haber un fichero llamado `51-android.rules` o con otro número.</li>
-<li> Editamos este fichero para añadir la siguiente línea:<br />
+<li> Editamos este fichero para añadir la siguiente línea:
 [shell]SUBSYSTEMS=='usb', ATTRS{idVendor}=='0bb4',ATTRS{idProduct}=='0c97', MODE='0666'[/shell]</li>
 </ul>
 
@@ -98,29 +98,29 @@ Esto nos mostrará la información de los dispositivos usb conectados.
 
 Seguidamente le damos permisos y reiniciamos el server de ADB:
 
-[shell]$ sudo chmod a+r /etc/udev/rules.d/51-android.rules<br />
-$ sudo ~/android-sdk/tools/adb kill-server<br />
-$ sudo ~/android-sdk/tools/adb start-server<br />
-* daemon not running. starting it now on port 5037 *<br />
-* daemon started successfully *<br />
-$ ~/android-sdk/tools/adb devices<br />
-List of devices attached<br />
+[shell]$ sudo chmod a+r /etc/udev/rules.d/51-android.rules
+$ sudo ~/android-sdk/tools/adb kill-server
+$ sudo ~/android-sdk/tools/adb start-server
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+$ ~/android-sdk/tools/adb devices
+List of devices attached
 HT03JNX00008 device[/shell]
 
 Una vez tenemos el dispositivo vamos a acceder a él:
 
-[shell highlight="10"]$ ~/android-sdk/tools/adb shell<br />
-$ su<br />
-# mount<br />
-rootfs / rootfs ro 0 0<br />
-tmpfs /dev tmpfs rw,mode=755 0 0<br />
-devpts /dev/pts devpts rw,mode=600 0 0<br />
-proc /proc proc rw 0 0<br />
-sysfs /sys sysfs rw 0 0<br />
-tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0<br />
-/dev/block/mtdblock3 /system yaffs2 ro 0 0<br />
-/dev/block/mtdblock5 /data yaffs2 rw,nosuid,nodev 0 0<br />
-/dev/block/mtdblock4 /cache yaffs2 rw,nosuid,nodev 0 0<br />
+[shell highlight="10"]$ ~/android-sdk/tools/adb shell
+$ su
+# mount
+rootfs / rootfs ro 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+tmpfs /sqlite_stmt_journals tmpfs rw,size=4096k 0 0
+/dev/block/mtdblock3 /system yaffs2 ro 0 0
+/dev/block/mtdblock5 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock4 /cache yaffs2 rw,nosuid,nodev 0 0
 /dev/block/mmcblk0p1 /sdcard vfat rw,dirsync,nosuid,nodev,noexec,uid=1000,gid=1000,fmask=0711,dmask=0700,codepage=cp437,iocharset=iso8859-1,utf8 0 0[/shell]
 
 Remontamos el FS como rw para poder escribir o hacer pushes:

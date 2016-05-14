@@ -62,17 +62,17 @@ Hay dos grandes grupos de derechos, los morales y los de explotación.
 
 Empezamos por los derechos morales, estos nunca se pueden ceder, vender, ni traspasar. El autor, por el simple hecho de crear una obra, adquiere estos derechos. Los derechos morales son:
 
-- Derecho a la divulgación<br />
-- Derecho al respeto del nombre del autor<br />
+- Derecho a la divulgación
+- Derecho al respeto del nombre del autor
 - Derecho al respeto de la obra
 
 Básicamente estos permiten que el autor decida cómo, cuándo, y dónde se explota su obra.
 
-- Si usaras tu nombre, un seudónimo, o lo harás anónimamente.<br />
-- Si quieres que esta se divulgue, porqué nadie puede obligarte a distribuir una obra, aunque haya un contrato (teóricamente...)<br />
-- Exigir que te reconozcan como autor.<br />
-- Defender tu obra contra manipulaciones y alteraciones que no crees oportunas. Por ejemplo, si se hace un remix que consideras mediocre, puedes negarte a que este sea divulgado, aunque dieras previa autorización y haya contratos por medio.<br />
-- Retirar la obra de las tiendas por un cambio de tus creencias. Por ejemplo, si tienes un grupo de OI! y al día siguiente te haces cristiano, puedes pedir la retirada de tu obra de todas las tiendas, aunque haya contratos de por medio (una vez más).<br />
+- Si usaras tu nombre, un seudónimo, o lo harás anónimamente.
+- Si quieres que esta se divulgue, porqué nadie puede obligarte a distribuir una obra, aunque haya un contrato (teóricamente...)
+- Exigir que te reconozcan como autor.
+- Defender tu obra contra manipulaciones y alteraciones que no crees oportunas. Por ejemplo, si se hace un remix que consideras mediocre, puedes negarte a que este sea divulgado, aunque dieras previa autorización y haya contratos por medio.
+- Retirar la obra de las tiendas por un cambio de tus creencias. Por ejemplo, si tienes un grupo de OI! y al día siguiente te haces cristiano, puedes pedir la retirada de tu obra de todas las tiendas, aunque haya contratos de por medio (una vez más).
 - Acceder a una copia rara o única de tu obra. Si un día en una discoteca haces un live que nunca has repetido y alguien lo ha grabado, este tiene la obligación de pasarte esa grabación para que tú la distribuyas como quieras.
 
 Los derechos de explotación también se adquieren al crear una obra, pero a diferencia de los morales, estos si que se pueden vender. Estos derechos se refieren principalmente a una remuneración económica, los explicaré a grandes rasgos porque cada uno es un mundo de contratos, porcentajes y demás historias.

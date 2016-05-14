@@ -26,7 +26,7 @@ tags:
 
 Hace ya un tiempo que Chrome superó las el número de usuarios de Firefox, y seguro que ya lo habéis visto de varias fuentes..
 
-http://www.extremetech.com/computing/116885-the-death-of-firefox<br />
+http://www.extremetech.com/computing/116885-the-death-of-firefox
 http://www.genbetadev.com/desarrollo-web/la-muerte-anunciada-de-firefox
 
 <a href="http://www.extremetech.com/wp-content/uploads/2012/02/firefox-market-share-trend-640x374.jpg"><img class="aligncenter" title="firefox-market-share-trend-640x374" src="http://www.extremetech.com/wp-content/uploads/2012/02/firefox-market-share-trend-640x374.jpg" alt="firefox-market-share-trend-640x374" width="640" height="374" /></a>
