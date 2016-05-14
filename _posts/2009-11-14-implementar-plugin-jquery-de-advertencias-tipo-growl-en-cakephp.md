@@ -11,7 +11,7 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "<blockquote><strong>Nota para usuarios de CakePHP 1.3:</strong> he puesto
+excerpt: "<blockquote>**Nota para usuarios de CakePHP 1.3:** he puesto
   algunos comentarios y notas como esta en el código y en el tutorial.\r\nTened en
   cuenta también (por si no lo sabéis..) que el helper de JavaScript ya no se utiliza
   para incrustar y cargar código en la variable `$scripts_for_layout`.
@@ -48,7 +48,7 @@ tags:
 - Gritter
 - CakePHP 1.2
 ---
-<blockquote><strong>Nota para usuarios de CakePHP 1.3:</strong> he puesto algunos comentarios y notas como esta en el código y en el tutorial.
+<blockquote>**Nota para usuarios de CakePHP 1.3:** he puesto algunos comentarios y notas como esta en el código y en el tutorial.
 Tened en cuenta también (por si no lo sabéis..) que el helper de JavaScript ya no se utiliza para incrustar y cargar código en la variable `$scripts_for_layout`. Así mismo no estaría de más que reemplazarais el modo en que se utilizan los helpers en las vistas (es decir, utilizar $this->Html en lugar de $html por ejemplo).</blockquote>
 
 Voy a explicaros una forma sencilla reemplazar vuestras capas <strong><em>flashMessage</em></strong> por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl.
@@ -78,15 +78,15 @@ Para los que no lo sepáis, <a rel="nofollow" href="http://www.growl.info/" targ
 Descargad todo lo necesario y guardad todo donde más os plazca. En mi ejemplo lo he organizado así:
 
 <ul>
-<li><strong>jquery-1.3.2.min.js</strong> a la carpeta <em>/app/webroot/js/</em></li>
-<li><strong>jquery.gritter.min.js</strong> a la carpeta <em>/app/webroot/js/</em></li>
-<li><strong>gritter.png</strong> a la carpeta <em>/app/webroot/img/</em></li>
-<li><strong>gritter-close-ie6.gif</strong> a la carpeta <em>/app/webroot/img/</em></li>
-<li><strong>gritter-long.png</strong> a la carpeta <em>/app/webroot/img/</em></li>
-<li><strong>jquery.gritter.css</strong> renombrado y movido a <em>/app/webroot/css/gritter.css</em></li>
+<li>**jquery-1.3.2.min.js** a la carpeta <em>/app/webroot/js/</em></li>
+<li>**jquery.gritter.min.js** a la carpeta <em>/app/webroot/js/</em></li>
+<li>**gritter.png** a la carpeta <em>/app/webroot/img/</em></li>
+<li>**gritter-close-ie6.gif** a la carpeta <em>/app/webroot/img/</em></li>
+<li>**gritter-long.png** a la carpeta <em>/app/webroot/img/</em></li>
+<li>**jquery.gritter.css** renombrado y movido a <em>/app/webroot/css/gritter.css</em></li>
 </ul>
 
-Fijaros que he renombrado el fichero CSS. Además de renombrarlo habrá que modificar las rutas de las imágenes hacia la ruta que toque. Si estáis siguiendo el tutorial al pie de la letra debéis reemplazar <strong>../images/</strong> por <strong>../img/</strong> en vuestro CSS.
+Fijaros que he renombrado el fichero CSS. Además de renombrarlo habrá que modificar las rutas de las imágenes hacia la ruta que toque. Si estáis siguiendo el tutorial al pie de la letra debéis reemplazar **../images/** por **../img/** en vuestro CSS.
 
 Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistema de notificaciones principal de CakePHP tenemos que modificar nuestro <em>layout</em> de HTML principal para cargar los JavaScripts en la cabecera:
 
@@ -130,7 +130,7 @@ Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistem
 
 Las líneas marcadas en azul son las que os interesan. El resto podéis ignorarlas perfectamente.
 
-En la <strong>línea 9</strong> he añadido las librerías jQuery y Gritter. Recordad que para poder utilizar el <em>Helper</em>de JavasCript desde cualquier parte deberéis haber añadido dicho Helper en vuestro <em>AppController</em>:
+En la **línea 9** he añadido las librerías jQuery y Gritter. Recordad que para poder utilizar el <em>Helper</em>de JavasCript desde cualquier parte deberéis haber añadido dicho Helper en vuestro <em>AppController</em>:
 
 ~~~php
 <?php // /app/app_controller.php
@@ -141,17 +141,17 @@ class AppController extends Controller {
 
 ~~~
 
-En la <strong>línea 10</strong> creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre <a title="Subida de ficheros con uploadify y validación Ajax en CakePHP" href="http://www.racotecnic.com/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/"><strong>cómo subir múltiples imágenes con uploadify en CakePHP</strong></a> quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
+En la **línea 10** creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre <a title="Subida de ficheros con uploadify y validación Ajax en CakePHP" href="http://www.racotecnic.com/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/">**cómo subir múltiples imágenes con uploadify en CakePHP**</a> quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
 
-En la <strong>línea 12</strong> añadimos el fichero CSS de Gritter.
+En la **línea 12** añadimos el fichero CSS de Gritter.
 
-Y en la <strong>línea 20</strong>, si no la teníais ya en vuestro <em>layout</em>, debéis añadir el método <em>$session->flash()</em> que será el que mostrará las notificaciones de Gritter.
+Y en la **línea 20**, si no la teníais ya en vuestro <em>layout</em>, debéis añadir el método <em>$session->flash()</em> que será el que mostrará las notificaciones de Gritter.
 
 Ya solo nos queda una cosa por hacer: crear la plantilla para cada tipo de notificación.
 
 Como no quiero alargar mucho el tutorial haré sólo un par de <em>layouts</em>, uno para los errores y otro para las notificaciones normales.
 
-<strong>Notificaciones informativas:</strong>
+**Notificaciones informativas:**
 
 ~~~php
 // /app/views/layouts/flash_info.ctp (Cake 1.2)
@@ -168,7 +168,7 @@ $(function(){
 });') ?>
 ~~~
 
-<strong>Notificaciones de error:</strong>
+**Notificaciones de error:**
 
 ~~~php
 // /app/views/layouts/flash_error.ctp (Cake 1.2)
@@ -202,7 +202,7 @@ Pues ya está, ya lo tenemos ^^
 
 Si queréis podéis descargar los ficheros más importantes en <a href="http://www.racotecnic.com/tutorials/2009/11/growl_cake.zip">el zip</a> que he preparado del tutorial. También <a href="http://www.racotecnic.com/tutorials/cake/pages/growl">podéis ver el ejemplo</a> que he hecho a medida que hacía esta pequeña guía.
 <blockquote>
-<strong>Ejemplo</strong>:
+**Ejemplo**:
 
 <ul>
 <li><a href="http://www.racotecnic.com/tutorials/cake/pages/growl">Ver ejemplo</a></li>

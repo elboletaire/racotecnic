@@ -16,7 +16,7 @@ excerpt: "Ya hacía tiempo que tenía ganas de escribir una entrada \"de estas\"
   me gustan :P).\r\n\r\nHace unos meses conté <a title=\"Leer artículo\" href=\"http://www.racotecnic.com/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/\"
   target=\"_self\">cómo podíais utilizar el plugin Uploadify (de jQuery) para subir
   ficheros a vuestro portal hecho con CakePHP</a>. Hoy iremos un poco más allá y crearemos
-  un <strong>upload de imágenes con validación de campos con Ajax</strong>.\r\n\r\nAntes
+  un **upload de imágenes con validación de campos con Ajax**.\r\n\r\nAntes
   de empezar estaría bien que hubierais leído el anterior tutorial —e incluso haberlo
   probado— para tener algo de práctica en el asunto. Este tutorial será (bastante)
   de ampliación del anterior. Quiero decir que habrá cosas en las que no profundizaré
@@ -45,7 +45,7 @@ tags:
 
 Ya hacía tiempo que tenía ganas de escribir una entrada "de estas" :D (de estas quiero decir de programación y con muuuucho muuuucho código, como a mí me gustan :P).
 
-Hace unos meses conté <a title="Leer artículo" href="http://www.racotecnic.com/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/" target="_self">cómo podíais utilizar el plugin Uploadify (de jQuery) para subir ficheros a vuestro portal hecho con CakePHP</a>. Hoy iremos un poco más allá y crearemos un <strong>upload de imágenes con validación de campos con Ajax</strong>.
+Hace unos meses conté <a title="Leer artículo" href="http://www.racotecnic.com/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/" target="_self">cómo podíais utilizar el plugin Uploadify (de jQuery) para subir ficheros a vuestro portal hecho con CakePHP</a>. Hoy iremos un poco más allá y crearemos un **upload de imágenes con validación de campos con Ajax**.
 
 Antes de empezar estaría bien que hubierais leído el anterior tutorial —e incluso haberlo probado— para tener algo de práctica en el asunto. Este tutorial será (bastante) de ampliación del anterior. Quiero decir que habrá cosas en las que no profundizaré porque ya lo hice en el anterior, así como que en este hay mejoras, como la gestión de la respuesta de uploadify con JSON en lugar de con texto plano.
 
@@ -294,13 +294,13 @@ $(function(){
 	});
 });[/js]
 
-La función <strong>flashMessage</strong> sirve para generar una capa "flashMessage" dinámica justo encima de la capa con clase ".add-info".
+La función **flashMessage** sirve para generar una capa "flashMessage" dinámica justo encima de la capa con clase ".add-info".
 
-La función <strong>onTimeOut</strong> sólo es para los que utilicéis el componente Auth. En caso de terminarse la sesión muestra un mensaje al usuario y lo redirige hacia la página de login pasado un rato.
+La función **onTimeOut** sólo es para los que utilicéis el componente Auth. En caso de terminarse la sesión muestra un mensaje al usuario y lo redirige hacia la página de login pasado un rato.
 <blockquote>
-<strong>Nota:</strong> Esta no es la vía correcta para mostrar un error conforme  la sesión del usuario ha expirado. Podéis ver la explicación que hago al  respecto <a href="../2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.</blockquote>
+**Nota:** Esta no es la vía correcta para mostrar un error conforme  la sesión del usuario ha expirado. Podéis ver la explicación que hago al  respecto <a href="../2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.</blockquote>
 
-Finalmente, en la función de carga de uploadify indicamos los parámetros que nos interesen y generamos una función <strong>OnComplete</strong> a nuestro gusto. En este ejemplo lo que he hecho es generar una capa (con id imatgeX, donde X es el número de ID actual, según el contador de IDs) con una miniatura de fondo que he generado exclusivamente para mostrársela al usuario en este formulario. Dentro de esta capa hay otra capa con las etiquetas y los inputs que necesito.
+Finalmente, en la función de carga de uploadify indicamos los parámetros que nos interesen y generamos una función **OnComplete** a nuestro gusto. En este ejemplo lo que he hecho es generar una capa (con id imatgeX, donde X es el número de ID actual, según el contador de IDs) con una miniatura de fondo que he generado exclusivamente para mostrársela al usuario en este formulario. Dentro de esta capa hay otra capa con las etiquetas y los inputs que necesito.
 
 Es importante que todos elementos del formulario que queráis meter dinámicamente aquí lleven una ID única con un número al final. Esto nos servirá más adelante para la validación con Ajax.
 
@@ -438,9 +438,9 @@ A parte de los comentarios y el código (que hablan por sí solos.. ;) ) quiero 
 
 La cabecera que está comentada (Content-Type: text/x-json) la puse en su momento porque en Internet Explorer 8 y Opera 10 me daba algunos problemas si no ponía esta cabecera. Ahora sin ella me funciona correctamente (realmente había más cosas que interferían en su funcionamiento con IE y Opera), así que la he comentado por si la tuvierais que utilizar en algún momento.
 
-Respecto a los comentarios sobre el componente de autenticación (Auth)... en caso de que en vuestra web queráis restringir las subidas a usuarios registrados deberéis descomentar las líneas comentadas para que, en caso de que al usuario le expire la sesión mientras está subiendo imágenes, se le muestre un mensaje de error (sin esto, en caso de expirar la sesión, no se mostraría <strong>nada</strong> al usuario).
+Respecto a los comentarios sobre el componente de autenticación (Auth)... en caso de que en vuestra web queráis restringir las subidas a usuarios registrados deberéis descomentar las líneas comentadas para que, en caso de que al usuario le expire la sesión mientras está subiendo imágenes, se le muestre un mensaje de error (sin esto, en caso de expirar la sesión, no se mostraría **nada** al usuario).
 <blockquote>
-<strong>Nota:</strong> Esta no es la vía correcta para mostrar un error conforme la sesión del usuario ha expirado. Podéis ver la explicación que hago al respecto <a href="http://www.racotecnic.com/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.</blockquote>
+**Nota:** Esta no es la vía correcta para mostrar un error conforme la sesión del usuario ha expirado. Podéis ver la explicación que hago al respecto <a href="http://www.racotecnic.com/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.</blockquote>
 
 En cuanto al render de la vista... ahora pasaremos a la creación de la vista upload.ctp y veréis que el fichero es muy genérico. Quiero decir que con este mismo fichero podéis gestionar cualquier subida de ficheros que hagáis con Ajax, así que, tener que generar una vista idéntica para cada sección en que tengáis subida de ficheros, es algo absurdo.
 
@@ -588,15 +588,15 @@ $('#ImageAddForm').submit(function(){
 	return false;
 });[/js]
 
-La función <strong>camelize</strong> es la encargada de convertir las cadenas como_esta a cadenas comoEsta. Esto nos sirve para encontrar la id del textbox al que está vinculado el error a partir de los errores retornados en JSON.
+La función **camelize** es la encargada de convertir las cadenas como_esta a cadenas comoEsta. Esto nos sirve para encontrar la id del textbox al que está vinculado el error a partir de los errores retornados en JSON.
 
-La función <strong>afterValidate</strong> es la que decide qué función se ejecutará según la respuesta que recibamos (<em>success</em>, <em>error</em> o <em>sessionTimeOut</em>).
+La función **afterValidate** es la que decide qué función se ejecutará según la respuesta que recibamos (<em>success</em>, <em>error</em> o <em>sessionTimeOut</em>).
 
-La función <strong>onSaved</strong> es la encargada de, en caso de que haya imágenes con errores y otras no (y al volver a enviar el usuario el formulario), eliminar del formulario las imágenes guardadas correctamente.
+La función **onSaved** es la encargada de, en caso de que haya imágenes con errores y otras no (y al volver a enviar el usuario el formulario), eliminar del formulario las imágenes guardadas correctamente.
 
-<strong>onError</strong> se encarga de mostrar un <em>flashMessage</em> mostrando el mensaje de error general y cada uno de los errores de validación.
+**onError** se encarga de mostrar un <em>flashMessage</em> mostrando el mensaje de error general y cada uno de los errores de validación.
 
-Si todas las imágenes se guardan correctamente se ejecuta <strong>onSuccess</strong> que se encarga de ocultar todo el formulario haciendo un efecto <em>slideUp</em>, mostrar un <em>flashMessage</em>, ocultar la imágen de carga de Ajax y finalmente redirige al usuario a la página deseada (en el ejemplo lo redirijo a la misma página).
+Si todas las imágenes se guardan correctamente se ejecuta **onSuccess** que se encarga de ocultar todo el formulario haciendo un efecto <em>slideUp</em>, mostrar un <em>flashMessage</em>, ocultar la imágen de carga de Ajax y finalmente redirige al usuario a la página deseada (en el ejemplo lo redirijo a la misma página).
 
 El último método es el encargado de enviar el formulario mediante Ajax.
 

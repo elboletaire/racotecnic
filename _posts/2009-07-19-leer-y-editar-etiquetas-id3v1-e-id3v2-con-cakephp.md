@@ -44,10 +44,10 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 
 <a id="more"></a><a id="more-679"></a>
 <blockquote>
-<strong>getID3()</strong> is a PHP script that extracts useful information from MP3s &amp; other multimedia file formats:
+**getID3()** is a PHP script that extracts useful information from MP3s &amp; other multimedia file formats:
 
 <ul>
-<li><strong>Tag formats:</strong>
+<li>**Tag formats:**
 
 <ul>
 <li><a href="http://www.id3.org/id3v1.html">ID3v1</a> (v1.0 &amp; v1.1)</li>
@@ -57,7 +57,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li>Lyrics3 (<a href="http://www.id3.org/lyrics3.html">v1</a> &amp; <a href="http://www.id3.org/lyrics3200.html">v2</a>)</li>
 </ul>
 </li>
-<li><strong>Lossy Audio-only formats:</strong>
+<li>**Lossy Audio-only formats:**
 
 <ul>
 <li><a href="http://www.mp3-tech.org/programmer/frame_header.html">MP3, MP2, MP1</a> (MPEG-1, layer III/II/I audio, including Fraunhofer, Xing and <a href="http://gabriel.mp3-tech.org/mp3infotag.html">LAME VBR/CBR headers</a>)</li>
@@ -67,7 +67,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li><a href="http://www.real.com/">RealAudio</a></li>
 </ul>
 </li>
-<li><strong>Lossless Audio-only formats:</strong>
+<li>**Lossless Audio-only formats:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/Wav">WAV</a> (including extended chunks such as BWF and CART)</li>
@@ -80,7 +80,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li><a href="http://en.wikipedia.org/wiki/Midi#MIDI_file_formats">MIDI</a></li>
 </ul>
 </li>
-<li><strong>Audio-Video formats:</strong>
+<li>**Audio-Video formats:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/Audio_Video_Interleave">AVI</a></li>
@@ -91,7 +91,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li><a href="http://www.real.com/">RealVideo</a></li>
 </ul>
 </li>
-<li><strong>Graphic formats:</strong>
+<li>**Graphic formats:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/JPEG">JPEG</a></li>
@@ -102,7 +102,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li><a href="http://www.openswf.org/">SWF (Flash)</a></li>
 </ul>
 </li>
-<li><strong>Data formats:</strong>
+<li>**Data formats:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">ZIP</a></li>
@@ -111,7 +111,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 <li><a href="http://en.wikipedia.org/wiki/ISO_image">ISO 9660 (CD-ROM image)</a></li>
 </ul>
 </li>
-<li><strong>Metadata types:</strong>
+<li>**Metadata types:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/Exchangeable_image_file_format">EXIF (Exchangeable image file format)</a></li>
@@ -119,7 +119,7 @@ Si no las conocíais os recomiendo que las descarguéis y hagáis alguna prueba 
 </li>
 </ul>
 
-<strong>getID3() can write:</strong>
+**getID3() can write:**
 
 <ul>
 <li><a href="http://en.wikipedia.org/wiki/ID3v1">ID3v1 (v1 &amp; v1.1)</a></li>

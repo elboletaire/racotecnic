@@ -39,8 +39,8 @@ Para usarlo, debemos instalar las dependencias dsniff, pypcap y dpkt.
 Lo mas fácil será ilustrar su uso mediante un ejemplo:
 
 <ul>
-<li>En nuestro escenario, <strong>Bob</strong> esta conectado en la misma red local que <strong>Alice</strong>. <strong> </strong></li>
-<li><strong>Alice</strong> se conecta a Internet mediante un <strong>Router</strong> o puerta de enlace.</li>
+<li>En nuestro escenario, **Bob** esta conectado en la misma red local que **Alice**. ** **</li>
+<li>**Alice** se conecta a Internet mediante un **Router** o puerta de enlace.</li>
 <li>El router tiene la IP 192.168.1.1</li>
 <li>Alice tiene la IP 192.168.1.22</li>
 <li>Bob tiene la IP 192.168.23</li>

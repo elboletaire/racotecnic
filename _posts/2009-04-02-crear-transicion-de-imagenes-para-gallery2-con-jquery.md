@@ -64,13 +64,13 @@ Utilizad el botón "show source" <img class="alignnone" src="http://racotecnic.u
 Como veis lo que hacemos únicamente es importar el módulo image block con <a title="readfile function at php.net" href="http://es.php.net/readfile" target="_blank">readfile</a> para mostrar su contenido. A éste módulo podemos pasarle parámetros para mostrar las imágenes como más nos guste. Podéis ver toda la lista de parámetros desde vuestro panel de administración de Image Block, o bien desde el <a title="Ver demás opciones en el Codex" href="http://codex.gallery2.org/Gallery2:Modules:imageblock#External_Options" target="_blank">Codex de Gallery2</a>. Los parámetros que utilizaré para el ejemplo son:
 
 <ul>
-<li><strong> g2_blocks</strong>: una lista separada de barras verticales (|) con aquellas imágenes que queramos mostrar. Estas pueden ser: <em>randomImage</em>, <em>recentImage</em>, <em>viewedImage</em>, <em>randomAlbum</em>, <em>recentAlbum</em>, <em>viewedAlbum</em>, <em>dailyImage</em>, <em>weeklyImage</em>, <em>monthlyImage</em>, <em>dailyAlbum</em>, <em>weeklyAlbum</em>, <em>monthlyAlbum</em>, <em>specificItem</em>; por defecto (si no pasamos el parámetro g2_blocks) será la opción que tengamos seleccionada en la configuración del módulo Image Block.
+<li>** g2_blocks**: una lista separada de barras verticales (|) con aquellas imágenes que queramos mostrar. Estas pueden ser: <em>randomImage</em>, <em>recentImage</em>, <em>viewedImage</em>, <em>randomAlbum</em>, <em>recentAlbum</em>, <em>viewedAlbum</em>, <em>dailyImage</em>, <em>weeklyImage</em>, <em>monthlyImage</em>, <em>dailyAlbum</em>, <em>weeklyAlbum</em>, <em>monthlyAlbum</em>, <em>specificItem</em>; por defecto (si no pasamos el parámetro g2_blocks) será la opción que tengamos seleccionada en la configuración del módulo Image Block.
 En mi ejemplo utilizaré el query string: <strong><em>g2_blocks=randomImage|randomImage|randomImage</em></strong> para mostrar 3 imágenes aleatorias.</li>
-<li><strong>g2_show</strong>: lista separada por barras verticales (|) con los detalles que queramos mostrar de la imagen. Pueden ser: <em> title</em>, <em>date</em>, <em>views</em>, <em>owner</em>, <em>heading</em>, <em>fullSize</em>, <em>rawImage</em>; también podemos utilizar <em>none</em> para no mostrar información alguna (como en el caso de este ejemplo).</li>
-<li><strong>g2_maxSize</strong>: define el tamaño máximo a mostrar de las imágenes. Yo lo limitaré a <strong>130</strong> (px).</li>
+<li>**g2_show**: lista separada por barras verticales (|) con los detalles que queramos mostrar de la imagen. Pueden ser: <em> title</em>, <em>date</em>, <em>views</em>, <em>owner</em>, <em>heading</em>, <em>fullSize</em>, <em>rawImage</em>; también podemos utilizar <em>none</em> para no mostrar información alguna (como en el caso de este ejemplo).</li>
+<li>**g2_maxSize**: define el tamaño máximo a mostrar de las imágenes. Yo lo limitaré a **130** (px).</li>
 </ul>
 
-Y por supuesto el resto de la query string: <em><strong>main.php?g2_view=imageblock.External</strong></em> que es la encargada de cargar el módulo Image Block.
+Y por supuesto el resto de la query string: <em>**main.php?g2_view=imageblock.External**</em> que es la encargada de cargar el módulo Image Block.
 
 El query string resultante será:
 

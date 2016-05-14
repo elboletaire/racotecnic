@@ -24,7 +24,7 @@ tags:
 - Snippet
 ---
 
-Si queréis <strong>detectar las solicitudes AJAX mediante PHP</strong> podéis hacerlo mediante la variable <em>HTTP_X_REQUESTED_WITH</em>:
+Si queréis **detectar las solicitudes AJAX mediante PHP** podéis hacerlo mediante la variable <em>HTTP_X_REQUESTED_WITH</em>:
 
 ~~~php
 /* Verificamos si hay ajax  */

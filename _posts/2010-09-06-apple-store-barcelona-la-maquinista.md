@@ -90,8 +90,8 @@ Para finalizar os muestro la camiseta que nos regalaron:
 
 <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01844.jpg"><img class="size-medium wp-image-221 alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01844-300x225.jpg" alt="" width="270" height="205" /></a> <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01845.jpg"><img class="size-medium wp-image-222 alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01845-300x225.jpg" alt="" width="270" height="205" /></a>
 
-<strong>Aviso:
-</strong>
+**Aviso:
+**
 
 <ul>
 <li><a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank">Neosy</a></li>

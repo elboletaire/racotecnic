@@ -28,7 +28,7 @@ tags:
 El cas és que avui navegant per internet n'he trobat un altre que pinta prou bé, aquí en teniu les característiques:
 
 <ul>
-<li><strong>Característiques generals</strong>
+<li>**Característiques generals**
 
 <ul>
 <li>Espai de disc: 6000 <abbr title="Megabyte">MB</abbr></li>
@@ -39,7 +39,7 @@ El cas és que avui navegant per internet n'he trobat un altre que pinta prou b�
 <li>Publicitat: No</li>
 </ul>
 </li>
-<li><strong>PHP i bases de dades</strong>
+<li>**PHP i bases de dades**
 
 <ul>
 <li><abbr title="Hypertext Preprocessor">PHP</abbr>: Ver 5.1.6</li>
@@ -48,14 +48,14 @@ El cas és que avui navegant per internet n'he trobat un altre que pinta prou b�
 <li>Noms de domini</li>
 </ul>
 </li>
-<li><strong>Sub-dominis:</strong> Sí
+<li>**Sub-dominis:** Sí
 
 <ul>
 <li>Domini <abbr title="Top Level Domain">TLD</abbr>: Sí</li>
 <li>Domini <abbr title="Top Level Domain">TLD</abbr> gratuït: Sí</li>
 </ul>
 </li>
-<li><strong>Zymic Hosting Control Panel (ZHCP)</strong>
+<li>**Zymic Hosting Control Panel (ZHCP)**
 
 <ul>
 <li>File Manager: Yes</li>

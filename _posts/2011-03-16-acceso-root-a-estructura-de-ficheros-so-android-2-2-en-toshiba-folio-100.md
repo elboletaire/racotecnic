@@ -127,7 +127,7 @@ Remontamos el FS como rw para poder escribir o hacer pushes:
 
 [shell]# mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system[/shell]
 
-<strong>YA TENEMOS ACCESO COMPLETO</strong>
+**YA TENEMOS ACCESO COMPLETO**
 <h3>Cosas a tener en cuenta</h3>
 
 Si apagamos el dispositivo habrá que hacer otra vez la parte del mount ya que el dispositivo por defecto monta /system en ro. Si se desea dejar permanentemente en rw modificar reglas de mount.

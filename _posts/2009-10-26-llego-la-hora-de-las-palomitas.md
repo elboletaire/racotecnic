@@ -13,8 +13,8 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "Si os gustó <a title=\"Leer entrada: Adiós discos duros multimedia\" href=\"http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/\"
   target=\"_self\">WD TV</a>, esto os gustará más :D\r\n\r\nHace ya un tiempo que
-  se comercializa en españa el producto <strong>PopCorn Hour </strong>también conocido
-  como . Según su página web...\r\n<blockquote><strong>El PopCorn Hour A-110</strong>
+  se comercializa en españa el producto **PopCorn Hour **también conocido
+  como . Según su página web...\r\n<blockquote>**El PopCorn Hour A-110**
   es un dispositivo de red todo en uno que utiliza como motor el más potente chipset
   decodificador de Sigma, el SMP8635C. Es una combinación de Reproductor Media Player
   Digital (DMP), un dispositivo de almacenamiento en red (NAS) y un servidor . Todas
@@ -49,9 +49,9 @@ tags:
 
 Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D
 
-Hace ya un tiempo que se comercializa en españa el producto <strong>PopCorn Hour </strong>también conocido como . Según su página web...
+Hace ya un tiempo que se comercializa en españa el producto **PopCorn Hour **también conocido como . Según su página web...
 <blockquote>
-<strong>El PopCorn Hour A-110</strong> es un dispositivo de red todo en uno que utiliza como motor el más potente chipset decodificador de Sigma, el SMP8635C. Es una combinación de Reproductor Media Player Digital (DMP), un dispositivo de almacenamiento en red (NAS) y un servidor . Todas estas características le convierten en un dispositivo que permite disponer en un solo producto visualizar, escuchar, almacenar, compartir, guardar… sus ficheros con una facilidad incomparable. El NMT le brinda todo lo que requiere el entretenimiento digital en un solo aparato. Toda una revolución de reproducción y conectividad.
+**El PopCorn Hour A-110** es un dispositivo de red todo en uno que utiliza como motor el más potente chipset decodificador de Sigma, el SMP8635C. Es una combinación de Reproductor Media Player Digital (DMP), un dispositivo de almacenamiento en red (NAS) y un servidor . Todas estas características le convierten en un dispositivo que permite disponer en un solo producto visualizar, escuchar, almacenar, compartir, guardar… sus ficheros con una facilidad incomparable. El NMT le brinda todo lo que requiere el entretenimiento digital en un solo aparato. Toda una revolución de reproducción y conectividad.
 
 Una vez conectado a su red, el NMT detectará automáticamente cualquier servidor PnP AV que encuentre en su red local y agregará todo el contenido disponible. Esto permite que el NMT presente en la pantalla de la TV todos los contenidos multimedia a su alcance. Como almacenamiento en red, NMT permite que el usuario guarde, acceda o copie sus contenidos multimedia al dispositivo NMT via FTP o Samba. Esta funcionalidad permite que cualquier dispositivo UPnP o DLNA “streaming” acceda al NMT para transferir archivos.
 
@@ -64,7 +64,7 @@ En fin, que es como una pequeña estación multimedia conectada a internet en la
 
 <img class="size-full wp-image-840 aligncenter" title="caracteristicas_popcornhour" src="{{ site.url }}/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" width="498" height="260" />
 
-Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quejan de que el PopCorn Hour <strong>se calienta en exceso</strong> aunque dicen que añadiendo un ventilador desaparecen los problemas.
+Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quejan de que el PopCorn Hour **se calienta en exceso** aunque dicen que añadiendo un ventilador desaparecen los problemas.
 
 <a href="{{ site.url }}/uploads/2009/10/A110_03.jpg"><img class="alignnone size-thumbnail wp-image-838" title="A110_03" src="{{ site.url }}/uploads/2009/10/A110_03-150x150.jpg" alt="A110_03" width="150" height="150" /></a><a href="{{ site.url }}/uploads/2009/10/A110_04.jpg"><img class="alignnone size-thumbnail wp-image-839" title="A110_04" src="{{ site.url }}/uploads/2009/10/A110_04-150x150.jpg" alt="A110_04" width="150" height="150" /></a>
 <blockquote>

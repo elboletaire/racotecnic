@@ -98,7 +98,7 @@ Pegad esto:
 </Files>
 [/code]
 <blockquote>
-<strong>Nota:</strong> Al actualizar a php 5.4 he necesitado descomentar el último trozo del fichero de configuración `/etc/apache2/mods-enabled/php5_cgi.conf` ya que sinó me descargaba los ficheros php en lugar de ejecutarlos. El trozo al que me refiero es este:
+**Nota:** Al actualizar a php 5.4 he necesitado descomentar el último trozo del fichero de configuración `/etc/apache2/mods-enabled/php5_cgi.conf` ya que sinó me descargaba los ficheros php en lugar de ejecutarlos. El trozo al que me refiero es este:
 
 [code]ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory '/usr/lib/cgi-bin'>
@@ -142,7 +142,7 @@ Compiled in modules:
   mod_so.c
 ~~~
 
-Fijaros que está cargado el módulo <strong>worker.c</strong>. Os recuerdo que por defecto apache viene con <strong>prefork.c</strong> por defecto.
+Fijaros que está cargado el módulo **worker.c**. Os recuerdo que por defecto apache viene con **prefork.c** por defecto.
 
 Ahora vendría "lo wapo": el <em>fine tuning</em>. Una de las mejores fuentes que encontraréis para saber como "tunear" vuestro apache es la propia documentación de apache:
 
@@ -154,7 +154,7 @@ E ir revisando con herramientas como `top` o `ps` los recursos que consume. Ést
 
 Además tendríais que hacerle algún tipo de test de estrés, claro.. pero ese es un tema como para hacer un artículo entero, así que yo lo dejo para otro día, pero os animo a que busquéis por google, que seguro que encontráis unas cuantas vías para "estresar" vuestro servidor.
 <blockquote>
-<strong>Más información y fuentes:</strong>
+**Más información y fuentes:**
 
 <ul>
 <li>Multi-Processing Modules (MPMs): <a href="http://httpd.apache.org/docs/2.2/mpm.html" rel="nofollow">http://httpd.apache.org/docs/2.2/mpm.html</a></li>

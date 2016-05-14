@@ -26,7 +26,7 @@ tags:
 - CakePHP 1.2
 ---
 
-Si queréis hacer una aplicación de <strong>CakePHP sin utilizar conexión a base de datos</strong> podéis hacerlo mediante la creación de un nuevo <em>datasource</em>.
+Si queréis hacer una aplicación de **CakePHP sin utilizar conexión a base de datos** podéis hacerlo mediante la creación de un nuevo <em>datasource</em>.
 
 En el directorio <em>/app/models/datasources/dbo/</em>* cread un fichero llamado <em>dbo_sin_conexion.php</em> con el siguiente contenido:
 

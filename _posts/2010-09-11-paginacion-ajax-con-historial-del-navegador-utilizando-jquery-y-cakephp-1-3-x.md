@@ -160,7 +160,7 @@ Utilizamos el método "live" de jQuery, ya que al reemplazar los botones de la t
 
 El `e.preventDefault();` equivale al típico `return false;` que utilizamos para evitar que el botón ejecute su método por defecto (cargar la página sin Ajax).
 
-Pues ya está, de esta manera tan sencilla tenemos <strong>paginación Ajax con historial del navegador gracias a jQuery en nuestra aplicación CakePHP</strong>.
+Pues ya está, de esta manera tan sencilla tenemos **paginación Ajax con historial del navegador gracias a jQuery en nuestra aplicación CakePHP**.
 
 Podéis ver un ejemplo en la siguiente dirección: <a href="http://racotecnic.com/tutorials/cake13/pags">http://racotecnic.com/tutorials/cake13/pags</a>.
 
@@ -168,7 +168,7 @@ El problema de éste método de paginación es que, aunque le ahorramos tiempo d
 
 Algún día trataré de hacer un tutorial explicando esto con detalle ;)
 <blockquote>
-<strong>Enlaces:</strong>
+**Enlaces:**
 
 <ul>
 <li><a href="http://racotecnic.com/tutorials/cake13/pags">Demo del tutorial</a></li>
@@ -180,7 +180,7 @@ Algún día trataré de hacer un tutorial explicando esto con detalle ;)
 </ul>
 </blockquote>
 <blockquote>
-<strong>Edit:</strong> Cuando escribí esto no recordaba que la nueva versión de CakePHP lleva helpers para jQuery y para todo lo relacionado con Ajax. En cuanto pueda investigo cómo va el asunto y creo un tutorial con ello, pero mientras tanto...
+**Edit:** Cuando escribí esto no recordaba que la nueva versión de CakePHP lleva helpers para jQuery y para todo lo relacionado con Ajax. En cuanto pueda investigo cómo va el asunto y creo un tutorial con ello, pero mientras tanto...
 
 <a href="http://book.cakephp.org/view/1592/Js" target="_blank" rel="nofollow">http://book.cakephp.org/view/1592/Js</a>
 <a href="http://book.cakephp.org/view/1434/HTML" target="_blank" rel="nofollow">hhttp://book.cakephp.org/view/1434/HTML</a>

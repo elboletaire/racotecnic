@@ -14,9 +14,9 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "<a href=\"http://www.racotecnic.com/wp-content/uploads/2011/09/prova2.jpg\"><img
   class=\"alignright size-thumbnail wp-image-2016\" title=\"prova2\" src=\"http://www.racotecnic.com/wp-content/uploads/2011/09/prova2-150x150.jpg\"
-  alt=\"\" width=\"150\" height=\"150\" /></a>Puede que os interese <strong>hacer
-  capturas de pantalla de páginas web</strong> para poder <strong>mostrar una previsualización
-  de una</strong><strong> web</strong> en el apartado de links de vuestro site.\r\n\r\nPara
+  alt=\"\" width=\"150\" height=\"150\" /></a>Puede que os interese **hacer
+  capturas de pantalla de páginas web** para poder **mostrar una previsualización
+  de una**** web** en el apartado de links de vuestro site.\r\n\r\nPara
   ello podéis utilizar alguno de los muchos servicios que corren por ahí —como <a
   href=\"http://www.websnapr.com/\" rel=\"external nofollow\">Websnapr</a>, <a href=\"http://www.webshotspro.com/\"
   rel=\"external nofollow\">WebShotsPro</a>, <a href=\"http://www.thumbalizr.com/\"
@@ -49,7 +49,7 @@ tags:
 - VNC
 ---
 
-<a href="http://www.racotecnic.com/wp-content/uploads/2011/09/prova2.jpg"><img class="alignright size-thumbnail wp-image-2016" title="prova2" src="http://www.racotecnic.com/wp-content/uploads/2011/09/prova2-150x150.jpg" alt="" width="150" height="150" /></a>Puede que os interese <strong>hacer capturas de pantalla de páginas web</strong> para poder <strong>mostrar una previsualización de una</strong><strong> web</strong> en el apartado de links de vuestro site.
+<a href="http://www.racotecnic.com/wp-content/uploads/2011/09/prova2.jpg"><img class="alignright size-thumbnail wp-image-2016" title="prova2" src="http://www.racotecnic.com/wp-content/uploads/2011/09/prova2-150x150.jpg" alt="" width="150" height="150" /></a>Puede que os interese **hacer capturas de pantalla de páginas web** para poder **mostrar una previsualización de una**** web** en el apartado de links de vuestro site.
 
 Para ello podéis utilizar alguno de los muchos servicios que corren por ahí —como <a href="http://www.websnapr.com/" rel="external nofollow">Websnapr</a>, <a href="http://www.webshotspro.com/" rel="external nofollow">WebShotsPro</a>, <a href="http://www.thumbalizr.com/" rel="external nofollow">thumbalizr</a>... O bien, si disponéis de un servidor dedicado (véase el que todos tenemos en la cocina o el baño) podéis crear vuestro propio script para tomar capturas de pantalla. Y ésto es a lo que vamos :P
 
@@ -120,7 +120,7 @@ thefuture	http://www.thefutureimperfect.com
 snooppets	http://www.snooppets.com
 [/text]
 
-<strong>Es importante que este fichero tenga un salto de línea al final</strong>, sino la última url dará error.
+**Es importante que este fichero tenga un salto de línea al final**, sino la última url dará error.
 
 Hecho esto ya debería de funcionar, simplemente ejecutad el script y veréis que en pantalla van saliendo los mensajes "Carregant" (Cargando) y "Desant" (Guardando) a medida que va avanzando en el listado.
 
@@ -138,7 +138,7 @@ Una vez esté corriendo utilizad vuestro cliente de vnc habitual (yo utilizo <a 
 
 Si además queréis que no se muestren las pestañas, abrid las opciones de firefox, buscad la opción que dice "Mostrar pestañas siempre" y desmarcadla. Ahora, para que esto funcione, tenemos que decirle a firefox que nos abra las nuevas ventanas en la ventana que esté abierta, ya que si nos abre una pestaña más nos mostrará de nuevo la barra de pestañas.
 
-Si queréis evitar esto, en la barra de navegación (utilizad Control+L si os la habéis cargado ya) introducid la URL `about:config`, buscad el registro `browser.link.open_newwindow` y cambiad su valor de <strong>3</strong> a <strong>2</strong>.
+Si queréis evitar esto, en la barra de navegación (utilizad Control+L si os la habéis cargado ya) introducid la URL `about:config`, buscad el registro `browser.link.open_newwindow` y cambiad su valor de **3** a **2**.
 
 Cerrad vuestro firefox con normalidad y volved a ejecutar el script para ver el resultado.
 
@@ -148,7 +148,7 @@ Si queréis recortar las imágenes para que no se vean el resto de bordes de fir
 
 O podéis hacerlo mediante PHP con alguna clase como <a title="Clase PHP para tratar imágenes (rotar, redimensionar, añadir marcas de agua..)" href="http://www.racotecnic.com/2011/04/clase-php-para-tratar-imagenes-rotar-redimensionar-anadir-marcas-de-agua/">Watimage</a> :D
 <blockquote>
-<strong>Fuentes...</strong>
+**Fuentes...**
 
 <ul>
 <li><a href="http://www.debian-administration.org/article/413/website_screenshot_server_on_debian_stable" rel="external nofollow">Website screenshot server on debian stable</a></li>

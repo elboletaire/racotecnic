@@ -45,8 +45,8 @@ Para indicar la máquina virtual debéis poner "<em>-vm</em>" seguido de un salt
 <a id="more"></a><a id="more-520"></a>
 En linux y mac*:
 
-<strong>-vm
-/usr/lib64/jvm/java-6-sun/bin/java</strong>
+**-vm
+/usr/lib64/jvm/java-6-sun/bin/java**
 -showsplash
 org.eclipse.platform
 -framework
@@ -59,8 +59,8 @@ plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
 
 En windows*:
 
-<strong>-vm
-C:\Java\JDK.5\bin\javaw.exe</strong>
+**-vm
+C:\Java\JDK.5\bin\javaw.exe**
 -showsplash
 org.eclipse.platform
 -framework
@@ -71,7 +71,7 @@ plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
 -Xmx512m
 -XX:MaxPermSize=256m
 
-<em>* Ignorad lo que <strong>no</strong> esté en negrita y cambiad la ruta por la que os convenga.</em>
+<em>* Ignorad lo que **no** esté en negrita y cambiad la ruta por la que os convenga.</em>
 <blockquote>
 Página de referencia:
 

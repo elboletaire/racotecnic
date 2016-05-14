@@ -15,8 +15,8 @@ excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.unde
   target=\"_self\">gerno nos explicaba</a> cómo facilitarnos las descargas mediante
   el plugin Illimitux y la aplicación FreeRapid Downloader.\r\n\r\nA parte de FreeRapid
   existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os
-  servirán como <strong>gestores de descarga</strong> para páginas como <strong>megaupload
-  o rapidshare</strong>. A continuación os expongo un par más que encuentro bastante
+  servirán como **gestores de descarga** para páginas como **megaupload
+  o rapidshare**. A continuación os expongo un par más que encuentro bastante
   interesantes.\r\n<h3><img class=\"alignleft size-full wp-image-1205\" title=\"tucan_logo\"
   src=\"{{ site.url }}/uploads/2009/07/tucan_logo.png\"
   alt=\"tucan_logo\" width=\"150\" height=\"150\" />Tucan Manager</h3>\r\nSoftware
@@ -42,7 +42,7 @@ tags:
 
 Hace unos días <a title="Ver entrada" href="http://racotecnic.underave.net/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/" target="_self">gerno nos explicaba</a> cómo facilitarnos las descargas mediante el plugin Illimitux y la aplicación FreeRapid Downloader.
 
-A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como <strong>gestores de descarga</strong> para páginas como <strong>megaupload o rapidshare</strong>. A continuación os expongo un par más que encuentro bastante interesantes.
+A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como **gestores de descarga** para páginas como **megaupload o rapidshare**. A continuación os expongo un par más que encuentro bastante interesantes.
 <h3><img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager</h3>
 
 Software libre español desarrollado en python. Disponible para Windows y Linux.

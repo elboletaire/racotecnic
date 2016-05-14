@@ -29,7 +29,7 @@ Noticias  interesantes, novedades, empresas que empiezan (pero que darán que h
 
 <ul>
 <blockquote>
-<li><strong>Techcrunch:</strong> <a href="http://www.techcrunch.com/" target="_blank" rel="nofollow">http://www.techcrunch.com/</a></li>
-<li><strong>Techcrunch gadgets:</strong> <a href="http://www.crunchgear.com/" target="_blank" rel="nofollow">http://www.crunchgear.com/</a></li>
+<li>**Techcrunch:** <a href="http://www.techcrunch.com/" target="_blank" rel="nofollow">http://www.techcrunch.com/</a></li>
+<li>**Techcrunch gadgets:** <a href="http://www.crunchgear.com/" target="_blank" rel="nofollow">http://www.crunchgear.com/</a></li>
 </blockquote>
 </ul>

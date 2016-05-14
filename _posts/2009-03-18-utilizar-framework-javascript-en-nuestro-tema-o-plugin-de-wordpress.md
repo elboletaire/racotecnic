@@ -14,15 +14,7 @@ author_url: http://www.underave.net
 excerpt: "Quizás os hayáis planteado añadir un poco de JavaScript a vuestro tema o
   plugin de Wordpress fácilmente gracias a algún framework como jQuery, Scriptacolous,
   Prototype... o quizás simplemente nos interese añadir nuestro propio fichero de
-  JavaScript!\r\n\r\nAl hacerlo olvidaros de hacer \"echo '<script type=\"text/javascript>...</script>;'\"...
-  pues como quizás ya sepáis, Wordpress incluye algunas de estas librerías y podrías
-  hacerlas entrar en conflicto (debido a que algún plugin o vuestro tema ya utilicen
-  alguna de estas librerías).\r\n\r\nWordpress tiene una función llamada \"wp_enqueue_script\"
-  que se encargará de importar en la cabecera del blog el JavaScript que queramos.
-  Ésta misma función se encargará de ordenar los scripts en la cabecera automáticamente
-  y, en caso de ser un script creado por nosotros, deberemos indicar qué escripts
-  van delante de éste (para hacer así un fichero de funciones externo para jQuery,
-  por ejemplo).\r\n\r\n"
+  JavaScript!"
 wordpress_id: 219
 wordpress_url: http://racotecnic.underave.net/?p=219
 date: '2009-03-18 02:38:00 +0100'
@@ -49,17 +41,18 @@ Wordpress tiene una función llamada "wp_enqueue_script" que se encargará de im
 
 <a id="more"></a><a id="more-219"></a>
 Vemos la función:
-`~~~php
+
+~~~php
 wp_enqueue_script( 'handle', 'src', 'deps', 'ver');
-~~~`
+~~~
 
 Y sus parámetros:
 
 <ul>
-<li><strong>handle:</strong> Nombre del script, en minúscula.</li>
-<li><strong>src:</strong> (opcional) Ruta al script desde el directorio raíz de Wordpress. Ejemplo: '/wp-contents/themes/nombredeltema/lib/functions.js'. Este parámetro solo es requerido para los scripts que no están incluidos en wordpress. Por defecto está como false.</li>
-<li><strong>deps:</strong> (opcional) array conteniendo los "handle" de los cuales este escript depende (es decir, aquellos escripts que deben ser cargados antes que el nuestro). Éste parámetro sólo lo utilizaremos para importar ficheros JavaScript desconocidos para Wordpress (nuestro fichero de funciones, por ejemplo). Falso por defecto.</li>
-<li><strong>ver:</strong> (opcional) Cadena con la versión del script. Por defecto en falso.</li>
+<li>**handle:** Nombre del script, en minúscula.</li>
+<li>**src:** (opcional) Ruta al script desde el directorio raíz de Wordpress. Ejemplo: '/wp-contents/themes/nombredeltema/lib/functions.js'. Este parámetro solo es requerido para los scripts que no están incluidos en wordpress. Por defecto está como false.</li>
+<li>**deps:** (opcional) array conteniendo los "handle" de los cuales este escript depende (es decir, aquellos escripts que deben ser cargados antes que el nuestro). Éste parámetro sólo lo utilizaremos para importar ficheros JavaScript desconocidos para Wordpress (nuestro fichero de funciones, por ejemplo). Falso por defecto.</li>
+<li>**ver:** (opcional) Cadena con la versión del script. Por defecto en falso.</li>
 </ul>
 
 Algunos de los "handle" que podéis utilizar son:
@@ -77,13 +70,11 @@ Dado que últimamente estoy trasteando con jQuery os mostraré un pequeño ejemp
 
 Primero de todo importemos jQuery en nuestro tema. Abramos el fichero "header.php" y antes de llamar a la función "wp_head();" llamemos a wp_enqueue_script:
 
-`~~~php
+~~~php
 <?php
 wp_enqueue_script('jquery');
 wp_head();
-?>
-
-~~~`
+~~~
 
 Con esto Wordpress insertará una etiqueta <script> en la sección <head> de la página haciendo referencia a la librería jQuery.
 

@@ -11,10 +11,10 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "En este tutorial aprenderéis a <strong>gestionar los errores de CakePHP
-  con y sin Ajax.</strong>\r\n\r\nLo primero de todo que tenéis que hacer es poner
-  el debug a cero en vuestro fichero core.php, ya que <strong>con debug > 0 no
-  funcionaría</strong>.\r\n\r\nAhora pasemos a crear (si no existe) el fichero <strong>/app/app_error.php</strong>
+excerpt: "En este tutorial aprenderéis a **gestionar los errores de CakePHP
+  con y sin Ajax.**\r\n\r\nLo primero de todo que tenéis que hacer es poner
+  el debug a cero en vuestro fichero core.php, ya que **con debug > 0 no
+  funcionaría**.\r\n\r\nAhora pasemos a crear (si no existe) el fichero **/app/app_error.php**
   con el siguiente contenido.\r\n\r\n~~~php
 <?php // /app/app_error.php\r\nclass
   AppError extends ErrorHandler\r\n{\r\n\tfunction error404($params)\r\n\t{\r\n\t\t//
@@ -28,7 +28,7 @@ excerpt: "En este tutorial aprenderéis a <strong>gestionar los errores de CakeP
   Aquí iría la gestión del error sin Ajax, en nuestro caso llamamos al método padre.\r\n\t\telse
   parent::error404($params);\r\n\t}\r\n}
 ~~~\r\n\r\nPasemos a la creación de la
-  vista... <strong>/app/views/errors/ajax_error404.ctp</strong>"
+  vista... **/app/views/errors/ajax_error404.ctp**"
 wordpress_id: 1583
 wordpress_url: http://racotecnic.underave.net/?p=1583
 date: '2010-07-10 23:44:09 +0200'
@@ -45,11 +45,11 @@ tags:
 - CakePHP 1.2
 ---
 
-En este tutorial aprenderéis a <strong>gestionar los errores de CakePHP con y sin Ajax.</strong>
+En este tutorial aprenderéis a **gestionar los errores de CakePHP con y sin Ajax.**
 
-Lo primero de todo que tenéis que hacer es poner el debug a cero en vuestro fichero core.php, ya que <strong>con debug > 0 no funcionaría</strong>.
+Lo primero de todo que tenéis que hacer es poner el debug a cero en vuestro fichero core.php, ya que **con debug > 0 no funcionaría**.
 
-Ahora pasemos a crear (si no existe) el fichero <strong>/app/app_error.php</strong> con el siguiente contenido.
+Ahora pasemos a crear (si no existe) el fichero **/app/app_error.php** con el siguiente contenido.
 
 ~~~php
 <?php // /app/app_error.php
@@ -76,7 +76,7 @@ class AppError extends ErrorHandler
 }
 ~~~
 
-Pasemos a la creación de la vista... <strong>/app/views/errors/ajax_error404.ctp</strong><a id="more"></a><a id="more-1583"></a>
+Pasemos a la creación de la vista... **/app/views/errors/ajax_error404.ctp**<a id="more"></a><a id="more-1583"></a>
 
 ~~~php
 <?php // /app/views/errors/ajax_error404.ctp
@@ -104,4 +104,4 @@ Evidentemente podéis gestionar más errores a parte del típico error 404, simp
 
 El parámetro <em>$params</em> lo he pasado por si queréis utilizar alguna de sus variables. Por ejemplo, podríamos mostrar al usuario un mensaje tipo "La página /requetefuck no existe".
 <blockquote>
-<strong>Nota:</strong> Si estáis utilizando Cake 1.2 tened en cuenta que tenéis que reemplazar en la vista ajax_error404 el $this->Javascript por $javascript, ya que ha variado de una versión a otra.</blockquote>
+**Nota:** Si estáis utilizando Cake 1.2 tened en cuenta que tenéis que reemplazar en la vista ajax_error404 el $this->Javascript por $javascript, ya que ha variado de una versión a otra.</blockquote>

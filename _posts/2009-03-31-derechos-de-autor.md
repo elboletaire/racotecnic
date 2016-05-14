@@ -13,7 +13,7 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "<blockquote><em>Este artículo proviene del audioblog, clausurado por su
   desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el
-  olvido.</em>\r\n\r\nEntrada escrita originalmente por <strong>TDF</strong>.</blockquote>\r\nDerechos
+  olvido.</em>\r\n\r\nEntrada escrita originalmente por **TDF**.</blockquote>\r\nDerechos
   sobre nuestras obras\r\n\r\nLa mayoría de productores cuando hacemos un tema no
   nos preocupamos mucho sobre los derechos que tenemos sobre este. Lo pasamos, lo
   enviamos a discográficas e incluso se sacan discos sin ningún tipo de contrato ni
@@ -44,7 +44,7 @@ tags: []
 ---
 <blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por <strong>TDF</strong>.</blockquote>
+Entrada escrita originalmente por **TDF**.</blockquote>
 
 Derechos sobre nuestras obras
 

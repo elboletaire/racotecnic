@@ -72,7 +72,7 @@ El parámetro `$charset` es el que más me ha dado por culo (al principio no lo 
 
 Buen fin de semana!
 <blockquote>
-<strong>Referencias</strong>
+**Referencias**
 
 <ul>
 <li><a title="php.net" href="http://php.net/manual/en/ref.mbstring.php">PHP: Multibyte String Functions</a></li>

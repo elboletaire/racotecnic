@@ -166,7 +166,7 @@ No he probado todos ellos así que si veis alguno que no funciona, por favor, ha
 
 Además os invito a que añadáis cualquier hack de CSS que no haya puesto comentando esta entrada :)
 <blockquote>
-<strong>Páginas de referencia:</strong>
+**Páginas de referencia:**
 
 <ul>
 <li><a rel="nofollow" href="http://www.anieto2k.com/2008/01/23/otro-css-hack-para-safari/" target="_blank">Otro hack CSS para Safari @ Anieto</a></li>

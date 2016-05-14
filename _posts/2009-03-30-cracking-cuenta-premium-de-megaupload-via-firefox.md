@@ -12,17 +12,17 @@ author_login: '909'
 author_email: gerardperucha@hotmail.com
 excerpt: "
 Una de las maneras para hacernos con una
-  cuenta Premium de Megaupload, <strong>totalmente gratis. </strong>Es utilizando
+  cuenta Premium de Megaupload, **totalmente gratis. **Es utilizando
   el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se
   de hacer para ello.\r\n
-1º <strong>Nos bajaremos
-  e instalaremos el correspondiente addons para Firefox:</strong> <span style=\"color:
+1º **Nos bajaremos
+  e instalaremos el correspondiente addons para Firefox:** <span style=\"color:
   #888888;\"><a href=\"http://anonym.to/?https://addons.mozilla.org/es-ES/firefox/addon/573\"
   target=\"destino\">Aquí</a></span>\r\n
-2º <strong>Entras
-  en</strong>: htt://www.megaupload.com\r\n
-3º <strong>Borras
-  las cookies</strong>\r\n\r\n<ul style=\"text-align: left;\">\r\n\t<li>OSX/ LINUX: <em><span
+2º **Entras
+  en**: htt://www.megaupload.com\r\n
+3º **Borras
+  las cookies**\r\n\r\n<ul style=\"text-align: left;\">\r\n\t<li>OSX/ LINUX: <em><span
   style=\"color: #888888;\"> Firefox/Preferencias/Privacidad/Mostrar Cookies/Remove
   todas las cookies</span></em></li>\r\n</ul>\r\n
 <em><a
@@ -44,13 +44,13 @@ tags:
 - Cookies
 ---
 
-Una de las maneras para hacernos con una cuenta Premium de Megaupload, <strong>totalmente gratis. </strong>Es utilizando el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se de hacer para ello.
+Una de las maneras para hacernos con una cuenta Premium de Megaupload, **totalmente gratis. **Es utilizando el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se de hacer para ello.
 
-1º <strong>Nos bajaremos e instalaremos el correspondiente addons para Firefox:</strong> <span style="color: #888888;"><a href="http://anonym.to/?https://addons.mozilla.org/es-ES/firefox/addon/573" target="destino">Aquí</a></span>
+1º **Nos bajaremos e instalaremos el correspondiente addons para Firefox:** <span style="color: #888888;"><a href="http://anonym.to/?https://addons.mozilla.org/es-ES/firefox/addon/573" target="destino">Aquí</a></span>
 
-2º <strong>Entras en</strong>: htt://www.megaupload.com
+2º **Entras en**: htt://www.megaupload.com
 
-3º <strong>Borras las cookies</strong>
+3º **Borras las cookies**
 <ul style="text-align: left;">
 <li>OSX/ LINUX: <em><span style="color: #888888;"> Firefox/Preferencias/Privacidad/Mostrar Cookies/Remove todas las cookies</span></em></li>
 </ul>
@@ -62,14 +62,14 @@ Una de las maneras para hacernos con una cuenta Premium de Megaupload, <strong>t
 <em></em>
 
 <ul>
-<li>Win:  <span style="color: #888888;"><em>Herramientas/Limpiar Información privada</em> y seleccionamos <strong>solo</strong> la opci<span style="color: #888888;">ón cookies</span></span><span style="color: #888888;">.</span></li>
+<li>Win:  <span style="color: #888888;"><em>Herramientas/Limpiar Información privada</em> y seleccionamos **solo** la opci<span style="color: #888888;">ón cookies</span></span><span style="color: #888888;">.</span></li>
 </ul>
 
 <img alt="" />
 
 <img class="aligncenter" src="http://www.mozilla-hispano.org/documentacion/images/a/ab/Firefox-limpiarinfprivada.png" alt="" width="337" />
 
-4º<strong>Abrimos el editor de coockies:</strong> <em><span style="color: #888888;">Herramientas\ Cookies</span></em><em><span style="color: #888888;"> Editor</span></em> y <strong>creamos una nueva clickando a <em>Add</em></strong>, rellándola con los siguientes datos:
+4º**Abrimos el editor de coockies:** <em><span style="color: #888888;">Herramientas\ Cookies</span></em><em><span style="color: #888888;"> Editor</span></em> y <strong>creamos una nueva clickando a <em>Add</em></strong>, rellándola con los siguientes datos:
 <ul style="text-align: left;">
 <li><em>Name:</em> user</li>
 <li><em>Content:</em> 5ac02848c2a0260e2d67fe773da61493</li>
@@ -83,7 +83,7 @@ Luego le damos a New expiration date y salvamos.
 
 Seleccionas Options y le das a la opción save and close.
 
-5º <strong>Cerramos editor</strong>.
+5º **Cerramos editor**.
 
 Y nada más. A disfrutar que ya tenemos una cuenta Premium de megaupload.
 

@@ -12,7 +12,7 @@ author_login: gerno
 author_email: hastaqueelcuerpoaguante@hotmail.com
 excerpt: "
 Avui, i per iniciar-me en el racó tècnic
-  us vinc a parlar de <strong>LogMeIn</strong>, una eina gratuïta (però privada) per
+  us vinc a parlar de **LogMeIn**, una eina gratuïta (però privada) per
   accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox.
   Això pot ser de una gran utilitat per a administradors de sistemes (instal·lació
   de programes de forma remota, impressió remota, accedir a aquells arxius que tens
@@ -23,9 +23,9 @@ Al accedir
   molt perillós, guardeu bé les contrasenyes!\r\n
 Per
   no fer perdre el temps a alguns... abans d'iniciar el tutorial parlarem de compatibilitats.
-  <strong>Només pots accedir a ordinadors Windows o Mac</strong>, <strong>però l'ordinador
+  **Només pots accedir a ordinadors Windows o Mac**, **però l'ordinador
   mitjançant el qual accedeixis pot tenir qualsevol sistema operatiu compatible amb
-  Firefox</strong>.\r\n
+  Firefox**.\r\n
 Comencem!\r\n\r\n"
 wordpress_id: 568
 wordpress_url: http://racotecnic.underave.net/?p=568
@@ -43,11 +43,11 @@ tags:
 - LogMeIn
 ---
 
-Avui, i per iniciar-me en el racó tècnic us vinc a parlar de <strong>LogMeIn</strong>, una eina gratuïta (però privada) per accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox. Això pot ser de una gran utilitat per a administradors de sistemes (instal·lació de programes de forma remota, impressió remota, accedir a aquells arxius que tens a l'ordinador de casa, ensenyar a un amic com configurar un software, etc.) Segur que l'hi trobareu mil utilitats!
+Avui, i per iniciar-me en el racó tècnic us vinc a parlar de **LogMeIn**, una eina gratuïta (però privada) per accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox. Això pot ser de una gran utilitat per a administradors de sistemes (instal·lació de programes de forma remota, impressió remota, accedir a aquells arxius que tens a l'ordinador de casa, ensenyar a un amic com configurar un software, etc.) Segur que l'hi trobareu mil utilitats!
 
 Al accedir a l'ordinador remot s'obté accés total a el mateix, aneu amb compte! també pot ser molt perillós, guardeu bé les contrasenyes!
 
-Per no fer perdre el temps a alguns... abans d'iniciar el tutorial parlarem de compatibilitats. <strong>Només pots accedir a ordinadors Windows o Mac</strong>, <strong>però l'ordinador mitjançant el qual accedeixis pot tenir qualsevol sistema operatiu compatible amb Firefox</strong>.
+Per no fer perdre el temps a alguns... abans d'iniciar el tutorial parlarem de compatibilitats. **Només pots accedir a ordinadors Windows o Mac**, **però l'ordinador mitjançant el qual accedeixis pot tenir qualsevol sistema operatiu compatible amb Firefox**.
 
 Comencem!
 
@@ -63,7 +63,7 @@ Un cop esteu registrats, accediu a la vostra adreça de correu i verifiqueu la c
 
 <a href="http://img223.imageshack.us/img223/3465/19757224.jpg" target="_blank"><img class="aligncenter" src="http://img223.imageshack.us/img223/3465/19757224.jpg" border="0" alt="" width="460" height="234" /></a>
 
-<strong>Al primer ordinador intenta posar-te per defecte un trial (30 dies) de LogMeIn Pro</strong>. Decidiu si voleu provar el trial, o seleccioneu de nou la opció Free (Productos - LogMeIn Free - Descargar)
+**Al primer ordinador intenta posar-te per defecte un trial (30 dies) de LogMeIn Pro**. Decidiu si voleu provar el trial, o seleccioneu de nou la opció Free (Productos - LogMeIn Free - Descargar)
 
 A continuació es descarrega el fitxer i feu una instal·lació classica (siguiente siguiente si aceptar blablabla) Arribarà un moment que us demanarà una altre contrasenya. Aquesta serà per accedir únicament al ordinador que esteu instal·lant el software.
 

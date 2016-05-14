@@ -14,9 +14,9 @@ author_url: http://www.underave.net
 excerpt: "<img class=\"alignright size-full wp-image-1761\" style=\"margin-left: 20px;\"
   title=\"podcast icon\" src=\"http://www.racotecnic.com/wp-content/uploads/2011/01/podcast_icon.png\"
   alt=\"\" width=\"200\" height=\"200\" />El otro día expliqué <a href=\"http://www.racotecnic.com/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/\"
-  target=\"_self\"><strong>cómo unir ficheros mp3 en un mismo fichero</strong></a>
-  y dije que dejaría para más tarde lo de la creación del <strong>Podcast</strong>.
-  Vamos a ello pues.\r\n\r\nPara <strong>crear nuestro Podcast</strong> necesitaremos,
+  target=\"_self\">**cómo unir ficheros mp3 en un mismo fichero**</a>
+  y dije que dejaría para más tarde lo de la creación del **Podcast**.
+  Vamos a ello pues.\r\n\r\nPara **crear nuestro Podcast** necesitaremos,
   a parte de CakePHP, la librería getid3, ya que para que itunes coja bien las imágenes
   de cada podcast lo mejor que podemos hacer es añadir la imagen al mp3 directamente.\r\n\r\nSuponiendo
   que habéis leído <a href=\"http://www.racotecnic.com/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/\"
@@ -42,9 +42,9 @@ tags:
 - iTunes
 ---
 
-<img class="alignright size-full wp-image-1761" style="margin-left: 20px;" title="podcast icon" src="http://www.racotecnic.com/wp-content/uploads/2011/01/podcast_icon.png" alt="" width="200" height="200" />El otro día expliqué <a href="http://www.racotecnic.com/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self"><strong>cómo unir ficheros mp3 en un mismo fichero</strong></a> y dije que dejaría para más tarde lo de la creación del <strong>Podcast</strong>. Vamos a ello pues.
+<img class="alignright size-full wp-image-1761" style="margin-left: 20px;" title="podcast icon" src="http://www.racotecnic.com/wp-content/uploads/2011/01/podcast_icon.png" alt="" width="200" height="200" />El otro día expliqué <a href="http://www.racotecnic.com/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">**cómo unir ficheros mp3 en un mismo fichero**</a> y dije que dejaría para más tarde lo de la creación del **Podcast**. Vamos a ello pues.
 
-Para <strong>crear nuestro Podcast</strong> necesitaremos, a parte de CakePHP, la librería getid3, ya que para que itunes coja bien las imágenes de cada podcast lo mejor que podemos hacer es añadir la imagen al mp3 directamente.
+Para **crear nuestro Podcast** necesitaremos, a parte de CakePHP, la librería getid3, ya que para que itunes coja bien las imágenes de cada podcast lo mejor que podemos hacer es añadir la imagen al mp3 directamente.
 
 Suponiendo que habéis leído <a href="http://www.racotecnic.com/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">el tutorial del otro día</a> voy a ir directo al grano...
 
@@ -123,7 +123,7 @@ echo $this->Rss->document($documentData,$channel);
 
 Lo único que he hecho es añadir las líneas 13 a 20 y la variable `$before` en la línea 21.
 
-Con esto podremos <strong>mandar un array de elementos XML</strong> desde nuestra vista del podcast con toda la información extra que queramos. Si no acabáis de verlo tranquilos porque ahora con la vista del podcast os acabará de quedar claro.
+Con esto podremos **mandar un array de elementos XML** desde nuestra vista del podcast con toda la información extra que queramos. Si no acabáis de verlo tranquilos porque ahora con la vista del podcast os acabará de quedar claro.
 
 Del mismo modo que con el layout, utilizo como base <a href="http://book.cakephp.org/view/1461/Creating-an-RSS-feed-with-the-RssHelper" target="_self">la vista de RSS de CakePHP</a>.
 
@@ -210,7 +210,7 @@ foreach ($podcasts as $podcast)
 
 Fijaros bien que todas las URL que he creado las he hecho especificando el segundo parámetro del método "url"; de este modo nos devolverá siempre URL absolutas en lugar de relativas (que es como debe ser en un RSS).
 
-Bien, con esto tendríamos las vistas pero tenemos que decirle a cake que nos las cargue en algún momento. A mi me gusta acceder a través del <strong>nombre_del_controlador.pod</strong>
+Bien, con esto tendríamos las vistas pero tenemos que decirle a cake que nos las cargue en algún momento. A mi me gusta acceder a través del **nombre_del_controlador.pod**
 
 Para hacerle entender a Cake que queremos que distinga las direcciones terminadas en .pod tenemos que abrir nuestro fichero de rutas (<em>routes.php</em>) y añadir la siguiente línea:
 
@@ -222,7 +222,7 @@ Router::parseExtensions('pod');
 // Router::parseExtensions('pod','rss','mrss');
 ~~~
 
-En nuestro controlador necesitaremos cargar el componente <em>Request Handler</em> que nos permitirá distinguir desde el controlador los accesos a una página terminada en <strong>.pod</strong>:
+En nuestro controlador necesitaremos cargar el componente <em>Request Handler</em> que nos permitirá distinguir desde el controlador los accesos a una página terminada en **.pod**:
 
 ~~~php
 <?php // /app/controllers/podcasts_controller.php
@@ -256,14 +256,14 @@ Si queréis mandarlo a iTunes para que aparezca en la iTunes store podéis hacer
 
 Si queréis ver un ejemplo podéis ver el podcast del <a href="http://musicavermella.com">netlabel música vermella</a> en <a href="http://itunes.apple.com/es/podcast/musica-vermella-podcast/id417624155" target="_self">itunes</a> o desde la <a href="http://musicavermella.com/#rss" target="_self">propia página web</a>.
 <blockquote>
-<strong>Ejemplo</strong>
+**Ejemplo**
 
 <ul>
 <li><a href="http://itunes.apple.com/es/podcast/musica-vermella-podcast/id417624155" target="_self">Música Vermella Podcast (iTunes)</a></li>
 <li><a href="http://musicavermella.com/#rss">Música Vermella Podcast (Website)</a></li>
 </ul>
 
-<strong>Referencias</strong>
+**Referencias**
 
 <ul>
 <li><a href="http://www.apple.com/itunes/podcasts/specs.html" target="_self">iTunes Podcast Specs</a></li>

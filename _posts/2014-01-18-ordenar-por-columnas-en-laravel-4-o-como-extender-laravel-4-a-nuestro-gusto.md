@@ -55,9 +55,9 @@ En este tutorial verás cómo hacer para poder ordenar así, utilizando blade (e
 
 Para poder hacer esto tendrás que extender el paginador de Laravel para añadirle las funciones que necesites (como `sort`).
 
-Dado que lo que es ordenar en sí no tiene ninguna complicación y lo puedes encontrar documentado, en este tutorial me centraré más en <strong>cómo extender classes de Laravel 4 para adaptarlo a tus necesidades</strong> y de paso verás cómo tener la ordenación por columnas bien organizada (a nivel código) para mejor reutilización en futuros proyectos.
+Dado que lo que es ordenar en sí no tiene ninguna complicación y lo puedes encontrar documentado, en este tutorial me centraré más en **cómo extender classes de Laravel 4 para adaptarlo a tus necesidades** y de paso verás cómo tener la ordenación por columnas bien organizada (a nivel código) para mejor reutilización en futuros proyectos.
 <blockquote>
-<strong>Nota:</strong> Debido al continuo desarrollo de Laravel este tutorial ha quedado rápidamente desfasado. He actualizado todos los enlaces para que funcionen correctamente pero ten en cuenta que algunos de estos ficheros han cambiado mucho o directamente ya no existen.</blockquote>
+**Nota:** Debido al continuo desarrollo de Laravel este tutorial ha quedado rápidamente desfasado. He actualizado todos los enlaces para que funcionen correctamente pero ten en cuenta que algunos de estos ficheros han cambiado mucho o directamente ya no existen.</blockquote>
 
 <a id="more"></a><a id="more-2277"></a>
 
@@ -286,7 +286,7 @@ Hechos estos dos sencillos pasos, ya puedes añadir a tus vistas los enlaces par
 </tr>
 ~~~
 
-Y mientras tu controlador (o ruta) cargue los datos de la paginación <strong>mediante el modelo</strong> (al que previamente has cargado el trait creado):
+Y mientras tu controlador (o ruta) cargue los datos de la paginación **mediante el modelo** (al que previamente has cargado el trait creado):
 
 ~~~php?start_inline=1
 public function index()
@@ -322,7 +322,7 @@ Si eres lector asiduo (aunque aquí no nos vaya mucho esto de la asiduidad..) sa
 El repositorio está colgado en github, entre otras cosas, para que la gente colabore; así que si te animas ya sabes.
 
 <blockquote>
-  <strong>Más información y fuentes:</strong>
+  **Más información y fuentes:**
 
 <ul>
     <li><a rel="nofollow external" href="http://laravel.com/docs">Documentación de Laravel</a></li>

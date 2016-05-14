@@ -38,7 +38,7 @@ tags:
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2013/12/Captura-de-pantalla-2013-12-07-23.08.16.png"><img src="http://www.racotecnic.com/wp-content/uploads/2013/12/Captura-de-pantalla-2013-12-07-23.08.16.png" alt="zsh under windows using cygwin" width="644" height="236" class="aligncenter size-full wp-image-2242" style="height:auto" /></a>
 
-Podemos <strong>instalar zsh en windows</strong> utilizando cygwin de manera bastante sencilla y <b>con un par</b> de cambios en el registro de windows tendremos un enlace en el menú contextual para abrir zsh en cualquier directorio rápidamente.
+Podemos **instalar zsh en windows** utilizando cygwin de manera bastante sencilla y <b>con un par</b> de cambios en el registro de windows tendremos un enlace en el menú contextual para abrir zsh en cualquier directorio rápidamente.
 
 <a style="display: block; text-align: center;" href="http://www.racotecnic.com/wp-content/uploads/2013/12/obre-zsh.png"><img class="aligncenter size-full wp-image-2163" alt="obre zsh aquí" src="http://www.racotecnic.com/wp-content/uploads/2013/12/obre-zsh.png" width="433" height="131" /></a>
 
@@ -46,7 +46,7 @@ Podemos <strong>instalar zsh en windows</strong> utilizando cygwin de manera bas
 
 <b>Antes de empezar tenéis que tener en cuenta lo siguiente</b>: a la hora de crear el enlace del menú contextual hay que crear dos entradas en el registro de windows, una para cuando hacemos clic derecho sobre un directorio seleccionado (accederemos a dicho directorio) y la otra para cuando hacemos clic derecho sin tener un directorio seleccionado (accederemos al directorio actual).
 
-¿Porqué os digo esto? Porque para poder crear la primera entrada en el registro (hacer clic derecho sobre un directorio seleccionado) <strong>sólo podemos hacerlo si instalamos la versión de cygwin de 32 bits</strong> ya que no hay manera de hacerlo si no es con el paquete `chere`.
+¿Porqué os digo esto? Porque para poder crear la primera entrada en el registro (hacer clic derecho sobre un directorio seleccionado) **sólo podemos hacerlo si instalamos la versión de cygwin de 32 bits** ya que no hay manera de hacerlo si no es con el paquete `chere`.
 
 Es decir que si no queréis dicha opción del menú contextual podéis optar por descargar la versión de 64 bits en lugar de la de 32<del>, aunque no os lo recomiendo ya que yo no he logrado hacer funcionar del todo bien lo del menú contextual en dicha versión (y el tutorial está enfocado a la versión de 32 bits, vamos que <em>me limpio las manos</em> con la de 64)</del>. Chere ya está disponible para 64 bits así que no tendréis problema si lo hacéis con el instalador de x64.
 
@@ -110,7 +110,7 @@ Ya tenemos zsh instalado y corriendo como si de una instalación de linux se tra
 
 Bien, ahora que tenemos el terminal configurado es hora de añadir el acceso directo en nuestro menú contextual.
 
-Si habéis instalado cygwin en la raíz de C:\ podéis <a href="http://www.racotecnic.com/wp-content/uploads/2013/12/minTTY_zsh.zip">descargar este fichero</a> para <strong>instalar rápidamente el acceso directo del menú contextual. Ojo que está en catalán</strong> así que si queréis cambiarlo tendréis que abrirlo con un editor de texto y cambiar el «Obre zsh» por «Abrir zsh».
+Si habéis instalado cygwin en la raíz de C:\ podéis <a href="http://www.racotecnic.com/wp-content/uploads/2013/12/minTTY_zsh.zip">descargar este fichero</a> para **instalar rápidamente el acceso directo del menú contextual. Ojo que está en catalán** así que si queréis cambiarlo tendréis que abrirlo con un editor de texto y cambiar el «Obre zsh» por «Abrir zsh».
 
 Si queréis ver paso por paso cómo he creado el acceso directo en el menú contextual seguid los pasos que os describo a continuación. En caso contrario, ya habéis terminado de instalar zsh con oh-my-zsh en windows :D.
 
@@ -152,11 +152,11 @@ En el caso anterior también podríamos haber iniciado la consola indicando `/bi
 
 El parámetro `--size` lo indico para hacer algo más grande el terminal de minTTY ya que por defecto lo encuentro algo pequeño.
 
-En todo caso, <strong>ya tenéis zsh con oh-my-zsh funcionando bajo windows y con la opción en los menús contextuales</strong> :D
+En todo caso, **ya tenéis zsh con oh-my-zsh funcionando bajo windows y con la opción en los menús contextuales** :D
 
-<strong>Update a 10 de enero de 2014:</strong> Acabo de encontrar en github un script en bash que debería instalar los paquetes necesarios en cygwin y configurarlo para que funcione con zsh. No lo he probado pero no pinta nada mal, podéis echarle un ojo desde aquí: <a href="https://github.com/haithembelhaj/oh-my-cygwin" rel="nofollow external">https://github.com/haithembelhaj/oh-my-cygwin</a>.
+**Update a 10 de enero de 2014:** Acabo de encontrar en github un script en bash que debería instalar los paquetes necesarios en cygwin y configurarlo para que funcione con zsh. No lo he probado pero no pinta nada mal, podéis echarle un ojo desde aquí: <a href="https://github.com/haithembelhaj/oh-my-cygwin" rel="nofollow external">https://github.com/haithembelhaj/oh-my-cygwin</a>.
 
-<strong>Update a 15 de febrero de 2014:</strong> En windows 8.1 he tenido problemas para lograr tener oh-my-zsh funcionando. El terminal estaba escupiendo un montón de código y me daba el error <i>compdef: unknown command or service: git</i> repetidas veces antes de, finalmente, mostrar el prompt. <a href="https://github.com/robbyrussell/oh-my-zsh/issues/630" rel="nofollow external">En este post</a> he encontrado la solución y ha sido tan sencillo como hacer lo siguiente:
+**Update a 15 de febrero de 2014:** En windows 8.1 he tenido problemas para lograr tener oh-my-zsh funcionando. El terminal estaba escupiendo un montón de código y me daba el error <i>compdef: unknown command or service: git</i> repetidas veces antes de, finalmente, mostrar el prompt. <a href="https://github.com/robbyrussell/oh-my-zsh/issues/630" rel="nofollow external">En este post</a> he encontrado la solución y ha sido tan sencillo como hacer lo siguiente:
 
 ~~~bash
 # accedemos a nuestro directorio home
@@ -177,7 +177,7 @@ cat .zcompdump > .zcompdump-VuestroUsuario
 Aseguraros de que `.zcompdump-VuestroUsuario` coincida exactamente con el fichero que antes habéis visto listado. Cerrad el terminal y volved a abrirlo y debería de estar solucionado.
 
 <blockquote>
-  <strong>Más información y fuentes:</strong>
+  **Más información y fuentes:**
   <ul>
     <li><a href="http://unix.stackexchange.com/a/18411/10942" rel="nofollow external">Best way to use a shell with Cygwin in Windows 7 - Unix &amp; Linux Stack Exchange</a></li>
     <li><a href="http://www.iamntz.com/1059/frontend-developer/how-to-use-mintty-with-cygwin-by-default/" rel="nofollow external">How to use Mintty with Cygwin (by default)</a></li>

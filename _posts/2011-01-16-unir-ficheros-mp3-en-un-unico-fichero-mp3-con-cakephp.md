@@ -18,8 +18,8 @@ excerpt: "Recientemente he creado un podcast para la página de <a href=\"http:/
   mp3.\r\n\r\nPara verlo podéis agregar el <a href=\"http://musicavermella.com/releases.pod\">Podcast
   de Música Vermella</a> a vuestro cliente de Podcast (iTunes, Rythmbox, Banshee,
   Miro...).\r\n\r\nQuería hacer un tutorial sobre cómo crear un podcast con CakePHP
-  pero lo dejaré para otro tutorial por tal de no complicar este.\r\n\r\n<blockquote><strong>Puedes
-  ver la segunda parte aquí:</strong> <a href=\"http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/\">Crear
+  pero lo dejaré para otro tutorial por tal de no complicar este.\r\n\r\n<blockquote>**Puedes
+  ver la segunda parte aquí:** <a href=\"http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/\">Crear
   un Podcast en CakePHP</a></blockquote>\r\n\r\nPara empezar necesitaréis descargar
   la librería <a href=\"http://getid3.org\" target=\"_blank\">Getid3</a>. Descargad
   la versión estable por si acaso ya que la versión beta falla con las etiquetas id3
@@ -49,7 +49,7 @@ Para verlo podéis agregar el <a href="http://musicavermella.com/releases.pod">P
 
 Quería hacer un tutorial sobre cómo crear un podcast con CakePHP pero lo dejaré para otro tutorial por tal de no complicar este.
 <blockquote>
-<strong>Puedes ver la segunda parte aquí:</strong> <a href="http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/">Crear un Podcast en CakePHP</a></blockquote>
+**Puedes ver la segunda parte aquí:** <a href="http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/">Crear un Podcast en CakePHP</a></blockquote>
 
 Para empezar necesitaréis descargar la librería <a href="http://getid3.org" target="_blank">Getid3</a>. Descargad la versión estable por si acaso ya que la versión beta falla con las etiquetas id3 (que no utilizaremos) así que si queréis utilizarla es bajo vuestra propia responsabilidad.<a id="more"></a><a id="more-1751"></a>
 
@@ -276,6 +276,6 @@ else
 }
 ~~~
 
-Y con esto termina este sencillo tutorial sobre <strong>cómo crear un podcast a partir de varios mp3</strong>.
+Y con esto termina este sencillo tutorial sobre **cómo crear un podcast a partir de varios mp3**.
 
 Como he dicho al inicio, pronto explicaré <a href="http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/">cómo crear el XML de dicho Podcast</a> para que podáis agregarlo a iTunes o cualquier otro <em>podcatcher</em>.

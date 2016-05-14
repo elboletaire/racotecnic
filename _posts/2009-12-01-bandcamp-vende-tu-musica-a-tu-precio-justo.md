@@ -21,15 +21,15 @@ tags: []
 ---
 <blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por <strong>909</strong>.</blockquote>
+Entrada escrita originalmente por **909**.</blockquote>
 
-Quizás muchos al leer esto piensen: <em>"Ya estamos otra vez; Ya nos esta vendiendo la moto</em>". "<em>Yo ya tengo mi Myspace y vendo mi música por iTunes o por Juno Download</em>". Si, vale; teneís razón, esto es otro site para hospedar tu música. Pero dejarme que os presente a mi nuevo <em>hamijo</em><a href="http://bandcamp.com/" target="_blank"><span style="color: #8cbbea;"><strong>Bandcamp</strong></span></a>y luego tomáis vuestras propias decisiones al respecto.
+Quizás muchos al leer esto piensen: <em>"Ya estamos otra vez; Ya nos esta vendiendo la moto</em>". "<em>Yo ya tengo mi Myspace y vendo mi música por iTunes o por Juno Download</em>". Si, vale; teneís razón, esto es otro site para hospedar tu música. Pero dejarme que os presente a mi nuevo <em>hamijo</em><a href="http://bandcamp.com/" target="_blank"><span style="color: #8cbbea;">**Bandcamp**</span></a>y luego tomáis vuestras propias decisiones al respecto.
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/bandcamp.jpg"><img class="aligncenter size-full wp-image-1972" title="bandcamp" src="http://www.racotecnic.com/wp-content/uploads/2011/07/bandcamp.jpg" alt="" width="500" height="375" /></a>
 
 <em><span style="color: #666699;">Bandcamp</span></em> es un site enfocado para la difusión, y venta de música para grupos y/o productores de música independiente. O como ellos se definen: <em>"We're not yet another site wanting to host your tracks alongside the trailer for High School Musical 4: I'm Pregnant." </em>O lo que es lo mismo: "<em>Todavía no somos otro site que hacen de host de tus temas junto al trailer de High School Musical 4: Estoy preñada</em>." (Que cabritos...)
 
-Fuera de lo graciosa y <em>"cool"</em> que pueda ser esa autodefinición. <span style="color: #666699;"><em>Bandcamp</em><strong> </strong><span style="color: #000000;">ofrece una serie de ventajas que otros sites de esta índole no tienen. La principal es dominio de tu música, aunque cabe también destacar su motor de busqueda.</span></span>
+Fuera de lo graciosa y <em>"cool"</em> que pueda ser esa autodefinición. <span style="color: #666699;"><em>Bandcamp</em>** **<span style="color: #000000;">ofrece una serie de ventajas que otros sites de esta índole no tienen. La principal es dominio de tu música, aunque cabe también destacar su motor de busqueda.</span></span>
 
 <span style="color: #666699;"><span style="color: #000000;">Sobre la parte más "informática" del asunto cabe destacar:
 </span></span>

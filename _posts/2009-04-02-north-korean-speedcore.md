@@ -21,7 +21,7 @@ tags: []
 ---
 <blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por <strong>dani</strong>.</blockquote>
+Entrada escrita originalmente por **dani**.</blockquote>
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/pyongyang-hardcore-resistance-corea.jpg"><img class="alignnone size-full wp-image-1944" style="float: left; margin-right: 20px;" title="pyongyang-hardcore-resistance-corea" src="http://www.racotecnic.com/wp-content/uploads/2011/07/pyongyang-hardcore-resistance-corea.jpg" alt="" width="300" height="300" /></a>Este es mi primer apunte para el blog de audio de Underave, espero que os guste o al menos lo encontréis curioso, ya que aquí, en el mundo occidental digamos, tenemos mil y una facilidades de exportar y mostrar nuestros conocimientos musicales y a la vez influenciarnos y disfrutar de otras culturas, gracias a diversas herramientas, ya sea Internet o televisión.
 
@@ -33,7 +33,7 @@ Por desgracia existen gobiernos que someten a pueblos enteros al aislamiento mun
 
 Bien, ahora dentro del hermetismo del país asiático encontramos casos donde de alguna manera, la música a conseguido mostrarse al mundo des de Corea del Norte.
 
-<strong>Pyongyang Hardcore Resistance</strong> es un dúo productor de Hardcore, Speedcore y Breakcore, afincados en la capital Pyonyang.
+**Pyongyang Hardcore Resistance** es un dúo productor de Hardcore, Speedcore y Breakcore, afincados en la capital Pyonyang.
 
 Son dos personas anónimas de las cuales pocos datos han cedido.
 

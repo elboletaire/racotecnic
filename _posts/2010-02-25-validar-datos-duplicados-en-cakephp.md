@@ -91,4 +91,4 @@ var $validate = array('username' => array(
 
 Que lo disfrutéis :)
 
-<strong>Edición:</strong> Se me olvidó comentar que, a diferencia del método de validación <em>checkUnique</em> que se utiliza en el post <a href="http://www.racotecnic.com/2010/01/integrando-cakephp-y-phpbb-3-x/">Inegrando CakePHP y PhpBB 3.x</a>, este método sirve también a la hora de editar un ítem ya que, en ese caso, retorna `true` si el valor de la celda coincide con el ya guardado en la base de datos.
+**Edición:** Se me olvidó comentar que, a diferencia del método de validación <em>checkUnique</em> que se utiliza en el post <a href="http://www.racotecnic.com/2010/01/integrando-cakephp-y-phpbb-3-x/">Inegrando CakePHP y PhpBB 3.x</a>, este método sirve también a la hora de editar un ítem ya que, en ese caso, retorna `true` si el valor de la celda coincide con el ya guardado en la base de datos.

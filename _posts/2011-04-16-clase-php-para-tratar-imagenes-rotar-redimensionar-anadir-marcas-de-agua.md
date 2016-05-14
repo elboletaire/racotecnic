@@ -11,12 +11,12 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "<blockquote><strong>Actualizado:</strong> Tanto la clase como este post
+excerpt: "<blockquote>**Actualizado:** Tanto la clase como este post
   han sido actualizados a fecha 14 de enero de 2012.</blockquote>\r\n\r\n<img class=\"alignright
   size-full wp-image-1473\" title=\"all_together\" src=\"http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg\"
   alt=\"\" width=\"259\" height=\"258\" />Hace ya un tiempo publiqué (en inglés) un
-  <a title=\"Watermark &amp; Image Component for CakePHP\" href=\"http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/\"><strong>Componente
-  para el tratamiento de imágenes en CakePHP</strong></a>. Hoy me he pasado un rato
+  <a title=\"Watermark &amp; Image Component for CakePHP\" href=\"http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/\">**Componente
+  para el tratamiento de imágenes en CakePHP**</a>. Hoy me he pasado un rato
   actualizándolo y aprovechando he decidido publicar una entrada con los cambios.\r\n\r\nAunque
   la he modificado considerablemente, he procurado no modificar el funcionamiento
   de ésta. Aquí vienen los cambios:\r\n
@@ -47,9 +47,9 @@ tags:
 - PHP5
 - Watermark
 ---
-<blockquote><strong>Actualizado:</strong> Tanto la clase como este post han sido actualizados a fecha 14 de enero de 2012.</blockquote>
+<blockquote>**Actualizado:** Tanto la clase como este post han sido actualizados a fecha 14 de enero de 2012.</blockquote>
 
-<img class="alignright size-full wp-image-1473" title="all_together" src="http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="259" height="258" />Hace ya un tiempo publiqué (en inglés) un <a title="Watermark &amp; Image Component for CakePHP" href="http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/"><strong>Componente para el tratamiento de imágenes en CakePHP</strong></a>. Hoy me he pasado un rato actualizándolo y aprovechando he decidido publicar una entrada con los cambios.
+<img class="alignright size-full wp-image-1473" title="all_together" src="http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="259" height="258" />Hace ya un tiempo publiqué (en inglés) un <a title="Watermark &amp; Image Component for CakePHP" href="http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/">**Componente para el tratamiento de imágenes en CakePHP**</a>. Hoy me he pasado un rato actualizándolo y aprovechando he decidido publicar una entrada con los cambios.
 
 Aunque la he modificado considerablemente, he procurado no modificar el funcionamiento de ésta. Aquí vienen los cambios:
 

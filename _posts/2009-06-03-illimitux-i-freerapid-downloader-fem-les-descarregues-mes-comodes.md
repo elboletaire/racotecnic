@@ -14,11 +14,11 @@ excerpt: "
 \r\n
 Com
   tots sabreu, constantment van apareixent i desapareixen maneres de burlar les restriccions
-  de pàgines de videos i descàrregues. Avui vinc a presentar <strong>Illimitux</strong>,
+  de pàgines de videos i descàrregues. Avui vinc a presentar **Illimitux**,
   un <span style=\"text-decoration: underline;\">complement per a firefox</span> que
   ens ajudarà a saltar algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare;
-  així com <strong>FreeRapid Downloader</strong> que ens farà més còmodes les descàrregues.\r\n
-Ara anem a parlar de <strong>Illimitux</strong>.
+  així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues.\r\n
+Ara anem a parlar de **Illimitux**.
   Abans de començar, cal avisar que és un complement en fase de proves i que no és
   del tot estable, intentarem aclarir en aquest post com configurar-lo perquè ens
   funcioni el més bé possible. Les indicacions són per a la versió actual (2.0.2)
@@ -48,9 +48,9 @@ tags:
 
 
 
-Com tots sabreu, constantment van apareixent i desapareixen maneres de burlar les restriccions de pàgines de videos i descàrregues. Avui vinc a presentar <strong>Illimitux</strong>, un <span style="text-decoration: underline;">complement per a firefox</span> que ens ajudarà a saltar algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare; així com <strong>FreeRapid Downloader</strong> que ens farà més còmodes les descàrregues.
+Com tots sabreu, constantment van apareixent i desapareixen maneres de burlar les restriccions de pàgines de videos i descàrregues. Avui vinc a presentar **Illimitux**, un <span style="text-decoration: underline;">complement per a firefox</span> que ens ajudarà a saltar algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare; així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues.
 
-Ara anem a parlar de <strong>Illimitux</strong>. Abans de començar, cal avisar que és un complement en fase de proves i que no és del tot estable, intentarem aclarir en aquest post com configurar-lo perquè ens funcioni el més bé possible. Les indicacions són per a la versió actual (2.0.2) esperem que en un futur pròxim en millorin l'estabilitat.
+Ara anem a parlar de **Illimitux**. Abans de començar, cal avisar que és un complement en fase de proves i que no és del tot estable, intentarem aclarir en aquest post com configurar-lo perquè ens funcioni el més bé possible. Les indicacions són per a la versió actual (2.0.2) esperem que en un futur pròxim en millorin l'estabilitat.
 
 Per instal·lar-lo accedim a la <a href="https://addons.mozilla.org/ca/firefox/addon/11037">pàgina de descàrrega</a>, seleccionem conforme som conscients que és experimental i l'afegim al nostre Firefox. Una vegada s'hagi descarregat, haurem de reiniciar el programa.
 
@@ -76,7 +76,7 @@ Amb tot això us apareixerà a la part inferior de la pàgina una finestra simil
 
 Tan sols heu de clicar a "Remove limitation" i us rediccionarà a una pàgina on gaudireu dels avantatges ja citats.
 
-Ara li toca el torn a <strong>FreeRapid Downloader</strong>, un software lliure disponible per a <span style="text-decoration: underline;">Windows, Mac i Linux</span>. Programa, que és disponible en castellà i al que se li poden afegir pluggins.
+Ara li toca el torn a **FreeRapid Downloader**, un software lliure disponible per a <span style="text-decoration: underline;">Windows, Mac i Linux</span>. Programa, que és disponible en castellà i al que se li poden afegir pluggins.
 
 Aquesta aplicació tampoc elimina cap limitació real, però ens permet fer una llista de url's que ens descarregarà de forma automàtica (respectant les limitacions de temps de cada pàgina). Per a descarregar accedim a la pàgina <a href="http://wordrider.net/freerapid/download.html">oficial de descàrrega</a> i cliquem (usuaris de windows) a l'icona del disc dur amb la fletxeta.
 

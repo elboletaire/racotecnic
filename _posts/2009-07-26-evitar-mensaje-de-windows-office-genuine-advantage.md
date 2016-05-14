@@ -14,10 +14,10 @@ author_url: http://www.underave.net
 excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) <a title=\"Leer la entrada en
   cuestión\" href=\"http://racotecnic.underave.net/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/\"
   target=\"_self\">publicó como eliminar este mensaje</a> tan molesto que todos los
-  que tenemos una copia ilegal de windows (es decir, <strong>todos</strong>) sufrimos
+  que tenemos una copia ilegal de windows (es decir, **todos**) sufrimos
   o hemos sufrido alguna vez.\r\n\r\nÉl explicó cómo eliminarlo, algo realmente útil
   para cuando el mal ya está hecho y no hay vuelta atrás, pero yo creo que estas cosas
-  mejor prevenirlas que curarlas, así que os voy a explicar cómo he evitado <strong>siempre</strong>
+  mejor prevenirlas que curarlas, así que os voy a explicar cómo he evitado **siempre**
   estos mensajes:\r\n\r\nComo ya he dicho esto es la medida de prevención, por ello
   necesitaremos una instalación de Windows semi nueva que todavía no esté \"infectada\"
   por este mensaje.\r\n\r\nVayamos a Mi PC / Panel de Control / Actualizaciones automáticas
@@ -36,9 +36,9 @@ tags:
 - MS Office
 ---
 
-Hace ya un tiempo Destroy (a.k.a Axelain) <a title="Leer la entrada en cuestión" href="http://racotecnic.underave.net/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/" target="_self">publicó como eliminar este mensaje</a> tan molesto que todos los que tenemos una copia ilegal de windows (es decir, <strong>todos</strong>) sufrimos o hemos sufrido alguna vez.
+Hace ya un tiempo Destroy (a.k.a Axelain) <a title="Leer la entrada en cuestión" href="http://racotecnic.underave.net/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/" target="_self">publicó como eliminar este mensaje</a> tan molesto que todos los que tenemos una copia ilegal de windows (es decir, **todos**) sufrimos o hemos sufrido alguna vez.
 
-Él explicó cómo eliminarlo, algo realmente útil para cuando el mal ya está hecho y no hay vuelta atrás, pero yo creo que estas cosas mejor prevenirlas que curarlas, así que os voy a explicar cómo he evitado <strong>siempre</strong> estos mensajes:
+Él explicó cómo eliminarlo, algo realmente útil para cuando el mal ya está hecho y no hay vuelta atrás, pero yo creo que estas cosas mejor prevenirlas que curarlas, así que os voy a explicar cómo he evitado **siempre** estos mensajes:
 
 Como ya he dicho esto es la medida de prevención, por ello necesitaremos una instalación de Windows semi nueva que todavía no esté "infectada" por este mensaje.
 

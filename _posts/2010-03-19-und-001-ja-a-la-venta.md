@@ -40,6 +40,6 @@ Felicitats  a tots els implicats.
 
 </strong></span>
 
-<span style="color: #ff6600;"><strong>
+<span style="color: #ff6600;">**
 
-</strong></span>
+**</span>

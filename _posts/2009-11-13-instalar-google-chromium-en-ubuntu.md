@@ -11,7 +11,7 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "Si queréis disfrutar de <strong>Google Chrome</strong> en vuestro ubuntu
+excerpt: "Si queréis disfrutar de **Google Chrome** en vuestro ubuntu
   sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los
   repositorios o directamente instalando un paquete Deb.\r\n\r\nPrimero de todo debemos
   editar nuestro fichero de recursos de los repositorios:\r\n\r\n[bash light=\"true\"]sudo
@@ -35,7 +35,7 @@ tags:
 - Instal·lació Software
 ---
 
-Si queréis disfrutar de <strong>Google Chrome</strong> en vuestro ubuntu sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los repositorios o directamente instalando un paquete Deb.
+Si queréis disfrutar de **Google Chrome** en vuestro ubuntu sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los repositorios o directamente instalando un paquete Deb.
 
 Primero de todo debemos editar nuestro fichero de recursos de los repositorios:
 
@@ -52,10 +52,10 @@ deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION mai
 La variable "NOMBRE_DE_VERSION" debéis substituirla por vuestra versión. Google Chromium está disponible para las siguientes versiones de Ubuntu:
 
 <ul>
-<li><strong>hardy</strong> [Hardy Heron 8.04]</li>
-<li><strong>intrepid</strong> [Intrepid Ibex 8.10]</li>
-<li><strong>jaunty</strong> [Jaunty Jackalope 9.04]</li>
-<li><strong>karmik</strong> [Karmik Koala 9.10]</li>
+<li>**hardy** [Hardy Heron 8.04]</li>
+<li>**intrepid** [Intrepid Ibex 8.10]</li>
+<li>**jaunty** [Jaunty Jackalope 9.04]</li>
+<li>**karmik** [Karmik Koala 9.10]</li>
 </ul>
 
 Ahora que tenemos el repositorio añadido debemos añadir la clave GPG:

@@ -30,7 +30,7 @@ excerpt: "
   por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas)
   que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar
   debéis tener presente que esto es ilegal en la mayor parte de los países así que
-  si vais a hacer uso de ello<strong> deberá ser sobre VUESTRA red WiFi</strong>.
+  si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**.
   Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.\r\n\r\n"
 wordpress_id: 286
 wordpress_url: http://racotecnic.underave.net/?p=286
@@ -72,7 +72,7 @@ tags:
 <li><a href="#referencias">Páginas de referencia</a></li>
 </ul>
 
-<a name="intro"></a>Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello<strong> deberá ser sobre VUESTRA red WiFi</strong>. Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.
+<a name="intro"></a>Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**. Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.
 
 <a id="more"></a><a id="more-286"></a>
 <h3><a name="pasos"></a>Primeros pasos</h3>
@@ -115,7 +115,7 @@ aptitude -y install aircrack-ng
 Menuda complicación, ¿eh? :D
 <h3><a name="wep"></a>Crackeando redes WEP</h3>
 
-Antes de continuar a delante quiero recordaros lo que ya he dicho al principio...  <strong>La mayoría de países no permiten hacer esto, así que si vais a hacerlo debe ser con consentimiento del dueño de la red que vayáis a atacar.</strong>
+Antes de continuar a delante quiero recordaros lo que ya he dicho al principio...  **La mayoría de países no permiten hacer esto, así que si vais a hacerlo debe ser con consentimiento del dueño de la red que vayáis a atacar.**
 <h4><a name="monitor"></a>Activar modo monitor</h4>
 
 Ahora que ya tenemos todo lo necesario activaremos el modo monitor de nuestra tarjeta para poder hacer inyección de paquetes.  Recordad que el último paso que hicimos fue añadir el módulo de la tarjeta al kernel de linux pero no hemos activado nuestra red. Comprobemos las redes que tenemos activas con "ifconfig". Al hacerlo observaremos que tenemos una red "wifi0" pero esto es un dispositivo virtual y no nos sirve, así que pondremos en marcha el dispositivo ath0:
@@ -158,7 +158,7 @@ La pantalla está dividida en dos partes importantes: la de AP (access points), 
 
 Las cosas que más nos interesan son BSSID (MAC del AP), PWR (potencia de la señal), #Data que nos dice el número de paquetes captados (paquetes que luego servirán para averiguar la contraseña, cuantos más paquetes más posibilidades de conseguirla), CH (canal), ENC (tipo de encriptación que para seguir este tutorial debe ser WEP), ESSID (nombre de la red), STATION (usuarios conectados al AP).  Mi red es la que tiene como nombre "JAZZTEL_2C" con BSSID 00:1A:23:14:23:3C y, evidentemente, esta es la que voy a atacar, así que empecemos capturando paquetes sólo para esta red (lo que reducirá el tamaño del fichero generado):
 
-airodump-ng --channel <strong>11</strong> --bssid <strong>00:1A:23:14:23:3C</strong> --write jazztel2c ath0
+airodump-ng --channel **11** --bssid **00:1A:23:14:23:3C** --write jazztel2c ath0
 
 En negrita están el canal y la BSSID respectivamente, que deberéis cambiar a partir de los datos obtenidos vosotros de vuestra red.  El parámetro --write indica dónde el nombre del fichero en el que se guardarán los datos y "ath0" es nuestra interfaz de red.
 <h4><a name="macfilter"></a>Comprobar bloqueo MAC</h4>

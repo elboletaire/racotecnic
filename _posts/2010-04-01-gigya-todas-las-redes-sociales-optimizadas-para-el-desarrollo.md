@@ -61,7 +61,7 @@ Para utilizarlo simplemente necesitas registrarte en su web y añadir aquellos s
 <blockquote>
 
 <ul>
-<li><strong>Web oficial e Gigya:</strong> <a rel="nofollow" href="http://www.gigya.com" target="_blank">http://www.gigya.com</a></li>
-<li><strong>Plugin e integración de Gigya con Wordpress:</strong> <a rel="nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin</a></li>
+<li>**Web oficial e Gigya:** <a rel="nofollow" href="http://www.gigya.com" target="_blank">http://www.gigya.com</a></li>
+<li>**Plugin e integración de Gigya con Wordpress:** <a rel="nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin</a></li>
 </ul>
 </blockquote>

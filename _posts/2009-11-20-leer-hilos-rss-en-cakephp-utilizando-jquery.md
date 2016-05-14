@@ -14,7 +14,7 @@ author_url: http://www.underave.net
 excerpt: "Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y mostrarlos
   \"con clase\" utilizando el framework de JavaScript jQuery.\r\n\r\nSi no tenéis
   ni idea de Cake pero utilizáis un poco el tarro seguro que podréis aprovechar este
-  mismo ejemplo para <strong>leer hilos RSS mediante PHP y jQuery</strong> (una pista:
+  mismo ejemplo para **leer hilos RSS mediante PHP y jQuery** (una pista:
   empezad por eliminar todo lo que tenga que ver con la caché).\r\n\r\n<blockquote>\r\n
 <ul>\r\n\t<li>Ejemplo
   en <a title=\"Visitar underave\" href=\"http://www.underave.net/barna23/\">underave</a>:
@@ -43,7 +43,7 @@ tags:
 
 Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y mostrarlos "con clase" utilizando el framework de JavaScript jQuery.
 
-Si no tenéis ni idea de Cake pero utilizáis un poco el tarro seguro que podréis aprovechar este mismo ejemplo para <strong>leer hilos RSS mediante PHP y jQuery</strong> (una pista: empezad por eliminar todo lo que tenga que ver con la caché).
+Si no tenéis ni idea de Cake pero utilizáis un poco el tarro seguro que podréis aprovechar este mismo ejemplo para **leer hilos RSS mediante PHP y jQuery** (una pista: empezad por eliminar todo lo que tenga que ver con la caché).
 <blockquote>
 
 <ul>
@@ -195,7 +195,7 @@ El fichero <i>json.ctp</i> lo he creado en la carpeta ajax porque todo lo relaci
 
 Si lo preferís, en lugar de crear la vista json, podéis optar por hacer un <i>echo</i> de un <i>json_encode</i> en el controlador directamente, aunque eso rompe un poco con el patrón MVC.
 
-<strong>Para que el método rss funcione es importante que creemos una ruta hacia /rss</strong>:
+**Para que el método rss funcione es importante que creemos una ruta hacia /rss**:
 ~~~php
 // /app/config/routes.php
 Router::connect('/rss/:feed',

@@ -13,7 +13,7 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "No digo adiós porque se haya terminado la <em>saga</em> de los HD multimedia,
   sinó porque por fin ha salido algo al mercado que llevaba tiempo esperando.\r\n\r\nSe
-  trata de los <em><strong>adaptadores multimedia</strong></em> (los llamo así por
+  trata de los <em>**adaptadores multimedia**</em> (los llamo así por
   llamarlos de algún modo..) que ha sacado la casa Western Digital.\r\n
 <a href=\"{{ site.url }}/uploads/2009/10/wdtv_front.jpg\"><img
   class=\"alignnone size-thumbnail wp-image-796\" title=\"wdtv_front\" src=\"{{ site.url }}/uploads/2009/10/wdtv_front-150x150.jpg\"
@@ -36,7 +36,7 @@ tags:
 
 No digo adiós porque se haya terminado la <em>saga</em> de los HD multimedia, sinó porque por fin ha salido algo al mercado que llevaba tiempo esperando.
 
-Se trata de los <em><strong>adaptadores multimedia</strong></em> (los llamo así por llamarlos de algún modo..) que ha sacado la casa Western Digital.
+Se trata de los <em>**adaptadores multimedia**</em> (los llamo así por llamarlos de algún modo..) que ha sacado la casa Western Digital.
 
 <a href="{{ site.url }}/uploads/2009/10/wdtv_front.jpg"><img class="alignnone size-thumbnail wp-image-796" title="wdtv_front" src="{{ site.url }}/uploads/2009/10/wdtv_front-150x150.jpg" alt="wdtv_front" width="150" height="150" /></a><a href="{{ site.url }}/uploads/2009/10/wdtv_box.jpg"><img class="alignnone size-thumbnail wp-image-794" title="wdtv_box" src="{{ site.url }}/uploads/2009/10/wdtv_box-150x150.jpg" alt="wdtv_box" width="150" height="150" /></a>
 
@@ -55,6 +55,6 @@ Además de la gran ventaja que ofrece el hecho de poder utilizar cualquier disco
 </blockquote>
 </ul>
 
-* Hay una <strong>versión <em>mini</em></strong> del WD TV (así es como se llama este adaptador) que <strong>no reproduce matroska</strong>.
+* Hay una <strong>versión <em>mini</em></strong> del WD TV (así es como se llama este adaptador) que **no reproduce matroska**.
 
 PS. Desconozco si hace mucho o poco que salieron.. hoy me he enterado de su existencia y lo comparto con vosotr@s ;)

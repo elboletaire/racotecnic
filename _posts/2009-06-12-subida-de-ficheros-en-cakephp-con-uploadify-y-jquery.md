@@ -16,7 +16,7 @@ excerpt: "<blockquote>\r\n\t<em>Entrada actualizada a 18 de junio de 2009. Los c
   más reciente relacionada con este tema: <a href=\"/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/\"
   target=\"_top\">Subida de ficheros con Uploadify y validación Ajax en CakePHP</a></b>\r\n</blockquote>\r\n\r\nDespués
   de mucho tiempo liado con el fin de curso y tras mucho investigar con CakePHP por
-  fin escribo algo al respecto. Para los que no lo sepáis, <strong>CakePHP</strong>
+  fin escribo algo al respecto. Para los que no lo sepáis, **CakePHP**
   es un <a title=\"Definición de framework\" href=\"http://es.wikipedia.org/wiki/Framework\"
   target=\"_blank\"><em>framework</em></a> de PHP que nos permite programar más rápido
   nuestras aplicaciones web PHP ya que nos ofrece las herramientas para que empecemos
@@ -52,7 +52,7 @@ tags:
 	<b>Existe una entrada más reciente relacionada con este tema: <a href="/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/" target="_top">Subida de ficheros con Uploadify y validación Ajax en CakePHP</a></b>
 </blockquote>
 
-Después de mucho tiempo liado con el fin de curso y tras mucho investigar con CakePHP por fin escribo algo al respecto. Para los que no lo sepáis, <strong>CakePHP</strong> es un <a title="Definición de framework" href="http://es.wikipedia.org/wiki/Framework" target="_blank"><em>framework</em></a> de PHP que nos permite programar más rápido nuestras aplicaciones web PHP ya que nos ofrece las herramientas para que empecemos a escribir el código que realmente necesitamos: la lógica de la aplicación.
+Después de mucho tiempo liado con el fin de curso y tras mucho investigar con CakePHP por fin escribo algo al respecto. Para los que no lo sepáis, **CakePHP** es un <a title="Definición de framework" href="http://es.wikipedia.org/wiki/Framework" target="_blank"><em>framework</em></a> de PHP que nos permite programar más rápido nuestras aplicaciones web PHP ya que nos ofrece las herramientas para que empecemos a escribir el código que realmente necesitamos: la lógica de la aplicación.
 
 Si no conocíais CakePHP y os ha interesado el tema echad un ojo a <a title="Visitar web de CakePHP" href="http://www.cakephp.org" target="_blank">su página web</a>, <a title="Descargas de CakePHP" href="http://cakephp.org/downloads" target="_blank">descargaos una copia</a> y empezad a hacer pruebas. En su web podréis encontrar la <a title="Comenzando con CakePHP" href="http://book.cakephp.org/es/view/4/Comenzando-con-CakePHP" target="_blank">mayor parte de la documentación</a> y todo lo demás, como no, en <a title="Realmente hacía falta enlazarlo?" href="http://www.google.es" target="_blank">google</a>.
 
@@ -162,7 +162,7 @@ Las tareas del método upload están descritas en los comentarios y no creo que 
 
 En el método add() hacemos las tareas necesarias para guardar los datos.
 <blockquote>
-<em><strong>Nota:</strong> El envío de ficheros debéis hacerlo al mismo controlador. Si intentáis hacer un envío de ficheros desde el controlador "images" al controlador "files" (por ejemplo), NO FUNCIONARÁ. No sé porqué, así que si alguien encuentra el modo de hacerlo o sabe porqué pasa agradecería que me lo comentara por aquí.</em></blockquote>
+<em>**Nota:** El envío de ficheros debéis hacerlo al mismo controlador. Si intentáis hacer un envío de ficheros desde el controlador "images" al controlador "files" (por ejemplo), NO FUNCIONARÁ. No sé porqué, así que si alguien encuentra el modo de hacerlo o sabe porqué pasa agradecería que me lo comentara por aquí.</em></blockquote>
 
 Ya tenemos el controlador con su componente, ahora nos quedan únicamente la vista, pero antes explicaré cómo funciona el helper que he creado para aquellos que quieran utilizarlo...
 

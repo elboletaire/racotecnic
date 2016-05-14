@@ -13,7 +13,7 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los
   altavoces porque cada canción tiene un volumen distinto??\r\n\r\nCon mp3gain podéis
-  <strong>normalizar el volumen</strong> de vuestros <strong>mp3</strong> muy fácilmente
+  **normalizar el volumen** de vuestros **mp3** muy fácilmente
   (para los usuarios que manejen habitualmente la consola.. claro xD).\r\n\r\nPodéis
   descargar mp3gain de la <a title=\"Página del proyecto en sourceforge\" href=\"http://sourceforge.net/projects/mp3gain/\"
   target=\"_blank\">página oficial</a> (está disponible para Windows y en código fuente).
@@ -39,7 +39,7 @@ tags:
 
 ¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los altavoces porque cada canción tiene un volumen distinto??
 
-Con mp3gain podéis <strong>normalizar el volumen</strong> de vuestros <strong>mp3</strong> muy fácilmente (para los usuarios que manejen habitualmente la consola.. claro xD).
+Con mp3gain podéis **normalizar el volumen** de vuestros **mp3** muy fácilmente (para los usuarios que manejen habitualmente la consola.. claro xD).
 
 Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" href="http://sourceforge.net/projects/mp3gain/" target="_blank">página oficial</a> (está disponible para Windows y en código fuente). Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.
 

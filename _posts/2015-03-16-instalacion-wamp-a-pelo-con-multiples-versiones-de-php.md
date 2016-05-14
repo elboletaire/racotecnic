@@ -31,7 +31,7 @@ tags:
 - fastCGI
 ---
 
-En esta guía os explicaré cómo <strong>realizar la instalación de un servidor Windows Apache + MySQL + PHP (WAMP) con múltiples versiones de PHP</strong> para distintos servidores virtuales.
+En esta guía os explicaré cómo **realizar la instalación de un servidor Windows Apache + MySQL + PHP (WAMP) con múltiples versiones de PHP** para distintos servidores virtuales.
 
 En realidad me centraré en la configuración tanto de Apache como de PHP para que tengáis todo funcionando como es debido, de aquí que diga lo de "a pelo".
 
@@ -194,7 +194,7 @@ Hecho. Si os da el gusanillo reiniciad el ordenador y acceded de nuevo a <a href
 
 Id a la <a href="http://windows.php.net/download/">página de descargas de PHP para windows</a> y descargad todas las versiones de PHP que queráis tener instaladas.
 
-Al descargarlas únicamente debéis tener en cuenta la arquitectura que estéis instalando (en mi caso x64) y que <strong>Apache es Thread Safe</strong>.
+Al descargarlas únicamente debéis tener en cuenta la arquitectura que estéis instalando (en mi caso x64) y que **Apache es Thread Safe**.
 
 <a href="https://instagram.com/elboletaire/"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/thread_safe.jpg" alt="Thread safe" width="612" height="612" class="aligncenter size-full wp-image-2332" /></a>
 

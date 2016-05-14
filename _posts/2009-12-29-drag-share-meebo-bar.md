@@ -21,7 +21,7 @@ categories:
 tags: []
 ---
 
-El otro día descubrí la <strong>Meebo bar</strong> por casualidad al entrar a esta web:
+El otro día descubrí la **Meebo bar** por casualidad al entrar a esta web:
 
 <a rel="nofollow" href="http://abduzeedo.com/" target="_blank">http://abduzeedo.com/</a>
 

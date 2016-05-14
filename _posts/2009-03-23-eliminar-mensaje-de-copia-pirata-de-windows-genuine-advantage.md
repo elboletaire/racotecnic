@@ -24,7 +24,7 @@ tags:
 
 La manera de quitar el aviso:  “Podría ser una víctima de falsificación de software. Esta copia de Windows no ha superado el proceso de validación de Windows Original” es tan sencillo como:
 
-<strong> 1.</strong> <strong>Abrimos el bloc de notas </strong>y pegamos el siguiente código:
+** 1.** **Abrimos el bloc de notas **y pegamos el siguiente código:
 
 taskkill /im wgatray.exe
 Del c:WindowsSystem32WgaTray.exe
@@ -37,6 +37,6 @@ del %temp%WGANFIX.REG
 del c:windowssystem32wgalogon.dll
 del c:windowssystem32dllcachewgalogon.dll
 
-<strong> 2.</strong> <strong>Guardamos el archivo</strong> como “loquequieras<strong>.bat</strong> “. Por ejemplo “quitaraviso<strong>.bat</strong>”
+** 2.** **Guardamos el archivo** como “loquequieras**.bat** “. Por ejemplo “quitaraviso**.bat**”
 
-<strong> 3.</strong> <strong>Ejecutamos el programa</strong> que acabamos de crear haciendo dos clics sobre él y reiniciamos el ordenador y el mensaje de aviso de que Windows no es original desaparece.
+** 3.** **Ejecutamos el programa** que acabamos de crear haciendo dos clics sobre él y reiniciamos el ordenador y el mensaje de aviso de que Windows no es original desaparece.

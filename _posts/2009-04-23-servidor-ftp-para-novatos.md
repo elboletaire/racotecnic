@@ -10,8 +10,8 @@ author:
   url: ''
 author_login: '909'
 author_email: gerardperucha@hotmail.com
-excerpt: "La empresa <strong>Pablo Software Solutions</strong> ha creado el editor
-  de FTPs <span style=\"color: #ff6600;\"><strong>Quick ‘n Easy FTP Server Lite</strong></span>.
+excerpt: "La empresa **Pablo Software Solutions** ha creado el editor
+  de FTPs <span style=\"color: #ff6600;\">**Quick ‘n Easy FTP Server Lite**</span>.
   Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo
   Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto
   para aquellos que acaban de empezar en estos temas. Algunas de las características
@@ -44,7 +44,7 @@ tags:
 - Administració remota
 ---
 
-La empresa <strong>Pablo Software Solutions</strong> ha creado el editor de FTPs <span style="color: #ff6600;"><strong>Quick ‘n Easy FTP Server Lite</strong></span>. Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto para aquellos que acaban de empezar en estos temas. Algunas de las características más significativas son:
+La empresa **Pablo Software Solutions** ha creado el editor de FTPs <span style="color: #ff6600;">**Quick ‘n Easy FTP Server Lite**</span>. Este programa con una interfaz muy intuitiva, muy parecida a la de sistema opertivo Windows XP, supone una herramienta muy útil para crear FTPs muy rápidamente, y sobreto para aquellos que acaban de empezar en estos temas. Algunas de las características más significativas son:
 
 <ul>
 <li>Fácil configuración mediante la construcción en un asistente para configuración de servidor FTP, con varias páginas para configurar, la gestión de usuarios o su seguridad</li>
