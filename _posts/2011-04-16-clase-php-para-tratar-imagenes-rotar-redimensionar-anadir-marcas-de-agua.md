@@ -66,7 +66,8 @@ Podéis descargar el proyecto desde GibHub:
 <a title="Descargar Watimage" href="https://github.com/elboletaire/Watimage/archives/master">https://github.com/elboletaire/Watimage/archives/master</a>
 
 Si queréis utilizar la clase desde CakePHP simplemente tenéis que descomentar la primera línea de la clase, donde dice `//Component extends Object`, y utilizarlo como un componente cualquiera.<a id="more"></a><a id="more-1892"></a>
-<h4>Aplicando marcas de agua</h4>
+
+### Aplicando marcas de agua
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png"><img class="size-full wp-image-1899 aligncenter" title="test1" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png" alt="" width="322" height="546" /></a>
 
@@ -80,7 +81,8 @@ if ( !$wm->generate('test1.png') ) {
 	print_r($wm->errors);
 }
 ~~~
-<h4>Redimensionando</h4>
+
+### Redimensionando
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png"><img class="size-full wp-image-1900 aligncenter" title="test2" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png" alt="" width="400" height="200" /></a>
 
@@ -92,7 +94,8 @@ if ( !$wm->generate('test2.png') ) {
 	print_r($wm->errors);
 }
 ~~~
-<h4>Rotando</h4>
+
+### Rotando
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png"><img class="size-full wp-image-1901 aligncenter" title="test3" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png" alt="" width="400" height="234" /></a>
 
@@ -105,7 +108,8 @@ if ( !$wm->generate('test3.png') ) {
 }
 ~~~
 
-<h4>Guardando en otros formatos</h4>
+
+### Guardando en otros formatos
 
 ~~~php
 $wm = new Watermark('test.png');
@@ -115,7 +119,8 @@ if ( !$wm->generate('test4.jpg') ) {
 }
 ~~~
 
-<h4>Espejo</h4>
+
+### Espejo
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test5.png"><img class="size-medium wp-image-1903 aligncenter" title="test5" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test5-176x300.png" alt="" width="176" height="300" /></a>
 
@@ -128,7 +133,8 @@ if ( !$wm->generate('test5.png') ) {
 }
 ~~~
 
-<h4>Todo junto</h4>
+
+### Todo junto
 
 <img class="aligncenter size-full wp-image-1904" title="test6" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test6.png" alt="" width="341" height="341" />
 

@@ -103,7 +103,8 @@ Elementos típicos del footer</footer>
 
 Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 <h3>Ejemplos reales : típicos usos:</h3>
-<h4><header></h4>
+
+### <header>
 
 [xhtml]
 	<header>
@@ -120,7 +121,8 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 		</nav>
 	</header>
 [/xhtml]
-<h4><nav></h4>
+
+### <nav>
 
 [xhtml]
 	<nav>
@@ -132,7 +134,8 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 		</ul>
 	</nav>
 [/xhtml]
-<h4><aside></h4>
+
+### <aside>
 
 (Por ejemplo un sidebar de un blog )
 [xhtml]
@@ -154,7 +157,8 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 		</nav>
 	</aside>
 [/xhtml]
-<h4><footer></h4>
+
+### <footer>
 
 [xhtml]
 	<footer>

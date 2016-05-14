@@ -97,7 +97,8 @@ class FooController extends AppController
 **Original files used for demonstrations:**
 <img class="size-full wp-image-1464 aligncenter" title="imatge23" src="{{ site.url }}/uploads/2010/04/imatge23.jpg" alt="" width="425" height="500" />
 <img class="alignnone size-full wp-image-1470" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.png" alt="" width="177" height="50" />
-<h4>Resize:</h4>
+
+### Resize:
 
 <img class="alignnone size-full wp-image-1461" title="resizecrop" src="{{ site.url }}/uploads/2010/04/resizecrop.jpeg" alt="" width="300" height="200" />
 
@@ -116,7 +117,8 @@ $this->Watermark->generate($dest_path);
 </ul>
 
 <em>* Resizing criteria extracted from <a rel="nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">iamkoa labs image upload component</a></em>
-<h4>Rotate:</h4>
+
+### Rotate:
 
 <img class="size-full wp-image-1466 aligncenter" title="rotate" src="{{ site.url }}/uploads/2010/04/rotate.jpeg" alt="" width="655" height="655" />
 
@@ -125,7 +127,8 @@ $this->Watermark->setImage($image_path);
 $this->Watermark->rotateImage(array('degrees' => 45));
 $this->Watermark->generate($dest_path);
 ~~~
-<h4>Apply watermark:</h4>
+
+### Apply watermark:
 
 <img class="alignnone size-full wp-image-1472" title="watermark" src="{{ site.url }}/uploads/2010/04/watermark.jpeg" alt="" width="425" height="500" />
 
@@ -135,7 +138,8 @@ $this->Watermark->setWatermark(array('file' => $watermark_file, 'position' => 'b
 $this->Watermark->applyWatermark();
 $this->Watermark->generate($dest_path);
 ~~~
-<h4>All together:</h4>
+
+### All together:
 
 <img class="alignnone size-full wp-image-1473" title="all_together" src="{{ site.url }}/uploads/2010/04/all_together.jpeg" alt="" width="355" height="354" />
 
@@ -161,13 +165,15 @@ $this->Watermark->resize(array('type' => 'resizecrop', 'size' => array('300', '2
 $this->Watermark->applyWatermark();
 $this->Watermark->generate($dest_path);
 ~~~
-<h4>Show image instead of saving it:</h4>
+
+### Show image instead of saving it:
 
 ~~~php
 $this->Watermark->setImage($image_path);
 $this->Watermark->generate(); // Without params
 ~~~
-<h4>With errors:</h4>
+
+### With errors:
 
 ~~~php
 // every component method return false on error

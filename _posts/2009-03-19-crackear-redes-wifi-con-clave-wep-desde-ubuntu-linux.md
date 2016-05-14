@@ -116,7 +116,8 @@ Menuda complicación, ¿eh? :D
 ## <a name="wep"></a>Crackeando redes WEP
 
 Antes de continuar a delante quiero recordaros lo que ya he dicho al principio...  **La mayoría de países no permiten hacer esto, así que si vais a hacerlo debe ser con consentimiento del dueño de la red que vayáis a atacar.**
-<h4><a name="monitor"></a>Activar modo monitor</h4>
+
+### <a name="monitor"></a>Activar modo monitor
 
 Ahora que ya tenemos todo lo necesario activaremos el modo monitor de nuestra tarjeta para poder hacer inyección de paquetes.  Recordad que el último paso que hicimos fue añadir el módulo de la tarjeta al kernel de linux pero no hemos activado nuestra red. Comprobemos las redes que tenemos activas con "ifconfig". Al hacerlo observaremos que tenemos una red "wifi0" pero esto es un dispositivo virtual y no nos sirve, así que pondremos en marcha el dispositivo ath0:
 
@@ -141,7 +142,8 @@ wlanconfig ath0 destroy
 wlanconfig ath0 create wlandev wifi0 wlanmode monitor
 
 Ya la tenemos en modo monitor. Ahora aparentemente no funciona el wifi ya que si vamos a explorar redes con el applet de gnome no encuentra nada. Pero si no habéis recibido error alguno es porque está activado y podéis pasar al siguiente paso.
-<h4><a name="airodump"></a>Escanear redes y capturar paquetes</h4>
+
+### <a name="airodump"></a>Escanear redes y capturar paquetes
 
 Primero haremos un escaneo sin especificar canal ni nada, simplemente para ver en qué canal se encuentra nuestra red:
 
@@ -161,7 +163,8 @@ Las cosas que más nos interesan son BSSID (MAC del AP), PWR (potencia de la se�
 airodump-ng --channel **11** --bssid **00:1A:23:14:23:3C** --write jazztel2c ath0
 
 En negrita están el canal y la BSSID respectivamente, que deberéis cambiar a partir de los datos obtenidos vosotros de vuestra red.  El parámetro --write indica dónde el nombre del fichero en el que se guardarán los datos y "ath0" es nuestra interfaz de red.
-<h4><a name="macfilter"></a>Comprobar bloqueo MAC</h4>
+
+### <a name="macfilter"></a>Comprobar bloqueo MAC
 
 El siguiente paso será comprobar si el punto de acceso tiene activada la restricción MAC, para hacerlo utilizaremos aireplay-ng (en una nueva terminal, por supuesto):
 
@@ -175,7 +178,8 @@ El primer parámetro es el tipo de ataque (un número del 0 al 6), en este caso 
 16:35:29  Association successful :-) (AID: 1)
 
 El filtro MAC está inhabilitado y podéis pasar al paso "Inyección de paquetes (sin bloqueo mac)", sino saltad a "Inyección de paquetes (con bloqueo mac)".
-<h4><a name="injection"></a>Inyección de paquetes (sin bloqueo mac)</h4>
+
+### <a name="injection"></a>Inyección de paquetes (sin bloqueo mac)
 
 Vayamos al terminal donde tenemos airodump-ng funcionando (captando paquetes) y comprobemos si hay algún STATION asociado al BSSID de la red a atacar. Si es así copiad la MAC de la estación y utilizadla en la siguiente orden:
 
@@ -202,7 +206,8 @@ The interface MAC (06:19:5B:C9:F2:4A) doesn't match the specified MAC (-h).
 Esto es porque la mac que le hemos indicado no coincide con la de nuestra tarjeta de red. Para solucionar esto basta con cambiar la mac por la de la estación que estemos emulando (utilizad control+C para terminar el proceso de aireplay-ng, cambiad la MAC y volved a ejecutar aireplay-ng). Para cambiar la MAC pasad al punto <a href="#macchange">Cambiar dirección MAC de la interfaz de red</a>
 
 .
-<h4><a name="macinjection"></a>Inyección de paquetes (con bloqueo MAC)</h4>
+
+### <a name="macinjection"></a>Inyección de paquetes (con bloqueo MAC)
 
 La opción más sencilla a la hora de inyectar paquetes en un AP con bloqueo MAC es hacerse pasar por uno de sus clientes. Para poder hacer esto tenemos que cambiar la dirección MAC, no obstante aireplay-ng tiene la posibilidad de atacar AP con bloqueo MAC (con este proceso no es necesario cambiar la MAC):
 
@@ -210,7 +215,8 @@ aireplay-ng -0 5 -a 00:09:5B:D7:43:A8 -c 00:11:22:33:44:55
 aireplay-ng -3 -b 00:09:5B:D7:43:A8 -h 00:11:22:33:44:55
 
 Es un proceso bastante más lento que sin bloqueo de MAC, pero funciona igualmente. De todos modos si hay alguna estación conectada al AP la mejor opción es que cambiéis vuestra MAC a la de dicha estación.
-<h4><a name="macchange"></a>Cambiar dirección MAC de la interfaz de red</h4>
+
+### <a name="macchange"></a>Cambiar dirección MAC de la interfaz de red
 
 Para ello hay dos maneras de hacerlo, una de ellas nos la indicaba un error de unas líneas más arriba:
 
@@ -235,7 +241,8 @@ Haciendo esto nos aseguramos que el AP crea que somos uno de sus clientes y faci
     aireplay-ng enviando paquetes
   </figcaption>
 </figure>
-<h4><a name="authentication"></a>Autenticación en el router</h4>
+
+### <a name="authentication"></a>Autenticación en el router
 
 En ocasiones puede que se nos presente el siguiente error al ejecutar la inyección de tráfico con aireplay-ng:
 
@@ -266,7 +273,8 @@ Aquí estamos indicando que envíe paquetes cada 6 segundos (en milisegundos) y 
 18:19:55  Sending keep-alive packet [ACK]
 
 Ambas son igualmente eficientes (quizás la primera sea un poco más rápida, pero habrá muchas ocasiones en que no podréis utilizarla). Os recomiendo la segunda, ya que no paramos de autenticarnos en el router y no le damos pie a errores.
-<h4><a name="aircrack"></a>Averiguando la clave con aircrack-ng</h4>
+
+### <a name="aircrack"></a>Averiguando la clave con aircrack-ng
 
 Cuando el número de #Data esté por encima de 30.000 podemos ir ejecutando aircrack-ng en una nueva terminal cargando el fichero que se va guardando (es decir, no paréis la captura de paquetes con airodump, por si no tuviérais suficientes datos):
 

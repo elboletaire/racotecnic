@@ -29,7 +29,7 @@ excerpt: "<script type=\"text/javascript\">\r\n// <![CDATA[\r\n\tjQuery(function
   plantilla de phpBB</a></li>\r\n</ul>\r\n</fieldset>\r\n<a href=\"http://www.racotecnic.com/wp-content/uploads/2010/01/hot-features.png\"
   id=\"imatge-cakephp\"><img class=\"alignnone size-full wp-image-1348\" title=\"hot-features\"
   src=\"http://www.racotecnic.com/wp-content/uploads/2010/01/hot-features.png\" alt=\"\"
-  width=\"260\" height=\"260\" /></a>\r\n<h4 id=\"phpbb-zero\">Antes de empezar...</h4>\r\nMás
+  width=\"260\" height=\"260\" /></a>\r\n<h4 id=\"phpbb-zero\">Antes de empezar...\r\nMás
   o menos al empezar con este blog expliqué cómo podíais <a title=\"Leer tutorial\"
   href=\"http://www.racotecnic.com/2009/01/registro-de-usuarios-externo-a-phpbb-3x/\"
   target=\"_self\">hacer un registro de usuarios externo a phpBB3 con PHP</a>. Hoy
@@ -129,7 +129,7 @@ tags:
 </fieldset>
 
 <a href="http://www.racotecnic.com/wp-content/uploads/2010/01/hot-features.png" id="imatge-cakephp"><img class="alignnone size-full wp-image-1348" title="hot-features" src="http://www.racotecnic.com/wp-content/uploads/2010/01/hot-features.png" alt="" width="260" height="260" /></a>
-<h4 id="phpbb-zero">Antes de empezar...</h4>
+<h4 id="phpbb-zero">Antes de empezar...
 
 Más o menos al empezar con este blog expliqué cómo podíais <a title="Leer tutorial" href="http://www.racotecnic.com/2009/01/registro-de-usuarios-externo-a-phpbb-3x/" target="_self">hacer un registro de usuarios externo a phpBB3 con PHP</a>. Hoy voy a contaros cómo hacer para **implementar el registro y login de usuarios de phpBB3 en CakePHP**.
 
@@ -158,7 +158,7 @@ Parto de la base de que tenéis creado un modelo y un controlador encargados de 
 Es decir, **doy por supuesto que ya tenéis un sistema de usuarios funcionando en vuestra aplicación CakePHP**. En este tutorial sólo os explicaré cómo integrar el registro y login de phpBB3, así que todo lo demás (validaciones de datos, creación de formularios, funcionamiento de la clase Auth...) quedará por supuesto (lo cual no quiere decir que no vaya a haber código al respecto ;)).
 
 <a id="more"></a><a id="more-1224"></a>
-<h4 id="phpbb-primer">Primeros pasos<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-primer">Primeros pasos<a class="amunt" href="#amunt">arriba</a>
 
 Además de la parte encargada de la gestión de usuarios vamos a tener que crear un modelo para el foro. Este sólo debe contener el nombre del modelo y debemos indicarle que no va a utilizar base de datos:
 
@@ -200,7 +200,7 @@ class DATABASE_CONFIG {
 ~~~
 
 Si vuestras tablas del foro tienen un prefijo (como es mi caso) aseguraros de especificar la opción "prefix" en el array de conexión a la base de datos.
-<h4 id="phpbb-segon">Creando el componente phpBB3<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-segon">Creando el componente phpBB3<a class="amunt" href="#amunt">arriba</a>
 
 Vamos a por la creación del componente PhpBB3 que nos permitirá el login de usuarios. El componente es una modificación de uno llamado <a rel="nofollow" href="http://bakery.cakephp.org/articles/view/phpbb3-api-bridge" target="_blank">PhpBB3 Api Bridge</a>, del <a rel="nofollow" href="http://bakery.cakephp.org" target="_blank">Bakery</a> the Cake.
 
@@ -495,7 +495,7 @@ class PhpBB3Component extends Object
 Aunque veáis mucho código, no os asustéis. La mayoría de estos métodos son para encriptar la contraseña. Los métodos que nosotros utilizaremos serán **login**, **logout**, **register** y **userExists**.
 
 Lo primero que debéis hacer es substituir la ruta hacia vuestra instalación de phpBB3, en la **línea 11** (subrayada en azul, como no).
-<h4 id="phpbb-tercer">Registro de usuarios<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-tercer">Registro de usuarios<a class="amunt" href="#amunt">arriba</a>
 
 Ahora que ya tenemos el componente vamos a empezar a desarrollar el registro de usuarios. En esta parte editaremos / crearemos tres ficheros: el modelo de usuarios, para añadir las validaciones correspondientes; el controlador de usuarios, para añadir el método de registro y la vista del registro de usuarios.
 
@@ -661,7 +661,7 @@ Si no guardáis la ID del usuario en vuestra base de datos de Cake no podréis h
 Bien, en principio esta parte ya la tenemos. Ahora mismo al registrarse alguien en vuestro sistema queda registrado en el foro y en la base de datos de CakePHP.
 
 Ap!! Pero alto, si lo probáis no funcionará. Adelante, haced la prueba. Es necesaria para seguir adelante.
-<h4 id="phpbb-quart">Errores fatales :s<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-quart">Errores fatales :s<a class="amunt" href="#amunt">arriba</a>
 
 Si estáis utilizando caché, lo más seguro es que el primer error que veáis sea este:
 <blockquote>
@@ -734,7 +734,7 @@ new fuser();
 ~~~
 
 Ahora sí que sí :D. Vuestro registro de usuarios, así como vuestra instalación de phpBB, deberían funcionar perfectamente ;)
-<h4 id="phpbb-cinque">Login de usuarios<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-cinque">Login de usuarios<a class="amunt" href="#amunt">arriba</a>
 
 Bien, ahora pasaremos a la creación de la vista **login.ctp**:
 
@@ -808,7 +808,7 @@ session.cookie_path = /
 session.cookie_domain = .underave.net[/sourcecode]
 
 Hecho esto y subido vuestro php.ini al servidor (antes de subirlo quizás os interese echar un ojo al resto de opciones para ver qué se cuece por ahí) el login de usuarios ya debe funcionar sin problema alguno :)
-<h4 id="phpbb-sise">Y si el usuario quisiera cambiar alguno de sus datos?<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-sise">Y si el usuario quisiera cambiar alguno de sus datos?<a class="amunt" href="#amunt">arriba</a>
 
 A mi parecer, es importante que el usuario no tenga que actualizar sus datos varias veces. Es decir, si el usuario cambia su e-mail o su contraseña desde nuestra aplicación Cake, es importante que éste dato se actualice también en el foro.
 
@@ -895,7 +895,7 @@ Si quisierais utilizar la vía del componente y así no tener que utilizar la ba
 </ul>
 
 <em>**Pista:** Seguramente necesitaréis utilizar la clase 'user' (cambiada por nosotros a fuser, recordad!!) y su método <a rel="nofollow" href="http://area51.phpbb.com/docs/code/phpBB3/user.html#optionset" target="_blank">optionset()</a>.</em></blockquote>
-<h4 id="phpbb-sete">Modificando vuestra plantilla de phpBB<a class="amunt" href="#amunt">arriba</a></h4>
+<h4 id="phpbb-sete">Modificando vuestra plantilla de phpBB<a class="amunt" href="#amunt">arriba</a>
 
 Ahora sólo os faltaría modificar vuestra plantilla de phpBB para enlazar hacia vuestra aplicación Cake, con el registro de usuarios, el login y la edición de datos de vuestro perfil.
 

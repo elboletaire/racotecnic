@@ -135,7 +135,8 @@ Definició tècnica de la música: música és la tècnica o l’art de reunir o
 
 La melodia consisteix en una sèrie de tons amb sentit. La qualitat expressiva d’una melodia pot estar construïda per tensions tonals i l’efecte general d’elevació i caiguda tonal. La qualitat del to ve determinada per la proporcionada relació entre forces oposades: l’energia instintiva contra les inhibicions. En el llenguatge, una veu ferma expressa major força afectiva que una veu dèbil, que pot expressar inhibició i ansietat. La qualitat expressiva de la melodia sembla que va unida a moviments ascendents (que podrien iniciar serenitat, elevació...) i moviments descendents (que podrien significar dignitat, solemnitat...). Des del punt de vista psicoanalític, allò ascendent significa retrocés, fugida d’una mateix, mentre que els moviments descendents són com una presa de consciència, tornada cap a un mateix.**
 **
-<h4>**Atributs de la melodia**</h4>
+
+### **Atributs de la melodia**
 
 La melodia constitueix un tot al que l’oient respon, i pot fer-ho influït per diversos factors:
 
@@ -145,22 +146,26 @@ La melodia constitueix un tot al que l’oient respon, i pot fer-ho influït per
 <li>Finalitat: També anomenada cadència, la impressió de final la suggereix, segurament, el moviment de caiguda de tons, impressió de final o de final pròxim.</li>
 <li>Principi de freqüència: Els temes musicals poden semblar absents de melodia el primer cop que s’escolten; l’audició reiterada és el que aporta la sensació de melodia. Es precisa d’un cert aprenentatge de la freqüència d’associació.</li>
 </ul>
-<h4>**Els intervals**</h4>
+
+### **Els intervals**
 
 Un interval és la relació entre dues notes, espai que les separa.
 Des del punt de vista de l’antropologia musical els intervals petits són utilitzats per pobles pacífics, mentre que els intervals llargs són utilitzats per pobles amb tendències a la guerra. Si això és cert, potser respongui que les passions fortes s’expressin amb crits, i la característica del crit és passar de la màxima altura tonal que un pot emetre a la mínima, o al revés. El cant gregorià, per exemple, es caracteritza per intervals molt curts la qual cosa, junt amb la manca de ritme marcat i la modalitat, atribueix al cant gregorià aquesta qualitat marcadament sedant.**
 **
-<h4>**Melodia i altura tonal**</h4>
+
+### **Melodia i altura tonal**
 
 Depèn de la rapidesa de les vibracions i el nombre d’aquestes per segon. Quan les vibracions succeeixen amb gran rapidesa obtenim sons alts o aguts, i quan ho fan lentament, n’obtenim de greus o profunds. L’altura o gravetat de les notes musicals es dóna dins, tan de cada octava, com en un conjunt d’aquestes.
 L’octava central d’un piano es considera formada per notes d’altura mitjana, les octaves superiors  més agudes i les inferiors més greus.
 L’altura tonal té una gran importància psicològica. Els nens petits acostumen a preferir notes greus, tal i com s’ha pogut comprovar amb, més de 500 nens, a qui es preguntà per les seves preferències, i solien respondre que les notes greus “tenen misteri”, o els espanten. En una pregunta sobre preferències a estudiants de musicoteràpia (a més de 2500 alumnes), resulta que el 70% prefereix les notes mitjanes, el 25% les greus i el 5% restant les agudes. El grau de fatiga mental influeix en el tipus de preferència, ja que s’acostumen a preferir octaves mitjanes o greus, perquè les agudes aporten més aviat sensació de nervis.**
 **
-<h4>**Melodia i timbre**</h4>
+
+### **Melodia i timbre**
 
 La qualitat del so o timbre és el que distingeix una veu humana d’una altra, i d’un instrument musical d’un altre.
 Quan percudim una nota en un instrument es genera un so principal, que és el to fonamental, i la seva mateixa ressonància, que és cada cop més suau fins que desapareix, constitueix els tons parcials (harmònics i anharmònics).
-<h4>**La qualitat tímbrica com a causant d’emocions**</h4>
+
+### **La qualitat tímbrica com a causant d’emocions**
 
 Els tons parcials són, entre d’altres, els que aporten “profunditat” a la música. Per exemple, la música estèreo es diferencia de la “no estèreo” per la impressió de profunditat que imprimeix la música gravada. Aquesta qualitat, naturalment, la posseeix la música viva, la riquesa dels tons parcials de la qual ja ha intentat imitar tant com sigui possible la música estereofònica. La cadència d’aquests tons fa que la música no estereofònica tingui un timbre metàl·lic, com el d’alguna cosa plana, sense relleu o profunditat. En canvi, l’emoció humana és provocada amb més facilitat per la música viva, amb instruments de qualitat, amb bones condicions acústiques, o també per la música estereofònica.
 El mitjà d’execució de l’intèrpret és bàsic. Hi ha intèrprets freds, que no saben transmetre les seves vivències emocionals, dels que diem que no saben connectar amb l’oient, que “no et diuen res”. L’oient només se sent realment satisfet quan, després d’un concert, d’alguna manera, s’ha sentit protagonista del diàleg entre el compositor de l’obra, l’intèrpret, i ell mateix; diàleg vivencial, que és molt més que emotiu, perquè allò essencial de la música és suggerir no només emocions, sinó també vivències; això és l’art.
@@ -202,7 +207,8 @@ En la musicoteràpia, el tempo és molt important, ja que d’ell depèn, en par
 En contrast amb la noció del tempo, el ritme és l’organització de les relacions del temps. En realitat, el ritme és l’element menys “musical” de la música; es pot considerar com un component extramusical, si bé representa l’esquelet de la mateixa. El més essencial de la música és la melodia i l’harmonia, mentre que el ritme té un caràcter funcional d’organitzador i en aquest sentit és pel que té importància en la música.
 La primera i l’última experiència del ritme la tenim en la respiració, a més del ritme cardíac, cerebral, etc. Fora de nosaltres tindríem el ritme còsmic, l’horari, l’estacional... Tot i això, qualsevol d’aquests fets només es constitueixen en estructures rítmiques quan són percebudes pel ser humà.
 En realitat, la percepció rítmica és una disposició instintiva per agrupar ràpidament impressions sensuals de manera nítida i amb precisió, sobre tot quant al temps o intensitat, o ambdues, de manera que d’ella en derivi plaer i eficiència.
-<h4>Qualitats del ritme</h4>
+
+### Qualitats del ritme
 <ol>
 <li>Influeix en tot l’organisme (circulació, respiració, glàndules endocrines, etc.). En el II Congrés Alemany de Musicoteràpia (maig de 1973) s’assegurà que els ritmes lents reduïen la freqüència cardíaca, tranquil·litzaven i endormiscaven, mentre que els ràpids i de gran intensitat de sons eleven la freqüència del pols, i la respiració; en aquest últim cas, a més, les artèries es contrauen i la sang coagula més ràpidament, al mateix temps que en aquesta augmenten les proteïnes i els àcids grassos. Igualment, la tensió muscular creix i inclús es pot transformar la regulació del sucre a la sang.</li>
 <li>El ritme orgànic no és art, en contrast amb el ritme musical, que sí que ho és. El ritme orgànic és quelcom mecànic, un simple estímul sensual.</li>
@@ -316,10 +322,12 @@ La música pot despertar, evocar, provocar, enfortir i desenvolupar qualsevol em
 <li>**Efectes socials:** provoca i afavoreix l’expressió d’un mateix. Tendeix a unir les persones, sobretot a través del cant i l’execució instrumental comunitària, a l’expressar sentiments comuns. És l’art que millor provoca i expressa estats emocionals, independentment de tot individualisme.</li>
 <li>**Efectes espirituals:** com cap altre de les belles arts, una autèntica música de tal caràcter pot provocar l’enteniment d’allò sublim. En totes les religions se l’ha considerat un element imprescindible del culte.</li>
 </ul>
-<h4>**Importància de la música com a expressió d’emocions**</h4>
+
+### **Importància de la música com a expressió d’emocions**
 
 En la base de totes les teories que tracten de buscar els fonaments de l’acció terapèutica de la música es troba un denominador comú: l’emoció. Segons alguns, és la capacitat de la música per provocar sentiments i emocions, ja que aquests influeixen sobre la part somàtica; altres, en canvi, consideren que és la part somàtica la primera en ser influïda per la música, i es transforma després en emoció i sentiment. La crisis actual de valors que sofreix la nostra societat ha comportat que estigui també en crisis el sentiment com a valor fonamental de l’home.
-<h4>**Com pot expressar sentiments la música?**</h4>
+
+### **Com pot expressar sentiments la música?**
 <ol>
 <li>A través de les obres d’art els éssers humans poden comprendre millor la seva realitat subjectiva. Aquest fet és d’enorme valor, al costat del factor purament estètic. La psicologia descriu, teoritza i classifica els sentiment; en canvi, la música ens els fa experimentar, viure, com el millor mètode per entendre’ls i entendre’ns.</li>
 <li>Susan Langer exposa una teoria molt interessant, donant una raó sòlida per contestar aquesta pregunta: “Fet que els sentiments humans són expressats amb major congruència sota la forma musical que sota la del llenguatge, la música pot desvetllar la naturalesa de les emocions amb més detall i veritat que mitjançant el llenguatge”.</li>
@@ -345,13 +353,15 @@ L’ús més significatiu dels ordinadors ha estat la síntesi d’ones sonores.
 Els avenços de les tècniques digitals d’àudio i la versatilitat de la síntesi de sons de l’ordinador han seguit ampliant les oportunitats en aquest camp per als compositors i intèrprets de música culta i popular. L’emmagatzematge digital i el control de sons obtinguts mitjançant micròfons enriqueix les opcions pels compositors de musique concrète i de compositors sonoro-textuals. La naturalesa experimental d’una gran part de la música electroacústica s’està reduint al temps que els compositors poden accedir amb una facilitat cada cop més elevada a sistemes de cost reduït. Finalment, la distinció entre música en viu i música gravada ha perdut tota la seva importància.</li>
 </ul>
 <h3><a name="antecedents_musica_electronica"></a>Antecedents històrics de la música electrònica</h3>
-<h4><strong><a name="introduccio_avantguardisme"></a>Petita introducció a l’Avantguardisme</strong></h4>
+
+### <strong><a name="introduccio_avantguardisme"></a>Petita introducció a l’Avantguardisme</strong>
 
 Entre les darreries del segle XIX i el primer terç del segle XX es produïren tot un seguit de fets que modificaren l'economia, les relacions socials i, en definitiva, les formes de vida de la humanitat. La humanitat del segle XX era molt més dinàmica que la del segle XIX, els canvis es produïen d'una forma molt més ràpida, però l'art i la literatura continuaven ancorades en el passat fins que a l'any 1905 aproximadament, en els ambients urbans europeus culturalment més actius, va aparèixer l'Avantguardisme.
 Van sorgir diferents grups d'avantguarda que des dels punts de vista més diversos i plantejant alternatives i objectius igualment diferents, qüestionaren la cultura tradicional. Tenien un esperit innovador i experimentador. Trencaren els motlles estètics del passat i introduïren la llibertat absoluta en el procés de creació, on l’autor havia d’expressar tal i com li semblés correcte, encara que fos absolutament diferent de l’art tradicional. Això es convertí en una llibertat en la qual es podia jugar amb la imaginació lliurement sense cap tipus de limitació. La gran paradoxa de l’Avantguardisme fou que els escriptors i artistes hagueren de “trencar” per crear.
 
 Els moviments d'avantguarda van ser nombrosos, però els que més transcendència han tingut són el Cubisme, el Futurisme, el Dadaisme i el Surrealisme.
-<h4><strong><a name="musica_avantguardista"></a>Música en els moviments d’avantguarda</strong></h4>
+
+### <strong><a name="musica_avantguardista"></a>Música en els moviments d’avantguarda</strong>
 <h5>**Sorollisme**</h5>
 
 El sorollisme apareix durant la primera meitat del segle XX. Els impulsors d’aquest moviment musical, influïts pel futurisme, defensaven el soroll (entenent per soroll tot so no musical degut a  impulsions irregulars i confuses) com a element integrant dintre les composicions musicals. El soroll podia ser reproduït en directe, donant cops contra el piano, tirant coses per terra, picant objectes estranys, etc., o mitjançant amplificadors, amb el soroll enregistrat en cintes magnetofòniques. També, sovint era transformat en laboratoris, on jugant amb diversos efectes, inversions, volums, etc., s’adaptava el soroll a la composició musical que es volia, en forma de ritme, o com a efecte d’ambient, per exemple.
@@ -378,7 +388,8 @@ Cage viatjà a Europa en diverses ocasions durant els anys cinquanta i les seves
 
 El grau de llibertat d’acció concedit en l’intèrpret pot variar molt en la música aleatòria i es troba estretament relacionat amb el sistema notacional utilitzat. Determinades partitures son purament gràfiques, i hi manca per complet qualsevol tipus de notació tradicional. D’aquesta manera, es permet a l’intèrpret que interpreti la “partitura” més o menys lliurement, amb poques instruccions específiques, en el cas de que n’hi hagi alguna. Altres obres, com les partitures “instructives”, són completament verbals. El més habitual és, tot i així, trobar una barreja de notació tradicional i gràfica, amb alguns elements especificats, mentre que d’altres queden en mans de la lliure elecció de l’intèrpret.
 <h3><a name="musica_electronica"></a>La música electrònica: definició i estils principals</h3>
-<h4>**La música electrònica. Què és?**</h4>
+
+### **La música electrònica. Què és?**
 
 S’ha dit, i es segueix dient, que la música electrònica és “ la música del futur”, aquest fil musical que escoltaran els nostre fills perquè, és clar, la nostra música és encara una altra. La idea de la música generada a partir de mitjans no naturals, amb instruments que es serveixen de fonts d’energia no humanes, d’aparells, valgui la redundància, electrònics, doncs, és en molts casos encara un misteri, una realitat que costa comprendre i, tanmateix, compartir. S’ha assimilat el rock, s’ha superat el jazz, s’ha acceptat el pop i, per segons qui, la música clàssica encara segueix essent “l’autèntica” música. Tot allò que es forma a partir de sorolls, bucles, mostres, ritmes i síntesi de so segueix essent un món llunyà, un planeta prohibit. És molt fàcil despatxar la música electrònica amb un desanimat “sí, és interessant, però no és per avui. Aquesta és la música del futur”. I bé, però quin futur?
 
@@ -389,7 +400,8 @@ El que és contradictori és que en una societat mundial –globalitzada, curios
 Que ningú s’escandalitzi: la música electrònica és la música del nostre temps present perquè, es miri com es miri, està per tot arreu, aquí i allà. Associada en un principi a l’academicisme de les avantguardes clàssiques i més tard a la pròpia roda de funcionament del rock, l’electrònica, per la seva capacitat de generar ritmes nous, sons inèdits, esquemes lliures, oportunitats expressives sense precedents, aconseguí aviat independitzar-se, formar el seu propi llenguatge i un altre de simultani per les seves músiques laterals. Música electrònica és techno i house, però també el pop dels últims vint anys que s’ha servit de màquines, samplers i caixes de ritmes. El mitjà és el missatge i la forma és el fons: l’electrònica no és el futur, sinó l’eina per intentar arribar a ell i deixar una empremta en el present. És un encanteri més poderós del que es pensa.
 
 L’eclosió de la música de ball com a eina d’oci i mecanisme d’experimentació en el marc popular està en l’arrel del progrés i l’acceptació cada dia més oberta d’una estètica que al principi va haver d’agafar influències d’altres disciplines i estils i que ara, inversament, les determina. Avui, qui vol ser “modern”, utilitza màquines i les incrusta, costi el que costi, en contextos determinats. Qui no ho fa és titllat de retrògrada. I qui ho fa bé ajuda a dibuixar el mapa d’un temps –present; el futur no hi ha forma de preveure’l- excitant, canviant, elèctric. És la nostra música.
-<h4><strong><a name="dj"></a>El Disc Jockey</strong></h4>
+
+### <strong><a name="dj"></a>El Disc Jockey</strong>
 
 Popularment se’ls anomena DJ’s.
 L’essència de l’art de punxar discos és bàsicament generar fusions entre una pista d’àudio provenint d’una font A amb una altra d’una font B, generant ritmes i textures diverses, amb la finalitat de generar en el públic assistent al club o a la festa, una incitació lúdica i espontània per ballar.
@@ -405,7 +417,8 @@ L’origen dels Dj’s es remunta a finals de la dècada dels 60, on el desenvol
 Després, amb la dècada dels 70, la música disco i els discos de vinil amb una major qualitat sonora, feu que els disc jockeys es consolidessin, produint també tot el moviment dels clubs o “clubbing”, que seria el context de treball dels Dj’s actuals.
 
 La creativitat del Dj s’ha disparat. Del simple acompassament estructural i rítmic, fins a crear música a partir dels sons i sorolls del propi fregament del vinil.
-<h4><strong><a name="estils_musica_electronica"></a>Estils principals en la música electrònica</strong></h4>
+
+### <strong><a name="estils_musica_electronica"></a>Estils principals en la música electrònica</strong>
 
 Cal tenir present que la majoria dels estil descrits en aquest recull, gaudeixen de diferents subgèneres musicals que se’n deriven; que en alguns casos apareixen en gran nombre.
 <h5>**El house**</h5>
@@ -454,7 +467,8 @@ Terence McKenna
 
 **
 **
-<h4>**Què és un xaman?**</h4>
+
+### **Què és un xaman?**
 
 ** **
 Els “xamans” foren en un altre temps doctors, sacerdots, treballadors socials i místics. Se’ls anomenà bojos, foren sovint perseguits al llarg de la història , menyspreats als anys 1960 com una ficció “resseca” i “insípida” de la imaginació de l’antropòleg, i ara estan tan de moda que inspiren intensos debats acadèmics com el nom de grups musicals. Els xamans han atret sobre sí mateixos provablement moltes més opinions diverses i conflictives que qualsevol altre tipus d’especialista espiritual. El xaman sembla ser tota classe de coses per tota classe de gent.
@@ -465,7 +479,8 @@ No pot existir un xaman sense una societat i una cultura que l’envoltin. El xa
 
 **
 **
-<h4>**Música i dansa xamàniques**</h4>
+
+### **Música i dansa xamàniques**
 
 ** **
 
@@ -479,7 +494,8 @@ El recent interès pels “estats alterats de consciència” (EAC) ha conduït 
 
 **
 **
-<h4><strong><a name="dansa_electronica"></a>La dansa electrònica</strong></h4>
+
+### <strong><a name="dansa_electronica"></a>La dansa electrònica</strong>
 
 ** **
 
@@ -493,7 +509,8 @@ El moment “futur-primitiu” és capturat per la dansa electrònica. Aquesta m
 
 **
 **
-<h4><strong><a name="transit_musical"></a>L’estat del trànsit musical</strong></h4>
+
+### <strong><a name="transit_musical"></a>L’estat del trànsit musical</strong>
 
 ** **
 
@@ -526,7 +543,8 @@ Qualsevol moviment a una consciència més alta permanent requeriria una major c
 
 **
 **
-<h4><strong><a name="rave"></a>Rave. De què es tracta?</strong></h4>
+
+### <strong><a name="rave"></a>Rave. De què es tracta?</strong>
 
 ** **
 <blockquote>
@@ -557,7 +575,8 @@ La mecànica d’organització d’una rave és la següent:
 
 **
 **
-<h4><strong><a name="raves_i_religio"></a>Raves i “religió”</strong></h4>
+
+### <strong><a name="raves_i_religio"></a>Raves i “religió”</strong>
 
 ** **
 Des que se sap que l'ésser humà es humà, hi han hagut rituals. Sempre al voltant de dues coses: la musica i la religió. Des dels principis s'han colpejat troncs, fustes, metalls i tota mena de materials molt variats, per tal de provocar un 'soroll' més o menys rítmic que intentava evocar o provocar alguna mena de sensació 'extraordinària' als que participaven en aquests rituals. Molt sovint, s'acompanyava el ritual amb l’ingesta d'algun tipus de substància embriagadora. Els xamans i oficiants viatjaven a altres móns, on vivien les seves divinitats, per preguntar coses, demanar consell, guarir malalties... Per altra banda, la religió sempre s'ha fet servir per donar algun sentit a la vida. Hi ha sempre quelcom que fa i desfà, que és generós i magnànim amb els bons i cruel i despietat amb els dolents. Totes i cada una de les religions que han existit són iguals, tan en això com en el fet que hi ha una iniciació prèvia, sense la qual l'individu no pot participar plenament com un membre més de la comunitat. A l'antiguitat, aquesta iniciació solia també ser acompanyada de música i el consum de determinades substàncies, tan dels xamans com dels individus que eren iniciats. Se’ls mostrava el món ocult, la terra dels déus, generalment aprenien una mica sobre la vida i la mort; però mai passaven d'allà. El dret/poder de viatjar a altres móns sempre pertanyia al xaman o al guia espiritual. Per que? No seria lògic que tothom tingues accés a aquest coneixement? Sí, però en aquella època, tothom tenia un paper molt ben definit: els guerrers lluitaven, les dones s'ocupaven del menjar i de traspassar la història i les tradicions a les noves generacions i els mestres espirituals procuraven que els déus fossin favorables i benèvols. Si un guerrer estigués sempre demanant ajut als déus, qui defensaria el poblat en cas d'atac? El guia espiritual solia ser algú que ja era instruït des de petit per aquestes arts. Molt sovint ja li venia fins i tot de família. Coneixia tots els membres de la tribu, sabia dels seus malestars, les seves preguntes, les seves inquietuds... era la seva feina, saber el que la tribu volia i ajudar a resoldre els problemes que poguessin sorgir. I centralitzant l'accés al 'món superior' diví, envoltant la cerimònia amb rituals esotèrics, significats estranys i també alguna que altra parafernàlia. Tot el que tenia relació amb aquest 'món superior' passava per les seves mans.
