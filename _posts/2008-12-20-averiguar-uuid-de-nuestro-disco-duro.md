@@ -40,38 +40,38 @@ Tras llevar mi ordenador unos días sin apagarse, hoy lo he actualizado y al rei
 <a id="more"></a><a id="more-63"></a><br />
 La solución ha sido reemplazar estas rutas por "<a title="UUID en Wikipedia" href="http://en.wikipedia.org/wiki/UUID" target="_blank">UUID</a>". Para averiguar dicho identificador debéis hacer lo siguiente:
 
-user@user:~$ ls -l /dev/disk/by-uuid/
+    user@user:~$ ls -l /dev/disk/by-uuid/
 
 Esto nos mostrará nuestra tabla de particiones pero con el identificador de cada partición, algo similar a esto:
 
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">3004cc48-1d23-4c34-84ca-e1426c7c4645</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sdb1</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">3ddd2f0f-0f5c-408d-a3ae-3768f1433aa9</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sda3</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">461a0de5-a723-42d2-bc29-59c4718a6513</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sde2</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 01:28 <span style="color: #34e2e2;">4905-9B43</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sdj6</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">4f6871ab-0bb1-49e7-8f68-794f8a1b7adb</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sdd1</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">74f3b691-0be5-421d-bd09-6000b9ba77a6</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sdc1</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">8500b4f6-d037-4090-94ec-4637017e37dc</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sda5</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 01:28 <span style="color: #34e2e2;">8E5FB69810347B51</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sdj5</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">d6cd7914-57cd-4ba7-837d-e3777a22e127</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sda6</span>
-lrwxrwxrwx 1 root root 10 2008-12-20 02:28 <span style="color: #34e2e2;">E41CC33A1CC30710</span> -> <span style="color: #e7d64d;background-color:#2E3436">../../sda1</span>
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 3004cc48-1d23-4c34-84ca-e1426c7c4645 -> ../../sdb1
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 3ddd2f0f-0f5c-408d-a3ae-3768f1433aa9 -> ../../sda3
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 461a0de5-a723-42d2-bc29-59c4718a6513 -> ../../sde2
+    lrwxrwxrwx 1 root root 10 2008-12-20 01:28 4905-9B43 -> ../../sdj6
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 4f6871ab-0bb1-49e7-8f68-794f8a1b7adb -> ../../sdd1
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 74f3b691-0be5-421d-bd09-6000b9ba77a6 -> ../../sdc1
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 8500b4f6-d037-4090-94ec-4637017e37dc -> ../../sda5
+    lrwxrwxrwx 1 root root 10 2008-12-20 01:28 8E5FB69810347B51 -> ../../sdj5
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 d6cd7914-57cd-4ba7-837d-e3777a22e127 -> ../../sda6
+    lrwxrwxrwx 1 root root 10 2008-12-20 02:28 E41CC33A1CC30710 -> ../../sda1
 
 Una vez ya tenemos la uuid de la unidad que nos interese, añadimos /editamos la línea correspondiente en el fichero fstab:
 
-user@user:~$ sudo nano /etc/fstab
+    user@user:~$ sudo nano /etc/fstab
 
 Y ahí añadimos la línea que nos interese...
 
-# /dev/sdc1
-UUID=74f3b691-0be5-421d-bd09-6000b9ba77a6	/media/tera	reiserfs relatime	0	21
+    # /dev/sdc1
+    UUID=74f3b691-0be5-421d-bd09-6000b9ba77a6	/media/tera	reiserfs relatime	0	21
 
 Este post está creado con la intención de ayudaros a averiguar las UUID de vuestros discos duros, si queréis más información sobre cómo configurar fstab podéis consultar cualquiera de estos enlaces:
-<blockquote>
 
-<ul>
-<li><a href="http://es.wikipedia.org/wiki/Fstab" target="_blank">Información detallada de fstab en la Wikipedia</a></li>
-<li><a href="http://manual.sidux.com/es/part-uuid-es.htm" target="_blank">Información detallada sobre UUID i fstab</a></li>
-<li><a href="http://comunnicate.wordpress.com/2008/11/04/montar-particion-ntfs/" target="_blank">Montar partición NTFS en Ubuntu Intrepid Ibex</a></li>
-<li><a href="http://www.naguissa.com/blog.php?verpost&amp;comentario=601" target="_blank">Configurar fstab para montar unidades de windows o samba en el arranque</a></li>
-<li><a href="http://www.cristalab.com/tips/26881/montar-escribir-y-leer-particiones-ntfs-desde-ubuntu.html" target="_blank">Montar, Escribir y Leer particiones NTFS desde Ubuntu</a></li>
-</ul>
+<blockquote>
+  <ul>
+    <li><a href="http://es.wikipedia.org/wiki/Fstab" target="_blank">Información detallada de fstab en la Wikipedia</a></li>
+    <li><a href="http://manual.sidux.com/es/part-uuid-es.htm" target="_blank">Información detallada sobre UUID i fstab</a></li>
+    <li><a href="http://comunnicate.wordpress.com/2008/11/04/montar-particion-ntfs/" target="_blank">Montar partición NTFS en Ubuntu Intrepid Ibex</a></li>
+    <li><a href="http://www.naguissa.com/blog.php?verpost&amp;comentario=601" target="_blank">Configurar fstab para montar unidades de windows o samba en el arranque</a></li>
+    <li><a href="http://www.cristalab.com/tips/26881/montar-escribir-y-leer-particiones-ntfs-desde-ubuntu.html" target="_blank">Montar, Escribir y Leer particiones NTFS desde Ubuntu</a></li>
+  </ul>
 </blockquote>
