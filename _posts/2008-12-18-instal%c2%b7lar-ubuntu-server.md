@@ -60,11 +60,21 @@ Un cop <a href="http://www.ubuntu.com/getubuntu/download" target="_blank">descar
 
 A la selecció d'idioma us aconsello que empreu anglès, ja que si mai teniu cap problema la major part dels errors els trobareu en anglès per internet molt abans que en català o en castellà. A més avui dia el traductor de google no va gens malament (per aquells que tingueu problemes amb l'idioma).
 
-[caption id="attachment_37" align="aligncenter" width="576" caption="Selecció d&#39;idioma"]<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1.png"><img class="size-full wp-image-37" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1.png" alt="Selecció d'idioma" width="576" height="432" /></a>[/caption]
+<figure>
+  <a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1.png"><img class="size-full wp-image-37" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-1.png" alt="Selecció d'idioma" width="576" height="432" /></a>
+  <figcaption>
+    Selecció d&#39;idioma
+  </figcaption>
+</figure>
 
 Un cop iniciat el programa d'instal·lació ens tornarà a demanar l'idioma (si abans us havíeu equivocat ara podeu rectificar). Després d'això, si heu escollit anglès preneu cura de la ubicació en la que esteu, haureu d'indicar "Other" i buscar la vostra ubicació (probablement "Europe" / "Spain").
 
-[caption id="attachment_40" align="aligncenter" width="576" caption="Detecció de l&#39;idioma"]<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3.png"><img class="size-full wp-image-40" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3.png" alt="Detecció de l'idioma" width="576" height="178" /></a>[/caption]
+<figure>
+  <a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3.png"><img class="size-full wp-image-40" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-3.png" alt="Detecció de l'idioma" width="576" height="178" /></a>
+  <figcaption>
+    Detecció de l&#39;idioma
+  </figcaption>
+</figure>
 
 Passat aquest punt ens demanarà si volem detectar l'idioma del teclat (keyboard layout), li indiquem que sí i passem la prova que ens demana.
 
@@ -72,7 +82,12 @@ Finalment ens indicarà si l'idioma del teclat és "es", en cas que no et marqui
 
 Bé, cap problema fins ara no? Tot bastant fàcil.
 
-[caption id="attachment_41" align="aligncenter" width="576" caption="Particions dels discos"]<a href="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4.png"><img class="size-full wp-image-41" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4" src="http://racoinformatic.underave.net/wp-content/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4.png" alt="Particions dels discos" width="576" height="432" /></a>[/caption]
+<figure>
+  <a href="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4.png"><img class="size-full wp-image-41" title="captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4" src="{{ site.url }}/uploads/2008/12/captura-sun-xvm-virtualbox-ubuntu-hwvirtex-4.png" alt="Particions dels discos" width="576" height="432" /></a>
+  <figcaption>
+    Particions dels discos
+  </figcaption>
+</figure>
 
 Ara comença el tema de les particions, on la cosa es posa interessant. Em podria esplaiar molt i explicar-vos mil coses sobre el <a href="http://dns.bdat.net/documentos/sistema_ficheros/html/" target="_blank">sistema de fitxers de linux</a>, però confio que si esteu instal·lant una versió de servidor és perquè ja heu provat versions d'"escriptori" (desktop) així doncs no m'hi capficaré molt en explicar certes coses, si no enteneu quelcom sabeu que podeu emprar google o seguir les referències que vagi fent.
 

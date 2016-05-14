@@ -55,7 +55,12 @@ Voy a explicaros una forma sencilla reemplazar vuestras capas <strong><em>flashM
 
 Para los que no lo sepáis, <a rel="nofollow" href="http://www.growl.info/" target="_blank">Growl</a> es un sistema de advertencias de Mac que nos unifica todas las advertencias (tanto de sistema como las del resto de aplicaciones) siguiendo el mismo estilo y mostrándose y ocultándose con efectos de entrada y salida.
 
-[caption id="" align="aligncenter" width="310" caption="Implementación de Gritter en "]<a href="http://www.underave.net/barna23"><img src="http://blog.underave.net/wp-content/uploads/2009/11/gritter.png" alt="" width="310" height="262" /></a>[/caption]
+<figure>
+  <a href="http://www.underave.net/barna23"><img src="http://blog.underave.net/wp-content/uploads/2009/11/gritter.png" alt="" width="310" height="262" /></a>
+  <figcaption>
+    Implementación de Gritter en
+  </figcaption>
+</figure>
 
 <a href="</dd">Hay varios plugins de jQuery que imitan Growl. En </a><a title="6 jQuery growl-like notification systems" rel="nofollow" href="http://webtoolkit4.me/2009/08/13/jquery-growl-likenotification-systems/" target="_blank">este enlace</a> podéis encontrar los que probablemente sean los más conocidos y utilizados. Para el ejemplo que voy a hacer me he valido de <a title="Gritter" rel="nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a>, que es el plugin que, a mi parecer, más se asemeja a Growl.
 

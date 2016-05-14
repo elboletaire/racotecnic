@@ -149,7 +149,12 @@ airodump-ng ath0
 
 La pantalla está dividida en dos partes importantes: la de AP (access points), en la parte superior y la de clientes, en la parte inferior.
 
-[caption id="" align="aligncenter" width="379" caption="airodump-ng (clic para ampliar)"]<a rel="lightbox" href="{{ site.url }}/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="{{ site.url }}/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>[/caption]
+<figure>
+  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="{{ site.url }}/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>
+  <figcaption>
+    airodump-ng (clic para ampliar)
+  </figcaption>
+</figure>
 
 Las cosas que más nos interesan son BSSID (MAC del AP), PWR (potencia de la señal), #Data que nos dice el número de paquetes captados (paquetes que luego servirán para averiguar la contraseña, cuantos más paquetes más posibilidades de conseguirla), CH (canal), ENC (tipo de encriptación que para seguir este tutorial debe ser WEP), ESSID (nombre de la red), STATION (usuarios conectados al AP).  Mi red es la que tiene como nombre "JAZZTEL_2C" con BSSID 00:1A:23:14:23:3C y, evidentemente, esta es la que voy a atacar, así que empecemos capturando paquetes sólo para esta red (lo que reducirá el tamaño del fichero generado):
 
@@ -182,7 +187,12 @@ ifconfig ath0 | grep HWaddr
 
 Si os da vuestra dirección separada por guiones recordad ponerla separada por puntos y sólo las 6 primeras parejas de números.  Hecho esto veréis como aireplay-ng empieza a enviar paquetes al AP. Puede que pasen unos minutos hasta que los "ARP" empiezan a incrementar, pero llegado ese momento podréis ver como los "#Data" de airodump-ng empiezan a subir rápidamente.
 
-[caption id="attachment_327" align="aligncenter" width="461" caption="Inyección de tráfico con aireplay-ng"]<a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng.png"><img class="size-full wp-image-327" title="aireplay-ng" src="{{ site.url }}/uploads/2009/03/aireplay-ng.png" alt="aireplay-ng" width="461" height="60" /></a>[/caption]
+<figure>
+  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng.png"><img class="size-full wp-image-327" title="aireplay-ng" src="{{ site.url }}/uploads/2009/03/aireplay-ng.png" alt="aireplay-ng" width="461" height="60" /></a>
+  <figcaption>
+    Inyección de tráfico con aireplay-ng
+  </figcaption>
+</figure>
 
 Si estamos atacando utilizando la mac de un STATION en lugar de la nuestra, nos aparecerá este error:
 
@@ -219,7 +229,12 @@ ifconfig ath0 up
 
 Haciendo esto nos aseguramos que el AP crea que somos uno de sus clientes y facilitará la obtención de paquetes ARP.
 
-[caption id="attachment_332" align="aligncenter" width="561" caption="aireplay-ng enviando paquetes"]<a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png"><img class="size-full wp-image-332" title="aireplay-ng_sending" src="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png" alt="aireplay-ng enviando paquetes" width="561" height="60" /></a>[/caption]
+<figure>
+  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png"><img class="size-full wp-image-332" title="aireplay-ng_sending" src="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png" alt="aireplay-ng enviando paquetes" width="561" height="60" /></a>
+  <figcaption>
+    aireplay-ng enviando paquetes
+  </figcaption>
+</figure>
 <h4><a name="authentication"></a>Autenticación en el router</h4>
 
 En ocasiones puede que se nos presente el siguiente error al ejecutar la inyección de tráfico con aireplay-ng:
@@ -259,7 +274,12 @@ aircrack-ng jazztel2c-01.cap
 
 Y.. presto! Ya tenemos nuestra clave:
 
-[caption id="attachment_338" align="aligncenter" width="286" caption="Contraseña desencriptada (clic para ampliar)"]<a title="aircrack-ng (ampliar)" rel="lightbox" href="{{ site.url }}/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="{{ site.url }}/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>[/caption]
+<figure>
+  <a title="aircrack-ng (ampliar)" rel="lightbox" href="{{ site.url }}/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="{{ site.url }}/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>
+  <figcaption>
+    Contraseña desencriptada (clic para ampliar)
+  </figcaption>
+</figure>
 <h3><a name="descargas"></a>Descarga de ficheros</h3>
 
 En caso de que no pudierais utilizar "aptitude" porque la máquina desde la cual queréis hacer los ataques no tiene conexión a internet podéis descargar todos los programas que he ido mencionando desde la página de paquetes de ubuntu:

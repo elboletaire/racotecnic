@@ -47,19 +47,44 @@ Una de las anécdotas interesantes sobre este sintetizador, <span style="color: 
 
 En la siguiente serie de fotografías podemos observar la evolución de los sintetizadores FM Yamaha.
 
-[caption id="attachment_1987" align="aligncenter" width="297" caption="Yamaha GS-1"]<a href="http://www.racotecnic.com/wp-content/uploads/2011/07/gs1.jpg"><img class="size-full wp-image-1987" title="Yamaha GS-1" src="http://www.racotecnic.com/wp-content/uploads/2011/07/gs1.jpg" alt="Yamaha GS-1" width="297" height="203" /></a>[/caption]
+<figure>
+  <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/gs1.jpg"><img class="size-full wp-image-1987" title="Yamaha GS-1" src="http://www.racotecnic.com/wp-content/uploads/2011/07/gs1.jpg" alt="Yamaha GS-1" width="297" height="203" /></a>
+  <figcaption>
+    Yamaha GS-1
+  </figcaption>
+</figure>
 
-[caption id="attachment_1990" align="aligncenter" width="304" caption="Yamaha CE-20"]<a href="http://www.racotecnic.com/wp-content/uploads/2010/01/yamahace20.jpg"><img class="size-full wp-image-1990" title="Yamaha CE-20" src="http://www.racotecnic.com/wp-content/uploads/2010/01/yamahace20.jpg" alt="Yamaha CE-20" width="304" height="99" /></a>[/caption]
+<figure>
+  <a href="http://www.racotecnic.com/wp-content/uploads/2010/01/yamahace20.jpg"><img class="size-full wp-image-1990" title="Yamaha CE-20" src="http://www.racotecnic.com/wp-content/uploads/2010/01/yamahace20.jpg" alt="Yamaha CE-20" width="304" height="99" /></a>
+  <figcaption>
+    Yamaha CE-20
+  </figcaption>
+</figure>
 
-[caption id="attachment_1985" align="aligncenter" width="300" caption="Yamaha DX-7"]<a href="http://www.racotecnic.com/wp-content/uploads/2011/07/dx71.gif"><img class="size-medium wp-image-1985" title="Yamaha DX-7" src="http://www.racotecnic.com/wp-content/uploads/2011/07/dx71-300x113.gif" alt="Yamaha DX-7" width="300" height="113" /></a>[/caption]
+<figure>
+  <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/dx71.gif"><img class="size-medium wp-image-1985" title="Yamaha DX-7" src="http://www.racotecnic.com/wp-content/uploads/2011/07/dx71-300x113.gif" alt="Yamaha DX-7" width="300" height="113" /></a>
+  <figcaption>
+    Yamaha DX-7
+  </figcaption>
+</figure>
 
 Aunque no nos entrentendremos mucho más sobre los diferentes sintetizadores FM caben destacar de otras marcas los <span style="color: #666699;"><strong>Roland D-50. </strong><span style="color: #000000;">Y</span></span> de modelos Yamaha posteriores al 1990, como los <span style="color: #666699;">DX-200</span> o los<span style="color: #666699;"> FS1R</span>. O incluso VSTi como <span style="color: #666699;">Native Instruments FM7-FM8</span>. A titulo personal os diría que si os interesa este tipo de sintetizadores, os entrentengais primero con un <span style="color: #666699;">FM8 </span>para familiarizarse un poco en como va el tema. Ya que, sobretodo las primeras veces es bastante frustrante los resultados que da, y más, si no tenemos una cierta dinámica en programación de sintetizadores.
 
 Aquí os dejo también algunas fotos algunos de los instrumentos antes mencionados.
 
-[caption id="attachment_1984" align="aligncenter" width="300" caption="Roland D-50"]<a href="http://www.racotecnic.com/wp-content/uploads/2011/07/d50.jpg"><img class="size-medium wp-image-1984" title="Roland D-50" src="http://www.racotecnic.com/wp-content/uploads/2011/07/d50-300x105.jpg" alt="Roland D-50" width="300" height="105" /></a>[/caption]
+<figure>
+  <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/d50.jpg"><img class="size-medium wp-image-1984" title="Roland D-50" src="http://www.racotecnic.com/wp-content/uploads/2011/07/d50-300x105.jpg" alt="Roland D-50" width="300" height="105" /></a>
+  <figcaption>
+    Roland D-50
+  </figcaption>
+</figure>
 
-[caption id="attachment_1986" align="aligncenter" width="300" caption="Yamaha DX-200"]<a href="http://www.racotecnic.com/wp-content/uploads/2011/07/dx200.jpg"><img class="size-medium wp-image-1986" title="Yamaha DX-200" src="http://www.racotecnic.com/wp-content/uploads/2011/07/dx200-300x184.jpg" alt="Yamaha DX-200" width="300" height="184" /></a>[/caption]
+<figure>
+  <a href="http://www.racotecnic.com/wp-content/uploads/2011/07/dx200.jpg"><img class="size-medium wp-image-1986" title="Yamaha DX-200" src="http://www.racotecnic.com/wp-content/uploads/2011/07/dx200-300x184.jpg" alt="Yamaha DX-200" width="300" height="184" /></a>
+  <figcaption>
+    Yamaha DX-200
+  </figcaption>
+</figure>
 
 Y ahora viene, posiblemente, la pregunta del millón: <strong>¿Por qué síntesis FM? </strong>Como diría algún pseudo-intelectual mientras se atusa la barba con su mano: <em>"Me agrada que me hagas esta pregunta".</em> :D
 
