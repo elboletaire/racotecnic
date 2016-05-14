@@ -1,0 +1,65 @@
+---
+layout: post
+status: publish
+published: true
+title: Llegó la hora de las palomitas
+author:
+  display_name: Booletaire
+  login: elboletaire
+  email: elboletaire@gmail.com
+  url: http://www.underave.net
+author_login: elboletaire
+author_email: elboletaire@gmail.com
+author_url: http://www.underave.net
+excerpt: "Si os gustó <a title=\"Leer entrada: Adiós discos duros multimedia\" href=\"http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/\"
+  target=\"_self\">WD TV</a>, esto os gustará más :D\r\n\r\nHace ya un tiempo que
+  se comercializa en españa el producto <strong>PopCorn Hour </strong>también conocido
+  como . Según su página web...\r\n<blockquote><strong>El PopCorn Hour A-110</strong>
+  es un dispositivo de red todo en uno que utiliza como motor el más potente chipset
+  decodificador de Sigma, el SMP8635C. Es una combinación de Reproductor Media Player
+  Digital (DMP), un dispositivo de almacenamiento en red (NAS) y un servidor . Todas
+  estas características le convierten en un dispositivo que permite disponer en un
+  solo producto visualizar, escuchar, almacenar, compartir, guardar… sus ficheros
+  con una facilidad incomparable. El NMT le brinda todo lo que requiere el entretenimiento
+  digital en un solo aparato. Toda una revolución de reproducción y conectividad.\r\n\r\nUna
+  vez conectado a su red, el NMT detectará automáticamente cualquier servidor PnP
+  AV que encuentre en su red local y agregará todo el contenido disponible. Esto permite
+  que el NMT presente en la pantalla de la TV todos los contenidos multimedia a su
+  alcance. Como almacenamiento en red, NMT permite que el usuario guarde, acceda o
+  copie sus contenidos multimedia al dispositivo NMT via FTP o Samba. Esta funcionalidad
+  permite que cualquier dispositivo UPnP o DLNA “streaming” acceda al NMT para transferir
+  archivos.\r\n\r\nAsí, el NMT permite compartir, reproducir o hacer “streaming” de
+  sus contenidos multimedia digitales sin la dependencia de un PC, racionalizando
+  su configuración.</blockquote>\r\nSi queréis podéis seguir leyendo más sobre el
+  producto en <a rel=\"nofollow\" href=\"http://www.popcornhour.es/popcornhour_A110\"
+  target=\"_blank\">su web oficial (en castellano)</a>.\r\n\r\n"
+wordpress_id: 837
+wordpress_url: http://racotecnic.underave.net/?p=837
+date: '2009-10-26 15:20:09 +0100'
+date_gmt: '2009-10-26 14:20:09 +0100'
+categories:
+- Web
+- Hardware
+tags:
+- Multimedia
+- Discos duros
+- Full HD
+- Bittorrent
+---
+<p>Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D</p>
+<p>Hace ya un tiempo que se comercializa en españa el producto <strong>PopCorn Hour </strong>también conocido como . Según su página web...</p>
+<blockquote><p><strong>El PopCorn Hour A-110</strong> es un dispositivo de red todo en uno que utiliza como motor el más potente chipset decodificador de Sigma, el SMP8635C. Es una combinación de Reproductor Media Player Digital (DMP), un dispositivo de almacenamiento en red (NAS) y un servidor . Todas estas características le convierten en un dispositivo que permite disponer en un solo producto visualizar, escuchar, almacenar, compartir, guardar… sus ficheros con una facilidad incomparable. El NMT le brinda todo lo que requiere el entretenimiento digital en un solo aparato. Toda una revolución de reproducción y conectividad.</p>
+<p>Una vez conectado a su red, el NMT detectará automáticamente cualquier servidor PnP AV que encuentre en su red local y agregará todo el contenido disponible. Esto permite que el NMT presente en la pantalla de la TV todos los contenidos multimedia a su alcance. Como almacenamiento en red, NMT permite que el usuario guarde, acceda o copie sus contenidos multimedia al dispositivo NMT via FTP o Samba. Esta funcionalidad permite que cualquier dispositivo UPnP o DLNA “streaming” acceda al NMT para transferir archivos.</p>
+<p>Así, el NMT permite compartir, reproducir o hacer “streaming” de sus contenidos multimedia digitales sin la dependencia de un PC, racionalizando su configuración.</p></blockquote>
+<p>Si queréis podéis seguir leyendo más sobre el producto en <a rel="nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">su web oficial (en castellano)</a>.</p>
+<p><a id="more"></a><a id="more-837"></a><br />
+En fin, que es como una pequeña estación multimedia conectada a internet en la que podemos tener el bittorrent descargando películas a la vez que estamos viendo vídeos del youtube (o descargándolos).. tiene conexiones para varios USB, además de huecos para discos duro SATA para ampliarle la capacidad al gusto de cada uno... tiene decenas de especificaciones más... en esta imagen podéis ver algunas de ellas:</p>
+<p style="text-align: center;"><img class="size-full wp-image-840 aligncenter" title="caracteristicas_popcornhour" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" width="498" height="260" /></p>
+<p>Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quejan de que el PopCorn Hour <strong>se calienta en exceso</strong> aunque dicen que añadiendo un ventilador desaparecen los problemas.</p>
+<p style="text-align: center;"><a href="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_03.jpg"><img class="alignnone size-thumbnail wp-image-838" title="A110_03" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_03-150x150.jpg" alt="A110_03" width="150" height="150" /></a><a href="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_04.jpg"><img class="alignnone size-thumbnail wp-image-839" title="A110_04" src="http://racotecnic.underave.net/wp-content/uploads/2009/10/A110_04-150x150.jpg" alt="A110_04" width="150" height="150" /></a></p>
+<blockquote>
+<ul>
+<li><a rel="nofollow" href="http://www.popcornhour.es/" target="_blank">Página oficial PopCorn Hour España</a></li>
+<li><a rel="nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">Detalles PopCorn Hour A100</a></li>
+</ul>
+</blockquote>

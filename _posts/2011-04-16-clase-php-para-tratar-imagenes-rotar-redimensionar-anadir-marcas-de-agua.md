@@ -1,0 +1,115 @@
+---
+layout: post
+status: publish
+published: true
+title: Clase PHP para tratar imágenes (rotar, redimensionar, añadir marcas de agua..)
+author:
+  display_name: Booletaire
+  login: elboletaire
+  email: elboletaire@gmail.com
+  url: http://www.underave.net
+author_login: elboletaire
+author_email: elboletaire@gmail.com
+author_url: http://www.underave.net
+excerpt: "<blockquote><strong>Actualizado:</strong> Tanto la clase como este post
+  han sido actualizados a fecha 14 de enero de 2012.</blockquote>\r\n\r\n<img class=\"alignright
+  size-full wp-image-1473\" title=\"all_together\" src=\"http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg\"
+  alt=\"\" width=\"259\" height=\"258\" />Hace ya un tiempo publiqué (en inglés) un
+  <a title=\"Watermark &amp; Image Component for CakePHP\" href=\"http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/\"><strong>Componente
+  para el tratamiento de imágenes en CakePHP</strong></a>. Hoy me he pasado un rato
+  actualizándolo y aprovechando he decidido publicar una entrada con los cambios.\r\n\r\nAunque
+  la he modificado considerablemente, he procurado no modificar el funcionamiento
+  de ésta. Aquí vienen los cambios:\r\n<ul>\r\n\t<li>He eliminado el uso del método
+  obsoleto mime_content_type.</li>\r\n\t<li>Ahora utilizo la clase Exception para
+  tratar los errores.</li>\r\n\t<li>He añadido el método \"flip\" para hacer espejo
+  de la imagen.</li>\r\n\t<li>He limpiado el código y he arreglado algún que otro
+  fallo.</li>\r\n\t<li>Ahora las transparencias funcionan correctamente.</li>\r\n</ul>\r\nPodéis
+  descargar el proyecto desde GibHub:\r\n\r\n<a title=\"Descargar Watimage\" href=\"https://github.com/elboletaire/Watimage/archives/master\">https://github.com/elboletaire/Watimage/archives/master</a>\r\n\r\nSi
+  queréis utilizar la clase desde CakePHP simplemente tenéis que descomentar la primera
+  línea de la clase, donde dice <code>//Component extends Object</code>, y utilizarlo
+  como un componente cualquiera."
+wordpress_id: 1892
+wordpress_url: http://www.racotecnic.com/?p=1892
+date: '2011-04-16 21:03:12 +0200'
+date_gmt: '2011-04-16 20:03:12 +0200'
+categories:
+- Programació
+- Web
+tags:
+- CakePHP
+- Codi
+- Component
+- CakePHP 1.1
+- marca d'aigua
+- CakePHP 1.3
+- CakePHP 1.2
+- PHP5
+- Watermark
+---
+<blockquote><strong>Actualizado:</strong> Tanto la clase como este post han sido actualizados a fecha 14 de enero de 2012.</p></blockquote>
+<p><img class="alignright size-full wp-image-1473" title="all_together" src="http://www.racotecnic.com/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="259" height="258" />Hace ya un tiempo publiqué (en inglés) un <a title="Watermark &amp; Image Component for CakePHP" href="http://www.racotecnic.com/2010/04/watermark-image-component-for-cakephp/"><strong>Componente para el tratamiento de imágenes en CakePHP</strong></a>. Hoy me he pasado un rato actualizándolo y aprovechando he decidido publicar una entrada con los cambios.</p>
+<p>Aunque la he modificado considerablemente, he procurado no modificar el funcionamiento de ésta. Aquí vienen los cambios:</p>
+<ul>
+<li>He eliminado el uso del método obsoleto mime_content_type.</li>
+<li>Ahora utilizo la clase Exception para tratar los errores.</li>
+<li>He añadido el método "flip" para hacer espejo de la imagen.</li>
+<li>He limpiado el código y he arreglado algún que otro fallo.</li>
+<li>Ahora las transparencias funcionan correctamente.</li>
+</ul>
+<p>Podéis descargar el proyecto desde GibHub:</p>
+<p><a title="Descargar Watimage" href="https://github.com/elboletaire/Watimage/archives/master">https://github.com/elboletaire/Watimage/archives/master</a></p>
+<p>Si queréis utilizar la clase desde CakePHP simplemente tenéis que descomentar la primera línea de la clase, donde dice <code>//Component extends Object</code>, y utilizarlo como un componente cualquiera.<a id="more"></a><a id="more-1892"></a></p>
+<h4>Aplicando marcas de agua</h4>
+<p><a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png"><img class="size-full wp-image-1899 aligncenter" title="test1" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test1.png" alt="" width="322" height="546" /></a></p>
+<p>[php]$wm = new Watermark();<br />
+$wm-&gt;setImage('test.png');<br />
+$wm-&gt;setWatermark(array('file' =&gt; 'watermark.png', 'position' =&gt; 'top right'));<br />
+$wm-&gt;applyWatermark();<br />
+if ( !$wm-&gt;generate('test1.png') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}[/php]</p>
+<h4>Redimensionando</h4>
+<p><a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png"><img class="size-full wp-image-1900 aligncenter" title="test2" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test2.png" alt="" width="400" height="200" /></a></p>
+<p>[php]$wm = new Watermark('test.png');<br />
+$wm-&gt;resize(array('type' =&gt; 'resizecrop', 'size' =&gt; array(400, 200)));<br />
+if ( !$wm-&gt;generate('test2.png') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}[/php]</p>
+<h4>Rotando</h4>
+<p><a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png"><img class="size-full wp-image-1901 aligncenter" title="test3" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test3.png" alt="" width="400" height="234" /></a></p>
+<p>[php]$wm = new Watermark('test.png');<br />
+$wm-&gt;rotate(90);<br />
+if ( !$wm-&gt;generate('test3.png') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}<br />
+[/php]</p>
+<h4>Guardando en otros formatos</h4>
+<p>[php]$wm = new Watermark('test.png');<br />
+if ( !$wm-&gt;generate('test4.jpg') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}[/php]</p>
+<h4>Espejo</h4>
+<p><a href="http://www.racotecnic.com/wp-content/uploads/2011/04/test5.png"><img class="size-medium wp-image-1903 aligncenter" title="test5" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test5-176x300.png" alt="" width="176" height="300" /></a></p>
+<p>[php]$wm = new Watermark('test.png');<br />
+$wm-&gt;flip('vertical');<br />
+if ( !$wm-&gt;generate('test5.png') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}[/php]</p>
+<h4>Todo junto</h4>
+<p><img class="aligncenter size-full wp-image-1904" title="test6" src="http://www.racotecnic.com/wp-content/uploads/2011/04/test6.png" alt="" width="341" height="341" /></p>
+<p>[php]$wm = new Watermark('test.png', 'watermark.png');<br />
+$wm-&gt;resize(array('type' =&gt; 'resizecrop', 'size' =&gt; 400));<br />
+$wm-&gt;flip('horizontal');<br />
+$wm-&gt;rotate(90);<br />
+$wm-&gt;applyWatermark();<br />
+if ( !$wm-&gt;generate('test6.png') ) {<br />
+	// handle error...<br />
+	print_r($wm-&gt;errors);<br />
+}[/php]</p>
+<p>Gracias a <a href="#comment-36188" >los comentarios de Francisco</a> he podido arreglar la clase para que trate correctamente las transparencias.</p>
+<p>Si véis cualquier fallo hacédmelo saber o haced <a href="https://github.com/elboletaire/Watimage/fork" target="_blank">un fork en github directamente</a>!</p>

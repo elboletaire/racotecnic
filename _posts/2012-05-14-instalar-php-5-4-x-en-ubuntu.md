@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: Instalar PHP 5.4.X en Ubuntu 11.10 / 12.04.X
+author:
+  display_name: Booletaire
+  login: elboletaire
+  email: elboletaire@gmail.com
+  url: http://www.underave.net
+author_login: elboletaire
+author_email: elboletaire@gmail.com
+author_url: http://www.underave.net
+wordpress_id: 2071
+wordpress_url: http://www.racotecnic.com/?p=2071
+date: '2012-05-14 12:00:46 +0200'
+date_gmt: '2012-05-14 11:00:46 +0200'
+categories:
+- Programació
+- Linux
+- Administració
+tags:
+- PHP
+- Ubuntu
+- PHP5
+- Ubuntu 12.04
+- Ubuntu Quantal
+- Ubuntu 11.10
+- Ubuntu Oneiric
+---
+<p>Podéis instalar la versión más reciente estable de PHP 5.4 en vuestro Ubuntu muy fácilmente gracias a este repositorio:</p>
+<p><a href="https://launchpad.net/~ondrej/+archive/php5" rel="nofollow external">https://launchpad.net/~ondrej/+archive/php5</a></p>
+<p>Añadid el repositorio siguiendo estos pasos y debería funcionar (provado en Ubuntu 12.04):</p>
+<p>[bash]sudo add-apt-repository ppa:ondrej/php5[/bash]</p>
+<blockquote><p><b>Nota (a 23/11/2013):</b> Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: <code>ppa:ondrej/php5-oldstable</code></p></blockquote>
+<p>Si no tenéis el comando <code>add-apt-repository</code> es porque no tenéis el paquete <code>python-software-properties</code> instalado. Instaladlo con aptitude si es así y podréis ejecutar el comando sin problemas.</p>
+<p>Una vez añadido el repositorio actualizáis la lista de paquetes:</p>
+<p>[bash]sudo apt-get update[/bash]</p>
+<p>E instaláis php5:</p>
+<p>[bash]sudo apt-get install php5 php5-cli php5-whatever[/bash]</p>
+<p>Probado en Ubuntu 11.10 y 12.04 x64 tanto con el módulo de apache mod_php5 como con fastFCGI (con apache en modo worker).</p>
