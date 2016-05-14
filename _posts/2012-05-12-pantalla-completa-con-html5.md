@@ -32,33 +32,45 @@ tags:
 
 El modo pantalla completa es un modo bastante molón que quizás ya hayáis visto en algunas páginas (como fb por ejemplo; el botón de pantalla completa de las fotos).
 
-Por ahora sólo es compatible con navegadores basados en Gecko (como Firefox) y Webkit (como Chrome).
+<del>Por ahora sólo es compatible con navegadores basados en Gecko (como Firefox) y Webkit (como Chrome).</del>
+
+> Este artículo ha sido actualizado el 14 de mayo de 2016 añadiendo los navegadores que faltaban.
 
 Sabiendo esto, simplemente tendremos que poner algún IF :)
 
-[js]
-    fullscreen = function(e){
-          if (e.webkitRequestFullScreen) {
-            e.webkitRequestFullScreen();
-          } else if(e.mozRequestFullScreen) {
-            e.mozRequestFullScreen();
-          }
-      }
-    document.getElementById('ejemplo-fullscreen').onclick = function(){
-        fullscreen(document.getElementById('content'));
-    }
-[/js]
+~~~javascript
+var fullscreen = function(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  }
+}
+document.getElementById('ejemplo-fullscreen').onclick = function(){
+  fullscreen(document.getElementById('content'));
+}
+~~~
+
 Podéis probarlo haciendo click <a href="#fullscreen" id="ejemplo-fullscreen">aquí</a>
+
 <script>
-    fullscreen = function(e){
-          if (e.webkitRequestFullScreen) {
-            e.webkitRequestFullScreen();
-          } else if(e.mozRequestFullScreen) {
-            e.mozRequestFullScreen();
-          }
-      }
-    document.getElementById('ejemplo-fullscreen').onclick = function(){
-        fullscreen(document.getElementById('content'));
-        return false;
-    }
+var fullscreen = function(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  }
+}
+document.getElementById('ejemplo-fullscreen').onclick = function(){
+  fullscreen(document.getElementById('main'));
+  return false;
+}
 </script>
