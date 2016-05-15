@@ -11,10 +11,7 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "Desde los foros de <a title=\"Acceder a los foros para ver el original\"
-  href=\"http://www.burbuja.info/inmobiliaria/burbuja-inmobiliaria/106043-lonchafinismo-informatico-un-ordenador-por-0-a.html\"
-  target=\"_blank\">burbuja.info</a>\r\n<blockquote>De todos es sabido que si algo
-  caracteriza la civilización occidental es básicamente que compra más de lo que necesita,
+excerpt: "De todos es sabido que si algo caracteriza la civilización occidental es básicamente que compra más de lo que necesita,
   y entre esas cosas están los ordenadores con los que entramos a leer este foro.\r\n\r\nPues
   bien, con unos mínimos conocimientos técnicos, resulta que podemos tener un ordenador
   con el que no solo consultar este foro, sino hacer todo lo que una persona normal
@@ -36,6 +33,7 @@ tags: []
 ---
 
 Desde los foros de <a title="Acceder a los foros para ver el original" href="http://www.burbuja.info/inmobiliaria/burbuja-inmobiliaria/106043-lonchafinismo-informatico-un-ordenador-por-0-a.html" target="_blank">burbuja.info</a>
+
 <blockquote>
 De todos es sabido que si algo caracteriza la civilización occidental es básicamente que compra más de lo que necesita, y entre esas cosas están los ordenadores con los que entramos a leer este foro.
 
@@ -103,4 +101,6 @@ Averia que tenia: Demasiado messenger.
 
 Lo he recogido esta mañana del punto limpio.
 
-Además este tipo de reciclajes son muy divertidos porque siempre puedes echar un ojo por si te interesa algún disco o película. Aunque os recomiendo formatear directamtente para evitar cargos por pornografía infantil, es impresionante lo que intercambian los adolescentes por el messenger.</blockquote>
+Además este tipo de reciclajes son muy divertidos porque siempre puedes echar un ojo por si te interesa algún disco o película. Aunque os recomiendo formatear directamtente para evitar cargos por pornografía infantil, es impresionante lo que intercambian los adolescentes por el messenger.
+
+</blockquote>

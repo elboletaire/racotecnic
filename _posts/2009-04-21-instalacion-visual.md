@@ -7,19 +7,10 @@ author:
   display_name: psydObladelik
   login: psydObladelik
   email: priosanchez@gmail.com
-  url: ''
+  url: http://www.priostudio.com/
 author_login: psydObladelik
 author_email: priosanchez@gmail.com
-excerpt: "En este blog os explicare todo el proceso para proyectar en distintas superficies:\r\n\r\nEl
-  montaje visual que os enseñare será el que realizamos en la fiesta de Sindar – Atomic
-  Night en Mephisto.\r\n\r\nPrimero diseñamos la instalación visual donde vamos a
-  proyectar.\r\n\r\nCreamos un plano con el diseño de las telas, creando la forma
-  deseada donde proyectaremos, aquí os muestro nuestra instalación:\r\n
-<a href=\"{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg\"><img
-  class=\"size-full wp-image-468 aligncenter\" title=\"F:A_FIUZZSindar2008DeconewMephisto
-  escenario02.dwg Model (1\" src=\"{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg\"
-  alt=\"F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1\" width=\"482\"
-  height=\"275\" /></a>\r\n\r\n"
+excerpt: "En este blog os explicare todo el proceso para proyectar en distintas superficies."
 wordpress_id: 466
 wordpress_url: http://racotecnic.com/?p=466
 date: '2009-04-21 23:13:56 +0200'
@@ -40,20 +31,17 @@ Primero diseñamos la instalación visual donde vamos a proyectar.
 
 Creamos un plano con el diseño de las telas, creando la forma deseada donde proyectaremos, aquí os muestro nuestra instalación:
 
-<a href="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg"><img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" /></a>
+<a href="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg">
+  <img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" />
+</a>
 
-<a id="more"></a><a id="more-466"></a>
 Nosotros creamos las imágenes con el software AEE (Adobe alter effects).
 
 Cogiendo las medidas del plano, y sabiendo la resolución con la que saldrás en el directo, creas la composición, en nuestro caso 800x600, aqui una pequeña muestra:
 
-<object width="600" height="450" data="http://vimeo.com/moogaloop.swf?clip_id=4262346&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ff0179&amp;fullscreen=1" type="application/x-shockwave-flash">
-
-
-</object>
-
-<em>Video realizado por Priosanchez
-Loops para instalacion visual en mephisto junto a sindar productions</em>
+<iframe src="https://player.vimeo.com/video/4262346" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/4262346">Muestra de Loop para Instalacion distintas superficies.</a> from <a href="https://vimeo.com/user903080">Priosanchez</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+_Video realizado por Priosanchez. Loops para instalacion visual en mephisto junto a sindar productions._
 
 El siguiente paso, teniendo ya una buena librería de loops para el directo, diseñados especialmente para dicha instalación, seria ya el montaje de las telas en la sala. Nosotros utilizamos en este caso, unas telas NO fluor (no reactivas a la luz ultravioleta), ya que si utilizáramos telas blancas normales, la luz negra afectaría, alterando los colores de los loops, y perdiendo potencia de luz.
 
@@ -65,10 +53,6 @@ Una vez hecha toda la instalación visual y la mascara preparada, ya estariamos 
 
 Aquí os dejo un video de la instalación visual en Mephisto:
 
-<object width="600" height="338" data="http://vimeo.com/moogaloop.swf?clip_id=4261287&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=ff0179&amp;fullscreen=1" type="application/x-shockwave-flash">
-
-
-</object>
-
-<em>Video realizado por Priosanchez
-Instalacion visual junto a Sindar Productions.</em>
+<iframe src="https://player.vimeo.com/video/4261287" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/4261287">Instalacion Visual</a> from <a href="https://vimeo.com/user903080">Priosanchez</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+_Video realizado por Priosanchez. Loops para instalacion visual en mephisto junto a sindar productions._
