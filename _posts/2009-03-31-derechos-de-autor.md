@@ -21,6 +21,7 @@ date: '2009-03-31 16:28:26 +0200'
 date_gmt: '2009-03-31 15:28:26 +0200'
 categories:
 - General
+- Audioblog
 tags:
 - Copyright
 - Author's rights

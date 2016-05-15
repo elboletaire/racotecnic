@@ -17,7 +17,9 @@ date: '2009-04-02 21:06:58 +0200'
 date_gmt: '2009-04-02 20:06:58 +0200'
 categories:
 - General
-tags: []
+tags:
+- Music
+- Hardcore
 ---
 
 > Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.

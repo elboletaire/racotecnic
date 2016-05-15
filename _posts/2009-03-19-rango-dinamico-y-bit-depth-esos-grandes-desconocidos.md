@@ -15,17 +15,7 @@ excerpt: "Bueno me estreno como bloggeador, a ver que tal se me da ;)\r\n\r\nMuc
   una pérdida de tiempo. En cierta medida es por la música que se escucha. Pero hoy
   vamos un poco más allá. Ya me atrevo a decir, que parte de que un tema acabe por
   agradarnos es debido a que existen dos conceptos que últimamente no se tienen muy
-  en encuenta en producción.\r\n\r\nMe refiero al **Rango Dinámico**.\r\n\r\nQué
-  es? Pues no es más que la diferencia entre el pico(peaks) más alto posible y el
-  umbral de ruido, Sí, siempre hay una base de ruido, hasta en el mejor estudio insonorizado.
-  Y esto como afecta a que lo que escuche sea un temazo? Muy fácil, ya que esta variación
-  de amplitud influye en la intensidad sonora, en como fluye el tema, la diferencia
-  en fuertes y débiles.  También hay que tener en cuenta la amplitud nominal específica
-  de cada equipo, lo que se denomina el **techo dinámico o Headroom**.
-  Normalmente se queda en 120Db, ya que es el límite que permiten los circuitos integrados.
-  Lo que nosotros escuchamos de todo esto es el **SNR**, **signal
-  noise ratio**, es decir la relación entre el ruido residual y la señal promedio
-  del tema.\r\n\r\n"
+  en encuenta en producción."
 wordpress_id: 271
 wordpress_url: http://racotecnic.com/?p=271
 date: '2009-03-19 12:56:52 +0100'
