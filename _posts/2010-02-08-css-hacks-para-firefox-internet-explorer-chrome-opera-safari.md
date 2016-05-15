@@ -17,7 +17,8 @@ excerpt: "Todos sabemos lo <em>divertido</em> y <em>emocionante</em> que es hace
   de cada navegador para ayudarnos a poder mostrar por igual los contenidos de una
   web en todos los navegadores.\r\n\r\nPartiré de este estilo:\r\n\r\n[css].selector
   {\r\n\tcolor: #CCCCCC;\r\n}[/css]\r\n\r\nEmpezaré por Internet Explorer, dado que
-  es para el que usualmente se necesitan más hacks:\r\n<h5>Internet Explorer 6</h5>\r\n[css].selector
+  es para el que usualmente se necesitan más hacks:\r\n
+#### Internet Explorer 6\r\n[css].selector
   {\r\n\t_color: #CCCCCC;\r\n}[/css]\r\n"
 wordpress_id: 1369
 wordpress_url: http://racotecnic.com/?p=1369
@@ -46,25 +47,29 @@ Partiré de este estilo:
 }[/css]
 
 Empezaré por Internet Explorer, dado que es para el que usualmente se necesitan más hacks:
-<h5>Internet Explorer 6</h5>
+
+#### Internet Explorer 6
 
 [css].selector {
 	_color: #CCCCCC;
 }[/css]
 <a id="more"></a><a id="more-1369"></a>
 Recordad que IE6 no interpreta la propiedad (o palabra clave..) de CSS "!important" por lo que podéis jugar con ello (aunque no es lo más recomendable):
-<h5>Internet Explorer 6 (!important)</h5>
+
+#### Internet Explorer 6 (!important)
 
 [css].selector {
 	color: #CCCCCC !important;
 	color: #000000; /* Éste estilo sólo se aplicará a Internet Explorer 6 */
 }[/css]
-<h5>Internet Explorer 7 y anteriores:</h5>
+
+#### Internet Explorer 7 y anteriores:
 
 [css].selector {
 	*color: #CCCCCC;
 }[/css]
-<h5>Internet Explorer 8</h5>
+
+#### Internet Explorer 8
 
 Este es un poco <em>putilla</em>, ya que el mismo hack de IE8 a veces lo interpreta IE7... así que, si nos interesa, primero habrá que poner algo que interprete únicamente IE7 y después hay que poner el hack de IE8:
 
@@ -75,32 +80,38 @@ Este es un poco <em>putilla</em>, ya que el mismo hack de IE8 a veces lo interpr
 .selector {
 	color /*\**/: #CCCCCC\9   /* Sin punto y coma!! */
 }[/css]
-<h5>Todas las versiones de Internet Explorer</h5>
+
+#### Todas las versiones de Internet Explorer
 
 [css].selector {
 	color: #CCCCCC\9   /* Sin punto y coma!! */
 }[/css]
-<h5>Internet Explorer 7 y demás navegadores modernos (incluido IE8)</h5>
+
+#### Internet Explorer 7 y demás navegadores modernos (incluido IE8)
 
 [css]html>body .selector {
 	color: #CCCCCC;
 }[/css]
-<h5>Todos los navegadores modernos (incluido IE8)</h5>
+
+#### Todos los navegadores modernos (incluido IE8)
 
 [css]html>/**/body .selector {
 	color: #CCCCCC;
 }[/css]
-<h5>Opera 9.27 y anteriores</h5>
+
+#### Opera 9.27 y anteriores
 
 [css]html:first-child .selector {
 	color: #CCCCCC;
 }[/css]
-<h5>Safari</h5>
+
+#### Safari
 
 [css]html[xmlns*=''] body:last-child .selector {
 	color: #CCCCCC;
 }[/css]
-<h5>Safari 3+, Opera 9+, Firefox 3.5+ y Chrome 1+</h5>
+
+#### Safari 3+, Opera 9+, Firefox 3.5+ y Chrome 1+
 
 [css]body:nth-of-type(1) .selector {
 	color: #CCCCCC;
@@ -116,7 +127,8 @@ body:first-of-type .selector {
 		color: #CCCCCC;
 	}
 }[/css]
-<h5>Safari 3+ y Chrome 1+</h5>
+
+#### Safari 3+ y Chrome 1+
 
 [css]@media screen and (-webkit-min-device-pixel-ratio:0) {
 	.selector {
@@ -129,24 +141,28 @@ body:nth-of-type(1) .selector{
    color: #CCCCCC;
 }
 [/css]
-<h5>Todas las versiones de Firefox</h5>
+
+#### Todas las versiones de Firefox
 
 [css]@-moz-document url-prefix() {
 	.selector {
 		color: #CCCCCC;
 	}
  } [/css]
-<h5>Cualquier Gecko (incluido Firefox)</h5>
+
+#### Cualquier Gecko (incluido Firefox)
 
 [css]*>.selector {
 	color: #CCCCCC;
 }[/css]
-<h5>Firefox 1.5+</h5>
+
+#### Firefox 1.5+
 
 [css].selector, x:-moz-any-link, x:only-child {
 	color: #CCCCCC;
 }[/css]
-<h5>Firefox 2 y versiones anteriores</h5>
+
+#### Firefox 2 y versiones anteriores
 
 [css]body:empty .selector {
 	color: #CCCCCC;
@@ -156,7 +172,8 @@ body:nth-of-type(1) .selector{
 html>/**/body .selector, x:-moz-any-link {
 	color: #CCCCCC;
 }[/css]
-<h5>Firefox 3 (y quizás más nuevos)</h5>
+
+#### Firefox 3 (y quizás más nuevos)
 
 [css]html>/**/body .selector, x:-moz-any-link, x:default {
 	color: #CCCCCC;

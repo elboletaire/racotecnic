@@ -93,7 +93,8 @@ Una cadena de texto o un array de cadenas de texto indicando las claves que NO d
 
 <strong><em>Variables que retorna</em></strong>
 Un array asociativo.</blockquote>
-<h5>Comentarios del código (traducidos)</h5>
+
+#### Comentarios del código (traducidos)
 
 <ul>
 <li>Generamos un bucle con toda la información POST

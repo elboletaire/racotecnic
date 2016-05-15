@@ -114,7 +114,8 @@ $this->Watermark->setImage($image_path);
 $this->Watermark->resize(array('type' => 'resizecrop'), 'size' => array('300', '200'));
 $this->Watermark->generate($dest_path);
 ~~~
-<h5>Resize types:</h5>
+
+#### Resize types:
 
 <ul>
 <li>**resize**: Maintains the aspect ratio of the image and makes sure that it fits within the max width and max height (thus some side will be smaller).</li>
