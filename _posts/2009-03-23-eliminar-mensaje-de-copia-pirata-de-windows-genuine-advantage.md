@@ -20,12 +20,15 @@ tags:
 - Regedit
 - WinXP
 ---
-<blockquote><em>Si todavía no sufres este mensaje y lo que buscas es la manera de evitarlo, <a title="Evitar mensaje de Windows Genuine Advantage" href="http://racotecnic.underave.net/2009/07/evitar-mensaje-de-windows-office-genuine-advantage/" target="_self">pulsa aquí</a></em></blockquote>
+
+> Si todavía no sufres este mensaje y lo que buscas es la manera de evitarlo,
+<a title="Evitar mensaje de Windows Genuine Advantage" href="{{ site.url }}/2009/07/evitar-mensaje-de-windows-office-genuine-advantage/" target="_self">pulsa aquí</a>
 
 La manera de quitar el aviso:  “Podría ser una víctima de falsificación de software. Esta copia de Windows no ha superado el proceso de validación de Windows Original” es tan sencillo como:
 
-** 1.** **Abrimos el bloc de notas **y pegamos el siguiente código:
+- Abrimos el bloc de notas y pegamos el siguiente código:
 
+~~~
 taskkill /im wgatray.exe
 Del c:WindowsSystem32WgaTray.exe
 Del c:WindowsSystem32dllcacheWgaTray.exe
@@ -36,7 +39,9 @@ regedit /s %temp%WGANFIX.REG
 del %temp%WGANFIX.REG
 del c:windowssystem32wgalogon.dll
 del c:windowssystem32dllcachewgalogon.dll
+~~~
 
-** 2.** **Guardamos el archivo** como “loquequieras**.bat** “. Por ejemplo “quitaraviso**.bat**”
+- **Guardamos el archivo** como "loquequieras**.bat**". Por ejemplo "quitaraviso**.bat**"
+- **Ejecutamos el programa** que acabamos de crear haciendo dos clics sobre él y reiniciamos el ordenador y el mensaje de aviso de que Windows no es original desaparece.
 
-** 3.** **Ejecutamos el programa** que acabamos de crear haciendo dos clics sobre él y reiniciamos el ordenador y el mensaje de aviso de que Windows no es original desaparece.
+

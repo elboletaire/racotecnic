@@ -42,7 +42,7 @@ Wordpress tiene una función llamada "wp_enqueue_script" que se encargará de im
 <a id="more"></a><a id="more-219"></a>
 Vemos la función:
 
-~~~php
+~~~php?start_inline=1
 wp_enqueue_script( 'handle', 'src', 'deps', 'ver');
 ~~~
 
@@ -57,7 +57,7 @@ Algunos de los "handle" que podéis utilizar son:
 
 <ul>
   <li><a title="Visitar web oficial jQuery" href="http://www.jquery.com/" target="_blank">jquery</a></li>
-  <li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank">scriptacolous</a></li>
+  <li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank">scriptaculous</a></li>
   <li><a title="Visitar web oficial Prototype" href="http://www.prototypejs.org/" target="_blank">prototype</a></li>
   <li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank">swfupload</a></li>
 </ul>
@@ -80,7 +80,7 @@ Lo siguiente que haremos es importar nuestro código con las funciones que tenga
 
 Esto es porque, por ejemplo, Prototype y jQuery utilizan el mismo método de llamada, el dólar "$". Debemos cambiar éste método en jQuery para que funcione correctamente el código, para ello utilizaremos el método nonConflict de jQuery, así:
 
-~~~javascript
+~~~html
 <script type='text/javascript'>
 $miMetodoDeLlamadaJquery = jQuery.noConflict();
 </script>
@@ -88,12 +88,12 @@ $miMetodoDeLlamadaJquery = jQuery.noConflict();
 
 Evidentemente no es nada recomendable poner un método de llamada tan largo ;) Yo utilizaría $jQ:
 
-~~~javascript
+~~~html
 <script type='text/javascript'>
 $jQ = jQuery.noConflict();
 
 $jQ(function(){
-	$jQ('div#search').hide();
+    $jQ('div#search').hide();
 }
 </script>
 ~~~
