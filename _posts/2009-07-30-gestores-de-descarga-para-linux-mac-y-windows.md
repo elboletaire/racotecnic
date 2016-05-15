@@ -11,7 +11,7 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.underave.net/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/\"
+excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.com/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/\"
   target=\"_self\">gerno nos explicaba</a> cómo facilitarnos las descargas mediante
   el plugin Illimitux y la aplicación FreeRapid Downloader.\r\n\r\nA parte de FreeRapid
   existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os
@@ -27,7 +27,7 @@ excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.unde
   em MegaUpload y Rapidshare.\r\n\r\n<a title=\"tucaneando.com\" rel=\"nofollow\"
   href=\"http://www.tucaneando.com\" target=\"_blank\">www.tucaneando.com</a>\r\n\r\n"
 wordpress_id: 718
-wordpress_url: http://racotecnic.underave.net/?p=718
+wordpress_url: http://racotecnic.com/?p=718
 date: '2009-07-30 03:08:55 +0200'
 date_gmt: '2009-07-30 02:08:55 +0200'
 categories:
@@ -41,7 +41,7 @@ tags:
 - Rapidshare
 ---
 
-Hace unos días <a title="Ver entrada" href="http://racotecnic.underave.net/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/" target="_self">gerno nos explicaba</a> cómo facilitarnos las descargas mediante el plugin Illimitux y la aplicación FreeRapid Downloader.
+Hace unos días <a title="Ver entrada" href="http://racotecnic.com/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/" target="_self">gerno nos explicaba</a> cómo facilitarnos las descargas mediante el plugin Illimitux y la aplicación FreeRapid Downloader.
 
 A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como **gestores de descarga** para páginas como **megaupload o rapidshare**. A continuación os expongo un par más que encuentro bastante interesantes.
 

@@ -34,7 +34,7 @@ excerpt: "<blockquote>**Nota para usuarios de CakePHP 1.3:** he puesto
   target=\"_blank\">Gritter</a>, que es el plugin que, a mi parecer, más se asemeja
   a Growl.\r\n\r\n"
 wordpress_id: 986
-wordpress_url: http://racotecnic.underave.net/?p=986
+wordpress_url: http://racotecnic.com/?p=986
 date: '2009-11-14 16:39:50 +0100'
 date_gmt: '2009-11-14 15:39:50 +0100'
 categories:

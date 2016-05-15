@@ -26,7 +26,7 @@ excerpt: "Hoy mismo he necesitado de una validación para verificar si un dato y
   {\r\n\t\treturn $this->isUnique(array($field => $data));\r\n\t}\r\n}
 ~~~\r\n\r\n"
 wordpress_id: 1406
-wordpress_url: http://racotecnic.underave.net/?p=1406
+wordpress_url: http://racotecnic.com/?p=1406
 date: '2010-02-25 21:28:51 +0100'
 date_gmt: '2010-02-25 20:28:51 +0100'
 categories:

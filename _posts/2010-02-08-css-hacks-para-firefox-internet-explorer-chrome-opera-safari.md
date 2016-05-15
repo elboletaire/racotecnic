@@ -20,7 +20,7 @@ excerpt: "Todos sabemos lo <em>divertido</em> y <em>emocionante</em> que es hace
   es para el que usualmente se necesitan más hacks:\r\n<h5>Internet Explorer 6</h5>\r\n[css].selector
   {\r\n\t_color: #CCCCCC;\r\n}[/css]\r\n"
 wordpress_id: 1369
-wordpress_url: http://racotecnic.underave.net/?p=1369
+wordpress_url: http://racotecnic.com/?p=1369
 date: '2010-02-08 23:38:44 +0100'
 date_gmt: '2010-02-08 22:38:44 +0100'
 categories:

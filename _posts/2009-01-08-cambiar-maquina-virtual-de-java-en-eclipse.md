@@ -27,7 +27,7 @@ tags:
 
 > Este post se refiere a versiones de eclipse anteriores a la 3.2, si deseas
 cambiar la máquina virtual de java para la versión 3.4.x
-<a title="Cambiar máquina virtual de Java (JVM) en Eclipse 3.4.x" href="http://racotecnic.underave.net/2009/05/cambiar-maquina-virtual-de-java-jvm-en-eclipse-34x/" target="_self">haz clic aquí</a>.
+<a title="Cambiar máquina virtual de Java (JVM) en Eclipse 3.4.x" href="http://racotecnic.com/2009/05/cambiar-maquina-virtual-de-java-jvm-en-eclipse-34x/" target="_self">haz clic aquí</a>.
 
 Posteo aquí una ayuda rápida para aquellos que necesiten cambiar / añadir su máquina virtual preferida a <a title="Eclipse" href="http://www.eclipse.org/" target="_blank">Eclipse</a>. Por defecto Eclipse (en Linux al menos..) <em>no viene bien configurado</em> (normalmente pasa con Java6) para cargar la máquina virtual Java de Sun y si no lo configuramos no deja de dar errores extraños (pero carga la aplicación igualmente).
 

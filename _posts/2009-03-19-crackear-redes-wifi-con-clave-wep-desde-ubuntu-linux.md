@@ -17,7 +17,7 @@ excerpt: "Hace poco me volví a interesar por este tema y me costó tanto lograr
   que esto es ilegal en la mayor parte de los países así que si vais a hacer
   uso de ello **deberá ser sobre VUESTRA red WiFi**."
 wordpress_id: 286
-wordpress_url: http://racotecnic.underave.net/?p=286
+wordpress_url: http://racotecnic.com/?p=286
 date: '2009-03-19 19:40:51 +0100'
 date_gmt: '2009-03-19 18:40:51 +0100'
 categories:

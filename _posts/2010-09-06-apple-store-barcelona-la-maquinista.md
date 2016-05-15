@@ -41,7 +41,7 @@ Como
   si eran empleados por parte de Apple o de la propia marca, pues no llevaban la indumentaria
   azul de los vendedores)."
 wordpress_id: 1596
-wordpress_url: http://racotecnic.underave.net/?p=1596
+wordpress_url: http://racotecnic.com/?p=1596
 date: '2010-09-06 12:00:23 +0200'
 date_gmt: '2010-09-06 11:00:23 +0200'
 categories:

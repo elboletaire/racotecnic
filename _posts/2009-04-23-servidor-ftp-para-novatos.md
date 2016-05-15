@@ -31,7 +31,7 @@ excerpt: "La empresa **Pablo Software Solutions** ha creado el editor
   como reproducir un sonido o ejecutar una aplicación.</li>\r\n\t<li>Sin límite de
   conexiones.</li>\r\n</ul>\r\n\r\n"
 wordpress_id: 489
-wordpress_url: http://racotecnic.underave.net/?p=489
+wordpress_url: http://racotecnic.com/?p=489
 date: '2009-04-23 22:19:18 +0200'
 date_gmt: '2009-04-23 21:19:18 +0200'
 categories:

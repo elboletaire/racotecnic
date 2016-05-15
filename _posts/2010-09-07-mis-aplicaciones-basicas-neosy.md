@@ -28,7 +28,7 @@ excerpt: "¿A que se refiere esta entrada? Os voy a hacer una lista de las aplic
   Es \"el reproductor\". De todos los reproductores de video que he probado, el mejor,
   sin duda alguna.\r\n\r\nWeb: <a href=\"http://www.videolan.org/vlc/\" target=\"_blank\">http://www.videolan.org/vlc/</a>\r\n\r\n"
 wordpress_id: 1609
-wordpress_url: http://racotecnic.underave.net/?p=1609
+wordpress_url: http://racotecnic.com/?p=1609
 date: '2010-09-07 11:53:19 +0200'
 date_gmt: '2010-09-07 10:53:19 +0200'
 categories:

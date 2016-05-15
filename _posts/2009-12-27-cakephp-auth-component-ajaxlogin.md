@@ -23,7 +23,7 @@ $user = $this->Auth->user();\r\nif(!empty($user)){\r\n\t//
   vuelve a iniciarla por favor',true);\r\n\t$data = $this->data;\r\n\t$this->set('sessionTimeOut',compact('message','data'));\r\n}
 ~~~\r\n\r\n"
 wordpress_id: 1269
-wordpress_url: http://racotecnic.underave.net/?p=1269
+wordpress_url: http://racotecnic.com/?p=1269
 date: '2009-12-27 15:10:01 +0100'
 date_gmt: '2009-12-27 14:10:01 +0100'
 categories:

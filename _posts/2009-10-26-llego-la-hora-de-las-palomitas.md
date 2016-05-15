@@ -11,7 +11,7 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "Si os gustó <a title=\"Leer entrada: Adiós discos duros multimedia\" href=\"http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/\"
+excerpt: "Si os gustó <a title=\"Leer entrada: Adiós discos duros multimedia\" href=\"http://racotecnic.com/2009/10/adios-discos-duros-multimedia/\"
   target=\"_self\">WD TV</a>, esto os gustará más :D\r\n\r\nHace ya un tiempo que
   se comercializa en españa el producto **PopCorn Hour **también conocido
   como . Según su página web...\r\n<blockquote>**El PopCorn Hour A-110**
@@ -34,7 +34,7 @@ excerpt: "Si os gustó <a title=\"Leer entrada: Adiós discos duros multimedia\"
   producto en <a rel=\"nofollow\" href=\"http://www.popcornhour.es/popcornhour_A110\"
   target=\"_blank\">su web oficial (en castellano)</a>.\r\n\r\n"
 wordpress_id: 837
-wordpress_url: http://racotecnic.underave.net/?p=837
+wordpress_url: http://racotecnic.com/?p=837
 date: '2009-10-26 15:20:09 +0100'
 date_gmt: '2009-10-26 14:20:09 +0100'
 categories:
@@ -47,7 +47,7 @@ tags:
 - Bittorrent
 ---
 
-Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="http://racotecnic.underave.net/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D
+Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="http://racotecnic.com/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D
 
 Hace ya un tiempo que se comercializa en españa el producto **PopCorn Hour **también conocido como . Según su página web...
 <blockquote>

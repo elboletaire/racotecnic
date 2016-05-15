@@ -21,7 +21,7 @@ excerpt: "<img class=\"aligncenter size-full wp-image-892\" title=\"getting_real
   target=\"_blank\">Ruby on rails</a> y Jeff Bezos, CEO de <a href=\"http://www.amazon.com/\"
   target=\"_blank\">Amazon.com</a>.\r\n\r\n"
 wordpress_id: 889
-wordpress_url: http://racotecnic.underave.net/?p=889
+wordpress_url: http://racotecnic.com/?p=889
 date: '2009-10-27 19:12:22 +0100'
 date_gmt: '2009-10-27 18:12:22 +0100'
 categories:

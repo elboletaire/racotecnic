@@ -29,7 +29,7 @@ excerpt: "Hoy os explicaré como aprovechar el módulo \"<a title=\"Ver informac
   incluyendo el fichero embed.php y utilizando los métodos propios de las clases de
   Gallery2.\r\n\r\n"
 wordpress_id: 403
-wordpress_url: http://racotecnic.underave.net/?p=403
+wordpress_url: http://racotecnic.com/?p=403
 date: '2009-04-02 01:12:50 +0200'
 date_gmt: '2009-04-02 00:12:50 +0200'
 categories:
@@ -59,7 +59,7 @@ El código es el siguiente:
 @readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage&amp;g2_show=none&amp;g2_maxSize=130');
 ~~~
 
-Utilizad el botón "show source" <img class="alignnone" src="http://racotecnic.underave.net/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> situado en la parte derecha del código para verlo entero.
+Utilizad el botón "show source" <img class="alignnone" src="http://racotecnic.com/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> situado en la parte derecha del código para verlo entero.
 
 Como veis lo que hacemos únicamente es importar el módulo image block con <a title="readfile function at php.net" href="http://es.php.net/readfile" target="_blank">readfile</a> para mostrar su contenido. A éste módulo podemos pasarle parámetros para mostrar las imágenes como más nos guste. Podéis ver toda la lista de parámetros desde vuestro panel de administración de Image Block, o bien desde el <a title="Ver demás opciones en el Codex" href="http://codex.gallery2.org/Gallery2:Modules:imageblock#External_Options" target="_blank">Codex de Gallery2</a>. Los parámetros que utilizaré para el ejemplo son:
 
@@ -112,7 +112,7 @@ function randomImages(){
 }
 ~~~
 
-De nuevo, utilizad el botón "Show Source" <img class="alignnone" src="http://racotecnic.underave.net/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> para ver el código y los comentarios al completo.
+De nuevo, utilizad el botón "Show Source" <img class="alignnone" src="http://racotecnic.com/wp-content/plugins/syntaxhighlighter-plus/syntaxhighlighter/styles/page_white_code.png" alt="" width="16" height="16" /> para ver el código y los comentarios al completo.
 
 He puesto 2000 milisegundos de tiempo para dar más o menos tiempo a cargar al siguiente grupo de imágenes.
 
@@ -209,7 +209,7 @@ Imagino que para hacerlo tendríamos que programar la transición más detenidam
 
 <ul>
 <li><del>Ver demo del tutorial</del></li>
-<li><a title="Descargar todos los ficheros" href="http://racotecnic.underave.net/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
+<li><a title="Descargar todos los ficheros" href="http://racotecnic.com/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
 </ul>
 
 Páginas de referencia:

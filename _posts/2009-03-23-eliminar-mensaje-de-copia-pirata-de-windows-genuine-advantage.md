@@ -11,7 +11,7 @@ author:
 author_login: Destroy
 author_email: teknera2002-lokita@yahoo.es
 wordpress_id: 366
-wordpress_url: http://racotecnic.underave.net/?p=366
+wordpress_url: http://racotecnic.com/?p=366
 date: '2009-03-23 16:46:21 +0100'
 date_gmt: '2009-03-23 15:46:21 +0100'
 categories:

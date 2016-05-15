@@ -25,6 +25,6 @@ Donat que alguns dels usuaris del blog no aportaran temes d'informàtica com a t
 
 Podreu continuar accedint des de l'adreça racoinformatic.underave.net però a més n'hem habilitat una altra:
 
-<a href="http://racotecnic.underave.net" target="_self">http://racotecnic.underave.net</a>
+<a href="http://racotecnic.com" target="_self">http://racotecnic.com</a>
 
 Salut!

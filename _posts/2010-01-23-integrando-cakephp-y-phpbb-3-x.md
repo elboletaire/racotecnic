@@ -61,7 +61,7 @@ excerpt: "<script type=\"text/javascript\">\r\n// <![CDATA[\r\n\tjQuery(function
   creación de formularios, funcionamiento de la clase Auth...) quedará por supuesto
   (lo cual no quiere decir que no vaya a haber código al respecto ;)).\r\n\r\n"
 wordpress_id: 1224
-wordpress_url: http://racotecnic.underave.net/?p=1224
+wordpress_url: http://racotecnic.com/?p=1224
 date: '2010-01-23 15:32:41 +0100'
 date_gmt: '2010-01-23 14:32:41 +0100'
 categories:

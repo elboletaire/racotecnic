@@ -22,7 +22,7 @@ excerpt: "Si queréis disfrutar de **Google Chrome** en vuestro ubuntu
   main
 ~~~\r\n\r\n"
 wordpress_id: 973
-wordpress_url: http://racotecnic.underave.net/?p=973
+wordpress_url: http://racotecnic.com/?p=973
 date: '2009-11-13 15:45:35 +0100'
 date_gmt: '2009-11-13 14:45:35 +0100'
 categories:

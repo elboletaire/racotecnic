@@ -12,7 +12,7 @@ author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 wordpress_id: 549
-wordpress_url: http://racotecnic.underave.net/?p=549
+wordpress_url: http://racotecnic.com/?p=549
 date: '2009-05-15 12:38:05 +0200'
 date_gmt: '2009-05-15 11:38:05 +0200'
 categories:
@@ -23,7 +23,7 @@ tags:
 - Hosting
 ---
 
-<a title="Veure entrada al respecte" href="http://racotecnic.underave.net/2009/01/hosting-php-mysql-gratuit-amb-5gb-de-capacitat" target="_self">Fa un temps</a> vaig parlar de "byethost" on oferien un servei gratuït de hosting PHP + MySQL + FTP amb 5.5GB d'espai.
+<a title="Veure entrada al respecte" href="http://racotecnic.com/2009/01/hosting-php-mysql-gratuit-amb-5gb-de-capacitat" target="_self">Fa un temps</a> vaig parlar de "byethost" on oferien un servei gratuït de hosting PHP + MySQL + FTP amb 5.5GB d'espai.
 
 El cas és que avui navegant per internet n'he trobat un altre que pinta prou bé, aquí en teniu les característiques:
 

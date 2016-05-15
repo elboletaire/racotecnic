@@ -28,7 +28,7 @@ excerpt: "Ya hacía tiempo que tenía ganas de escribir una entrada \"de estas\"
   se borran cada vez que se accede a la página)</a></li>\r\n\t<li><a href=\"http://www.racotecnic.com/tutorials/2009/10/image_upload.zip\">Descargar
   archivos del ejemplo</a></li>\r\n</ul>\r\n</blockquote>\r\n"
 wordpress_id: 746
-wordpress_url: http://racotecnic.underave.net/?p=746
+wordpress_url: http://racotecnic.com/?p=746
 date: '2009-10-27 01:25:16 +0100'
 date_gmt: '2009-10-27 00:25:16 +0100'
 categories:

@@ -12,7 +12,7 @@ author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) <a title=\"Leer la entrada en
-  cuestión\" href=\"http://racotecnic.underave.net/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/\"
+  cuestión\" href=\"http://racotecnic.com/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/\"
   target=\"_self\">publicó como eliminar este mensaje</a> tan molesto que todos los
   que tenemos una copia ilegal de windows (es decir, **todos**) sufrimos
   o hemos sufrido alguna vez.\r\n\r\nÉl explicó cómo eliminarlo, algo realmente útil
@@ -26,7 +26,7 @@ excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) <a title=\"Leer la entrada e
   title=\"Actualizaciones de windows\" src=\"{{ site.url }}/uploads/2009/07/Captura.png\"
   alt=\"Actualizaciones de windows\" />\r\n\r\n"
 wordpress_id: 703
-wordpress_url: http://racotecnic.underave.net/?p=703
+wordpress_url: http://racotecnic.com/?p=703
 date: '2009-07-26 10:52:52 +0200'
 date_gmt: '2009-07-26 09:52:52 +0200'
 categories:
@@ -36,7 +36,7 @@ tags:
 - MS Office
 ---
 
-Hace ya un tiempo Destroy (a.k.a Axelain) <a title="Leer la entrada en cuestión" href="http://racotecnic.underave.net/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/" target="_self">publicó como eliminar este mensaje</a> tan molesto que todos los que tenemos una copia ilegal de windows (es decir, **todos**) sufrimos o hemos sufrido alguna vez.
+Hace ya un tiempo Destroy (a.k.a Axelain) <a title="Leer la entrada en cuestión" href="http://racotecnic.com/2009/03/eliminar-mensaje-de-copia-pirata-de-windows-genuine-advantage/" target="_self">publicó como eliminar este mensaje</a> tan molesto que todos los que tenemos una copia ilegal de windows (es decir, **todos**) sufrimos o hemos sufrido alguna vez.
 
 Él explicó cómo eliminarlo, algo realmente útil para cuando el mal ya está hecho y no hay vuelta atrás, pero yo creo que estas cosas mejor prevenirlas que curarlas, así que os voy a explicar cómo he evitado **siempre** estos mensajes:
 

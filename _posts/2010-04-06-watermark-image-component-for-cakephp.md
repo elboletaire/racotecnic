@@ -36,7 +36,7 @@ excerpt: "<blockquote>**Note: **This Component has been updated and you
 ## Download:\r\n<a rel=\"nofollow\"
   href=\"http://github.com/elboletaire/Watimage/archives/master\" target=\"_blank\">http://github.com/elboletaire/Watimage/archives/master</a>\r\n\r\n"
 wordpress_id: 1455
-wordpress_url: http://racotecnic.underave.net/?p=1455
+wordpress_url: http://racotecnic.com/?p=1455
 date: '2010-04-06 08:53:33 +0200'
 date_gmt: '2010-04-06 07:53:33 +0200'
 categories:

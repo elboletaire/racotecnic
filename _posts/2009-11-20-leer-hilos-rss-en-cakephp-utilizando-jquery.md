@@ -26,7 +26,7 @@ excerpt: "Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y 
   (yo utilizo la v. 1.3.2) y <a rel=\"nofollow\" href=\"http://www.cakephp.org\" target=\"_blank\">CakePHP</a>
   (en mi caso la v. 1.2.4.8284 [1.2.5 stable]).\r\n\r\n"
 wordpress_id: 1177
-wordpress_url: http://racotecnic.underave.net/?p=1177
+wordpress_url: http://racotecnic.com/?p=1177
 date: '2009-11-20 14:41:14 +0100'
 date_gmt: '2009-11-20 13:41:14 +0100'
 categories:

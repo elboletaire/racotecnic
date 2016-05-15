@@ -28,7 +28,7 @@ excerpt: "¿Cuántas veces has tenido que integrar una de tus aplicaciones web c
   class=\"size-medium wp-image-1447 aligncenter\" title=\"gigya_1\" src=\"{{ site.url }}/uploads/2010/04/gigya_1-300x159.png\"
   alt=\"\" width=\"300\" height=\"159\" /></a>"
 wordpress_id: 1446
-wordpress_url: http://racotecnic.underave.net/?p=1446
+wordpress_url: http://racotecnic.com/?p=1446
 date: '2010-04-01 15:01:37 +0200'
 date_gmt: '2010-04-01 14:01:37 +0200'
 categories:

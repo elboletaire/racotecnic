@@ -30,7 +30,7 @@ Per instal·lar-lo accedim a la <a href=\"https://addons.mozilla.org/ca/firefox/
   target=\"_blank\"><img class=\"aligncenter\" src=\"http://img190.imageshack.us/img190/5144/13086518.jpg\"
   border=\"0\" alt=\"\" width=\"400\" height=\"260\" /></a>\r\n\r\n"
 wordpress_id: 595
-wordpress_url: http://racotecnic.underave.net/?p=595
+wordpress_url: http://racotecnic.com/?p=595
 date: '2009-06-03 14:07:27 +0200'
 date_gmt: '2009-06-03 13:07:27 +0200'
 categories:

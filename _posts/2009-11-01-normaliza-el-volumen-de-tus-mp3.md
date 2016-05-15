@@ -23,7 +23,7 @@ excerpt: "¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de
 ~~~\r\n\r\nHaciendo esto dentro de una carpeta
   con mp3 normalizaréis cada uno de ellos a un volumen estándar.\r\n\r\n"
 wordpress_id: 908
-wordpress_url: http://racotecnic.underave.net/?p=908
+wordpress_url: http://racotecnic.com/?p=908
 date: '2009-11-01 01:54:03 +0100'
 date_gmt: '2009-11-01 00:54:03 +0100'
 categories:

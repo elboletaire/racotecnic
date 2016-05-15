@@ -23,7 +23,7 @@ excerpt: "No digo adiós porque se haya terminado la <em>saga</em> de los HD mul
   menor tamaño que un disco duro externo normal– tienen un par de tomas USB para \"convertirlas
   en discos duros multimedia\".\r\n\r\n"
 wordpress_id: 793
-wordpress_url: http://racotecnic.underave.net/?p=793
+wordpress_url: http://racotecnic.com/?p=793
 date: '2009-10-17 19:23:08 +0200'
 date_gmt: '2009-10-17 18:23:08 +0200'
 categories:

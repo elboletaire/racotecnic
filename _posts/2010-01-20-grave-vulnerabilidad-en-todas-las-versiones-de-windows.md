@@ -28,7 +28,7 @@ excerpt: "<em>**Fuente: **<a href=\"http://www.genbeta.com/windows/vulnerabilida
   un usuario  malicioso puede realizar un cambio de contexto y **ejecutar código
   \ con derechos de Sistema**, que están por encima incluso del de  los administradores.\r\n\r\n"
 wordpress_id: 1286
-wordpress_url: http://racotecnic.underave.net/?p=1286
+wordpress_url: http://racotecnic.com/?p=1286
 date: '2010-01-20 18:14:43 +0100'
 date_gmt: '2010-01-20 17:14:43 +0100'
 categories:

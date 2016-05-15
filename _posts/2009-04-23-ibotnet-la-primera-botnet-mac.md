@@ -26,7 +26,7 @@ excerpt: "Hola a <span><span>tod</span></span>@s,\r\n\r\nNo <span><span>sabéis<
   etc. Aún así, se calcula que el mismo <span><span>día</span></span> de este aviso
   se descargó esta aplicación unas 20.000 veces.\r\n\r\n"
 wordpress_id: 483
-wordpress_url: http://racotecnic.underave.net/?p=483
+wordpress_url: http://racotecnic.com/?p=483
 date: '2009-04-23 18:37:48 +0200'
 date_gmt: '2009-04-23 17:37:48 +0200'
 categories:

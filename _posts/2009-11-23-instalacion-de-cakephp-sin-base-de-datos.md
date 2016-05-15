@@ -12,7 +12,7 @@ author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 wordpress_id: 1195
-wordpress_url: http://racotecnic.underave.net/?p=1195
+wordpress_url: http://racotecnic.com/?p=1195
 date: '2009-11-23 01:06:25 +0100'
 date_gmt: '2009-11-23 00:06:25 +0100'
 categories:

@@ -12,7 +12,7 @@ author_login: DPAM23
 author_email: dpam23@hotmail.com
 author_url: http://
 wordpress_id: 1211
-wordpress_url: http://racotecnic.underave.net/?p=1211
+wordpress_url: http://racotecnic.com/?p=1211
 date: '2009-11-30 15:57:22 +0100'
 date_gmt: '2009-11-30 14:57:22 +0100'
 categories:

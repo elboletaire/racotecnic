@@ -27,7 +27,7 @@ excerpt: "Bueno me estreno como bloggeador, a ver que tal se me da ;)\r\n\r\nMuc
   noise ratio**, es decir la relación entre el ruido residual y la señal promedio
   del tema.\r\n\r\n"
 wordpress_id: 271
-wordpress_url: http://racotecnic.underave.net/?p=271
+wordpress_url: http://racotecnic.com/?p=271
 date: '2009-03-19 12:56:52 +0100'
 date_gmt: '2009-03-19 11:56:52 +0100'
 categories:
