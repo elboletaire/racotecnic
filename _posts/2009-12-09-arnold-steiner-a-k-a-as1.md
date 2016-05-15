@@ -19,9 +19,9 @@ categories:
 - General
 tags: []
 ---
-<blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por **909**.</blockquote>
+> Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
+Entrada escrita originalmente por **909**.
 
 <em>Analógico, simple, crudo, mental, oscuro y contundente</em>. Muchos al leer esto pensarán, <em>Old School</em>; Pues no vaís mal encaminados.
 

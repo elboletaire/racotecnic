@@ -19,9 +19,9 @@ categories:
 - General
 tags: []
 ---
-<blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por **909**.</blockquote>
+> Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
+Entrada escrita originalmente por **909**.
 
 Quizás muchos al leer esto piensen: <em>"Ya estamos otra vez; Ya nos esta vendiendo la moto</em>". "<em>Yo ya tengo mi Myspace y vendo mi música por iTunes o por Juno Download</em>". Si, vale; teneís razón, esto es otro site para hospedar tu música. Pero dejarme que os presente a mi nuevo <em>hamijo</em><a href="http://bandcamp.com/" target="_blank"><span style="color: #8cbbea;">**Bandcamp**</span></a>y luego tomáis vuestras propias decisiones al respecto.
 

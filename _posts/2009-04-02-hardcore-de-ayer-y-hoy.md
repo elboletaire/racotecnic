@@ -19,9 +19,9 @@ categories:
 - General
 tags: []
 ---
-<blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por **stygmmah**.</blockquote>
+> Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
+Entrada escrita originalmente por **stygmmah**.
 
 Ahí va mi primer apunte, espero que lo disfrutéis!
 

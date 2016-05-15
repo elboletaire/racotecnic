@@ -19,9 +19,9 @@ categories:
 - General
 tags: []
 ---
-<blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por **909**.</blockquote>
+> Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
+Entrada escrita originalmente por **909**.
 
 ¿Quién alguna vez en su vida, como productor, ha cogido un libro sobre audio, síntesis o mastering y no podido pasar de la página diez?  (yo soy uno de ellos) Pues la empresa <a href="http://www.m-audio.com">M-Audio</a> nos ha hecho un favor, Y QUE FAVOR!, al desarrollar **Overdub: **<em>Una guia para productores con una estética de cómic</em>.
 

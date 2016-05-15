@@ -19,9 +19,9 @@ categories:
 - General
 tags: []
 ---
-<blockquote><em>Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.</em>
 
-Entrada escrita originalmente por **909**.</blockquote>
+> Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
+Entrada escrita originalmente por **909**.
 
 Fuera de la coña que pueda tener el titulo, no se va tan lejos de la realidad. La síntesis FM, no deja ser un proceso muy costoso en paciencia y esfuerzo, y muy alejado de la "nueva técnica" desarrollada llamada el "toqueteo", ya que, a diferencia con otros tipos de síntesis los resultados son muy dispares y una complejidad muy superior a cualquier otra síntesis. Fuera de la crítica, constructiva, sobre el "toqueteo" en la síntesis, esta no deja de ser una presima básica para cualquiera que quiera dedicarse a saber programar síntesis FM, ya veremos durante los siguientes articulos sobre síntesis FM, que es un hueso muy duro de roer y de resultados bastante aleatorios. Por lo que si quieres toquetear, cierra tu navegador y ponte a jugar con tu NI Massive, este no es tu sitio. :P
 
