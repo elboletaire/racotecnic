@@ -11,8 +11,8 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "<a href=\"http://www.racotecnic.com/wp-content/uploads/2011/04/mb1.png\"><img
-  class=\"alignleft size-full wp-image-1884\" title=\"mb\" src=\"http://www.racotecnic.com/wp-content/uploads/2011/04/mb1.png\"
+excerpt: "<a href=\"{{ site.url }}/uploads/2011/04/mb1.png\"><img
+  class=\"alignleft size-full wp-image-1884\" title=\"mb\" src=\"{{ site.url }}/uploads/2011/04/mb1.png\"
   alt=\"\" width=\"205\" height=\"195\" /></a>Llevo un rato peleándome con esto y
   finalmente he encontrado solución.\r\n\r\nEl caso es que los de PHP al hacer los
   métodos <a title=\"PHP: MultiByte String Functions\" href=\"http://php.net/manual/en/ref.mbstring.php\">MultiByte</a>
@@ -37,32 +37,33 @@ tags:
 - Codificació
 ---
 
-<a href="http://www.racotecnic.com/wp-content/uploads/2011/04/mb1.png"><img class="alignleft size-full wp-image-1884" title="mb" src="http://www.racotecnic.com/wp-content/uploads/2011/04/mb1.png" alt="" width="205" height="195" /></a>Llevo un rato peleándome con esto y finalmente he encontrado solución.
+<a href="{{ site.url }}/uploads/2011/04/mb1.png"><img class="alignleft size-full wp-image-1884" title="mb" src="{{ site.url }}/uploads/2011/04/mb1.png" alt="" width="205" height="195" /></a>Llevo un rato peleándome con esto y finalmente he encontrado solución.
 
 El caso es que los de PHP al hacer los métodos <a title="PHP: MultiByte String Functions" href="http://php.net/manual/en/ref.mbstring.php">MultiByte</a> (un apaño que harían al ver que se olvidaron del resto de juegos de caracteres...) no hicieron ni el de primera letra mayúscula ni minúscula.
 
 Ambos métodos me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)<a id="more"></a><a id="more-1873"></a>
 
 ~~~php
+<?php
 // First letter uppercase
-if ( !function_exists('mb_ucfirst') ) {
-	function mb_ucfirst($str, $to_lower = false, $charset = 'utf-8')
-	{
-		$first = mb_strtoupper(mb_substr($str, 0, 1, $charset), $charset);
-		$end = mb_substr($str, 1, mb_strlen($str, $charset), $charset);
-		// Convert them all to lowercase (if specified)
-		if ( $to_lower ) {
-			$end = mb_strtolower($end, $charset);
-		}
-		return $first . $end;
-	}
+if (!function_exists('mb_ucfirst')) {
+  function mb_ucfirst($str, $to_lower = false, $charset = 'utf-8')
+  {
+    $first = mb_strtoupper(mb_substr($str, 0, 1, $charset), $charset);
+    $end = mb_substr($str, 1, mb_strlen($str, $charset), $charset);
+    // Convert them all to lowercase (if specified)
+    if ($to_lower) {
+      $end = mb_strtolower($end, $charset);
+    }
+    return $first . $end;
+  }
 }
 // First letter lowercase
-if ( !function_exists('mb_lcfirst') ) {
-	function mb_lcfirst($str, $charset = 'utf-8'){
-		$first = mb_strtolower(mb_substr($str, 0, 1, $charset), $charset);
-		return $first . mb_substr($str, 1, mb_strlen($str, $charset), $charset);
-	}
+if (!function_exists('mb_lcfirst')) {
+  function mb_lcfirst($str, $charset = 'utf-8') {
+    $first = mb_strtolower(mb_substr($str, 0, 1, $charset), $charset);
+    return $first . mb_substr($str, 1, mb_strlen($str, $charset), $charset);
+  }
 }
 ~~~
 
@@ -71,12 +72,7 @@ Como podréis ver al método `mb_ucfirst` le he añadido un parámetro `$to_lowe
 El parámetro `$charset` es el que más me ha dado por culo (al principio no lo tenía en cuenta); tened en cuenta vuestra codificación de caracteres y cambiadlo directamente en la función si es preciso.
 
 Buen fin de semana!
-<blockquote>
-**Referencias**
 
-<ul>
-<li><a title="php.net" href="http://php.net/manual/en/ref.mbstring.php">PHP: Multibyte String Functions</a></li>
-
-<a title="php.net" href="http://php.net/manual/en/ref.mbstring.php"> </a></ul>
-
-<a title="php.net" href="http://php.net/manual/en/ref.mbstring.php"> </a></blockquote>
+> **Referencias**
+>
+> - <a title="php.net" href="http://php.net/manual/en/ref.mbstring.php">PHP: Multibyte String Functions</a>

@@ -7,39 +7,11 @@ author:
   display_name: neosy
   login: neosy
   email: neosy8@gmail.com
-  url: ''
 author_login: neosy
 author_email: neosy8@gmail.com
-excerpt: "
-<a href=\"http://www.neosy.net/wp-content/uploads/2010/09/apple-logo1.jpg\"></a><a
-  href=\"http://www.neosy.net/wp-content/uploads/2010/09/apple-logo.jpg\"><img class=\"size-full
-  wp-image-174 aligncenter\" src=\"http://www.neosy.net/wp-content/uploads/2010/09/apple-logo.jpg\"
-  alt=\"\" width=\"600\" height=\"150\" /></a>\r\n
-Como
-  la gran mayoría de gente sabe, ayer sábado 4 de septiembre Apple abrió su primera
-  Apple Store en España. El sitio elegido ha sido un local en el centro comercial
-  de La Maquinista (Barcelona). El local en sí es bastante grande (1300 metros cuadrados),
-  pues hay que tener en cuenta que es la Apple Store en centro comercial mas grande
-  de Europa.\r\nLa cola empezó el viernes por la mañana, antes de la apertura
-  del centro comercial, cuando el primer cliente se \"coló\" en las instalaciones
-  a las 6:30 de la mañana. Eso fue el inicio de lo que poco a poco iba a convertirse
-  en una cola de entre una y dos horas para poder entrar a la tienda al dia siguiente.
-  Comentar que a las 00:00 de la noche, se destapó la tienda, eliminando la barrera
-  que impedía ver el interior bajo la atenta mirada de la cola, que a gritos y aplausos
-  veían por primera vez el interior de la tienda. El sábado, a las 9:55 de la mañana,
-  nos encontramos con esto:\r\n
-<a href=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01814.jpg\"><img
-  class=\"size-medium wp-image-177      alignnone\" src=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01814-300x225.jpg\"
-  alt=\"\" width=\"270\" height=\"205\" /></a><a href=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01816.jpg\">
-  <img class=\"size-medium wp-image-178      alignnone\" src=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01816-300x225.jpg\"
-  alt=\"\" width=\"270\" height=\"205\" /></a>\r\n<a href=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01819.jpg\"><img
-  class=\"size-medium wp-image-180    alignnone\" src=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01819-300x225.jpg\"
-  alt=\"\" width=\"270\" height=\"205\" /></a><a href=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01817.jpg\">
-  <img class=\"size-medium wp-image-179     alignnone\" src=\"http://www.neosy.net/wp-content/uploads/2010/09/DSC01817-300x225.jpg\"
-  alt=\"\" width=\"270\" height=\"205\" /></a>\r\nLlegado cierto punto, incluso
-  ciertos empleados nos proporcionaban gratuitamente una botella de agua (desconozco
-  si eran empleados por parte de Apple o de la propia marca, pues no llevaban la indumentaria
-  azul de los vendedores)."
+excerpt: "Como la gran mayoría de gente sabe, ayer sábado 4 de septiembre Apple
+  abrió su primera Apple Store en España. El sitio elegido ha sido un local en
+  el centro comercial de La Maquinista (Barcelona)."
 wordpress_id: 1596
 wordpress_url: http://racotecnic.com/?p=1596
 date: '2010-09-06 12:00:23 +0200'
@@ -90,9 +62,6 @@ Para finalizar os muestro la camiseta que nos regalaron:
 
 <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01844.jpg"><img class="size-medium wp-image-221 alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01844-300x225.jpg" alt="" width="270" height="205" /></a> <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01845.jpg"><img class="size-medium wp-image-222 alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01845-300x225.jpg" alt="" width="270" height="205" /></a>
 
-**Aviso:
-**
-
-<ul>
-<li><a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank">Neosy</a></li>
-</ul>
+> **Aviso:**
+>
+> - <a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank">Neosy</a>

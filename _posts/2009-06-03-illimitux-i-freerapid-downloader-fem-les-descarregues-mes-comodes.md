@@ -7,28 +7,13 @@ author:
   display_name: gerno
   login: gerno
   email: hastaqueelcuerpoaguante@hotmail.com
-  url: ''
 author_login: gerno
 author_email: hastaqueelcuerpoaguante@hotmail.com
-excerpt: "
-\r\n
-Com
-  tots sabreu, constantment van apareixent i desapareixen maneres de burlar les restriccions
-  de pàgines de videos i descàrregues. Avui vinc a presentar **Illimitux**,
-  un <span style=\"text-decoration: underline;\">complement per a firefox</span> que
-  ens ajudarà a saltar algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare;
-  així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues.\r\n
-Ara anem a parlar de **Illimitux**.
-  Abans de començar, cal avisar que és un complement en fase de proves i que no és
-  del tot estable, intentarem aclarir en aquest post com configurar-lo perquè ens
-  funcioni el més bé possible. Les indicacions són per a la versió actual (2.0.2)
-  esperem que en un futur pròxim en millorin l'estabilitat.\r\n
-Per instal·lar-lo accedim a la <a href=\"https://addons.mozilla.org/ca/firefox/addon/11037\">pàgina
-  de descàrrega</a>, seleccionem conforme som conscients que és experimental i l'afegim
-  al nostre Firefox. Una vegada s'hagi descarregat, haurem de reiniciar el programa.\r\n\r\n<a
-  rel=\"lightbox[568]\" href=\"http://img190.imageshack.us/img190/5144/13086518.jpg\"
-  target=\"_blank\"><img class=\"aligncenter\" src=\"http://img190.imageshack.us/img190/5144/13086518.jpg\"
-  border=\"0\" alt=\"\" width=\"400\" height=\"260\" /></a>\r\n\r\n"
+excerpt: "Com tots sabreu, constantment van apareixent i desapareixen maneres de
+  burlar les restriccions de pàgines de videos i descàrregues. Avui vinc a
+  presentar **Illimitux**, un complement per a firefox que ens ajudarà a saltar
+  algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare;
+  així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues."
 wordpress_id: 595
 wordpress_url: http://racotecnic.com/?p=595
 date: '2009-06-03 14:07:27 +0200'
@@ -45,8 +30,6 @@ tags:
 - Rapidshare
 - Restriccions
 ---
-
-
 
 Com tots sabreu, constantment van apareixent i desapareixen maneres de burlar les restriccions de pàgines de videos i descàrregues. Avui vinc a presentar **Illimitux**, un <span style="text-decoration: underline;">complement per a firefox</span> que ens ajudarà a saltar algunes restriccions de Megavideo, Megaupload, Veoh i Rapidshare; així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues.
 

@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Instalar PHP 5.4.X en Ubuntu 11.10 / 12.04.X
+class: no-line-numbers
 author:
   display_name: Booletaire
   login: elboletaire
@@ -38,11 +39,10 @@ Añadid el repositorio siguiendo estos pasos y debería funcionar (provado en Ub
 ~~~bash
 sudo add-apt-repository ppa:ondrej/php5
 ~~~
-<blockquote>
-<b>Nota (a 23/11/2013):</b> Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: `ppa:ondrej/php5-oldstable`</blockquote>
+
+> **Nota (a 23/11/2013):** Parece ser que este repositorio es en el que el usuario (ondrej) pretende tener los paquetes más actualizados (php 5.5 y apache 2.4 ahora mismo). Si lo que queréis es utilizar la última versión de php 5.4 (old stable) tenéis que utilizar este otro repositorio en su lugar: `ppa:ondrej/php5-oldstable`
 
 Si no tenéis el comando `add-apt-repository` es porque no tenéis el paquete `python-software-properties` instalado. Instaladlo con aptitude si es así y podréis ejecutar el comando sin problemas.
-
 Una vez añadido el repositorio actualizáis la lista de paquetes:
 
 ~~~bash

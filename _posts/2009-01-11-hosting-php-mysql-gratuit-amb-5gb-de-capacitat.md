@@ -16,7 +16,7 @@ wordpress_url: http://racoinformatic.underave.net/?p=112
 date: '2009-01-11 17:36:57 +0100'
 date_gmt: '2009-01-11 16:36:57 +0100'
 categories:
-- Domains &amp; Hosting
+- Domains & Hosting
 tags:
 - PHP
 - MySQL

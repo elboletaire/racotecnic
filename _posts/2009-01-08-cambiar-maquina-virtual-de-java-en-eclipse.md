@@ -56,5 +56,6 @@ Para arreglarlo es tan sencillo como editar el fichero "java_home" que se encuen
     /usr/lib/j2sdk1.6-sun
     /usr/lib/j2sdk1.5-sun
     /usr/lib/j2sdk1.4-sun
+{: .no-line-numbers }
 
 ¡Y listo! Reiniciamos Eclipse y debería empezar a funcionar correctamente ^^

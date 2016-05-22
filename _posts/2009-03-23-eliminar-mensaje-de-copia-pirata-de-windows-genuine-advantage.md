@@ -7,7 +7,6 @@ author:
   display_name: Axelain
   login: Destroy
   email: teknera2002-lokita@yahoo.es
-  url: ''
 author_login: Destroy
 author_email: teknera2002-lokita@yahoo.es
 wordpress_id: 366

@@ -4,6 +4,7 @@ status: publish
 published: true
 title: Instalación WAMP a pelo con múltiples versiones de PHP o cómo configurar Apache
   para correr varias versiones de PHP en distintos servidores virtuales
+class: no-line-numbers
 author:
   display_name: Booletaire
   login: elboletaire
@@ -48,6 +49,7 @@ El proceso lo voy a realizar desde Windows 7 x64, pero como he dicho lo he tenid
   <li>Windows 7 x64 y x86</li>
   <li>Windows 8 x64</li>
   <li>Windows 8.1 x64</li>
+  <li>Windows 10 x64</li>
 </ul>
 
 Como podéis ver, en la versión 32 bits de windows 8 no lo he probado pero, como digo, debería funcionar (me pregunto quién corre un Win8 a 32 bits).
@@ -57,7 +59,7 @@ En cuanto a las versiones de software, yo personalmente recuerdo haber probado, 
 <ul>
   <li>Apache 2.0, 2.2 y 2.4</li>
   <li>MySQL 5.5</li>
-  <li>PHP 5.3, 5.4, 5.5 y 5.6</li>
+  <li>PHP 5.3, 5.4, 5.5, 5.6 y 7</li>
 </ul>
 
 De hecho yo en mi ordenador tengo todas esas versiones de PHP instaladas pero, por motivos obvios, en este tutorial voy a utilizar la última versión de apache y las dos últimas versiones de PHP (el mínimo necesario para poder enseñaros cómo configurar múltiples versiones por virtualhost).
@@ -189,7 +191,7 @@ Para instalarlo debéis ejecutar un terminal con derechos de administrador. Una 
 
 Para hacer que `ApacheMonitor` se ejecute cuando arranquéis el ordenador únicamente tenéis que crearle un acceso directo en la sección `Inicio` del menú Inicio (un poco redundante, sí).
 
-<a href="http://www.racotecnic.com/wp-content/uploads/2015/03/apache_monitor.png"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/apache_monitor.png" alt="En català no és pas tant redundant, oi?" width="233" height="77" class="aligncenter size-full wp-image-2334" /></a>
+<a href="{{ site.url }}/uploads/2015/03/apache_monitor.png"><img src="{{ site.url }}/uploads/2015/03/apache_monitor.png" alt="En català no és pas tant redundant, oi?" width="233" height="77" class="aligncenter size-full wp-image-2334" /></a>
 
 Hecho. Si os da el gusanillo reiniciad el ordenador y acceded de nuevo a <a href="http://localhost">http://localhost</a> para comprobar que todo sigue funcionando OK.
 
@@ -199,7 +201,9 @@ Id a la <a href="http://windows.php.net/download/">página de descargas de PHP p
 
 Al descargarlas únicamente debéis tener en cuenta la arquitectura que estéis instalando (en mi caso x64) y que **Apache es Thread Safe**.
 
-<a href="https://instagram.com/elboletaire/"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/thread_safe.jpg" alt="Thread safe" width="612" height="612" class="aligncenter size-full wp-image-2332" /></a>
+<a href="https://instagram.com/elboletaire/">
+  <img src="{{ site.url }}/uploads/2015/03/thread_safe.jpg" alt="Thread safe" />
+</a>
 
 En mi instalación descargo <a href="http://windows.php.net/downloads/releases/php-5.6.6-Win32-VC11-x64.zip">PHP 5.6 (5.6.6) VC11 x64 Thread Safe (2015-Feb-19 01:45:29)</a> y <a href="http://windows.php.net/downloads/releases/php-5.5.22-Win32-VC11-x64.zip">PHP 5.5 (5.5.22) VC11 x64 Thread Safe (2015-Feb-19 01:38:01)</a>.
 
@@ -252,10 +256,11 @@ FcgidWrapper "C:/httpd/php56/php-cgi.exe" .php
 ~~~
 
 Utilizando `ApacheMonitor` reiniciad Apache. Cread un fichero `index.php` en el directorio `www` con un `phpinfo` dentro:
-<div class="highlight highlight-php">
 
-<span class="pl-s2"><span class="pl-k"><</span>?<span class="pl-c1">php</span> <span class="pl-s3">phpinfo</span>(); </span><span class="pl-pse"><span class="pl-s2">?</span>></span>
-</div>
+~~~php
+<?php
+phpinfo();
+~~~
 
 Y acceded a <a href="http://localhost">http://localhost</a> para verificar que PHP funciona correctamente.
 
@@ -281,25 +286,26 @@ Y en el fichero `httpd-vhosts.conf` previamente abierto creamos los servidores v
 
 ~~~apache
 <VirtualHost *:80>
-    # Indicamos que queremos utilizar PHP 5.5
-    FcgidInitialEnv PHPRC "C:/httpd/php55"
-    FcgidWrapper "C:/httpd/php55/php-cgi.exe" .php
+  # Indicamos que queremos utilizar PHP 5.5
+  FcgidInitialEnv PHPRC "C:/httpd/php55"
+  FcgidWrapper "C:/httpd/php55/php-cgi.exe" .php
 
-    DocumentRoot "C:/httpd/www/php55.loc"
-    ServerName php55.loc
-    ServerAlias www.php55.loc
-    ErrorLog "logs/php55.loc-error.log"
-    CustomLog "logs/php55.loc-access.log" common
+  DocumentRoot "C:/httpd/www/php55.loc"
+  ServerName php55.loc
+  ServerAlias www.php55.loc
+  ErrorLog "logs/php55.loc-error.log"
+  CustomLog "logs/php55.loc-access.log" common
 </VirtualHost>
-<VirtualHost *:80>
-    # Dado que utilizo PHP 5.6 por defecto no me es
-    # necesario especificar nada a fastcgi
 
-    DocumentRoot "C:/httpd/www/php56.loc"
-    ServerName php56.loc
-    ServerAlias www.php56.loc
-    ErrorLog "logs/php56.loc-error.log"
-    CustomLog "logs/php56.loc-access.log" common
+<VirtualHost *:80>
+  # Dado que utilizo PHP 5.6 por defecto no me es
+  # necesario especificar nada a fastcgi
+
+  DocumentRoot "C:/httpd/www/php56.loc"
+  ServerName php56.loc
+  ServerAlias www.php56.loc
+  ErrorLog "logs/php56.loc-error.log"
+  CustomLog "logs/php56.loc-access.log" common
 </VirtualHost>
 ~~~
 
@@ -314,7 +320,7 @@ Finalmente reiniciad apache utilizando ApacheMonitor y acceded con vuestro naveg
 
 Estoy seguro de que sí :)
 
-<a href="http://www.racotecnic.com/wp-content/uploads/2015/03/php.loc_.png"><img src="http://www.racotecnic.com/wp-content/uploads/2015/03/php.loc_-1024x732.png" alt="php.loc" class="aligncenter size-large wp-image-2336" /></a>
+<a href="{{ site.url }}/uploads/2015/03/php.loc_.png"><img src="{{ site.url }}/uploads/2015/03/php.loc_-1024x732.png" alt="php.loc" class="aligncenter size-large wp-image-2336" /></a>
 
 ## <a id="user-content-instalar-mysql" class="anchor" href="#instalar-mysql"></a>Instalar MySQL
 

@@ -11,21 +11,12 @@ author:
 author_login: elboletaire
 author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
-excerpt: "Hace unos días <a title=\"Ver entrada\" href=\"http://racotecnic.com/2009/06/illimitux-i-freerapid-downloader-fem-les-descarregues-mes-comodes/\"
-  target=\"_self\">gerno nos explicaba</a> cómo facilitarnos las descargas mediante
-  el plugin Illimitux y la aplicación FreeRapid Downloader.\r\n\r\nA parte de FreeRapid
+excerpt: "Hace unos días gerno nos explicaba cómo facilitarnos las descargas mediante
+  el plugin Illimitux y la aplicación FreeRapid Downloader. A parte de FreeRapid
   existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os
   servirán como **gestores de descarga** para páginas como **megaupload
   o rapidshare**. A continuación os expongo un par más que encuentro bastante
-  interesantes.\r\n
-## <img class=\"alignleft size-full wp-image-1205\" title=\"tucan_logo\"
-  src=\"{{ site.url }}/uploads/2009/07/tucan_logo.png\"
-  alt=\"tucan_logo\" width=\"150\" height=\"150\" />Tucan Manager\r\nSoftware
-  libre español desarrollado en python. Disponible para Windows y Linux.\r\n\r\nMuy
-  sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, zshare,
-  filefactory, mediafire, gigasize y rapidshare y permite el uso de cuentas premium
-  em MegaUpload y Rapidshare.\r\n\r\n<a title=\"tucaneando.com\" rel=\"nofollow\"
-  href=\"http://www.tucaneando.com\" target=\"_blank\">www.tucaneando.com</a>\r\n\r\n"
+  interesantes."
 wordpress_id: 718
 wordpress_url: http://racotecnic.com/?p=718
 date: '2009-07-30 03:08:55 +0200'
@@ -45,7 +36,7 @@ Hace unos días <a title="Ver entrada" href="http://racotecnic.com/2009/06/illim
 
 A parte de FreeRapid existen algunas otras aplicaciones disponibles para Linux, Mac y Windows que os servirán como **gestores de descarga** para páginas como **megaupload o rapidshare**. A continuación os expongo un par más que encuentro bastante interesantes.
 
-## <img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" />Tucan Manager
+## <img class="alignleft size-full wp-image-1205" title="tucan_logo" src="{{ site.url }}/uploads/2009/07/tucan_logo.png" alt="tucan_logo" width="150" height="150" align="right" />Tucan Manager
 
 Software libre español desarrollado en python. Disponible para Windows y Linux.
 
@@ -57,9 +48,7 @@ Muy sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, z
 
 <img class="aligncenter size-full wp-image-1206" title="tucan_screen2" src="{{ site.url }}/uploads/2009/07/tucan_screen2.png" alt="tucan_screen2" width="579" height="336" />
 
-<a href="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150"><img class="alignnone" title="JDownloader logo" src="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150" alt="" width="169" height="169" align="right" /></a>
-
-## jDownloader
+## <a href="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150"><img title="JDownloader logo" src="http://jdownloader.org/_media/knowledge/wiki/jdownloader.png?w=150" alt="" width="169" height="169" align="right" /></a> jDownloader
 
 Desarrollado en Java* y con prestaciones similares a FreeRapid Downloader.
 

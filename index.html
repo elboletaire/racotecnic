@@ -1,8 +1,7 @@
 ---
 layout: post-index
-title: PHP image manipulation class
-description: "A very easy to use PHP image manipulation class"
-tags: [php, gd, image, watimage, watermark, image manipulation]
+description: Punt de trobada de coneixements
+tags: [development, hardware, software, audio, video, mapping, php, bash, apache, nginx, cakephp, git]
 comments: false
 image:
   feature: el-carmel-viewpoint.jpg
@@ -11,7 +10,7 @@ image:
 ---
 
 {% for post in paginator.posts %}
-<article class="hentry">
+<article class="hentry{% if post.class %} {{ post.class }}{% endif %}">
   <header>
     {% if post.image.feature %}
       <div class="entry-image-index">

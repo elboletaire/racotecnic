@@ -138,6 +138,7 @@ Salida aproximada:
         ['password'] => "Valor de la variable $_POST['password']"
         ['email'] => "Valor de la variable $_POST['email']"
     )
+{: .no-line-numbers }
 
 Recuperando todas las claves $_POST menos algunas:
 
@@ -155,5 +156,6 @@ Salida aproximada:
         ['fecha_nacimiento'] => "Valor de la variable $_POST['fecha_nacimiento']"
         ['cualquierVariablePostQueNoEstéEnExclude'] => ....
     )
+{: .no-line-numbers }
 
 Todavía se podría mejorar un poco añadiendo un tercer parámetro por referencia (por si nos interesa modificar la tabla por refencia) y probablemente alguna cosilla más, pero eso ya os lo dejo a vuestro gusto :)

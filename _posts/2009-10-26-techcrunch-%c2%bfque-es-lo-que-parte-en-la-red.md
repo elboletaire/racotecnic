@@ -25,11 +25,7 @@ Techcrunch es una web de visita obligada para todos aquellos que queremos saber 
 
 Noticias  interesantes, novedades, empresas que empiezan (pero que darán que hablar),  y curiosidades de otras que llevan ya tiempo partiendo la pana.
 
-<img class="aligncenter size-medium wp-image-826" title="techcrunch" src="{{ site.url }}/uploads/2009/10/techcrunch-300x187.png" alt="techcrunch" width="300" height="187" />
+<img title="techcrunch" src="{{ site.url }}/uploads/2009/10/techcrunch.png" alt="techcrunch" />
 
-<ul>
-<blockquote>
-<li>**Techcrunch:** <a href="http://www.techcrunch.com/" target="_blank" rel="nofollow">http://www.techcrunch.com/</a></li>
-<li>**Techcrunch gadgets:** <a href="http://www.crunchgear.com/" target="_blank" rel="nofollow">http://www.crunchgear.com/</a></li>
-</blockquote>
-</ul>
+> - **Techcrunch:** <a href="http://www.techcrunch.com/" target="_blank" rel="nofollow">http://www.techcrunch.com/</a>
+> - **Techcrunch gadgets:** <a href="http://www.crunchgear.com/" target="_blank" rel="nofollow">http://www.crunchgear.com/</a>

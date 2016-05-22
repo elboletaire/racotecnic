@@ -32,14 +32,14 @@ Es por eso que hoy escribo esta entrada, para notificaros que todos los contenid
 A continuación os dejo un listado con los artículos rescatados:
 
 <ul>
-<li><a href="../2010/01/sintesis-fm-el-patito-feo-de-la-sintetizacion-parte-1/" rel="bookmark">Síntesis FM: El patito feo de la sintetización. (Parte 1)</a></li>
-<li><a class="title" href="../2009/12/arnold-steiner-a-k-a-as1/" rel="bookmark">Arnold Steiner a.k.a AS1</a></li>
-<li><a class="title" href="../2009/12/bandcamp-vende-tu-musica-a-tu-precio-justo/" rel="bookmark">Bandcamp: Vende tu música, a tu precio justo. :)</a></li>
-<li><a class="title" href="../2009/07/overdub-el-primer-comic-didactico-para-productores/" rel="bookmark">OVERDUB: El primer cómic didáctico para productores</a></li>
-<li><a class="title" href="../2009/04/la-musica-electronica-un-estat-emocional/" rel="bookmark">La música electrònica, un estat emocional</a></li>
-<li><a class="title" href="../2009/04/hardcore-de-ayer-y-hoy/" rel="bookmark">Hardcore de ayer y hoy</a></li>
-<li><a class="title" href="../2009/04/north-korean-speedcore/" rel="bookmark">North-Korean SPEEDCORE</a></li>
-<li><a class="title" href="../2009/03/derechos-de-autor/" rel="bookmark">Derechos de Autor</a></li>
+<li><a href="{{ site.url }}/2010/01/sintesis-fm-el-patito-feo-de-la-sintetizacion-parte-1/" rel="bookmark">Síntesis FM: El patito feo de la sintetización. (Parte 1)</a></li>
+<li><a class="title" href="{{ site.url }}/2009/12/arnold-steiner-a-k-a-as1/" rel="bookmark">Arnold Steiner a.k.a AS1</a></li>
+<li><a class="title" href="{{ site.url }}/2009/12/bandcamp-vende-tu-musica-a-tu-precio-justo/" rel="bookmark">Bandcamp: Vende tu música, a tu precio justo. :)</a></li>
+<li><a class="title" href="{{ site.url }}/2009/07/overdub-el-primer-comic-didactico-para-productores/" rel="bookmark">OVERDUB: El primer cómic didáctico para productores</a></li>
+<li><a class="title" href="{{ site.url }}/2009/04/la-musica-electronica-un-estat-emocional/" rel="bookmark">La música electrònica, un estat emocional</a></li>
+<li><a class="title" href="{{ site.url }}/2009/04/hardcore-de-ayer-y-hoy/" rel="bookmark">Hardcore de ayer y hoy</a></li>
+<li><a class="title" href="{{ site.url }}/2009/04/north-korean-speedcore/" rel="bookmark">North-Korean SPEEDCORE</a></li>
+<li><a class="title" href="{{ site.url }}/2009/03/derechos-de-autor/" rel="bookmark">Derechos de Autor</a></li>
 </ul>
 
 * El enlace está puesto simbólicamente ya que voy a eliminar el blog ahora mismo xD

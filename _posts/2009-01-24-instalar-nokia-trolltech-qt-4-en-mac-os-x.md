@@ -56,6 +56,7 @@ gunzip qt-mac-opensource-src-4.4.3.tar.gz .
 # Ficheros tar
 tar xvf qt-mac-opensource-src-4.4.3.tar .
 ~~~
+{: .no-line-numbers }
 
 Accedemos a la carpeta creada y pasamos a la configuración:
 
@@ -63,6 +64,7 @@ Accedemos a la carpeta creada y pasamos a la configuración:
 cd qt-mac-opensource-src-4.4.3
 ./configure
 ~~~
+{: .no-line-numbers }
 
 Esto llevará un rato... Cuando haya terminado hacemos make (esto aun llevará más rato [pero mucho, eh?]) y finalmente make install (esta última la ejecutaremos como superusuario):
 
@@ -71,6 +73,7 @@ Esto llevará un rato... Cuando haya terminado hacemos make (esto aun llevará m
 make
 sudo make install
 ~~~
+{: .no-line-numbers }
 
 Cuando por fin termine la instalación pasaremos a decirle a la Terminal dónde se encuentran los ejeutables de las QT, para ello editaremos el fichero ".profile" (en caso de ser SSH, si fuera csh o tcsh seria el fichero ".login") situado en nuestra carpeta home:
 
@@ -83,6 +86,7 @@ Y añadimos la siguiente línea:
 ~~~bash
 export PATH=/usr/local/Trolltech/Qt-4.4.3/bin:$PATH
 ~~~
+{: .no-line-numbers }
 
 Y listo! Ya podemos empezar a compilar y ejecutar nuestros programas hechos con Qts!
 

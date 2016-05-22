@@ -23,7 +23,7 @@ tags: []
 > Este artículo proviene del audioblog, clausurado por su desuso y cuyas entradas han sido movidas a este blog para que no se pierdan en el olvido.
 Entrada escrita originalmente por **909**.
 
-<img class="aligncenter" src="http://parumi.org/curso_produccion_musical_linux/cap4/real-modular-synth.png" alt="" width="545" height="546" />
+<img class="aligncenter" src="http://parumi.org/curso_produccion_musical_linux/cap4/real-modular-synth.png" alt="" />
 
 Para empezar, le daremos un repaso rápido a lo que en si un sinteizador modular, ya que quizas sea la primera vez que te encuentres con este tipo de "cacharros".
 
@@ -33,19 +33,18 @@ Otra de las claves de la defición, es que, los sintetizadores modulares son ins
 
 Visto que este tipo de sintetizadores se construyen apartir de modulos, veamos los diferentes modulos que podemos encontrar. Los principales para la construcción de uno modular serían: **VCO, VCA, VCF, EG y/o LFO**. Luego puedes encontrar modulos de efectos, secuenciadores, logic gates, modulos Sync (de MIDI a CV), glides, re-triggers y un largo etcetera de modulos.
 
-<ul>
-<li>**VCO:** Corresponde al oscilador. Este modulo es el encargado de generar una nota a una frecuencia concordante a la tecla que hayamos tocado de nuestro teclado, con un tipo de onda. (Sinoidal, sierra, cuadrada, etc)</li>
-<li>**LFO:** Coresponde al oscilador de baja frecuencia. Este oscilador altera el tono de una manera periodica del oscilador principal, produciendo el vibrato.</li>
-<li>**VCA:** Corresponde al amplificador. Este amplificador es el que aumenta la amplitud de la onda. (Recordad, que <span style="text-decoration: underline;">todas estas ondas son eléctricas</span>, es decir hasta que no pasa por un altavoz no transforma en "algo" audible.)</li>
-<li>**EG:** Corresponde al generador de envolventes. Cuando una tocas una tecla, se dispara una señal que llega a este, que provoca una tensión para controlar la onda del amplificador. Al controlar la onda del <span style="color: #666699;">**VCA**</span> provaca la genreación de lo que se denomina <span style="color: #666699;">**ADSR**</span> (Attack, Decay, Sustain y Release). Aunque también podemos encontrar otras varientes, como por ejemplo: <span style="color: #666699;">**AHDSR**</span> (Attack, Hold, Decay, Release) este tipo envolvente es lo podemos encontrar en los famosos Korg MS-20, aunque las verdaderas estrellas de dicho sintetizador son los filtros.</li>
-<li>**VCF:** Corresponde a los filtros. El filtro recorta harmonicos de la onda que genera el oscilador, antes de pasar por el VCA. Existen muchos tipos de filtros, como por ejemplo: <strong><span style="color: #666699;">HP</span>, <span style="color: #666699;">BP</span>, <span style="color: #666699;">LP</span></strong> y/o<strong> <span style="color: #666699;">C</span><span style="color: #666699;">omb</span></strong>.</li>
-</ul>
+- **VCO:** Corresponde al oscilador. Este modulo es el encargado de generar una nota a una frecuencia concordante a la tecla que hayamos tocado de nuestro teclado, con un tipo de onda. (Sinoidal, sierra, cuadrada, etc)
+- **LFO:** Coresponde al oscilador de baja frecuencia. Este oscilador altera el tono de una manera periodica del oscilador principal, produciendo el vibrato.
+- **VCA:** Corresponde al amplificador. Este amplificador es el que aumenta la amplitud de la onda. (Recordad, que <span style="text-decoration: underline;">todas estas ondas son eléctricas</span>, es decir hasta que no pasa por un altavoz no transforma en "algo" audible.)
+- **EG:** Corresponde al generador de envolventes. Cuando una tocas una tecla, se dispara una señal que llega a este, que provoca una tensión para controlar la onda del amplificador. Al controlar la onda del <span style="color: #666699;">**VCA**</span> provaca la genreación de lo que se denomina <span style="color: #666699;">**ADSR**</span> (Attack, Decay, Sustain y Release). Aunque también podemos encontrar otras varientes, como por ejemplo: <span style="color: #666699;">**AHDSR**</span> (Attack, Hold, Decay, Release) este tipo envolvente es lo podemos encontrar en los famosos Korg MS-20, aunque las verdaderas estrellas de dicho sintetizador son los filtros.
+- **VCF:** Corresponde a los filtros. El filtro recorta harmonicos de la onda que genera el oscilador, antes de pasar por el VCA. Existen muchos tipos de filtros, como por ejemplo: <strong><span style="color: #666699;">HP</span>, <span style="color: #666699;">BP</span>, <span style="color: #666699;">LP</span></strong> y/o<strong> <span style="color: #666699;">C</span><span style="color: #666699;">omb</span></strong>.
 
 Para que no suene tanto a chino, en el siguiente diagrama podemos observar el esquema básico de un sintetizador:
 
-<img class="size-full wp-image-961  aligncenter" src="{{ site.url }}/uploads/2009/11/sinte001.gif" alt="Esquema sintetizador" width="500" height="379" />
+<img src="{{ site.url }}/uploads/2009/11/sinte001.gif" alt="Esquema sintetizador" />
 
 Para empezar, antes de ir con la elección de los modulos, hay que ver las principales características de los fabricantes de sintes modulares ( formatos, voltaje, tipo de conexiones etc ). Ya que puede darse el caso que se compre un modulo super-chulo pero que es incompatible con el votlaje o con el formato del propio modulo. En la siguiente tabla, se puede observar las caracteristicas de varios fabricantes.
+
 <table style="text-align: center;" width="582" border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
@@ -99,26 +98,31 @@ Para empezar, antes de ir con la elección de los modulos, hay que ver las princ
 </tbody>
 </table>
 
-El formato **Eurorack**, basados en los <span style="color: #666699;">**bastidores Rack**</span>,** **es el formato standar a dia de hoy. Esto queda palpable en las dimensiones de los compresores, croosovers que podaís ver en cualquier fiestas, clubs o estudios de audio, por ejemplo, o en la informatica para albergar servidores. Las medidas del formato se basan basada en las espeficaciones definadas en la <a href="http://www.server-racks.com/eia-310.html">EIA-310 </a>. <strong><span style="color: #888888;"><span style="color: #666699;">El ancho</span></span> </strong>esta normalizado, siempre es de <span style="color: #888888;"><span style="color: #666699;">**19"**</span></span>, recordemos que **1"(pulgada) = 2,54cm .·. 19" = 48,26cm. **Mientras que la altura viene determinada por la altura propia del aparato. Para unificar los fabricantes crearon una **unidad rack**, **U**,que determina <span style="color: #888888;"><strong><span style="color: #666699;">la altura del aparato</span></strong></span>. Hay aparatos que requieren solo 1U, como ejemplo, una Motu 828 y otras que necesitan varios <em>"slots"</em>como por ejemplo los servidores normalmente necesitan 4U. Esta medida **U =**<span style="color: #000000;">** 1,75" = 2,54 cm.** Por lo que si nos dicen que el modulo son 4U, la conversión sería así: Si **4U = 7" ? 4U = 10,16cm . **Los modulos que venden para estos sistemas de son de 3U, ya que, las columnas de los racks se distrubuyen cada 3U.</span>
+El formato **Eurorack**, basados en los <span style="color: #666699;">**bastidores Rack**</span>, es el formato standar a dia de hoy. Esto queda palpable en las dimensiones de los compresores, croosovers que podaís ver en cualquier fiestas, clubs o estudios de audio, por ejemplo, o en la informatica para albergar servidores. Las medidas del formato se basan basada en las espeficaciones definadas en la <a href="http://www.server-racks.com/eia-310.html">EIA-310 </a>. <strong><span style="color: #888888;"><span style="color: #666699;">El ancho</span></span> </strong>esta normalizado, siempre es de <span style="color: #888888;"><span style="color: #666699;">**19"**</span></span>, recordemos que **1"(pulgada) = 2,54cm .·. 19" = 48,26cm. **Mientras que la altura viene determinada por la altura propia del aparato. Para unificar los fabricantes crearon una **unidad rack**, **U**,que determina <span style="color: #888888;"><strong><span style="color: #666699;">la altura del aparato</span></strong></span>. Hay aparatos que requieren solo 1U, como ejemplo, una Motu 828 y otras que necesitan varios <em>"slots"</em>como por ejemplo los servidores normalmente necesitan 4U. Esta medida **U =**<span style="color: #000000;">** 1,75" = 2,54 cm.** Por lo que si nos dicen que el modulo son 4U, la conversión sería así: Si **4U = 7" ? 4U = 10,16cm . **Los modulos que venden para estos sistemas de son de 3U, ya que, las columnas de los racks se distrubuyen cada 3U.</span>
 
 Una vez vista las caracteriticas propias de cada fabricante, llega la gran pregunta: ¿Qué queremos que haga nuestro modular? Al ser un sintetizador creado por modulos indepedendientes, a nivel físico, entre ellos, podemos crear des de una caja de ritmos, o un procesador de señal externa, o sintetizador puro y duro. En este caso vamos usarlo tanto para crear sonidos propios, como para la modificación de una señal externa que le entre al modular.
 
 A modo de curiosidad-ejemplo, un modular hecho para funcionar como caja de ritmos. Como se puede observar se han susituido los componentes/modulos de un sintetizador (VCO, VCA) por modulos que contienen los samples con los sonidos de la caja. Por experencia propia, estas cajas son las más divertidas con las que me he podido encontrar, quien tenga cualquier modelo de las cajas <a href="http://img38.imageshack.us/img38/2223/15092009112.jpg" target="_blank">Vermona DRM</a>, lo sabe. ;)<img class="aligncenter size-full wp-image-1029" src="{{ site.url }}/uploads/2009/11/PlugPlay_13.jpg" alt="Modular Drum Machine" width="600" height="335" />
 
-## **OSCILADOR CONTROLADO POR VOLTAJE - VCO:**
+## OSCILADOR CONTROLADO POR VOLTAJE - VCO:
 
-El VCO, <em>el corazón de un sintetizador</em>, es un circuito electrónico que tiene una señal de salida, cuya frecuencia depende del valor de la amplitud de una tensión de entrada. <img class="alignleft" src="http://farm1.static.flickr.com/76/185348936_7ace4daa75.jpg?v=0" alt="" width="375" height="500" />Un módulo de VCO típico proporciona simultáneamente diferentes tipos de formas de onda a sus salidas. Las formas de onda más comunes son: <span style="color: #666699;">**Sinoidal**, **cuadrada**, **triángular** </span>y <span style="color: #808080;"><strong><span style="color: #666699;">diente de sierra (<em>sawtooths</em>)</span></strong><span style="color: #333333;">, llegando </span></span>algunos incluso a proporcionar estas ondas invertidas, e incluso sawtooths no invertidas.
+El VCO, <em>el corazón de un sintetizador</em>, es un circuito electrónico que tiene una señal de salida, cuya frecuencia depende del valor de la amplitud de una tensión de entrada.
+
+<img class="alignleft" src="http://farm1.static.flickr.com/76/185348936_7ace4daa75.jpg?v=0" alt="" />
+
+Un módulo de VCO típico proporciona simultáneamente diferentes tipos de formas de onda a sus salidas. Las formas de onda más comunes son: <span style="color: #666699;">**Sinoidal**, **cuadrada**, **triángular** </span>y <span style="color: #808080;"><strong><span style="color: #666699;">diente de sierra (<em>sawtooths</em>)</span></strong><span style="color: #333333;">, llegando </span></span>algunos incluso a proporcionar estas ondas invertidas, e incluso sawtooths no invertidas.
 
 Como se puede observar en la imagen un VCO standar tiene las siguientes entradas CV simultáneas:
 
 <ul>
-<li>Una entrada <span style="color: #666699;">**1Volt/octave**</span> utilizado conjuntamente con un teclado o un secuenciador salida CV.</li>
-<li>Una entrada de frecuencia modulada (<span style="color: #666699;">**FM**</span>) <em>lineal</em>,con un knob para atenuar, aunque también se puede dar el caso de que se incluya también una entrada <em>exponencial</em>, con un potenciametro para atenuar.</li>
-<li>Una entrada de Pulse Width Modulation (<span style="color: #666699;">**PWM**</span>).</li>
-<li>Una entrada de sincronización .</li>
-<li>En algunos casos, en este modulo Doepfer no esta presente, existe un knob adicional llamado <span style="color: #666699;">**Fine Tuning**</span> para los ajustes discretos de la frecuencia.</li>
+  <li>Una entrada <span style="color: #666699;">**1Volt/octave**</span> utilizado conjuntamente con un teclado o un secuenciador salida CV.</li>
+  <li>Una entrada de frecuencia modulada (<span style="color: #666699;">**FM**</span>) <em>lineal</em>,con un knob para atenuar, aunque también se puede dar el caso de que se incluya también una entrada <em>exponencial</em>, con un potenciametro para atenuar.</li>
+  <li>Una entrada de Pulse Width Modulation (<span style="color: #666699;">**PWM**</span>).</li>
+  <li>Una entrada de sincronización .</li>
+  <li>En algunos casos, en este modulo Doepfer no esta presente, existe un knob adicional llamado <span style="color: #666699;">**Fine Tuning**</span> para los ajustes discretos de la frecuencia.</li>
 </ul>
-<h3 style="text-align: left;">**AMPLIFICADOR CONTROLADO POR VOLTAJE - VCA:**
+
+## AMPLIFICADOR CONTROLADO POR VOLTAJE - VCA:
 
 <img class="alignleft" src="http://www.doepfer.de/A1323.gif" alt="" width="138" height="461" />
 
@@ -134,11 +138,7 @@ Como se puede observar , en el <em><span style="color: #666699;">**modo linear**
 
 Para hacerlo más "visual"; En este caso más audible :P. He echado mano de mi Dave Smith Evolver para que se pueda apreciar la diferencia "practica" de los dos modos.
 
-##
-
-##
-
-## **GENERADOR DE ENVOLVENTES - EG:**
+## GENERADOR DE ENVOLVENTES - EG:
 
 Un generador de envolvente es un circuito que genera una señal susceptible de controlar algún parámetro dentro de un sistema de síntesis. Normalmente, un EG se dispara con un evento <em><span style="color: #666699;">**note on**</span></em> , y por lo general, ataca a un VCA, a un VCF, etc.
 

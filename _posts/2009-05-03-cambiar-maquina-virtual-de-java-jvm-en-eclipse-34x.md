@@ -42,35 +42,33 @@ y la ruta de la máquina virtual de java deseada (en mi caso
 
 En linux y mac:
 
-~~~
--vm
-/usr/lib64/jvm/java-6-sun/bin/java**
--showsplash
-org.eclipse.platform
--framework
-plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
--vmargs
--Dosgi.requiredJavaVersion=1.5
--Xms40m
--Xmx512m
--XX:MaxPermSize=256m
-~~~
+    -vm
+    /usr/lib64/jvm/java-6-sun/bin/java**
+    -showsplash
+    org.eclipse.platform
+    -framework
+    plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
+    -vmargs
+    -Dosgi.requiredJavaVersion=1.5
+    -Xms40m
+    -Xmx512m
+    -XX:MaxPermSize=256m
+{: .no-line-numbers }
 
 En windows*:
 
-~~~
--vm
-C:\Java\JDK.5\bin\javaw.exe**
--showsplash
-org.eclipse.platform
--framework
-plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
--vmargs
--Dosgi.requiredJavaVersion=1.5
--Xms40m
--Xmx512m
--XX:MaxPermSize=256m
-~~~
+    -vm
+    C:\Java\JDK.5\bin\javaw.exe**
+    -showsplash
+    org.eclipse.platform
+    -framework
+    plugins/org.eclipse.osgi_3.4.3.R34x_v20081215-1030.jar
+    -vmargs
+    -Dosgi.requiredJavaVersion=1.5
+    -Xms40m
+    -Xmx512m
+    -XX:MaxPermSize=256m
+{: .no-line-numbers }
 
 _* Ignorad a partir de `-showsplash` cambiando la ruta por la que os convenga._
 

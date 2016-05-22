@@ -31,7 +31,11 @@ tags:
 
 Con Spoon App Studio podéis convertir vuestras aplicaciones de Windows a aplicaciones <em>Spoon</em> fácil y rápidamente.
 
-<a href="{{ site.url }}/uploads/2009/10/spoon_app_studio.png"><img class="size-medium wp-image-783 alignleft" title="spoon_app_studio" src="{{ site.url }}/uploads/2009/10/spoon_app_studio-300x236.png" alt="spoon_app_studio" width="195" height="153" /></a>Las aplicaciones Spoon se ejecutan desde vuestro navegador web utilizando únicamente el plugin Spoon. Es decir, que podemos coger nuestro Photoshop CS3, pasarlo a aplicación Spoon, colgarlo en internet y después utilizar este Photoshop desde cualquier ordenador que tenga el plugin Spoon instalado.
+<a href="{{ site.url }}/uploads/2009/10/spoon_app_studio.png">
+  <img class="size-medium wp-image-783 alignleft" title="spoon_app_studio" src="{{ site.url }}/uploads/2009/10/spoon_app_studio.png" alt="spoon_app_studio" />
+</a>
+
+Las aplicaciones Spoon se ejecutan desde vuestro navegador web utilizando únicamente el plugin Spoon. Es decir, que podemos coger nuestro Photoshop CS3, pasarlo a aplicación Spoon, colgarlo en internet y después utilizar este Photoshop desde cualquier ordenador que tenga el plugin Spoon instalado.
 
 A la hora de subir las aplicaciones a Internet, Spoon App Studio nos da varias opciones a elegir, entre ellas almacenar en memoria USB, subir a un servidor propio o subir a un servidor de Spoon.
 
@@ -43,11 +47,11 @@ Además de todas las aplicaciones que podemos hacer a partir de nuestros instala
 
 Entre estos navegadores está Internet Explorer 6, así que es realmente útil para aquellos que necesitemos hacer pruebas en distintos navegadores.
 
-<ul>
 <blockquote>
-<li><a rel="nofollow" href="http://www.spoon.net/Start/?a=SpoonAppStudio&amp;autostart=t" target="_blank">Spoon App Studio</a></li>
-<li><a rel="nofollow" href="http://spoon.net/browsers/" target="_blank">Spoon Browsers (todos los navegadores a un solo clic!)</a></li>
+  <ul>
+    <li><a rel="nofollow" href="http://www.spoon.net/Start/?a=SpoonAppStudio&amp;autostart=t" target="_blank">Spoon App Studio</a></li>
+    <li><a rel="nofollow" href="http://spoon.net/browsers/" target="_blank">Spoon Browsers (todos los navegadores a un solo clic!)</a></li>
+  </ul>
 </blockquote>
-</ul>
 
 Es una verdadera lástima que los usuarios de Linux no podamos disfrutar de estas aplicaciones :(

@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Instalar Android SDK en Mac OS X y configurar Netbeans
+class: no-line-numbers
 author:
   display_name: Booletaire
   login: elboletaire

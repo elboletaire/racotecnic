@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: iBotnet, la primera Botnet Mac
+class: no-line-numbers
 author:
   display_name: '909'
   login: '909'

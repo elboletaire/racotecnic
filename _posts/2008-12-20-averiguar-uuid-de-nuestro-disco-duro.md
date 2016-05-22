@@ -40,6 +40,7 @@ Tras llevar mi ordenador unos días sin apagarse, hoy lo he actualizado y al rei
 La solución ha sido reemplazar estas rutas por "<a title="UUID en Wikipedia" href="http://en.wikipedia.org/wiki/UUID" target="_blank">UUID</a>". Para averiguar dicho identificador debéis hacer lo siguiente:
 
     user@user:~$ ls -l /dev/disk/by-uuid/
+{: .no-line-numbers }
 
 Esto nos mostrará nuestra tabla de particiones pero con el identificador de cada partición, algo similar a esto:
 
@@ -53,15 +54,18 @@ Esto nos mostrará nuestra tabla de particiones pero con el identificador de cad
     lrwxrwxrwx 1 root root 10 2008-12-20 01:28 8E5FB69810347B51 -> ../../sdj5
     lrwxrwxrwx 1 root root 10 2008-12-20 02:28 d6cd7914-57cd-4ba7-837d-e3777a22e127 -> ../../sda6
     lrwxrwxrwx 1 root root 10 2008-12-20 02:28 E41CC33A1CC30710 -> ../../sda1
+{: .no-line-numbers }
 
 Una vez ya tenemos la uuid de la unidad que nos interese, añadimos /editamos la línea correspondiente en el fichero fstab:
 
     user@user:~$ sudo nano /etc/fstab
+{: .no-line-numbers }
 
 Y ahí añadimos la línea que nos interese...
 
     # /dev/sdc1
-    UUID=74f3b691-0be5-421d-bd09-6000b9ba77a6	/media/tera	reiserfs relatime	0	21
+    UUID=74f3b691-0be5-421d-bd09-6000b9ba77a6 /media/tera reiserfs relatime 0 21
+{: .no-line-numbers }
 
 Este post está creado con la intención de ayudaros a averiguar las UUID de vuestros discos duros, si queréis más información sobre cómo configurar fstab podéis consultar cualquiera de estos enlaces:
 

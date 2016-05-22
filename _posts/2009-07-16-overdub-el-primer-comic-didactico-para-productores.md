@@ -31,7 +31,7 @@ El único inconveniente es que <span style="text-decoration: underline;">esta so
 
 Aquí os dejo los dos números publicados hasta dia de hoy de **Overdub**.
 
-** Nº1: "Guia sobre monitores de estudio"**
+**Nº1: "Guia sobre monitores de estudio"**
 
 <img class="aligncenter" src="http://www.m-audio.com/images/interface/default2008/overdub/m-audio_overdub_cover_1.jpg" alt="" width="214" height="301" />
 

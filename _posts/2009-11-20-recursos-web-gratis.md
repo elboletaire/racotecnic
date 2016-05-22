@@ -7,7 +7,6 @@ author:
   display_name: alaovich
   login: alaovich
   email: alae.achhab@gmail.com
-  url: ''
 author_login: alaovich
 author_email: alae.achhab@gmail.com
 excerpt: 'WebResourcesDepot website: http://www.webresourcesdepot.com'
@@ -26,9 +25,9 @@ tags:
 Tengo que mencionar  que es un blog muy activo ya que publican una media de 2 recursos cada día.
 
 <a title="Webresourcesdepot.com" href="http://webresourcesdepot.com" target="_blank"><img src="http://img121.imageshack.us/img121/5660/webresourcesdepot.jpg" alt="Captura de Webresourcesdepot.com" /></a>
-<blockquote>
 
-<ul>
-<li>Web Resources Depot: <a title="Ir a la página Webresourcesdepot.com" rel="nofollow" href="http://webresourcesdepot.com" target="_blank">www.webresourcesdepot.com</a></li>
-</ul>
+<blockquote>
+  <ul>
+    <li>Web Resources Depot: <a title="Ir a la página Webresourcesdepot.com" rel="nofollow" href="http://webresourcesdepot.com" target="_blank">www.webresourcesdepot.com</a></li>
+  </ul>
 </blockquote>

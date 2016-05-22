@@ -25,21 +25,17 @@ tags: []
 
 Tots aquells que estàveu dubtant si fer una <a href="http://forums.underave.net/viewtopic.php?f=1&amp;t=12905" target="bar">donació</a> a underave o no, aquesta és la  vostra oportunitat per col.laborar.
 
-Sigueu partíceps d'aquest moment  històric !!!
+Sigueu partíceps d'aquest moment històric !!!
 
 El primer vinil d'underave ja és a la venda!!
 
 Felicitats  a tots els implicats.
 
+<a href="http://blog.underave.net/wp-content/uploads/2010/03/und_0001_blog.jpg">
+  <img title="und_0001_blog" src="http://blog.underave.net/wp-content/uploads/2010/03/und_0001_blog.jpg" alt="" />
+</a>
 
+## Disponible a <a title="UND-001" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank">toolbox</a> i altres tendes de vinils.
 
-<a href="http://blog.underave.net/wp-content/uploads/2010/03/und_0001_blog.jpg"><img class="size-full wp-image-978  aligncenter" title="und_0001_blog" src="http://blog.underave.net/wp-content/uploads/2010/03/und_0001_blog.jpg" alt="" width="500" height="500" /></a>
-<h2 style="text-align: center;"><span style="color: #ff6600;"><strong>Disponible a <a title="UND-001" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank">toolbox</a> i altres tendes de vinils.</strong></span></h2>
-
-<span style="color: #ff6600;"><strong><span style="color: #c0c0c0;"><a title="Tollbox" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank">Visitar toolbox</a></span>
-
+> <span style="color: #ff6600;"><strong><span style="color: #c0c0c0;"><a title="Tollbox" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank">Visitar toolbox</a></span>
 </strong></span>
-
-<span style="color: #ff6600;">**
-
-**</span>

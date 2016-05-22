@@ -7,7 +7,6 @@ author:
   display_name: '909'
   login: '909'
   email: gerardperucha@hotmail.com
-  url: ''
 author_login: '909'
 author_email: gerardperucha@hotmail.com
 excerpt: "Una de las maneras para hacernos con una

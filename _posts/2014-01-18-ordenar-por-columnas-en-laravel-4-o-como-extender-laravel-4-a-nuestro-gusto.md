@@ -33,11 +33,11 @@ Si has trasteado o estás trasteando con <a href="http://laravel.com/" title="We
 
 Dado que yo vengo de CakePHP, me he inspirado en él para crear el sistema de ordenación por columnas, así que si en Cake podemos crear un enlace para ordenar así:
 
-~~~php?start_inline=1
+~~~php
 <tr>
-    <th><?php echo $this->Paginator->sort('id') ?></th>
-    <th><?php echo $this->Paginator->sort('name', 'Nom') ?></th>
-    <th><?php echo $this->Paginator->sort('address', 'Adreça') ?></th>
+  <th><?php echo $this->Paginator->sort('id') ?></th>
+  <th><?php echo $this->Paginator->sort('name', 'Nom') ?></th>
+  <th><?php echo $this->Paginator->sort('address', 'Adreça') ?></th>
 </tr>
 ~~~
 
@@ -51,13 +51,15 @@ En este tutorial verás cómo hacer para poder ordenar así, utilizando blade (e
 </tr>
 ~~~
 
-<a href="http://www.racotecnic.com/wp-content/uploads/2014/01/laravel_paginate.png" style="display:block; text-align:center"><img src="http://www.racotecnic.com/wp-content/uploads/2014/01/laravel_paginate.png" alt="laravel_paginate" width="328" height="121" class="aligncenter size-full wp-image-2297" /></a>
+<a href="{{ site.url }}/uploads/2014/01/laravel_paginate.png" style="display:block; text-align:center">
+  <img src="{{ site.url }}/uploads/2014/01/laravel_paginate.png" alt="laravel_paginate" />
+</a>
 
 Para poder hacer esto tendrás que extender el paginador de Laravel para añadirle las funciones que necesites (como `sort`).
 
 Dado que lo que es ordenar en sí no tiene ninguna complicación y lo puedes encontrar documentado, en este tutorial me centraré más en **cómo extender classes de Laravel 4 para adaptarlo a tus necesidades** y de paso verás cómo tener la ordenación por columnas bien organizada (a nivel código) para mejor reutilización en futuros proyectos.
-<blockquote>
-**Nota:** Debido al continuo desarrollo de Laravel este tutorial ha quedado rápidamente desfasado. He actualizado todos los enlaces para que funcionen correctamente pero ten en cuenta que algunos de estos ficheros han cambiado mucho o directamente ya no existen.</blockquote>
+
+> **Nota:** Debido al continuo desarrollo de Laravel este tutorial ha quedado rápidamente desfasado. He actualizado todos los enlaces para que funcionen correctamente pero ten en cuenta que algunos de estos ficheros han cambiado mucho o directamente ya no existen.
 
 <a id="more"></a><a id="more-2277"></a>
 
@@ -67,7 +69,7 @@ Por otro lado, a pesar de que el siguiente post rebosa de referencias externas a
 
 ## Entendiendo el paginador
 
-### La <i>Facade</i> Paginator
+### La _Facade_ Paginator
 
 > <b>Nota:</b> Si no sabes qué es una <i>Facade</i>, <a href="http://laravel.com/docs/facades" rel="nofollow external" title="Abrir documentación sobre Facades">repásate la documentación</a>.
 
@@ -91,15 +93,15 @@ Para entender esto mejor, abre tu fichero `app.php` y en el array de providers f
 
 ~~~php?start_inline=1
 return array(
-    // ... otros parámetros de configuración ...
+  // ... otros parámetros de configuración ...
 
-    'providers' => array(
-        // ... otros providers ...
-        'Illuminate\Pagination\PaginationServiceProvider',
-        // ... más providers ...
-    )
+  'providers' => array(
+    // ... otros providers ...
+    'Illuminate\Pagination\PaginationServiceProvider',
+    // ... más providers ...
+  )
 
-    // ... más parámetros de configuración ...
+  // ... más parámetros de configuración ...
 );
 ~~~
 
@@ -115,14 +117,13 @@ Si abres este fichero podrás observar cómo en el método <a href="https://gith
  */
 public function register()
 {
-    $this->app['paginator'] = $this->app->share(function($app)
-    {
-        $paginator = new Environment($app['request'], $app['view'], $app['translator']);
+  $this->app['paginator'] = $this->app->share(function($app) {
+    $paginator = new Environment($app['request'], $app['view'], $app['translator']);
 
-        $paginator->setViewName($app['config']['view.pagination']);
+    $paginator->setViewName($app['config']['view.pagination']);
 
-        return $paginator;
-    });
+    return $paginator;
+  });
 }
 ~~~
 
@@ -139,9 +140,9 @@ Y en la clase `Enviornment`, finalmente, en el método <a href="https://github.c
  */
 public function make(array $items, $total, $perPage)
 {
-    $paginator = new Paginator($this, $items, $total, $perPage);
+  $paginator = new Paginator($this, $items, $total, $perPage);
 
-    return $paginator->setupPaginationContext();
+  return $paginator->setupPaginationContext();
 }
 ~~~
 
@@ -156,9 +157,9 @@ Si recuerdas <a href="http://laravel.com/docs/pagination" rel="nofollow external
 ~~~php?start_inline=1
 public function index()
 {
-    $posts = Post::paginate(20);
+  $posts = Post::paginate(20);
 
-    return View::make('posts.admin.index')->with('posts', $posts);
+  return View::make('posts.admin.index')->with('posts', $posts);
 }
 ~~~
 
@@ -169,9 +170,9 @@ Si en lugar de paginar como en el ejemplo anterior lo hubiera hecho así:
 ~~~php?start_inline=1
 public function index()
 {
-    $posts = Db::table('posts')->paginate('15');
+  $posts = Db::table('posts')->paginate('15');
 
-    return View::make('posts.admin.index')->with('posts', $posts);
+  return View::make('posts.admin.index')->with('posts', $posts);
 }
 ~~~
 
@@ -183,10 +184,10 @@ No obstante, el Builder de Eloquent no se carga igual que el paginador. Éste es
 // app/models/Post.php
 class Post extends Eloquent
 {
-    public function paginate($perPage, $columns = array('*'), $orderBy = array())
-    {
-        // nuestros cambios para ordenar por columna
-    }
+  public function paginate($perPage, $columns = array('*'), $orderBy = array())
+  {
+    // nuestros cambios para ordenar por columna
+  }
 }
 ~~~
 
@@ -196,10 +197,10 @@ Fácilmente puedes añadirlo en un nuevo modelo padre del cual extender, por eje
 // app/models/AppModel.php
 class AppModel extends Eloquent
 {
-    public function paginate($perPage, $columns = array('*'), $orderBy = array())
-    {
-        // nuestros cambios para ordenar por columna
-    }
+  public function paginate($perPage, $columns = array('*'), $orderBy = array())
+  {
+    // nuestros cambios para ordenar por columna
+  }
 }
 
 // app/models/Post.php
@@ -216,7 +217,7 @@ Habiendo creado el trait simplemente habrá que indicarlo en aquellos modelos do
 ~~~php?start_inline=1
 class Post extends Eloquent
 {
-    use OrderBy; // donde OrderBy es el nombre que has puesto al trait
+  use OrderBy; // donde OrderBy es el nombre que has puesto al trait
 }
 ~~~
 
@@ -233,6 +234,7 @@ Si quieres ahorrarte el proceso que viene a continuación <a href="https://githu
 ~~~bash
 git submodule add https://github.com/elboletaire/laravel-utils-and-extensions.git app/library/Elboletaire
 ~~~
+{: .no-line-numbers }
 
 Si no utilizas git <a href="https://github.com/elboletaire/laravel-utils-and-extensions/archive/master.zip" rel="nofollow">descarga directamente el zip de github</a> y descomprime los contenidos del fichero en un nuevo directorio `app/library/Elboletaire`.
 
@@ -246,16 +248,16 @@ Una vez has creado tus ficheros (con su contenido, evidentemente) tienes que mod
 
 ~~~php?start_inline=1
 return array(
-    // [...]
+  // [...]
 
-    'providers' => array(
-        // reemplazas el original
-        // 'Illuminate\Pagination\PaginationServiceProvider',
-        // por el tuyo
-        'Elboletaire\Extensions\Pagination\PaginationServiceProvider'
-    )
+  'providers' => array(
+    // reemplazas el original
+    // 'Illuminate\Pagination\PaginationServiceProvider',
+    // por el tuyo
+    'Elboletaire\Extensions\Pagination\PaginationServiceProvider'
+  )
 
-    // [...]
+  // [...]
 );
 ~~~
 
@@ -270,7 +272,7 @@ Una vez creado y hecha la lógica sólo hay que llamarlo desde el modelo que qui
 ~~~php?start_inline=1
 class Post extends Eloquent
 {
-    use Elboletaire\Extensions\Pagination\PaginatorSort;
+  use Elboletaire\Extensions\Pagination\PaginatorSort;
 }
 ~~~
 
@@ -279,7 +281,7 @@ class Post extends Eloquent
 
 Hechos estos dos sencillos pasos, ya puedes añadir a tus vistas los enlaces para poder ordenar por columna:
 
-~~~php?start_inline=1
+~~~html
 <tr>
     <th>{{ "{{ $posts->sort('id') "}}}}</th>
     <th>{{ "{{ $posts->sort('name', 'Nombre') "}}}}</th>
@@ -291,9 +293,9 @@ Y mientras tu controlador (o ruta) cargue los datos de la paginación **mediante
 ~~~php?start_inline=1
 public function index()
 {
-    $posts = Post::paginate(20);
+  $posts = Post::paginate(20);
 
-    return View::make('posts.admin.index')->with('posts', $posts);
+  return View::make('posts.admin.index')->with('posts', $posts);
 }
 ~~~
 
@@ -304,14 +306,14 @@ Si quieres puedes especificar el orden por defecto pasándolo como tercer parám
 ~~~php?start_inline=1
 public function index()
 {
-    $posts = Post::paginate(20, null, 'name asc');
-    // o bien pasado como array:
-    $posts = Post::paginate(20, null, array(
-        'direction' => 'asc',
-        'sort'      => 'name'
-    ));
+  $posts = Post::paginate(20, null, 'name asc');
+  // o bien pasado como array:
+  $posts = Post::paginate(20, null, array(
+    'direction' => 'asc',
+    'sort'      => 'name'
+  ));
 
-    return View::make('posts.admin.index')->with('posts', $posts);
+  return View::make('posts.admin.index')->with('posts', $posts);
 }
 ~~~
 
@@ -321,12 +323,8 @@ Si eres lector asiduo (aunque aquí no nos vaya mucho esto de la asiduidad..) sa
 
 El repositorio está colgado en github, entre otras cosas, para que la gente colabore; así que si te animas ya sabes.
 
-<blockquote>
-  **Más información y fuentes:**
-
-<ul>
-    <li><a rel="nofollow external" href="http://laravel.com/docs">Documentación de Laravel</a></li>
-    <li><a rel="nofollow external" href="http://www.php.net/manual/en/language.oop5.traits.php">Documentación acerca de los traits</a></li>
-    <li><a rel="nofollow external" href="http://forums.laravel.io/viewtopic.php?pid=39576#p39576">How to extend Illuminate\Database\Eloquent\Builder class?</a></li>
-  </ul>
-</blockquote>
+> **Más información y fuentes:**
+>
+> - <a rel="nofollow external" href="http://laravel.com/docs">Documentación de Laravel</a>
+> - <a rel="nofollow external" href="http://www.php.net/manual/en/language.oop5.traits.php">Documentación acerca de los traits</a>
+> - <a rel="nofollow external" href="http://forums.laravel.io/viewtopic.php?pid=39576#p39576">How to extend Illuminate\Database\Eloquent\Builder class?</a>

@@ -7,26 +7,11 @@ author:
   display_name: gerno
   login: gerno
   email: hastaqueelcuerpoaguante@hotmail.com
-  url: ''
 author_login: gerno
 author_email: hastaqueelcuerpoaguante@hotmail.com
-excerpt: "
-Avui, i per iniciar-me en el racó tècnic
+excerpt: "Avui, i per iniciar-me en el racó tècnic
   us vinc a parlar de **LogMeIn**, una eina gratuïta (però privada) per
-  accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox.
-  Això pot ser de una gran utilitat per a administradors de sistemes (instal·lació
-  de programes de forma remota, impressió remota, accedir a aquells arxius que tens
-  a l'ordinador de casa, ensenyar a un amic com configurar un software, etc.) Segur
-  que l'hi trobareu mil utilitats!\r\n
-Al accedir
-  a l'ordinador remot s'obté accés total a el mateix, aneu amb compte! també pot ser
-  molt perillós, guardeu bé les contrasenyes!\r\n
-Per
-  no fer perdre el temps a alguns... abans d'iniciar el tutorial parlarem de compatibilitats.
-  **Només pots accedir a ordinadors Windows o Mac**, **però l'ordinador
-  mitjançant el qual accedeixis pot tenir qualsevol sistema operatiu compatible amb
-  Firefox**.\r\n
-Comencem!\r\n\r\n"
+  accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox."
 wordpress_id: 568
 wordpress_url: http://racotecnic.com/?p=568
 date: '2009-05-27 12:11:44 +0200'
@@ -89,6 +74,6 @@ Us marco perquè veieu el icona de logmein (que s'executa automàticament al ini
 
 A part de l’accés directe, pots senyalar, utilitzar una pissarra, dibuixar i xatejar entre els ordinadors.
 
-Espero que us sigui de utilitat aquest primer treball!
+Espero que us sigui d'utilitat aquest primer treball!
 
-<em>PD: Vull agrair a Boletaire tot el suport i els tutorials a la carta que han fet aquest possible aquest post. ^^!</em>
+<em>PD: Vull agrair a Boletaire tot el suport i els tutorials a la carta que han fet possible aquest post. ^^!</em>

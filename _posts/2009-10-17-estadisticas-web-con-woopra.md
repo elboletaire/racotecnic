@@ -30,7 +30,9 @@ Cada día salen más y más sistemas de estadísticas para nuestros portales web
 
 Con Woopra no podemos ver un vídeo con lo que han hecho nuestros usuarios, pero sí podemos ver un historial completo de cada usuario, qué paginas ha visitado, qué enlaces externos ha clicado, qué imágenes ha descargado...
 
-<a href="{{ site.url }}/uploads/2009/10/live-tracking.png"><img class="size-medium wp-image-807 aligncenter" title="live-tracking" src="{{ site.url }}/uploads/2009/10/live-tracking-300x214.png" alt="live-tracking" width="300" height="214" /></a>
+<a href="{{ site.url }}/uploads/2009/10/live-tracking.png">
+  <img title="live-tracking" src="{{ site.url }}/uploads/2009/10/live-tracking.png" alt="live-tracking" />
+</a>
 
 Bien configurado nos muestra los nombres de los usuarios con su e-mail y los movimientos que va realizando. También nos permite iniciar conversaciones de chat con cualquiera de los usuarios que estén conectados a nuestro site.
 
@@ -38,12 +40,14 @@ Por suerte o por desgracia este mes ha terminado la fase Beta de Woopra.. digo p
 
 Pero, pagando o no, no deja de ser recomendable :)
 
-<a href="{{ site.url }}/uploads/2009/10/analytics.png"><img class="size-medium wp-image-806 aligncenter" title="analytics" src="{{ site.url }}/uploads/2009/10/analytics-300x157.png" alt="analytics" width="300" height="157" /></a>
+<a href="{{ site.url }}/uploads/2009/10/analytics.png">
+  <img title="analytics" src="{{ site.url }}/uploads/2009/10/analytics.png" alt="analytics" />
+</a>
 
-<ul>
 <blockquote>
-<li><a title="Woopra Website" rel="nofollow" href="http://www.woopra.com" target="_blank">www.woopra.com</a></li>
+  <ul>
+    <li><a title="Woopra Website" rel="nofollow" href="http://www.woopra.com" target="_blank">www.woopra.com</a></li>
+  </ul>
 </blockquote>
-</ul>
 
 PS. Parece que últimamente la cosa va de software, eh? Tranquilos programadores, ¡pronto volveremos a las andadas! :D

@@ -23,7 +23,7 @@ categories:
 - General
 - Programació
 - Web
-- Domains &amp; Hosting
+- Domains & Hosting
 tags:
 - Wordpress
 - JavaScript

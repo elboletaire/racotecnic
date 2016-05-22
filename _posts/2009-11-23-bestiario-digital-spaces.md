@@ -22,12 +22,14 @@ tags:
 - ActionScript
 - Aplicacions
 ---
-<blockquote>Bestiario is a Barcelona/Lisbon based company dedicated to data dynamic representation and to the creation of digital spaces for the collective creation of knowledge. Our slogan is: 'making the complex comprehensible.' We combine art and science to design and create interactive information spaces. We developed a powerful framework based on graph theory, topological algorithms, physic models, geometrical and geographical representations.</blockquote>
 
-<img class="aligncenter size-full wp-image-1188" title="bestiario" src="{{ site.url }}/uploads/2009/11/bestiario.png" alt="bestiario" />
-<blockquote>
-
-<ul>
-<li>Bestiario web site: <a rel="nofollow" href="http://www.bestiario.org/" target="_blank">http://www.bestiario.org/</a></li>
-</ul>
-</blockquote>
+> Bestiario is a Barcelona/Lisbon based company dedicated to data dynamic
+representation and to the creation of digital spaces for the collective creation
+of knowledge. Our slogan is: 'making the complex comprehensible.' We combine art
+and science to design and create interactive information spaces. We developed a
+powerful framework based on graph theory, topological algorithms, physic models,
+geometrical and geographical representations.
+>
+![bestiario]({{ site.url }}/uploads/2009/11/bestiario.png)
+>
+> - Bestiario web site: <a rel="nofollow" href="http://www.bestiario.org/" target="_blank">http://www.bestiario.org/</a>

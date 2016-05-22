@@ -26,12 +26,12 @@ tags:
 
 Si queréis **detectar las solicitudes AJAX mediante PHP** podéis hacerlo mediante la variable <em>HTTP_X_REQUESTED_WITH</em>:
 
-~~~php
+~~~php?start_inline=1
 /* Verificamos si hay ajax  */
-if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp; strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-	/* Contenido ajax */
-}else{
-	/* Contenido normal */
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+  /* Contenido ajax */
+} else {
+  /* Contenido normal */
 }
 ~~~
 

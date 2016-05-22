@@ -14,17 +14,7 @@ author_url: http://www.underave.net
 excerpt: "Hoy mismo he necesitado de una validación para verificar si un dato ya existe
   en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis
   utilizar \"isUnique\") no lleva una validación en su núcleo para estos menesteres
-  he tenido que crearla y ahora la comparto con vosotros:\r\n\r\n~~~php
-/**\r\n * Verifica
-  si un campo existe en la base de datos\r\n * Si estamos editando se excluye el valor
-  guardado en la validación\r\n * @param array $data\r\n * @param string $field Nom
-  de la cel·la a verificar\r\n * @return\r\n */\r\n\r\npublic function checkUnique($data)\r\n{\r\n\t$field
-  = array_pop(array_keys($data));\r\n\t$data = array_pop(array_values($data));\r\n\r\n\t//
-  Si estem editant...\r\n\tif(isset($this->data[$this->name]['id']))\r\n\t{\r\n\t\tif
-  ($field == $this->field($field, array($this->name . '.id' => $this->data[$this->name]['id'])))\r\n\t\t{\r\n\t\t\treturn
-  true;\r\n\t\t}\r\n\t}\r\n\t// Si no estem editant...\r\n\tif($this->hasField($field))
-  {\r\n\t\treturn $this->isUnique(array($field => $data));\r\n\t}\r\n}
-~~~\r\n\r\n"
+  he tenido que crearla y ahora la comparto con vosotros."
 wordpress_id: 1406
 wordpress_url: http://racotecnic.com/?p=1406
 date: '2010-02-25 21:28:51 +0100'
@@ -42,7 +32,7 @@ tags:
 
 Hoy mismo he necesitado de una validación para verificar si un dato ya existe en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis utilizar "isUnique") no lleva una validación en su núcleo para estos menesteres he tenido que crearla y ahora la comparto con vosotros:
 
-~~~php
+~~~php?start_inline=1
 /**
  * Verifica si un campo existe en la base de datos
  * Si estamos editando se excluye el valor guardado en la validación
@@ -53,21 +43,19 @@ Hoy mismo he necesitado de una validación para verificar si un dato ya existe e
 
 public function checkUnique($data)
 {
-	$field = array_pop(array_keys($data));
-	$data = array_pop(array_values($data));
+  $field = array_pop(array_keys($data));
+  $data = array_pop(array_values($data));
 
-	// Si estem editant...
-	if(isset($this->data[$this->name]['id']))
-	{
-		if ($field == $this->field($field, array($this->name . '.id' => $this->data[$this->name]['id'])))
-		{
-			return true;
-		}
-	}
-	// Si no estem editant...
-	if($this->hasField($field)) {
-		return $this->isUnique(array($field => $data));
-	}
+  // Si estem editant...
+  if (isset($this->data[$this->name]['id'])) {
+    if ($field == $this->field($field, array($this->name . '.id' => $this->data[$this->name]['id']))) {
+      return true;
+    }
+  }
+  // Si no estem editant...
+  if ($this->hasField($field)) {
+    return $this->isUnique(array($field => $data));
+  }
 }
 ~~~
 
@@ -75,18 +63,24 @@ public function checkUnique($data)
 
 Para utilizarlo no tenéis más que añadir el trozo de código en el modelo deseado (normalmente en AppModel, para poder utilizarlo desde cualquier modelo) y añadir la validación en el modelo que queráis:
 
-~~~php
-var $validate = array('NOMBRE DE LA CELDA A VALIDAR' => array(
-	'rule'		=> 'checkUnique',
-	'message' 	=> 'Blahblahblah'));
+~~~php?start_inline=1
+var $validate = array(
+  'NOMBRE DE LA CELDA A VALIDAR' => array(
+    'rule'    => 'checkUnique',
+    'message' => 'Blahblahblah'
+  )
+);
 ~~~
 
 Un ejemplo muy común:
 
-~~~php
-var $validate = array('username' => array(
-	'rule'		=> 'checkUnique',
-	'message' 	=> 'Ya existe un usuario registrado con este nombre!'));
+~~~php?start_inline=1
+var $validate = array(
+  'username' => array(
+    'rule'    => 'checkUnique',
+    'message' => 'Ya existe un usuario registrado con este nombre!'
+  )
+);
 ~~~
 
 Que lo disfrutéis :)

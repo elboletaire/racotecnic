@@ -30,26 +30,26 @@ Si queréis hacer una aplicación de **CakePHP sin utilizar conexión a base de 
 
 En el directorio <em>/app/models/datasources/dbo/</em>* cread un fichero llamado <em>dbo_sin_conexion.php</em> con el siguiente contenido:
 
-<em>* Nota: es posible que el directorio dbo tampoco exista y tengáis que crearlo.</em>
+_* Nota: es posible que el directorio dbo tampoco exista y tengáis que crearlo._
 
 ~~~php
 <?php // /app/models/datasources/dbo/dbo_sin_conexion.php
 class DboSinConexion extends DboSource
 {
-	function connect()
-	{
-		$this->connected = true;
-		return $this->connected;
-	}
-	function disconnect()
-	{
-		$this->connected = false;
-		return !$this->connected;
-	}
-	function isConnected()
-	{
-		return true;
-	}
+  function connect()
+  {
+    $this->connected = true;
+    return $this->connected;
+  }
+  function disconnect()
+  {
+    $this->connected = false;
+    return !$this->connected;
+  }
+  function isConnected()
+  {
+    return true;
+  }
 }
 ~~~
 
@@ -57,9 +57,9 @@ Ahora modificad vuestro fichero database.php (en <em>/app/config/</em>) para ind
 
 ~~~php
 <?php // /app/config/database.php
-class DATABASE_CONFIG {
-
-	var $default = array('driver' => 'sin_conexion');
+class DATABASE_CONFIG
+{
+  var $default = array('driver' => 'sin_conexion');
 }
 ~~~
 

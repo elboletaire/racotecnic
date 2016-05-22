@@ -2,6 +2,14 @@ pre.highlight {
 	padding: 1em;
 }
 
+.gutter.gl {
+	width: 30px;
+}
+
+.no-line-numbers td.gutter.gl {
+	display: none;
+}
+
 .highlight {
 	margin-bottom: 1.5em;
 	@include font-rem(12);
@@ -9,13 +17,14 @@ pre.highlight {
 	color: #d0d0d0;
 	border: 1px solid darken($body-color, 5);
 	background-color: #272822;
+	overflow-x: auto;
 	@include rounded(3px);
 	pre {
 		position: relative;
 		margin: 0;
 		padding: 1em;
 	}
-	.lineno { padding-right: 24px; color: #8f908a;}
+	.lineno { padding-right: 0; color: #8f908a;}
 	.hll { background-color: #49483e }
 	.c { color: #75715e } /* Comment */
 	.err { color: #960050; background-color: #1e0010 } /* Error */

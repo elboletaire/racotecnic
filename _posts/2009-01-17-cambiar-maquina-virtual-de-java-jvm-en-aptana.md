@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Cambiar máquina virtual de Java (JVM) en Aptana
+class: no-line-numbers
 author:
   display_name: Booletaire
   login: elboletaire

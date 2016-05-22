@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 title: Crackear redes wifi con clave WEP desde Ubuntu linux
+class: no-line-numbers
 author:
   display_name: Booletaire
   login: elboletaire
