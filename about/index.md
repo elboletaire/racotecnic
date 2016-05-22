@@ -24,8 +24,25 @@ del món.
 Des del 2016 el Racó Tècnic passa a estar allotjat a [github pages][github pages]
 de manera que qualsevol pot participar-hi fent un [pull request][pull request].
 
+T'animem a que facis un fork i creis alguna publicació per al racó tècnic o bé
+n'actualitzis alguna de les ja presents.
+
+[Fork][fork]{:
+  .github-button
+  aria-label="Fork elboletaire/racotecnic on GitHub"
+  data-count-aria-label="# forks on GitHub"
+  data-count-api="/repos/elboletaire/racotecnic#forks_count"
+  data-count-href="/elboletaire/racotecnic/network"
+  data-style="mega"
+  data-icon="octicon-repo-forked"
+}
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 [underave]: http://underave.net
 [elboletaire]: https://github.com/elboletaire
 [github pages]: https://pages.github.com/
 [pull request]: https://github.com/elboletaire/racotecnic/pulls
+[fork image]: https://img.shields.io/github/forks/elboletaire/racotecnic.svg?style=social&label=Fork
+[fork]: https://github.com/elboletaire/racotecnic/fork
 [audioblog]: {{ site.url }}/2011/07/larga-vida-al-audioblog
