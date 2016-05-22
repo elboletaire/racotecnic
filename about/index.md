@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Watimage
+title: About Racó Tècnic
 image:
   feature: peke-sepia.jpg
   credit: elboletaire
@@ -9,34 +9,23 @@ comments: false
 modified: 2016-04-29
 ---
 
-Currently Watimage is a vendor class with multiple image manipulation methods
-that you can add to any PHP project.
+Racó Tècnic és un subprojecte d'[underave.net][underave] creat per
+[elboletaire][elboletaire] amb la única intenció de compartir
+coneixement amb el món.
 
-Although it started in 2011 as a CakePHP component that was only able to crop
-and rotate images.
+A partir d'aquí han col·laborat moltes altres persones, més si comptem tots els
+que van col·laborar a l'audioblog,
+[absorvit pel racó tècnic][audioblog] degut
+al seu desús i per no perdre'n les publicacions.
 
+A tots ens mou una mateixa idea: compartir coneixements adquirits amb la resta
+del món.
 
-What Watimage brings to the table:
-----------------------------------
+Des del 2016 el Racó Tècnic passa a estar allotjat a [github pages][github pages]
+de manera que qualsevol pot participar-hi fent un [pull request][pull request].
 
-- Really easy to use image manipulation PHP classes bringing you a lot of features:
-  * Resize and/or crop images.
-  * Rotate images.
-  * Flip images.
-  * Apply multiple effects to your images (blur, negate, grayscale, sepia,
-    vignette, pixelate, emboss, edge detection, colorize, brightness,
-    contrast...).
-  * Merge images / apply watermarks.
-  * JPEG image auto-orientation from EXIF information.
-  * And more! Check out the [usage documentation](./usage) or the [API](./api) for
-    more information.
-- Backwards compatibility with old Watimage class.
-- [Method chaining](https://en.wikipedia.org/wiki/Method_chaining).
-- Testing.
-
-<div markdown="0">
-  <a href="{{ site.url }}/usage" class="btn btn-info">Watimage Setup</a>
-  <a href="https://github.com/elboletaire/Watimage/archive/master.zip" class="btn btn-success">Download Watimage</a>
-</div>
-
-{% include about-image/peke-sepia.md %}
+[underave]: http://underave.net
+[elboletaire]: https://github.com/elboletaire
+[github pages]: https://pages.github.com/
+[pull request]: https://github.com/elboletaire/racotecnic/pulls
+[audioblog]: {{ site.url }}/2011/07/larga-vida-al-audioblog

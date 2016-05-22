@@ -9,14 +9,15 @@ url:              //worker.loc:4000
 
 # Owner/author information
 owner:
-  name:           Òscar Casajuana
-  avatar:         avatar.jpg
-  bio:            Senior developer from Barcelona; "doing things" enthusiast.
+  name:           Racó Tècnic
+  avatar:
+  bio:            A subproject from <a href="http://underave.net">underave.net</a> created by <a href="https://github.com/elboletaire">elboletaire</a>
+                  and maintained by many collaborators.
   email:          elboletaire@underave.net
   # Social networking links used in footer. Update and remove as you like.
   twitter:        racotecnic
   facebook:       racotecnic
-  github:
+  github:         elboletaire/racotecnic
   stackexchange:
   linkedin:
   instagram:
