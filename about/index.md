@@ -14,8 +14,7 @@ Racó Tècnic és un subprojecte d'[underave.net][underave] creat per
 coneixement amb el món.
 
 A partir d'aquí han col·laborat moltes altres persones, més si comptem tots els
-que van col·laborar a l'audioblog,
-[absorvit pel racó tècnic][audioblog] degut
+que van col·laborar a l'audioblog —[absorvit pel racó tècnic][audioblog], degut
 al seu desús i per no perdre'n les publicacions.
 
 A tots ens mou una mateixa idea: compartir coneixements adquirits amb la resta
