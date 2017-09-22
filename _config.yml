@@ -57,6 +57,7 @@ permalink:   /:year/:month/:title/
 
 # Amount of post to show on home page
 paginate: 5
+paginate_path: /page/:num
 
 kramdown:
   auto_ids: true
