@@ -19,7 +19,7 @@ module Jekyll
   end
 
   class TagPageGenerator < Generator
-    include TextFilter
+    include TextFilters
     def generate(site)
       if site.layouts.key? 'bytag'
 

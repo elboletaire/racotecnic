@@ -1,4 +1,4 @@
-module TextFilter
+module TextFilters
   # Remove the accents from the string.
   def removeaccents(input)
     str = String.new(input)
@@ -58,4 +58,4 @@ module TextFilter
   end
 end
 
-Liquid::Template.register_filter(TextFilter)
+Liquid::Template.register_filter(TextFilters)

@@ -19,7 +19,7 @@ module Jekyll
     end
 
     class CategoryPageGenerator < Generator
-      include TextFilter
+      include TextFilters
       def generate(site)
         if site.layouts.key? 'bycategory'
 
