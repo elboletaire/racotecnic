@@ -1,6 +1,6 @@
 module TextFilters
   # Remove the accents from the string.
-  def removeaccents(input)
+  def TextFilters.removeaccents(input)
     str = String.new(input)
     mapping = {
       'E' => [200, 201, 202, 203],
@@ -43,7 +43,7 @@ module TextFilters
   # * :downcase => call downcase on the string (defaults to true)
   # * :convert_spaces => Convert space to underscore (defaults to false)
   # * :regexp => The regexp matching characters that will be converting to an empty string (defaults to /[^-_A-Za-z0-9]/)
-  def urlize(input, options = {})
+  def TextFilters.urlize(input, options = {})
     options[:downcase] ||= true
     options[:convert_spaces] ||= true
     options[:regexp] ||= /[^-_A-Za-z0-9]/

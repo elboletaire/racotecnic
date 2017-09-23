@@ -19,14 +19,13 @@ module Jekyll
   end
 
   class TagPageGenerator < Generator
-    include TextFilters
     def generate(site)
       if site.layouts.key? 'bytag'
 
         tag_dir = site.config['tag_dir'] || 'tag'
 
         site.tags.each_key do |tag|
-          site.pages << TagPage.new(site, site.source, File.join(tag_dir, urlize(tag)), tag)
+          site.pages << TagPage.new(site, site.source, File.join(tag_dir, TextFilters.urlize(tag)), tag)
         end
       end
     end
