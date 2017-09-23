@@ -15,17 +15,16 @@ jobs:
       - checkout
 
       - run:
-          name: checkout gh-pages branch and copy master contents to it
+          name: checkout gh-pages branch
           command: |
             git clone --branch gh-pages --depth 1 \
               https://${GITHUB_TOKEN}@github.com/elboletaire/racotecnic.git \
               ../gh-pages && \
-            cp -frv ./* ../gh-pages
+              rm -frv ../gh-pages/*
 
       - run:
           name: install dependencies
           command: |
-            cd ../gh-pages && \
             bundle install --jobs=4 --retry=3
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
@@ -33,15 +32,15 @@ jobs:
       - run:
           name: build website
           command: |
-            cd ../gh-pages && \
             jekyll build
 
       - run:
           name: commit changes
           command: |
+            cp -frv _site/* ../gh-pages && \
             cd ../gh-pages && \
             git config --global user.email "circleci@circleci.com" && \
             git config --global user.name "CircleCI" && \
-            git add -f _site && \
+            git add -f . && \
             git commit -m "Update gh-pages [skip ci]" && \
             git push origin gh-pages
