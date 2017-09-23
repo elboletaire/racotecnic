@@ -36,7 +36,7 @@ here: <a title="Clase PHP para tratar imágenes (rotar, redimensionar, añadir m
 
 Time ago I created a **CakePHP component for applying watermarks to images**. Slowly I extended it and now in addition to applying watermarks is used to **rotate and resize images**.
 
-You can still improve it a lot, especially in terms of code, but as it works and I have little time, I can barely make improvements.<img class="alignright" title="all_together" src="{{ site.url }}/wp-content/uploads/2010/04/all_together.jpeg" alt="" width="171" height="170" />
+You can still improve it a lot, especially in terms of code, but as it works and I have little time, I can barely make improvements.<img class="alignright" title="all_together" src="{{ site.url }}/uploads/2010/04/all_together.jpeg" alt="" width="171" height="170" />
 
 ## Tested from:
 
