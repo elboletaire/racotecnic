@@ -37,6 +37,7 @@ google_verify:
 bing_verify:
 
 tag_dir: etiqueta
+category_dir: categoria
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Madrid

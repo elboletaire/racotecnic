@@ -47,12 +47,14 @@ module TextFilter
     options[:downcase] ||= true
     options[:convert_spaces] ||= true
     options[:regexp] ||= /[^-_A-Za-z0-9]/
+    options[:separator] ||= '-'
 
     str = self.removeaccents(input.strip)
     str.downcase! if options[:downcase]
-    str.gsub!(/\ /,'-') if options[:convert_spaces]
+    str.gsub!(/\ /, options[:separator]) if options[:convert_spaces]
+    str.gsub!(options[:regexp], '')
 
-    str.gsub(options[:regexp], '')
+    str.gsub(/[-]+/, options[:separator])
   end
 end
 

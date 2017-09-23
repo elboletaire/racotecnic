@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 charset = utf-8
 indent_size = 4
 
-[*.{yml,md,rb}]
+[*.{yml,md,rb,html}]
 indent_size = 2
 
 [*.scss]
