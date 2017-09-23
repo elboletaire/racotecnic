@@ -18,6 +18,8 @@ excerpt: "Después de mucho tiempo liado con el fin de curso y tras mucho
   a escribir el código que realmente necesitamos: la lógica de la aplicación."
 wordpress_id: 617
 wordpress_url: http://racotecnic.com/?p=617
+redirect_from:
+- "?p=617"
 date: '2009-06-12 00:52:32 +0200'
 date_gmt: '2009-06-11 23:52:32 +0200'
 categories:

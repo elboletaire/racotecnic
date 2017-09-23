@@ -25,6 +25,8 @@ excerpt: "Vamos a instalar el SDK Android (para desarrollar aplicaciones en Java
   target=\"_blank\">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>\r\n\r\n"
 wordpress_id: 476
 wordpress_url: http://racotecnic.com/?p=476
+redirect_from:
+- "?p=476"
 date: '2009-04-22 00:52:24 +0200'
 date_gmt: '2009-04-21 23:52:24 +0200'
 categories:

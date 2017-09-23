@@ -13,6 +13,8 @@ author_email: elboletaire@gmail.com
 author_url: http://www.underave.net
 wordpress_id: 1224
 wordpress_url: http://racotecnic.com/?p=1224
+redirect_from:
+- "?p=1224"
 date: '2010-01-23 15:32:41 +0100'
 date_gmt: '2010-01-23 14:32:41 +0100'
 categories:

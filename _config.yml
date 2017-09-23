@@ -44,10 +44,11 @@ future:      true
 highlighter: rouge
 markdown:    kramdown
 plugins:
+- stringex
 - jekyll-sitemap
 - jekyll-paginate
 - jekyll-gist
-- stringex
+- jekyll-redirect-from
 sass:
   sass_dir: _sass
   style: compressed

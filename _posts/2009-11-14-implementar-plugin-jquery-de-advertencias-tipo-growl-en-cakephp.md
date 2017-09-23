@@ -15,6 +15,8 @@ excerpt: "Voy a explicaros una forma sencilla reemplazar vuestras capas flashMes
   por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl."
 wordpress_id: 986
 wordpress_url: http://racotecnic.com/?p=986
+redirect_from:
+- "?p=986"
 date: '2009-11-14 16:39:50 +0100'
 date_gmt: '2009-11-14 15:39:50 +0100'
 categories:

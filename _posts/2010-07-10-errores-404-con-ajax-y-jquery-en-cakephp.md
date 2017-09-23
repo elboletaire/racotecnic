@@ -15,6 +15,8 @@ excerpt: "En este tutorial aprenderéis a **gestionar los errores de CakePHP
   con y sin Ajax.**"
 wordpress_id: 1583
 wordpress_url: http://racotecnic.com/?p=1583
+redirect_from:
+- "?p=1583"
 date: '2010-07-10 23:44:09 +0200'
 date_gmt: '2010-07-10 22:44:09 +0200'
 categories:

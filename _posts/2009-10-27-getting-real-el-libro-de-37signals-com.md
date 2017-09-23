@@ -15,6 +15,8 @@ excerpt: "No soy muy dado a aconsejar libros, pero para este caso creo que haré
   una excepción."
 wordpress_id: 889
 wordpress_url: http://racotecnic.com/?p=889
+redirect_from:
+- "?p=889"
 date: '2009-10-27 19:12:22 +0100'
 date_gmt: '2009-10-27 18:12:22 +0100'
 categories:

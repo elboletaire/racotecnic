@@ -19,6 +19,8 @@ excerpt: "Si, como yo, estáis interesados en editar y leer las etiquetas ID3 de
   el servicio), podéis utilizar las classes de PHP GetID3"
 wordpress_id: 679
 wordpress_url: http://racotecnic.com/?p=679
+redirect_from:
+- "?p=679"
 date: '2009-07-19 20:24:15 +0200'
 date_gmt: '2009-07-19 19:24:15 +0200'
 categories:

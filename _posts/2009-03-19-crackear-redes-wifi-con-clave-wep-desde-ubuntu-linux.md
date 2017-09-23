@@ -19,6 +19,8 @@ excerpt: "Hace poco me volví a interesar por este tema y me costó tanto lograr
   uso de ello **deberá ser sobre VUESTRA red WiFi**."
 wordpress_id: 286
 wordpress_url: http://racotecnic.com/?p=286
+redirect_from:
+- "?p=286"
 date: '2009-03-19 19:40:51 +0100'
 date_gmt: '2009-03-19 18:40:51 +0100'
 categories:

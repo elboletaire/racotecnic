@@ -16,6 +16,8 @@ excerpt: "Ya hacía tiempo que tenía ganas de escribir una entrada \"de estas\"
   me gustan :P)."
 wordpress_id: 746
 wordpress_url: http://racotecnic.com/?p=746
+redirect_from:
+- "?p=746"
 date: '2009-10-27 01:25:16 +0100'
 date_gmt: '2009-10-27 00:25:16 +0100'
 categories:

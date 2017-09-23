@@ -15,6 +15,8 @@ excerpt: "Si os gustó WD TV, esto os gustará más :D. Hace ya un tiempo que
   se comercializa en españa el producto **PopCorn Hour**"
 wordpress_id: 837
 wordpress_url: http://racotecnic.com/?p=837
+redirect_from:
+- "?p=837"
 date: '2009-10-26 15:20:09 +0100'
 date_gmt: '2009-10-26 14:20:09 +0100'
 categories:

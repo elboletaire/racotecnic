@@ -20,6 +20,8 @@ $variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);
   hacer una función que me hiciera la tarea un poco más sencilla; aquí está:\r\n\r\n"
 wordpress_id: 525
 wordpress_url: http://racotecnic.com/?p=525
+redirect_from:
+- "?p=525"
 date: '2009-05-08 02:10:43 +0200'
 date_gmt: '2009-05-08 01:10:43 +0200'
 categories:

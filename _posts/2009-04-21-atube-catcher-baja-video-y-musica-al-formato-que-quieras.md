@@ -12,6 +12,8 @@ author_email: fernandoabascal@hotmail.com
 author_url: http://
 wordpress_id: 447
 wordpress_url: http://racotecnic.com/?p=447
+redirect_from:
+- "?p=447"
 date: '2009-04-21 19:14:24 +0200'
 date_gmt: '2009-04-21 18:14:24 +0200'
 categories:

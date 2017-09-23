@@ -19,6 +19,8 @@ excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) publicó como eliminar este
   así que os voy a explicar cómo he evitado **siempre** estos mensajes."
 wordpress_id: 703
 wordpress_url: http://racotecnic.com/?p=703
+redirect_from:
+- "?p=703"
 date: '2009-07-26 10:52:52 +0200'
 date_gmt: '2009-07-26 09:52:52 +0200'
 categories:

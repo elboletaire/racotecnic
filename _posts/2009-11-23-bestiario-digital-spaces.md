@@ -13,6 +13,8 @@ author_email: dpam23@hotmail.com
 author_url: http://
 wordpress_id: 1189
 wordpress_url: http://racotecnic.com/?p=1189
+redirect_from:
+- "?p=1189"
 date: '2009-11-23 16:08:48 +0100'
 date_gmt: '2009-11-23 15:08:48 +0100'
 categories:

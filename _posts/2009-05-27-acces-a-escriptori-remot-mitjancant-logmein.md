@@ -14,6 +14,8 @@ excerpt: "Avui, i per iniciar-me en el racó tècnic
   accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox."
 wordpress_id: 568
 wordpress_url: http://racotecnic.com/?p=568
+redirect_from:
+- "?p=568"
 date: '2009-05-27 12:11:44 +0200'
 date_gmt: '2009-05-27 11:11:44 +0200'
 categories:

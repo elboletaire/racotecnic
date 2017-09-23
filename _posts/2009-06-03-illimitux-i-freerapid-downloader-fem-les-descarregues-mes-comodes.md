@@ -16,6 +16,8 @@ excerpt: "Com tots sabreu, constantment van apareixent i desapareixen maneres de
   així com **FreeRapid Downloader** que ens farà més còmodes les descàrregues."
 wordpress_id: 595
 wordpress_url: http://racotecnic.com/?p=595
+redirect_from:
+- "?p=595"
 date: '2009-06-03 14:07:27 +0200'
 date_gmt: '2009-06-03 13:07:27 +0200'
 categories:

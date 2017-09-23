@@ -15,6 +15,8 @@ excerpt: "Una de las maneras para hacernos con una
   de hacer para ello."
 wordpress_id: 377
 wordpress_url: http://racotecnic.com/?p=377
+redirect_from:
+- "?p=377"
 date: '2009-03-30 20:57:15 +0200'
 date_gmt: '2009-03-30 19:57:15 +0200'
 categories:

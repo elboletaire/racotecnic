@@ -16,6 +16,8 @@ excerpt: "Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de
   a la que yo expliqué (≤ 3.2)."
 wordpress_id: 520
 wordpress_url: http://racotecnic.com/?p=520
+redirect_from:
+- "?p=520"
 date: '2009-05-03 16:45:53 +0200'
 date_gmt: '2009-05-03 15:45:53 +0200'
 categories:

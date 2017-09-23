@@ -15,6 +15,8 @@ excerpt: "Todos sabemos lo divertido y emocionante que es hacer la compatibilida
   crossbrowser de nuestras páginas web."
 wordpress_id: 1369
 wordpress_url: http://racotecnic.com/?p=1369
+redirect_from:
+- "?p=1369"
 date: '2010-02-08 23:38:44 +0100'
 date_gmt: '2010-02-08 22:38:44 +0100'
 categories:

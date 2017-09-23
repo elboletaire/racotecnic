@@ -19,6 +19,8 @@ excerpt: "Hace unos días gerno nos explicaba cómo facilitarnos las descargas m
   interesantes."
 wordpress_id: 718
 wordpress_url: http://racotecnic.com/?p=718
+redirect_from:
+- "?p=718"
 date: '2009-07-30 03:08:55 +0200'
 date_gmt: '2009-07-30 02:08:55 +0200'
 categories:

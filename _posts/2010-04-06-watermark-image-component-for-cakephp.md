@@ -16,6 +16,8 @@ excerpt: "Time ago I created a **CakePHP component for applying watermarks to im
   and resize images**."
 wordpress_id: 1455
 wordpress_url: http://racotecnic.com/?p=1455
+redirect_from:
+- "?p=1455"
 date: '2010-04-06 08:53:33 +0200'
 date_gmt: '2010-04-06 07:53:33 +0200'
 categories:

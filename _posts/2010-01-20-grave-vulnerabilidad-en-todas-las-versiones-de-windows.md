@@ -16,6 +16,8 @@ excerpt: "¡Urgente! Se ha detectado una **vulnerabilidad muy crítica en  todas
   de sistema**, equivalentes a efectos prácticos a los de  administrador."
 wordpress_id: 1286
 wordpress_url: http://racotecnic.com/?p=1286
+redirect_from:
+- "?p=1286"
 date: '2010-01-20 18:14:43 +0100'
 date_gmt: '2010-01-20 17:14:43 +0100'
 categories:

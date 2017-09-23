@@ -17,6 +17,8 @@ excerpt: "Bueno me estreno como bloggeador, a ver que tal se me da ;)\r\n\r\nMuc
   en encuenta en producción."
 wordpress_id: 271
 wordpress_url: http://racotecnic.com/?p=271
+redirect_from:
+- "?p=271"
 date: '2009-03-19 12:56:52 +0100'
 date_gmt: '2009-03-19 11:56:52 +0100'
 categories:

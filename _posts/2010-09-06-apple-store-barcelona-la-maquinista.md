@@ -14,6 +14,8 @@ excerpt: "Como la gran mayoría de gente sabe, ayer sábado 4 de septiembre Appl
   el centro comercial de La Maquinista (Barcelona)."
 wordpress_id: 1596
 wordpress_url: http://racotecnic.com/?p=1596
+redirect_from:
+- "?p=1596"
 date: '2010-09-06 12:00:23 +0200'
 date_gmt: '2010-09-06 11:00:23 +0200'
 categories:
