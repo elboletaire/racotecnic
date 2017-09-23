@@ -17,7 +17,7 @@ excerpt: "Hoy os explicaré como aprovechar el módulo imageBlock de Gallery2 pa
 wordpress_id: 403
 wordpress_url: http://racotecnic.com/?p=403
 redirect_from:
-- "?p=403"
+- "?p=403/"
 date: '2009-04-02 01:12:50 +0200'
 date_gmt: '2009-04-02 00:12:50 +0200'
 categories:

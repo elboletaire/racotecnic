@@ -18,7 +18,7 @@ excerpt: "Si queréis disfrutar de **Google Chrome** en vuestro ubuntu
 wordpress_id: 973
 wordpress_url: http://racotecnic.com/?p=973
 redirect_from:
-- "?p=973"
+- "?p=973/"
 date: '2009-11-13 15:45:35 +0100'
 date_gmt: '2009-11-13 14:45:35 +0100'
 categories:

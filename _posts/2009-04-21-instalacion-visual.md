@@ -14,7 +14,7 @@ excerpt: "En este blog os explicare todo el proceso para proyectar en distintas 
 wordpress_id: 466
 wordpress_url: http://racotecnic.com/?p=466
 redirect_from:
-- "?p=466"
+- "?p=466/"
 date: '2009-04-21 23:13:56 +0200'
 date_gmt: '2009-04-21 22:13:56 +0200'
 categories:

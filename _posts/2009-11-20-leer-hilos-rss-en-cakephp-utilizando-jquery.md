@@ -16,7 +16,7 @@ excerpt: "Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y 
 wordpress_id: 1177
 wordpress_url: http://racotecnic.com/?p=1177
 redirect_from:
-- "?p=1177"
+- "?p=1177/"
 date: '2009-11-20 14:41:14 +0100'
 date_gmt: '2009-11-20 13:41:14 +0100'
 categories:

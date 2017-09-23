@@ -20,7 +20,7 @@ excerpt: "Hace ya un tiempo Destroy (a.k.a Axelain) publicó como eliminar este
 wordpress_id: 703
 wordpress_url: http://racotecnic.com/?p=703
 redirect_from:
-- "?p=703"
+- "?p=703/"
 date: '2009-07-26 10:52:52 +0200'
 date_gmt: '2009-07-26 09:52:52 +0200'
 categories:

@@ -18,7 +18,7 @@ excerpt: "¿Cuántas veces has tenido que integrar una de tus aplicaciones web c
 wordpress_id: 1446
 wordpress_url: http://racotecnic.com/?p=1446
 redirect_from:
-- "?p=1446"
+- "?p=1446/"
 date: '2010-04-01 15:01:37 +0200'
 date_gmt: '2010-04-01 14:01:37 +0200'
 categories:

@@ -15,7 +15,7 @@ excerpt: "Hola a tod@s, No sabéis lo mal que me sabe tener que dar malas
 wordpress_id: 483
 wordpress_url: http://racotecnic.com/?p=483
 redirect_from:
-- "?p=483"
+- "?p=483/"
 date: '2009-04-23 18:37:48 +0200'
 date_gmt: '2009-04-23 17:37:48 +0200'
 categories:

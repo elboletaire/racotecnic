@@ -17,7 +17,7 @@ excerpt: "No digo adiós porque se haya terminado la <em>saga</em> de los HD mul
 wordpress_id: 793
 wordpress_url: http://racotecnic.com/?p=793
 redirect_from:
-- "?p=793"
+- "?p=793/"
 date: '2009-10-17 19:23:08 +0200'
 date_gmt: '2009-10-17 18:23:08 +0200'
 categories:

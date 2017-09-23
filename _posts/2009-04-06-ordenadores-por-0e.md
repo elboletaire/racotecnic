@@ -25,7 +25,7 @@ excerpt: "De todos es sabido que si algo caracteriza la civilización occidental
 wordpress_id: 437
 wordpress_url: http://racotecnic.com/?p=437
 redirect_from:
-- "?p=437"
+- "?p=437/"
 date: '2009-04-06 15:15:52 +0200'
 date_gmt: '2009-04-06 14:15:52 +0200'
 categories:

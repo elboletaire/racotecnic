@@ -14,7 +14,7 @@ excerpt: "¿A que se refiere esta entrada? Os voy a hacer una lista de las aplic
 wordpress_id: 1609
 wordpress_url: http://racotecnic.com/?p=1609
 redirect_from:
-- "?p=1609"
+- "?p=1609/"
 date: '2010-09-07 11:53:19 +0200'
 date_gmt: '2010-09-07 10:53:19 +0200'
 categories:

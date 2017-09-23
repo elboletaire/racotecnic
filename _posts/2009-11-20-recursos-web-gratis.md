@@ -13,7 +13,7 @@ excerpt: 'WebResourcesDepot website: http://www.webresourcesdepot.com'
 wordpress_id: 1166
 wordpress_url: http://racotecnic.com/?p=1166
 redirect_from:
-- "?p=1166"
+- "?p=1166/"
 date: '2009-11-20 13:10:02 +0100'
 date_gmt: '2009-11-20 12:10:02 +0100'
 categories:

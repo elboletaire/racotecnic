@@ -14,7 +14,7 @@ excerpt: "La empresa **Pablo Software Solutions** ha creado el programa
 wordpress_id: 489
 wordpress_url: http://racotecnic.com/?p=489
 redirect_from:
-- "?p=489"
+- "?p=489/"
 date: '2009-04-23 22:19:18 +0200'
 date_gmt: '2009-04-23 21:19:18 +0200'
 categories:

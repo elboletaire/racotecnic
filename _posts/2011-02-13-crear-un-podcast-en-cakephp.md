@@ -17,7 +17,7 @@ excerpt: "El otro día expliqué **cómo unir ficheros mp3 en un mismo fichero**
 wordpress_id: 1760
 wordpress_url: http://racotecnic.com/?p=1760
 redirect_from:
-- "?p=1760"
+- "?p=1760/"
 date: '2011-02-13 23:23:36 +0100'
 date_gmt: '2011-02-13 22:23:36 +0100'
 categories:

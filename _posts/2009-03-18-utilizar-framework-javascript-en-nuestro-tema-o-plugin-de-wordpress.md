@@ -18,7 +18,7 @@ excerpt: "Quizás os hayáis planteado añadir un poco de JavaScript a vuestro t
 wordpress_id: 219
 wordpress_url: http://racotecnic.com/?p=219
 redirect_from:
-- "?p=219"
+- "?p=219/"
 date: '2009-03-18 02:38:00 +0100'
 date_gmt: '2009-03-18 01:38:00 +0100'
 categories:

@@ -26,7 +26,7 @@ excerpt: "Vamos a instalar el SDK Android (para desarrollar aplicaciones en Java
 wordpress_id: 476
 wordpress_url: http://racotecnic.com/?p=476
 redirect_from:
-- "?p=476"
+- "?p=476/"
 date: '2009-04-22 00:52:24 +0200'
 date_gmt: '2009-04-21 23:52:24 +0200'
 categories:

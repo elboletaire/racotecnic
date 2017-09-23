@@ -14,7 +14,7 @@ author_url: http://www.underave.net
 wordpress_id: 1039
 wordpress_url: http://racotecnic.com/?p=1039
 redirect_from:
-- "?p=1039"
+- "?p=1039/"
 date: '2009-11-17 01:39:16 +0100'
 date_gmt: '2009-11-17 00:39:16 +0100'
 categories:

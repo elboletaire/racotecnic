@@ -19,7 +19,7 @@ excerpt: "Si habéis leído mi tutorial sobre la subida de ficheros con uploadif
 wordpress_id: 1269
 wordpress_url: http://racotecnic.com/?p=1269
 redirect_from:
-- "?p=1269"
+- "?p=1269/"
 date: '2009-12-27 15:10:01 +0100'
 date_gmt: '2009-12-27 14:10:01 +0100'
 categories:

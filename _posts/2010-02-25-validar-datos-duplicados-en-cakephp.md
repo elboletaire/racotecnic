@@ -18,7 +18,7 @@ excerpt: "Hoy mismo he necesitado de una validación para verificar si un dato y
 wordpress_id: 1406
 wordpress_url: http://racotecnic.com/?p=1406
 redirect_from:
-- "?p=1406"
+- "?p=1406/"
 date: '2010-02-25 21:28:51 +0100'
 date_gmt: '2010-02-25 20:28:51 +0100'
 categories:

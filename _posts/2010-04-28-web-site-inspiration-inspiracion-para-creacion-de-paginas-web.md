@@ -14,7 +14,7 @@ author_url: http://
 wordpress_id: 1392
 wordpress_url: http://racotecnic.com/?p=1392
 redirect_from:
-- "?p=1392"
+- "?p=1392/"
 date: '2010-04-28 08:36:54 +0200'
 date_gmt: '2010-04-28 07:36:54 +0200'
 categories:

@@ -17,7 +17,7 @@ excerpt: "Voy a explicaros una manera sencilla de hacer la paginación de vuestr
 wordpress_id: 1614
 wordpress_url: http://racotecnic.com/?p=1614
 redirect_from:
-- "?p=1614"
+- "?p=1614/"
 date: '2010-09-11 15:20:16 +0200'
 date_gmt: '2010-09-11 14:20:16 +0200'
 categories:
