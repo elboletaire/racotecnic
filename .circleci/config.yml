@@ -20,8 +20,7 @@ jobs:
             git clone --branch gh-pages --depth 1 \
               https://${GITHUB_TOKEN}@github.com/elboletaire/password-strength-meter.git \
               ../gh-pages && \
-            cp -frv ./* ../gh-pages && \
-            cd ../gh-pages
+            cp -frv ./* ../gh-pages
 
       # Download and cache dependencies
       - restore_cache:
@@ -33,6 +32,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            cd ../gh-pages && \
             bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
@@ -43,11 +43,14 @@ jobs:
       # build website
       - run:
           name: build website
-          command: jekyll build
+          command: |
+            cd ../gh-pages && \
+            jekyll build
 
       - run:
           name: commit changes
           command: |
+            cd ../gh-pages && \
             git add . && \
             git commit -m "Update gh-pages [skip ci]" && \
             git push origin gh-pages
