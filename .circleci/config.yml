@@ -7,7 +7,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/ruby:2.3.5-jessie
 
     working_directory: ~/repo
 
@@ -22,22 +22,11 @@ jobs:
               ../gh-pages && \
             cp -frv ./* ../gh-pages
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
       - run:
           name: install dependencies
           command: |
             cd ../gh-pages && \
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
-
-      - save_cache:
-          paths:
-            - ./vendor/bundle
+            bundle install --jobs=4 --retry=3
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
       # build website
@@ -51,6 +40,8 @@ jobs:
           name: commit changes
           command: |
             cd ../gh-pages && \
+            git config --global user.email "circleci@circleci.com" && \
+            git config --global user.name "CircleCI" && \
             git add . && \
             git commit -m "Update gh-pages [skip ci]" && \
             git push origin gh-pages
