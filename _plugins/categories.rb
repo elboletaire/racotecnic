@@ -19,13 +19,15 @@ module Jekyll
   end
 
   class CategoryPageGenerator < Generator
+    include TextFilters
+
     def generate(site)
       if site.layouts.key? 'bycategory'
 
         category_dir = site.config['category_dir'] || 'category'
 
         site.categories.each_key do |category|
-          site.pages << CategoryPage.new(site, site.source, File.join(category_dir, TextFilters.urlize(category)), category)
+          site.pages << CategoryPage.new(site, site.source, File.join(category_dir, urlize(category)), category)
         end
       end
     end
