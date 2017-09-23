@@ -55,3 +55,5 @@ module TextFilter
     str.gsub(options[:regexp], '')
   end
 end
+
+Liquid::Template.register_filter(TextFilter)
