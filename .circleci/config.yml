@@ -18,7 +18,7 @@ jobs:
           name: checkout gh-pages branch and copy master contents to it
           command: |
             git clone --branch gh-pages --depth 1 \
-              https://${GITHUB_TOKEN}@github.com/elboletaire/password-strength-meter.git \
+              https://${GITHUB_TOKEN}@github.com/elboletaire/racotecnic.git \
               ../gh-pages && \
             cp -frv ./* ../gh-pages
 
