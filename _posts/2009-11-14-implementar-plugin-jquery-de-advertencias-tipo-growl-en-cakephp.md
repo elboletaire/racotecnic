@@ -188,12 +188,12 @@ $this->Session->setFlash('Esto es un mensaje informativo', 'flash_info');
 
 Pues ya está, ya lo tenemos ^^
 
-Si queréis podéis descargar los ficheros más importantes en <a href="http://www.racotecnic.com/tutorials/2009/11/growl_cake.zip">el zip</a> que he preparado del tutorial. También <a href="http://www.racotecnic.com/tutorials/cake/pages/growl">podéis ver el ejemplo</a> que he hecho a medida que hacía esta pequeña guía.
+Si queréis podéis descargar los ficheros más importantes en <a href="http://demos.racotecnic.com/tutorials/2009/11/growl_cake.zip">el zip</a> que he preparado del tutorial. También <a href="http://demos.racotecnic.com/tutorials/cake/pages/growl">podéis ver el ejemplo</a> que he hecho a medida que hacía esta pequeña guía.
 
 > **Ejemplo**:
 >
-> - <a href="http://www.racotecnic.com/tutorials/cake/pages/growl">Ver ejemplo</a>
-> - <a href="http://www.racotecnic.com/tutorials/2009/11/growl_cake.zip">Descargar ficheros del ejemplo</a>
+> - <a href="http://demos.racotecnic.com/tutorials/cake/pages/growl">Ver ejemplo</a>
+> - <a href="http://demos.racotecnic.com/tutorials/2009/11/growl_cake.zip">Descargar ficheros del ejemplo</a>
 >
 > Páginas de referencia:
 >

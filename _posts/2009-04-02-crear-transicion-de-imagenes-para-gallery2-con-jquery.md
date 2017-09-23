@@ -77,7 +77,6 @@ Así pues guardamos esta línea en un fichero que llamaremos "random_image.php":
 ~~~php
 <?php
 @readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage|randomImage|randomImage&amp;g2_show=none&amp;g2_maxSize=130');
-?>
 ~~~
 
 Ahora pasaremos a hacer el código en JavaScript (utilizando jQuery, por supuesto) para hacer la transición de imágenes.
@@ -204,7 +203,7 @@ Imagino que para hacerlo tendríamos que programar la transición más detenidam
 
 <ul>
 <li><del>Ver demo del tutorial</del></li>
-<li><a title="Descargar todos los ficheros" href="http://racotecnic.com/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
+<li><a title="Descargar todos los ficheros" href="http://demos.racotecnic.com/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
 </ul>
 
 Páginas de referencia:

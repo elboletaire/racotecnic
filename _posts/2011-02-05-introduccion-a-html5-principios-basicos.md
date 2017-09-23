@@ -249,7 +249,7 @@ Todo esto está muy bien, pero ¿y si lo vemos todo junto?
 Os dejo una página sencilla en HTML5 y algo de CSS3.
 Es el primer ejercicio que nos han pedido, veremos a ver que nota me ponen! :)
 
-<a href="http://www.racotecnic.com/tutorials/2011/HTML5/" title="HTML5 example">http://www.racotecnic.com/tutorials/2011/HTML5/</a>
+<a href="http://demos.racotecnic.com/tutorials/2011/HTML5/" title="HTML5 example">http://demos.racotecnic.com/tutorials/2011/HTML5/</a>
 
 ## Documentación interesante:
 

@@ -38,8 +38,8 @@ Si no tenéis ni idea de Cake pero utilizáis un poco el tarro seguro que podré
 <blockquote>
   <ul>
     <li>Ejemplo en <a title="Visitar underave" href="http://www.underave.net/barna23/">underave</a>: <a href="http://www.underave.net/barna23/blogs">http://www.underave.net/barna23/blogs</a></li>
-    <li>Ejemplo del tutorial: <a href="http://www.racotecnic.com/tutorials/cake/pages/blogs">http://www.racotecnic.com/tutorials/cake/pages/blogs</a></li>
-    <li><a href="http://www.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
+    <li>Ejemplo del tutorial: <a href="http://demos.racotecnic.com/tutorials/cake/pages/blogs">http://demos.racotecnic.com/tutorials/cake/pages/blogs</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
   </ul>
 </blockquote>
 
@@ -266,7 +266,7 @@ Pues ya está, ya lo tenemos :D Si todo ha ido bien deberíais verlo parecido a 
 <blockquote>
   <ul>
     <li>Ejemplo en <a title="Visitar underave" href="http://www.underave.net/barna23/">underave</a>: <a href="http://www.underave.net/barna23/blogs">http://www.underave.net/barna23/blogs</a></li>
-    <li>Ejemplo del tutorial: <a href="http://www.racotecnic.com/tutorials/cake/pages/blogs">http://www.racotecnic.com/tutorials/cake/pages/blogs</a></li>
-    <li><a href="http://www.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
+    <li>Ejemplo del tutorial: <a href="http://demos.racotecnic.com/tutorials/cake/pages/blogs">http://demos.racotecnic.com/tutorials/cake/pages/blogs</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
   </ul>
 </blockquote>

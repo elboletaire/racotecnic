@@ -42,8 +42,8 @@ Si queréis podéis ver el resultado del tutorial que voy a explicar en este enl
 
 <blockquote>
   <ul>
-    <li><a href="http://www.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
-    <li><a href="http://www.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
   </ul>
 </blockquote>
 
@@ -793,8 +793,8 @@ A continuación os dejo el ejemplo que he ido haciendo a medida que hacía el tu
 
 <blockquote>
   <ul>
-    <li><a href="http://www.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
-    <li><a href="http://www.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
   </ul>
 </blockquote>
 

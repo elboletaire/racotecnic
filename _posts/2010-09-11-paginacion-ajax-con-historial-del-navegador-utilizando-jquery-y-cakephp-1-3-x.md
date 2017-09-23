@@ -32,9 +32,9 @@ tags:
 - Paginació
 ---
 
-<a href="http://racotecnic.com/tutorials/cake13/pags"><img class="size-full wp-image-1621 alignright" title="pagination" src="{{ site.url }}/uploads/2010/09/pagination.png" alt="" width="279" height="126" /></a>Voy a explicaros una manera sencilla de hacer la paginación de vuestras webs y aplicaciones hechas con CakePHP en Ajax utilizando jQuery y un plugin para que el historial del navegador funcione correctamente.
+<a href="http://demos.racotecnic.com/tutorials/cake13/pags"><img class="size-full wp-image-1621 alignright" title="pagination" src="{{ site.url }}/uploads/2010/09/pagination.png" alt="" width="279" height="126" /></a>Voy a explicaros una manera sencilla de hacer la paginación de vuestras webs y aplicaciones hechas con CakePHP en Ajax utilizando jQuery y un plugin para que el historial del navegador funcione correctamente.
 
-Para <a href="http://racotecnic.com/tutorials/cake13/pags">mi ejemplo</a> he utilizado <a rel="nofollow external" href="http://github.com/cakephp/cakephp/downloads">CakePHP 1.3.3</a> y <a rel="nofollow external" href="http://jquery.com/">jQuery 1.4.2</a>. El plugin que comentaba anteriormente se llama jQuery History Plugin y lo podéis <a rel="external nofollow" href="http://github.com/tkyk/jquery-history-plugin">descargar de gitHub</a>.
+Para <a href="http://demos.racotecnic.com/tutorials/cake13/pags">mi ejemplo</a> he utilizado <a rel="nofollow external" href="http://github.com/cakephp/cakephp/downloads">CakePHP 1.3.3</a> y <a rel="nofollow external" href="http://jquery.com/">jQuery 1.4.2</a>. El plugin que comentaba anteriormente se llama jQuery History Plugin y lo podéis <a rel="external nofollow" href="http://github.com/tkyk/jquery-history-plugin">descargar de gitHub</a>.
 
 Bien pues vamos a ello. Empecemos por el controlador. Simplemente tenéis que tener en cuenta que vamos a utilizar el <em>helper </em>de JavaScript, así que debemos activarlo:
 
@@ -156,7 +156,7 @@ El `e.preventDefault();` equivale al típico `return false;` que utilizamos para
 
 Pues ya está, de esta manera tan sencilla tenemos **paginación Ajax con historial del navegador gracias a jQuery en nuestra aplicación CakePHP**.
 
-Podéis ver un ejemplo en la siguiente dirección: <a href="http://racotecnic.com/tutorials/cake13/pags">http://racotecnic.com/tutorials/cake13/pags</a>.
+Podéis ver un ejemplo en la siguiente dirección: <a href="http://demos.racotecnic.com/tutorials/cake13/pags">http://demos.racotecnic.com/tutorials/cake13/pags</a>.
 
 El problema de éste método de paginación es que, aunque le ahorramos tiempo de carga al cliente, nuestro servidor carga toda la página igualmente. Si quisierais reducir la carga de vuestro servidor con Ajax quizás deberíais ingeniároslas para cargar sólo esa parte de la vista y devolverla en formato XHTML en un JSON (o en un JSON directamente) y repoblar vuestra tabla con dicho resultado.
 
@@ -165,8 +165,8 @@ Algún día trataré de hacer un tutorial explicando esto con detalle ;)
 <blockquote>
   **Enlaces:**
   <ul>
-    <li><a href="http://racotecnic.com/tutorials/cake13/pags">Demo del tutorial</a></li>
-    <li><a href="http://racotecnic.com/tutorials/2010/09/cake_jquery_pagination.zip">Descarga .zip con los ficheros utilizados</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/cake13/pags">Demo del tutorial</a></li>
+    <li><a href="http://demos.racotecnic.com/tutorials/2010/09/cake_jquery_pagination.zip">Descarga .zip con los ficheros utilizados</a></li>
     <li><a rel="nofollow external" href="http://cakephp.org/">CakePHP</a></li>
     <li><a rel="nofollow external" href="http://jquery.com/">jQuery</a></li>
     <li><a rel="nofollow external" href="http://github.com/tkyk/jquery-history-plugin">jQuery History Plugin</a></li>
