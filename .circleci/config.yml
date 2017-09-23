@@ -42,6 +42,6 @@ jobs:
             cd ../gh-pages && \
             git config --global user.email "circleci@circleci.com" && \
             git config --global user.name "CircleCI" && \
-            git add . && \
+            git add -f _site && \
             git commit -m "Update gh-pages [skip ci]" && \
             git push origin gh-pages
