@@ -26,9 +26,9 @@
 [data-theme="dark"] {
   --background: #212737;
   --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
+  --accent: #6cb6ff;
+  --accent-foreground: #0d1526;
   --muted: #343f60;
   --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --border: #3b4766;
 }
