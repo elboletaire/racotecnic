@@ -1,0 +1,93 @@
+[
+  {
+    "id": 436,
+    "parent": 0,
+    "author": "valdes",
+    "date": "2009-03-31T00:41:47+02:00",
+    "content": "<p>o.OOO</p>\n<p>esto me sera muy util en mi empresa</p>\n<p>muchas gracias megacrakk!!</p>\n<p>y a seguir luchando ahiii en dai2!! q ahora ya estamos aprobados de empleo y sueldo jaajjaa</p>"
+  },
+  {
+    "id": 461,
+    "parent": 0,
+    "author": "Destroy aka Axelain",
+    "date": "2009-04-01T16:43:22+02:00",
+    "content": "<p>De nada Valdes. Pero solo podras quitar el molesto mensaje de \"copia pirata\"; quiero decir que no tendras derecho a una actualizacion (windows update) de windows porque la copia de windows no esta validada en la base de datos de microsoft, pero hay solucion para ello, ayer encontre solucion a ese problema buscando por google, cuesta un poco encontrar la web, es esta: http://woallance.wordpress.com/2007/01/27/la-forma-mas-sencilla-de-validar-tu-windows-xp/</p>"
+  },
+  {
+    "id": 471,
+    "parent": 0,
+    "author": "valdes",
+    "date": "2009-04-02T11:57:48+02:00",
+    "content": "<p>muchas gracias tioo!!!</p>\n<p>sois los putisimos crakksss!!!!</p>\n<p>AVE UNDERAVE!! MUAHAHAHAHAH (H)</p>"
+  },
+  {
+    "id": 2346,
+    "parent": 0,
+    "author": "Haushinka",
+    "date": "2009-08-18T11:11:53+02:00",
+    "content": "<p>Hola! <br />He encontrado esta entrada porque en otro sitio habias escrito q tienes tb el cogido para eliminar el del Office Genuine Advantage. <br />Me lo podrias pasar?? Gracias de antemano!</p>"
+  },
+  {
+    "id": 2516,
+    "parent": 0,
+    "author": "cosa",
+    "date": "2009-09-11T21:32:36+02:00",
+    "content": "<p>no funciona compi, muxas gracias de todos modos</p>"
+  },
+  {
+    "id": 2812,
+    "parent": 0,
+    "author": "Elisa",
+    "date": "2009-10-09T19:57:05+02:00",
+    "content": "<p>A mi no me funciona. :(</p>"
+  },
+  {
+    "id": 25868,
+    "parent": 0,
+    "author": "descojoná",
+    "date": "2011-02-08T16:04:10+01:00",
+    "content": "<p>me estoy partiendo la caja de leeros, me pregunto qué haréis si alguien saca vuestra ip y os denuncia, fracasados, que mira que no tener ni 20 euros para pagaros un wifi al mes...menuda panda de idiotas, dudo que logréis acceder a wifi alguna...</p>"
+  },
+  {
+    "id": 26345,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-02-13T19:46:46+01:00",
+    "content": "<p>wifi?</p>"
+  },
+  {
+    "id": 36259,
+    "parent": 0,
+    "author": "FIESTA RADIO",
+    "date": "2012-11-06T06:37:14+01:00",
+    "content": "<p>Ja ja JA ja \"dimarts\" se aventó un buen regaño, pero no tiene idea de lo que se está hablando (escribiendo).<br />=oP</p>"
+  },
+  {
+    "id": 36379,
+    "parent": 0,
+    "author": "gus",
+    "date": "2013-07-18T07:29:40+02:00",
+    "content": "<p>...WinlogonNotify........¿qué sigue en esta línea?,¿como acaba esta línea?,gracias.</p>"
+  },
+  {
+    "id": 37031,
+    "parent": 0,
+    "author": "Kike",
+    "date": "2014-03-04T05:55:50+01:00",
+    "content": "<p>Gracias</p>"
+  },
+  {
+    "id": 41421,
+    "parent": 0,
+    "author": "juan",
+    "date": "2014-04-29T05:34:00+02:00",
+    "content": "<p><a href=\"#comment-436\">@valdes </a> <br />no funciono peros de todas maneras gracias por la intension</p>"
+  },
+  {
+    "id": 47350,
+    "parent": 0,
+    "author": "Antonio",
+    "date": "2014-05-14T04:29:47+02:00",
+    "content": "<p>Hola amigos, la compu con Windows 7 me estaba dando error de copia pirata con el fondo del escritorio en negro, buscando solución al problema encontré este post y lo hice paso por paso, al reiniciar la computadora no deja de reiniciarse sola una y otra vez (No me deja acceder a nada del sistema y me sale por unos segundos un mensaje en ingles con el fondo azul, que hago, ayudaaaaaaaaa!!!!!! Por favor… AUXILIOOOOOO!!!!</p>\n<p>Este es el Post que hice yo:<br />1ro copiá el siguiente codigo en el bloc de notas que lo encontraras en: INICIO-----PROGRAMAS------ACCESORIOS (si te aparecen dos accesorios el de arriba) -------BLOC DE NOTAS. tal como esta aqui abajo. <br />taskkill /im wgatray.exe <br />Del c:WindowsSystem32WgaTray.exe <br />Del c:WindowsSystem32dllcacheWgaTray.exe <br />echo Windows Registry Editor Version 5.00 &gt;%temp%WGANFIX.REG <br />echo. &gt;&gt;%temp%WGANFIX.REG <br />echo [-HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionWinlogonNotifyWgaLogon] &gt;&gt;%temp%WGANFIX.REG <br />regedit /s %temp%WGANFIX.REG <br />del %temp%WGANFIX.REG <br />del c:windowssystem32wgalogon.dll <br />del c:windowssystem32dllcachewgalogon.dll <br />2do paso, guarda el documento con el nombre: loquequieras. Con extencion .bat<br />3er paso, abre el archivo y veras qe se cierra solo, déjalo, luego reinicia tu computadora y listo</p>"
+  }
+]

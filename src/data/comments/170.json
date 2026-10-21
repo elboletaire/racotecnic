@@ -1,0 +1,44 @@
+[
+  {
+    "id": 5,
+    "parent": 0,
+    "author": "neosy",
+    "date": "2009-01-24T11:48:37+01:00",
+    "content": "<p>Nice! No se de que me suena de todas formas :D</p>\n<p>QtCreator me sorprendió bastante la verdad, buen, en general a todos</p>"
+  },
+  {
+    "id": 6,
+    "parent": 5,
+    "author": "Booletaire",
+    "date": "2009-01-26T16:32:48+01:00",
+    "content": "<p>Qt creator roolz!</p>"
+  },
+  {
+    "id": 4351,
+    "parent": 0,
+    "author": "Javi",
+    "date": "2010-03-17T15:34:31+01:00",
+    "content": "<p>Hola,</p>\n<p>Acabo de instalar QtCreator (qt-sdk-mac-opensource-2010.dmg), y cuando voy a ejecutar un ejemplo sencillo de prueba me dice:</p>\n<p>      Configuration intacta, saltando paso QMake.<br />      No se encontró el comando make: make en el entorno de de construcción<br />      Error durante la construcción del proyecto PrimerQT<br />      Mientras se ejecutaba la etapa 'Make'<br />      Construcción cancelada.</p>\n<p>He estado viendo por ahi pero no encuentro la solución.<br />Pueden echarme una mano??<br />Gracias</p>"
+  },
+  {
+    "id": 4355,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-03-17T19:09:22+01:00",
+    "content": "<p>Puessss.. aparentemente parece que no hayas (o no se hayan) instalado correctamente las herramientas de desarrolladores de Mac.</p>\n<p>Si no es eso, la verdad, ni idea.. :__(</p>"
+  },
+  {
+    "id": 19704,
+    "parent": 0,
+    "author": "Toni",
+    "date": "2010-12-13T12:30:36+01:00",
+    "content": "<p>Y cual es la solución a eso? A mi me ocurre lo mismo..</p>"
+  },
+  {
+    "id": 26902,
+    "parent": 0,
+    "author": "kakius82",
+    "date": "2011-02-18T23:16:31+01:00",
+    "content": "<p>Hola.<br />Primero de todo, gracias por el tutorial.<br />Aparentemente he podido instalar las librerías Qt con éxito, sin embargo, cuando intento compilar un proyecto, no me reconoce le comando \"qmake\" (ni \"qmake4\").</p>\n<p>¿Sabeis que puede ser debido?</p>"
+  }
+]

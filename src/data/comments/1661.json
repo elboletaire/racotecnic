@@ -1,0 +1,16 @@
+[
+  {
+    "id": 17398,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-11-21T17:28:58+01:00",
+    "content": "<p>Ahora que lo he estado usando un poco más puedo decir un par de cosillas que he descubierto:</p>\n<ul><li>Con firefox no parece funcionar. El JavaScript peta en algún punto y no se muestra la barra de herramientas.</li>\n<li>En algunas páginas con flash tampoco se muestra. Por ejemplo, a mi no se me muestra en una página de carga de ficheros con uploadify.</li>\n</ul>"
+  },
+  {
+    "id": 36390,
+    "parent": 0,
+    "author": "Andrés Salcedo",
+    "date": "2013-08-29T16:40:09+02:00",
+    "content": "<p>Me salvaste la vida, muchas gracias‼</p>\n<p>El DebugKit me marcaba el siguiente error:<br />Falta Programas<br />Error: La aplicación está intentando cargar un archivo desde el DebugKit complemento</p>\n<p>Error: Asegúrese de que su DebugKit plugin es en la aplicación del directorio \\ Programas y se cargó</p>\n<p>&lt;? Php<br />CakePlugin :: load ('DebugKit');</p>\n<p>Carga todos los plugins: Si desea cargar todos los plugins a la vez, utilice la siguiente línea en su app \\ Config \\ Bootstrap.php</p>\n<p>CakePlugin :: LOADALL ();</p>\n<p>______</p>\n<p>El problema era que no lograba cargar el plugin de nombre DebugKit. Esto aunque agregara al codigo CakePlugin :: load ('DebugKit'); o CakePlugin :: LOADALL ();.</p>\n<p>______</p>\n<p>La solución, tu la has dicho.<br />Renombrar la carpeta del plugin por debug_kit. El plugin que descargue de la página era debug_kit-master. (Y si... que lleve el guión bajo _)</p>\n<p>______ </p>\n<p>Saludos</p>"
+  }
+]

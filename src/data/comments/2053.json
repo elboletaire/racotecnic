@@ -1,0 +1,37 @@
+[
+  {
+    "id": 36311,
+    "parent": 0,
+    "author": "Josue",
+    "date": "2013-03-04T20:42:13+01:00",
+    "content": "<p>Siguiendo tu guia de Apache con FastCGI, me encontre con que ahora este no quiere reconocer las paginas con .php. no ejecuta estos archivos a menos que se ponga directo. Index.php no es reconocido y dispara un error 500.<br />este lee asi;<br />.htaccess: Invalid command 'php_value', perhaps misspelled or defined by a module not included in the server configuration</p>\n<p>-EDITADO: Ya lo resolvi. el .htaccess tenia un php_value del servicio de NewRelic.com que al parecer no es compatible con lo que aqui indicas. </p>\n<p>Ahora los Host virtuales si me funcionan y hacen \"Parsing\" del index.php. Pero el \"Default Host\" que esta en /var/www/ no soporta index.php.</p>\n<p>¿Que podra ser esto?</p>"
+  },
+  {
+    "id": 36313,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2013-03-05T01:27:50+01:00",
+    "content": "<p>Mira el fichero /etc/apache/sites-available/default y asegúrate de que esté todo correcto.</p>\n<p><strong>Edit:</strong> Por cierto, lo de <code>php_value</code> no te iba porque <code>php_value</code> únicamente es compatible con <code>php-cli</code>, no con <code>php-cgi</code> que es lo que estamos instalando aquí.</p>"
+  },
+  {
+    "id": 36354,
+    "parent": 0,
+    "author": "Capy",
+    "date": "2013-04-30T21:28:25+02:00",
+    "content": "<p>Muchas gracias, necesitaba echar a andar FastCGI y has sido mi solución.</p>"
+  },
+  {
+    "id": 36360,
+    "parent": 0,
+    "author": "Inaxio",
+    "date": "2013-06-25T15:19:56+02:00",
+    "content": "<p>Hola Booletaire, he intentado seguir tu tutorial, pero tengo el problema que me descarga los ficheros php. He intentado editar el fichero /etc/apache2/mods-enabled/php5_cgi.conf pero no lo tengo.<br />Te dejo algun dato mas por si puede ayudar.<br />Ubuntu Server 12.04 LTS<br />PHP Version 5.3.10-1ubuntu3.6</p>"
+  },
+  {
+    "id": 36382,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2013-07-24T12:52:37+02:00",
+    "content": "<p>Ei Inaxio, perdona por no haber contestado antes; últimamente tengo cero tiempo.</p>\n<p>Si te está descargando los ficheros php seguramente sea por una mala configuración. Te recomiendo lo mismo que a Josue, que revises los ficheros de configuración y te asegures de que todo está como indiqué.</p>\n<p>En tu caso lo más probable es que fastcgi no se esté ejecutando correctamente. Revisa los logs de error (en <code>/var/log/apache/error.log</code> normalmente) y seguro que a partir de ahí podrás solucionarlo.</p>"
+  }
+]

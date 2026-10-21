@@ -1,0 +1,30 @@
+[
+  {
+    "id": 25801,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-02-07T21:34:14+01:00",
+    "content": "<p>Acabo de arreglar un fallico de nada y de paso he añadido un poquitín de debug</p>"
+  },
+  {
+    "id": 36152,
+    "parent": 0,
+    "author": "Arnau",
+    "date": "2011-08-02T13:09:51+02:00",
+    "content": "<p>Ei, genial tu!</p>\n<p>L'he copiat tal qual i sembla que funciona a les 1000 meravelles.</p>\n<p>Gràcies!</p>"
+  },
+  {
+    "id": 36157,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-08-03T14:56:04+02:00",
+    "content": "<p>Me n'alegro nano! La veritat és que a mi em va de perles! De fet vaig descobrir fa poc que en realitat sí tinc accés SSH als servidors (tenia que habilitar-ho..) i tot i així prefereixo deixar això abans d'enmerdar-me a fer un script amb rsync (entre d'altres coses per que hi ha cops que no puc accedir via SSH.. hostings compartits de merda...)</p>"
+  },
+  {
+    "id": 36204,
+    "parent": 0,
+    "author": "Jonathan",
+    "date": "2012-02-14T15:16:51+01:00",
+    "content": "<p>Gracias, fenómeno!</p>"
+  }
+]

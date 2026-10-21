@@ -1,0 +1,16 @@
+[
+  {
+    "id": 2796,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2009-10-07T16:45:44+02:00",
+    "content": "<p>Oscar soy el Carlos xDD, interesante esto, voy a probarlo. He encontrado un pequeño error, en el components, write y extract as puesto Getid2 en vez de Getid3.</p>\n<p>Saludos!</p>"
+  },
+  {
+    "id": 2801,
+    "parent": 2796,
+    "author": "Booletaire",
+    "date": "2009-10-08T23:33:20+02:00",
+    "content": "<p>Ei Carlos! Merci ko, ya lo he arreglado. Eso es porque anduve haciendo pruebas con las versiones 1 y 2 de Getid3 y tenía varios controladores X]</p>\n<p>Dentro de poco voy a sacar un tutorial sobre cómo subir imágenes con uploadify + validación de datos con Ajax (para Cake, ofcourse) bien majo :D Ya lo tengo medio horneado, sólo tengo que encontrar un rato para terminarlo :P</p>"
+  }
+]

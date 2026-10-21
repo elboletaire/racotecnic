@@ -1,0 +1,443 @@
+[
+  {
+    "id": 3090,
+    "parent": 0,
+    "author": "Alexandro",
+    "date": "2009-11-01T19:53:50+01:00",
+    "content": "<p>Excelente tutorial, lo que andaba buscando y ademas con un ejemplo descargable, gracias por compartir</p>\n<p>Saludos</p>"
+  },
+  {
+    "id": 3093,
+    "parent": 3090,
+    "author": "Booletaire",
+    "date": "2009-11-02T17:06:39+01:00",
+    "content": "<p>Gracias a ti por contestar, al menos ya sé que a alguien sí le sirvió ^^</p>"
+  },
+  {
+    "id": 3112,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-04T10:46:42+01:00",
+    "content": "<p><b>He actualizado el ejemplo</b> porque tenía un pequeño error. Me había olvidado de eliminar / comentar una línea donde había un <i>console.log</i> (comando para mostrar código en la consola de firebug). Por culpa del <i>console.log</i> la mayoría de navegadores daban error y tras subir las fotos no se podía enviar el formulario.</p>\n<p>Lo dicho, ya está actualizado, ¡pero sólo del ejemplo! <strong>¡Recordad eliminar el <i>console.log</i> del fichero zip si lo descargáis!</strong></p>"
+  },
+  {
+    "id": 3121,
+    "parent": 0,
+    "author": "Alexandro",
+    "date": "2009-11-05T18:09:33+01:00",
+    "content": "<p>Hola, estube tratando de implementar algo parecido en un proyecto pero he estado teniendo un problema. Al parecer uploadify no me esta ejecutando el action del controller que le especifico en el parametro script, ya probe pasandole el id de la sesion como parametro al action y aun no me funciona, alguna idea de que podra ser?</p>"
+  },
+  {
+    "id": 3140,
+    "parent": 3121,
+    "author": "Booletaire",
+    "date": "2009-11-08T12:30:19+01:00",
+    "content": "<p>¿La acción a la que intentas acceder es del mismo controlador? Porque me parece recordar que sólo funciona entre el mismo controlador.. Es decir, si quieres hacer un upload para el controlador \"images\", la acción \"add\" también tendrá que estar en éste mismo controlador.</p>\n<p>Pero si intentas acceder desde la acción \"add\" de <i>álbums</i> a la acción \"upload\" de <i>images</i> no funcionará.</p>\n<p>Espero que te sirva</p>"
+  },
+  {
+    "id": 3158,
+    "parent": 0,
+    "author": "Alexandro",
+    "date": "2009-11-10T20:11:49+01:00",
+    "content": "<p>Hola de nuevo, una disculpa por contestar tan tarde, ya logre solucionarlo tenia mal implementada la funcion beforefilter del controller, ya todo funciona excelente. Maravilloso tutorial.</p>\n<p>Saludos gracias.</p>"
+  },
+  {
+    "id": 3227,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-18T03:11:58+01:00",
+    "content": "<p>Hola soy novato en cakePhp, muy buen tutorial pero no he podido hacer que me funcione lo de buscar la imagen, que puede ser?, ademas queria preguntarte si puedo utilizar esto para subir archivos.</p>\n<p>gracias</p>"
+  },
+  {
+    "id": 3230,
+    "parent": 3227,
+    "author": "Booletaire",
+    "date": "2009-11-18T13:12:35+01:00",
+    "content": "<p>¿A qué te refieres con que no has podido hacer que te funcione lo de hacer buscar la imagen? ¿No logras que el botón de flash haga nada?</p>\n<p>Por otro lado.. si dices que hace poco que has empezado con Cake quizás este tutorial sea un poco complicado para tu nivel. Mejor si empiezas con algo más simple como <a href=\"http://racotecnic.underave.net/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/\" rel=\"nofollow ugc noopener\">la subida de ficheros sin validación Ajax</a>.</p>\n<p>Salu2</p>"
+  },
+  {
+    "id": 3234,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-19T03:10:34+01:00",
+    "content": "<p>hola<br />el boton de flash no aparece me sale lo siguiente \"Necesitas JavaScript y Flash para poder subir ficheros \" pero tengo instalado el plugin de flash y tengo habilitado el javascript, utilice el internet explorer y me sale lo mismo, quiero implementarlo para un proyecto de la Universidad donde en el sitio web podes subir imagenes, archivos flash y audio, me gusto mucho el trabajo que hiciste te agradeceria si me puedes ayudar.</p>"
+  },
+  {
+    "id": 3236,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-19T04:29:56+01:00",
+    "content": "<p>hola: ya logre que me saliera como tu ejemplo aunque no me esta guardando las imagenes, me sale el mensaje que se ha guardado pero reviso la tabla y las carpetas y no hay nada, que puede ser?.<br />ademas tengo otra pregunta puedo utilizar esto para poder subir otro tipo de archivos? o solo imagenes?<br />gracias.</p>"
+  },
+  {
+    "id": 3237,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-19T11:30:01+01:00",
+    "content": "<p>Debes mirar que en todo momento te esté guardando la imagen. Para ello utiliza el método \"log\", así averiguarás qué nombre tiene el fichero en cada momento y si te lo guarda en el sistema.</p>\n<p>Por ejemplo, fíjate en el método upload, en la línea 102 (de mi blog), verás lo siguiente:</p>\n<blockquote><code>$data = $this-&gt;Upload-&gt;result;\n$location = realpath(WWW_ROOT . 'img/upload/full/' . $data);\n</code></blockquote>\nSustitúyelo por...\n<blockquote><code>$data = $this-&gt;Upload-&gt;result;\n$this-&gt;log(\"Nombre del fichero: \".$data,'upload');\n$location = realpath(WWW_ROOT . 'img/upload/full/' . $data);\n$this-&gt;log(\"Ruta del fichero: \".$location,'upload');\n</code></blockquote>\nLuego, en la línea 19 del método AjaxAdd añade también:\n<blockquote><code>$this-&gt;log(\"Nombre del fichero recibido: \".$imageFile,'upload');</code></blockquote>\n<p>Con esto lo que hacemos es generar un log en <i>/app/tmp/logs/upload.log</i> (de ahí el segundo parámetro \"upload\"). Mírate este log y dónde veas que no te aparece el nombre de imagen es que algo está fallando.</p>\n<p>Lamento no poder ayudarte más pero aparentemente esto es un error tuyo y deberás ser tú quien lo solucione finalmente.</p>\n<p>Si tienes cualquier otro problema más házmelo saber.</p>\n<p>Salu2</p>\n<p>Edito: No estarás utilizando i18n con su tabla en la base de datos y todo, ¿no?</p>"
+  },
+  {
+    "id": 3245,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-20T04:04:09+01:00",
+    "content": "<p>hola: gracias por tu ayuda, la ruta esta bien y el nombre aparece lo que veo es que cuando le doy guardar se borra la imagen de las carpetas y de la tabla tempfiles pero no se envia la informacion a la tabla images y se borra la imagen de la carpeta full.</p>"
+  },
+  {
+    "id": 3247,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-20T05:12:33+01:00",
+    "content": "<p>que pena yo de nuevo pero ya logre que  me guardara en la BD era borrar la sgte linea en la function add lo siguiente : $this-&gt;Image-&gt;delete($image['Image']['id']); ,lo que no he podido  es que se me guarde la imagen en la carpeta full ya que cuando le doy guardar se borra de las 3 carpetas (full, temp, thumb). Como haces para que se borren? ahi debe estar la falla.</p>"
+  },
+  {
+    "id": 3250,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-20T09:26:10+01:00",
+    "content": "<p>Aaaaaaahhhmiiiiigooo... que estás utilizando el código que subí al zip.. si sigues todo el tutorial verás que en el método add sólo hace falta tener el título de la pàgina:</p>\n<blockquote><code>function add()\n{\n\t$this-&gt;pageTitle = \"Carga de ficheros con Uploadify y CakePHP\";\n}</code></blockquote>\n<p>Borra todo lo demás ya que lo que estoy haciendo es eliminar todos los ficheros guardados en la base de datos (está así en el ejemplo para evitar llenar el servidor de mierda).</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 3309,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-24T04:38:10+01:00",
+    "content": "<p>muchas gracias, perdon pense que el zip tenia lo que estabas explicando, tengo una duda puedo utilizar el sgte codigo para cambiar el tamaño de las imagenes es que necesito mostrar las que se han subido como si fuera una galeria de fotos : <br />$this-&gt;params['form']['Filedata'],'img/upload/tmp/', null,<br />   array(<br />        'type' =&gt; 'resizecrop',<br />        'size' =&gt; array(100,150),<br />        'output' =&gt; 'jpg',<br />        'quality'=&gt;80),<br />        array('jpg','jpeg','png','gif'));</p>\n<p>o tenes algun ejemplo que haga lo que necesito?<br />gracias por la ayuda que me puedas prestar</p>"
+  },
+  {
+    "id": 3312,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-24T12:06:04+01:00",
+    "content": "<p>¿Quieres que se te muestre una galería directamente creada con javascript a partir del resultado? Si no te refieres a esto es porque no acabo de entender muy bien la pregunta.. para qué has puesto ese código ahí? </p>\n<p>Edit: Por cierto, respecto a la pregunta de hace unos días de si podías subir otras cosas con este método... sí, claro que puedes.. pero como imaginarás no podrás hacer una miniatura de un mp3...</p>"
+  },
+  {
+    "id": 3330,
+    "parent": 0,
+    "author": "javier",
+    "date": "2009-11-25T03:36:26+01:00",
+    "content": "<p>hola: lo que pasa es que debo mostrar las imagenes que se han subido al servidor entonces me gustaria crear una galeria donde las muestre en miniatura y la que se seleccione se descarga al pc.<br />lo otro para poder subir cualquier tipo de archivo debo de cambiar la sgte linea : 'fileExt' : '*.jpg;*.png;*.jpeg;*.gif' o cual debo de cambiar?<br />gracias por tu ayuda</p>"
+  },
+  {
+    "id": 3335,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-25T12:07:42+01:00",
+    "content": "<p>No entiendo qué complicación puedes tener haciendo la galería.. </p>\n<p>Para poder subir otros ficheros debes eliminar todo el primer array y en el segundo tienes que poner la extensión que quieras permitir.</p>\n<p>De todos modos yo no soy quien ha creado este componente. Como ya he dicho anteriormente deberías ir a su página web si tienes más dudas http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 3800,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-22T15:47:57+01:00",
+    "content": "<p>Hola muy buenas. He encontrado tu ejemplo buscando por internet alguna implementación de como cargar imágenes y además que usara el framework de cakephp (que yo también estoy utilizando). De antemano te felicito por el trabajo, y por compartir tus conocimientos con los demás.</p>\n<p>He seguido el tutorial y he conseguido subir las imagenes al servidor. Pero me han salido 2 problemas:</p>\n<p>1. No me copia nada en la carpeta full (en el resto si copia las imagenes), he estado revisando el código siguiente:</p>\n<p>$this-&gt;log(\"Nombre del fichero: \".$data,'upload');<br />$location = realpath(WWW_ROOT . 'img/upload/full/' . $data);<br />$this-&gt;log(\"Ruta del fichero: \".$location,'upload');</p>\n<p>y me muestra el nombre del fichero, pero no así la ruta (repito que las carpetas thumb y tmp, si se almacenan las imágenes, así que supongo que para full debería ser igual).</p>\n<p>2. No me almacena nada en la tabla images (en tempfiles, almacena la información correcta): la acción de guardar en la tabla la realiza en la función ajaxAdd, pero parece que no está entrando en dicha función (ya que pongo un log y no muestra nada). ¿alguna idea de por qué puede ser?</p>\n<p>Gracias de antemano, y un saludo!</p>"
+  },
+  {
+    "id": 3801,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-22T15:58:54+01:00",
+    "content": "<p>Buenas de nuevo. He solucionado el primero de mis errores.</p>\n<p>En el controlador Images, en la línea 92, tenías puesto lo siguiente:<br />$result = $this-&gt;Upload-&gt;upload($this-&gt;params['form']['Filedata'], 'img/', $this-&gt;Upload-&gt;result);</p>\n<p>donde indicas la ruta: 'img/', debería ser: 'img/upload/full/' que es la ruta donde quieres guardar la imagen original.</p>\n<p>Voy a seguir investigando a ver si logro almacenar en la tabla images.</p>\n<p>Saludos!</p>"
+  },
+  {
+    "id": 3802,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-22T17:25:50+01:00",
+    "content": "<p>Hola Carlos, primero de todo agradecerte a ti que te pases por aquí y más aún que me hayas mencionado el error (que por cierto, ya he solucionado).</p>\n<p>Respecto al segundo punto... teniendo en cuenta que no puedes entrar en el método lo primero que me viene a la cabeza es el 'RequestHandler'. Pero si dices que has seguido el tutorial imagino que lo tendrás cargado.</p>\n<p>Otra cosa que se me ocurre es que en lugar de haber seguido el tutorial hayas descargado el zip y ahí, en el método add elimino todas las fotos (dado que cogí los ficheros del ejemplo y sin modificarlos ni nada los comprimí y subí). Aunque imagino que este último no es tu caso ya que has mencionado que haces un log nada más entrar en ajaxAdd y que éste no te muestra nada.</p>\n<p>Otra cosa que podría fayar podría ser el JavaScript... aunque imagino que si fuera esto lo que fallara te hubuieras dado cuenta rápido ya que no te cargaría con Ajax :P</p>\n<p>... Y no se me ocurren muchas cosas más :s ... Revisa tu código que seguro que algo está fallando (el típico error que cuando encuentras dices <i>pero que toooooooontooo</i> [tú igual no lo dices, pero a mi esto me pasa casi cada día.. xD])</p>\n<p>En fin, me sabe mal no poder ayudarte un poco más, pero sin el código es complicado. Si quieres pon el código de tus ficheros en alguna web tipo http://paste.ideaslabs.com , ponme por aquí los enlaces y si tengo un rato le echaré un ojo ;)</p>"
+  },
+  {
+    "id": 3817,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-25T17:56:52+01:00",
+    "content": "<p>...Tenías más razón que un santo. El problema lo tenía en el fichero 'images.js', una llave cerrada donde no tocaba...A veces hay que mirar el código desde lejos para ver las cosas claras jajaja. </p>\n<p>Bueno pues ya comprobado que todo funciona bien, mi próximo paso es intentar almacenar en BD las imágenes; ¿tienes alguna experiencia en ello?, ¿conoces alguna librería o implementación que funcione con uploadify?. Lo que intentaré es hacer un guardado mediante las rutas donde se han subido las imagenes al servidor; ya te contaré que tal ha ido ;)</p>\n<p>Saludos!</p>"
+  },
+  {
+    "id": 3818,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-25T21:04:57+01:00",
+    "content": "<p>Ui ui Carlitos... creo que andas un poco perdido :s</p>\n<p>Fíjate que en el script de mi ejemplo muestro la imagen subida e inputs donde el usuario deberá introducir los datos de la imagen.</p>\n<p>La idea es que estos inputs los metas dentro de un formulario y que, una vez subidas todas las imágenes, el usuario le de al botón de 'guardar' del formulario.</p>\n<p>Hecho esto sólo tienes que guardar los datos en la BD :)</p>"
+  },
+  {
+    "id": 3820,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-26T00:32:33+01:00",
+    "content": "<p>Umm o no te he entendido yo bien a ti, o tu a mi. Yo lo que pretendo es guardar la imagen en la BD, el jpg en sí vamos; ya que después lo que pretendo es que otra aplicación que tiene acceso a esa BD recupere las imagenes para mostrarlas.</p>\n<p>En el esquema sql que has propuesto, lo único que guardas de la imagen es información externa a ella: descripción, ruta, ... Pero no la imagen en sí.</p>\n<p>A esto me refería en mi comentario anterior ;)</p>"
+  },
+  {
+    "id": 3834,
+    "parent": 3820,
+    "author": "Booletaire",
+    "date": "2010-01-26T19:23:29+01:00",
+    "content": "<p>Pues fui yo quien no te entendió xDD Te pido disculpas.. </p>\n<p>Para guardar las imágenes en la base de datos debes tener, para empezar, un campo tipo 'BLOB' en tu base de datos. Será en ese campo en el que introducirás la imagen en código máquina.</p>\n<p>A la hora de subir las imágenes al servidor, por cada imagen tienes que hacer un fread y volcar los datos en la base de datos (haciendo un 'addslashes' al contenido de la imagen para evitar problemas con las comas a la hora de insertar los datos en la BDD).</p>\n<p>Buscando un poco por google he encontrado esto:</p>\n<p>http://www.programacionweb.net/articulos/articulo/?num=76</p>\n<p>http://www.php-mysql-tutorial.com/wikis/mysql-tutorials/uploading-files-to-mysql-database.aspx</p>\n<p>Espero que te sirva.</p>\n<p>Salu2!</p>"
+  },
+  {
+    "id": 3841,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-27T13:35:53+01:00",
+    "content": "<p>Veo que vas en la misma onda que yo ;). Efectivamente tengo mis campos LONGBLOB para guardar la imagen 'full' y la 'thumb', y estoy usando las funciones (fread, fopen, addslashes) que has mencionado.</p>\n<p>Pero parece que tengo algún problema al hacer el save, ya que no me guarda nada en los blobs...</p>\n<p>Pego el trozo de código que he modificado, a ver si veis porqué no me guarda nada en BD:</p>\n<p>...</p>\n<p>// Iniciamos un bucle con todas las imágenes que recibamos<br />foreach($this-&gt;data['Image']['name'] as $key=&gt;$name){</p>\n<p>   // Nombre de fichero<br />   $imageFile = $this-&gt;data['Image']['file'][$key];<br />   // Datos a guardar de la imagen<br />   $loc = realpath(WWW_ROOT . 'img/upload/thumb/' . $imageFile);<br />   $fileThumb = fread(fopen($loc, \"r\"), filesize($loc));</p>\n<p>   $imageData = array(<br />          'Image'=&gt;array(<br />            'name' =&gt; $name,<br />            'description' =&gt; $this-&gt;data['Image']['description'][$key],<br />            'file' =&gt; $imageFile,<br />            'thumb' =&gt; $fileThumb));</p>\n<p>   // Inicializamos el modelo <br />   $this-&gt;Image-&gt;create($imageData);</p>\n<p>   // Validamos los campos<br />   if ($this-&gt;Image-&gt;validates()){</p>\n<p>      // Guardamos la imagen en la base de datos<br />      $image = $this-&gt;Image-&gt;save($imageData);</p>\n<p>...</p>\n<p>como veis utilizo un campo 'thumb' en mi tabla 'images', el cual es de tipo LONGBLOB, y en el cual inserto la imagen que tengo guardada en la ruta del servidor.</p>\n<p>He comprobado la variable, y si que tiene los bytes leidos de la imagen, pero a la hora de hacer el save, no guarda nada en ese campo. Estoy un poco desorientado con esto... a ver si veo la luz :D</p>\n<p>Saludos!</p>"
+  },
+  {
+    "id": 3847,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-27T20:28:35+01:00",
+    "content": "<p>Pues así vote pronto... lo único que veo que puede estar fallando es que no has utilizado addslashes:</p>\n<p><code>$fileThumb = fread(fopen($loc, “r”), filesize($loc));</code></p>\n<p>Debería ser...</p>\n<p><code>$fileThumb = addslashes(fread(fopen($loc, “r”), filesize($loc)));</code></p>\n<p>Ya que sin él puede que falle la inserción SQL.</p>\n<p>¿Qué te aparece en el debug de Cake? Has llegado a ver que te haga el insert??</p>"
+  },
+  {
+    "id": 3849,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-01-27T22:43:46+01:00",
+    "content": "<p>Bueno al fin he conseguido que funcione. No he cambiado gran cosa, pero ahora si que guarda los ficheros. </p>\n<p>...<br />$loc = realpath(WWW_ROOT . 'img/upload/thumb/' . $imageFile);<br />$fp = fopen($loc,\"r\");<br />$size = filesize($loc);<br />$fileThumb = fread($fp, $size);<br />fclose($fp);<br />...</p>\n<p>luego añado la variable $fileThumb a mi array de datos a guardar, como expliqué antes.</p>\n<p>He probado a usar addslashes y no usarlo, y me sucede lo siguiente:<br />- con addslashes: guarda la imagen en BD pero no puedo visualizarla con MySQL Query Browser, dice que la imagen es corrupta, supongo que dirá esto porque la he alterado con dicha función (¿que debería hacer al recuperarla?, ¿algo inverso no?)<br />- sin addslashes: guarda la imagen en BD y la muestra correctamente. ¿Que problema podría haber sino uso la función?, supongo que cree una query no válida por las comillas. ¿conoceis alguna imagen por ahí para probar ese error? </p>\n<p>Gracias por aguantarme, y espero que esto le sirva a alguien que quiera hacer lo mismo. Saludos!</p>"
+  },
+  {
+    "id": 3851,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-27T23:48:32+01:00",
+    "content": "<p>Para volver a mostrar la imagen deberás utilizar 'stripslashes':</p>\n<p>http://php.net/manual/en/function.stripslashes.php</p>\n<p>;)</p>\n<p>Si no utilizas la función, MySQL probablemente no te permita insertar los datos, ya que al leer la imagen puede que se guarde algún cacho de texto del palo...</p>\n<p>cßšâ&lt;'w£è~</p>\n<p>Esa coma que hay ahí será la causante del fallo, porque a la hora de insertar los datos, Cake hará lo siguiente:</p>\n<p>\"INSERT INTO tabla VALUES ('...','cßšâ&lt;'w£è~','...');\"</p>\n<p>Como puedes ver, el valor ha estado englobado con comillas simples ('). Al haber una coma simple de por medio, petará.</p>\n<p>Addslashes convierte esa cadena a:</p>\n<p>cßšâ&lt;\\'w£è~</p>\n<p>Al meter la contrabarra la inserción en MySQL se hará correctamente. </p>\n<p>Por otro lado, stripslashes simplemente elimina esas contrabarras.</p>\n<p>No te preocupes por preguntar, me gusta ver que alguien sigue el blog y que os sirven de algo mi ayuda :)</p>\n<p><strong>Edit:</strong> Me he colado, no había visto la mitad de tu comentario... &gt;_&lt; (aquí debajo está la respuesta que tocaba..)</p>"
+  },
+  {
+    "id": 3895,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-01T20:05:50+01:00",
+    "content": "<p>Buah, no me leí la mitad de tu comentario Carlos! xD</p>\n<p>Tienes que hacerlo con addslashes. Olvídate de lo que te diga el Query Browser, tú guardalo con addslashes y luego leelo directamente de la BD añadiendo la cabecera y todo para ver si te ha guardado la imagen correctamente.</p>"
+  },
+  {
+    "id": 3899,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2010-02-01T20:31:35+01:00",
+    "content": "<p>Gracias, por recontestar ;)</p>"
+  },
+  {
+    "id": 4319,
+    "parent": 0,
+    "author": "Moises",
+    "date": "2010-03-14T18:00:59+01:00",
+    "content": "<p>hola soy nuevo en esto de cakephp te comento que he seguido los dos antiguos tutoriales sin lograr resultados, espero que con este que esta muy bien explicado lo logre, de ante mano gracias por compartir tus conocimientos.. saludos desde peru</p>"
+  },
+  {
+    "id": 4325,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-03-15T09:32:36+01:00",
+    "content": "<p>Si no logras hacerlo con este tutorial no dudes en preguntar!</p>\n<p>De todos modos, en cuanto los de Cake saquen la versión 1.3 estable seguramente haré otro tutorial más sobre carga de ficheros. Eso sí, sería un poco más avanzado. Esta vez utilizando plantillas .ctp de Cake en lugar de generando el resultado con JavaScript.</p>"
+  },
+  {
+    "id": 5480,
+    "parent": 0,
+    "author": "deldan",
+    "date": "2010-06-01T15:46:23+02:00",
+    "content": "<p>Buenas! muy buen tutorial.</p>\n<p>tengo un problemilla. Cuando tengo dos imagenes con el mismo nombre, en la base de datos lo guarda con el mismo nombre el campo file, aunque si es verdad que en la carpeta de imagenes crea imagenes con el nombre y un número.</p>"
+  },
+  {
+    "id": 5482,
+    "parent": 0,
+    "author": "deldan",
+    "date": "2010-06-01T17:07:24+02:00",
+    "content": "<p>sigo haciendo prueba de subir diferentes imagenes con nombres iguales.<br />si antes de volver a subir la misma imagen refresco la pantalla dos veces, entonce lo sube bien.</p>\n<p>puede ser que se quede algo en cache?</p>"
+  },
+  {
+    "id": 5484,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-06-01T17:53:13+02:00",
+    "content": "<p>Hola <a href=\"#comment-5482\">@deldan</a>, aparentemente parece que no estás poniendo bien alguna variable. </p>\n<p>Por lo que he entendido, veo que subes \"Imagen.png\" (por ejemplo) y en el servidor se te guardan \"Imagen.png\" e \"Imagen1.png\" mientras que en la base de datos sólo se te está guardando \"Imagen.png\".</p>\n<p>De ser así parece ser que, en lugar de estar guardando el nombre resultante que devuelve la aplicación Cake una vez ha guardado el fichero, lo que está guardando es el nombre original del fichero.</p>\n<p>Revisa que hayas puesto bien todas las variables en tu código JavaScript.</p>"
+  },
+  {
+    "id": 6165,
+    "parent": 0,
+    "author": "Ben",
+    "date": "2010-07-05T02:46:50+02:00",
+    "content": "<p>First of all, thanks for this tutorial and my apologies for posting in English. I hope you'll understand what I'm saying.</p>\n<p>I'm having a few issues, first of all, when uploading multiple files and a file finishes uploading before all of your files are queued, no more files are added to the queue.</p>\n<p>I encountered my second problem when I tried to work around the first one by setting 'auto' to false. But it doesn't work.. they will always start sending automatically. I've tried setting auto to false in both images.js and the uploadify.js, but no luck.</p>\n<p>Last issue.. in firefox, after clicking 'save', the \"Loading...\" message pops up, but never goes away, even though the files are saved to the database.</p>"
+  },
+  {
+    "id": 6183,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-05T10:00:47+02:00",
+    "content": "<p>Don't worry about writing in english <a href=\"#comment-6165\">@Ben </a>; all that I've learned was reading in English : )</p>\n<p>Could you paste somewhere (like http://pastebin.com/) your JS code? Maybe I could you help better if I read the code first.</p>\n<p>It seems there is an error with the counter or something similar that avoids the script continuing. Maybe is an error in the callback, so when you upload the first file, the uploader breaks.</p>\n<p>I'll try to help you once I've seen a little bit more of code.</p>\n<p>PS. Sorry about my english : )</p>"
+  },
+  {
+    "id": 6186,
+    "parent": 0,
+    "author": "Ben",
+    "date": "2010-07-05T10:28:28+02:00",
+    "content": "<p>Thanks for the quick reply <a href=\"#comment-6183\">@Booletaire </a>, and I can understand you fine, thanks for making the effort. Meanwhile, the \"auto\" issue has fixed itself while I was sleeping, and I realized last night that the queue issue was my own fault. (My Mac was showing a list of images containing duplicates, it just didn't add the duplicates to the queue)</p>\n<p>Leaves me with two other issues.. first of all, saving the images in firefox works, but it seems one of the callbacks is misfiring. As the 'Loading...' message never disappears, the thumbnails and forms of the uploaded images do not fade out either, and of course, the redirect to the image index doesn't happen.</p>\n<p>A second issue I'm having is that the \"select images\" button (the flash object) is not shown in IE8 (32bit) on Windows 7 (64 bit).</p>\n<p>This is my javascript:<br />(the unchanged) uploadify v2.1.0: http://pastebin.com/6mtxhP0f<br />Images.js: http://pastebin.com/KsvZYdFk<br />And finally, since I'm working with cake 1.3.2, I had to update the view a bit, so here it is: http://pastebin.com/rL5AiUL0</p>\n<p>If you want something else, let me know.</p>"
+  },
+  {
+    "id": 6187,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-05T10:44:24+02:00",
+    "content": "<p>Yep... you're right. The upload button is not shown under IE8, but I can't see it with the 64bit version. With the 32 bit version works fine. I turned on JS debugging and it says that \"webroot\" is not defined. I will attempt to fix it when I get home (now I'm working).</p>\n<p>I think that the error you are having is a firebug issue. If you comment / delete all the \"console.log\" statements the upload will work (I think...). If you don't have firebug opened &amp; working, the \"console.log\" breaks the execution, so the callback won't work.</p>\n<p>I hope I've helped you.</p>\n<p>PS. As I said, I'll take a look at the IE8 issue when I get home.</p>"
+  },
+  {
+    "id": 6189,
+    "parent": 0,
+    "author": "Ben",
+    "date": "2010-07-05T11:04:12+02:00",
+    "content": "<p>Yep, you're right, it is a firebug issue! When it is open the callback works. I've seen that issue in the comments here before but I must've missed the context, google translate isn't perfect yet ;)</p>\n<p>Thanks again, and I await your reply about IE8. BTW, it IS a 32bit internet explorer, it's just windows 7 that is 64bit. As far as I know, there is no flash support for a 64bit IE.</p>"
+  },
+  {
+    "id": 6271,
+    "parent": 0,
+    "author": "Manuel",
+    "date": "2010-07-07T01:43:17+02:00",
+    "content": "<p>Men donde esta el Metodo de la Conexion a la BD que no lo Consigo y cual es que index</p>"
+  },
+  {
+    "id": 6301,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-07T11:28:00+02:00",
+    "content": "<p><a href=\"#comment-6189\">@Ben </a> sorry for the delay. As you said, there is no Flash version for the 64bit version of IE8.</p>\n<p>Otherwise, I tested it under IE8 (32bit) under windows 7 (64bit) and it works for me.</p>\n<p>I regret not being able to help you more</p>\n<p><a href=\"#comment-6271\">@Manuel </a>, a qué conexión te refieres? Eres consciente de que este tutorial es para CakePHP? De ser así, deberías saber que CakePHP está permanentemente conectado a la BD y que tan sólo tienes que configurar el fichero \"database.php\" para que se conecte a la base de datos.</p>\n<p>Si no es a lo que te referías intenta ser un poco más conciso con tu pregunta por favor.</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 6303,
+    "parent": 0,
+    "author": "Ben",
+    "date": "2010-07-07T11:51:53+02:00",
+    "content": "<p><a href=\"#comment-6301\">@Booletaire </a> No problem, thanks for taking the time, I will investigate it some more.</p>"
+  },
+  {
+    "id": 6304,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-07T12:33:47+02:00",
+    "content": "<p>If you find any solution, please, let us know : )</p>"
+  },
+  {
+    "id": 6307,
+    "parent": 0,
+    "author": "Ben",
+    "date": "2010-07-07T14:06:40+02:00",
+    "content": "<p>Solution found, if you want to use flash in a browser, make sure you have the flash player installed for that browser ;)<br />Silly that I overlooked that, but I was under the assumption that IE would tell me it was missing flash player.</p>"
+  },
+  {
+    "id": 6308,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-07T15:01:44+02:00",
+    "content": "<p>These things happen... xD</p>\n<p>Nice to see you solved it : )</p>"
+  },
+  {
+    "id": 28849,
+    "parent": 0,
+    "author": "Jaime",
+    "date": "2011-03-12T08:49:40+01:00",
+    "content": "<p>Hola como estas, Bueno mi consulta es la siguiente yo hice mi codigo pero lamentablemente carga solamente 1 imagen, pero si en mi tabla por decir tengo 2 campos q se requieren cargar archivos como lo haria espero q me ayudes en esa parte por favor se te agradeceria mucho.</p>"
+  },
+  {
+    "id": 29084,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-03-16T13:43:34+01:00",
+    "content": "<p>Si no me das más explicación veo difícil ayudarte... por dos campos a qué te refieres? Dos imágenes distintas?</p>\n<p>Si son dos imágenes distintas, igual te interese poner dos cargadores de imágenes.. sinó... tendrás que apañártelas para rellenar un input y otro con los datos que te devuelva uploadify.</p>"
+  },
+  {
+    "id": 31012,
+    "parent": 0,
+    "author": "m16u31",
+    "date": "2011-05-04T05:53:23+02:00",
+    "content": "<p>hola como soluciono esto<br />\"Necesitas JavaScript y Flash para poder subir ficheros<br />\"</p>"
+  },
+  {
+    "id": 31013,
+    "parent": 0,
+    "author": "m16u31",
+    "date": "2011-05-04T06:11:09+02:00",
+    "content": "<p>disculpa pero ese error me mostraba por trabajar con cake 1.3,, alguna solucion ahi gracias,,es muy util el trbajo q hciciste</p>"
+  },
+  {
+    "id": 31014,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-05-04T11:53:40+02:00",
+    "content": "<p>Eso es porque tienes algo mal del JavaScript (o puede incluso te hayas olvidado de cargar parte de éste). Revisa tu código.</p>"
+  },
+  {
+    "id": 31020,
+    "parent": 0,
+    "author": "Carlos",
+    "date": "2011-05-09T18:47:01+02:00",
+    "content": "<p>Hola<br />En primer lugar, gracias por el tutorial.</p>\n<p>Pero tengo un problema para su aplicación.<br />He descargado todos los archivos, los puso en las carpetas correctas.</p>\n<p>El uploadify aparentemente funciona con normalidad, la barra de progreso llegue al 100%, No obstante, las imágenes no se envían a las carpetas.</p>\n<p>Agradecería cualquier ayuda.</p>"
+  },
+  {
+    "id": 31021,
+    "parent": 31020,
+    "author": "Booletaire",
+    "date": "2011-05-09T20:34:59+02:00",
+    "content": "<p>Hola Carlos, creo recordar que el fichero zip que subí es exactamente el mismo código que hay en el ejemplo del tutorial.. así que si no me equivoco en el método add se eliminan todas las imágenes de la base de datos y del sistema para ahorrar espacio (de mi servidor, claro).</p>\n<p>Si en realidad lo que te sucede es que las imágenes no llegan a tu servidor, quizás debas revisar la configuración de PHP, sobre todo en todo lo relacionado a subida de ficheros (max_upload_size por ejemplo).</p>\n<p>A parte de eso debo decir que este tutorial está más que obsoleto y la programación más bien tosca y guarra.. así que remírate bien el código y trata de mejorarlo por tu cuenta.</p>"
+  },
+  {
+    "id": 36196,
+    "parent": 0,
+    "author": "Mario Andujar Gomez",
+    "date": "2012-01-24T18:44:23+01:00",
+    "content": "<p>Hola estoy intentando implementar el ejemplo y creo que no me carga bien el componente upload me dice lo siguiente:</p>\n<p>call_user_func_array() expects parameter 1 to be a valid callback, class 'UploadComponent' does not have a method 'initialize' [CORE\\Cake\\Utility\\ObjectCollection.php, line 110]<br />Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'UploadComponent' does not have a method 'beforeRender' [CORE\\Cake\\Utility\\ObjectCollection.php, line 110]</p>"
+  },
+  {
+    "id": 36197,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-01-24T18:47:19+01:00",
+    "content": "<p>Me equivoco si digo que estás utilizando Cake 2.0 ?? Este componente funciona en cake 1.3 y 1.2, en 2.0 dudo mucho que vaya..</p>"
+  },
+  {
+    "id": 36198,
+    "parent": 0,
+    "author": "viu_u",
+    "date": "2012-02-08T05:58:03+01:00",
+    "content": "<p>Realmente nos diste un excelente aporte Booletaire!!! :D</p>\n<p>Aún así tengo una consultita, ojalá puedas ayudarme. Debo aclarar que soy un casi completo neófito en el universo de la programación web, pero como tengo algunos proyectos es que me veo en la obligación de iniciarme en este apasionante mundo. :) </p>\n<p>Bueno, lo que me gustaría saber es si se puede poner un límite de imágenes para subir (5, 12, 20, etc.) y que se envíen las urls a la Base de Datos de cada archivo ya subido al servidor pero de la siguiente manera: Agregar en un campo de la tabla cada imagen (los campos pueden llamarse por ejemplo: img1, img2, img3...) sin que se incremente la id, puesto que me interesa no aterar las id's cada vez que se sube una imagen porque de por sí ya las incremento cada vez que se registra un usuario nuevo y como sabrás las cosas se complicarán si cada vez que subo una imágen se agrega una nueva id. </p>\n<p>Las imágenes serán para que cada usuario tenga un album de fotos con una cantidad límite (por ej.: 5 imagenes por usuario) para subir. Obviamente me interesa también que se pueda actualizar las veces que sean necesarias cada campo de la tabla por si desean cambiar una imagen de sus respectivos albumes por otra que más les guste.</p>\n<p>Espero que se haya entendido mi inquietud y me puedas dar una manito en ello xD </p>\n<p>Desde ya Muchísimas Gracias por tus valiosos aportes!!!</p>"
+  },
+  {
+    "id": 36200,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-02-08T13:00:00+01:00",
+    "content": "<p>Hola <a href=\"#comment-36198\">@viu_u </a>, este tutorial es realmente viejo.. y cuando lo hice lo hice con una lógica que ahora no me gusta nada, ya que inserto los ficheros en el sistema, guardo en la BD \"ficheros temporales\" y luego intento guardar de golpe X registros de imágenes a la vez que las borro de la tabla de ficheros temporales, cosa que en algunos servidores <b>no funciona</b> debido a restricciones de memoria o de tamaño de la petición POST.</p>\n<p>Es por eso que ahora lo que hago es insertar directamente el fichero en la BD y mostrar al usuario un formulario con el que <b>editar en lugar de agregar y eliminar</b>. De este modo si el usuario sólo edita 1 de 10 fotos, en el momento de guardar en la BD sólo actualizaremos un registro.</p>\n<p>Haciéndolo así reduces significativamente la carga del servidor, así como los datos enviados vía post.</p>\nPara solucionar tu problema del límite de imágenes tienes un par de opciones:\n<ul>\n<li>Tanto si guardas las imágenes utilizando el método explicado en el tutorial (guardando ficheros temporales) como si lo haces con el método que te he explicado en este mismo comentario, desde el lado de servidor puedes llevar una cuenta de las imágenes subidas y en caso de exceder dicho límite devolver una respuesta errónea.</li>\n<li>Vía JavaScript puedes contar el número de imágenes que hay insertadas y en caso de sobrepasar el límite eliminar el botón de carga</li>\n</ul>\n<p>Espero que esto resuelva tus dudas :)</p>"
+  },
+  {
+    "id": 36201,
+    "parent": 0,
+    "author": "Arenita",
+    "date": "2012-02-11T02:19:11+01:00",
+    "content": "<p>muchas graxx neta me estaba dando topes contra la pared xq no me sale intentare con tu ejemplo ojala salga como kiero <br />graxx por tu aportacion es muy buena</p>"
+  },
+  {
+    "id": 36202,
+    "parent": 0,
+    "author": "Arenita",
+    "date": "2012-02-11T02:20:03+01:00",
+    "content": "<blockquote>\n<strong><a href=\"#comment-36201\">Arenita</a> :</strong>\nmuchas graxx neta me estaba dando topes contra la pared xq no me sale intentare con tu ejemplo ojala salga como kiero\ngraxx por tu aportacion es muy buena\n</blockquote>"
+  },
+  {
+    "id": 36392,
+    "parent": 0,
+    "author": "Radhey Shyam Sharma",
+    "date": "2013-09-20T09:58:30+02:00",
+    "content": "<p>hello</p>"
+  },
+  {
+    "id": 36393,
+    "parent": 0,
+    "author": "Radhey Shyam Sharma",
+    "date": "2013-09-20T10:09:37+02:00",
+    "content": "<p>i added delete functionality. </p>\n<p>Finally i Got following Errors when i delete an image and again upload another image</p>\n<p>date_01.jpg (0.51KB) - HTTP Error<br />date_01.jpg (0.51KB) - IO Error</p>"
+  },
+  {
+    "id": 36394,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2013-09-21T12:31:57+02:00",
+    "content": "<p>You have some error in the php side. It can be a php configuration issue or a bad development. </p>\n<p>You can debug this kind of issues using \"charles debugging proxy\". The trial version (works for 30 minutes) should be enough.</p>"
+  }
+]

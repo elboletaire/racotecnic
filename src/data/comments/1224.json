@@ -1,0 +1,44 @@
+[
+  {
+    "id": 3954,
+    "parent": 0,
+    "author": "Baddy",
+    "date": "2010-02-08T00:12:14+01:00",
+    "content": "<p>Bones, felicitats per la pagina, he visitat també el que seria underave a seques i m'agrada molt tant en disseny com per la cantitat de funcionalitats/seccions.</p>\n<p>Estic en procés de Refer al complet la pagina que tinc amb uns colegues ara que he \"descobert\" Cake Php, pero em queda un dubte veient el codi exposat (encara me l'haig de mirar en profunditat i intentar reproduir tots els passos...) El fet d'agafar la contrasenya de l'usuari sense encriptar per fer \"2 logins\" per separat (web principal i forum) no és \"perillós\" a nivell de seguretat?</p>\n<p>Disculpa si la pregunta es molt absurda pero encara vaig una mica perdut.</p>\n<p>2n, jo ja tinc un forum phpbb3, que vui \"tirar a la brossa\" per crear un portal cakephp integrat amb un forum nou, pero m'agraderia que els usuaris/passwords actuals es matinguessin per no haver de dir a la gent que es registri altre cop. Hi haurà algun problema tenint en compte tot el canvi en l'encriptació de passwords, etc?</p>\n<p>Marci per les respostes! Bona feina</p>"
+  },
+  {
+    "id": 3957,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-08T15:20:02+01:00",
+    "content": "<p><b>Respecte el primer punt:</b></p>\n<p>No, no és segur. Però pensa que no és segur mai. És a dir, nosaltres 'fem una còpia' de la contrasenya sense encriptar per a fer el login a phpBB. Cake, quan encripta una contrasenya, no ho fa més que per la comoditat del desenvolupador, per a que no tingui que tornar a encriptar-la. Però és el propi Cake qui l'ha encriptada i, per tant, fins arribar a l'aplicació Cake la contrasenya ha arribat sense encriptar.</p>\n<p>La única manera que tindries de fer això segur seria amb una connexió SSL, ja que d'aquesta manera les dades s'enviarien encriptades.</p>\n<p>És a dir, que el que faig a l'exemple no és insegur. El que és insegur és com funcionen els formularis HTML (ja siguin GET o POST) sense seguretat SSL.</p>\n<p>Espero no haver-te confós gaire amb la meva explicació.</p>\n<p><b>Respecte al segon punt:</b></p>\n<p>Aquí jo la vaig cagar amb underave.. vaig crear un registre alternatiu per a aquelles persones que volguessin actualitzar el seu compte.</p>\n<p>Va ser una cagada perquè dels 5.000 usuaris que tenim registrats, ara per ara només hi ha uns 1.300 registrats a l'aplicació Cake (i en breus passaré a eliminar tots els usuaris que no estan registrats a totes dues bandes).</p>\n<p>Després de rumiar-hi una mica vaig pensar en la que hauria d'haver estat la solució:</p>\n<p>Enviar un e-mail massiu a tots els usuaris amb un enllaç únic per usuari. En fer clic a aquest enllaç envia a l'usuari a una pàgina on NOMÉS tingui que posar la seva nova contrasenya.</p>\n<p>Un cop hagi introduït la seva nova contrasenya el seu compte quedarà registrat a tot el sistema.</p>\n<p>A part d'aquesta solució, no se m'ha acudit cap altre que serveixi.. ja que com les contrasenyes de phpBB fan servir un mètode d'encriptació totalment diferent al de Cake... no hi ha manera possible d'obtenir la seva contrasenya i convertir-la a l'encriptació de Cake.</p>\n<p>No obstant, si trobes cap altra solució millor a la que he esmentat, no dubtis en dir-me-la!!</p>\n<p>Salut i merci pel comentari ;)</p>\n<p>PS. I molta sort amb la integració! Si tens cap dubte ja saps :)</p>"
+  },
+  {
+    "id": 3970,
+    "parent": 0,
+    "author": "Baddy",
+    "date": "2010-02-09T17:00:31+01:00",
+    "content": "<p>Merci per les respostes! Ja avisaré si ho consegueixo :)</p>"
+  },
+  {
+    "id": 38535,
+    "parent": 0,
+    "author": "Ricardo",
+    "date": "2014-04-21T16:55:40+02:00",
+    "content": "<p>Hola, muchas gracias por el post. Se que es para versiones 1x de CakePHP, y me entra la duda ¿Será compatible con versiones 2x? si no, ¿tendrá mucha diferencia? </p>\n<p>Saludos y gracias</p>"
+  },
+  {
+    "id": 39894,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2014-04-25T00:23:04+02:00",
+    "content": "<p>Tendrás que arreglar cosillas, pero no creo que la versión de CakePHP sea lo preocupante. La conexión a la base de datos y como mucho unos retoques del componente.</p>\n<p>A mi me preocuparía más la versión de phpBB, que la verdad no tengo ni idea de si habrán hecho muchos cambios desde que hice este post :\\</p>"
+  },
+  {
+    "id": 46926,
+    "parent": 0,
+    "author": "Ricardo",
+    "date": "2014-05-12T21:44:08+02:00",
+    "content": "<p>Gracias, cuando lo haga te lo compartiré para cakephp v2.x, phpBB al parecer sigue en la V 3.x, al momento va en la 3.0.12 (con fecha 28 sept 2013)</p>"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 3,
+    "parent": 0,
+    "author": "vdo",
+    "date": "2009-01-06T01:53:14+01:00",
+    "content": "<p>Bien, bien. <br />Justament avui pensava en pillarme'n un de 1Tb i aixo de l'UUID sempre m'havia tocat els Co*lons x)</p>"
+  },
+  {
+    "id": 36241,
+    "parent": 0,
+    "author": "maximliano",
+    "date": "2012-07-19T08:55:32+02:00",
+    "content": "<p>podes usar blkid si no...</p>"
+  },
+  {
+    "id": 36242,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-07-19T11:11:15+02:00",
+    "content": "<p>Y para qué instalar una aplicación cuando puedes hacerlo con un simple ls ??? :\\</p>"
+  }
+]

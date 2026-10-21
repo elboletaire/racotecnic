@@ -1,7 +1,102 @@
 ---
-// Placeholder: the comments archived from the old WordPress site are rendered
-// here in a later step. `wordpressId` is the post id in WordPress.
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+import "dayjs/locale/ca";
+import config from "@/config";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
+// Written by scripts/export-comments.mjs, `content` is already sanitized.
+type ArchivedComment = {
+  id: number;
+  parent: number;
+  author: string;
+  date: string;
+  content: string;
+};
+
 type Props = {
+  // Post id in WordPress, the name of its file in src/data/comments.
   wordpressId?: number;
 };
+
+const { wordpressId } = Astro.props;
+
+const archives = import.meta.glob<ArchivedComment[]>(
+  "../data/comments/*.json",
+  { eager: true, import: "default" }
+);
+
+const comments =
+  wordpressId === undefined
+    ? []
+    : (archives[`../data/comments/${wordpressId}.json`] ?? []);
+
+// Flattens the reply tree in order. Replies whose parent was not archived
+// (pingbacks, spam...) are shown at the top level.
+const ids = new Set(comments.map(comment => comment.id));
+const repliesOf = new Map<number, ArchivedComment[]>();
+for (const comment of comments) {
+  const parent = ids.has(comment.parent) ? comment.parent : 0;
+  repliesOf.set(parent, [...(repliesOf.get(parent) ?? []), comment]);
+}
+
+const rows: { comment: ArchivedComment; depth: number }[] = [];
+const walk = (parent: number, depth: number) => {
+  for (const comment of repliesOf.get(parent) ?? []) {
+    rows.push({ comment, depth });
+    walk(comment.id, depth + 1);
+  }
+};
+walk(0, 0);
+
+// Nesting stops growing after three levels so replies stay readable on phones.
+const INDENT = ["", "ms-3 sm:ms-8", "ms-6 sm:ms-16", "ms-9 sm:ms-24"];
+
+const formatDate = (date: string) =>
+  dayjs(date)
+    .locale(config.site.lang)
+    .tz(config.site.timezone)
+    .format("D MMM, YYYY HH:mm");
 ---
+
+{
+  comments.length > 0 && (
+    <section data-pagefind-ignore class="mt-12 border-t border-dashed pt-8">
+      <h2
+        id="archived-comments"
+        class="text-accent text-xl font-bold sm:text-2xl"
+      >
+        Comentaris arxivats ({comments.length})
+      </h2>
+      <p class="text-muted-foreground mt-2 text-sm">
+        Els comentaris estan tancats. Aquests comentaris provenen de l'antic
+        lloc de WordPress i només es poden llegir.
+      </p>
+      <ol aria-labelledby="archived-comments" class="mt-6 space-y-4">
+        {rows.map(({ comment, depth }) => (
+          <li
+            id={`comment-${comment.id}`}
+            class:list={[
+              "border-border rounded-md border p-4 text-sm",
+              INDENT[Math.min(depth, INDENT.length - 1)],
+            ]}
+          >
+            <p class="flex flex-wrap items-baseline gap-x-3">
+              <span class="text-foreground font-medium">{comment.author}</span>
+              <time class="text-muted-foreground" datetime={comment.date}>
+                {formatDate(comment.date)}
+              </time>
+            </p>
+            <div
+              class="app-prose prose-sm mt-2 max-w-none"
+              set:html={comment.content}
+            />
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

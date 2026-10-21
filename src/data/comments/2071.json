@@ -1,0 +1,23 @@
+[
+  {
+    "id": 36274,
+    "parent": 0,
+    "author": "Xiib",
+    "date": "2013-01-28T17:48:46+01:00",
+    "content": "<p>Oye.. yo quiero actualizar php de la versión 5.3.10 a la versión actual pero tengo estas dudas.</p>\n<p>Antes de seguir los pasos descritos hay que desinstalar la versión que uno tiene instalada o comenzar de cero con estas instrucciones o este procedimiento actualiza la version de php.</p>"
+  },
+  {
+    "id": 36421,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2013-11-23T13:23:15+01:00",
+    "content": "<p>Ostia <a href=\"#comment-36274\">@Xiib</a>, no había visto este comentario hasta hoy mismo :\\</p>\n<p>Imagino que ya habrás resuelto tus dudas pero, por si no fuera así o por si le sirviera a alguien más, <em>este procedimiento actualizará tu versión actual de php <b>siempre y cuando</b> hayas instalado php utilizando apt</em>. </p>\n<p>Si has compilado php por tu cuenta, evidentemente tendrás que hacer cambios; a menos que lo hayas compilado utilizando el esquema exacto que utiliza ubuntu, en cuyo caso probablemente también se te actualizaría sin problemas.</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 36422,
+    "parent": 0,
+    "author": "xiib",
+    "date": "2013-11-23T14:57:42+01:00",
+    "content": "<p><a href=\"#comment-36421\">@Booletaire </a> </p>\n<p>Ja ja ja  Bueno más vale tarde que nunca. Mira, ya había resuelto mi problema y hasta hice un video mostrando cómo realizar la actualización. Esta video ya está caducado pero aún aśi habrá algunos que quieran verlo aún. </p>\n<p>http://www.youtube.com/watch?list=PL8yyGtbn5lEdt2Cx7R0jS7I5AOSeRHWEZ&amp;feature=player_detailpage&amp;v=Jm3jxIcwc3s</p>"
+  }
+]

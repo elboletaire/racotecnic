@@ -1,0 +1,254 @@
+[
+  {
+    "id": 31007,
+    "parent": 0,
+    "author": "Jacin",
+    "date": "2011-04-20T10:05:10+02:00",
+    "content": "<p>Hola. </p>\n<p>¿Es posible adaptar la marca de agua según el tamaño de la imagen?</p>\n<p>Me explico mi marca de agua tiene 900x900 y hay imagenes que son mas pequeñas y quería que se adaptara, por ejemplo una imagen de 200x200 la marca de agua debería tener 200x200 para que quedara bien. He probado a redimensionar la marca de agua cada vez que se suba una imagen al servidor pero es engorroso tener que ir después eliminando las imagenes que no sirven.</p>\n<p>¿Hay alguna instrucción que adapte la marca de agua automaticamente a las medidas de la imagen?</p>\n<p>Muchas gracias.</p>"
+  },
+  {
+    "id": 31010,
+    "parent": 0,
+    "author": "Edjarris",
+    "date": "2011-05-02T15:52:46+02:00",
+    "content": "<p>Si señor, el script va de lujo. Muchas gracias por compartirlo. El único problema que me he encontrado es que en imágenes gif/png con canal alpha la transparencia se convierte en color negro. Si encuentro alguna solución se lo comentaré.<br />Gracias de nuevo y saludos,</p>"
+  },
+  {
+    "id": 31011,
+    "parent": 31010,
+    "author": "Booletaire",
+    "date": "2011-05-02T16:35:41+02:00",
+    "content": "<p>Vaya.. eso es un tema que en teoría funcionaba bien pero que me debo haber cargado al \"mejorar\" la clase. Miraré a ver si puedo arreglarlo cuando tenga tiempo.. aunque si encuentras solución antes compártelo por aquí como bien has dicho! :D</p>"
+  },
+  {
+    "id": 31017,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-05-08T15:35:40+02:00",
+    "content": "<p>Ei <a href=\"#comment-31007\">@Jacin </a> , perdona pero no había visto tu comentario hasta hoy mismo.</p>\n<p>Puedes indicar que el tamaño del watermark sea \"full\" y te lo pondrá ocupando el 100% de la imagen ;)</p>"
+  },
+  {
+    "id": 31018,
+    "parent": 0,
+    "author": "Jacin",
+    "date": "2011-05-08T15:51:08+02:00",
+    "content": "<p>Gracias @Booletaire</p>"
+  },
+  {
+    "id": 31022,
+    "parent": 0,
+    "author": "Edjarris",
+    "date": "2011-05-11T13:47:53+02:00",
+    "content": "<p>Hola Booletaire,</p>\n<p>Estoy usando tu código como componente de cakephp y tengo un pequeño problema que no acabo de entender. Cuando subo una imagen por ejemplo de 400kb , desde el controlador llamo a la función  imgWater y el fichero final con la marca de agua incrustada aumenta el tamaño a 2Mb (el fichero watermark.png solo ocupa 3kb y la foto 400kb) .</p>\n<p>\tfunction imgWater ($foto = null){<br />\t\t$this-&gt;Watermark-&gt;setImage('./img/ '.$foto);<br />\t\t$this-&gt;Watermark-&gt;setWatermark(array('file' =&gt; './img/watermark.png', 'position' =&gt; 'center'));<br />\t\t$this-&gt;Watermark-&gt;applyWatermark();<br />\t\tif ( !$this-&gt;Watermark-&gt;generate('./img/w_'.$foto) ) {<br />\t\t  // handle error...<br />\t\t  print_r($this-&gt;Watermark-&gt;errors);<br />\t\t}</p>\n<p>No hace mucho que empecé así que seguro que es culpa mía ^^. Si ves algo raro por lo que me pueda estar pasando este aumento de tamaño estaría muy agradecido.</p>\n<p>Saludos,</p>"
+  },
+  {
+    "id": 31023,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-05-11T15:20:14+02:00",
+    "content": "<p>Si has ejecutado el ejemplo que hay en github verás que el tamaño de las imágenes se reduce en todos los ejemplos, pero sí que es cierto que hay ocasiones en que el tamaño puede aumentar (lo he visto en contadas ocasiones).</p>\n<p>Para evitar que aumente mucho el tamaño puedes provar a reducir la calidad de las imágenes a 70 o menos. En el componente que había hasta ahora en GitHub no hay manera de regular la calidad a no ser que modifiques manualmente el valor de la variable privada \"quality\" a lo que quieras.</p>\n<p>Ahora mismo estoy haciendo un commit de una pequeña modificación del componente para poder setear la calidad fácilmente:</p>\n<p>$this-&gt;Watermark-&gt;setImage('imagen.jpg');<br />$this-&gt;Watermark-&gt;setQuality(70);<br />$this-&gt;Watermark-&gt;etc...</p>\n<p>también puedes setearla directamente desde setImage:<br />$this-&gt;Watermark-&gt;setImage(array('file' =&gt; 'imagen.jpg', 'quality' =&gt; 70));<br />$this-&gt;Watermark-&gt;etc...</p>\n<p>Espero que te sirva ;)</p>\n<p>Edito: Si estabas exportando a png acabo de descubrir que, por fallo mío, estaba calculando mal la calidad de salida del png y por eso debe estar aumentando tanto el tamaño. También lo he arreglado y puedes descargar los cambios desde github.</p>\n<p>https://github.com/elboletaire/Watimage</p>"
+  },
+  {
+    "id": 31024,
+    "parent": 0,
+    "author": "Edjarris",
+    "date": "2011-05-11T22:11:20+02:00",
+    "content": "<p>Buenas noches Booletaire, </p>\n<p>Primero de todo agradecerte la rapidez y el esfuerzo :). Me he bajado la versión de github y he estado haciendo pruebas pero parece que el error persiste. Las imágenes problemáticas son de una cámara digital Sony dsc-w320 en formato jpg, el watermark era png y continua disparando el tamaño en la imagen final a pesar de ir jugando con el nuevo método (setQuality()).Con todas las imágenes que he probado funciona a la perfección, menos con las de esta dichosa cámara. He probado con la imagen maldita aplicarle el watermark en formato gif por si era la combinación de jpg/png y nada lo mismo &gt;2Mb.</p>\n<p>Aquí va lo más curioso de todo abro la maldita imagen con el fireworks, sin aplicarle nada la guardo y entonces funciona perfecto me deja la imagen de salida de 166kb.</p>\n<p>Otra cosa curiosa es que en las propiedades de la imagen de la sony sale 72ppp pero en la imagen de salida ha aumentado a 96ppp. Si que esto podría producir que la imagen aumentara de tamaño pero he hecho lo mismo con imágenes que si funcionan y pasa exactamente lo mismo la imagen inicial tiene una resolución de 72ppp y la final 96ppp y queda reducida. </p>\n<p>Continuo investigando por donde puede venir el problema y si tengo alguna pista más te lo comentaré.</p>\n<p>Saludos y gracias por todo ^^</p>"
+  },
+  {
+    "id": 31025,
+    "parent": 0,
+    "author": "Edjarris",
+    "date": "2011-05-12T12:32:41+02:00",
+    "content": "<p>Hola de nuevo Booletaire,</p>\n<p>Ya encontré el bug!!! El problema es si la extensión de la imagen es en mayúsculas parece que no le aplica la compresión ^^. Lo descubrí porque con otra cámara digital también me pasaba y me di cuenta de que la mayoría cámaras lo guardan en mayúsculas. Renombre el fichero y funciono a la perfección. Por eso cuando guarde la “imagen”  sin aplicar ninguna compresión con el fireworks  le cambio la extensión a minúsculas y funciono. Seguramente hay alguna manera más elegante pero de momento lo he solucionado  en la función setImage convirtiendo el contenido de $image a minúsculas. Es posible que en entornos Linux y si el uploader lo sube en mayúsculas pudiera dar algún problema, pero de memento funciona ahora solo queda mejorarlo :).</p>\n<p>public function setImage($file)<br />\t{<br />\t\t$file = strtolower($file); //lo paso a minusculas</p>\n<p>\t\ttry<br />\t\t{</p>\n<p>Saludos,<br />Ed.</p>"
+  },
+  {
+    "id": 31026,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-05-12T21:02:33+02:00",
+    "content": "<p>Buah chico, me acabas de dejar flipado xDD </p>\n<p>Podrías mandarme una de esas fotos a través de algún enlace? De este modo podría intentar ver cómo evitar que pase eso.. porque he estado probando con imágenes mías y no he tenido ningún problema :\\</p>\n<p>Vete con cuidado con lo que has hecho porque en Linux y Mac no debería funcionar, ya que al pasar la extensión a minúsculas en el método setImage la imagen no cargará (ya que en Linux y Mac se distinguen mayúsculas y minúsculas).</p>"
+  },
+  {
+    "id": 31028,
+    "parent": 0,
+    "author": "Luis Miguel",
+    "date": "2011-05-20T10:12:22+02:00",
+    "content": "<p>Booletaire!!!! muchas gracias por tu aporte. como consigo que la watermark se redimensione deacuerdo con el nuevo tamaña de la imagen. ésto lo ha preguntado alguien antes pero no entiendo bien como hacerlo.!!</p>\n<p>otra vez gracias!</p>"
+  },
+  {
+    "id": 31029,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-05-20T10:38:33+02:00",
+    "content": "<p>Pues por ahora tendrás que calcularlo tú mismo a manopla... por cada imagen tendrás que obtener el tamaño y calcular el tamaño de la marca de agua.</p>\n<p>Tengo en mente añadir esta funcionalidad a la clase para poder hacerlo con un único parámetro, pero por falta de tiempo todavía no he podido hacerlo.</p>\n<p>Salud y gracias por el comentario.</p>"
+  },
+  {
+    "id": 32096,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-07-09T00:10:18+02:00",
+    "content": "<p>Ahí va, <a href=\"#comment-31028\">@Luis Miguel </a>, te entendí mal la pregunta. Eso es lo que pasa cuando uno contesta preguntas recién levantado...</p>\n<p>Para hacer que la marca de agua ocupe el 100% de la imagen simplemente tienes que poner el parámetro 'size' del watermark a 'full':</p>\n<p><code>$this-&gt;Watermark-&gt;setWatermark(array('file' =&gt; 'fichero.png', 'size' =&gt; 'full'));</code></p>"
+  },
+  {
+    "id": 36183,
+    "parent": 0,
+    "author": "Borja",
+    "date": "2011-11-12T10:56:33+01:00",
+    "content": "<p>Buenas booleataire,<br />de primeras agradecerte la clase, funciona muy bien, el unico inconveniente ya lo pusieron arriba y es que la marca de agua no respeta las transparencias en imagenes gif/png.<br />¿Hay algun avance en cuanto este tema?, no soy muy dado a la edicion de imagen mediante PHP sinó ya hubiese echado una mano =)</p>"
+  },
+  {
+    "id": 36184,
+    "parent": 0,
+    "author": "Borja",
+    "date": "2011-11-12T11:00:19+01:00",
+    "content": "<blockquote>\n<strong><a href=\"#comment-36183\">Borja</a> :</strong>\nBuenas booleataire,\nde primeras agradecerte la clase, funciona muy bien, el unico inconveniente ya lo pusieron arriba y es que la marca de agua no respeta las transparencias en imagenes gif/png.\n¿Hay algun avance en cuanto este tema?, no soy muy dado a la edicion de imagen mediante PHP sinó ya hubiese echado una mano =)\n</blockquote>\nMil disculpas y fallo mio ^^ no le habia metido suficiente transparencia a la imagen como para que se notase el efecto, gracias de nuevo :D"
+  },
+  {
+    "id": 36185,
+    "parent": 0,
+    "author": "Borja",
+    "date": "2011-11-12T11:11:42+01:00",
+    "content": "<p>Sigo haciendo prubas ^^</p>\n<p>Con una imagen de unos 3000px de ancho y 1000px de alto y un peso de unos 750Kb me ha saltado un error el propio PHP.</p>\n<p>Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate 13056 bytes)</p>\n<p>He estado leyendo y es por falta de memoria (Evidentemente algo tenia que ver) pero no doy con la solucion, ¿alguien con un problema similar?</p>"
+  },
+  {
+    "id": 36186,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-11-12T11:14:34+01:00",
+    "content": "<p>Tienes que ampliar la memoria permitida para PHP. Para ello puedes modificar directamente tu php.ini, buscar \"memory_limit\" y ampliarlo a 256MB por ejemplo.</p>\n<p>Otra cosa que puedes hacer es modificarlo directamente desde tu php, con ini_set:</p>\n<p><code>\n<p>ini_set('memory_limit', '256MB');</p></code></p>"
+  },
+  {
+    "id": 36188,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2011-12-26T12:55:40+01:00",
+    "content": "<p>Hola buenas tardes:<br />Ante todo agradecerte la genial clase que has preparado. Enhorabuena.<br />Ahora mi duda: tengo una imagen PNG que, al aplicarle un resize o resizecrop, el fondo me lo pone negro, ¿de qué puede ser?<br />Investigué algo pero me quedé en la función handleTransparentImage() que no logro entender bien del todo.</p>"
+  },
+  {
+    "id": 36189,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-12-26T13:02:49+01:00",
+    "content": "<p>Es un tema que debería de repasar porque ya se quejan anteriormente en los comentarios y seguramente sea debido a algun fallo por mi parte. La verdad es que el tema de las transparencias con las librerías GD es bastante tocapelotas...</p>\n<p>De todos modos, si lo que quieres es hacer resize, con la versión antigua de la clase recuerdo que al redimensionar no se perdía la transparencia. Si te animas puedes echar un vistazo a la versión anterior:</p>\n<p>https://github.com/elboletaire/Watimage/blob/b526bda2a1fdd4d13023cdcc5bbf26a0afa259df/watermark.php</p>\n<p>Y tratar de modificar la nueva tú mismo :D A mi la verdad es que me gustaría dedicarle tiempo, pero ahora mismo me es imposible.. quizás pasado fin de año pueda dedicarle algún día pero tampoco prometo nada.</p>"
+  },
+  {
+    "id": 36190,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2011-12-26T18:00:22+01:00",
+    "content": "<p>Gracias @Booletaire, voy a investigar a ver si te puedo echar una mano.<br />Googleando encontré esto: http://www.akemapa.com/2008/07/10/php-gd-resize-transparent-image-png-gif/<br />A ver si apartir de ahí puedo averiguar algo ;)</p>\n<p><a href=\"#comment-36189\">@Booletaire </a></p>"
+  },
+  {
+    "id": 36191,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2011-12-30T12:44:49+01:00",
+    "content": "<p>Buenos días de nuevo, os dejo buena noticia antes de finales de año y para comenzar bien 2012.<br />He conseguido que subiendo ficheros PNG me mantenga la transparencia con sólo sustituir todas las llamadas \"imagecreatetruecolor\" del método \"resize\" por \"imagecreate\". Ej:</p>\n<p>if ( !$dest_image = imagecreatetruecolor($new_x, $new_y) ) </p>\n<p>por:</p>\n<p>if ( !$dest_image = imagecreate($new_x, $new_y) ) </p>\n<p>Eso sí, si pudiérais hacer pruebas me sentiría más realizado ;)</p>\n<p><a href=\"#comment-36189\">@Booletaire </a></p>"
+  },
+  {
+    "id": 36192,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2012-01-09T11:09:26+01:00",
+    "content": "<p>Rectifico, con los ficheros JPG/JPEG no dejaba bien los colores, entonces hice unas mejoras.<br />Hice un Pull rquest en github ;)</p>"
+  },
+  {
+    "id": 36193,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-01-09T11:45:12+01:00",
+    "content": "<p>Ou yeah! :D Cómo mola ver que la gente se implica (se ve poco a menudo). Esta semana la tengo súper liada pero si encuentro un hueco lo testeo y acepto el pull request ;)</p>\n<p>Salu2 y muchas gracias por colaborar!</p>"
+  },
+  {
+    "id": 36194,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-01-14T18:04:23+01:00",
+    "content": "<p>Francisco, gracias a tu ayuda he podido arreglar todos los errores relacionados con las transparencias (o al menos eso parece).</p>\n<p>Si bajas el nuevo código cuidado con el nombre de la clase que lo he cambiado de Watermark a Watimage.</p>\n<p>https://github.com/elboletaire/Watimage</p>\n<p>Saludos y gracias de nuevo por tu ayuda!</p>"
+  },
+  {
+    "id": 36195,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2012-01-15T09:11:13+01:00",
+    "content": "<p>De nada, para eso estamos ;)</p>"
+  },
+  {
+    "id": 36213,
+    "parent": 0,
+    "author": "Ernesto",
+    "date": "2012-05-14T13:41:06+02:00",
+    "content": "<p>Hola,</p>\n<p>estoy intentando utilizar el componente dentro de cakephp 2.0.5 y nada mas agregarlo al controller me surgen 2 warnings:</p>\n<p>- First argument is expected to be a valid callback,</p>\n<p>lo cual he solucionado modificando</p>\n<p>  class WatimageComponent extends Object</p>\n<p>al inicio del componente por </p>\n<p>  class WatimageComponent extends Component</p>\n<p>Pero el otro warning:</p>\n<p>-  Object of class ComponentCollection could not be converted to string </p>\n<p>que hace referencia a las lineas 123 y 126 de watimage.php, concretamente estas íneas tienen el código:<br />\"if ( file_exists($file) )\"<br />y <br />\"throw new Exception('File \"' . $file . '\" does not exist');\"</p>\n<p>respectivamente, no consigo solventarlo.</p>\n<p>Si alguien sabe como evitar dichos warnings...</p>\n<p>Gracias,</p>\n<p>Ernesto</p>"
+  },
+  {
+    "id": 36214,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-05-14T15:41:48+02:00",
+    "content": "<p>El primer warning es debido al cambio de versión de CakePHP... yo todavía no me he puesto con CakePHP 2.X (cosas del trabajo...), así que ni siquiera lo sabía xD Pero gracias por el comentario, trataré de especificarlo en el post.</p>\n<p>El segundo error está relacionado con el primero. Dado que no he podido verificar la clase con CakePHP 2 puede que dé más errores... Pero puedes hacer una cosa: en lugar de utilizar la clase como componente puedes utilizarla como \"Vendor\"... al caso, no hay gran diferencia... y puede que solucione tu problema, ya que parece más bien un problema de diseño (por el cambio al \"Extend\" que has hecho deduzco que han cambiado un poco el diseño de la aplicación de la versión 1 a la 2).</p>"
+  },
+  {
+    "id": 36215,
+    "parent": 0,
+    "author": "Ernesto",
+    "date": "2012-05-15T10:51:04+02:00",
+    "content": "<p>Hola Booletaire,</p>\n<p>como \"vendor\" ya no aparecen los warnings.</p>\n<p>Por si a alguien le viene bien:<br />La clase se declara:</p>\n<p>\tclass Watimage extends Object </p>\n<p>y el objeto se instancia/utiliza en el controlador de la siguiente forma:</p>\n<p>\tApp::import('Vendor', 'Watimage');<br />\t$watimage = new Watimage();<br />\t$watimage-&gt;setImage('img/test.png');<br />\t...</p>\n<p>Gracias por tan pronta contestación y, evidentemente, gracias por compartir un trabajo tan bueno.</p>\n<p>Saludos,</p>\n<p>Ernesto.</p>"
+  },
+  {
+    "id": 36216,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-05-15T11:05:58+02:00",
+    "content": "<p>Si la utilizas como vendor creo que debería de ser:</p>\n<p>class Watimage {</p>\n<p>a secas, ya que el \"extends Object\" es para utilizarlo como componente en CakePHP v. 1.3 y anteriores.</p>\n<p>De nada en cuanto a la contestación, y un placer compartir mis conocimientos con el mundo. Ojalá todo el mundo hiciera igual! :)</p>"
+  },
+  {
+    "id": 36253,
+    "parent": 0,
+    "author": "Kalvin Manson",
+    "date": "2012-10-05T15:13:54+02:00",
+    "content": "<p>Esta es definitivamente mas completa que el timthumb.php que solía usar, gracias.</p>"
+  },
+  {
+    "id": 36257,
+    "parent": 0,
+    "author": "Luis Samper",
+    "date": "2012-10-24T14:06:09+02:00",
+    "content": "<p>Hola,<br />estupenda clase.</p>\n<p>Mi problema es que cuando aplica el watermark, deja un borde negro en el lateral inferior y derecho.<br />El watermark está definido para la posicion =&gt; 'center center' y size =&gt; '25%'</p>\n<p>Saludos<br />Luis</p>"
+  },
+  {
+    "id": 36389,
+    "parent": 0,
+    "author": "Elí Daván Palma",
+    "date": "2013-08-27T19:37:39+02:00",
+    "content": "<p>Se puede agregar un espacio blanco a una imagen?</p>\n<p>en la parte inferior por ejemplo</p>"
+  },
+  {
+    "id": 36391,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2013-08-30T12:31:48+02:00",
+    "content": "<p>Gracias <a href=\"#comment-36253\">Kalvin</a>!</p>\n<p><a href=\"#comment-36257\">Luis</a>, lamento no haber contestado antes (sí, ha pasado casi un año). La verdad es que no dispongo del tiempo libre que me gustaría ni para poder ayudaros ni para poder hacer mejoras con la clase.</p>\n<p><a href=\"#comment-36389\">Elí </a>, hace tiempo que tengo en mente sacar una nueva versión de la clase que permita trastear con el objeto de imagen antes de generarla. Es decir, que en lugar de trabajar internamente con la imagen, lo devuelva como valor y podamos modificar dicha variable:</p>\n<pre>// genreamos un resize con watimage\n$image = $this-&gt;Watermark-&gt;resize(array(...));\n// añadimos caracteres directamente con GD\nimagechar($image, 1, 0, 0, 'ola ke ase', imagecolorallocate($image, 0, 0, 0));</pre>\n<p>Desgraciadamente, como le comentaba a Luis, la verdad es que no dispongo de tiempo para hacerlo así que por ahora tendrás que crearte una función (o clase) que genere dicho espacio blanco en las imágenes (a partir del fichero resultante tratado con watimage).</p>"
+  },
+  {
+    "id": 36795,
+    "parent": 0,
+    "author": "Mauro",
+    "date": "2013-12-27T16:04:19+01:00",
+    "content": "<p>Buenas tardes, estaba mirando tu código la verdad es muy practico y facil de implementar pero tengo el siguiente problema. Por lo que veo las imágenes tienen que estar cargadas en el servidor y si yo quisiera redimensionarlas antes de subirlas dado que pesan mucho el codigo no anda si le digo que tome la ruta temporal. o al menos no puede darle las directivas correctas.</p>"
+  },
+  {
+    "id": 36957,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2014-01-10T11:33:45+01:00",
+    "content": "<p>Hola <a href=\"#comment-36795\">@Mauro </a>, me parece que hay algo que se te escapa. </p>\n<p>Efectivamente las imágenes tienen que estar cargadas en el servidor, este sistema no funciona si intentamos pasarle una imagen temporal, pero OJO, que esa imagen esté ubicada en el directorio temporal no significa que esa imagen no esté ocupando espacio, así que no veo qué problema te puede traer el guardar la imagen antes de tratarla.</p>\n<p>Por otro lado, es totalmente recomendable conservar la imagen subida por el usuario, así que más motivo para trabajar sobre una imagen guardada previamente.</p>\n<p>En github ya hay alguien que comentó algo parecido: https://github.com/elboletaire/Watimage/issues/2</p>"
+  },
+  {
+    "id": 54597,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-09-15T21:01:03+02:00",
+    "content": "<p>Me alegra comunicaros a todos los usuarios que utilicéis Watimage de que podéis descargar la última versión en la que llevo trebajando el último medio año.</p>\n<p>Ha sido re-escrita desde cero separando toda la lógica (revisada) en distintas clases y además tiene muchos más métodos para tratar las imágenes así como efectos y mucho más.</p>\n<p>Y todo con chaining, que le aporta una gran comodidad a la hora de trabajar con imágenes mediante PHP.</p>\n<p>Echadle ya un vistazo en GitHub :_D !!!</p>\n<p>http://github.com/elboletaire/Watimage</p>"
+  }
+]
