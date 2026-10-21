@@ -37,7 +37,6 @@ Para utilizarlo simplemente necesitas registrarte en su web y añadir aquellos s
 
 Además de la integración que podáis hacer vosotros mismos junto con la <a rel="noopener nofollow" href="http://wiki.gigya.com/" target="_blank">documentación de Gigya</a> podéis encontrar plugins e integraciones ya hechas para CMS como <a rel="noopener nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">Wordpress</a> o <a rel="nofollow" href="http://extensions.joomla.org/extensions/external-contents/widgets/3168">Joomla</a>.
 
-[cb type="company"]Gigya[/cb]
 
 > - **Web oficial e Gigya:** <a rel="noopener nofollow" href="http://www.gigya.com" target="_blank">http://www.gigya.com</a>
 > - **Plugin e integración de Gigya con Wordpress:** <a rel="noopener nofollow" href="http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin" target="_blank">http://wiki.gigya.com/050_Socialize_Plugins/010_Wordpress_Plugin</a>
