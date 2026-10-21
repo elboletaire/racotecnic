@@ -702,10 +702,12 @@ En directorio de la cookie aseguraros que apunta a la raíz del dominio: **/**
 
 Ahora debéis aseguraros que en vuestro php.ini (o utilizando el método php ini_set) tenéis las cookies también configuradas como en el foro:
 
-[sourcecode language="plain"]; The path for which the cookie is valid.
+```ini
+; The path for which the cookie is valid.
 session.cookie_path = /
 ; The domain for which the cookie is valid.
-session.cookie_domain = .underave.net[/sourcecode]
+session.cookie_domain = .underave.net
+```
 
 Hecho esto y subido vuestro php.ini al servidor (antes de subirlo quizás os interese echar un ojo al resto de opciones para ver qué se cuece por ahí) el login de usuarios ya debe funcionar sin problema alguno :)
 

@@ -21,7 +21,7 @@ tags:
 
 <a href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/" rel="noopener nofollow" target="_blank"><img class="aligncenter size-full wp-image-1386" title="smashing" src="/uploads/2010/02/smashing.jpg" alt="Smashing magazine: diferencias CSS entre IE6, IE7, IE8" width="504" height="249" /></a>
 
-Hablando de CSS, hoy he encontrado (como siempre por casualidad, buscando otra cosa XD) una <a rel="nofollow" href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/" target="blank">guia con las diferencias entre MSIE6, MSIE7 y MSIE8</a>. Que propiedades soportan cada uno en función de la versión.
+Hablando de CSS, hoy he encontrado (como siempre por casualidad, buscando otra cosa XD) una <a rel="nofollow noopener" href="http://www.smashingmagazine.com/2009/10/14/css-differences-in-internet-explorer-6-7-and-8/" target="_blank">guia con las diferencias entre MSIE6, MSIE7 y MSIE8</a>. Que propiedades soportan cada uno en función de la versión.
 
 Muchas de ellas las hemos aprendido a base de cabezazos contra la pantalla, pero la verdad es que esta guia está realmente bien, siempre hay alguna cosilla que no conoces.
 

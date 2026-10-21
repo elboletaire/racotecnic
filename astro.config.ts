@@ -130,15 +130,68 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  // Vendored from Google Fonts (OFL, see src/assets/fonts/OFL.txt) so the
+  // build does not depend on fonts.gstatic.com being reachable.
   fonts: [
     {
       name: "Google Sans Code",
       cssVariable: "--font-google-sans-code",
-      provider: fontProviders.google(),
+      provider: fontProviders.local(),
       fallbacks: ["monospace"],
-      weights: [300, 400, 500, 600, 700],
-      styles: ["normal", "italic"],
-      formats: ["woff", "ttf"],
+      options: {
+        variants: [
+          {
+            weight: 300,
+            style: "normal",
+            src: ["./src/assets/fonts/GoogleSansCode-Light.woff"],
+          },
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/GoogleSansCode-Regular.woff"],
+          },
+          {
+            weight: 500,
+            style: "normal",
+            src: ["./src/assets/fonts/GoogleSansCode-Medium.woff"],
+          },
+          {
+            weight: 600,
+            style: "normal",
+            src: ["./src/assets/fonts/GoogleSansCode-SemiBold.woff"],
+          },
+          {
+            weight: 700,
+            style: "normal",
+            src: ["./src/assets/fonts/GoogleSansCode-Bold.woff"],
+          },
+          {
+            weight: 300,
+            style: "italic",
+            src: ["./src/assets/fonts/GoogleSansCode-LightItalic.woff"],
+          },
+          {
+            weight: 400,
+            style: "italic",
+            src: ["./src/assets/fonts/GoogleSansCode-Italic.woff"],
+          },
+          {
+            weight: 500,
+            style: "italic",
+            src: ["./src/assets/fonts/GoogleSansCode-MediumItalic.woff"],
+          },
+          {
+            weight: 600,
+            style: "italic",
+            src: ["./src/assets/fonts/GoogleSansCode-SemiBoldItalic.woff"],
+          },
+          {
+            weight: 700,
+            style: "italic",
+            src: ["./src/assets/fonts/GoogleSansCode-BoldItalic.woff"],
+          },
+        ],
+      },
     },
   ],
   env: {

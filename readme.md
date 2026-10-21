@@ -8,7 +8,7 @@ Posts live in `src/content/posts/` as `YYYY-MM-DD-<slug>.md`. Each post is
 served at `/YYYY/MM/<slug>/`, the URL of the old WordPress site (the slug is
 the file name, percent-decoded). Uploaded images are in `public/uploads/`.
 
-Requirements: Node.js 22.12+ and [pnpm](https://pnpm.io).
+Requirements: Node.js 22.23.4+ and [pnpm](https://pnpm.io).
 
 ## Development
 
@@ -32,5 +32,15 @@ listed in `astro.config.ts` (`redirects`).
 ## Deployment
 
 `.github/workflows/deploy.yml` builds the site and publishes it to GitHub
-Pages (source: GitHub Actions) on every push to `master`. `public/CNAME` sets
-the custom domain.
+Pages on every push to `master`. The workflow runs the build and all checks
+before uploading.
+
+One-time setup in GitHub Settings > Pages:
+
+- Source: "GitHub Actions". The custom domain is not read from the CNAME file
+  in this deployment mode.
+- Custom domain: `racotecnic.com`.
+- Enforce HTTPS.
+
+`public/CNAME` is kept for reference and portability; it documents the domain
+the site is served from.

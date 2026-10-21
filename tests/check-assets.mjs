@@ -23,7 +23,11 @@ const walk = dir =>
 const exists = path => {
   const file = join(dist, path);
   if (path.endsWith("/")) return existsSync(join(file, "index.html"));
-  return existsSync(file) || existsSync(join(file, "index.html")) || existsSync(`${file}.html`);
+  return (
+    existsSync(file) ||
+    existsSync(join(file, "index.html")) ||
+    existsSync(`${file}.html`)
+  );
 };
 
 // src/href, plus every URL of a srcset (comma-separated "url descriptor" pairs).
@@ -64,10 +68,13 @@ for (const html of walk(dist).filter(file => file.endsWith(".html"))) {
 }
 
 if (misses.size > 0) {
-  console.error(`${misses.size} missing root-relative targets (${refs} references checked):`);
+  console.error(
+    `${misses.size} missing root-relative targets (${refs} references checked):`
+  );
   for (const [path, { reason, sources }] of misses) {
     console.error(`  ${path}${reason ? ` (${reason})` : ""}`);
-    for (const source of [...new Set(sources)].slice(0, 3)) console.error(`    in ${source}`);
+    for (const source of [...new Set(sources)].slice(0, 3))
+      console.error(`    in ${source}`);
   }
   process.exit(1);
 }

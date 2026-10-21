@@ -10,7 +10,9 @@
 !package.json
 !.prettierrc
 !eslint.config.js
-!README.md
+!readme.md
+!/scripts
+!/tests
 !.vscode
 
 # Ignore MDX files

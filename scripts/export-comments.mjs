@@ -67,7 +67,9 @@ function wpautop(text) {
     .trim()
     .split(/\n\s*\n+/)
     .map(chunk =>
-      BLOCK_MARKUP.test(chunk) ? chunk : `<p>${chunk.replace(/\n/g, "<br>")}</p>`
+      BLOCK_MARKUP.test(chunk)
+        ? chunk
+        : `<p>${chunk.replace(/\n/g, "<br>")}</p>`
     )
     .join("\n");
 }

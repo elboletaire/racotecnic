@@ -14,7 +14,7 @@ tags: []
 
 
 
-Tots aquells que estàveu dubtant si fer una <a href="http://forums.underave.net/viewtopic.php?f=1&amp;t=12905" target="bar">donació</a> a underave o no, aquesta és la  vostra oportunitat per col.laborar.
+Tots aquells que estàveu dubtant si fer una <a href="http://forums.underave.net/viewtopic.php?f=1&amp;t=12905" target="_blank" rel="noopener">donació</a> a underave o no, aquesta és la  vostra oportunitat per col.laborar.
 
 Sigueu partíceps d'aquest moment històric !!!
 
