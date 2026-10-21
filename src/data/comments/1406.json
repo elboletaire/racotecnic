@@ -1,0 +1,37 @@
+[
+  {
+    "id": 4119,
+    "parent": 0,
+    "author": "heavymetal!!!!",
+    "date": "2010-02-25T22:50:48+01:00",
+    "content": "<p>ei k passa mestre! Escolta, k a la 1.3 el mètode isUnique per la validació ja està implementat.... k lo seppasssssss!!! nus veiem dema!</p>"
+  },
+  {
+    "id": 4120,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-25T23:31:51+01:00",
+    "content": "<p>jajajjaajja </p>\n<p>joder, ara que m'havia decidit a estrenar l'etiqueta de Cake 1.3... zAS!</p>\n<p>però escolta mestre... no vols dir que et refereixes al mètode \"isUnique\" que empro al mètode que he posat? Si és així aquest mètode no serveix per a validar dades... (no amb la variable \"validate\", clar)</p>"
+  },
+  {
+    "id": 4122,
+    "parent": 0,
+    "author": "Obelich",
+    "date": "2010-02-26T00:35:00+01:00",
+    "content": "<p>Oye muchas felicidades me da gusto que te encuentres de nuevo publicando tutoriales sobre Cakephp espero ver mas por aca ^_^ ya lo e compartido en mi google reader y como tal en buzz para que te genere mas visitas ^_^ sale pues estamos en contacot echale ganas.</p>"
+  },
+  {
+    "id": 4132,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-26T11:12:32+01:00",
+    "content": "<p>Muchas gracias Obelich!</p>\n<p>Acabo de modificar un poco el método para no tener que especificar la celda a validar :)</p>"
+  },
+  {
+    "id": 4133,
+    "parent": 4119,
+    "author": "Booletaire",
+    "date": "2010-02-26T17:43:45+01:00",
+    "content": "<p>Ok, rectifico, com bé ha dit l'amic heavymetal, a la versió 1.3 de CakePHP ja existeix un mètode per a validar dades duplicades:</p>\n<p>http://book.cakephp.org/view/1166/isUnique</p>"
+  }
+]

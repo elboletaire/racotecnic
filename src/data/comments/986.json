@@ -1,0 +1,86 @@
+[
+  {
+    "id": 3204,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-11-16T03:51:54+01:00",
+    "content": "<p>El ejemplo de la imagen (la implementación de underave) está hecha a partir de una modificación que he hecho a gritter para poder personalizar las clases CSS. De ahí que salga el texto \"Error\" en otro color (mejora implementada en Gritter 1.6).</p>"
+  },
+  {
+    "id": 4134,
+    "parent": 0,
+    "author": "Obelich",
+    "date": "2010-02-26T17:50:19+01:00",
+    "content": "<p>Hola excelente muchas gracias lo incorporare en la pagina que estoy haciendo :)</p>"
+  },
+  {
+    "id": 4648,
+    "parent": 0,
+    "author": "Obelich",
+    "date": "2010-04-07T01:37:59+02:00",
+    "content": "<p>Hola oye una preguntilla para hacer que este funcione con <br />$this-&gt;Auth-&gt;authError = 'Mensaje';</p>\n<p>esto lo pongo en la funcion <br />function isAuthorized()</p>\n<p>?</p>"
+  },
+  {
+    "id": 4686,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-04-10T12:20:07+02:00",
+    "content": "<p>Si no te he entendido mal lo que quieres es utilizar gritter al mostrar el error \"authError\", no?</p>\n<p>Como en este caso:</p>\n<p>http://www.underave.net/barna23/audios/add</p>\n<p>De ser así, sólo se me ocurren dos formas de hacerlo:</p>\n<p>Creando una plantilla para mensajes flash con nombre \"default.ctp\", ya que \"default\" es la plantilla por defecto utilizada por cake para mostrar los errores de Auth.<br />Modificando el método startup del componente Auth. Si haces esto, lo mejor que puedes hacer es copiarte íntegramente el componente Auth a tu carpeta de componentes y modificar ese en lugar del que hay en la carpeta /cake/libs/controllers/components/. El trozo a modificar son las líneas 335 y 340 aproximadamente:</p>\n<p>// Línea 335 (aprox)<br />$this-&gt;Session-&gt;setFlash($this-&gt;loginError, 'default', array(), 'auth');<br />// Línea 340 (aprox)<br />$this-&gt;Session-&gt;setFlash($this-&gt;authError, 'default', array(), 'auth');</p>\n<p>Simplemente debes cambiar \"default\" por \"flash_error\" o el nombre que le pusieras a la plantilla.</p>\n<p>Espero que te refirieras a esto : )</p>"
+  },
+  {
+    "id": 5072,
+    "parent": 0,
+    "author": "Obelich",
+    "date": "2010-05-05T20:28:42+02:00",
+    "content": "<p>Hola una pregunta es exactamente igual para cakephp 1.3 ? es que estoy migrando la aplicacion que estoy haciendo a la 1.3 y no me esta funcionando :(</p>"
+  },
+  {
+    "id": 5103,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-05-08T11:23:43+02:00",
+    "content": "<p>Pues la verdad es que no tengo ni idea porque en Cake 1.3 no lo he probado.</p>\n<p>Qué te está fallando exactamente? No te muestra los mensajes (mirando el código de la página)? No ves los mensajes con gritter?</p>\n<p>Con más detalles quizás pueda echarte un cable ;)</p>"
+  },
+  {
+    "id": 18015,
+    "parent": 0,
+    "author": "gabo",
+    "date": "2010-11-26T22:07:50+01:00",
+    "content": "<p>Hola Booletaire,</p>\n<p>Lo estoy aplicando a cakephp 1.3.</p>\n<p>Hago todo lo que me dices. Pero me lanza un error. Me dice que la variable content_for_layout que esta en flash_info no esta definida.</p>\n<p>Aunque hace ya mucho tiempo que explicaste esto, será que me puedes ayudar.</p>\n<p>Gracias</p>"
+  },
+  {
+    "id": 18027,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-11-26T22:37:10+01:00",
+    "content": "<p>En Cake 1.3 la variable se llama $message si no estoy equivocado. En el fondo no es más que una variable de vista, así que puedes poner la que quieras siempre que hagas antes $this-&gt;set('variable', 'valor').</p>\n<p>Sinó, lo que puedes hacer es abrir los ficheros responsables de los mensajes Auth y averiguar qué variable debes pasarle.</p>\n<p>Éstos son el componente Auth junto con el de Sesión (en /cake/libs/controller/components/) y el helper de sesión (/cake/libs/view/helpers/session.php).</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 20624,
+    "parent": 0,
+    "author": "gabo",
+    "date": "2010-12-23T20:36:31+01:00",
+    "content": "<p>Hola Booletaire,</p>\n<p>Muchas gracias por tu explicación. Revise los ficheros responsabes de los mensajes y efectivamente la variable a pasar se llama $message. Pero aun asi, no queria funcionar. Lo que hice fue lo siguiente:</p>\n<p>codeBlock('<br />jQuery(document).ready( function($) {<br />\t$.gritter.add({<br />\t\ttitle: \"' . __('Información',true) . '\",<br />\t\ttext: \"' . $message . '\",<br />\t\timage: webroot + \"img/info_48.png\",<br />\t\tsticky: true<br />\t});<br />});<br />') ?&gt;</p>\n<p>Como puedes notar, le puse un echo, le dicione jQuery(document).ready y organice las comillas en title. Las comillas de \"Informacion\" las cambie por comillas simples  'Informacion'.</p>\n<p>Emplee estos dos archivos: 'jquery.gritter','jquery.gritter.min'.</p>\n<p>La otra cosa importante, y me imagino que a alguin mas puede servirle, es que tu dices que la ubicacion para los elementos flash_error y falsh_info es esta /app/views/layouts, pero en esa ubicacion no me funciono, sino en app/views/elements/</p>\n<p>Saludos!!!</p>"
+  },
+  {
+    "id": 21131,
+    "parent": 20624,
+    "author": "Booletaire",
+    "date": "2010-12-27T18:12:40+01:00",
+    "content": "<p>El echo sí lo he puesto, lo que pasa es que estaba en shortcut ( <code>&lt;?=</code> en lugar de <code>&lt;?php echo</code> )</p>\n<p>En cuanto a lo de que cargue un elemento en lugar de un layout es un cambio de la versión 1.3. De todos modos muchas gracias por el apunte, ahora mismo modificaré el post para que abarque ambas versiones.</p>\n<p>Ah! Y cuando dices que has utilizado los dos archivos jquery.gritter y jquery.gritter.min te refieres a ambos a la vez?? De ser así puedes quitar uno de ellos ya que el \".min\" es la versión \"minificada\" (reducida).</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 36209,
+    "parent": 0,
+    "author": "Joost De Cock",
+    "date": "2012-04-20T22:43:39+02:00",
+    "content": "<p>Thanks for the article. I just wanted to point out that you can create a generic Element, and pass all parameters in the call.</p>\n<p>I use View/Elements/gritter.ctp and it looks like this:</p>\n<p>Html-&gt;scriptBlock('<br />        $(function(){<br />                $.gritter.add({<br />                        title: \"'.$title.'\",<br />                        text: \"' . $message . '\",<br />                        image: \"/img/'.$type.'_48.png\",<br />                        sticky: '.$sticky.'<br />                });<br />});') ?&gt;</p>\n<p>Then in my controller, I do this:<br />                 $this-&gt;Session-&gt;setFlash('The post has been saved','gritter', array(<br />'title' =&gt; 'test title', <br />'type' =&gt; 'error', <br />'sticky' =&gt; 'true'<br />));</p>\n<p>This way, you can control the title, and whether it's a sticky message from the controller.<br />Also, you only need one element</p>"
+  },
+  {
+    "id": 36270,
+    "parent": 0,
+    "author": "Oscar",
+    "date": "2013-01-07T04:04:52+01:00",
+    "content": "<p>Buenas estaba probando este script, estoy trabajando en cake 1.2, lo que quiero hacer es desde un controller de un modelo especifico hacer que cuando se cargue unos datos se haga  una redireccion a otro controller de otro modelo distinto, esto lo venia haciendo con $this-&gt;flash(mensaje,url,intervalo) es un metodo de la clase controller que te permite definir el mensaje, la url donde vas a ir y el intervalo de tiempo, cuando hago esto se abre una plantilla que esta en //app/views/layout/flash.ctp, lo que quiero hacer es que me redireccione a otro controlador pero que el mensaje que se crea con gritter se vea en este nuevo controlador con este nuevo mensaje, pero cuando hago con el metodo redirect del controlador no sale el mensaje y con el firebug me fije y dice que $.gritter is undefened, se entiende el problema? hay alguna solucion?</p>"
+  }
+]

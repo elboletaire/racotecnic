@@ -1,0 +1,226 @@
+[
+  {
+    "id": 54513,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-11T15:36:12+02:00",
+    "content": "<p>Hola:</p>\n<p>Me ha parecido muy interesante tu artículo. Yo también suelo instalar todo lo que dices de la misma forma, sin usar ninguno de esos instaladores.</p>\n<p>También, me estaba planteando la opción de tener varias versiones PHP para los casos en que se reciben proyectos a modificar y están hechos con versiones antiguas. Así que tu artículo me puede servir para poder instalar varios PHP en el mismo equipo.</p>\n<p>No obstante me surgen una serie de dudas que te planteo a continuación:</p>\n<p>(de primeras, decir que mi ordenador tiene instalado el Windows 8.1 x64, ahora mismo, tras un nuevo formateo, me encuentro instalando las nuevas versiones de Apache-PHP-MySQL )</p>\n<p>1.- ¿La versión última de Apache 2.4 (actualmente, httpd-2.4.12-win64-VC14) siempre soporta todas las versiones de PHP que se usen sean más o menos actuales (5.6, ..., 5.2, 4.X, etc)?<br />¿O para versiones muy antiguas de PHP sería necesario otra versión de Apache instalada como la 2.2, la 2.0?<br />¿Existe alguna lista de PHPs compatibles con determinadas versiones de Apache y de MySQL?<br />Si tu respuesta fuera que el Apache 2.4 no soporta todos las versiones de PHP (o viceversa) y fuera, entonces, necesario tener varias versiones de Apache, ¿con tu método de instalación sería posible posible lograr todo esto? ¿De qué manera? ¿Cuáles serían los pasos a seguir en detalle?</p>\n<p>2.- En mis últimas instalaciones, empecé a usar el gestor de dependencias COMPOSER. Lo instalaba de manera global para usarlo en todos mis proyectos.<br />Para esta instalación, se debe indicar dónde se encuentra el php.exe, osea, dónde está instalado el PHP. Para esto hace falta editar la variable de entorno PATH, tal y como comentabas. Al final del proceso, si todo va bien, se crea un archivo composer.phar dentro de la carpeta de php disponible.<br />Ahora bien, si sigo tu tutorial, ¿debería hacer una instalación del composer por cada versión de PHP que tenga, cambiando antes el valor de PATH para apuntarlo a cada carpeta de la versión de PHP? ¿o me bastaría con instalarlo en la versión de PHP por defecto y luego, manualmente, copiar los archivos resultantes de las dependencias de un proyecto de la versión de PHP por defecto a la carpeta del proyecto de otra versión de PHP?</p>\n<p>Espero tus respuestas para configurar todo mi sistema de la mejor manera posible. Gracias de antemano y saludos.</p>"
+  },
+  {
+    "id": 54516,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-07-11T16:50:32+02:00",
+    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">@Pedro </a>, la versión de windows no debería de ser un problema; tal como digo al inicio yo mismo lo he probado desde Windows 8.1.</p>\n<p>Respecto al primer punto, la versión de apache que yo sepa no da problemas con ninguna de las versiones de PHP. Si el ejecutable de PHP lo ejecutas sin errores, el mod_fcgi debería de hacerlo igual.</p>\n<p>En el segundo punto puedo decirte lo mismo.. si puedes ejecutar PHP podrás ejecutar composer. Simplemente decide qué versión de PHP utilizarás para composer. Yo personalmente utilizo la última (5.6).</p>\n<p>Salud!</p>"
+  },
+  {
+    "id": 54517,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-11T20:07:39+02:00",
+    "content": "<p>Hola de nuevo:</p>\n<p>Gracias por tu rápida respuesta.</p>\n<p>Mi pregunta de incompatibilidades entre versiones de PHP y de Apache venía porque hace tiempo, una vez que quise realizar el paso de Apache 2.0 a 2.2, tuve que volver a 2.0 pues con la 2.2 la versión del PHP que tenía no funcionaba, o al revés era el Apache que no funcionaba con la versión del PHP.<br />Además, buscando en internet sobre como tener varios PHP a la vez, entre otros y antes de llegar a tu artículo, encontré este video algo antiguo ya (de 2010) en el que a mitad de el se muestra una lista de posibles versiones de Apache y PHP haciendo ver que no todas son compatibles entre ellas. El video es:<br />https://youtu.be/RMktu1G_Bs8?t=5m11s<br />Como digo, tratando siempre de tener las últimas versiones, de vez en cuando actualizado tanto Apache, PHP y MySQL. Pero siempre puede presentar un proyecto hecho hace tiempo que hay que modificar y ya corre con versiones antiguas.<br />Incluso, está por presentarseme el caso de que tenga que realizar un proyecto en un lugar dónde se encuentran las siguientes versiones instaladas:<br />Apache 2.2.8<br />PHP 5.2.6<br />MySQL 5.0.51b<br />Por todo ello venía mi duda.</p>\n<p>Sobre la cuestión de Composer, la exponía también debido a que trato de empezar a practicar con Laravel (ahora Laravel 5) y éste se instala a través de Composer. Si instalo varias versiones de PHP, tendré que elegir, según dices, la versión dónde instalo el Composer y las demás no tendrán el Composer ¿no? Aunque supongo que luego la descarga de dependencias o de paquetes la podré hacer a cualquier proyecto que tenga en el directorio www, sea un proyecto que emplee una versión u otra de PHP, ¿es así?</p>\n<p>Perdona por insistir en la cuestión. Pero quisiera me quedara lo más claro posible. Gracias otra vez y saludos.</p>"
+  },
+  {
+    "id": 54518,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-12T02:09:51+02:00",
+    "content": "<p>Y como añadido a mis preguntas, aunque no tiene nada que ver ya con el tema, ¿sabes como montar un servidor SMTP local que llegue a enviar emails? Es que con solo editar las líneas del php.ini sobre ello, no funciona. ¿Sabes como lograrlo?</p>"
+  },
+  {
+    "id": 54519,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-13T04:48:00+02:00",
+    "content": "<p>Hola de nuevo, esperando las respuestas a las últimas cuestiones planteadas, te notifico que he intentado instalar las cosas siguiendo tus pasos</p>\n<p>Instalé, para x64, Apache en su versión 2.4.12, PHP 5.6.11 (otras versiones a instalar de PHP, 5.5.14, 5.4.42 y 5.2.6).</p>\n<p>Monté esta estructura de carpetas:</p>\n<p>\tC:<br />\t |<br />\t --&gt; [inetpubapache]<br />\t \t|<br />\t \t--&gt; [Apache]<br />\t \t|<br />\t \t--&gt; [php][/php]<br />\t \t\t|--&gt; [php-5.6.11]<br />\t \t\t|--&gt; [php-5.5.14]<br />\t \t\t|--&gt; ...<br />\t \t\t|--&gt; [otras versiones]<br />\t \t|<br />\t \t--&gt; [www]</p>\n<p>Instalé el Apache, edito el archivo de configuración de Apache [httpd.conf], ejecuté por MSDOS \"httpd.exe\" y salió el Firewall de Windows para indicar que se permita el acceso por parte de \"Apache HTTP Server\".<br />Accedo a localhost:8080 (añadí el puerto 8080 en el .conf), no indica error, simplemente \"Index Of \\\".<br />Todo bien hasta instalarlo como servicio, entonces tras indicar que la instalacón como servicio fue satisfactoria, al testear el httpd.conf, indica reporte de errores y corregirlos antes de iniciar Apache como servicio.</p>\n<p>\"Installing the 'Apache2.4' service<br />The 'Apache2.4' service is successfully installed.<br />Testing httpd.conf....<br />Errors reported here must be corrected before the service can be started.\"</p>\n<p>Sigo adelante con el PHP, empiezo con el de la versión 5.6.11, descomprimo en la carpeta<br />c:\\inetpub\\php\\php-5.6.11.<br />También edité/creé las variables de entornos Path y PHPRC con la ruta \"C:\\inetpubapache\\php\\php-5.6.11\\\".<br />Edito el php.ini, guardo cambios, creo un archivo con la orden phpinfo(); con el nombre phpinfo.php y reinicio el Apache.</p>\n<p>Y va lo malo, al acceder a localhost:8080/phpinfo.php, sale el error 500.</p>\n<p>\"Internal Server Error</p>\n<p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>\n<p>Please contact the server administrator at amdin@server.com to inform them of the time this error occurred, and the actions you performed just before this error.</p>\n<p>More information about this error may be available in the server error log.\"</p>\n<p>En el archivo error.log aparecen estas líneas, alguna referida al módulo fcgid:</p>\n<p>[Mon Jul 13 04:15:50.677827 2015] [fcgid:warn] [pid 3260:tid 932] (OS 109)Ha terminado la canalización.  : [client ::1:1819] mod_fcgid: get overlap result error<br />[Mon Jul 13 04:15:50.677827 2015] [core:error] [pid 3260:tid 932] [client ::1:1819] End of script output before headers: phpinfo.php</p>\n<p>Y poco más, no he continuado debido al error 500 que te comento. Espero me sugieras algo sino, volveré a la forma que tenía antes para instalar PHP sin FCGI. Pero así no podré tener varios PHP con era el objetivo.<br />Así que espero me des algún consejo para solucionar la situación y seguir configurando todo tal como cuentas.</p>\n<p>Gracias y saludos.</p>"
+  },
+  {
+    "id": 54520,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-13T18:06:16+02:00",
+    "content": "<p>Bueno, de primeras, ya encontré un error por el cual no se ejecutaba el phpinfo.php y me daba el Error 500 en el servidor.</p>\n<p>Y es que no establecí una variable en el php.ini como tengo costumbre de hacer. O, más bien, no es que no la estableciera sino que la deje comentada.<br />Se trata de la variable \"extension_dir\" que, por defecto, viene comentada con el valor \"ext\". Es decir, la línea es esta</p>\n<p>; On windows:<br />; extension_dir = \"ext\"</p>\n<p>Como digo, yo suelo descomentarla y hasta ponerle toda la ruta hasta la carpeta de php, en este caso, tal y como he definido la estructura de carpetas, para la versión de php-5.6.11 sería:</p>\n<p>extension_dir = \"c:/inetpubapache/php/php-5.6.11/ext\"</p>\n<p>Así que, como digo, se me ha ocurrido volver a como yo lo hacía y tras descomentarla, reiniciar el Apache y reiniciar el navegador con el phpinfo.php en la ruta de la barra de direcciones, ya desapareció el Error 500 y ya veo el clásico cuadro de las caraterísticas del PHP instalado.</p>\n<p>Tanto vale dejar, en mi caso,<br />extension_dir = \"c:/inetpubapache/php/php-5.6.11/ext\"<br />como<br />extension_dir = \"ext\"<br />pero en ningún caso la línea no puede estar comentada, pues me da el Error 500.</p>\n<p>Y la había dejado comentada pues tu en tu artículo no llegabas a mencionar que hubiera que habilitarla. Por eso la deje como viene por defecto, es decir, comentada.<br />Igual también se debe a la estructura de carpetas que he montado para las versiones de php. Yo las pongo todas dentro de otra carpeta [php][/php], la cuál está al mismo nivel que la de [Apache]. Mientras que tu pones todas las carpetas de las diferentes versiones directamente en la raíz de tu carpeta [httpd].</p>\n<p>Bueno, la cosa es que ahora ya empieza a ir.</p>\n<p>Psaré ahora a configurar las demás versiones que me he descargado y terminar de probar todo, hasta el cambio por VirtualHost de versión de PHP. A ver si ya todo va bien.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 54521,
+    "parent": 0,
+    "author": "Adrian",
+    "date": "2015-07-14T02:49:07+02:00",
+    "content": "<p>Una pista para aquellos que hayan tenido problemas con hacer funcionar PHP:  Hay que tener sumo cuidado de usar LA MISMA versión de VC.  Tuve dos días de locura porque no había forma de hacer andar el dichoso PHP, y resulta que había instalado el VC14 \"redist\" y el Apache 2.4 compilado con VC14, junto con el PHP compilado con VC12. Al desinstalar el VC14 y el Apache VC14, y en su lugar instalar ambos en base a VC12, anduvo todo a la primera.  Moraleja: no mezclar distintas versiones de VC :)</p>"
+  },
+  {
+    "id": 54522,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-14T03:42:19+02:00",
+    "content": "<p>\"Y la había dejado comentada pues tu en tu artículo no llegabas a mencionar que hubiera que habilitarla. Por eso la deje como viene por defecto, es decir, comentada.\"</p>\n<p>Corrijo esto. Tras leer de nuevo la parte del PHP si que dices de descomentar la línea referente al [extension_dir].<br />Fallo mío.</p>"
+  },
+  {
+    "id": 54523,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-14T03:48:32+02:00",
+    "content": "<p>Adrian ... Yo tengo también el Apache último disponible para descargar 2.4.12 VC14, y el último PHP 5.6.11, aparte de otras versiones, y aparte instalados en el PC los VC9, VC10, VC11 y VC12 por medio de otros programas como el Visual Studio, antes de la configuración de Apache y PHP. Y no se me ha presentado aún conflicto alguno.</p>"
+  },
+  {
+    "id": 54524,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-14T20:39:46+02:00",
+    "content": "<p>Bueno, termina la prueba.</p>\n<p>Usadas estas versiones en Windows 8.1 x64:</p>\n<p>- Apache 2.4.12 x64 VC14<br />- modúlo FastCGI ASF 2.3.9<br />- PHP 5.6.11 VC11 x64<br />- PHP 5.5.14 VC11 x64<br />- PHP 5.4.42 VC9 x64<br />- PHP 5.2.6 VC11 x32</p>\n<p>Todo funciona correctamente. ¿Todo? No la versión 5.2.6 me dió error. El mismo que me daba la versión 5.6.11 en mi primera prueba pero no lo mismo ocurre con el PHP 5.2.6</p>\n<p>Las líneas de error mostradas en el error.log son estas:</p>\n<p>[Tue Jul 14 20:16:11.201772 2015] [fcgid:warn] [pid 9864:tid 988] (OS 109)Ha terminado la canalización.  : [client 127.0.0.1:10002] mod_fcgid: get overlap result error<br />[Tue Jul 14 20:16:11.202771 2015] [core:error] [pid 9864:tid 988] [client 127.0.0.1:10002] End of script output before headers: phpinfo.php</p>\n<p>No sé y no estoy seguro. Pero, a lo mejor, es que la versión 5.2.6 de PHP no es compatible con Apache 2.4.X y necesita de un Apache 2.2.X. O igual la diferencia está en que necesita de alguna configuración diferente a las necesarias por las otras versiones planteadas.</p>\n<p>Si alguien tiene alguna idea, se le agradecería su consejo.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 54535,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-07-25T14:24:29+02:00",
+    "content": "<p>Hola Pedro, antes de nada te pido disculpas por la demora. Han sido dos semanas muy locas en la oficina y justo empiezo vacaciones, así que ahora mismo aprovecho un momento que tengo para contestar.</p>\n<p>Veo que al final la duda se reduce únicamente al tema de PHP 5.2.6. Como bien ha dicho <a rel=\"nofollow ugc noopener\">@Adrian </a> hay que tener mucho cuidado con no mezclar versiones de VC y, a su vez, también hay que procurar instalar todos los requisitos tanto de Apache como de PHP.</p>\n<p>Si ejecutas PHP 5.2.6 desde un terminal, ¿te funciona sin problemas? Como ya comenté en mi primer comentario las versiones de PHP y apache no deberían de interferir, pues el encargado de ejecutar PHP es el módulo de fastcgi y a éste no le importa lo que ejecute mientras se ejecute correctamente.</p>\n<p>Si te funciona sin problemas desde un terminal, lamento no poder ayudarte, pues hace mucho que ya no utilizo PHP 5.2.6 y no recuerdo qué requerimientos tiene ésta.</p>\n<p>Además, he procurado migrar todos mis proyectos a las versiones de PHP más recientes y te recomiendo que hagas lo mismo. Si tu compañía de hosting no te ha actualizado la versión de PHP <a href=\"http://bigemployee.com/stop-using-php-5-2/\" rel=\"nofollow ugc noopener\">debería de haberlo hecho</a>, pues es una versión de PHP realmente insegura que hace ya más de 4 años que dejó de ser mantenida.</p>\n<p>Lo mismo podría aplicarse a PHP 5.3, si tenéis proyectos en versiones anteriores a PHP 5.4 toca migrarlos ya. Cuanto antes os pongáis más dolores de cabeza evitaréis ;)</p>"
+  },
+  {
+    "id": 54536,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-26T00:57:59+02:00",
+    "content": "<p>Hola:</p>\n<p>Tras largo tiempo sin entrar en este post, veo que terminaste respondiendo. Comprendo que no siempre se tiene tiempo de responder a todo.</p>\n<p>La verdad es que sigo buscando la solución para que la versión 5.2.6 no dé el error expuesto y antes. Y en la búsqueda de dicho error en Google he vuelto a este post.<br />El error sigue siendo esto que sale en el log-error:</p>\n<p>[Sun Jul 26 00:35:32.383588 2015] [core:error] [pid 6576:tid 1488] [client 127.0.0.1:14344] End of script output before headers: phpinfo.php</p>\n<p>Vi que en otro post que encontré uno comentaba que había podido lograr que la versión 5.2 de PHP funcionara en Apache 2.4, incluyendo este bloque en el httpd.conf:</p>\n<p>\tAllowOverride None<br />\tOptions None<br />\tRequire all granted</p>\n<p>Pero sin efecto alguno. Así que sigo buscando.</p>\n<p>Por cierto, ¿qué quieres decir con que si lo ejecuto desde el terminal?<br />¿Si accedo por la consola MSDOS? ¿cómo tendría que ver esto? ¿Accediendo hasta el php.exe de la versión 5.2.6 y dándole a ENTER? ¿Y que tendría que salir?<br />¿Cómo sé si funciona sin problemas?</p>\n<p>Y si por mi fuera, como yo para mi casa ya lo hice, dejaría esa versión de PHP. Yo cada vez voy actualizando las versiones.<br />Pero es que estoy siguiendo un curso en un centro que, como ya mencioné, tienen esas versiones instaladas:<br />Apache 2.2.8<br />PHP 5.2.6<br />MySQL 5.0.51b<br />Y no parece que tengan intención de actualizar. Entonces, tu solución me venía bien para programar en una versión o en otra. Lo que no quería es que hiciera algo en casa y a la hora de pasarlo al centro de la clase, al ser una versión inferior no me llegara a funcionar por alguna incompatibilidad o función que no estuviera disponible en la 5.2.6. O viceversa, que empleara algo de 5.2.6 ya deprecado en versiones posteriores.</p>\n<p>Pero, bueno, si no llego a encontrar solución, veo que lo único que me queda es poner bloques condicionales para controlar, directamente dentro del código programado del sitio web, en ciertos casos la versión de PHP<br />Algo como:<br />if (php_version  5.2.6) hacer otra</p>\n<p>Pues nada, si se te ocurriera otra cosa, me la comentas. Y sino, felices vacaciones y buen regreso.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 54537,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-07-26T01:56:58+02:00",
+    "content": "<p>Pues sí, me refiero exactamente a eso.</p>\n<p>Accede al directorio donde tengas PHP 5.2 instalado y ejecuta:</p>\n<p>./php.exe -v</p>\n<p>Debería de mostrarte la versión de PHP sin error alguno.</p>"
+  },
+  {
+    "id": 54538,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-26T03:09:24+02:00",
+    "content": "<p>Hola de nuevo,</p>\n<p>Ejecute la orden [php 1=\"-v\" language=\".exe\"][/php] dentro de la carpeta de cada versión.<br />Este fue el resultado:</p>\n<p>&gt;&gt; tanto para la versión 5.6.11, 5.5.14 y 5.4.42, se mostró únicamente las líneas que indican el número de versión y años de Copyright<br />(Por ejemplo para la 5.6.11)<br />PHP 5.6.11 (cli) (built: Jul  9 2015 20:55:30)<br />Copyright (c) 1997-2015 The PHP Group<br />Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies</p>\n<p>&gt;&gt; pero para la versión 5.2.6, si bien al final muestra las mismas líneas de versión y copyright:</p>\n<p>PHP 5.2.6 (cli) (built: May  2 2008 18:02:07)<br />Copyright (c) 1997-2008 The PHP Group<br />Zend Engine v2.2.0, Copyright (c) 1998-2008 Zend Technologies</p>\n<p>antes de estas líneas, tanto dentro de la propia consola como por medio de una ventana de alerta indica esto:</p>\n<p>\"El programa no puede iniciarse porque falta php_pdo.dll en el equipo.<br />Intente reinstalar el programa para corregir este problema.</p>\n<p>Warning:<br />PHP Startup: Unable to load dynamic library<br />'c:/...ruta.../php/php-5.2.6/ext/php_pdo_mysql.dll' - No se puede encontrar el módulo especificado.\"</p>\n<p>No obstante, voy a la carpeta de [ext] y la dll mencionada está ahí. Y en el php.ini de la misma versión la línea pertinente está activa.<br />Así que no sé por qué indica ese error / warning si el archivo si existe aunque diga que no lo encuentra.</p>\n<p>No sé si será esto el causante del error para que no pueda ver el phpinfo.php para la versión 5.2.6</p>"
+  },
+  {
+    "id": 54539,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-26T03:25:08+02:00",
+    "content": "<p>Vale, ya he visto lo que faltaba.<br />Como digo la extensión php_pdo_mysql.dll la tengo en la carpeta [ext] de la versión 5.2.6 de PHP. Y la tengo activada en el respectivo php.ini de la mencionada versión.</p>\n<p>Pero, como se indica en el primer mensaje de error que me salía al ejecutar la orden que me decías (php.exe -v) lo que me dice que falta es el php_pdo.dll. Y al revisar de nuevo el php.ini, he visto que no tenía activada esa extensión al estar comentada su línea.<br />Osea que la versión 5.2.6 necesita tener activada la php_pdo.dll para poder ejecutar luego la php_pdo_mysql.dll.</p>\n<p>Tras activarla y reiniciar el Apache, al acceder al virtualhost de la versión 5.2.6, ya se me muestra correctamente y sin error alguno el correspondiente phpinfo.php.</p>\n<p>Por fin!!! Y gracias a tus consejos y recomendaciones he conseguido que todas las versiones funcionaran al final.<br />Espero que no solo ya estas pruebas de virtualhosts sino proyectos que ponga en una o en otra versión sigan funcionando como estos de prueba.</p>\n<p>Una vez más gracias por tus ideas. Y te deseo de nuevo felices vacaciones.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 54540,
+    "parent": 0,
+    "author": "Pedro",
+    "date": "2015-07-26T03:31:27+02:00",
+    "content": "<p>Una última cosa. Voy a instalar el COMPOSER como ya comenté y para ello tengo que editar la Variable Path indicando la ruta al PHP. Elegiré para esto la ruta a la versión principal para mí entre las que tengo. En mi caso, la principal es la 5.6.11.</p>\n<p>La pregunta es si, como comentabas, por editar el Path ¿es necesario incluir o añadir otra variable llamada PHPRC que en mi caso solo llevaría el valor de la ruta a mi PHP principal?<br />Y si no la incluyo o añado ¿me volvería a dar todo error o que consecuencia habría si no la creo tras editar la variable de Path?</p>"
+  },
+  {
+    "id": 54594,
+    "parent": 0,
+    "author": "Julio Rodriguez",
+    "date": "2015-09-15T20:38:28+02:00",
+    "content": "<p>Buenas Estimado,</p>\n<p>En primer lugar excelente el post, me parece muy detallado. Sin embargo tengo ciertas dudas que deseo consultar.</p>\n<p>1. Al principio hablan del modulo  mod_fcgid.so, por diversos motivos me encuentro utilizando xampp en estos momentos, sin embargo estuve validando todo tal cual como menciona y me he dado cuenta que ni tengo ese archivo, por lo que no puedo activarlo. Busque la página para descargarmelo (http://httpd.apache.org/download.cgi#mod_fcgid) sin embargo en los archivos no aparece el archivo \".so\" ¿Donde puedo ubicarlo?</p>\n<p>2. En primer lugar no estoy muy seguro de haber comprendido completamente la parte de las variables de entorno, sin embargo explicaré lo que hice para que me confirme si es así:<br />a. edite la variable de entorno path agregando al final la ubicación de la segunda versión de php, b. Agregue la nueva variable de entorno PHPRC con la misma dirección.</p>\n<p>3. Entre por consola a la segunda versión de php (2.7) y corrí el comando php.exe -v y todo corre bien, el resultado es el siguiente :<br />PHP 5.2.17 (cli) (built: Jan  6 2011 17:37:45)<br />Copyright (c) 1997-2010 The PHP Group<br />Zend Engine v2.2.0, Copyright (c) 1998-2010 Zend Technologies<br />Sin embargo al levantar el apache me da error y se cae. Si elimino el virtual host que cree para esta versión arranca sin problema.</p>\n<p>¿El archivo .so será la falla? ¿Que otra cosa podria ser? De antemano gracias. <br />PD: Con respecto a lo de la versión, el por qué una tan antigua, precisamente es porque debo actualizar unos sites de clientes que usan esa versión... yo trabajo con la 5.6. Muchas gracias de antemano</p>"
+  },
+  {
+    "id": 54595,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-09-15T20:50:42+02:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@Pedro</a>, la variable <code>PHPRC</code> es para indicarle a php dónde encontrar sus ficheros (entre ellos <code>php.ini</code>), por tanto siempre debe tanto existir como coincidir la variable <code>PHPRC</code> con la versión de php que estés utilizando.</p>\n<p><a rel=\"nofollow ugc noopener\">@Julio Rodriguez</a>, si relees con detalle el punto de \"Instalando apache\" verás que la descarga del módulo de apache no puedes hacerlo desde apache.org; en su lugar debes descargarlo de algunas de las páginas que recomienda apache. Tal como indico en la sección \"Instalando apache\" yo te recomiendo utilizar apachelounge para las descargas.</p>\n<p>De todos modos veo que dices que utilizas XAMPP. Este tutorial te explica cómo hacer la instalación desde cero y para ello puedo darte soporte. Si dices que utilizas xampp ahí ya no puedo ayudarte, pues todos estos paquetes precompilados de apache tipo xamp, wamp, mamp... suelen remover mucho las tripas de todas las partes para hacer su paquete a medida, así que es fácil que rompas algo si no buscas un tutorial específico para lo que estás utilizando.</p>\n<p>Te animo a que sigas este tutorial al pie de la letra sin utilizar xampp ni otros paquetes distintos a los descritos en el tutorial.</p>"
+  },
+  {
+    "id": 54596,
+    "parent": 0,
+    "author": "Julio Rodriguez",
+    "date": "2015-09-15T20:54:38+02:00",
+    "content": "<p>Buenas amigo, muchas gracias por tu pronta respuesta, y sí eso lo leí, sin embargo como era un \"módulo especifico\" pense que no habria mayor problema, y pues, vale muchas gracias. tambien he trabajado con apache instalado \"a pelo\" solo que en estos momentos lo tengo así por cuestiones de tiempo, igualmente veré que puedo hacer. muchas gracias una vez más.</p>"
+  },
+  {
+    "id": 54598,
+    "parent": 0,
+    "author": "Julio Rodriguez",
+    "date": "2015-09-16T07:51:20+02:00",
+    "content": "<p>Buenas Noches amigo, yo nuevamente.</p>\n<p>Siguiento tu tutorial y a sabiendas de que la versión 5.2.17 es vieja y no has trabajado recientemente con ella. queria hacerte una consulta.<br />Instale Apache solo, tal como aqui lo explicas y corre bien sin problema. v.2.4, posteriormente intenté instalar PHP217, haciendo los registros y la edicion del php.ini. al parecer todo corre fino sin embargo NO IMPRIME ni realiza procesos dentro de las etiquetas  ... aunque si me reconoce los archivos con extensión .php... por tanto, considere algo estaba mal y he estado buscando y me tope con algo sobre los archivos php5apache2,php5apache2.dll y php5apache2_2.dll que no mencionas en tu post, aunque recuerdo que antes los llegué a usar... Y es aqui donde viene mi duda. ¿En las versiones nuevas ya no se usan estas .dll? Sin embargo, probando con cualquiera de las librerias.. todas me dan el mismo error que es el siguiente :</p>\n<p>httpd.exe: Syntax error on line 178 of C:/httpd/apache/conf/httpd.conf: Cannot load c:/httpd/php217/php5apache2.dll into server: No se encontr\\xf3 el proceso especificado.  </p>\n<p>En otro post. leí que debia colocarlas en la carpeta system32.. pero la falla persiste. Si tendrás alguna idea de la razón del problema agradezco tu ayuda, caso contrario igual la agradezco. el post está excelente.</p>"
+  },
+  {
+    "id": 54599,
+    "parent": 0,
+    "author": "Julio Rodriguez",
+    "date": "2015-09-16T07:54:56+02:00",
+    "content": "<p>Una cosa más en este post:<br />http://eltallerdelbit.com/cannot-load-php5apache2-dll/ Mencionan que se debe instalar la versión NON Thread Safe de PHP. En que momento uno debe instalar una u otrA? una vez más gracias</p>"
+  },
+  {
+    "id": 54600,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-09-16T09:59:39+02:00",
+    "content": "<p>El módulo <code>php5apache2.dll</code> no te permitirá utilizar distintas versiones de PHP. De hecho sólo funciona con versiones concretas si no me equivoco, si estás utilizando apache 2.4 no me extrañaría que no pudieras utilizar el módulo de php5 de apache para correr php 5.2.</p>\n<p>Lo de poner librerías en <code>system32</code> es una guarrada, en ningún momento debes salirte del directorio de instalación <code>C:\\httpd</code></p>\n<p>Si utilizas apache es Thread Safe. Ese tutorial dice que la versión NON Threat Safe les devuelve error y que al final han utilizado Thread Safe.</p>"
+  },
+  {
+    "id": 54601,
+    "parent": 0,
+    "author": "Julio",
+    "date": "2015-09-16T14:04:50+02:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@Booletaire </a> <br />Booltaire, muchas gracias por responder tan pronto.</p>\n<p>Si, tengo entendido que las distintas librerias son para algunos números de versiones de PHP, por eso pregunte el como funciona ahora, de igual manera no hubo forma de que lograse configurar apache 2.4 con php5.2 y estoy planteandome buscar el apache2.2 para probar.... y pues con lo de system32.. solo puedo dejarlo como ejemplo de la variedad de contradicciones que uno consigue en internet. XD.</p>\n<p>Ahora, con lo de Thread safe, sí yo lei en el tutorial que se usa esa versión, de hecho si ves mi comentario la pregunta es de que depende el que se instale una u otra o cual es la diferencia.</p>\n<p>Gracias por responder</p>"
+  },
+  {
+    "id": 54602,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-09-16T14:19:00+02:00",
+    "content": "<p>La manera en que trata los \"Threads\" del procesador. Apache trabaja con los threads de manera distinta a otros servidores web.</p>\n<p>IIS es Non Thread Safe mientras apache es Thread Safe. Que yo sepa sólo IIS es Non Thread Safe, pero seguro que desconozco más del mismo tipo. En todo caso esto es sólo para sistemas Windows.</p>"
+  },
+  {
+    "id": 54610,
+    "parent": 0,
+    "author": "Corey",
+    "date": "2015-09-24T05:47:16+02:00",
+    "content": "<p>problemas en windows 10 para php 5.5 y para hacer 2 virtual hosts</p>"
+  },
+  {
+    "id": 54611,
+    "parent": 0,
+    "author": "Corey",
+    "date": "2015-09-24T20:10:03+02:00",
+    "content": "<p>lo que me pasa en windows 10 es que para los 2 vhosts me reconoce como php 5.6, y no me reconoce php 5.5. Alguna idea del porque?</p>"
+  },
+  {
+    "id": 54612,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2015-09-25T12:04:55+02:00",
+    "content": "<p>Das muy pocos detalles. ¿Has seguido el tutorial al pie de la letra? ¿Te has leído todos los comentarios de otros usuarios para ver si alguna de sus dudas (y mis soluciones) resuelven tu problema?</p>"
+  },
+  {
+    "id": 54689,
+    "parent": 0,
+    "author": "Javi Sanna",
+    "date": "2016-01-26T21:35:58+01:00",
+    "content": "<p>Genial!!!</p>"
+  },
+  {
+    "id": 54764,
+    "parent": 0,
+    "author": "Nicolás",
+    "date": "2016-04-17T19:39:15+02:00",
+    "content": "<p>Muchas gracias por este excelente articulo, esta explicado a la perfección.</p>"
+  },
+  {
+    "id": 54782,
+    "parent": 0,
+    "author": "Scrawny",
+    "date": "2016-05-15T19:46:47+02:00",
+    "content": "<p>Perfecto muy bueno tu Tutorial / Manual /Guía te dejo 10 puntos :P<br />Faltaría complementarlo con la instalació de MySQL de forma manual en la carpeta C:\\httpd\\MySQL y agregarle seguridad, pero aún así es uno de las pocas guias que me ha funcionado sigue así.</p>"
+  },
+  {
+    "id": 54785,
+    "parent": 0,
+    "author": "Leo",
+    "date": "2016-06-01T17:47:00+02:00",
+    "content": "<p>Buenas muy buen post ante todo!</p>\n<p>una duda tengo apache 2.4 y php 5.6 no me ejecuta las funciones scandir ni opendir mas sin embargo sirve php saben debido a que pueda estar pasando esto!</p>\n<p>muchas gracias de antemano</p>"
+  },
+  {
+    "id": 54786,
+    "parent": 0,
+    "author": "Leo",
+    "date": "2016-06-01T21:37:52+02:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@Leo </a> <br />olvidenlo... solucionado! era una falta de permisos</p>"
+  }
+]

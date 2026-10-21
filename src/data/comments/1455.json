@@ -1,0 +1,44 @@
+[
+  {
+    "id": 36218,
+    "parent": 0,
+    "author": "nannz",
+    "date": "2012-05-21T12:48:27+02:00",
+    "content": "<p>Thanks a lot.</p>"
+  },
+  {
+    "id": 36234,
+    "parent": 0,
+    "author": "Pyo",
+    "date": "2012-06-14T01:43:09+02:00",
+    "content": "<p>Is it working with CakePhp 2.x ?</p>"
+  },
+  {
+    "id": 36235,
+    "parent": 0,
+    "author": "Pyo",
+    "date": "2012-06-14T02:07:26+02:00",
+    "content": "<p>Two small modifications to do to use this component with CakePhp 2.x :</p>\n<p>1. After \"class Watimage\", add \"Component extends Component\" (instead of 'extends Object')</p>\n<p>2. Remove the four lines in the construct method.</p>"
+  },
+  {
+    "id": 36236,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-06-19T20:20:49+02:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@nannz </a> you're welcome :D</p>\n<p><a rel=\"nofollow ugc noopener\">@Pyo </a> thanks for your comment. I'll try to create a tag for the 2.X version ASAP.</p>\n<p>Also, if I get the chance, I will update this post too.</p>"
+  },
+  {
+    "id": 36237,
+    "parent": 0,
+    "author": "Pyo",
+    "date": "2012-06-19T21:44:17+02:00",
+    "content": "<p>Keep us in touch by posting a new comment if you do it :-)</p>"
+  },
+  {
+    "id": 36247,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-09-05T19:12:39+02:00",
+    "content": "<p>https://github.com/elboletaire/Watimage/tree/2.X</p>\n<p>Pardon the delay, too much work lately .. btw, thanks for your help Pyo :)</p>"
+  }
+]

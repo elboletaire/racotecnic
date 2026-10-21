@@ -1,0 +1,23 @@
+[
+  {
+    "id": 3986,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-11T19:02:20+01:00",
+    "content": "<p>Aquí tens la oficial de Microsoft:</p>\n<p>http://msdn.microsoft.com/en-us/library/cc351024%28VS.85%29.aspx</p>\n<p>Això sí, no es veu tant maca com la d'smashing magazine :)</p>"
+  },
+  {
+    "id": 3988,
+    "parent": 0,
+    "author": "DPAM23",
+    "date": "2010-02-11T21:06:18+01:00",
+    "content": "<p>Ni es veu tant maca, ni publica els errors que senyalo com a \"Significant Bugs and Incompatibilities\", que també va força bé.<br />Gràcies per l'enllaç!<br />:)</p>"
+  },
+  {
+    "id": 4352,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-03-17T15:34:40+01:00",
+    "content": "<p>Un altre molt bo:</p>\n<p>http://www.quirksmode.org/css/contents.html</p>\n<p>Aquest està de puta mare perquè no només indica les diferències entre Internet Explorers, sinó que també mostra tota la resta de navegadors (inclús l'iPhone).</p>"
+  }
+]

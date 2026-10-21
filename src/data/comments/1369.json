@@ -1,0 +1,324 @@
+[
+  {
+    "id": 4266,
+    "parent": 0,
+    "author": "Covi",
+    "date": "2010-03-09T13:46:36+01:00",
+    "content": "<p>Hola.<br />Primero de todo: !important no es un hack, es una palabra clave en una regla normal CSS. Es decir, es CSS estándar y no provoca errores en un navegador que soporte CSS, que es precisamente lo que hacen los hacks, de ahí el no recomendar su uso.<br />Otra cosa es que algún navegador no soporte ciertas reglas CSS, ...pero eso no es un hack. No es una discusión semántica si no de concepto y de conocimiento de CSS.</p>\n<p>Segundo: ¿Hacks?, aplicar hacks, salvo casos excepcionales, simplemente significa desconocer la especificación CSS y el comportamiento de los navegadores. En prácticamente todos los casos no es necesario un hack, sobra con cosas como aplicar herencias o especifidad dependiendo del navegador o del resultado deseado; ...y si lo necesitas es que tu CSS tiene errores o algo anda mal, en cualquier caso no está bien diseñado.</p>\n<p>Todo esto asumiendo siempre que es prácticamente imposible que un diseño se vea igual en todos los navegadores... por muchos hacks que se usen eso no va a pasar. Así que lo correcto y lo lógico es asumir pequeñas diferencias en el diseño, por el contrario, no es lógico aplicar un hack para una pequeña diferencia que nunca vas a poder homogeneizar al 100%.</p>\n<p>Un saludo.</p>"
+  },
+  {
+    "id": 4268,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-03-09T20:14:46+01:00",
+    "content": "<p>Tienes toda la razón con lo de important.. metí la pata diciendo que era un hack y ya lo he corregido.</p>\n<p>En cuanto a todo lo demás... dices que aplicar hacks significa desconocer las especificaciones CSS y el comportamiento de éste en los navegadores... no te quito razón. Pero sabes tan bien como yo que hay navegadores que tienen bugs y que no hay más manera que añadir arreglos CSS para solucionarlo. Para ello, la mejor opción, sin lugar a dudas, es crear CSS con los cambios para cada navegador.</p>\n<p>Pero si únicamente necesitaras arreglar un único detalle (o dos) de tu web, ¿seguro que crearías un CSS alternativo? ¿o utilizarías un hack?</p>\n<p>Yo no soy nada partidario de utilizar hacks y, como tú (y al igual que en mi trabajo) opino que si algo te está fallando, es porque no sabes hacerlo. Pero esto no quita que de vez en cuando utilice alguno sea por lo que sea.</p>\n<p>Por eso puse todos juntos, para tener rápido acceso a todos ellos sin tener que andar buscando por internet.</p>\n<p>Si no andabas buscando hacks, no sé cómo has acabado aquí. Da la sensación que busques en google \"CSS Hacks\" para burchar las páginas donde los comenten (de ser así ya podías haber comentado en las páginas de referencia ;p).</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 4275,
+    "parent": 0,
+    "author": "heavymetal",
+    "date": "2010-03-10T10:54:47+01:00",
+    "content": "<p>bueno antes que nada, aclarar a k en la comunidad de CSS se refiere a hack a cualquier combinacion de instrucciones que permiten modificar un comportamiento por defecto extraño en el navegador.<br />Por esa razon, los llamados \"conditional comments\" (&lt;!--[if IE]&gt;....) se dicen que son un hack, ya que permiten modificar el comportamiento estandard del navegador (en este caso IE) mediante una instrucciones especiales.</p>\n<p>A partir de aquí, el caso que comenta boletarire de !important, si que se  considera un hack. Pues el comportamiento de FF i IE en el caso de !important sobre el mismo selector es distinto y se puede utilizar para modificar solamente el comportamiento de un atributo en particular. En ese caso, el color, que no es un buen ejemplo, pero si lo seria un margin, un width....</p>\n<p>En cuanto a lo Segundo.... precisamente, el conocer el distinto comportamiento de los navegadores y el no cumplimiento de las especificaciones de CSS es el origen de estos hacks, para solucionar estas malas interpretaciones de los distintos navegadores.</p>\n<p>Asi que ya sabeis, utilizar hacks, es necesario, y es nuestro pan de cada dia. Si alguien consigue hacer flotar dos div's dentro de otro, y k el contenedor tenga su tamaño sin utilizar el hack de overflow:hidden, o el hack de clearfix (div con clear:both), que venga aki y me lo explique.</p>\n<p>dewwwwww</p>\n<p>P.D.: y si buscabas por hacks para Counter Strike Source: http://www.google.es/search?rlz=1C1GGLS_caES341ES341&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=counter+strike+source+hacks</p>"
+  },
+  {
+    "id": 5803,
+    "parent": 0,
+    "author": "Covi",
+    "date": "2010-06-19T16:31:09+02:00",
+    "content": "<p>@Heavy: Vamos a ver... aplicar un clear:both o un !important no es un hack como ya ha comentado Març.</p>\n<p>Y no son hacks porque son CSS estándar, es decir y lo explico de nuevo, no provocas un fallo en la interpretación de la hoja de estilos del navegador.</p>\n<p>Cuando añades expresiones no estándares en el CSS, estás provocando un fallo que te da el comportamiento que deseas de ese nevagador: ESO es un hack; ...luego pues vale, por llamar a las cosas se les puede llamar como se les quiera llamar, si algunos llaman hack a !important o a clear:both... que son reglas estándares, pues allá ellos.</p>\n<p>Otro apunte, lo que comento de los hacks no lo digo yo ni me las doy de nada, simplemente lo aprendí de gente como Zeldman, Moll o Budd... obviamente, una vez estudias y entiendes la especificación está más claro que el agua.</p>\n<p>Repito, el comportamiento erróneo de IE sobre !important no es un hack: NO se lo provocas tú mediante una hoja de estilos INCORRECTA.</p>\n<p>Y muy en referencia a !important... no necesitas ni ese -según lo ves tú, heavy- ni otros hacks; si se conoce la especificación se debe saber que con un estilo estudiado de antemano, una hoja bien estructurada: sobra con aplicar bien la herencia y la especificidad.<br />Lo que ocurre es que es mucho más complicado y tedioso aplicar especificidad y lo fácil -y por otro lado poco profesional- es aplicar hacks e !important por todas partes.<br />Así luego suele sale lo que sale :D</p>\n<p>Con todo esto no digo que no haya que usarlos nunca o que a veces, muy en contadas ocasiones, sean útiles. Solo digo que es el recurso fácil y que en la mayoría de ocasiones se usa por desconocimiento de CSS.<br />Ej: No sé porqué me falla esto -&gt; Busco en Google, encuentro un hack y lo aplico -&gt; Hala, listo.<br />En lugar de averiguar porqué falla y luego ver si tiene solución de forma estándar... que en muchos casos sorprende ver que sí la tenía y lo fácil que era.</p>\n<p>PD: Març... no recuerdo como acabé aquí, mi comentario solo pretende aclarar cuestiones que creo son incorrectas y pueden confundir a alguien. Creo que de ser una crítica, lo era constructiva, y si no las admites lo aceptaré sin problema. Es tu blog y publicas lo que quieres como es lógico.<br />Me considero algo talibán con los estándares, eso sí que aseguro que es cierto... pero como decía minid, creo que en este mundillo se necesita mucha más profesionalidad, como en cualquier otro trabajo de hecho.<br />;)</p>\n<p>* No pretendo gritar con el uso de mayúsculas, solo es para dar énfasis a lo importante, que podría haber usado strong claro ^^!</p>"
+  },
+  {
+    "id": 5824,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-06-21T17:02:42+02:00",
+    "content": "<p>No me llamo març, sinó boleteaire (març es \"marzo\" en catalán) y si en algún momento di a entender que no acepto críticas, lo lamento; como todos sabemos de los errores se aprende y si hay alguien ahí para corregirme dichos errores, pues mejor, que así aprendemos más rápidamente.</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 15798,
+    "parent": 0,
+    "author": "Fannyfu",
+    "date": "2010-11-08T18:27:29+01:00",
+    "content": "<p>Hola, yo solo quyiero agradecer por este montón de hacks que ha puesta a disposición de todos y todas en la Web. Me ha servido mucho y gracias a los comentarios que han publicado también he aprendido detalles como lo del !important. Yo tengo que usarlo muy seguido porque trabajo con el CMS Typo3 y no se me permite modificar el css original de las extensiones, sino que tengo un css que hace los cambios dependiendo de la sección del sitio. ya que una misma extensión puede funcionar para cosas distintas y lo único que debe cambiar es su presentación visual. Muchas gracias Booletaire.</p>"
+  },
+  {
+    "id": 16304,
+    "parent": 0,
+    "author": "Vicho",
+    "date": "2010-11-12T23:44:09+01:00",
+    "content": "<p>Muy buen post, la infomacion me fue muy util para cuadrar un div position relative que andaba flotando y fallaba por unos pocos pixels en cada explorador, aun me descuadra un pixel en firefox-linux pero no somos muchos los que lo usamos :D gracias por compartir la info.</p>"
+  },
+  {
+    "id": 19452,
+    "parent": 0,
+    "author": "Jose Peña",
+    "date": "2010-12-10T22:14:33+01:00",
+    "content": "<p>Hola te comento mi problema:<br />Tengo este selector en un css</p>\n<p>.enlaces {<br />margin: 0px 0px 0 20px;<br />list-style:none;<br />font-size: small; <br />text-decoration: none;<br />color: #4d4d4d;<br />}</p>\n<p>Que utilizo en el siguiente código:</p>\n<p>&lt;a href=\"\"&gt;<br />\t\t\t\t</p>\n<p>Me funciona bien en Firefox, Safari, Opera. Camino (Firefox y Safari en Mac y Pc) pero no me funciona en IE 7 ni IE 8.<br />He probado a ponerle los hacks que comentas en este articulo pero no se entera.<br />¿Alguna sugerencia?.<br />Muchas gracias por tu colaboración.</p>"
+  },
+  {
+    "id": 19453,
+    "parent": 0,
+    "author": "Jose Peña",
+    "date": "2010-12-10T22:16:35+01:00",
+    "content": "<p>Hola te comento mi problema:<br />Tengo este selector en un css</p>\n<p>.enlaces {<br />margin: 0px 0px 0 20px;<br />list-style:none;<br />font-size: small; <br />text-decoration: none;<br />color: #4d4d4d;<br />}</p>\n<p>Que utilizo en el siguiente código:</p>\n<p>Me funciona bien en Firefox, Safari, Opera. Camino (Firefox y Safari en Mac y Pc) pero no me funciona en IE 7 ni IE 8.<br />He probado a ponerle los hacks que comentas en este articulo pero no se entera.<br />¿Alguna sugerencia?.<br />Muchas gracias por tu colaboración.</p>"
+  },
+  {
+    "id": 19455,
+    "parent": 0,
+    "author": "Jose Peña",
+    "date": "2010-12-10T22:18:25+01:00",
+    "content": "<p>Hola te comento mi problema:<br />Tengo este selector en un css<br />.enlaces {<br />margin: 0px 0px 0 20px;<br />list-style:none;<br />font-size: small;<br />text-decoration: none;<br />color: #4d4d4d;<br />}<br />Que utilizo en el siguiente código:<br />\"&lt;a href=\"\"&gt;<br />\t\t\t\t\"<br />Me funciona bien en Firefox, Safari, Opera. Camino (Firefox y Safari en Mac y Pc) pero no me funciona en IE 7 ni IE 8.<br />He probado a ponerle los hacks que comentas en este articulo pero no se entera.<br />¿Alguna sugerencia?.<br />Muchas gracias por tu colaboración.</p>"
+  },
+  {
+    "id": 19709,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-12-13T13:54:00+01:00",
+    "content": "<p>Con el código que me pones no puedo ver nada... Pégame una muestra en jsfiddle</p>\n<p>http://jsfiddle.net/</p>\n<p>Y pégame el enlace ;)</p>"
+  },
+  {
+    "id": 19953,
+    "parent": 0,
+    "author": "ChUsMa",
+    "date": "2010-12-16T14:18:15+01:00",
+    "content": "<p>Buenas a todos </p>\n<p>Queria \"romper una lanza\" a favor del autor de este documento. He leído algunos comentarios que no me han gustado diciendo que quien recurre a hacks es un chapucero básicamente. A ver, esto es como usar la sentencia \"goto\" a veces es feo pero a veces es lo mas eficiente. </p>\n<p>Yo acabo de empezar en este mundo, y llamalé peculiaridades de IE8 me estan volviendo loco, gracias a esto, voy a maquetar toda mi web para firefox primero y cuando este bien, lo retocaré para crear también para IE8. Gracias a los hacks puedo solucionar de forma rápida el poder maquetar la página en  un nagegador, validar el sitio web arrancar, y el diseño finalizarlo más adelante. Además si con un hack que pongo en 1 minuto, soluciono comerme 1 hora la cabeza por algo que un cliente no me va a pagar, pues... solo decir que muchisimas gracias al autor, es bueno conocer todas las herramientas para decidir que usar en cada momento.</p>"
+  },
+  {
+    "id": 19979,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-12-16T20:06:52+01:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@ChUsMa</a> permíteme una recomendación:</p>\n<p>yo de ti iría mirando en el resto de navegadores periódicamente. No digo que lo hagas cada hora, pero cada día al terminar no está de más ya que si esperas hasta el final, cuando llegue el momento te digo por experiencia que te va a costar mucho más arreglarlo.</p>\n<p>Las dos últimas webs en que lo dejé para el final se han quedado sin soporte para IE6 (que actualmente ya no lo doy..) e IE7 por lo terrible que es trabajar con algo tan destrozado. En cambio, si cada vez que haces una sección o un módulo echas un ojo con el resto de navegadores te ahorrarás muchos dolores de cabeza.</p>\n<p>A parte de esto, merci por tu comentario :) Es agradable ver de vez en cuando gente que sí aprecia lo que aquí hacemos.</p>\n<p>Bless</p>"
+  },
+  {
+    "id": 21993,
+    "parent": 0,
+    "author": "Noelia",
+    "date": "2011-01-04T17:44:13+01:00",
+    "content": "<p>Hola a tod@s.<br />Recientemente acabo de terminar de codear una pagina y esta casi lista. <br />Pero he descubierto recientemente un problema con firefox.<br />Con la tecnica de los slindings doors utilizada en los botones, firefoz me reenderiza un pixel menos.<br />Es decir con el lado izquierdo no se ajusta con el lado derecho del bg....!!!<br />Estoy desesperada no se que mas hacer.<br />Quisiera saber si alguien conoce un hack para firefox para arrelgar estos problemas con los pixeles.</p>"
+  },
+  {
+    "id": 22625,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-10T22:03:57+01:00",
+    "content": "<p>hola, soy totalmente neófito... pero me animé a crear una página en dreamweaver y la veía bien en IE y en firefox... comente a amigos que la visitaran para que me comentasen y me acabo de instalar el google chrome pq me llegó el aviso de que no se ve ninguna imagen...<br />sabéis el problema que puede ser? si es un hack lo que necesito aplicarla...cual sería y donde habría de situarlo? muchas gracias de antemano, pq alguna cosa de la que aquí se ha hablado me ha servido... pero para este problema no doy con la solución<br />feliz 2011</p>"
+  },
+  {
+    "id": 22682,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-01-11T10:07:20+01:00",
+    "content": "<p>Hola eduardo. Por lo que me dices tiene más pinta de ser un fallo en el HTML.</p>\n<p>Revisa que estés utilizando Doctype y en caso de estar usándolo asegúrate de que el HTML <a href=\"http://validator.w3.org/\" rel=\"nofollow ugc noopener\">valide correctamente</a>.</p>\n<p>Hecho esto no creo que tengas problemas en que se vean las imágenes correctamente utilizando Chrome.</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 22923,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-13T18:57:28+01:00",
+    "content": "<p>Gracias Booletaire, ya he revisado...si es un fallo de html, y no soy quien de interpretar el como solucionar el tema de la validación, entre a validar código en http://validator.w3.org y en todas me da muchos errores y warning... pero eso de que te diga...tienes un error en \"i\" pero no te diga como has de poner ...para alguién que de programación no sabe \"na de na\" es un imposible.<br />lo mas que pude hacer es encajar todo en ie, google chrome y moz. firefox con el método tradiciones... prueva/error... y al menos se ven decentemente...<br />si puede alguién echar un vistazo y sugerirme dejo el enlace para ese alma caritativa:<br />htpp://www.eduardolucas.e.telefonica.net<br />entiendo que igual es pedir demasiado, pero gracias de antemano por la ayuda ya prestada</p>"
+  },
+  {
+    "id": 22927,
+    "parent": 22923,
+    "author": "Booletaire",
+    "date": "2011-01-13T19:25:56+01:00",
+    "content": "<p>Eduardo, fíjate bien porque sí que te da los errores. Debajo del error y de la línea de este, en todos los casos, verás un párrafo descriptivo para solucionar dicho error.</p>\n<p>Eso sí, está completamente en Inglés....</p>"
+  },
+  {
+    "id": 23007,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-14T10:25:16+01:00",
+    "content": "<p>Booletaire ya me di cuenta...y no son pocos...<br />pero lo que no se es interpretar como arreglarlos...<br />Te pongo por caso uno:</p>\n<p># Error Line 103, Column 76: element \"a.length\" undefined</p>\n<p>…  var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&lt;a.length; i++)</p>\n<p>(el error es en el último \";\")</p>\n<p>You have used the element named above in your document, but the document type you are using does not define an element of that name. This error is often caused by:</p>\n<p>    * incorrect use of the \"Strict\" document type with a document that uses frames (e.g. you must use the \"Frameset\" document type to get the \"\" element),<br />    * by using vendor proprietary extensions such as \"\" or \"\" (this is usually fixed by using CSS to achieve the desired effect instead).<br />    * by using upper-case tags in XHTML (in XHTML attributes and elements must be all lower-case).<br />pero no me hago idea de como aplicarle la solución que me dan, espero que si me dices como se aplica la solución de este, poder fijarme para solucionar los demás.<br />Hablo desde la ignorancia, no se si valdrá una solución como ejemplo para los demás.<br />Ni se si desde dreamweaver se puede solucionar en la opción \"editar\".<br />muchas gracias por tu interés.</p>"
+  },
+  {
+    "id": 23024,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-01-14T12:58:33+01:00",
+    "content": "<p>Cuando trabajas con un DOCTYPE XHTML (que está basado en XML) tendrás que poner todos los JavaScript entre comentarios CDATA:</p>\n<p>http://javascript.about.com/library/blxhtml.htm</p>\n<p>Seguramente por eso te están saltando tantos errores con los JavaScript. De hecho, la mayoría de errores que estás teniendo son por culpa de esto, así que en principio englobando cada sección de código con los CDATA debería validar casi por completo.</p>\n<p>Ya me dirás qué tal ;)</p>"
+  },
+  {
+    "id": 23080,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-14T21:59:54+01:00",
+    "content": "<p>uffff <br />toda la tarde... y nada que hacer...<br />intenté tanto con el CDATA: interno como hacer un javascript externo...<br />pero de ninguna de las dos formas logré que los rollower funcionasen...<br />Me imagino que en ambos casos sea problema de códigos, los de la página que me comentaste tampoco me funcionaron...<br />intentaré mañana buscar en mas sitios, si es que me queda donde mirar.<br />¿seré yo señor, seré yo? que burrín me siento...<br />y vaya peñazo que te doy, lo siento</p>"
+  },
+  {
+    "id": 23086,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-01-14T22:21:34+01:00",
+    "content": "<p>Cómo haces los hover (rollover)?? Los haces con JavaScript?? O con CSS (:hover)?</p>\n<p>Si los haces con JavaScript puede que sea culpa del JavaScript, ya que hay navegadores más quisquillosos que otros según cómo escribas el código. Por ejemplo, firefox e internet explorer te permitirán poner un objeto así:</p>\n<p><code><br />var objeto = {<br />      variable: \"value\",<br />      class: \"class-name\"</code></p>\n<p>}<br /></p>\n<p>Fíjate que los nombres de las variables están sin comillas. Ésto en Chrome no funcionaría porque la palabra \"class\" está reservada para otros fines (en los otros también, pero Chrome es más quisquilloso) y por eso habría que ponerlo entre comillas:</p>\n<p><code><br />var objeto = {<br />      \"variable\": \"value\",<br />      \"class\": \"class-name\"</code></p>\n<p>}<br /></p>\n<p>(En este caso la variable \"variable\" no hacía falta envolverla con comillas). Por supuesto esto no tendrá mucho que ver con el problema que estés teniendo tú, pero era para que te hicieras a la idea de qué puede estar fallando.</p>\n<p>Haz una cosa, abre la consola de Chrome (Control + Shift + J) y en la pestaña \"Consola\" fíjate en si te da errores. Si no te los da, pasa el ratón por alguna imagen observando la consola y fíjate, porque si el código está mal en algún momento Chrome tendrá que indicarte el error.</p>"
+  },
+  {
+    "id": 23162,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-15T11:10:18+01:00",
+    "content": "<p>Lo hice todo desde dreamweaver. Lo que es el javascript me quedó así:</p>\n<p>function MM_preloadImages() { //v3.0<br />  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();<br />    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&lt;a.length; i++)<br />    if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}<br />}<br />function MM_swapImgRestore() { //v3.0<br />  var i,x,a=document.MM_sr; for(i=0;a&amp;&amp;i<a rel=\"nofollow ugc noopener\">0&amp;&amp;parent.frames.length) {<br />    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}<br />  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];<br />  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);<br />  if(!x &amp;&amp; d.getElementById) x=d.getElementById(n); return x;<br />}</a></p>\n<p>function MM_swapImage() { //v3.0<br />  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&lt;(a.length-2);i+=3)<br />   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}<br />}</p>\n<p>cada vez que lo toco los enlaces funcionan pero no hacen el cambio de color los botones (rollover es el nombre que le ponían en el tutorial donde aprendí)...<br />esto igual me ha venido grande...</p>"
+  },
+  {
+    "id": 23164,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-15T11:32:53+01:00",
+    "content": "<p>vaya, entre la negrita y el azul se ha saltado esto:<br /><a rel=\"nofollow ugc noopener\"><br />y cierro con:</a></p>\n<p>tenía puesto un cierre de:<br /> en la linea siguiente al cierre <br />pero no una apertura ¿Es necesario incluir  .... ?<br />¿de ser necesario donde estaría su ubicación?<br />Va a ser como que estas con un parvulario dando clases....;-)</p>"
+  },
+  {
+    "id": 23166,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-15T11:46:27+01:00",
+    "content": "<p>tengo problemas para escribir las lineas de códigos aquí, algunas no se muestran y dejan a el resto del texto como si fuera un enlace directo.<br />Si me dices como solucionarlo para enviarte el código completo...si es que lo necesitases ver. <br />(El mensaje #24 no es nada válido.)<br />muchas gracias por todo... sino aprendo algo te enviare una dirección para que vengas a pegarme personalmente... :)</p>"
+  },
+  {
+    "id": 23170,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-01-15T12:37:25+01:00",
+    "content": "<p>Utiliza pastebin.com o jsfiddle.com para colgar el código y luego pásame el enlace.</p>\n<p>La otra opción es que utilices las etiquetas de HTML \"code\" aquí mismo en los comentarios.</p>"
+  },
+  {
+    "id": 23187,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-15T15:51:56+01:00",
+    "content": "<p>parece que pude hacer lo de pastebin.com<br />el enlace es:<br />http://pastebin.com/qJiMLVvj</p>\n<p>disculpa por llenar el foro de pruebas erroneas...<br />si puedes, seguro que estará mejor si las puedes quitar.<br />saludos</p>"
+  },
+  {
+    "id": 23347,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-01-16T22:46:12+01:00",
+    "content": "<p>Si ese es tu fichero JavaScript debes quitar el tag <code>&lt;javascript&gt;</code> del principio y el fin del documento.</p>\n<p>A parte de eso no se me ocurre qué podría ser..</p>"
+  },
+  {
+    "id": 23409,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-17T12:17:36+01:00",
+    "content": "<p>lo que hice fue añadir este código en el htm:</p>\n<p>y en el archivo .js puse las \"funtions\" cortadas y pegadas directamente desde el htm anterior.<br />He bajado los errores a 16.<br />creo que ha sido un gran paso para mi, pero no se si se podrán quitar el resto de los errores.<br />Te dejo en pastebin.com  el como me queda el código restante y los errores que me ha dado, para si puedo dejarlo ya así ó hay algo que le pueda hacer:<br />http://pastebin.com/H2E1Xgkp</p>\n<p>Si te doy demasiado la lata, coméntame. Mi problema es residir en un pequeño pueblo y no tener con quien contar.<br />Muchas gracias por todo.</p>"
+  },
+  {
+    "id": 23442,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-17T17:41:50+01:00",
+    "content": "<p>ups...en toda mi web solo tengo 1 ERROR y es en \"index\", lo demás lo tengo todo totalmente arreglado.<br />el error está en:<br />Line 105, Column 177: required attribute \"type\" not specified</p>\n<p>✉<br />The attribute given above is required for an element that you've used, but you have omitted it. For instance, in most HTML and XHTML document types the \"type\" attribute is required on the \"script\" element and the \"alt\" attribute is required for the \"img\" element.</p>\n<p>Typical values for type are type=\"text/css\" for  and type=\"text/javascript\" for .<br />Y me lo da en el símbolo &gt; de después de el 6\"<br />si lleva ó necesita arreglo, me gustaría que me comentases...<br />Trabaje bastante, pero logré entender todos lo errores menos este, el cual por mucho que busque...siempre que lo arreglo me da error por otro lado..por cierto, el &amp;amp antés era un &amp; .<br />muchas gracias por cederme algo de tu tiempo.</p>"
+  },
+  {
+    "id": 23458,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-17T20:00:36+01:00",
+    "content": "<p>para que veas la linea en cuestión:<br />http://pastebin.com/97k3MvNa</p>"
+  },
+  {
+    "id": 23543,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-18T18:22:43+01:00",
+    "content": "<p>totalmente arreglado, todo validado y 0 errores.<br />te comento por si alguien tiene el mismo problema de invalidez.<br />\"code\" que me habían facilitado:<br />\"\"</p>\n<p>código correcto:<br />\"\"</p>"
+  },
+  {
+    "id": 23544,
+    "parent": 0,
+    "author": "eduardo",
+    "date": "2011-01-18T18:36:16+01:00",
+    "content": "<p>sigo sin saber como poner aquí los códigos, cuelgo el error y la solución en pastebin.com:</p>\n<p>http://pastebin.com/kdaKDhjx</p>\n<p>http://eduardolucas.e.telefonica.net<br />totalmente validado...uffff</p>\n<p>gracias por las ayudas prestadas, si hay algo en lo que pueda yo ayudar estaré a vuestra disposición.<br />         Saludos:<br />                          Eduardo</p>"
+  },
+  {
+    "id": 36187,
+    "parent": 0,
+    "author": "Redkram",
+    "date": "2011-12-02T21:19:01+01:00",
+    "content": "<p>A ver Covi:<br />Soluciona esto sin hacks.</p>\n<p>letter-spacing:-0.05em;</p>\n<p>o un simple:</p>\n<p>height:auto!important;height:100%;min-height:100%;</p>\n<p>o otro:<br />text-shadow:#333 1px 1px 0px;</p>\n<p>y....</p>\n<p>background:#d82b8f;<br />background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e87bba), to(#d82b8f));background: -webkit-linear-gradient(top, #e87bba, #d82b8f));background: -moz-linear-gradient(top, #e87bba, #d82b8f);background: -o-linear-background(top, #e87bba, #d82b8f);background: -ms-linear-background(top, #e87bba, #d82b8f);background: linear-background(top, #e87bba, #d82b8f)</p>\n<p>IE es una mierda!</p>\n<p>Programamos para Chrome, FireFox, \"Opera\" y Safari.<br />Y arreglamos para IE&lt;\"9\" &lt;-- Tambien entre comillas.<br />Y algún inculto como yo que solo \"usamos\" HTML4/5, CSS/2/3, JQUERY/-UI, ASP/ASP.NET/PHP, administración de SQL/MySQL... y yo que se más (a si ActionScript/2/3 para Flash/Flex)+ alguna API de FB, Twitter, Google... también lo hacemos para el gran navegador que sigue a IE el super FAMOSO Green Browser. (^o^)</p>\n<p>Así que Boletaire te digo \"Ho haveu vist!!!\" XD<br />Si los llamamos HACKS pues serán HACKS tanto el !important como _ como /9 como /*\\**/</p>\n<p>Salu2</p>\n<p>Redkram</p>"
+  },
+  {
+    "id": 36205,
+    "parent": 0,
+    "author": "Daniel",
+    "date": "2012-03-30T10:36:18+02:00",
+    "content": "<p>Muchas gracias! excelente artículo que me ha funcionado a las mil maravillas en mis diseños!!</p>"
+  },
+  {
+    "id": 36220,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-05-24T00:56:44+02:00",
+    "content": "<p>Joder, ahora (más de dos años más tarde..) releo mis comentarios y pienso \"menuda forma de bajarse los pantalones...\".</p>\n<p>Covi (i Redkram tb..) la palabra !important no es un hack, hasta que se utiliza como hack.</p>\n<p>Y Covi, como bien ha dicho Redkram... y como ya dije yo hace dos años, hay navegadores que son una mierda, y hay cosas que no se pueden solucionar salvo con hacks.</p>\n<p>Eso sí, sigo pensando que la mejor vía es un fichero CSS para cada navegador para el que necesitemos hacks...</p>"
+  },
+  {
+    "id": 36254,
+    "parent": 0,
+    "author": "matorral",
+    "date": "2012-10-23T12:05:20+02:00",
+    "content": "<p>Hola Booletarie.</p>\n<p>A muchos nos das vidilla. <br />Los comentarios tipo 'Covi' (que no aportan nada) lo unico que hacen es frustrar a los que sin ser muy inteligentes (con o sin titulación) intentamos buscarnos las habichuelas en este mundillo.<br />El tiempo de respuesta a nuestros proyectos está limitados al presupuesto del cliente y a veces no hay tiempo extra para florituras.</p>\n<p>Estoy contigo nen.</p>\n<p>P.D. lo de bajada de pantalones no es así. Yo lo llamaría educación.</p>\n<p>Enhorabuena por tu blog, que como estás comprobando nos ayuda por los siglos de los siglos.</p>"
+  },
+  {
+    "id": 36255,
+    "parent": 0,
+    "author": "matorral",
+    "date": "2012-10-23T12:06:42+02:00",
+    "content": "<p>P.D. (otra vez).</p>\n<p>Quise decir Booletaire.</p>\n<p>Perdon por robaros vuestro tiempo.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 36256,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-10-23T12:10:31+02:00",
+    "content": "<p>Gracias matorral! Comentarios como el tuyo son los que me animan a seguir compartiendo :)</p>\n<p>A ver si pronto me vuelvo a poner, que le tengo ganas ya!</p>\n<p>Para los que programéis, podéis estar al tanto de algunas cosillas que voy haciendo nuevas y que no publico aquí desde <a href=\"https://github.com/elboletaire\" rel=\"nofollow ugc noopener\">mi github</a>.</p>\n<p>Ah, y \"pronto\" nuevo diseño de la web y toda hecha en Cake, que ya toca!</p>"
+  },
+  {
+    "id": 36258,
+    "parent": 0,
+    "author": "carlos",
+    "date": "2012-10-24T19:12:25+02:00",
+    "content": "<p>hola quetal amigos nececitos ayuda en mi web tengo un slider en el home pero me afecta a mas imagenes que estan en la pagina por que desaparecen y aparecen al compas del slider a<br />pero solo sucede en chrome en ie9 no.<br />Gracias!!</p>"
+  },
+  {
+    "id": 36262,
+    "parent": 0,
+    "author": "kirito",
+    "date": "2012-12-11T23:11:57+01:00",
+    "content": "<p>me le cago en la madre a todos</p>"
+  },
+  {
+    "id": 36308,
+    "parent": 0,
+    "author": "Monker",
+    "date": "2013-02-04T17:20:54+01:00",
+    "content": "<p>opera 12</p>\n<p>doesnotexist:-o-prefocus, .example {<br />  color: red;<br />}</p>"
+  },
+  {
+    "id": 36381,
+    "parent": 0,
+    "author": "Ropa niños outlet",
+    "date": "2013-07-22T10:26:52+02:00",
+    "content": "<p>buen puesto</p>"
+  },
+  {
+    "id": 36398,
+    "parent": 0,
+    "author": "Harold",
+    "date": "2013-10-10T23:23:29+02:00",
+    "content": "<p>Pues llegue por aqui buscando los hacks para los navegadores. Me lei los comentarios, y quisiera dar mi opinion sin ofender a nadie.</p>\n<p>El utilizar \"hacks\" no es que no sabes CSS o que tenes que estudiarte todo sobre HTML y CSS para poder \"maquetar correctamente\", eso solo lo diria alguien que \"alguien le conto\", o lo leyo por ahi. Si los mal llamados Hacks no fueran necesarios, no existirian, yo en mis casi 15 años de trabajar desarrollando en la web, nunca un diseño ha funcionado bien en todos los navegadores, por mas \"genio\" que te creas que eres y la razon es sencilla, cada motor de los navegadores funciona diferente y renderea las cosas de forma diferente, por lo tanto no siempre se van a mostrar las cosas igual, esto es como decir que una pelicula filmada en los 80s se va a ver perfectametne bien en una pantalla de 50\" LED de ahora, los colores, la profundidad del negro, el noise, todo, se ve ligeramente diferente, pues lo mismo es con los navegadores y la maquetacion.</p>\n<p>Quisiera ver una pagina compleja que no utilice hacks....</p>"
+  },
+  {
+    "id": 37023,
+    "parent": 0,
+    "author": "Yaha",
+    "date": "2014-02-27T15:50:42+01:00",
+    "content": "<p>Siendo ésta una publicación antigua me ha servido en varios desarrollos, solo quiero agradecer el post, gracias.</p>\n<p>Saludos.</p>"
+  },
+  {
+    "id": 37024,
+    "parent": 37023,
+    "author": "Booletaire",
+    "date": "2014-02-27T17:49:15+01:00",
+    "content": "<p>Gracias a ti por tu comentario :)</p>"
+  }
+]

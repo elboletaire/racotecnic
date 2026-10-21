@@ -1,0 +1,37 @@
+[
+  {
+    "id": 36248,
+    "parent": 0,
+    "author": "Alvaro Rubioc",
+    "date": "2012-09-14T01:04:45+02:00",
+    "content": "<p>Hola!</p>\n<p>Esto es justo lo que necesito, muchas gracias por tu aporte.<br />Aunque tendrás que disculpar mi ignorancia, pero no se muy bien donde poner el código dentro de mi wordpress y como hacer el botón que muestre la pantalla completa.</p>\n<p>Gracias!</p>"
+  },
+  {
+    "id": 36249,
+    "parent": 36248,
+    "author": "Booletaire",
+    "date": "2012-09-14T01:10:40+02:00",
+    "content": "<p>Buscando en google he encontrado esto que creo que te irá muy bien: http://www.longtailvideo.com/blog/26517/using-the-browsers-new-html5-fullscreen-capabilities</p>"
+  },
+  {
+    "id": 36250,
+    "parent": 0,
+    "author": "Alvaro Rubioc",
+    "date": "2012-09-14T11:03:53+02:00",
+    "content": "<p>gracias!</p>\n<p>finalmente usé:<br />http://robnyman.github.com/fullscreen/</p>\n<p>y el resultado es este: http://www.splitboardmag.com/01-demo/01-editorial/</p>\n<p>Gracias!</p>"
+  },
+  {
+    "id": 36251,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-09-14T13:17:52+02:00",
+    "content": "<p>Ahora tienes que encontrar la manera de que no te salte al cambiar de página ;p</p>"
+  },
+  {
+    "id": 36252,
+    "parent": 0,
+    "author": "Kalvin Manson",
+    "date": "2012-10-05T15:10:34+02:00",
+    "content": "<p>Esta super full el código me servirá mucho. gracias.</p>"
+  }
+]

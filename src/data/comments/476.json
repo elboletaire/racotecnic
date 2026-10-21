@@ -1,0 +1,79 @@
+[
+  {
+    "id": 3738,
+    "parent": 0,
+    "author": "Marc",
+    "date": "2010-01-13T21:45:15+01:00",
+    "content": "<p>Hola,</p>\n<p>Excelente trabajo muchas gracias por compartir tus conocimientos... donde puedo conseguir mas informacion de SDK Android en castellano ? Trabajo des de un MAC y adb no me reconoce el telefono (device not found) y no puedo instalar ninguna aplicacion ni ejecutar la shell, aunque en el finder se encuentra la unidad de disco del telefono y puedo navegar por este sin problemas.</p>"
+  },
+  {
+    "id": 3740,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-13T23:12:59+01:00",
+    "content": "<p>Hace ya bastante que no miro nada de Android y jamás llegué a ahondar lo suficiente en él como para tener alguna página en favoritos, lo lamento.</p>\n<p>Saludos</p>"
+  },
+  {
+    "id": 31003,
+    "parent": 0,
+    "author": "tomascao",
+    "date": "2011-04-16T20:47:59+02:00",
+    "content": "<p>Hola muy util pero tengo una pregunta, que version de netbeans utilizastes para agregar el repositorio de update?? gracias un saludo.</p>"
+  },
+  {
+    "id": 31030,
+    "parent": 0,
+    "author": "Paulina",
+    "date": "2011-06-09T19:16:12+02:00",
+    "content": "<p>Hola, muy buen post..pero a mi me sale un error cuando meto la página web en los complementos..Dice que ya no existe y que no la puede verificar. Que revise firewall y puerto pero creo que no es por eso. En fin si me pueden ayudar, necesito el módulo de Android ya que tengo que desarrollar una pequeña aplicación para una asignatura. Muchas gracias</p>"
+  },
+  {
+    "id": 31031,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-06-09T20:20:16+02:00",
+    "content": "<p>Paulina, puedes encontrarlo utilizando el buscador de proyectos de la própia página, mediante el término \"nbandroid\":</p>\n<p>http://kenai.com/projects/nbandroid</p>"
+  },
+  {
+    "id": 31032,
+    "parent": 0,
+    "author": "Paulina",
+    "date": "2011-06-10T22:24:40+02:00",
+    "content": "<p>Hola de nuevo, ya instalé todo lo de android directamente de netbeans como lei en otro foro. la cuestion ahora es que tras haber seguido los pasos que aqui indicas mi terminal no \"funciona\" . Los comandos como -ls , -cd o -rmdkr no se ejecutan y cada vez que abro la terminal me salen 2 líneas al principio con la sentencia que teniamos que ejecutar antes . Estoy preocupada ya que nose como pueda eso afectar al SO. Si me pudieras ayudar de lo agradecería. Soy bastante nueva en esto de mac ya que siempre he usado windows.</p>"
+  },
+  {
+    "id": 31033,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-06-12T11:13:13+02:00",
+    "content": "<p>¿¿Cómo has abierto la terminal y cómo estás introduciendo los comandos?? No serías la primera que confunde alguna otra cosa con la terminal...</p>"
+  },
+  {
+    "id": 31035,
+    "parent": 0,
+    "author": "Paulina",
+    "date": "2011-06-13T14:43:52+02:00",
+    "content": "<p>No, la terminal es la terminal. Introduje todo desde linea de comandos, la cosa es que tras modificar el .profile iba a hacer unas cosillas sencillas que suelo gestionar desde el terminal y directamente no me deja..pero todo ello despues de modificar el .profile que puede que eso si que lo haya hecho mal.. y ahora no sé arreglarlo.</p>"
+  },
+  {
+    "id": 31529,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-07-05T13:32:54+02:00",
+    "content": "<p>Siempre puedes mirar de acceder a tu máquina vía SSH si no te funciona el terminal. Para ello deberás activar el acceso SSH desde las opciones de red.</p>\n<p>Otra opción que tienes es buscar el fichero con el finder y modificarlo con algún editor de texto. El problema de esta opción es que, dado que .profile es un fichero oculto, antes deberás instalarte algún plugin para mostrar los ficheros ocultos.</p>"
+  },
+  {
+    "id": 36155,
+    "parent": 0,
+    "author": "Cerros",
+    "date": "2011-08-03T14:47:17+02:00",
+    "content": "<p>La liga hacia el xml para instalar el plugin de NetBeans y no funciona. Saludos!</p>"
+  },
+  {
+    "id": 36156,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-08-03T14:53:49+02:00",
+    "content": "<p>Un poco más arriba ya comentaban que el xml no funcionaba y ya respondí que utilizando el buscador no se tarda ni un minuto en encontrarlo:</p>\n<p>http://kenai.com/projects/nbandroid/downloads/download/updatecenter/updates.xml</p>"
+  }
+]

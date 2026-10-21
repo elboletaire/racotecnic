@@ -1,0 +1,16 @@
+[
+  {
+    "id": 36206,
+    "parent": 0,
+    "author": "losobrinos",
+    "date": "2012-03-30T15:30:52+02:00",
+    "content": "<p>Hermano, te felicito que detallazo. que buen aporte...</p>"
+  },
+  {
+    "id": 36208,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-04-02T15:55:56+02:00",
+    "content": "<p>Esta entrada está muy desactualizada. Hoy en día puedes hacer esto mismo sin jQuery, utilizando las nuevas funciones para navegar por el historial de HTML5. Espero sacar pronto un update de esta entrada con esto que estoy mencionando.</p>\n<p>https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history</p>"
+  }
+]

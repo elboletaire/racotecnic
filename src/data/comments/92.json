@@ -1,0 +1,142 @@
+[
+  {
+    "id": 174,
+    "parent": 0,
+    "author": "Daniel",
+    "date": "2009-03-01T17:25:51+01:00",
+    "content": "<p>sabes como hacer un registro de usuarios pero sin PHP, solo java/javascript... si sabes por favor ayudame!!</p>"
+  },
+  {
+    "id": 522,
+    "parent": 0,
+    "author": "Ruben",
+    "date": "2009-04-04T14:31:02+02:00",
+    "content": "<p>Soy un completo ignorante de código pero me estoy peleando con estas cosas para hacer mi web... Me gustaría hacer un formulario para que la gente se registre pero sin que lo hagan con la interfaz de wordpress sino con un formulario propio pero... Con el código que tu has puesto, cuál es la forma de materializarlo en la página? Es decir, perdona por una pregunta que supongo será tan básica, pero este código lo haces una página php y luego lo enlazas dese la pagina? o funciona desde un post/página del blog? Uhmmm dudas dudas... Supongo que me llevará mucho tiempo enterame de esto..<br />Gracias.</p>"
+  },
+  {
+    "id": 551,
+    "parent": 522,
+    "author": "Booletaire",
+    "date": "2009-04-05T16:49:09+02:00",
+    "content": "<p><a rel=\"nofollow ugc noopener\">@Ruben</a> si no me equivoco, durante la explicación, indico que para hacer esto asumo que tenéis conocimientos sobre cómo enviar y recibir datos vía GET y POST con PHP. Así mismo creo recordar que puse algún enlace hacia algún manual sobre cómo hacerlo. Mírate dichos manuales, haz alguna prueba por tu cuenta y cuando lo tengas un poco por la mano vuelve aquí y verás como ya no te suena tanto a chino.</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 1240,
+    "parent": 0,
+    "author": "Valentin Yonte",
+    "date": "2009-04-25T16:37:12+02:00",
+    "content": "<p>Saludos, <br />gracias por la explicacion, muy clara, pero tengo un problema, y es que el role pese a que lo inserta bien en el array del formulario, cuando compruebo el role en el backoffice de wordpres ver. 2.7.1, me muestra el role mas basico de subscriptor. Alguna sugerencia?<br />saludos<br />Valentin Yonte</p>"
+  },
+  {
+    "id": 1251,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2009-04-25T23:03:06+02:00",
+    "content": "<p>Hola amigo, tengo un problema con la cuestion que el formulario no confirma si un usuario esta previamente en la base de datos de WP y por ende me los duplica tanto el username como el email, tendras parte del codigo que podria agregarle a este para que me haga esa validacion?</p>\n<p>Saludos</p>"
+  },
+  {
+    "id": 1333,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-04-27T14:24:35+02:00",
+    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">@Valentin</a>, acabo de ver en la documentación que el tema de los roles ha cambiado bastante. Echa un vistazo a la <a href=\"http://codex.wordpress.org/Roles_and_Capabilities\" rel=\"nofollow ugc noopener\">página de roles</a> para ver si lo has escogido correctamente.</p>\n<p>Prueba a <a href=\"http://es2.php.net/serialize\" rel=\"nofollow ugc noopener\">serializar</a> el rol antes de introducirlo, ya que observo en la base de datos que los datos de la celda \"capabilities\" (correspondiente a los permisos de usuario) tiene sus datos serializados.</p>\n<p>Si esto no te funciona prueba a utilizar la función <a href=\"http://codex.wordpress.org/Function_Reference/update_usermeta\" rel=\"nofollow ugc noopener\">update_usermeta</a> tras insertar el usuario para actualizar los datos de la celda \"capabilities\".</p>\n<p>Si nada de esto funciona quizás la única opción que te quede es utilizar la función <a href=\"http://codex.wordpress.org/Function_Reference/wp_create_user\" rel=\"nofollow ugc noopener\">wp_create_user</a> seleccionando el rol que quieres dar a los usuarios por defecto en el panel de control de Wordpress.</p>\n<p><a rel=\"nofollow ugc noopener\">@Francisco</a>, puedes utilizar las funciones <a href=\"http://codex.wordpress.org/Function_Reference/validate_username\" rel=\"nofollow ugc noopener\">validate_username</a>, <a href=\"http://codex.wordpress.org/Function_Reference/username_exists\" rel=\"nofollow ugc noopener\">username_exists</a> y <a href=\"http://codex.wordpress.org/Function_Reference/email_exists\" rel=\"nofollow ugc noopener\">email_exists</a> para comprobar si el nombre de usuario es válido, si existe o si el e-mail es válido respectivamente.</p>\n<p>Puede que haya alguna función más de validación que se me pase por alto, echa un vistazo a la <a href=\"http://codex.wordpress.org/Function_Reference\" rel=\"nofollow ugc noopener\">página de referencia de funciones</a> por si quieres encontrar alguna más.</p>\n<p>Espero haberos sido de ayuda a ambos :)</p>"
+  },
+  {
+    "id": 1347,
+    "parent": 0,
+    "author": "Valentin Yonte",
+    "date": "2009-04-27T19:14:19+02:00",
+    "content": "<p>Gracias por Responder <br />Hola Booletaire, he revisado la pagina que me has facilitado, y en principio el role es correcto, ya que aunque ha variado de la 1.5 a la 2.0, el role de contributor queda nombrado de la misma forma. Modifica algo sobre las Capabilities, pero no en si el nombre del Role.  no  se que puede estarnos pasando. He buscado en Google, pero no encuentro nada claro, y de lo que llego a leer es de hace mas de 2 años...</p>\n<p>-----<br />Gracias<br />Valentin Yonte</p>"
+  },
+  {
+    "id": 1388,
+    "parent": 1347,
+    "author": "Booletaire",
+    "date": "2009-04-28T12:49:05+02:00",
+    "content": "<p>Lamento no poder ayudarte más <a rel=\"nofollow ugc noopener\">@Valentin</a>. Si tuviera tiempo lo intentaba yo mismo, pero justo ahora empiezo con un proyecto que me llevará bastante tiempo.</p>\n<p>De todos modos, insisto, ¿has utilizado la función update_usermeta? No la he utilizado pero creo que debería funcionar. Prueba serializando los datos y no serializándolos a ver si tienes suerte...</p>\n<pre><code>$datos = serialize(array('administrator'));\nupdate_usermeta($idusuario,'capabilities',$datos);</code></pre>\n<p>Recuerda que la id de usuario te la devuelven las funciones wp_create_user y wp_insert_user una vez creado éste.</p>\n<p>Espero que puedas solucionarlo y confío que si lo logras finalmente me lo hagas saber ;)</p>\n<p>Salu2!</p>"
+  },
+  {
+    "id": 1550,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2009-05-01T21:24:00+02:00",
+    "content": "<p>Gracias amigo, estoy un poco limitados en conocimientos técnicos, la primera parte le comprendí porque tu diste los códigos el paso a paso, pero aquí si me bloqueo, gracias de todas formas.</p>"
+  },
+  {
+    "id": 1585,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2009-05-02T18:02:40+02:00",
+    "content": "<p>Hola Booletaire, nuevamente molestando, mira por mas que le intento nada mas no, tengo el mismo problema que Valentin con los roles, también no quiero que ponga el de por default de WP si no uno que yo escoja, y de la misma manera tengo el problema de la duplicación de usuarios en la base de datos, ahora bien se que tienes trabajo y estas ocupado, ya tengo el formulario hecho solo me faltan estos detalles, yo no soy programador y la primera parte que diste pues se me hizo sencillo de interpretar, pero cuando hablas de serializar etc etc no entiendo mucho, te propongo algo, cuanto me cobras por echarme a funcionar bien ese formulario?, se que te puede llevar una o dos horas a lo mejor resolverlo pero a mi me puede llevar días o meses en lo que aprendo jejeje contéstame si gustas a mi correo y nos ponemos de acuerdo, de todas formas ando moviéndome pero si tu me puedes ayudar mejor y claro unos dolares por este favor creo que es justo.</p>\n<p>gracias</p>"
+  },
+  {
+    "id": 1705,
+    "parent": 1585,
+    "author": "Booletaire",
+    "date": "2009-05-05T12:04:22+02:00",
+    "content": "<p>Hola Francisco. Lamento no poder ayudarte... cómo he dicho anteriormente estoy muy ocupado, justo ahora empiezo con un trabajo de fin de curso y me llevará algo más de un mes y ya me está ocupando todo mi tiempo.</p>\n<p>Por otro lado, no te cobraría por algo tan sencillo; todo <a href=\"http://www.underave.net/\" rel=\"nofollow ugc noopener\">underave</a> ha sido creada por amor al arte y no me parecería correcto. Puede que cuando se me acabe la faena haga un tutorial más específico para hacer un registro de usuarios externo a Wordpress, quién sabe.</p>\n<p>Salu2!</p>"
+  },
+  {
+    "id": 1741,
+    "parent": 0,
+    "author": "Francisco",
+    "date": "2009-05-10T16:40:36+02:00",
+    "content": "<p>Hola amigo, he buscado a alguien que pueda hacer esto y al parecer nadie dice \"yo\" :) en fin, si conocieras a alguien que me diera una mano y me sacara del problema te lo agradecería, ya que como dices que te pasaras mucho tiempo ocupado pues no me imagino hasta cuando te podrás desocupar, honestamente si me urge y si tienes algún colega que ayude a este ignorante en programación estaría muy agradecido, nuevamente te reitero la oferta a lo mejor puedas sacar 10 minutos al día durante 12 días y en 2 horas puedas ayudarme jejeje, disculpa la insistencia, no lo tomes a mal, solo quiero solucionar mi necesidad, o tu que estas mas involucrado en este medio un colega o amigo programador que me puedas referir.</p>\n<p>Saludos</p>"
+  },
+  {
+    "id": 2069,
+    "parent": 0,
+    "author": "Raul Gutirreti",
+    "date": "2009-07-15T21:06:14+02:00",
+    "content": "<p>Hola. Parece que falta incluir (Require) algun otro archivo. me tira un error</p>\n<p>call to undefined method stdClass::set_prefix() in wp-settings.php on line 268</p>\n<p>Alguna idea de que esta pasando ? No logro darme cuenta</p>\n<p>Hice el Require de los 2 archivos indicados en tu codigo. Saludos!</p>"
+  },
+  {
+    "id": 2070,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-07-15T21:59:33+02:00",
+    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">Raul</a>, estoy bastante seguro de que no falta ningún include, el módulo de registro que hice con ello funciona correctamente a día de hoy.</p>\n<p>El problema puede estar en la versión de Wordpress que estás utilizando, es muy nueva? Puede que este post ya haya quedado desactualizado.. y no recuerdo muy bien la versión para la cual lo hice (gran fallo por mi parte no haberlo puesto en el post) pero me parece que era la versión 2.6.</p>\n<p>Espero que me digas la versión que utilizas para así poder plantearme el crear un nuevo artículo actualizado a la última versión :)</p>\n<p>Salu2</p>"
+  },
+  {
+    "id": 2144,
+    "parent": 0,
+    "author": "Jorge",
+    "date": "2009-07-29T00:44:18+02:00",
+    "content": "<p>Booletaire: Muy interesante y util tu post, estoy investigando hace dos semanas como hacer el login / Inicio de session al wordpress de forma externa.. mi itencion es usar los mismo usuarios de la tabla wp_users. pero se me complica por la encriptacion class_phpass.php que usa. sera que podrias darme una manito para utilizart la misma funcion</p>\n<p>Gracias</p>"
+  },
+  {
+    "id": 2145,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-07-29T11:02:50+02:00",
+    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">Jorge</a>,</p>\n<p>explícame detalladamente lo que quieres hacer. ¿Cuándo exactamente vas a utilizar la classe de encriptación? ¿Estás utilizando las funciones propias de Wordpress o te has descargado la classe phpass y pruebas directamente con ella?</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 2146,
+    "parent": 0,
+    "author": "jorge",
+    "date": "2009-07-29T13:40:59+02:00",
+    "content": "<p>Antes nada muchas gracias por responder, bueno. lo que quiero hacer es utlizar un formulario de login completamente externo al wordpress, actualmente la unica relacion que tiene mi formulario con el wordpress es que se conecta a su tabla de usuarios wp_users.</p>\n<p>El problema existe cuando realizo el select consultando usuario y contrasenia, la contrasenia encriptada del wordpress nunca se me iguala a la contrasenia que genero con la misma clase \"class_phpass.php\" por decirte asi la contrasenia es \"1234\" el wordpress con su funcion crea</p>\n<p>$P$f37hd73d7h73hhd73774488488438mms</p>\n<p>y yo con mi formulario utilizando la misma clase que usa y generando el mismo valor \"1234\" me genera distinto</p>\n<p>$P$hhfhhd73h7hr737y33323mrmjd833e33</p>\n<p>y ahi me encuetro con el problema de valicacion las contrasenias son las mismas pero el hash no.</p>\n<p>lo que te consultaba anteriormente es si existe la posibilidad de usar alguna clase de wordpress para realizar el login asi como tu tutorial<br />Saludos</p>"
+  },
+  {
+    "id": 2148,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-07-29T16:22:39+02:00",
+    "content": "<p>Sí que existe. Si sabes inglés puedes ir a esta página:</p>\n<p>http://www.cubehouse.org/2008/12/external-login-using-the-wordpress-27-login-system/</p>\n<p>Pero por si te interesa continuar con tu intento.. ¿Con qué valores has iniciado la clase phpass?</p>\n<p>Si te has mirado la documentación de wordpress sabrás que hay que iniciarla con ciertos valores (y si no lo sabías te lo acabo de contar ;)). El \"iteration_count\" debe estar a 8 y \"portable_hashes\" debe estar activado (true).</p>\n<p>Espero que con esto tengas suficiente. Si tienes cualquier otra duda ya sabes ^^</p>"
+  },
+  {
+    "id": 4883,
+    "parent": 0,
+    "author": "Rafael",
+    "date": "2010-04-23T21:56:01+02:00",
+    "content": "<blockquote>\n<strong><a rel=\"nofollow ugc noopener\">Raul Gutirreti</a> :</strong>\nHola. Parece que falta incluir (Require) algun otro archivo. me \ntira un error\ncall to undefined method stdClass::set_prefix() in wp-settings.php on\n line 268\nAlguna idea de que esta pasando ? No logro darme cuenta\nHice el Require de los 2 archivos indicados en tu codigo. Saludos!\n</blockquote>\n<p>Saludos Booletaire:</p>\n<p>   Muy interasante tu explicacion. Sabes, tengo un problema similar al que que te planteaba Raul y parece que efectivamente es un asunto de versiones. En mi caso estoy tratando de comunicar con WordpressMu 2.9.2. Tengo exactamente el mismo error pero en esta ocasion en la linea 286 \"Fatal error: Call to undefined method stdClass::set_prefix() in C:\\xampp\\htdocs\\blogs\\wp-settings.php on line 286\". </p>\n<p>   Les agradezco cualquier ayuda que me puedan brindar, no se si ya raul logro sulucionarlo.</p>\n<p>Gracias,<br />Rafael.</p>"
+  },
+  {
+    "id": 36207,
+    "parent": 0,
+    "author": "julio",
+    "date": "2012-04-01T01:38:26+02:00",
+    "content": "<p>gracias</p>"
+  }
+]

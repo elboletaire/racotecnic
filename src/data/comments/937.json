@@ -1,0 +1,72 @@
+[
+  {
+    "id": 3225,
+    "parent": 0,
+    "author": "jose",
+    "date": "2009-11-17T19:04:01+01:00",
+    "content": "<p>Efectivamente me identifico con tu caso, Aptana 1.5 ademas de colorear el codigo como otros editores, tambien el indicar que codigo o que llave va con cual, tambien su fabuloso debbuger en vivo, asi como bien dices, sus autocompletaciones, de verdad que esto no lo he visto en otros, todo esto junto no, hablando de IDE de libre distribucion preferiblemente bajo software libre como linux.</p>\n<p>Por favor, si consigues Aptana 1.5 para Linux con adaptacion a PHP te agradeceria mucho ya que efectivamente ha costado conseguirlo. Y no entiendo como el grupo de trabajo de Aptana en su propia web no indican facilmente alguna pagina de repositorio de sus versiones para que el usuario pueda libremente descargar lo que mas acorde a sus necesidades necesite.</p>\n<p>No cambio Aptana 1.5 por 2.0.</p>"
+  },
+  {
+    "id": 3229,
+    "parent": 3225,
+    "author": "Booletaire",
+    "date": "2009-11-18T13:09:59+01:00",
+    "content": "<p>No acabo de entender a qué te refieres con lo de \"si consigo Aptana 1.5 para linux con adaptación a PHP\"... </p>\n<p>en el post puedes descargar Aptana para Linux y su plugin de PHP.</p>"
+  },
+  {
+    "id": 3380,
+    "parent": 0,
+    "author": "bad",
+    "date": "2009-12-02T01:29:27+01:00",
+    "content": "<p>Muchas gracias por tus enlaces... la verdad aptana 2 desmejoró mucho respecto a sus versiones anteriores, una pregunta como le instalo el pluggin?</p>\n<p>Gracias.</p>"
+  },
+  {
+    "id": 3412,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-12-04T22:14:02+01:00",
+    "content": "<p>Si es desde windows en principio no hace falta que te descargues el plugin, puedes instalarlo directamente desde la administración de plugins.</p>\n<p>En caso de que necesites descargar el plugin por separado, para instalarlo vete a <b>Help</b> / <b>Install New Software...</b> / Le das a <b>Add</b> / <b>Archive</b> / Buscas el fichero y le pones un nombre / Luego siguiente, siguiente, siguiente... </p>\n<p>;)</p>"
+  },
+  {
+    "id": 3722,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-01-11T11:15:04+01:00",
+    "content": "<p>Otro modo de instalar el plugin PHP es instalandolo desde la siguiente URL (mediante el sistema de instalación de paquetes de eclipse):</p>\n<p>http://update.aptana.com/install/php</p>\n<p>Probado en Aptana 2.0 sin problemas.</p>"
+  },
+  {
+    "id": 3891,
+    "parent": 0,
+    "author": "frezz",
+    "date": "2010-02-01T15:14:26+01:00",
+    "content": "<p>Antes de nada decir que acabo de descubrir esta web y que hace muy buena pinta, así que felicidades y un saludo a la comunidad.</p>\n<p>El tema en cuestión es que estoy haciendo algunos tests para ver si cambio de Zend Studio a Aptana 1.5 (vía fiasco Aptana 2.0) y de momento la versión básica me está pareciendo más completa. Me falta ver como debugar PHP que por lo que comentáis también viene bien cubierto por Aptana pero, después de unas cuantas pruebas, todavía no he encontrado como hacerlo. Así pues, si alguien tiene a bien echarme un cable con este asunto pues estaría muy agradecido.</p>\n<p>Un saludo!</p>"
+  },
+  {
+    "id": 3894,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-01T19:51:48+01:00",
+    "content": "<p>Hola frezz, bienvenido al Racó Tècnic! Te invito a que eches un vistazo rápido al resto de entradas para que veas qué se cuece por aquí ;)</p>\n<p>Si por <i>debug</i> te refieres a un <i>debug auténtico</i>, la verdad, no tengo ni idea. Si, por el contrario, te refieres al <i>debug en vivo</i> que comentábamos antes simplemente necesitas el plugin PHP de Aptana. Una vez instalado (en teoría) al abrir un documento PHP te lo colorea y, en caso de haber algún fallo, te marca el error (a esto nos referíamos con <i>debug en vivo</i>).</p>\n<p>Por otro lado, hace poco descubrí que con Aptana 2.0 se puede instalar sin problemas el plugin Aptana PHP, así que fue un error por mi parte decir que era culpa de la versión 1.5. No obstante, de la versión 1.5 a la 2.0 ha habido bastantes cambios de entorno, lo que me descolocó bastante los primeros días y fue uno de los motivos por los que volví a Aptana 1.5.</p>\n<p>En fin, que si tenéis la oportunidad os recomiendo que instaléis la última versión de Aptana, eso sí, con el plugin Aptana PHP en lugar de con las PHP Developer Tools (PDT).</p>\n<p>Salud</p>"
+  },
+  {
+    "id": 3897,
+    "parent": 0,
+    "author": "frezz",
+    "date": "2010-02-01T20:12:32+01:00",
+    "content": "<p>Yo de nuevo, y creo que puedo hacer algún aporte referente a mi propia duda. No puedo poner la mano en el fuego de que ya la tenga resuelta al 100%, pero creo que estoy bastante cerca. Lo resumo por si alguien llega por aquí en mi misma situación:</p>\n<p>1.-He partido de este artículo:</p>\n<p>  http://docs.aptana.com/docs/index.php/Basic_PHP_Debugging</p>\n<p>Que se supone que es el abc pero ya de buen principio no me cuadraban algunas de las opciones de configuración que comenta, hasta que me he dado cuenta de que tenía que instalar el PDT (supongo que debe ser algo muy obvio, pero contaba que Aptana ya venía con una base de herramientas PHP).</p>\n<p>2.-Instalar PDT para Aptana en principio \"Help-&gt;Install Aptana Features\" PHP Development Tools, pero no ha sido tan fácil. Vía este enlace:</p>\n<p>https://aptanastudio.tenderapp.com/faqs/third-party-plugins/aptana-studio-and-php-development-tools</p>\n<p>Donde explica que se debe habilitar el servidor Galileo para las descargas, he conseguido actualizarlo. </p>\n<p>3.-En este punto he vuelto al artículo del punto 1, básicamente en la parte que se refiere a la configuración del php.ini. He cogido la dll de xdebug (en mi caso php_xdebug-2.0.5-5.2.dll que ya la tenía del zend) y he definido la configuración básica.</p>\n<p>3.- Definir en Aptana configuración de debug para paginas php. Le he puesto el enlace a una página php, pero entre que el debug se quedaba a medias y que utilizaba el navegador interno de Aptana (yo quería que usara firefox) pues todavía no podía cantar victoria.</p>\n<p>4.- En este punto, vía este enlace:</p>\n<p>http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=depurarEnPHPEclipsePDTXdebug</p>\n<p>He encontrado como configurar Aptana para que use navegadores externos (\"Configurar Eclipse PDT con Xdebug\") y creo que ya sí que tengo lo que necesito.</p>\n<p>Bueno, lo dejo aquí por si a alguien le puede servir e igualmente si alguien puede coregir algo de lo que digo también se agradece.</p>\n<p>Saludos</p>"
+  },
+  {
+    "id": 3898,
+    "parent": 0,
+    "author": "frezz",
+    "date": "2010-02-01T20:20:42+01:00",
+    "content": "<p>Vaya, veo que se han solapado los mensajes, no había visto el tuyo cuando he escrito el anterior. </p>\n<p>Por lo que me dices estábamos hablando de temas distintos, no conocía el término debug en vivo. De todos modos gracias por la aportación sobre Aptana 2.0. Por mi parte estaré unos días trabajando con el 1.5 para ver si mejora el Zend Studio y luego ya miraré las versiones posteriores.</p>\n<p>Un saludo</p>"
+  },
+  {
+    "id": 3912,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-02-02T19:20:27+01:00",
+    "content": "<p>Claro, yo con \"debug en vivo\" (como decía antes..) me refiero a algo que en realidad no es un debug.. sinó más bien un corrector ortográfico xD</p>\n<p>Me alegro que hayas podido solucionar el problema, y merci por la respuesta, seguro que a alguno le va bien el asunto.</p>\n<p>Salud!</p>"
+  }
+]

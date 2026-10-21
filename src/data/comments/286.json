@@ -1,0 +1,170 @@
+[
+  {
+    "id": 501,
+    "parent": 0,
+    "author": "Seifreed",
+    "date": "2009-04-03T16:02:32+02:00",
+    "content": "<p>Hola!</p>\n<p>He visto que has echo el modo de crakeo, convencional autenticándote contra el AP y demás<br />Te traigo(Por si no conoces) Una nueva manera de hacerlo que es utilizando wesside.ng.<br />http://seifreed.wordpress.com/2009/03/04/crackeo-de-wep/</p>"
+  },
+  {
+    "id": 552,
+    "parent": 501,
+    "author": "Booletaire",
+    "date": "2009-04-05T16:51:00+02:00",
+    "content": "<p>Pues no, no lo conocía <a rel=\"nofollow ugc noopener\">@Seifreed</a>. Le echaré un vistazo y haré unas pruebas cuando tenga un rato y quizás lo publique por aquí.</p>\n<p>Gracias por el enlace! ;)</p>"
+  },
+  {
+    "id": 598,
+    "parent": 0,
+    "author": "blackened",
+    "date": "2009-04-07T03:41:01+02:00",
+    "content": "<p>excelente todo muy bien detallado(a mi no me funciono lo del macchanger) pero vale meti mi propia macadrress, lo cual lo encuentro irrelevante xq de todas maneras se logra el objetivo del tutorial, quiero felicitarte xq se que te has tomado tu tiempo para investigar, para hacer pruebas, y sobre todo para que funcione, y lo mas importante que lo hayas compartido en la web de una manera tan sencilla y simplificada.</p>\n<p>Asi es como piensa un ubuntero, viva Ubuntu vida el software libre SI SEÑOR!!!<br />uuhaha haha.</p>\n<p>Un  saludo.</p>"
+  },
+  {
+    "id": 1514,
+    "parent": 0,
+    "author": "davixito",
+    "date": "2009-05-01T00:07:06+02:00",
+    "content": "<p>hola  brother  me podrias pasar el  link de descarga   de ellcd de desencriptado  para windows xp o vista  y un  tutorial   porfavor  estuve checando tu pagina   esta buena  pero no encuentro lo q busco ....buen  aporte  brother</p>"
+  },
+  {
+    "id": 1747,
+    "parent": 0,
+    "author": "quique",
+    "date": "2009-05-11T19:29:48+02:00",
+    "content": "<p>....muy buen tutorial, muchas gracias.</p>\n<p>............voy corriendo a probarlo a ver si consigo de una vez que me funcione.</p>\n<p>..........gracias.</p>"
+  },
+  {
+    "id": 1885,
+    "parent": 0,
+    "author": "Sfold",
+    "date": "2009-06-10T05:02:15+02:00",
+    "content": "<p>Ohh muchas gracias esta completisimo el tuto, no lo tendras en PDF?</p>"
+  },
+  {
+    "id": 1887,
+    "parent": 0,
+    "author": "Sfold",
+    "date": "2009-06-10T06:39:24+02:00",
+    "content": "<p>tengo un problema con la autentificacion... no logro que me autentifique... simplemenente me manda el mensage de que quiere autentificar pero no conecta y manda el error de que \"aveces no funciona\" pero ya lo intente con varias conexiones(wep)y nada de nada... podrias ayudarme ya sea por aka o en una charla en messenger...?</p>"
+  },
+  {
+    "id": 1894,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-06-11T23:03:45+02:00",
+    "content": "<p>Perdona pero no te entiendo qué quieres decir con eso del error de que \"a veces no funciona\". Puedes darme más detalles? Qué error te da? Qué pasos has hecho y en qué paso estás?</p>\n<p>Y no, no lo tengo en PDF, pero si le das al botón de \"<a href=\"http://racotecnic.underave.net/2009/03/crackear-redes-wifi-con-clave-wep-desde-ubuntu-linux/print/\" rel=\"nofollow ugc noopener\">vista para imprimir</a>\" puedes exportártelo o imprimírtelo tú mismo.</p>\n<p>Salu2</p>"
+  },
+  {
+    "id": 1963,
+    "parent": 0,
+    "author": "Marco",
+    "date": "2009-06-27T19:40:45+02:00",
+    "content": "<p>Hola, me he atascado en el primer paso, al escribir el siguiente comando:<br />wlanconfig ath0 create wlandev wifi0 wlanmode sta<br />Me dice: wlanconfig: ioctl: No such device<br />Y tengo los siguientes dispositivos:</p>\n<p>eth0      Link encap:Ethernet  HWaddr 00:16:36:57:7c:d7  <br />          UP BROADCAST MULTICAST  MTU:1500  Metric:1<br />          RX packets:0 errors:0 dropped:0 overruns:0 frame:0<br />          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0<br />          collisions:0 txqueuelen:1000 <br />          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)<br />          Interrupt:16 Base address:0x2000 </p>\n<p>eth1      Link encap:Ethernet  HWaddr 00:16:6f:99:85:ad  <br />          inet addr:192.168.1.4  Bcast:192.168.1.255  Mask:255.255.255.0<br />          inet6 addr: fe80::216:6fff:fe99:85ad/64 Scope:Link<br />          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br />          RX packets:27983 errors:23 dropped:23 overruns:0 frame:0<br />          TX packets:19054 errors:0 dropped:5 overruns:0 carrier:0<br />          collisions:0 txqueuelen:1000 <br />          RX bytes:32419900 (32.4 MB)  TX bytes:2103680 (2.1 MB)<br />          Interrupt:17 Base address:0xc000 Memory:b0101000-b0101fff </p>\n<p>lo        Link encap:Local Loopback  <br />          inet addr:127.0.0.1  Mask:255.0.0.0<br />          inet6 addr: ::1/128 Scope:Host<br />          UP LOOPBACK RUNNING  MTU:16436  Metric:1<br />          RX packets:40 errors:0 dropped:0 overruns:0 frame:0<br />          TX packets:40 errors:0 dropped:0 overruns:0 carrier:0<br />          collisions:0 txqueuelen:0 <br />          RX bytes:3200 (3.2 KB)  TX bytes:3200 (3.2 KB)</p>\n<p>Me podeis ayudar? Gracias y un saludo!</p>"
+  },
+  {
+    "id": 1972,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-06-28T11:12:27+02:00",
+    "content": "<p>Según tu lista de dispositivos no tienes el dispositivo de redes inalámbricas que suele ser \"wlanX\" (dónde X corresponde al número).</p>\n<p>De todos modos.. has continuado leyendo? Porque justo después de indicar que hagáis esa orden digo que si os da el error que te ha dado hagáis unos pasos.</p>"
+  },
+  {
+    "id": 2079,
+    "parent": 0,
+    "author": "monstruo",
+    "date": "2009-07-19T10:39:16+02:00",
+    "content": "<p>yo me he quedado en el mismo sitio que este chico, a mi me dice que noe xiste el dispositivo... ya lo he intentando destruir  y no hay manera, el dispoditivo no existe</p>"
+  },
+  {
+    "id": 2080,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-07-19T21:45:51+02:00",
+    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">monstruo</a>, a mi me funciona y no se me ha presentado en ningún momento ese problema. Si fuera un especialista en el tema quizás podría echaros una mano, pero no es el caso...</p>\n<p>Desde la fecha en que creé este post (19 de marzo) no he vuelto a ponerme con este tema, así que tampoco lo tengo muy fresco.</p>\n<p>Siento no poder ayudaros más en este tema...</p>"
+  },
+  {
+    "id": 2432,
+    "parent": 0,
+    "author": "AvalonMIX",
+    "date": "2009-08-30T13:48:49+02:00",
+    "content": "<p>Gracias a tu tutorial lo único que he logrado es quedarme sin wifi en ubuntu...</p>"
+  },
+  {
+    "id": 2434,
+    "parent": 0,
+    "author": "AvalonMIX",
+    "date": "2009-08-30T13:49:48+02:00",
+    "content": "<p>(Mejor que no useis el tuto este...)</p>"
+  },
+  {
+    "id": 2453,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-09-01T20:57:27+02:00",
+    "content": "<p>Mira que hay gente desagradecida en el mundo, eh??</p>\n<p>Y qué casualidad que de todos los que comenten seas el único que se me queja.</p>"
+  },
+  {
+    "id": 2533,
+    "parent": 0,
+    "author": "romeo",
+    "date": "2009-09-14T00:17:44+02:00",
+    "content": "<p>hola, una preguntilla, que soy nuevo en linux y...... como puedo conocer que tarjeta wifi es la mia?? (lo siento pero me falla la memoria XDXD)<br />que ocurre si hago el tutorial sin comprobar si funciona (me imagino que no funcionará, ¿pero podría ocurrir algo más?)<br />suerte y las felicitaciones por el tutorial te las daré cuando termine :b</p>"
+  },
+  {
+    "id": 2536,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-09-14T13:55:29+02:00",
+    "content": "<p>Pues sinceramente.. ni idea chico. Y es algo que siempre he querido saber hacer... averiguar los componentes que tengo en el PC sin tener que desmontarlo (desde Linux claro... desde Windows siempre podemos utilizar \"Everest\").</p>\n<p>En cuánto a qué pasará si haces el tutorial sin tener una tarjeta con un chipset de los recomendados... simplemente no podrás hacer inyección de tráfico, lo que te retrasará mucho a la hora de conseguir una clave.</p>\n<p>Salud y suerte con el tuto!</p>"
+  },
+  {
+    "id": 2537,
+    "parent": 0,
+    "author": "romeo",
+    "date": "2009-09-14T20:39:27+02:00",
+    "content": "<p>hola, no es por desconfiar, pero con lo que nos ha dicho avalonmix + mis no demasiado amplios conocimientos, se me ha puesto la mosca destras de la oreja. ¿dices en el tuto que una vez en modo monitor no podemos conectarnos?¿como volvemos al modo anterior para volver a conectarnos al wifi normalmente?<br />¿se puede hacer esto desde un livecd?, para que no tenga ningun efecto secundario<br />suerte y gracias por el tuto, si me fuciona me has hecho un favor<br />PD:no entiendo porque no puedo cogerle el wifi a mi vecino si es él el que me invade la casa a mi</p>"
+  },
+  {
+    "id": 2541,
+    "parent": 0,
+    "author": "NnEo0",
+    "date": "2009-09-16T04:43:44+02:00",
+    "content": "<p>hola acabo de robar tu tuto y esta muy bueno gracias, lo he segudio paso por paso y funciona, pro soy novato en linux, el problema es q creo q primero destruyes la wifi para q entre en modo monitor, y efectivamente en el apple de gnome desaparecen las redes, y todo bien pero tengo un problema, no se como activar la tarjeta, es decir hag todo el tutorial, y encuentro la clave wep.<br />Apago la pc reinicio y cuando entro al ubuntu ya no aparecen las redes inalambricas, no aparece ninguna, me imagino q es por lo q desactivamos la wifi para entrar a modo monitor... Ahora como puedo hacr para q me aparescan de nuevo las redes??<br />gracias por la respuesta y gracias por el tuto :)</p>"
+  },
+  {
+    "id": 2545,
+    "parent": 0,
+    "author": "NnEo0",
+    "date": "2009-09-16T17:08:38+02:00",
+    "content": "<p>hola soy yo de nuevo... :)<br />sabes la parte q no se es esta:<br />Recordad destruir la interfaz y reactivarla en modo standalone una vez tengáis la contraseña para poderos conectar normalmente al AP.<br />como puedo hacer eso??<br />ayudame porfavor<br />gracias<br />:)</p>"
+  },
+  {
+    "id": 2550,
+    "parent": 0,
+    "author": "Uagadugu",
+    "date": "2009-09-17T12:37:08+02:00",
+    "content": "<p>Lo primero, darte la gran enhorabuena Booletaire, por como te ha quedado el tutorial, de verdad. Yo que no tengo ni idea de Linux, no he tenido ningún problema (bueno casi ninguno), es increíble hermano! Muchas gracias por currartelo para el saber universal. Buen ejemplo para todos.</p>\n<p>Lo segundo,AvalonMIX eres un auténtico desgraciao desagradecido. Si sueñas con ser un hacker y luego a la primera cagada (tuya por supuesto) le echas la culpa a los demás, olvidate de conseguir nada, ni en esto ni en nada. Mal ejemplo para todos</p>\n<p>Lo tercero, NnEo0, a mi me pasó lo mismo pero hice lo de destruir y vover a crear:<br />\" #LO DESTRUIMOS<br />  wlanconfig ath0 destroy<br />  #Y LO VOLVEMOS A CREAR EN MODO STANDALONE (wlanmode sta)<br />  wlanconfig ath0 create wlandev wifi0 wlanmode sta        \"<br />y me pude conectar a mi red, ahora, no sé porque no se me cargan las páginas, aún estando conectado ¿??? Alguien sabe??</p>\n<p>Por último, Booletaire no entiendo bien que paso debo seguir después de saber que la red que crackeo tiene bloquo MAC.<br />Voy a \"Inyección de paquetes (con bloqueo MAC)\" y de alli meto los comandos<br />\" aireplay-ng -0 5 -a 00:09:5B:D7:43:A8 -c 00:11:22:33:44:55<br />aireplay-ng -3 -b 00:09:5B:D7:43:A8 -h 00:11:22:33:44:55  \" pero me dice que la BSSID no existe, de dónde sacaste esta BSSID ..43:A8 ?? Por que en la red que crackeo no hay ninguna estación conectada para copiar su MAC. Que hay que hacer si la red es con bloquo MAC.</p>\n<p>Gracias!</p>"
+  },
+  {
+    "id": 2552,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2009-09-17T19:06:44+02:00",
+    "content": "<p>Primero de todo, lamento a todos el retraso! Llevo un tiempo muy liado en un tema y olvido por completo todo lo demás.</p>\n<p>Volviendo al tema del tutorial... <a rel=\"nofollow ugc noopener\">@romeo</a> y <a rel=\"nofollow ugc noopener\">@NnEo0</a>, como bien ha dicho <a rel=\"nofollow ugc noopener\">@Uagadugu</a> para reactivar la red debéis destruirla y volver a crearla en modo standalone:</p>\n<blockquote>#LO DESTRUIMOS\nwlanconfig ath0 destroy\n#Y LO VOLVEMOS A CREAR EN MODO STANDALONE (wlanmode sta)\nwlanconfig ath0 create wlandev wifi0 wlanmode sta\n</blockquote>\n<p>Y sí, <a rel=\"nofollow ugc noopener\">@romeo</a>, existen LiveCDs preparados ya para esto, como por ejemplo el mítico \"Troopix\" (actualmente desatendido) o el español \"Wifislax\" que puedes descargar desde <a href=\"http://www.wifislax.com/\" rel=\"nofollow ugc noopener\">wifislax.com</a>.</p>\n<p>En cuanto al tema que comentas del bloqueo mac, <a rel=\"nofollow ugc noopener\">@Uagadugu</a>, recuerdo que cuando lo hice no iba del todo bien.. en algunas redes con esas órdenes parecía capturar paquetes y finalmente podía conectarme pero en otras nada de nada.</p>\n<p>Al final desistí, entre otras cosas porque me parece que si alguien tiene suficientes conocimientos como para ponerse bloqueo mac en el router.. se merece que no le moleste.</p>\n<p>Salud y lamento no poder ayudarte más</p>\n<p>Ah! Y muchas gracias a todos por vuestros comentarios :D Con comentarios así da gusto continuar haciendo tutoriales como este..!</p>"
+  },
+  {
+    "id": 2557,
+    "parent": 0,
+    "author": "spikkk",
+    "date": "2009-09-18T20:26:40+02:00",
+    "content": "<p>te doy las gracias por el tuto, buenisimo<br />pero tengo una cosilla......un poco más arriba aparece un error: no such device, pues me ocurre a mi lo mismo, pero yo tengo un dato, si escribo iwconfig no me aparece wifi0. alguien que me pueda decir algo??<br />suerte y gracias</p>"
+  },
+  {
+    "id": 3484,
+    "parent": 0,
+    "author": "fffes7",
+    "date": "2009-12-10T21:45:00+01:00",
+    "content": "<p>Excelente, no lo he probado, pero se ve bueno, y en cuanto a un comentario que vi, existe gente muy mal agradecida, que al parece no conoce en lo que se estaba metiendo. XD</p>"
+  }
+]
