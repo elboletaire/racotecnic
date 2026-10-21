@@ -1,43 +1,35 @@
-Raco Tècnic website
-===================
+# Racó Tècnic website
 
-This is all the code of Racó Tècnic's website.
+Source of [racotecnic.com](https://racotecnic.com), built with
+[Astro](https://astro.build) on top of the
+[AstroPaper](https://github.com/satnaing/astro-paper) theme (v6.1.0).
 
-If you wanna improve something, or wanna colab with us, just fork the project
-and create a new post with `rake new_post`.
+Posts live in `src/content/posts/` as `YYYY-MM-DD-<slug>.md`. Each post is
+served at `/YYYY/MM/<slug>/`, the URL of the old WordPress site (the slug is
+the file name, percent-decoded). Uploaded images are in `public/uploads/`.
 
-Running locally
----------------
+Requirements: Node.js 22.12+ and [pnpm](https://pnpm.io).
 
-Obviously the first step is to clone the project:
+## Development
 
-~~~bash
-git clone git@github.com:elboletaire/racotecnic.git
-~~~
+```bash
+pnpm install
+pnpm dev          # local server with hot reload
+```
 
-> Note: If you wanna collab with us, first step is to fork the project and then clone
-from your fork.
+## Build and checks
 
-### Prerequisites
+```bash
+pnpm build        # type checks, static build and search index (dist/)
+pnpm test:urls    # checks every URL in tests/old-urls.txt exists in dist/
+pnpm lint
+```
 
+Site settings are in `astro-paper.config.ts`; old URLs that must redirect are
+listed in `astro.config.ts` (`redirects`).
 
+## Deployment
 
-### Running
-
-After you have properly installed RVM on your machine you can safely run:
-
-~~~bash
-rvm use 2.3
-gem install bundler
-bundle install
-~~~
-
-Ensure that `_config.yaml` has proper host configuration (under `url`) and,
-after that:
-
-~~~bash
-# theorically `serve` also builds, but just in case...
-jekyll build
-# run the local server (and watch for changes)
-jekyll serve
-~~~
+`.github/workflows/deploy.yml` builds the site and publishes it to GitHub
+Pages (source: GitHub Actions) on every push to `master`. `public/CNAME` sets
+the custom domain.

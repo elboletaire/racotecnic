@@ -1,0 +1,16 @@
+---
+// Old WordPress permalinks look like `/?p=<id>`. The script sends them to the
+// post's current URL, using the map built in `pages/p-map.json.ts`.
+---
+
+<script is:inline>
+  const wordpressId = location.search.match(/^\?p=(\d+)\/?$/);
+  if (wordpressId) {
+    fetch("/p-map.json")
+      .then(res => res.json())
+      .then(map => {
+        if (map[wordpressId[1]]) location.replace(map[wordpressId[1]]);
+      })
+      .catch(() => {});
+  }
+</script>
