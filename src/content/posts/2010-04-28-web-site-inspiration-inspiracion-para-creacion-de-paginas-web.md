@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Web site inspiration - Inspiración para creación de paginas web
-author:
-  display_name: DPAM23
-  login: DPAM23
-  email: dpam23@hotmail.com
-  url: http://
-author_login: DPAM23
-author_email: dpam23@hotmail.com
-author_url: http://
 wordpress_id: 1392
-wordpress_url: http://racotecnic.com/?p=1392
 redirect_from:
 - "?p=1392/"
 date: '2010-04-28 08:36:54 +0200'
-date_gmt: '2010-04-28 07:36:54 +0200'
 categories:
 - Web
 - Disseny
@@ -27,7 +16,7 @@ tags:
 - web site design
 ---
 
-<a href="{{ site.url }}/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="{{ site.url }}/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a>
+<a href="/uploads/2010/02/inspiration.jpg"><img class="aligncenter size-full wp-image-1393" title="inspiration" src="/uploads/2010/02/inspiration.jpg" alt="" width="509" height="333" /></a>
 
 <ul>
 <li><a rel="nofollow" href="http://www.webdesign-inspiration.com/" target="_blank">http://www.webdesign-inspiration.com/</a></li>

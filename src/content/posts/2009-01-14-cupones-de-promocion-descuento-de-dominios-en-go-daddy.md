@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Cupones de promoción / descuento de dominios en Go Daddy
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 127
-wordpress_url: http://racoinformatic.underave.net/?p=127
 date: '2009-01-14 18:15:28 +0100'
-date_gmt: '2009-01-14 17:15:28 +0100'
 categories:
 - Domains & Hosting
 tags:

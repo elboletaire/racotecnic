@@ -1,26 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalar Google Chromium en Ubuntu
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Si queréis disfrutar de **Google Chrome** en vuestro ubuntu
-  sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los
-  repositorios o directamente instalando un paquete Deb."
+excerpt: "Si queréis disfrutar de Google Chrome en vuestro ubuntu sin necesidad de instalar Wine ni Crossover podéis hacerlo fácilmente mediante los repositorios o directamente instalando un paquete Deb."
 wordpress_id: 973
-wordpress_url: http://racotecnic.com/?p=973
 redirect_from:
 - "?p=973/"
 date: '2009-11-13 15:45:35 +0100'
-date_gmt: '2009-11-13 14:45:35 +0100'
 categories:
 - Linux
 - Web
@@ -46,7 +32,7 @@ deb http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main
 deb-src http://ppa.launchpad.net/chromium-daily/ppa/ubuntu NOMBRE_DE_VERSION main
 ~~~
 
-<a id="more"></a><a id="more-973"></a>
+
 
 La variable "NOMBRE_DE_VERSION" debéis substituirla por vuestra versión. Google Chromium está disponible para las siguientes versiones de Ubuntu:
 

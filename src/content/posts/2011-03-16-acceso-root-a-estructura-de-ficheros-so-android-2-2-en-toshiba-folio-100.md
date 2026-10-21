@@ -1,19 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Acceso root a estructura de ficheros SO Android 2.2 en Toshiba Folio 100
-class: no-line-numbers
-author:
-  display_name: manuso245
-  login: manuso245
-  email: manuso245@gmail.com
-author_login: manuso245
-author_email: manuso245@gmail.com
 wordpress_id: 1859
-wordpress_url: http://www.racotecnic.com/?p=1859
 date: '2011-03-16 23:18:00 +0100'
-date_gmt: '2011-03-16 22:18:00 +0100'
 categories:
 - Linux
 - Administració
@@ -25,7 +15,7 @@ tags:
 - ADB
 ---
 
-## Requisitos <img class="alignright size-full wp-image-1861" title="android-logo" src="{{ site.url }}/uploads/2011/03/android-logo.jpg" alt="" width="158" height="178" />
+## Requisitos <img class="alignright size-full wp-image-1861" title="android-logo" src="/uploads/2011/03/android-logo.jpg" alt="" width="158" height="178" />
 
 <ol>
   <li>Ubuntu 9.10. Testeado por otros usuarios en 10.04</li>
@@ -35,13 +25,13 @@ tags:
 
 ## Definición Conceptual
 
-Nuestro problema principal era que teníamos una web desarrollada en un servidor de test y para acceder a ella necesitábamos modificar el archivo <<<em>hosts</em>>> para añadir una directiva de nombres.
+Nuestro problema principal era que teníamos una web desarrollada en un servidor de test y para acceder a ella necesitábamos modificar el archivo <<*hosts*>> para añadir una directiva de nombres.
 
 Lo primero que apreciamos en la Tablet de Toshiba fue que no podíamos acceder al market ni a las google apps ya que viene restringido de fábrica. Nos decantamos, así, por instalar un mod del SO desarrollado por Dexter. Estos mods tienen una eficacia y mejoras contrastadas y nos decidimos finalmente por el TNTMod.
 
 El TNTMod te permite tener permisos <em>root </em>en tu dispositivo pero para modificar los archivos de sistema hay que ser un poco más creativo.
 
-El único método que me ha dado resultado es el uso y configuración de ADB, una aplicación estilo <em>putty </em>para acceder mediante <em>Shell </em>o comando típicos como <em>pull </em>o <em>push </em>a los archivos de SO de un dispositivo Android. Mediante ADB es posible conectarse con un terminal a los archivos de sistema y comprobar la ruta del archivo hosts. También permite traértelo al pc local, modificarlo y después volverlo a meter en el sistema de archivos del dispositivo.<a id="more"></a><a id="more-1859"></a>
+El único método que me ha dado resultado es el uso y configuración de ADB, una aplicación estilo <em>putty </em>para acceder mediante <em>Shell </em>o comando típicos como <em>pull </em>o <em>push </em>a los archivos de SO de un dispositivo Android. Mediante ADB es posible conectarse con un terminal a los archivos de sistema y comprobar la ruta del archivo hosts. También permite traértelo al pc local, modificarlo y después volverlo a meter en el sistema de archivos del dispositivo.
 
 ## Procedimiento
 
@@ -120,4 +110,3 @@ mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 Si apagamos el dispositivo habrá que hacer otra vez la parte del mount ya que el dispositivo por defecto monta /system en ro. Si se desea dejar permanentemente en rw modificar reglas de mount.
 
 En todo momento del proceso hay que activar el modo debug de USB en la distro de Android que utilicemos.
-<div id="_mcePaste" class="mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;"><img class="aligncenter size-full wp-image-1864" title="android" src="{{ site.url }}/uploads/2011/03/android.jpg" alt="" width="570" height="356" /></div>

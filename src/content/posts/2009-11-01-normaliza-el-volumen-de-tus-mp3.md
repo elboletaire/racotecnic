@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Normaliza el volumen de tus mp3
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los
-  altavoces porque cada canción tiene un volumen distinto??"
+excerpt: "¿¿No estáis hartos de tener que ir subiendo y bajando el volumen de los altavoces porque cada canción tiene un volumen distinto??"
 wordpress_id: 908
-wordpress_url: http://racotecnic.com/?p=908
 redirect_from:
 - "?p=908/"
 date: '2009-11-01 01:54:03 +0100'
-date_gmt: '2009-11-01 00:54:03 +0100'
 categories:
 - Linux
 - Aplicacions
@@ -34,18 +22,17 @@ tags:
 
 Con mp3gain podéis **normalizar el volumen** de vuestros **mp3** muy fácilmente (para los usuarios que manejen habitualmente la consola.. claro xD).
 
-Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" href="http://sourceforge.net/projects/mp3gain/" target="_blank">página oficial</a> (está disponible para Windows y en código fuente). Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.
+Podéis descargar mp3gain de la <a title="Página del proyecto en sourceforge" href="http://sourceforge.net/projects/mp3gain/" target="_blank" rel="noopener">página oficial</a> (está disponible para Windows y en código fuente). Los usuarios que utilicéis debian o ubuntu podréis encontrarlo en los repositorios.
 
 Para utilizarlo recomiendo que utilicéis la opción de normalizado automático, la "-r":
 
 ~~~bash
 mp3gain -r *.mp3
 ~~~
-{: .no-line-numbers }
 
 Haciendo esto dentro de una carpeta con mp3 normalizaréis cada uno de ellos a un volumen estándar.
 
-<a id="more"></a><a id="more-908"></a>
+
 
 ~~~text
 01 Freeson - Mozart is Back.mp3
@@ -87,7 +74,6 @@ Applying mp3 gain change of -4 to 17 Monolith Vs Bunkertronics - Lifesupport Sys
 18 Sikotik - Roow.mp3
 [19/19] 97% of 5572608 bytes analyzed
 ~~~
-{: .no-line-numbers }
 
 Si queréis normalizar todos los mp3 de una carpeta podéis hacerlo con con algún código bash como este:
 
@@ -101,4 +87,4 @@ do
 done
 ~~~
 
-Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b><em>use at your own risk</em></b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)
+Aunque no os recomiendo utilizar este porque no es muy seguro y no funciona del todo. Como suele decirse, <b>*use at your own risk*</b>. Lo mejor es que lo hagáis carpeta por carpeta. Para ahorraros trabajo podríais haceros un script de nautilus ;)

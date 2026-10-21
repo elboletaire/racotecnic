@@ -1,24 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Tomar screenshots / capturas de pantalla de páginas web desde la consola de
   Linux
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Puede que os interese **hacer capturas de pantalla de páginas web**
-  para poder **mostrar una previsualización de una web** en el apartado de links
-  de vuestro site."
+excerpt: "Puede que os interese hacer capturas de pantalla de páginas web para poder mostrar una previsualización de una web en el apartado de links de vuestro site."
 wordpress_id: 2011
-wordpress_url: http://www.racotecnic.com/?p=2011
 date: '2011-09-11 13:18:28 +0200'
-date_gmt: '2011-09-11 12:18:28 +0200'
 categories:
 - Programació
 - Linux
@@ -29,8 +16,8 @@ tags:
 - VNC
 ---
 
-<a href="{{ site.url }}/uploads/2011/09/prova2.jpg">
-  <img title="prova2" src="{{ site.url }}/uploads/2011/09/prova2-150x150.jpg" alt="" />
+<a href="/uploads/2011/09/prova2.jpg">
+  <img title="prova2" src="/uploads/2011/09/prova2-150x150.jpg" alt="" />
 </a>
 
 Puede que os interese **hacer capturas de pantalla de páginas web** para poder **mostrar una previsualización de una web** en el apartado de links de vuestro site.
@@ -39,7 +26,7 @@ Para ello podéis utilizar alguno de los muchos servicios que corren por ahí �
 
 Antes de empezar.. os advierto que he hecho las pruebas desde ubuntu server maverick, pero esto en teoría debería de ser más o menos igual para el resto de versiones (tanto desktop como server).
 
-Si lo que queréis es hacer capturas de pantalla desde Windows, quizás os interese <a href="http://iecapt.sourceforge.net/" target="_blank">IECapt</a>.
+Si lo que queréis es hacer capturas de pantalla desde Windows, quizás os interese <a href="http://iecapt.sourceforge.net/" target="_blank" rel="noopener">IECapt</a>.
 
 Primero de todo, necesitamos unos cuantos paquetes esenciales...
 
@@ -56,9 +43,8 @@ Instalad los paquetes como haríais habitualmente...
 ~~~bash
 sudo apt-get install vnc4server firefox imagemagick
 ~~~
-{: .no-line-numbers }
 
-<a id="more"></a><a id="more-2011"></a>
+
 
 Si trabajáis con ubuntu server os va a doler porque firefox baja un huevo de paquetes.. pero es lo que hay U_U
 
@@ -104,7 +90,6 @@ El fichero "listado.txt" deberá estar en el mismo directorio que el script y se
     musicavermella  http://www.musicavermella.com
     thefuture http://www.thefutureimperfect.com
     snooppets http://www.snooppets.com
-{: .no-line-numbers }
 
 **Es importante que este fichero tenga un salto de línea al final**, sino la última url dará error.
 
@@ -132,7 +117,7 @@ Pues ahí lo tenéis, utilizando un poco la imaginación, con algún cron y algu
 
 Si queréis recortar las imágenes para que no se vean el resto de bordes de firefox podéis tratar de utilizar el método <a href="http://www.imagemagick.org/script/mogrify.php?ImageMagick=th1vkjq027vromjp62lk806r03" rel="nofollow external">mogrify</a> de ImageMagick para hacer un crop.
 
-O podéis hacerlo mediante PHP con alguna clase como <a title="Clase PHP para tratar imágenes (rotar, redimensionar, añadir marcas de agua..)" href="http://www.racotecnic.com/2011/04/clase-php-para-tratar-imagenes-rotar-redimensionar-anadir-marcas-de-agua/">Watimage</a> :D
+O podéis hacerlo mediante PHP con alguna clase como [Watimage](/2011/04/clase-php-para-tratar-imagenes-rotar-redimensionar-anadir-marcas-de-agua/ "Clase PHP para tratar imágenes (rotar, redimensionar, añadir marcas de agua..)") :D
 
 > **Fuentes...**
 >

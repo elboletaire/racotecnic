@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Descargar Aptana Studio 1.5
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 937
-wordpress_url: http://racotecnic.com/?p=937
 redirect_from:
 - "?p=937/"
 date: '2009-11-04 16:53:40 +0100'
-date_gmt: '2009-11-04 15:53:40 +0100'
 categories:
 - Programació
 - Linux

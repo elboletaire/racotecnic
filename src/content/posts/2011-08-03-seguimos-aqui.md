@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Seguimos aquí
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 2004
-wordpress_url: http://www.racotecnic.com/?p=2004
 date: '2011-08-03 14:05:55 +0200'
-date_gmt: '2011-08-03 13:05:55 +0200'
 categories:
 - General
 tags: []

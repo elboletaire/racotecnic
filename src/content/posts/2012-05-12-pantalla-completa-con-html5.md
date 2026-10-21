@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Pantalla completa con HTML5
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 2031
-wordpress_url: http://www.racotecnic.com/?p=2031
 date: '2012-05-12 18:48:00 +0200'
-date_gmt: '2012-05-12 17:48:00 +0200'
 categories:
 - Programació
 - Web

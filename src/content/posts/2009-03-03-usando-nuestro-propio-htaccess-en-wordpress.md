@@ -1,24 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Usando nuestro propio .htaccess en Wordpress
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Utilizar ficheros .htaccess para crear redirecciones o para mejorar SEO
-  es una gran idea, pero desgraciadamente Wordpress modifica el fichero .htaccess
-  cada vez que modificamos el contenido de una pagina o cambiamos la configuración
-  de los permalinks (entre otros)."
+excerpt: "Utilizar ficheros .htaccess para crear redirecciones o para mejorar SEO es una gran idea, pero desgraciadamente Wordpress modifica el fichero .htaccess cada vez que modificamos el contenido de una pagina o cambiamos la configuración de los permalinks (entre otros)."
 wordpress_id: 185
-wordpress_url: http://racoinformatic.underave.net/?p=185
 date: '2009-03-03 13:09:34 +0100'
-date_gmt: '2009-03-03 12:09:34 +0100'
 categories:
 - Programació
 - Web
@@ -34,12 +20,12 @@ Realmente es muy simple solucionar este problema. A continuación os pongo dos .
 
 Sólo hace falta que desplacéis los comentarios "begin wordpress" i "end wordpress" (en negrita) para que engloben únicamente el código de wordpress:
 
-<a id="more"></a><a id="more-185"></a>
+
 
 EJEMPLO 1:
 ----------
 
-~~~conf
+~~~apache
 # BEGIN WordPress
 
 RewriteEngine On
@@ -60,7 +46,7 @@ RewriteRule . /index.php [L]
 EJEMPLO 2:
 ----------
 
-~~~conf
+~~~apache
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /

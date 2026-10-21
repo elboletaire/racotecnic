@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Llegó la hora de las palomitas
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Si os gustó WD TV, esto os gustará más :D. Hace ya un tiempo que
-  se comercializa en españa el producto **PopCorn Hour**"
+excerpt: "Si os gustó WD TV, esto os gustará más :D. Hace ya un tiempo que se comercializa en españa el producto PopCorn Hour"
 wordpress_id: 837
-wordpress_url: http://racotecnic.com/?p=837
 redirect_from:
 - "?p=837/"
 date: '2009-10-26 15:20:09 +0100'
-date_gmt: '2009-10-26 14:20:09 +0100'
 categories:
 - Web
 - Hardware
@@ -29,7 +17,7 @@ tags:
 - Bittorrent
 ---
 
-Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="http://racotecnic.com/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D
+Si os gustó <a title="Leer entrada: Adiós discos duros multimedia" href="/2009/10/adios-discos-duros-multimedia/" target="_self">WD TV</a>, esto os gustará más :D
 
 Hace ya un tiempo que se comercializa en españa el producto **PopCorn Hour **también conocido como . Según su página web...
 
@@ -39,19 +27,19 @@ Hace ya un tiempo que se comercializa en españa el producto **PopCorn Hour **ta
 >
 > Así, el NMT permite compartir, reproducir o hacer “streaming” de sus contenidos multimedia digitales sin la dependencia de un PC, racionalizando su configuración.
 
-Si queréis podéis seguir leyendo más sobre el producto en <a rel="nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">su web oficial (en castellano)</a>.
+Si queréis podéis seguir leyendo más sobre el producto en <a rel="noopener nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">su web oficial (en castellano)</a>.
 
 En fin, que es como una pequeña estación multimedia conectada a internet en la que podemos tener el bittorrent descargando películas a la vez que estamos viendo vídeos del youtube (o descargándolos).. tiene conexiones para varios USB, además de huecos para discos duro SATA para ampliarle la capacidad al gusto de cada uno... tiene decenas de especificaciones más... en esta imagen podéis ver algunas de ellas:
 
-<img title="caracteristicas_popcornhour" src="{{ site.url }}/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" />
+<img title="caracteristicas_popcornhour" src="/uploads/2009/10/caracteristicas_popcornhour.jpg" alt="caracteristicas_popcornhour" />
 
 Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quejan de que el PopCorn Hour **se calienta en exceso** aunque dicen que añadiendo un ventilador desaparecen los problemas.
 
-<a href="{{ site.url }}/uploads/2009/10/A110_03.jpg">
-  <img title="A110_03" src="{{ site.url }}/uploads/2009/10/A110_03.jpg" alt="A110_03" width="49%" />
+<a href="/uploads/2009/10/A110_03.jpg">
+  <img title="A110_03" src="/uploads/2009/10/A110_03.jpg" alt="A110_03" width="49%" />
 </a>
-<a href="{{ site.url }}/uploads/2009/10/A110_04.jpg">
-  <img title="A110_04" src="{{ site.url }}/uploads/2009/10/A110_04.jpg" alt="A110_04" width="49%" />
+<a href="/uploads/2009/10/A110_04.jpg">
+  <img title="A110_04" src="/uploads/2009/10/A110_04.jpg" alt="A110_04" width="49%" />
 </a>
 
 <blockquote>

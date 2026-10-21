@@ -1,24 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Derechos de Autor
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Derechos sobre nuestras obras. La mayoría de productores cuando hacemos un tema no
-  nos preocupamos mucho sobre los derechos que tenemos sobre este. Lo pasamos, lo
-  enviamos a discográficas e incluso se sacan discos sin ningún tipo de contrato ni
-  conocimiento de cómo y quien puede usarlos."
+excerpt: "Derechos sobre nuestras obras. La mayoría de productores cuando hacemos un tema no nos preocupamos mucho sobre los derechos que tenemos sobre este. Lo pasamos, lo enviamos a discográficas e incluso se sacan discos sin ningún tipo de contrato ni conocimiento de cómo y quien puede usarlos."
 wordpress_id: 1948
-wordpress_url: http://www.racotecnic.com/?p=1948
 date: '2009-03-31 16:28:26 +0200'
-date_gmt: '2009-03-31 15:28:26 +0200'
 categories:
 - General
 - Audioblog
@@ -43,7 +29,7 @@ Los derechos persisten 70 años después del fallecimiento del último autor de 
 
 Hay dos grandes grupos de derechos, los morales y los de explotación.
 
-<a id="more"></a><a id="more-1948"></a>
+
 
 Empezamos por los derechos morales, estos nunca se pueden ceder, vender, ni traspasar. El autor, por el simple hecho de crear una obra, adquiere estos derechos. Los derechos morales son:
 

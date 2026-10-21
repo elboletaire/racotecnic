@@ -1,22 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Configurar apache en modo mpm worker con php5 y fastcgi en ubuntu server
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Quizás hayáis escuchado hablar del módulo mpm
-  worker para apache. Si no, yo os hago un breve resumen (corregidme si me equivoco)."
+excerpt: "Quizás hayáis escuchado hablar del módulo mpm worker para apache. Si no, yo os hago un breve resumen (corregidme si me equivoco)."
 wordpress_id: 2053
-wordpress_url: http://www.racotecnic.com/?p=2053
 date: '2012-05-16 07:00:00 +0200'
-date_gmt: '2012-05-16 06:00:00 +0200'
 categories:
 - Linux
 - Administració
@@ -54,19 +42,17 @@ Paquetes que necesitamos:
 ~~~bash
 sudo apt-get install apache2 apache2-mpm-worker libapache2-mod-fcgid php5-cli php5-cgi
 ~~~
-{: .no-line-numbers }
 
 Una vez instalados, vamos a configurar apache para que ejecute ficheros php utilizando el módulo fastCGI:
-<a id="more"></a><a id="more-2053"></a>
+
 
 ~~~bash
 sudo nano /etc/apache/conf.d/php
 ~~~
-{: .no-line-numbers }
 
 Pegad esto:
 
-~~~conf
+~~~apache
 <Directory /usr/share>
   AddHandler fcgid-script .php
   FCGIWrapper /usr/lib/cgi-bin/php5 .php
@@ -83,7 +69,7 @@ Pegad esto:
 
 > **Nota:** Al actualizar a php 5.4 he necesitado descomentar el último trozo del fichero de configuración `/etc/apache2/mods-enabled/php5_cgi.conf` ya que sinó me descargaba los ficheros php en lugar de ejecutarlos. El trozo al que me refiero es este:
 >
-> ~~~conf
+> ~~~apache
 > ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 > <Directory '/usr/lib/cgi-bin'>
 >   AllowOverride None
@@ -99,23 +85,20 @@ Reiniciad apache:
 ~~~bash
 sudo service apache2 restart
 ~~~
-{: .no-line-numbers }
 
 Y para acabar de finiquitar, provad un fichero php en vuestro servidor:
 
 ~~~bash
 sudo echo '<?php phpinfo()' > /var/www/index.php
 ~~~
-{: .no-line-numbers }
 
 Si el parámetro no funciona simplemente cread un fichero index.php en vuestro webroot con el contenido
 
 ~~~php
 <?php phpinfo();
 ~~~
-{: .no-line-numbers }
 
-Accedéis a <a href="http://localhost" rel="nofollow external">http://localhost</a> <em>et voilà</em>; Apache2 con módulo MPM-worker y PHP5 con FastCGI funcionando.
+Accedéis a <a href="http://localhost" rel="nofollow external">http://localhost</a> *et voilà*; Apache2 con módulo MPM-worker y PHP5 con FastCGI funcionando.
 
 Si queréis verificar que realmente apache está funcionando en modo worker, podéis ejecutar el comando
 
@@ -129,11 +112,10 @@ Compiled in modules:
   http_core.c
   mod_so.c
 ~~~
-{: .no-line-numbers }
 
 Fijaros que está cargado el módulo **worker.c**. Os recuerdo que por defecto apache viene con **prefork.c** por defecto.
 
-Ahora vendría "lo wapo": el <em>fine tuning</em>. Una de las mejores fuentes que encontraréis para saber como "tunear" vuestro apache es la propia documentación de apache:
+Ahora vendría "lo wapo": el *fine tuning*. Una de las mejores fuentes que encontraréis para saber como "tunear" vuestro apache es la propia documentación de apache:
 
 <a href="http://httpd.apache.org/docs/2.2/mod/mpm_common.html" rel="nofollow external">httpd.apache.org/docs/2.2/mod/mpm_common.html</a>
 

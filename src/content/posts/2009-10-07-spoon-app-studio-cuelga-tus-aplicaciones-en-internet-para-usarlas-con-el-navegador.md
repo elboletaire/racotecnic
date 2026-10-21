@@ -1,23 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: 'Spoon App Studio: Cuelga tus aplicaciones en internet para usarlas con el
   navegador'
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 779
-wordpress_url: http://racotecnic.com/?p=779
 redirect_from:
 - "?p=779/"
 date: '2009-10-07 20:57:03 +0200'
-date_gmt: '2009-10-07 19:57:03 +0200'
 categories:
 - Web
 - Aplicacions
@@ -31,10 +20,10 @@ tags:
 - Spoon App Studio
 ---
 
-Con Spoon App Studio podéis convertir vuestras aplicaciones de Windows a aplicaciones <em>Spoon</em> fácil y rápidamente.
+Con Spoon App Studio podéis convertir vuestras aplicaciones de Windows a aplicaciones *Spoon* fácil y rápidamente.
 
-<a href="{{ site.url }}/uploads/2009/10/spoon_app_studio.png">
-  <img class="size-medium wp-image-783 alignleft" title="spoon_app_studio" src="{{ site.url }}/uploads/2009/10/spoon_app_studio.png" alt="spoon_app_studio" />
+<a href="/uploads/2009/10/spoon_app_studio.png">
+  <img class="size-medium wp-image-783 alignleft" title="spoon_app_studio" src="/uploads/2009/10/spoon_app_studio.png" alt="spoon_app_studio" />
 </a>
 
 Las aplicaciones Spoon se ejecutan desde vuestro navegador web utilizando únicamente el plugin Spoon. Es decir, que podemos coger nuestro Photoshop CS3, pasarlo a aplicación Spoon, colgarlo en internet y después utilizar este Photoshop desde cualquier ordenador que tenga el plugin Spoon instalado.
@@ -45,7 +34,7 @@ Spoon almacena las aplicaciones en memoria, así que la primera vez que ejecutem
 
 Además de todas las aplicaciones que podemos hacer a partir de nuestros instalables, Spoon nos ofrece algunas aplicaciones para empaquetar directamente, así como la mayoría de navegadores más utilizados en el mercado.
 
-<a href="{{ site.url }}/uploads/2009/10/ie6.png"><img class="alignnone size-thumbnail wp-image-780" title="ie6" src="{{ site.url }}/uploads/2009/10/ie6-150x150.png" alt="ie6" width="150" height="150" /></a><a href="{{ site.url }}/uploads/2009/10/firefox2.png"><img class="alignnone size-thumbnail wp-image-781" title="firefox2" src="{{ site.url }}/uploads/2009/10/firefox2-150x150.png" alt="firefox2" width="150" height="150" /></a><a href="{{ site.url }}/uploads/2009/10/opera9.png"><img class="alignnone size-thumbnail wp-image-782" title="opera9" src="{{ site.url }}/uploads/2009/10/opera9-150x150.png" alt="opera9" width="150" height="150" /></a>
+<a href="/uploads/2009/10/ie6.png"><img class="alignnone size-thumbnail wp-image-780" title="ie6" src="/uploads/2009/10/ie6-150x150.png" alt="ie6" width="150" height="150" /></a><a href="/uploads/2009/10/firefox2.png"><img class="alignnone size-thumbnail wp-image-781" title="firefox2" src="/uploads/2009/10/firefox2-150x150.png" alt="firefox2" width="150" height="150" /></a><a href="/uploads/2009/10/opera9.png"><img class="alignnone size-thumbnail wp-image-782" title="opera9" src="/uploads/2009/10/opera9-150x150.png" alt="opera9" width="150" height="150" /></a>
 
 Entre estos navegadores está Internet Explorer 6, así que es realmente útil para aquellos que necesitemos hacer pruebas en distintos navegadores.
 

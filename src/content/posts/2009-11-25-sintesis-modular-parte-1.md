@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Sintesis modular (Parte 1)
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 1969
-wordpress_url: http://www.racotecnic.com/?p=1969
 date: '2009-11-25 07:37:58 +0100'
-date_gmt: '2009-11-25 06:37:58 +0100'
 categories:
 - General
 tags: []
@@ -41,7 +30,7 @@ Visto que este tipo de sintetizadores se construyen apartir de modulos, veamos l
 
 Para que no suene tanto a chino, en el siguiente diagrama podemos observar el esquema básico de un sintetizador:
 
-<img src="{{ site.url }}/uploads/2009/11/sinte001.gif" alt="Esquema sintetizador" />
+<img src="/uploads/2009/11/sinte001.gif" alt="Esquema sintetizador" />
 
 Para empezar, antes de ir con la elección de los modulos, hay que ver las principales características de los fabricantes de sintes modulares ( formatos, voltaje, tipo de conexiones etc ). Ya que puede darse el caso que se compre un modulo super-chulo pero que es incompatible con el votlaje o con el formato del propio modulo. En la siguiente tabla, se puede observar las caracteristicas de varios fabricantes.
 
@@ -102,11 +91,11 @@ El formato **Eurorack**, basados en los <span style="color: #666699;">**bastidor
 
 Una vez vista las caracteriticas propias de cada fabricante, llega la gran pregunta: ¿Qué queremos que haga nuestro modular? Al ser un sintetizador creado por modulos indepedendientes, a nivel físico, entre ellos, podemos crear des de una caja de ritmos, o un procesador de señal externa, o sintetizador puro y duro. En este caso vamos usarlo tanto para crear sonidos propios, como para la modificación de una señal externa que le entre al modular.
 
-A modo de curiosidad-ejemplo, un modular hecho para funcionar como caja de ritmos. Como se puede observar se han susituido los componentes/modulos de un sintetizador (VCO, VCA) por modulos que contienen los samples con los sonidos de la caja. Por experencia propia, estas cajas son las más divertidas con las que me he podido encontrar, quien tenga cualquier modelo de las cajas <a href="http://img38.imageshack.us/img38/2223/15092009112.jpg" target="_blank">Vermona DRM</a>, lo sabe. ;)<img class="aligncenter size-full wp-image-1029" src="{{ site.url }}/uploads/2009/11/PlugPlay_13.jpg" alt="Modular Drum Machine" width="600" height="335" />
+A modo de curiosidad-ejemplo, un modular hecho para funcionar como caja de ritmos. Como se puede observar se han susituido los componentes/modulos de un sintetizador (VCO, VCA) por modulos que contienen los samples con los sonidos de la caja. Por experencia propia, estas cajas son las más divertidas con las que me he podido encontrar, quien tenga cualquier modelo de las cajas <a href="http://img38.imageshack.us/img38/2223/15092009112.jpg" target="_blank" rel="noopener">Vermona DRM</a>, lo sabe. ;)<img class="aligncenter size-full wp-image-1029" src="/uploads/2009/11/PlugPlay_13.jpg" alt="Modular Drum Machine" width="600" height="335" />
 
 ## OSCILADOR CONTROLADO POR VOLTAJE - VCO:
 
-El VCO, <em>el corazón de un sintetizador</em>, es un circuito electrónico que tiene una señal de salida, cuya frecuencia depende del valor de la amplitud de una tensión de entrada.
+El VCO, *el corazón de un sintetizador*, es un circuito electrónico que tiene una señal de salida, cuya frecuencia depende del valor de la amplitud de una tensión de entrada.
 
 <img class="alignleft" src="http://farm1.static.flickr.com/76/185348936_7ace4daa75.jpg?v=0" alt="" />
 
@@ -130,7 +119,7 @@ Como se puede observar en la imagen un VCO standar tiene las siguientes entradas
 
 <strong><span style="color: #666699;">·Modo exponecial</span> </strong>: <strong>f(g) = k <sup>v</sup>· c |</strong> <span style="color: #666699;">**g**</span> = ganancia, <span style="color: #666699;">**v**</span> = el voltage, <strong><span style="color: #666699;">k</span></strong>= constante de augmento.
 
-<img class="alignleft size-full wp-image-1101" src="{{ site.url }}/uploads/2009/11/fig10.gif" alt="Función modo exponecial y lineal de un VCA" width="225" height="172" />
+<img class="alignleft size-full wp-image-1101" src="/uploads/2009/11/fig10.gif" alt="Función modo exponecial y lineal de un VCA" width="225" height="172" />
 
 Vista la representación gráfica de las dos funciones para expresar el como aumenta la ganacia respecto al modo (función) que utilizemos ; saquemos las conclusiones al respecto.
 
@@ -159,10 +148,10 @@ Si una envolvente se usa para afectar a la amplitud, entonces el ataque es el ti
 Este tipo de envolvente no es una norma, pero si la más comun, ya que se pueden dar muchas tipos de envolventes. Ya que podemos encontrar des de la **AD** (Attack-Decay) tipica de los <span style="color: #666699;">**instrumentos naturales**</span>, una flauta, como la anteriormente mencionada **AHDSR **(Attack-Hold-Decay-Sustain-Release) de los <span style="color: #666699;">**Korg Ms-20**</span>, o la **ADSD** (Attack-Decay-Sustain-Decay) de los <span style="color: #666699;">**Minimoog**</span>. Esta última no tiene un valor de release, sino que el valor del decay sirve tanto para el propio decay, como para el release.
 
 Para ver como funciona un ciruicto del EG, he cogido el modelo de la página (<a href="http://sam.atlantes.org/eg.html">http://sam.atlantes.org/eg.html</a>)
-<img class="alignnone size-full wp-image-1160" src="{{ site.url }}/uploads/2009/11/eg1.gif" alt="eg1" width="565" height="400" />
+<img class="alignnone size-full wp-image-1160" src="/uploads/2009/11/eg1.gif" alt="eg1" width="565" height="400" />
 Cuando le entra una tensión por la entrada GATE, la entrada TRIGG del circuito mutilfuncional 555 pasa a nivel bajo a través del colector del transistor bipolar. Cuando dicha tensión es superada, provoca que la salida Q (salida 3) del integrado se ponga a nivel alto durante un tiempo. Es esta salida la que cierra el interruptor CMOS formado por los pines 1, 2 y 13 del conmutador y que provoca una carga suave del condensador situado en el pin 6. Esta rampa de carga corresponde con el **attack **de la envolvente. Cuando el período de temporización termina (cuando el pin 6 alcanza un valor máximo), la salida Q pasa a nivel bajo, provocando que el interruptor 10,11,12 se abra y se conecte así el interruptor 3,4,5. Este interruptor provoca una descarga del condensador (**decay**) hasta que éste alcanza el nivel de voltaje determinado por el divisor de tension de **sustain**. El circuito se mantiene en este estado hasta que la entrada GATE vuelve a nivel bajo, momento en el cual el interruptor 6,8,9 se cierra y provoca una descarga total del condensador, el **release.**
 
-De todos los VCO's que corren por el mercado, he decido coger el **Z3000** de la marca <strong><a href="http://www.tiptopaudio.com" target="_blank">Tip Top</a></strong>. He escogido el Tip Top, por que es compatible con los diferentes modulos de la marca Doepfer, ya que algunos modulos serán de dicha marca. Una de las principales opciones que hizo decidirme por un par de estos osciladores **Z3000** es la posibilidad de tener dos tipos de entradas de datos para la generación de una onda. Por una parte el oscilador es capaz de responder a frecuencías y por otro lado es capaz de entender datos musicales, como lo son las octavas y las notas. Veamos un poco las espeficaciones de este VCO:
+De todos los VCO's que corren por el mercado, he decido coger el **Z3000** de la marca <strong><a href="http://www.tiptopaudio.com" target="_blank" rel="noopener">Tip Top</a></strong>. He escogido el Tip Top, por que es compatible con los diferentes modulos de la marca Doepfer, ya que algunos modulos serán de dicha marca. Una de las principales opciones que hizo decidirme por un par de estos osciladores **Z3000** es la posibilidad de tener dos tipos de entradas de datos para la generación de una onda. Por una parte el oscilador es capaz de responder a frecuencías y por otro lado es capaz de entender datos musicales, como lo son las octavas y las notas. Veamos un poco las espeficaciones de este VCO:
 
 <img class="aligncenter" src="http://1.bp.blogspot.com/_vFTGSIgYhew/SRODyHJXHnI/AAAAAAAAAKw/ehV1lVlyHvE/s400/z3000.jpg" alt="" width="224" height="400" />
 

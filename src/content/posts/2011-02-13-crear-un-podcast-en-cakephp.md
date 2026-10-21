@@ -1,25 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Crear un Podcast en CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "El otro día expliqué **cómo unir ficheros mp3 en un mismo fichero**
-  y dije que dejaría para más tarde lo de la creación del **Podcast**. Vamos a
-  ello pues."
+excerpt: "El otro día expliqué cómo unir ficheros mp3 en un mismo fichero y dije que dejaría para más tarde lo de la creación del Podcast. Vamos a ello pues."
 wordpress_id: 1760
-wordpress_url: http://racotecnic.com/?p=1760
 redirect_from:
 - "?p=1760/"
 date: '2011-02-13 23:23:36 +0100'
-date_gmt: '2011-02-13 22:23:36 +0100'
 categories:
 - Programació
 - Web
@@ -32,15 +19,15 @@ tags:
 - iTunes
 ---
 
-<img style="margin-left: 20px;" title="podcast icon" src="{{ site.url }}/uploads/2011/01/podcast_icon.png" alt="" />
+<img style="margin-left: 20px;" title="podcast icon" src="/uploads/2011/01/podcast_icon.png" alt="" />
 
-El otro día expliqué <a href="{{ site.url }}/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">**cómo unir ficheros mp3 en un mismo fichero**</a> y dije que dejaría para más tarde lo de la creación del **Podcast**. Vamos a ello pues.
+El otro día expliqué <a href="/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">**cómo unir ficheros mp3 en un mismo fichero**</a> y dije que dejaría para más tarde lo de la creación del **Podcast**. Vamos a ello pues.
 
 Para **crear nuestro Podcast** necesitaremos, a parte de CakePHP, la librería getid3, ya que para que itunes coja bien las imágenes de cada podcast lo mejor que podemos hacer es añadir la imagen al mp3 directamente.
 
-Suponiendo que habéis leído <a href="{{ site.url }}/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">el tutorial del otro día</a> voy a ir directo al grano...
+Suponiendo que habéis leído <a href="/2011/01/unir-ficheros-mp3-en-un-unico-fichero-mp3-con-cakephp/" target="_self">el tutorial del otro día</a> voy a ir directo al grano...
 
-Lo primero que haremos es escribir la información ID3 a nuestro fichero de podcast. Para el ejemplo utilizaré el componente que tengo hecho para <a href="http://getid3.org" target="_self">getid3</a> y que he(mos) utilizado anteriormente. Lo podéis descargar del post anterior o de <a href="https://github.com/elboletaire/CakePHP-Getid3-Component" target="_self">github</a>.<a id="more"></a><a id="more-1760"></a>
+Lo primero que haremos es escribir la información ID3 a nuestro fichero de podcast. Para el ejemplo utilizaré el componente que tengo hecho para <a href="http://getid3.org" target="_self">getid3</a> y que he(mos) utilizado anteriormente. Lo podéis descargar del post anterior o de <a href="https://github.com/elboletaire/CakePHP-Getid3-Component" target="_self">github</a>.
 
 ~~~php
 <?php
@@ -79,9 +66,9 @@ if ($this->Getid3->write($podcast, $id3_data)) {
 }
 ~~~
 
-Con algún programa para gestionar etiquetas <em>id3 </em>(como <a href="http://kid3.sourceforge.net/" target="_self">kid3</a> por ejemplo) o con un simple reproductor podréis comprobar si se han escrito correctamente las etiquetas <em>id3</em>.
+Con algún programa para gestionar etiquetas <em>id3 </em>(como <a href="http://kid3.sourceforge.net/" target="_self">kid3</a> por ejemplo) o con un simple reproductor podréis comprobar si se han escrito correctamente las etiquetas *id3*.
 
-Ahora necesitamos crear una plantilla (<em>layout</em>) para nuestro podcast, ya que la estructura básica de un podcast difiere un poco respecto a la de un RSS convencional.
+Ahora necesitamos crear una plantilla (*layout*) para nuestro podcast, ya que la estructura básica de un podcast difiere un poco respecto a la de un RSS convencional.
 
 Para no complicarnos mucho y para hacer este layout lo más versátil posible simplemente concatenaremos los elementos que nos interesen delante del contenido (cada ítem del podcast). Así que a partir del <a href="http://book.cakephp.org/view/1461/Creating-an-RSS-feed-with-the-RssHelper" target="_self">layout de RSS de CakePHP</a>...
 
@@ -200,7 +187,7 @@ Fijaros bien que todas las URL que he creado las he hecho especificando el segun
 
 Bien, con esto tendríamos las vistas pero tenemos que decirle a cake que nos las cargue en algún momento. A mi me gusta acceder a través del **nombre_del_controlador.pod**
 
-Para hacerle entender a Cake que queremos que distinga las direcciones terminadas en .pod tenemos que abrir nuestro fichero de rutas (<em>routes.php</em>) y añadir la siguiente línea:
+Para hacerle entender a Cake que queremos que distinga las direcciones terminadas en .pod tenemos que abrir nuestro fichero de rutas (*routes.php*) y añadir la siguiente línea:
 
 ~~~php
 <?php // /app/config/routes.php
@@ -240,14 +227,14 @@ Como podéis ver el método "prefers" nos permite distinguir entre una terminaci
 
 Con esto ya tendríais vuestro podcast funcionando. Para probarlo podéis añadirlo a iTunes desde <em>Avanzado / Subscribirse a un podcast </em>y acto seguido aparecerá en vuestro listado de podcasts.
 
-Si queréis mandarlo a iTunes para que aparezca en la iTunes store podéis hacerlo desde <a href="https://phobos.apple.com/WebObjects/MZFinance.woa/wa/publishPodcast" target="_blank">este enlace</a>.
+Si queréis mandarlo a iTunes para que aparezca en la iTunes store podéis hacerlo desde <a href="https://phobos.apple.com/WebObjects/MZFinance.woa/wa/publishPodcast" target="_blank" rel="noopener">este enlace</a>.
 
-Si queréis ver un ejemplo podéis ver el podcast del <a href="http://musicavermella.com">netlabel música vermella</a> en <a href="http://itunes.apple.com/es/podcast/musica-vermella-podcast/id417624155" target="_self">itunes</a> o desde la <a href="http://musicavermella.com/#rss" target="_self">propia página web</a>.
+Si queréis ver un ejemplo podéis ver el podcast del [netlabel música vermella](http://musicavermella.com) en <a href="http://itunes.apple.com/es/podcast/musica-vermella-podcast/id417624155" target="_self">itunes</a> o desde la <a href="http://musicavermella.com/#rss" target="_self">propia página web</a>.
 
 > **Ejemplo**
 >
 - <a href="http://itunes.apple.com/es/podcast/musica-vermella-podcast/id417624155" target="_self">Música Vermella Podcast (iTunes)</a>
-- <a href="http://musicavermella.com/#rss">Música Vermella Podcast (Website)</a>
+- [Música Vermella Podcast (Website)](http://musicavermella.com/#rss)
 >
 > **Referencias**
 >

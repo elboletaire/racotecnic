@@ -1,18 +1,6 @@
 ---
-layout: post
 title: "Guarda GRATIS en la nube tus partidas guardadas o cómo hacer copias de seguridad en la nube gratis"
 modified: 2016-05-25 19:15:51 +0200
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-image:
-  feature:
-  credit:
-  creditlink:
-comments:
-share:
 categories:
 - Windows
 - Linux

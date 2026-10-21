@@ -1,26 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Utilizar framework JavaScript en nuestro tema o plugin de Wordpress
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Quizás os hayáis planteado añadir un poco de JavaScript a vuestro tema o
-  plugin de Wordpress fácilmente gracias a algún framework como jQuery, Scriptacolous,
-  Prototype... o quizás simplemente nos interese añadir nuestro propio fichero de
-  JavaScript!"
+excerpt: "Quizás os hayáis planteado añadir un poco de JavaScript a vuestro tema o plugin de Wordpress fácilmente gracias a algún framework como jQuery, Scriptacolous, Prototype... o quizás simplemente nos interese añadir nuestro propio fichero de JavaScript!"
 wordpress_id: 219
-wordpress_url: http://racotecnic.com/?p=219
 redirect_from:
 - "?p=219/"
 date: '2009-03-18 02:38:00 +0100'
-date_gmt: '2009-03-18 01:38:00 +0100'
 categories:
 - General
 - Programació
@@ -37,14 +23,14 @@ tags:
 
 Quizás os hayáis planteado añadir un poco de JavaScript a vuestro tema o plugin de Wordpress fácilmente gracias a algún framework como jQuery, Scriptacolous, Prototype... o quizás simplemente nos interese añadir nuestro propio fichero de JavaScript!
 
-Al hacerlo olvidaros de hacer "echo '<script type="text/javascript>...</script>;'"... pues como quizás ya sepáis, Wordpress incluye algunas de estas librerías y podrías hacerlas entrar en conflicto (debido a que algún plugin o vuestro tema ya utilicen alguna de estas librerías).
+Al hacerlo olvidaros de hacer "`echo '<script type="text/javascript>...</script>;'`"... pues como quizás ya sepáis, Wordpress incluye algunas de estas librerías y podrías hacerlas entrar en conflicto (debido a que algún plugin o vuestro tema ya utilicen alguna de estas librerías).
 
 Wordpress tiene una función llamada "wp_enqueue_script" que se encargará de importar en la cabecera del blog el JavaScript que queramos. Ésta misma función se encargará de ordenar los scripts en la cabecera automáticamente y, en caso de ser un script creado por nosotros, deberemos indicar qué escripts van delante de éste (para hacer así un fichero de funciones externo para jQuery, por ejemplo).
 
-<a id="more"></a><a id="more-219"></a>
+
 Vemos la función:
 
-~~~php?start_inline=1
+~~~php
 wp_enqueue_script( 'handle', 'src', 'deps', 'ver');
 ~~~
 
@@ -64,7 +50,7 @@ Algunos de los "handle" que podéis utilizar son:
   <li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank">swfupload</a></li>
 </ul>
 
-Podéis ver <a title="Ver lista completa" href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script#Parameters" target="_blank">una lista completa</a> en el <a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank">Codex de Wordpress</a>.
+Podéis ver <a title="Ver lista completa" href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script#Parameters" target="_blank" rel="noopener">una lista completa</a> en el <a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank" rel="noopener">Codex de Wordpress</a>.
 
 Dado que últimamente estoy trasteando con jQuery os mostraré un pequeño ejemplo de cómo importarlo en nuestro tema e importar nuestro fichero de funciones.
 
@@ -76,7 +62,7 @@ wp_enqueue_script('jquery');
 wp_head();
 ~~~
 
-Con esto Wordpress insertará una etiqueta <script> en la sección <head> de la página haciendo referencia a la librería jQuery.
+Con esto Wordpress insertará una etiqueta `<script>` en la sección `<head>` de la página haciendo referencia a la librería jQuery.
 
 Lo siguiente que haremos es importar nuestro código con las funciones que tengamos que utilicen jQuery, pero antes deberemos evitar posibles conflictos entre otros frameworks distribuidos con Wordpress como Prototype, SWFUpload... (los "hamdle" anteriormente mencionados).
 

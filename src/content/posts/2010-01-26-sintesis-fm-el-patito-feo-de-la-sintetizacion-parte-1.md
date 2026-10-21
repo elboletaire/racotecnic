@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: 'Síntesis FM: El patito feo de la sintetización. (Parte 1)'
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 1983
-wordpress_url: http://www.racotecnic.com/?p=1983
 date: '2010-01-26 15:49:16 +0100'
-date_gmt: '2010-01-26 14:49:16 +0100'
 categories:
 - General
 tags: []
@@ -29,7 +18,7 @@ Antes de ponernos a explicar cómo funciona la síntesis FM, deberíamos hacer u
 
 En 1973 **John Chowning**, el padre putativo de la síntesis FM, publica un artículo haciendo referencia a este punto y argumentando su descubrimiento al obtener sonidos por medio de procedimiento electrónicos utilizando una técnica familiar a la <span style="color: #99ccff;"><em><span style="color: #666699;">**tecnología de radio**</span></em> </span>y <em><span style="color: #666699;">**transmisión de ondas,**</span> </em>en búsqueda como objetivo de sonidos similares con la voz humana donde el contenido armónico espectral es de una riqueza formidable; Es decir, la síntesis FM nace de la teoría por la que <span style="color: #888888;"><em><strong><span style="color: #666699;">es posible alcanzar a programar sonidos naturales mediante una edición electrónica</span></strong></em></span>. Al estar experimentando con diferentes tipos y tasas de vibrato y tremolo en la voz, <strong><span style="color: #666699;">Chowning </span></strong>descubrió que con velocidades por encima de la capacidad humana y frecuencias con una rapidez similar a las de frecuencias de audio, comienzan a aparecer componentes armónicos proporcionales a mas o menos la frecuencia portadora del tono que se estaba haciendo vibrar. Así pues, el timbre de los sonidos tiene como característica principal un espectro relativamente complejo y que se desenvuelve con la duración del sonido. Por lo tanto <strong><em><span style="color: #666699;">cada elemento o componente del espectro posee su propio desarrollo individual produciendo un desarrollo espectral en la duración del sonido</span>.</em></strong>
 
-Si nos ponemos un poco "científicos" descubrimos que en la FM, <em><span style="text-decoration: underline;">la frecuencia instantánea de una onda portadora es variada de acuerdo a una onda moduladora</span></em>, de tal forma que los cambios en la portadora se convierten en la frecuencia de la onda moduladora o<span style="color: #666699;"><strong> <em>frecuencia moduladora</em></strong></span>. La cantidad de variación en la onda portadora cambia alrededor de un promedio que se conoce como la desviación de picos de frecuencia entre ambas ondas y a la vez es proporcional a la amplitud de la onda moduladora. Los parámetros de una señal con características de frecuencia modulada son los siguientes:
+Si nos ponemos un poco "científicos" descubrimos que en la FM, <em><span style="text-decoration: underline;">la frecuencia instantánea de una onda portadora es variada de acuerdo a una onda moduladora</span></em>, de tal forma que los cambios en la portadora se convierten en la frecuencia de la onda moduladora o<span style="color: #666699;"><strong> *frecuencia moduladora*</strong></span>. La cantidad de variación en la onda portadora cambia alrededor de un promedio que se conoce como la desviación de picos de frecuencia entre ambas ondas y a la vez es proporcional a la amplitud de la onda moduladora. Los parámetros de una señal con características de frecuencia modulada son los siguientes:
 
 <ul>
   <li><img src="https://ccrma.stanford.edu/~juanig/articles/fundfm/img1.png" alt="$ {c, }$" width="18" height="33" align="middle" border="0" /> Frecuencia de la portadora o frecuencia promedio.</li>
@@ -37,7 +26,7 @@ Si nos ponemos un poco "científicos" descubrimos que en la FM, <em><span style=
   <li><img src="https://ccrma.stanford.edu/~juanig/articles/fundfm/img3.png" alt="$ {d, }$" width="20" height="35" align="middle" border="0" /> Desviación de picos de frecuencia.</li>
 </ul>
 
-En resumida cuentas, en síntesis FM normalment se utilizan varios osciladores, llamados <strong><em><span style="color: #666699;">operadores</span></em></strong>, donde unos actuan como generadores de onda y otros modulan en frecuencia esa señal. Estos, los operadores, se colocan de distintos modos, por ejemplo varios generando ondas distintas y uno modulando todos a distintas intensidades, creando lo que se denomina, <strong><span style="color: #666699;"><em>algoritmos</em></span></strong>.
+En resumida cuentas, en síntesis FM normalment se utilizan varios osciladores, llamados <strong><em><span style="color: #666699;">operadores</span></em></strong>, donde unos actuan como generadores de onda y otros modulan en frecuencia esa señal. Estos, los operadores, se colocan de distintos modos, por ejemplo varios generando ondas distintas y uno modulando todos a distintas intensidades, creando lo que se denomina, <strong><span style="color: #666699;">*algoritmos*</span></strong>.
 
 Para saber que sintetizadores utilizan la síntesis FM hay que también hacer un poco de historia. Ya que <strong><span style="color: #666699;">Chownig </span></strong>vendió la patente de la síntesis FM a <strong><span style="color: #666699;">Yamaha </span></strong>en 1975. Yamaha lanzó posteriormente sus primeros sintetizadores de FM, los <span style="color: #666699;">GS-1</span> y <span style="color: #666699;">GS-2</span>, que eran muy caros y pesados. Yamaha pronto siguió con la serie del GS, que utilizó un par de más pequeños llamados <span style="color: #666699;">Combo CE20</span> y <span style="color: #666699;">CE25<span style="color: #000000;">, lo que podría llamarse la segunda generación FM de Yamaha</span> </span>.
 
@@ -48,21 +37,21 @@ Una de las anécdotas interesantes sobre este sintetizador, <span style="color: 
 En la siguiente serie de fotografías podemos observar la evolución de los sintetizadores FM Yamaha.
 
 <figure>
-  <a href="{{ site.url }}/uploads/2011/07/gs1.jpg"><img class="size-full wp-image-1987" title="Yamaha GS-1" src="{{ site.url }}/uploads/2011/07/gs1.jpg" alt="Yamaha GS-1" width="297" height="203" /></a>
+  <a href="/uploads/2011/07/gs1.jpg"><img class="size-full wp-image-1987" title="Yamaha GS-1" src="/uploads/2011/07/gs1.jpg" alt="Yamaha GS-1" width="297" height="203" /></a>
   <figcaption>
     Yamaha GS-1
   </figcaption>
 </figure>
 
 <figure>
-  <a href="{{ site.url }}/uploads/2010/01/yamahace20.jpg"><img class="size-full wp-image-1990" title="Yamaha CE-20" src="{{ site.url }}/uploads/2010/01/yamahace20.jpg" alt="Yamaha CE-20" width="304" height="99" /></a>
+  <a href="/uploads/2010/01/yamahace20.jpg"><img class="size-full wp-image-1990" title="Yamaha CE-20" src="/uploads/2010/01/yamahace20.jpg" alt="Yamaha CE-20" width="304" height="99" /></a>
   <figcaption>
     Yamaha CE-20
   </figcaption>
 </figure>
 
 <figure>
-  <a href="{{ site.url }}/uploads/2011/07/dx71.gif"><img class="size-medium wp-image-1985" title="Yamaha DX-7" src="{{ site.url }}/uploads/2011/07/dx71-300x113.gif" alt="Yamaha DX-7" width="300" height="113" /></a>
+  <a href="/uploads/2011/07/dx71.gif"><img class="size-medium wp-image-1985" title="Yamaha DX-7" src="/uploads/2011/07/dx71-300x113.gif" alt="Yamaha DX-7" width="300" height="113" /></a>
   <figcaption>
     Yamaha DX-7
   </figcaption>
@@ -73,14 +62,14 @@ Aunque no nos entrentendremos mucho más sobre los diferentes sintetizadores FM 
 Aquí os dejo también algunas fotos algunos de los instrumentos antes mencionados.
 
 <figure>
-  <a href="{{ site.url }}/uploads/2011/07/d50.jpg"><img class="size-medium wp-image-1984" title="Roland D-50" src="{{ site.url }}/uploads/2011/07/d50-300x105.jpg" alt="Roland D-50" width="300" height="105" /></a>
+  <a href="/uploads/2011/07/d50.jpg"><img class="size-medium wp-image-1984" title="Roland D-50" src="/uploads/2011/07/d50-300x105.jpg" alt="Roland D-50" width="300" height="105" /></a>
   <figcaption>
     Roland D-50
   </figcaption>
 </figure>
 
 <figure>
-  <a href="{{ site.url }}/uploads/2011/07/dx200.jpg"><img class="size-medium wp-image-1986" title="Yamaha DX-200" src="{{ site.url }}/uploads/2011/07/dx200-300x184.jpg" alt="Yamaha DX-200" width="300" height="184" /></a>
+  <a href="/uploads/2011/07/dx200.jpg"><img class="size-medium wp-image-1986" title="Yamaha DX-200" src="/uploads/2011/07/dx200-300x184.jpg" alt="Yamaha DX-200" width="300" height="184" /></a>
   <figcaption>
     Yamaha DX-200
   </figcaption>
@@ -98,7 +87,7 @@ Uno de los sonidos, bajo mi punto de vista, más bonitos de estos instrumentos, 
 
 Por cierto, os dejo aquí la foto de mi <span style="color: #666699;">**DX-7S **</span> junto a sus compañeros de estudio.
 
-<span style="color: #666699;"><span style="color: #000000;"><span style="color: #666699;"><span style="color: #000000;"><a href="{{ site.url }}/uploads/2011/07/IMG_5375.jpg"><img class="aligncenter size-medium wp-image-1988" title="Estudio" src="{{ site.url }}/uploads/2011/07/IMG_5375-300x225.jpg" alt="Estudio" width="300" height="225" /></a><a href="http://audioblog.underave.net/wp-content/uploads/2010/01/IMG_5375.jpg">
+<span style="color: #666699;"><span style="color: #000000;"><span style="color: #666699;"><span style="color: #000000;"><a href="/uploads/2011/07/IMG_5375.jpg"><img class="aligncenter size-medium wp-image-1988" title="Estudio" src="/uploads/2011/07/IMG_5375-300x225.jpg" alt="Estudio" width="300" height="225" /></a><a href="http://audioblog.underave.net/wp-content/uploads/2010/01/IMG_5375.jpg">
 </a></span></span></span></span>
 
 Hasta la siguiente entrega.

@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: CSS hacks para Firefox, Internet Explorer, Chrome, Opera, Safari...
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Todos sabemos lo divertido y emocionante que es hacer la compatibilidad
-  crossbrowser de nuestras páginas web."
+excerpt: "Todos sabemos lo divertido y emocionante que es hacer la compatibilidad crossbrowser de nuestras páginas web."
 wordpress_id: 1369
-wordpress_url: http://racotecnic.com/?p=1369
 redirect_from:
 - "?p=1369/"
 date: '2010-02-08 23:38:44 +0100'
-date_gmt: '2010-02-08 22:38:44 +0100'
 categories:
 - Programació
 - Web
@@ -31,7 +19,7 @@ tags:
 - Gecko
 ---
 
-Todos sabemos lo <em>divertido</em> y <em>emocionante</em> que es hacer la compatibilidad crossbrowser de nuestras páginas web.
+Todos sabemos lo *divertido* y *emocionante* que es hacer la compatibilidad crossbrowser de nuestras páginas web.
 
 Por suerte para nosotros, existen un gran número de hacks CSS que podemos utilizar en cada una de las versiones de cada navegador para ayudarnos a poder mostrar por igual los contenidos de una web en todos los navegadores.
 
@@ -53,7 +41,7 @@ Empezaré por Internet Explorer, dado que es para el que usualmente se necesitan
 }
 ~~~
 
-<a id="more"></a><a id="more-1369"></a>
+
 Recordad que IE6 no interpreta la propiedad (o palabra clave..) de CSS "!important" por lo que podéis jugar con ello (aunque no es lo más recomendable):
 
 ## Internet Explorer 6 (!important)
@@ -75,7 +63,7 @@ Recordad que IE6 no interpreta la propiedad (o palabra clave..) de CSS "!importa
 
 ## Internet Explorer 8
 
-Este es un poco <em>putilla</em>, ya que el mismo hack de IE8 a veces lo interpreta IE7... así que, si nos interesa, primero habrá que poner algo que interprete únicamente IE7 y después hay que poner el hack de IE8:
+Este es un poco *putilla*, ya que el mismo hack de IE8 a veces lo interpreta IE7... así que, si nos interesa, primero habrá que poner algo que interprete únicamente IE7 y después hay que poner el hack de IE8:
 
 ~~~css
 /* Interpretado únicamente por IE7 (actúa como un !important) */

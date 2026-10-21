@@ -1,23 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Accés a escriptori remot mitjançant LogMeIn
-author:
-  display_name: gerno
-  login: gerno
-  email: hastaqueelcuerpoaguante@hotmail.com
-author_login: gerno
-author_email: hastaqueelcuerpoaguante@hotmail.com
-excerpt: "Avui, i per iniciar-me en el racó tècnic
-  us vinc a parlar de **LogMeIn**, una eina gratuïta (però privada) per
-  accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox."
+excerpt: "Avui, i per iniciar-me en el racó tècnic us vinc a parlar de LogMeIn, una eina gratuïta (però privada) per accedir a escriptoris remots mitjançant un petit programa i el navegador Firefox."
 wordpress_id: 568
-wordpress_url: http://racotecnic.com/?p=568
 redirect_from:
 - "?p=568/"
 date: '2009-05-27 12:11:44 +0200'
-date_gmt: '2009-05-27 11:11:44 +0200'
 categories:
 - Linux
 - Web
@@ -38,15 +27,15 @@ Per no fer perdre el temps a alguns... abans d'iniciar el tutorial parlarem de c
 
 Comencem!
 
-<a id="more"></a><a id="more-568"></a>
+
 
 Accedim a <a href="http://www.logmein.com" target="_self">www.logmein.com</a> i creem una compta gratuïta. Les comptes gratuïtes tenen limitacions (<span style="text-decoration: underline;">no reprodueix so, interfície gràfica pobre, límit de 10 ordinadors remots...</span>) Costa un pèl de trobar, perquè interessa que paguem. Seguim la imatge.
 
 <a href="http://img34.imageshack.us/img34/1451/90815465.jpg" target="_blank"><img class="aligncenter" src="http://img34.imageshack.us/img34/1451/90815465.jpg" border="0" alt="" width="460" height="267" /></a>
 
-Ens sortirà un registre clàssic de compte, haureu de introduir una adreça de correu electrònic. Si esteu farts dels registres i el correu brossa, proveu el correu electrònic de <a href="http://www.hidemyass.com/anonymous-email/">HideMyAss</a>, però això és un altre tema. És molt important que seleccioneu al qüestionari "<span style="text-decoration: underline;">uso personal</span>" perquè sinó demanarà que apoquineu pasta.
+Ens sortirà un registre clàssic de compte, haureu de introduir una adreça de correu electrònic. Si esteu farts dels registres i el correu brossa, proveu el correu electrònic de [HideMyAss](http://www.hidemyass.com/anonymous-email/), però això és un altre tema. És molt important que seleccioneu al qüestionari "<span style="text-decoration: underline;">uso personal</span>" perquè sinó demanarà que apoquineu pasta.
 
-Un cop esteu registrats, accediu a la vostra adreça de correu i verifiqueu la compte LogMeIn. Una vegada fet això, canvieu  a l'ordinador que us interessa accedir remotament (en aquest cas el meu netbook) i torneu a entrar a <a href="http://www.logmein.com">logmein</a> i us identifiqueu amb la vostra compte. Us sortira una pantalla com la següent i accediu a "añadir ordenador".
+Un cop esteu registrats, accediu a la vostra adreça de correu i verifiqueu la compte LogMeIn. Una vegada fet això, canvieu  a l'ordinador que us interessa accedir remotament (en aquest cas el meu netbook) i torneu a entrar a [logmein](http://www.logmein.com) i us identifiqueu amb la vostra compte. Us sortira una pantalla com la següent i accediu a "añadir ordenador".
 
 <a href="http://img223.imageshack.us/img223/3465/19757224.jpg" target="_blank"><img class="aligncenter" src="http://img223.imageshack.us/img223/3465/19757224.jpg" border="0" alt="" width="460" height="234" /></a>
 
@@ -68,7 +57,7 @@ Demanarà aleshores la contrasenya que heu entrat un parell de imatges darrere. 
 
 <a href="http://img37.imageshack.us/img37/9258/29796334.jpg" target="_blank"><img class="aligncenter" src="http://img37.imageshack.us/img37/9258/29796334.jpg" border="0" alt="" width="459" height="266" /></a>
 
-Restarà uns segons sincronitzant-se amb l'altre aparell i... <em>Voilà</em>! Ja teniu control total de l'altre ordinador. Perquè us feu una idea, la cosa quedaria més o menys així, tingueu en compte que la imatge de mostra és connectant-me del meu sobretaula (1280 x 1024) a la meva netbook (1024 x 600 i pantalla de 8").
+Restarà uns segons sincronitzant-se amb l'altre aparell i... *Voilà*! Ja teniu control total de l'altre ordinador. Perquè us feu una idea, la cosa quedaria més o menys així, tingueu en compte que la imatge de mostra és connectant-me del meu sobretaula (1280 x 1024) a la meva netbook (1024 x 600 i pantalla de 8").
 
 Us marco perquè veieu el icona de logmein (que s'executa automàticament al iniciar la PC a no ser que indiquis el contrari) i la opció de pantalla complerta.
 

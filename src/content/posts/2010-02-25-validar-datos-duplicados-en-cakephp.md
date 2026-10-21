@@ -1,26 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Validar datos duplicados en CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Hoy mismo he necesitado de una validación para verificar si un dato ya existe
-  en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis
-  utilizar \"isUnique\") no lleva una validación en su núcleo para estos menesteres
-  he tenido que crearla y ahora la comparto con vosotros."
+excerpt: "Hoy mismo he necesitado de una validación para verificar si un dato ya existe en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis utilizar \"isUnique\") no lleva una validación en su núcleo para estos menesteres he tenido que crearla y ahora la comparto con vosotros."
 wordpress_id: 1406
-wordpress_url: http://racotecnic.com/?p=1406
 redirect_from:
 - "?p=1406/"
 date: '2010-02-25 21:28:51 +0100'
-date_gmt: '2010-02-25 20:28:51 +0100'
 categories:
 - Programació
 - Web
@@ -34,7 +20,7 @@ tags:
 
 Hoy mismo he necesitado de una validación para verificar si un dato ya existe en la base de datos. Dado que CakePHP 1.1 (en versiones posteriores a la 1.2 podéis utilizar "isUnique") no lleva una validación en su núcleo para estos menesteres he tenido que crearla y ahora la comparto con vosotros:
 
-~~~php?start_inline=1
+~~~php
 /**
  * Verifica si un campo existe en la base de datos
  * Si estamos editando se excluye el valor guardado en la validación
@@ -61,11 +47,11 @@ public function checkUnique($data)
 }
 ~~~
 
-<a id="more"></a><a id="more-1406"></a>
+
 
 Para utilizarlo no tenéis más que añadir el trozo de código en el modelo deseado (normalmente en AppModel, para poder utilizarlo desde cualquier modelo) y añadir la validación en el modelo que queráis:
 
-~~~php?start_inline=1
+~~~php
 var $validate = array(
   'NOMBRE DE LA CELDA A VALIDAR' => array(
     'rule'    => 'checkUnique',
@@ -76,7 +62,7 @@ var $validate = array(
 
 Un ejemplo muy común:
 
-~~~php?start_inline=1
+~~~php
 var $validate = array(
   'username' => array(
     'rule'    => 'checkUnique',
@@ -87,4 +73,4 @@ var $validate = array(
 
 Que lo disfrutéis :)
 
-**Edición:** Se me olvidó comentar que, a diferencia del método de validación <em>checkUnique</em> que se utiliza en el post <a href="http://www.racotecnic.com/2010/01/integrando-cakephp-y-phpbb-3-x/">Inegrando CakePHP y PhpBB 3.x</a>, este método sirve también a la hora de editar un ítem ya que, en ese caso, retorna `true` si el valor de la celda coincide con el ya guardado en la base de datos.
+**Edición:** Se me olvidó comentar que, a diferencia del método de validación <em>checkUnique</em> que se utiliza en el post [Inegrando CakePHP y PhpBB 3.x](/2010/01/integrando-cakephp-y-phpbb-3-x/), este método sirve también a la hora de editar un ítem ya que, en ese caso, retorna `true` si el valor de la celda coincide con el ya guardado en la base de datos.

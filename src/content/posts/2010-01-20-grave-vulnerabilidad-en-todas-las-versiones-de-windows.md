@@ -1,25 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Grave vulnerabilidad en todas las versiones de Windows
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "¡Urgente! Se ha detectado una **vulnerabilidad muy crítica en  todas las versiones de Windows desde 1993**,
-  un “0-day” en toda  regla, que permite escalar privilegios y **ejecutar código con  permisos
-  de sistema**, equivalentes a efectos prácticos a los de  administrador."
+excerpt: "¡Urgente! Se ha detectado una vulnerabilidad muy crítica en todas las versiones de Windows desde 1993, un “0-day” en toda regla, que permite escalar privilegios y ejecutar código con permisos de sistema, equivalentes a efectos prácticos a los de administrador."
 wordpress_id: 1286
-wordpress_url: http://racotecnic.com/?p=1286
 redirect_from:
 - "?p=1286/"
 date: '2010-01-20 18:14:43 +0100'
-date_gmt: '2010-01-20 17:14:43 +0100'
 categories:
 - Windows
 tags:
@@ -27,7 +14,7 @@ tags:
 - 0-day
 ---
 
-_**Fuente:** <a href="http://www.genbeta.com/windows/vulnerabilidad-muy-critica-en-todas-las-versiones-de-windows" target="_blank">GenBeta</a>_
+_**Fuente:** <a href="http://www.genbeta.com/windows/vulnerabilidad-muy-critica-en-todas-las-versiones-de-windows" target="_blank" rel="noopener">GenBeta</a>_
 
 ¡Urgente! Se ha detectado una **vulnerabilidad muy crítica en  todas las versiones de Windows desde 1993**, un “0-day” en toda  regla, que permite escalar privilegios y **ejecutar código con  permisos de sistema**, equivalentes a efectos prácticos a los de  administrador.
 
@@ -37,7 +24,7 @@ El fallo se encuentra en el soporte “legacy” que permite ejecutar  aplicacio
 
 Con un código que va en contra de dichas suposiciones, un usuario  malicioso puede realizar un cambio de contexto y **ejecutar código  con derechos de Sistema**, que están por encima incluso del de  los administradores.
 
-<a id="more"></a><a id="more-1286"></a>
+
 
 **Tavis Ormandy**, el investigador que detectó el  fallo, **notificó a Microsoft en junio de 2009** de este  problema, y al poco le confirmaron que estaba en lo cierto. En todo este  tiempo, no se ha publicado parche al respecto, lo que ha motivado a  Ormandy el hacer pública la vulnerabilidad para forzar a que desde  Redmond se pongan las pilas.
 
@@ -59,4 +46,4 @@ Los principales afectados son aquellas empresas que mantienen los sistemas de su
 
 Aunque no hay parche, existe una sencilla vía de evitar la vulnerabilidad. Tan sólo hay que deshabilitar el soporte para aplicaciones de 16 bits, que en la mayor parte de los casos no supondrá problema alguno. Para ello, hay que habilitar “Impedir el acceso a aplicaciones de 16 bits” en la Consola de Políticas (gpedit.msc), dentro de “Configuración de equipo – Plantillas administrativas – Componentes de Windows – Compatibilidad de aplicación”. Hay que forzar una actualización de las políticas en los sistemas que dependan del controlador de dominio para que se aplique el cambio.
 
-_**Fuente:** <a href="http://www.genbeta.com/windows/vulnerabilidad-muy-critica-en-todas-las-versiones-de-windows" target="_blank">GenBeta</a>_
+_**Fuente:** <a href="http://www.genbeta.com/windows/vulnerabilidad-muy-critica-en-todas-las-versiones-de-windows" target="_blank" rel="noopener">GenBeta</a>_

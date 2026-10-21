@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalación de CakePHP sin base de datos
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 1195
-wordpress_url: http://racotecnic.com/?p=1195
 redirect_from:
 - "?p=1195/"
 date: '2009-11-23 01:06:25 +0100'
-date_gmt: '2009-11-23 00:06:25 +0100'
 categories:
 - Programació
 - Web

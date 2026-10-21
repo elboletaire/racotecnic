@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: MyJDB, un sistema de base de datos en JavaScript
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 1401
-wordpress_url: http://racotecnic.com/?p=1401
 redirect_from:
 - "?p=1401/"
 date: '2010-02-25 20:47:40 +0100'
-date_gmt: '2010-02-25 19:47:40 +0100'
 categories:
 - Programació
 - Web
@@ -27,7 +16,7 @@ tags:
 - JavaScriptDB
 ---
 
-El próximo lunes 1 de marzo (de 2010) verá la luz la primera versión de <a title="Web oficial de MyJDB" href="http://www.myjdb.org/" target="_blank">MyJDB</a>, un sistema de bases de datos inspirado en JavaScriptDB (muerto hacia el 2005..) resucitado por Luis García.
+El próximo lunes 1 de marzo (de 2010) verá la luz la primera versión de <a title="Web oficial de MyJDB" href="http://www.myjdb.org/" target="_blank" rel="noopener">MyJDB</a>, un sistema de bases de datos inspirado en JavaScriptDB (muerto hacia el 2005..) resucitado por Luis García.
 
 Lo mas destacado de esta versión (beta 1.1.0), que es más un puente hacia lo que se quiere llegar, es la optimización del código, aunque es la primera optimización los resultados han sido cuanto menos sorprendentes. Entre sus cambios destacan los siguientes:
 

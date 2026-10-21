@@ -1,25 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Registro de usuarios externo a phpBB 3.x
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "El otro día expliqué cómo registrar usuarios en nuestro Wordpress desde
-  un formulario de login externo. Como ya expliqué, he estado haciendo un
-  formulario de registro global para varios scripts para mi página web
-  (Wordpress, phpBB, MediaWiki) y quiero poder aliviaros esfuerzo si llegado el
-  caso tenéis que hacerlo ;)"
+excerpt: "El otro día expliqué cómo registrar usuarios en nuestro Wordpress desde un formulario de login externo. Como ya expliqué, he estado haciendo un formulario de registro global para varios scripts para mi página web (Wordpress, phpBB, MediaWiki) y quiero poder aliviaros esfuerzo si llegado el caso tenéis que hacerlo ;)"
 wordpress_id: 151
-wordpress_url: http://racoinformatic.underave.net/?p=151
 date: '2009-01-21 01:07:09 +0100'
-date_gmt: '2009-01-21 00:07:09 +0100'
 categories:
 - Programació
 - Web
@@ -31,16 +16,16 @@ tags:
 ---
 
 > **Nota:** Si lo que buscas es integrar phpBB 3.x con CakePHP,
-[ésta es tu entrada]({{ site.url }}/2010/01/integrando-cakephp-y-phpbb-3-x).
+[ésta es tu entrada](/2010/01/integrando-cakephp-y-phpbb-3-x).
 
-El otro día expliqué <a title="Leer artículo" href="http://racoinformatic.underave.net/2009/01/registro-de-usuarios-externo-a-wordpress/" target="_self">cómo registrar usuarios en nuestro Wordpress desde un formulario de login externo</a>. Como ya expliqué he estado haciendo un formulario de registro global para varios scripts para <a title="Visitar underave.net" href="http://www.underave.net" target="_self">mi página web</a> (<a title="Visitar wordpress.org" href="http://www.wordpress.org" target="_blank">Wordpress</a>, <a title="Visitar phpBB.com" href="http://www.phpbb.com" target="_blank">phpBB</a>, <a title="Visitar mediawiki.org" href="http://www.mediawiki.org" target="_blank">MediaWiki</a>) y quiero poder aliviaros esfuerzo si llegado el caso tenéis que hacerlo ;)
+El otro día expliqué <a title="Leer artículo" href="http://racoinformatic.underave.net/2009/01/registro-de-usuarios-externo-a-wordpress/" target="_self">cómo registrar usuarios en nuestro Wordpress desde un formulario de login externo</a>. Como ya expliqué he estado haciendo un formulario de registro global para varios scripts para <a title="Visitar underave.net" href="http://www.underave.net" target="_self">mi página web</a> (<a title="Visitar wordpress.org" href="http://www.wordpress.org" target="_blank" rel="noopener">Wordpress</a>, <a title="Visitar phpBB.com" href="http://www.phpbb.com" target="_blank" rel="noopener">phpBB</a>, <a title="Visitar mediawiki.org" href="http://www.mediawiki.org" target="_blank" rel="noopener">MediaWiki</a>) y quiero poder aliviaros esfuerzo si llegado el caso tenéis que hacerlo ;)
 
-Al igual que con el anterior tutorial voy a dar por hecho que sabéis hacer un formulario y <a title="Enviar y recibir datos vía GET y POST en HTML y PHP" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=47214" target="_blank">enviar y recibir datos vía GET y POST</a>. Así pues, ¡vayamos al grano!
+Al igual que con el anterior tutorial voy a dar por hecho que sabéis hacer un formulario y <a title="Enviar y recibir datos vía GET y POST en HTML y PHP" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=47214" target="_blank" rel="noopener">enviar y recibir datos vía GET y POST</a>. Así pues, ¡vayamos al grano!
 
-<a id="more"></a><a id="more-151"></a>
+
 Primero de todo cargamos ficheros necesarios e inicializamos la constante "IN_PHPBB":
 
-~~~php?start_inline=1
+~~~php
 // Iniciamos la constante IN_PHPBB
 define('IN_PHPBB', true);
 // Indicamos la carpeta donde se encuentra nuestro phpBB3
@@ -58,7 +43,7 @@ define ('UTC',1);
 
 Ya tenemos lo más importante. Ahora pasaremos a hacer un par de comprobaciones: validar la existencia del usuario y verificar el e-mail. Ambas verificaciones serán llevadas a cabo con funciones de phpBB (cargadas en las líneas anteriores).
 
-~~~php?start_inline=1
+~~~php
 // Variables recogidas del formulario
 $nick = $_POST['nombre_de_usuario'];
 $email = $_POST['email'];
@@ -93,13 +78,13 @@ if ($error) {
 }
 ~~~
 
-La función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionvalidate_username" target="_blank">validate_username</a> retorna una cadena si el nombre de usuario ya existe o false en caso de que no exista. Lo que no he logrado averiguar es si hay distintas frases o solo una "USERNAME_TAKEN" (si alguien sabe de alguna otra le agradeceré que me lo indique), por eso mismo lo trato como true o false.
+La función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionvalidate_username" target="_blank" rel="noopener">validate_username</a> retorna una cadena si el nombre de usuario ya existe o false en caso de que no exista. Lo que no he logrado averiguar es si hay distintas frases o solo una "USERNAME_TAKEN" (si alguien sabe de alguna otra le agradeceré que me lo indique), por eso mismo lo trato como true o false.
 
-Por otro lado, la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionvalidate_email" target="_blank">validate_email</a> retorna tres cadenas distintas, según si el dominio o el e-mail son válidos o si el e-mail está cogido.
+Por otro lado, la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionvalidate_email" target="_blank" rel="noopener">validate_email</a> retorna tres cadenas distintas, según si el dominio o el e-mail son válidos o si el e-mail está cogido.
 
 Pasemos al propio registro del usuario. Antes de hacerlo debéis saber que os mostraré cómo hacer para registrar a un usuario inactivo. Si queréis registrar al usuario activado directamente, simplemente omitid las líneas que os indique.
 
-~~~php?start_inline=1
+~~~php
 // Encriptamos la contraseña
 $hash = phpbb_hash($pass);
 // Generamos un código de activación para la cuenta

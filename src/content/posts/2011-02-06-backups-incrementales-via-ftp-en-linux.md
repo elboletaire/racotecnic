@@ -1,26 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Backups incrementales vía FTP en Linux
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Recientemente he decidido pagar un servidor compartido para hacer las copias
-  de seguridad de mis documentos, imágenes y demás. Es un servidor realmente barato
-  pero con la pega que no tengo acceso vía SSH, lo que me ha impedido utilizar aplicaciones
-  como rsync o similares. Después de buscar un rato la única solución viable
-  que he encontrado ha sido lftp, ya que es el único modo que he encontrado de hacer
-  copias incrementales vía FTP."
+excerpt: "Recientemente he decidido pagar un servidor compartido para hacer las copias de seguridad de mis documentos, imágenes y demás. Es un servidor realmente barato pero con la pega que no tengo acceso vía SSH, lo que me ha impedido utilizar aplicaciones como rsync o similares. Después de buscar un rato la única solución viable que he encontrado ha sido lftp, ya que es el único modo que he encontrado de hacer copias incrementales vía FTP."
 wordpress_id: 1811
-wordpress_url: http://www.racotecnic.com/?p=1811
 date: '2011-02-06 21:26:48 +0100'
-date_gmt: '2011-02-06 20:26:48 +0100'
 categories:
 - Programació
 - Linux
@@ -51,7 +35,7 @@ lftp -c 'set ftp:list-options -a;
 
 Como también quería hacer backups de MySQL he decidido entretenerme un rato y hacer mi primer script de bash para hacer copias de mysql y directorios del sistema periódicamente (cada dos días a través de un cron).
 
-Para utilizar el script necesitaréis tener instalado en vuestro servidor linux los paquetes lftp y mailx (o hairloom-mailx); este último servirá para enviarnos un e-mail en caso de error en la subida de nuestros backups. <a id="more"></a><a id="more-1811"></a>
+Para utilizar el script necesitaréis tener instalado en vuestro servidor linux los paquetes lftp y mailx (o hairloom-mailx); este último servirá para enviarnos un e-mail en caso de error en la subida de nuestros backups. 
 
 ~~~bash
 #!/bin/bash

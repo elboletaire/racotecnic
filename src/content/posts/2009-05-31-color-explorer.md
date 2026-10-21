@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Color Explorer
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 613
-wordpress_url: http://racotecnic.com/?p=613
 redirect_from:
 - "?p=613/"
 date: '2009-05-31 16:02:34 +0200'
-date_gmt: '2009-05-31 15:02:34 +0200'
 categories:
 - Web
 - Disseny
@@ -24,9 +13,9 @@ tags:
 - Colors
 ---
 
-Gracias al blog de <a title="Visitar el blog de mantis" href="http://www.mantistechs.com/blog/2009/05/13/color-explorer-la-herramienta-definitiva-para-paletas-de-color.html" target="_blank">mantis</a> he descubierto "Color Explorer".
+Gracias al blog de <a title="Visitar el blog de mantis" href="http://www.mantistechs.com/blog/2009/05/13/color-explorer-la-herramienta-definitiva-para-paletas-de-color.html" target="_blank" rel="noopener">mantis</a> he descubierto "Color Explorer".
 
-<a href="{{ site.url }}/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png"><img class="size-medium wp-image-614 aligncenter" title="captura-color-explorer-e280a2-color-matching-mozilla-firefox" src="{{ site.url }}/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png" alt="captura-color-explorer-e280a2-color-matching-mozilla-firefox" /></a>
+<a href="/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png"><img class="size-medium wp-image-614 aligncenter" title="captura-color-explorer-e280a2-color-matching-mozilla-firefox" src="/uploads/2009/05/captura-color-explorer-e280a2-color-matching-mozilla-firefox.png" alt="captura-color-explorer-e280a2-color-matching-mozilla-firefox" /></a>
 
 Todos sabemos que la elección de colores es un punto determinante de un diseño, no sólo por los significados de los colores si no por que estos acompañen al visitante de forma agradable y no produciéndole terribles dolores de cabeza.
 

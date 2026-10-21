@@ -1,25 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Cambiar máquina virtual de Java (JVM) en Eclipse 3.4.x
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de
-  java utilizada por defecto en Eclipse. Ésta ha cambiado en la versión 3.4 respecto
-  a la que yo expliqué (≤ 3.2)."
+excerpt: "Hace un tiempo expliqué cómo cambiar la máquina virtual de java utilizada por defecto en Eclipse. Ésta ha cambiado en la versión 3.4 respecto a la que yo expliqué (≤ 3.2)."
 wordpress_id: 520
-wordpress_url: http://racotecnic.com/?p=520
 redirect_from:
 - "?p=520/"
 date: '2009-05-03 16:45:53 +0200'
-date_gmt: '2009-05-03 15:45:53 +0200'
 categories:
 - Programació
 - Linux
@@ -31,7 +18,7 @@ tags:
 - Java
 ---
 
-<a title="Ver artículo" href="http://racotecnic.com/2009/01/cambiar-maquina-virtual-de-java-en-eclipse/" target="_self">Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de java utilizada por defecto en <a title="Visitar página oficial de Eclipse" href="http://www.eclipse.org" target="_blank">Eclipse</a>.
+<a title="Ver artículo" href="/2009/01/cambiar-maquina-virtual-de-java-en-eclipse/" target="_self">Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de java utilizada por defecto en <a title="Visitar página oficial de Eclipse" href="http://www.eclipse.org" target="_blank">Eclipse</a>.
 
 Ésta ha cambiado en la versión 3.4 respecto a la que yo expliqué (≤ 3.2). En
 lugar de utilizar un fichero llamado "java_home" para indicar la máquina virtual
@@ -55,7 +42,6 @@ En linux y mac:
     -Xms40m
     -Xmx512m
     -XX:MaxPermSize=256m
-{: .no-line-numbers }
 
 En windows*:
 
@@ -70,7 +56,6 @@ En windows*:
     -Xms40m
     -Xmx512m
     -XX:MaxPermSize=256m
-{: .no-line-numbers }
 
 _* Ignorad a partir de `-showsplash` cambiando la ruta por la que os convenga._
 

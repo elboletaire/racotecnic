@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Errores 404 con Ajax (y jQuery) en CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "En este tutorial aprenderéis a **gestionar los errores de CakePHP
-  con y sin Ajax.**"
+excerpt: "En este tutorial aprenderéis a gestionar los errores de CakePHP con y sin Ajax."
 wordpress_id: 1583
-wordpress_url: http://racotecnic.com/?p=1583
 redirect_from:
 - "?p=1583/"
 date: '2010-07-10 23:44:09 +0200'
-date_gmt: '2010-07-10 22:44:09 +0200'
 categories:
 - Programació
 - Web
@@ -64,7 +52,7 @@ class AppError extends ErrorHandler
 
 Pasemos a la creación de la vista... **/app/views/errors/ajax_error404.ctp**
 
-<a id="more"></a><a id="more-1583"></a>
+
 
 ~~~php
 <?php
@@ -90,7 +78,7 @@ jQuery(document).ready(function($) {
 
 Con esto mostraremos una alerta mostrando el texto que hayamos definido en nuestro app_error al usuario que intente adquirir una url no existente en nuestra aplicación CakePHP.
 
-Evidentemente podéis gestionar más errores a parte del típico error 404, simplemente añadiendo algún <em>if</em> más al código javascript y el método correspondiente en el app_error para gestionarlo.
+Evidentemente podéis gestionar más errores a parte del típico error 404, simplemente añadiendo algún *if* más al código javascript y el método correspondiente en el app_error para gestionarlo.
 
 El parámetro <em>$params</em> lo he pasado por si queréis utilizar alguna de sus variables. Por ejemplo, podríamos mostrar al usuario un mensaje tipo "La página /requetefuck no existe".
 

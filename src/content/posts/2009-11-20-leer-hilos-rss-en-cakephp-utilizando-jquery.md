@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Leer hilos RSS en CakePHP utilizando jQuery
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y mostrarlos
-  \"con clase\" utilizando el framework de JavaScript jQuery."
+excerpt: "Con este pequeño tutorial aprenderéis a leer hilos RSS en CakePHP y mostrarlos \"con clase\" utilizando el framework de JavaScript jQuery."
 wordpress_id: 1177
-wordpress_url: http://racotecnic.com/?p=1177
 redirect_from:
 - "?p=1177/"
 date: '2009-11-20 14:41:14 +0100'
-date_gmt: '2009-11-20 13:41:14 +0100'
 categories:
 - Programació
 - Web
@@ -38,16 +26,15 @@ Si no tenéis ni idea de Cake pero utilizáis un poco el tarro seguro que podré
 <blockquote>
   <ul>
     <li>Ejemplo en <a title="Visitar underave" href="http://www.underave.net/barna23/">underave</a>: <a href="http://www.underave.net/barna23/blogs">http://www.underave.net/barna23/blogs</a></li>
-    <li>Ejemplo del tutorial: <a href="http://demos.racotecnic.com/tutorials/cake/pages/blogs">http://demos.racotecnic.com/tutorials/cake/pages/blogs</a></li>
-    <li><a href="http://demos.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
+    <li><a href="/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
   </ul>
 </blockquote>
 
-Para este tutorial sólo necesitáis <a rel="nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (yo utilizo la v. 1.3.2) y <a rel="nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (en mi caso la v. 1.2.4.8284 [1.2.5 stable]).
+Para este tutorial sólo necesitáis <a rel="noopener nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (yo utilizo la v. 1.3.2) y <a rel="noopener nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (en mi caso la v. 1.2.4.8284 [1.2.5 stable]).
 
-<a id="more"></a><a id="more-1177"></a>
 
-Vamos a utilizar nuestro fichero <i>pages_controller.php</i> para gestionar los hilos. Si no lo tenéis creado, creadlo. Recordad que debéis hacerlo en la carpeta <i>/app/controllers/</i> y que el contenido de este fichero debe ser, para empezar, idéntico que el fichero <i>/cake/libs/controller/pages_controller.php</i>; algo así:
+
+Vamos a utilizar nuestro fichero *pages_controller.php* para gestionar los hilos. Si no lo tenéis creado, creadlo. Recordad que debéis hacerlo en la carpeta <i>/app/controllers/</i> y que el contenido de este fichero debe ser, para empezar, idéntico que el fichero <i>/cake/libs/controller/pages_controller.php</i>; algo así:
 
 ~~~php
 <?php
@@ -86,13 +73,13 @@ class PagesController extends AppController
 
 Para ahorrar tiempo he añadido ya —en azul— un par de cosas que vamos a necesitar.
 
-En la <b>línea 5</b> he añadido el "<a href="http://book.cakephp.org/view/174/request-handling" target="_blank" rel="nofollow">RequestHandler</a>" ya que vamos a trabajar con Ajax y necesitaremos uno de sus métodos.
+En la **línea 5** he añadido el "<a href="http://book.cakephp.org/view/174/request-handling" target="_blank" rel="noopener nofollow">RequestHandler</a>" ya que vamos a trabajar con Ajax y necesitaremos uno de sus métodos.
 
-En la <b>línea 6</b> he inicializado la variable <i>$cacheDuration</i> donde almacenamos el tiempo de actualización de la caché (3 horas en el caso del ejemplo). Si lo preferís podéis iniciarla más adelante como una variable normal dentro de un método en lugar de crearla como variable de clase.
+En la **línea 6** he inicializado la variable <i>$cacheDuration</i> donde almacenamos el tiempo de actualización de la caché (3 horas en el caso del ejemplo). Si lo preferís podéis iniciarla más adelante como una variable normal dentro de un método en lugar de crearla como variable de clase.
 
-Sabiendo esto, pasemos a la creación del resto de métodos del controlador <i>PagesController</i>:
+Sabiendo esto, pasemos a la creación del resto de métodos del controlador *PagesController*:
 
-~~~php?start_inline=1
+~~~php
 // continuación de /app/controllers/pages_controller.php
 function beforeFilter()
 {
@@ -178,22 +165,22 @@ private function _getFeeds($url)
 
 Como siempre digo, el código habla por si solo y para el resto están los comentarios ;) Sólo cabría mencionar un par de cosas:
 
-El layout <em>ajax.ctp</em> (línea 19) no hace falta que lo creéis ya que CakePHP ya lo incluye en su núcleo.
+El layout *ajax.ctp* (línea 19) no hace falta que lo creéis ya que CakePHP ya lo incluye en su núcleo.
 
-El fichero <em>json.ctp</em> (línea 49) sólo contiene el <i>echo</i> de un <i>json_encode</i>:
+El fichero *json.ctp* (línea 49) sólo contiene el <i>echo</i> de un <i>json_encode</i>:
 
 ~~~php
 <?php // /app/views/ajax/json.ctp
 echo json_encode($data);
 ~~~
 
-El fichero <i>json.ctp</i> lo he creado en la carpeta ajax porque todo lo relacionado con ajax lo meto en la carpeta /app/views/ajax/ para tenerlo todo en el mismo sitio. A demás, son ficheros tan genéricos que los utilizo desde casi todas las secciones así que ya me va bien tenerlos en una carpeta por separado.
+El fichero *json.ctp* lo he creado en la carpeta ajax porque todo lo relacionado con ajax lo meto en la carpeta /app/views/ajax/ para tenerlo todo en el mismo sitio. A demás, son ficheros tan genéricos que los utilizo desde casi todas las secciones así que ya me va bien tenerlos en una carpeta por separado.
 
-Si lo preferís, en lugar de crear la vista json, podéis optar por hacer un <i>echo</i> de un <i>json_encode</i> en el controlador directamente, aunque eso rompe un poco con el patrón MVC.
+Si lo preferís, en lugar de crear la vista json, podéis optar por hacer un *echo* de un *json_encode* en el controlador directamente, aunque eso rompe un poco con el patrón MVC.
 
 **Para que el método rss funcione es importante que creemos una ruta hacia /rss**:
 
-~~~php?start_inline=1
+~~~php
 // /app/config/routes.php
 Router::connect('/rss/:feed',
   array('controller' => 'pages','action' => 'rss'),
@@ -204,7 +191,7 @@ Router::connect('/rss/:feed',
 );
 ~~~
 
-Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi caso la he llamado <i>blogs.ctp</i>):
+Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi caso la he llamado *blogs.ctp*):
 
 ~~~php
 // /app/views/pages/blogs.ctp
@@ -229,9 +216,9 @@ Dicho esto, pasemos rápidamente a la vista que mostrará los hilos RSS (en mi c
 </ul>
 ~~~
 
-En la <b>línea 2</b> he añadido el fichero javascript que se encargará de cargar los hilos RSS (y será el siguiente paso del tutorial).
+En la **línea 2** he añadido el fichero javascript que se encargará de cargar los hilos RSS (y será el siguiente paso del tutorial).
 
-En las <b>líneas 5, 6 y 7</b> (y luego se repite para cada blog) he añadido una lista de elementos con una ID cada uno.<strong> Esta ID debe coincidir con las opciones que hayáis puesto en el <i>switch</i> del método <i>rss</i></strong> (en <i>pages_controller.php</i>).
+En las **líneas 5, 6 y 7** (y luego se repite para cada blog) he añadido una lista de elementos con una ID cada uno.<strong> Esta ID debe coincidir con las opciones que hayáis puesto en el <i>switch</i> del método <i>rss</i></strong> (en <i>pages_controller.php</i>).
 
 Sólo nos queda hacer el fichero JavaScript encargado de cargar los hilos:
 
@@ -266,7 +253,6 @@ Pues ya está, ya lo tenemos :D Si todo ha ido bien deberíais verlo parecido a 
 <blockquote>
   <ul>
     <li>Ejemplo en <a title="Visitar underave" href="http://www.underave.net/barna23/">underave</a>: <a href="http://www.underave.net/barna23/blogs">http://www.underave.net/barna23/blogs</a></li>
-    <li>Ejemplo del tutorial: <a href="http://demos.racotecnic.com/tutorials/cake/pages/blogs">http://demos.racotecnic.com/tutorials/cake/pages/blogs</a></li>
-    <li><a href="http://demos.racotecnic.com/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
+    <li><a href="/tutorials/2009/11/rss_cake.zip">Descargar ficheros del ejemplo</a></li>
   </ul>
 </blockquote>

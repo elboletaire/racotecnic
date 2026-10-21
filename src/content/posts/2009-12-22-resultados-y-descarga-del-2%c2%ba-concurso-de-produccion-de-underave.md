@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Resultados y descarga del 2º concurso de producción de underave
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 1255
-wordpress_url: http://racotecnic.com/?p=1255
 redirect_from:
 - "?p=1255/"
 date: '2009-12-22 02:28:12 +0100'
-date_gmt: '2009-12-22 01:28:12 +0100'
 categories:
 - General
 - Audio
