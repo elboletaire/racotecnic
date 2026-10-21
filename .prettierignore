@@ -17,3 +17,5 @@
 *.mdx
 # WordPress posts, bodies are cleaned separately
 src/content/posts/
+# Old tutorials, vetted and copied as-is
+public/tutorials/
