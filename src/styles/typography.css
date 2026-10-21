@@ -79,7 +79,7 @@
     }
 
     blockquote {
-      @apply border-s-accent/80 wrap-break-word opacity-80;
+      @apply border-s-accent/80 text-foreground wrap-break-word opacity-80;
     }
 
     details:not(.callout) {
