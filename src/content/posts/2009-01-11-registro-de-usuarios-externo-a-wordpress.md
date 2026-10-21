@@ -30,7 +30,7 @@ Empecemos...
 
 Como he dicho doy por hecho que sabéis hacer un formulario de envío de datos POST. Por si acaso aquí tenéis una útil ayuda:
 <blockquote>
-<a title="Visitar la web de referencia" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=47214" target="_blank">Enviando y recibiendo datos con GET y POST utilizando HTML y PHP</a></blockquote>
+<a title="Visitar la web de referencia" href="http://aprendeenlinea.udea.edu.co/lms/moodle/mod/resource/view.php?id=47214" target="_blank" rel="noopener">Enviando y recibiendo datos con GET y POST utilizando HTML y PHP</a></blockquote>
 
 Primero de todo debemos cargar los ficheros necesarios para utilizar las funciones de wordpress:
 
@@ -43,13 +43,13 @@ Donde "**../blog/**" corresponde a la ruta relativa de vuestro WordPress.
 
 Una vez añadidos los ficheros necesarios (*wp-config.php* carga las variables de WordPress y algunos ficheros necesarios y el fichero *registration.php* nos permite utilizar las funciones de registro de usuarios) tan solo tenemos que llamar a la función para registrar usuarios. Tenemos dos opciones: la sencilla (*wp_create_user*) con sólo dos parámetros y la compleja (*wp_insert_user*) dónde le podemos pasar todos los detalles del usuario en un array asociativo.
 
-<a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_create_user" target="_blank">Simple</a>:
+<a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_create_user" target="_blank" rel="noopener">Simple</a>:
 
 ~~~php
 wp_create_user($_POST['usuario'], $_POST['contrasenya'], $_POST['email']);
 ~~~
 
-<a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Compleja</a> (podéis ver todas las variables posibles en el <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Codex de WordPress</a>):
+<a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank" rel="noopener">Compleja</a> (podéis ver todas las variables posibles en el <a title="Ver detalles en el Codex de Wordpress" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank" rel="noopener">Codex de WordPress</a>):
 
 ~~~php
 // Rellenamos un array con los datos que queramos añadir
@@ -112,9 +112,9 @@ Páginas de referencia:
 
 <blockquote>
 <ul>
-  <li><a title="Wordpress Codex" href="http://codex.wordpress.org" target="_blank">Wordpress Codex</a></li>
-  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank">Detalles de la función wp_insert_user</a></li>
-  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Function_Reference/wp_create_user" target="_blank">Detalles de la función wp_create_user</a></li>
-  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">Roles &amp; Capabilities</a></li>
+  <li><a title="Wordpress Codex" href="http://codex.wordpress.org" target="_blank" rel="noopener">Wordpress Codex</a></li>
+  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Function_Reference/wp_insert_user" target="_blank" rel="noopener">Detalles de la función wp_insert_user</a></li>
+  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Function_Reference/wp_create_user" target="_blank" rel="noopener">Detalles de la función wp_create_user</a></li>
+  <li><a title="Wordpress Codex" href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank" rel="noopener">Roles &amp; Capabilities</a></li>
 </ul>
 </blockquote>

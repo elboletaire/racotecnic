@@ -28,7 +28,7 @@ Software libre español desarrollado en python. Disponible para Windows y Linux.
 
 Muy sencillo de utilizar. Permite descargar de 4shared, megaupload, sendspace, zshare, filefactory, mediafire, gigasize y rapidshare y permite el uso de cuentas premium em MegaUpload y Rapidshare.
 
-<a title="tucaneando.com" rel="nofollow" href="http://www.tucaneando.com" target="_blank">www.tucaneando.com</a>
+<a title="tucaneando.com" rel="noopener nofollow" href="http://www.tucaneando.com" target="_blank">www.tucaneando.com</a>
 
 
 
@@ -44,6 +44,6 @@ Además tiene varios plugins interesantes, como el de interfaz web (con el que p
 
 <em>* Al estar desarrollado en Java podemos utilizarlo desde cualquier sistema operativo que permita Java (Windows, Linux y Mac por supuesto que permiten Java)</em>
 
-<a title="JDownloader" rel="nofollow" href="http://www.jdownloader.org" target="_blank">www.jdownloader.org</a>
+<a title="JDownloader" rel="noopener nofollow" href="http://www.jdownloader.org" target="_blank">www.jdownloader.org</a>
 
 <a href="/uploads/2009/07/JDownloader.png"><img class="alignnone size-full wp-image-721" title="JDownloader" src="/uploads/2009/07/JDownloader.png" alt="JDownloader" width="589" height="377" /></a>

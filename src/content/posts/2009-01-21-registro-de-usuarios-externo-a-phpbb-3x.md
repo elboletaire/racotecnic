@@ -113,12 +113,12 @@ echo 'Usuario registrado correctamente! Tu ID de usuario es ' . $user_id . ' y t
 Ahora, por pasos:
 
 <ul>
-  <li>Encriptamos la contraseña utilizando la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions.php.html#functionphpbb_hash" target="_blank">phpbb_hash</a>. Este paso puede ser modificado por una simple encriptación por MD5 ya que phpbb reconoce ambos métodos de encriptación a la hora de logear usuarios.</li>
+  <li>Encriptamos la contraseña utilizando la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions.php.html#functionphpbb_hash" target="_blank" rel="noopener">phpbb_hash</a>. Este paso puede ser modificado por una simple encriptación por MD5 ya que phpbb reconoce ambos métodos de encriptación a la hora de logear usuarios.</li>
   <li>Generamos un código de 13 caracteres a partir de la hora actual encriptada en md5 (esto es para conseguir una clave lo más aleatoria posible) y añadimos los datos en una tabla asociativa.</li>
   <li>Añadimos todos los datos en una tabla asociativa.</li>
   <li>En caso de querer registrar el usuario con su cuenta ya activa, descartaríamos las claves (y sus respectivos valores) "user_actkey" y "user_inactive_time" y la clave "user_type" la pondríamos a 0 en lugar de 1 (1 es usuarios inactivos, 2 BOTs y 0 usuarios activos).</li>
   <li>UTC indica la diferencia horaria con el servidor. Es una constante que he iniciado en las primeras líneas de código y cuya función no es más que restar la diferencia horaria entre el servidor y UTC+0 (phpBB guarda las horas en UTCzero). En mi caso la diferencia horaria es +1, pues el ordenador en el que hago estos códigos es el mío y así que está en UTC+1. Si el servidor estuviera en U.S.A. quizás debierais poner -7 o -8 (como he dicho dependerá de la situación horaria de vuestro servidor...).</li>
-  <li>Para terminar, la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionuser_add" target="_blank">user_add</a> devuelve la nueva ID del usuario creado. Con ella y con la clave de activación guardada anteriormente podemos crear un enlace de activación:</li>
+  <li>Para terminar, la función <a title="Ver detalles de la función" href="http://area51.phpbb.com/docs/code/phpBB3/_includes---functions_user.php.html#functionuser_add" target="_blank" rel="noopener">user_add</a> devuelve la nueva ID del usuario creado. Con ella y con la clave de activación guardada anteriormente podemos crear un enlace de activación:</li>
 </ul>
 
 ~~~php
@@ -131,6 +131,6 @@ Una vez terminado el registro podemos enviar este enlace al usuario vía e-mail 
 <blockquote>
   Página de referencia:
   <ul>
-    <li><a title="Ver página de referencia" href="http://area51.phpbb.com/docs/code/" target="_blank">phpBB3 Code Reference</a></li>
+    <li><a title="Ver página de referencia" href="http://area51.phpbb.com/docs/code/" target="_blank" rel="noopener">phpBB3 Code Reference</a></li>
   </ul>
 </blockquote>

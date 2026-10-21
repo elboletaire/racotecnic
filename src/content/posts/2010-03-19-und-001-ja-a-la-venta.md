@@ -28,5 +28,5 @@ Felicitats  a tots els implicats.
 
 ## Disponible a <a title="UND-001" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank" rel="noopener">toolbox</a> i altres tendes de vinils.
 
-> <span style="color: #ff6600;"><strong><span style="color: #c0c0c0;"><a title="Tollbox" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank">Visitar toolbox</a></span>
+> <span style="color: #ff6600;"><strong><span style="color: #c0c0c0;"><a title="Tollbox" href="http://www.toolboxrecords.com/en/product/11544/exclusives-and-important-news/Underave-01/" target="_blank" rel="noopener">Visitar toolbox</a></span>
 </strong></span>

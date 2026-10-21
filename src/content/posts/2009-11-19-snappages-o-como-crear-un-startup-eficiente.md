@@ -27,7 +27,7 @@ Conectad el audio  y echadle un vistazo, de verdad que vale la pena.
 <blockquote>
 
 <ul>
-<li> Snappages website: <a rel="nofollow" href="http://www.snappages.com/" target="_blank">http://www.snappages.com/</a></li>
-<li> Snappages Video presentation: <a rel="nofollow" href="http://www.snappages.com/tour" target="_blank">http://www.snappages.com/tour</a></li>
+<li> Snappages website: <a rel="noopener nofollow" href="http://www.snappages.com/" target="_blank">http://www.snappages.com/</a></li>
+<li> Snappages Video presentation: <a rel="noopener nofollow" href="http://www.snappages.com/tour" target="_blank">http://www.snappages.com/tour</a></li>
 </ul>
 </blockquote>

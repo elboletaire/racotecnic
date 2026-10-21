@@ -149,7 +149,7 @@ airodump-ng ath0
 La pantalla está dividida en dos partes importantes: la de AP (access points), en la parte superior y la de clientes, en la parte inferior.
 
 <figure>
-  <a rel="lightbox" href="/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>
+  <a rel="noopener lightbox" href="/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>
   <figcaption>
     airodump-ng (clic para ampliar)
   </figcaption>
@@ -299,7 +299,7 @@ aircrack-ng jazztel2c-01.cap
 Y.. presto! Ya tenemos nuestra clave:
 
 <figure>
-  <a title="aircrack-ng (ampliar)" rel="lightbox" href="/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>
+  <a title="aircrack-ng (ampliar)" rel="noopener lightbox" href="/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>
   <figcaption>
     Contraseña desencriptada (clic para ampliar)
   </figcaption>
@@ -311,9 +311,9 @@ En caso de que no pudierais utilizar "aptitude" porque la máquina desde la cual
 
 <blockquote>
   <ul>
-    <li><a title="Descargar build-essential" href="http://packages.ubuntu.com/intrepid/build-essential" target="_blank">build-essential</a></li>
-    <li><a title="Descargar linux-headers-*" href="http://packages.ubuntu.com/search?searchon=names&amp;keywords=linux-headers" target="_blank">linux-headers</a></li>
-    <li><a title="Descargar aircrack-ng" href="http://packages.ubuntu.com/intrepid/aircrack-ng" target="_blank">aircrack-ng</a></li>
+    <li><a title="Descargar build-essential" href="http://packages.ubuntu.com/intrepid/build-essential" target="_blank" rel="noopener">build-essential</a></li>
+    <li><a title="Descargar linux-headers-*" href="http://packages.ubuntu.com/search?searchon=names&amp;keywords=linux-headers" target="_blank" rel="noopener">linux-headers</a></li>
+    <li><a title="Descargar aircrack-ng" href="http://packages.ubuntu.com/intrepid/aircrack-ng" target="_blank" rel="noopener">aircrack-ng</a></li>
   </ul>
 </blockquote>
 
@@ -329,9 +329,9 @@ Recordad destruir la interfaz y reactivarla en modo standalone una vez tengáis 
 
 <blockquote>
   <ul>
-    <li><a title="Ver original" href="http://ubuntuforums.org/showthread.php?t=528276" target="_blank">HOWTO: Aircrack-NG</a></li>
-    <li><a title="Ver original" href="http://forums.remote-exploit.org/showthread.php?t=330" target="_blank">Howto get Madwifi-ng drivers to work properly!</a></li>
-    <li><a title="Ir a google" href="http://www.google.es" target="_blank">Ooh todopoderoso Google</a></li>
+    <li><a title="Ver original" href="http://ubuntuforums.org/showthread.php?t=528276" target="_blank" rel="noopener">HOWTO: Aircrack-NG</a></li>
+    <li><a title="Ver original" href="http://forums.remote-exploit.org/showthread.php?t=330" target="_blank" rel="noopener">Howto get Madwifi-ng drivers to work properly!</a></li>
+    <li><a title="Ir a google" href="http://www.google.es" target="_blank" rel="noopener">Ooh todopoderoso Google</a></li>
   </ul>
 </blockquote>
 

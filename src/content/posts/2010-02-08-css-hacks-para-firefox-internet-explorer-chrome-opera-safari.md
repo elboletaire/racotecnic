@@ -203,10 +203,10 @@ Además os invito a que añadáis cualquier hack de CSS que no haya puesto comen
 <blockquote>
   <strong>Páginas de referencia:</strong>
   <ul>
-    <li><a rel="nofollow" href="http://www.anieto2k.com/2008/01/23/otro-css-hack-para-safari/" target="_blank">Otro hack CSS para Safari @ Anieto</a></li>
-    <li><a rel="nofollow" href="http://perishablepress.com/press/2009/06/28/css-hacks-for-different-versions-of-firefox/" target="_blank">CSS hacks for differents versions of Firefox @ Perishable Press</a></li>
-    <li><a rel="nofollow" href="http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/" target="_blank">CSS hack for Google Chrome and Safari 3.1 @ Evotech</a></li>
-    <li><a rel="nofollow" href="http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/" target="_blank">CSS hack for Internet Explorer 8 @ Acid Martin</a></li>
-    <li><a rel="nofollow" href="http://www.drauta.com/articulos/hacks-css-para-todos-los-navegadores-incluido-explorer-8/" target="_blank">Hacks CSS para todos los navegadores... @ Drauta</a></li>
+    <li><a rel="noopener nofollow" href="http://www.anieto2k.com/2008/01/23/otro-css-hack-para-safari/" target="_blank">Otro hack CSS para Safari @ Anieto</a></li>
+    <li><a rel="noopener nofollow" href="http://perishablepress.com/press/2009/06/28/css-hacks-for-different-versions-of-firefox/" target="_blank">CSS hacks for differents versions of Firefox @ Perishable Press</a></li>
+    <li><a rel="noopener nofollow" href="http://www.evotech.net/blog/2008/09/css-hack-for-google-chrome-and-safari-31/" target="_blank">CSS hack for Google Chrome and Safari 3.1 @ Evotech</a></li>
+    <li><a rel="noopener nofollow" href="http://acidmartin.wordpress.com/2009/06/04/css-hack-for-internet-explorer-8/" target="_blank">CSS hack for Internet Explorer 8 @ Acid Martin</a></li>
+    <li><a rel="noopener nofollow" href="http://www.drauta.com/articulos/hacks-css-para-todos-los-navegadores-incluido-explorer-8/" target="_blank">Hacks CSS para todos los navegadores... @ Drauta</a></li>
   </ul>
 </blockquote>

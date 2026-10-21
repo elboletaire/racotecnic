@@ -14,7 +14,7 @@ tags: []
 
 El otro día descubrí la **Meebo bar** por casualidad al entrar a esta web:
 
-<a rel="nofollow" href="http://abduzeedo.com/" target="_blank">http://abduzeedo.com/</a>
+<a rel="noopener nofollow" href="http://abduzeedo.com/" target="_blank">http://abduzeedo.com/</a>
 
 (que por cierto, está bastante bien, echadle un vistazo :P)
 
@@ -32,7 +32,7 @@ Además tampoco os perdáis la Meebo Chat Bar , que emula la barra de chat del f
 <blockquote>
 
 <ul>
-<li>Drag and share Meebo bar: <a rel="nofollow" href="https://bar.meebo.com/" target="_blank">https://bar.meebo.com/</a></li>
-<li>Más info sobre la barra de chat:  <a rel="nofollow" href="http://business.meebo.com/publishers/" target="_blank">http://business.meebo.com/publishers/</a></li>
+<li>Drag and share Meebo bar: <a rel="noopener nofollow" href="https://bar.meebo.com/" target="_blank">https://bar.meebo.com/</a></li>
+<li>Más info sobre la barra de chat:  <a rel="noopener nofollow" href="http://business.meebo.com/publishers/" target="_blank">http://business.meebo.com/publishers/</a></li>
 </ul>
 </blockquote>

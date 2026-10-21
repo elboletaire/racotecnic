@@ -30,7 +30,7 @@ Para que no os salgan tan caros los dominios este año ;)
 <blockquote>
   Fuente y más descuentos:
   <ul>
-    <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank">Godaddy promo code and coupon list for 2009</a></li>
-    <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank">GoDaddy Coupon Code</a></li>
+    <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank" rel="noopener">Godaddy promo code and coupon list for 2009</a></li>
+    <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank" rel="noopener">GoDaddy Coupon Code</a></li>
   </ul>
 </blockquote>

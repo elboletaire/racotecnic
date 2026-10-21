@@ -40,8 +40,8 @@ Entre estos navegadores está Internet Explorer 6, así que es realmente útil p
 
 <blockquote>
   <ul>
-    <li><a rel="nofollow" href="http://www.spoon.net/Start/?a=SpoonAppStudio&amp;autostart=t" target="_blank">Spoon App Studio</a></li>
-    <li><a rel="nofollow" href="http://spoon.net/browsers/" target="_blank">Spoon Browsers (todos los navegadores a un solo clic!)</a></li>
+    <li><a rel="noopener nofollow" href="http://www.spoon.net/Start/?a=SpoonAppStudio&amp;autostart=t" target="_blank">Spoon App Studio</a></li>
+    <li><a rel="noopener nofollow" href="http://spoon.net/browsers/" target="_blank">Spoon Browsers (todos los navegadores a un solo clic!)</a></li>
   </ul>
 </blockquote>
 

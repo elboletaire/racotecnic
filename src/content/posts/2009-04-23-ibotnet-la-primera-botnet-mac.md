@@ -56,5 +56,5 @@ Ahora la pregunta es: <em>Seguro que no son las propias empresas que han distrib
 Zalú'!
 
 <blockquote>
-  <a title="Botnet" href="http://es.wikipedia.org/wiki/Botnet" target="_blank">Definición de Botnet en la Wikipedia</a>
+  <a title="Botnet" href="http://es.wikipedia.org/wiki/Botnet" target="_blank" rel="noopener">Definición de Botnet en la Wikipedia</a>
 </blockquote>

@@ -26,7 +26,7 @@ Ara anem a parlar de **Illimitux**. Abans de començar, cal avisar que és un co
 
 Per instal·lar-lo accedim a la [pàgina de descàrrega](https://addons.mozilla.org/ca/firefox/addon/11037), seleccionem conforme som conscients que és experimental i l'afegim al nostre Firefox. Una vegada s'hagi descarregat, haurem de reiniciar el programa.
 
-<a rel="lightbox[568]" href="http://img190.imageshack.us/img190/5144/13086518.jpg" target="_blank"><img class="aligncenter" src="http://img190.imageshack.us/img190/5144/13086518.jpg" border="0" alt="" width="400" height="260" /></a>
+<a rel="noopener lightbox[568]" href="http://img190.imageshack.us/img190/5144/13086518.jpg" target="_blank"><img class="aligncenter" src="http://img190.imageshack.us/img190/5144/13086518.jpg" border="0" alt="" width="400" height="260" /></a>
 
 
 
@@ -44,7 +44,7 @@ Una vegada instal·lat ja podeu accedir a les diferents pàgines de descàrrega 
 
 Amb tot això us apareixerà a la part inferior de la pàgina una finestra similar a la següent:
 
-<a rel="lightbox[568]" href="http://img242.imageshack.us/img242/5120/dibujobeq.jpg" target="_blank"><img class="aligncenter" style="border: 0pt none;" src="http://img242.imageshack.us/img242/5120/dibujobeq.jpg" border="0" alt="" width="286" height="133" /></a>
+<a rel="noopener lightbox[568]" href="http://img242.imageshack.us/img242/5120/dibujobeq.jpg" target="_blank"><img class="aligncenter" style="border: 0pt none;" src="http://img242.imageshack.us/img242/5120/dibujobeq.jpg" border="0" alt="" width="286" height="133" /></a>
 
 Tan sols heu de clicar a "Remove limitation" i us rediccionarà a una pàgina on gaudireu dels avantatges ja citats.
 
@@ -58,11 +58,11 @@ Com veureu, bo i que pot ser un programa molt complert també és molt intuïtiu
 
 Cliquem a "añadir url" i obrira una finestra com la següent; només hem de seleccionar la carpeta on descarregarà els fitxers, enganxar la llista de enllaços i clicar a "empezar"
 
-<a rel="lightbox[568]" href="http://img26.imageshack.us/img26/5684/frdd.jpg" target="_blank"><img class="aligncenter" src="http://img26.imageshack.us/img26/5684/frdd.jpg" border="0" alt="" width="400" height="260" /></a>
+<a rel="noopener lightbox[568]" href="http://img26.imageshack.us/img26/5684/frdd.jpg" target="_blank"><img class="aligncenter" src="http://img26.imageshack.us/img26/5684/frdd.jpg" border="0" alt="" width="400" height="260" /></a>
 
 I la cosa quedarà finalment així:
 
-<a rel="lightbox[568]" href="http://img522.imageshack.us/img522/5788/frd2.jpg" target="_blank"><img class="aligncenter" style="border: 0pt none;" src="http://img522.imageshack.us/img522/5788/frd2.jpg" border="0" alt="" width="400" height="110" /></a>
+<a rel="noopener lightbox[568]" href="http://img522.imageshack.us/img522/5788/frd2.jpg" target="_blank"><img class="aligncenter" style="border: 0pt none;" src="http://img522.imageshack.us/img522/5788/frd2.jpg" border="0" alt="" width="400" height="110" /></a>
 
 A [aquest enllaç](http://wordrider.net/freerapid/index.html) teniu la llista de servidor compatibles amb el servei.
 

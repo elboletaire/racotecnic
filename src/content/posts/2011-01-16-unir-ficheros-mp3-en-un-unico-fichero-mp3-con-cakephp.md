@@ -30,7 +30,7 @@ Quería hacer un tutorial sobre cómo crear un podcast con CakePHP pero lo dejar
 
 Para empezar necesitaréis descargar la librería <a href="http://getid3.org" target="_blank" rel="noopener">Getid3</a>. Descargad la versión estable por si acaso ya que la versión beta falla con las etiquetas id3 (que no utilizaremos) así que si queréis utilizarla es bajo vuestra propia responsabilidad.
 
-<a href="http://sourceforge.net/project/showfiles.php?group_id=55859&amp;package_id=50965" target="_blank">Getid3 versión 1.8.2 (estable)</a>
+<a href="http://sourceforge.net/project/showfiles.php?group_id=55859&amp;package_id=50965" target="_blank" rel="noopener">Getid3 versión 1.8.2 (estable)</a>
 
 Descomprimid el contenido del fichero que descarguéis en Getid3 y ponedlo en la carpeta /app/vendors, de manera que quede así:
 

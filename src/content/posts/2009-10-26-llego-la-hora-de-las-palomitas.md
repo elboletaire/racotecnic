@@ -44,7 +44,7 @@ Debo añadir (lo he leído por varias webs y foros) que algunos usuarios se quej
 
 <blockquote>
   <ul>
-    <li><a rel="nofollow" href="http://www.popcornhour.es/" target="_blank">Página oficial PopCorn Hour España</a></li>
-    <li><a rel="nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">Detalles PopCorn Hour A100</a></li>
+    <li><a rel="noopener nofollow" href="http://www.popcornhour.es/" target="_blank">Página oficial PopCorn Hour España</a></li>
+    <li><a rel="noopener nofollow" href="http://www.popcornhour.es/popcornhour_A110" target="_blank">Detalles PopCorn Hour A100</a></li>
   </ul>
 </blockquote>

@@ -23,7 +23,7 @@ Descarguemos el SDK de la <a title="Ir a la página" href="http://developer.andr
 
 La versión actual es la 1.1 y mi versión de Java la 1.5 (no puedo actualizar dado que la 1.6 por el momento sólo está para Duo 2 Core). El enlace para dicha revisión de Android es el siguiente:
 
-<a title="Ir a la página" href="http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip" target="_blank">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>
+<a title="Ir a la página" href="http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip" target="_blank" rel="noopener">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>
 
 
 Una vez descargado lo descomprimimos y lo copiamos donde queramos. En mi caso lo he copiado en /Applications/Android

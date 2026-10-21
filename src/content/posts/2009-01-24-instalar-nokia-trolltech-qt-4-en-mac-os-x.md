@@ -75,6 +75,6 @@ Hace un mes salío una versión beta de un nuevo IDE para desarrollar con Qt. Se
 <blockquote>
   Página de referencia:
   <ul>
-    <li><a href="http://doc.trolltech.com/4.4/install-mac.html" target="_blank">Installing Qt on Mac OS X (Trolltech)</a></li>
+    <li><a href="http://doc.trolltech.com/4.4/install-mac.html" target="_blank" rel="noopener">Installing Qt on Mac OS X (Trolltech)</a></li>
   </ul>
 </blockquote>

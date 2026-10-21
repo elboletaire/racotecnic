@@ -59,7 +59,7 @@ var fullscreen = function(elem) {
   }
 }
 document.getElementById('ejemplo-fullscreen').onclick = function(){
-  fullscreen(document.getElementById('main'));
+  fullscreen(document.querySelector('article'));
   return false;
 }
 </script>

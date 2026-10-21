@@ -26,25 +26,47 @@ const exists = path => {
   return existsSync(file) || existsSync(join(file, "index.html")) || existsSync(`${file}.html`);
 };
 
+// src/href, plus every URL of a srcset (comma-separated "url descriptor" pairs).
 const refPattern = /\s(?:src|href)="(\/(?!\/)[^"<>\s]*)"/g;
+const srcsetPattern = /\ssrcset="([^"]*)"/g;
 const misses = new Map();
 let refs = 0;
 
+const check = (raw, source) => {
+  let path;
+  try {
+    path = decodeURIComponent(raw.split(/[?#]/)[0]).normalize("NFC");
+  } catch {
+    path = raw.split(/[?#]/)[0];
+    refs++;
+    addMiss(path, source, "invalid percent-encoding");
+    return;
+  }
+  refs++;
+  if (!exists(path)) addMiss(path, source);
+};
+
+const addMiss = (path, source, reason) => {
+  if (!misses.has(path)) misses.set(path, { reason, sources: [] });
+  misses.get(path).sources.push(source);
+};
+
 for (const html of walk(dist).filter(file => file.endsWith(".html"))) {
   const source = relative(dist, html);
-  for (const [, raw] of readFileSync(html, "utf8").matchAll(refPattern)) {
-    const path = decodeURIComponent(raw.split(/[?#]/)[0]).normalize("NFC");
-    refs++;
-    if (exists(path)) continue;
-    if (!misses.has(path)) misses.set(path, []);
-    misses.get(path).push(source);
+  const text = readFileSync(html, "utf8");
+  for (const [, raw] of text.matchAll(refPattern)) check(raw, source);
+  for (const [, srcset] of text.matchAll(srcsetPattern)) {
+    for (const candidate of srcset.split(",")) {
+      const url = candidate.trim().split(/\s+/)[0];
+      if (url.startsWith("/") && !url.startsWith("//")) check(url, source);
+    }
   }
 }
 
 if (misses.size > 0) {
   console.error(`${misses.size} missing root-relative targets (${refs} references checked):`);
-  for (const [path, sources] of misses) {
-    console.error(`  ${path}`);
+  for (const [path, { reason, sources }] of misses) {
+    console.error(`  ${path}${reason ? ` (${reason})` : ""}`);
     for (const source of [...new Set(sources)].slice(0, 3)) console.error(`    in ${source}`);
   }
   process.exit(1);

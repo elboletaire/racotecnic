@@ -17,7 +17,7 @@ Una vez rellenado y enviado el formulario, entra en tu correo, tendrás que veri
 
 <blockquote>
   <ul>
-    <li>Vía:  <a rel="nofollow" href=" http://hacktivistas.net/node/53"> http://hacktivistas.net/node/53</a></li>
+    <li>Vía:  <a rel="nofollow" href="http://hacktivistas.net/node/53"> http://hacktivistas.net/node/53</a></li>
     <li>Más info:  <a rel="nofollow" href="http://xmailer.hacktivistas.net/">http://xmailer.hacktivistas.net/</a></li>
   </ul>
 </blockquote>

@@ -16,4 +16,4 @@ El realitzador i activista de la web Brett Gaylor explora la qüestió dels dret
 
 <iframe src="https://player.vimeo.com/video/7639255" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<a href="http://www.vimeo.com/7639255" target="_blank" rel="nofollow">Veure vídeo a Vimeo</a>
+<a href="http://www.vimeo.com/7639255" target="_blank" rel="noopener nofollow">Veure vídeo a Vimeo</a>

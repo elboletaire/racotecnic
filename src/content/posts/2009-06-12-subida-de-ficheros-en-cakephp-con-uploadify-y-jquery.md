@@ -29,7 +29,7 @@ Si no conocíais CakePHP y os ha interesado el tema echad un ojo a <a title="Vis
 En este artículo explicaré cómo integrar <a title="Página web oficial de uploadify" href="http://www.uploadify.com/" target="_blank" rel="noopener">uploadify</a>, un sistema de carga de ficheros con Flash y JavaScript (utilizando el *framework* <a title="Página web oficial de jQuery" href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>) a CakePHP para permitirnos cargar múltiples ficheros sin tener que refrescar la página, así como poder cargar ficheros de gran tamaño.
 
 
-Antes de empezar, sobreentiendo que tenéis conocimientos sobre CakePHP, así como que habéis utilizado algún sistema de carga de ficheros con flash, tipo <a title="Página web oficial de uploadify" href="http://www.uploadify.com/" target="_blank">uploadify</a> o <a title="Página web oficial de swfUpload" href="http://swfupload.org/" target="_blank">swfupload</a> alguna vez en vuestra vida (aunque no haya sido con Cake). Tampoco estaría de más tener conocimientos de jQuery, para poder gestionar las subidas de ficheros de forma asíncrona. También asumo que ya tenéis CakePHP funcionando en algun servidor.
+Antes de empezar, sobreentiendo que tenéis conocimientos sobre CakePHP, así como que habéis utilizado algún sistema de carga de ficheros con flash, tipo <a title="Página web oficial de uploadify" href="http://www.uploadify.com/" target="_blank" rel="noopener">uploadify</a> o <a title="Página web oficial de swfUpload" href="http://swfupload.org/" target="_blank" rel="noopener">swfupload</a> alguna vez en vuestra vida (aunque no haya sido con Cake). Tampoco estaría de más tener conocimientos de jQuery, para poder gestionar las subidas de ficheros de forma asíncrona. También asumo que ya tenéis CakePHP funcionando en algun servidor.
 
 Dicho esto, empecemos...
 
@@ -348,10 +348,10 @@ Espero que no tengáis muchas dudas. De todos modos sabéis que estoy abierto a 
 <blockquote>
   Páginas de referencia:
   <ul>
-    <li><a title="Documentación de uploadify" href="http://www.uploadify.com/documentation/" target="_blank">Uploadify documentation</a></li>
-    <li><a title="Ver documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank">jQuery</a></li>
-    <li><a title="Página del proyecto CakePHP" href="http://www.cakephp.org" target="_blank">CakePHP</a> | <a title="Documentación de CakePHP" href="http://book.cakephp.org/">Book</a> | <a title="API de CakePHP" href="http://api.cakephp.org/" target="_blank">API</a></li>
-    <li><a title="Página del proyecto SWFUpload" href="http://swfupload.org" target="_blank">SWFUpload</a> | <a title="Documentación de SWFupload" href="http://swfupload.org/documentation" target="_blank">API</a> | <a title="Foros de swfupload" href="http://swfupload.org/forum" target="_blank">Foros</a></li>
-    <li><a title="Buscar en Google" href="http://www.google.cat" target="_blank">Google</a> (cómo no..)</li>
+    <li><a title="Documentación de uploadify" href="http://www.uploadify.com/documentation/" target="_blank" rel="noopener">Uploadify documentation</a></li>
+    <li><a title="Ver documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank" rel="noopener">jQuery</a></li>
+    <li><a title="Página del proyecto CakePHP" href="http://www.cakephp.org" target="_blank" rel="noopener">CakePHP</a> | <a title="Documentación de CakePHP" href="http://book.cakephp.org/">Book</a> | <a title="API de CakePHP" href="http://api.cakephp.org/" target="_blank" rel="noopener">API</a></li>
+    <li><a title="Página del proyecto SWFUpload" href="http://swfupload.org" target="_blank" rel="noopener">SWFUpload</a> | <a title="Documentación de SWFupload" href="http://swfupload.org/documentation" target="_blank" rel="noopener">API</a> | <a title="Foros de swfupload" href="http://swfupload.org/forum" target="_blank" rel="noopener">Foros</a></li>
+    <li><a title="Buscar en Google" href="http://www.google.cat" target="_blank" rel="noopener">Google</a> (cómo no..)</li>
   </ul>
 </blockquote>

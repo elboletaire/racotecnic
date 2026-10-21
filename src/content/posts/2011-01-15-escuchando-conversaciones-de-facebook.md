@@ -19,7 +19,7 @@ tags:
 - Python
 ---
 
-<a title="borogove" href="http://code.google.com/p/borogove/" target="_blank">Borogove</a> es un sniffer en Python con el propósito de capturar conversarciones del chat de Facebook en una red local. Usa la técnica <a href="http://es.wikipedia.org/wiki/Ataque_Man-in-the-middle" target="_blank">Man-In-The-Middle</a> envenenando las <a href="http://es.wikipedia.org/wiki/Address_Resolution_Protocol" target="_self">tablas ARP</a>.
+<a title="borogove" href="http://code.google.com/p/borogove/" target="_blank" rel="noopener">Borogove</a> es un sniffer en Python con el propósito de capturar conversarciones del chat de Facebook en una red local. Usa la técnica <a href="http://es.wikipedia.org/wiki/Ataque_Man-in-the-middle" target="_blank" rel="noopener">Man-In-The-Middle</a> envenenando las <a href="http://es.wikipedia.org/wiki/Address_Resolution_Protocol" target="_self">tablas ARP</a>.
 
 Su uso es bastante simple, y nos hace un output de mensajes enviados por los interlocutores en tiempo real.
 

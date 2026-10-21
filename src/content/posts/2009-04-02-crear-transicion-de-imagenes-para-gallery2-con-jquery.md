@@ -196,7 +196,7 @@ Imagino que para hacerlo tendríamos que programar la transición más detenidam
 Páginas de referencia:
 
 <ul>
-<li><a title="Consultar Codex de Gallery2" href="http://codex.gallery2.org" target="_blank">Codex de Gallery2</a></li>
-<li><a title="Consultar documentación de jQuery" href="http://docs.jquery.com/" target="_blank">jQuery Documentation</a></li>
+<li><a title="Consultar Codex de Gallery2" href="http://codex.gallery2.org" target="_blank" rel="noopener">Codex de Gallery2</a></li>
+<li><a title="Consultar documentación de jQuery" href="http://docs.jquery.com/" target="_blank" rel="noopener">jQuery Documentation</a></li>
 </ul>
 </blockquote>

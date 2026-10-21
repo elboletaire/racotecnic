@@ -38,5 +38,5 @@ Espero que os sea de utilidad.
 
 <blockquote>
   <strong>Sitio oficial:</strong>
-  <a href="http://www.atube.me/video/" rel="nofollow" target="_blank">aTube catcher</a>
+  <a href="http://www.atube.me/video/" rel="noopener nofollow" target="_blank">aTube catcher</a>
 </blockquote>

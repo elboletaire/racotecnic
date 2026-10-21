@@ -42,7 +42,7 @@ Además de la gran ventaja que ofrece el hecho de poder utilizar cualquier disco
 
 <ul>
 <blockquote>
-<li><a rel="nofollow" href="http://www.wdc.com/en/products/products.asp?driveid=572" target="_blank">Enlace a la página del producto (Western Digital)</a></li>
+<li><a rel="noopener nofollow" href="http://www.wdc.com/en/products/products.asp?driveid=572" target="_blank">Enlace a la página del producto (Western Digital)</a></li>
 </blockquote>
 </ul>
 

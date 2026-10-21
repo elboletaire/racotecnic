@@ -36,10 +36,10 @@ Antes de empezar estaría bien que hubierais leído el anterior tutorial —e in
 Pongámonos a ello. Primero de todo, como siempre, ¿qué necesitamos?
 
 <ul>
-  <li><a rel="nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable])</li>
-  <li>Un componente para gestionar ficheros subidos, <a rel="nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">como este</a></li>
-  <li><a rel="nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)</li>
-  <li><a rel="nofollow" href="http://www.uploadify.com" target="_blank">Uploadify</a> (v. 2.1.0)</li>
+  <li><a rel="noopener nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable])</li>
+  <li>Un componente para gestionar ficheros subidos, <a rel="noopener nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">como este</a></li>
+  <li><a rel="noopener nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)</li>
+  <li><a rel="noopener nofollow" href="http://www.uploadify.com" target="_blank">Uploadify</a> (v. 2.1.0)</li>
 </ul>
 
 _(las versiones que he puesto entre paréntesis son las que he utilizado yo para el tutorial)_
@@ -784,8 +784,8 @@ Nada más, como siempre.. espero que le sirva a alguien :) y si tenéis cualquie
 <blockquote>
   Páginas de referencia:
   <ul>
-    <li><a rel="nofollow" href="http://jamnite.blogspot.com/2009/05/cakephp-form-validation-with-ajax-using.html" target="_blank">CakePHP Form Validation with Ajax Using jQuery</a></li>
-    <li><a rel="nofollow" href="http://api.cakephp.org" target="_blank">API de CakePHP</a></li>
-    <li><a rel="nofollow" href="http://docs.jquery.org" target="_blank">API de jQuery</a></li>
+    <li><a rel="noopener nofollow" href="http://jamnite.blogspot.com/2009/05/cakephp-form-validation-with-ajax-using.html" target="_blank">CakePHP Form Validation with Ajax Using jQuery</a></li>
+    <li><a rel="noopener nofollow" href="http://api.cakephp.org" target="_blank">API de CakePHP</a></li>
+    <li><a rel="noopener nofollow" href="http://docs.jquery.org" target="_blank">API de jQuery</a></li>
   </ul>
 </blockquote>

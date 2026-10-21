@@ -36,4 +36,4 @@ A més ens permeten escollir entre diferents dominis per a generar el nostre dom
 
 En definitiva, trobo que és una bona alternativa si esteu buscant hosting gratuït ;)
 
-<a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a>
+<a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank" rel="noopener"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a>

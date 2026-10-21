@@ -50,10 +50,10 @@ Este post está creado con la intención de ayudaros a averiguar las UUID de vue
 
 <blockquote>
   <ul>
-    <li><a href="http://es.wikipedia.org/wiki/Fstab" target="_blank">Información detallada de fstab en la Wikipedia</a></li>
-    <li><a href="http://manual.sidux.com/es/part-uuid-es.htm" target="_blank">Información detallada sobre UUID i fstab</a></li>
-    <li><a href="http://comunnicate.wordpress.com/2008/11/04/montar-particion-ntfs/" target="_blank">Montar partición NTFS en Ubuntu Intrepid Ibex</a></li>
-    <li><a href="http://www.naguissa.com/blog.php?verpost&amp;comentario=601" target="_blank">Configurar fstab para montar unidades de windows o samba en el arranque</a></li>
-    <li><a href="http://www.cristalab.com/tips/26881/montar-escribir-y-leer-particiones-ntfs-desde-ubuntu.html" target="_blank">Montar, Escribir y Leer particiones NTFS desde Ubuntu</a></li>
+    <li><a href="http://es.wikipedia.org/wiki/Fstab" target="_blank" rel="noopener">Información detallada de fstab en la Wikipedia</a></li>
+    <li><a href="http://manual.sidux.com/es/part-uuid-es.htm" target="_blank" rel="noopener">Información detallada sobre UUID i fstab</a></li>
+    <li><a href="http://comunnicate.wordpress.com/2008/11/04/montar-particion-ntfs/" target="_blank" rel="noopener">Montar partición NTFS en Ubuntu Intrepid Ibex</a></li>
+    <li><a href="http://www.naguissa.com/blog.php?verpost&amp;comentario=601" target="_blank" rel="noopener">Configurar fstab para montar unidades de windows o samba en el arranque</a></li>
+    <li><a href="http://www.cristalab.com/tips/26881/montar-escribir-y-leer-particiones-ntfs-desde-ubuntu.html" target="_blank" rel="noopener">Montar, Escribir y Leer particiones NTFS desde Ubuntu</a></li>
   </ul>
 </blockquote>

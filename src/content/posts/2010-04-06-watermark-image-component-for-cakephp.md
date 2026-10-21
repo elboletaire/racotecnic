@@ -37,13 +37,13 @@ You can still improve it a lot, especially in terms of code, but as it works and
 ## Well Known Bugs:
 
 <ul>
-  <li><del>Uses the method <a rel="nofollow" href="http://php.net/manual/en/function.mime-content-type.php" target="_blank">mime_content_type</a> that as they say in php.net: <em>This function has been deprecated as the PECL extension <a rel="nofollow" href="http://www.php.net/manual/en/ref.fileinfo.php" target="_blank">Fileinfo</a> provides the same functionality (and more) in a much cleaner way.</em></del> **[ SOLVED ]**</li>
+  <li><del>Uses the method <a rel="noopener nofollow" href="http://php.net/manual/en/function.mime-content-type.php" target="_blank">mime_content_type</a> that as they say in php.net: <em>This function has been deprecated as the PECL extension <a rel="noopener nofollow" href="http://www.php.net/manual/en/ref.fileinfo.php" target="_blank">Fileinfo</a> provides the same functionality (and more) in a much cleaner way.</em></del> **[ SOLVED ]**</li>
   <li>By rotating a transparent PNG image at an angle that is not a multiple of 90º the extra generated background is not transparent.</li>
 </ul>
 
 ## Download:
 
-<a rel="nofollow" href="http://github.com/elboletaire/Watimage/archives/master" target="_blank">http://github.com/elboletaire/Watimage/archives/master</a>
+<a rel="noopener nofollow" href="http://github.com/elboletaire/Watimage/archives/master" target="_blank">http://github.com/elboletaire/Watimage/archives/master</a>
 
 
 
@@ -95,7 +95,7 @@ $this->Watermark->generate($dest_path);
   <li>**crop**: A straight centered crop.</li>
 </ul>
 
-<em>* Resizing criteria extracted from <a rel="nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">iamkoa labs image upload component</a></em>
+<em>* Resizing criteria extracted from <a rel="noopener nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">iamkoa labs image upload component</a></em>
 
 ## Rotate:
 

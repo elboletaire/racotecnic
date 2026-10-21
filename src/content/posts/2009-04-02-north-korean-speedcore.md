@@ -43,11 +43,11 @@ No hay muchos mas datos sobre el Pyongyang Hardcore Resistance, pero es curioso 
 
 Aquí os dejo el enlace de descarga de 5 temas para que escuchéis sus producciones:
 
-<a href="http://www.breakcoresucks.com/DC/dramacore071.zip" target="_blank">http://www.breakcoresucks.com/DC/dramacore071.zip</a>
+<a href="http://www.breakcoresucks.com/DC/dramacore071.zip" target="_blank" rel="noopener">http://www.breakcoresucks.com/DC/dramacore071.zip</a>
 
 Y su myspace:
 
-<a href="http://www.myspace.com/dprkhc" target="_blank">http://www.myspace.com/dprkhc</a>
+<a href="http://www.myspace.com/dprkhc" target="_blank" rel="noopener">http://www.myspace.com/dprkhc</a>
 
 Hasta aquí mi primera aportación al blog de Underave! Saludos
 

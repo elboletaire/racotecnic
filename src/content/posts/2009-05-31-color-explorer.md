@@ -25,4 +25,4 @@ Podrás crear paletas, guardarlas, editarlas y exportarlas en formatos compatibl
 
 Una herramienta excepcional con la que podrás empezar a jugar sin necesidad de registrarte, pero con la opción de hacerlo de forma gratuita para poder guardar y acceder a tus paletas tantas veces como necesites.
 
-<a title="Visitar Color Explorer" href="http://www.colorexplorer.com" target="_blank">http://www.colorexplorer.com</a>
+<a title="Visitar Color Explorer" href="http://www.colorexplorer.com" target="_blank" rel="noopener">http://www.colorexplorer.com</a>

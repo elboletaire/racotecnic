@@ -21,10 +21,10 @@ Si habéis probado 'MultipleIE' sabréis lo *magníficamente bien* que va y prob
 
 No me enrollo más, os dejo aquí una imagen y el enlace para que lo probéis ya mismo:
 
-<a href="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" target="_blank"><img class="aligncenter" title="IETester" src="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" alt="IETester" width="595" height="344" /></a>
+<a href="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" target="_blank" rel="noopener"><img class="aligncenter" title="IETester" src="http://www.my-debugbar.com/wiki/uploads/IETester/ietester-0.3.png" alt="IETester" width="595" height="344" /></a>
 <blockquote>
 
 <ul>
-<li>Web oficial: <a href="http://www.my-debugbar.com/wiki/IETester/HomePage" target="_blank" rel="nofollow">http://www.my-debugbar.com/wiki/IETester/HomePage</a></li>
+<li>Web oficial: <a href="http://www.my-debugbar.com/wiki/IETester/HomePage" target="_blank" rel="noopener nofollow">http://www.my-debugbar.com/wiki/IETester/HomePage</a></li>
 </ul>
 </blockquote>

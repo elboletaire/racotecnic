@@ -37,7 +37,7 @@ Pero, pagando o no, no deja de ser recomendable :)
 
 <blockquote>
   <ul>
-    <li><a title="Woopra Website" rel="nofollow" href="http://www.woopra.com" target="_blank">www.woopra.com</a></li>
+    <li><a title="Woopra Website" rel="noopener nofollow" href="http://www.woopra.com" target="_blank">www.woopra.com</a></li>
   </ul>
 </blockquote>
 

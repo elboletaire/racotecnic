@@ -19,6 +19,6 @@ Feu-hi una ullada, sota aquest curiós disseny trobareu moltíssims enllaços se
 
 Tota una troballa!
 
-<a title="Blue Vertigo" href="http://www.bluevertigo.com.ar/" target="_blank"><img class="aligncenter size-full wp-image-200" title="bluevertigo_home" src="/uploads/2009/03/bluevertigo_home.gif" alt="bluevertigo_home" width="360" height="340" /></a>
+<a title="Blue Vertigo" href="http://www.bluevertigo.com.ar/" target="_blank" rel="noopener"><img class="aligncenter size-full wp-image-200" title="bluevertigo_home" src="/uploads/2009/03/bluevertigo_home.gif" alt="bluevertigo_home" width="360" height="340" /></a>
 
-<a href="http://www.bluevertigo.com.ar" target="_blank">www.bluevertigo.com.ar</a>
+<a href="http://www.bluevertigo.com.ar" target="_blank" rel="noopener">www.bluevertigo.com.ar</a>

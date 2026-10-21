@@ -44,10 +44,10 @@ Y sus parámetros:
 Algunos de los "handle" que podéis utilizar son:
 
 <ul>
-  <li><a title="Visitar web oficial jQuery" href="http://www.jquery.com/" target="_blank">jquery</a></li>
-  <li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank">scriptaculous</a></li>
-  <li><a title="Visitar web oficial Prototype" href="http://www.prototypejs.org/" target="_blank">prototype</a></li>
-  <li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank">swfupload</a></li>
+  <li><a title="Visitar web oficial jQuery" href="http://www.jquery.com/" target="_blank" rel="noopener">jquery</a></li>
+  <li><a title="Visitar web oficial Scriptacolous" href="http://script.aculo.us/" target="_blank" rel="noopener">scriptaculous</a></li>
+  <li><a title="Visitar web oficial Prototype" href="http://www.prototypejs.org/" target="_blank" rel="noopener">prototype</a></li>
+  <li><a title="Visitar web oficial SWFUpload" href="http://swfupload.org/" target="_blank" rel="noopener">swfupload</a></li>
 </ul>
 
 Podéis ver <a title="Ver lista completa" href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script#Parameters" target="_blank" rel="noopener">una lista completa</a> en el <a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank" rel="noopener">Codex de Wordpress</a>.
@@ -109,8 +109,8 @@ Espero que os sirva, salud!
 <blockquote>
   Páginas de referencia:
   <ul>
-    <li><a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank">Codex Wordpress</a></li>
-    <li><a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank">Referencia función wp_enqueue_script</a></li>
-    <li><a title="Visitar documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank">jQuery API</a></li>
+    <li><a title="Ir a la página principal del Codex de Wordpress" href="http://codex.wordpress.org/" target="_blank" rel="noopener">Codex Wordpress</a></li>
+    <li><a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" target="_blank" rel="noopener">Referencia función wp_enqueue_script</a></li>
+    <li><a title="Visitar documentación de jQuery" href="http://docs.jquery.com/Main_Page" target="_blank" rel="noopener">jQuery API</a></li>
   </ul>
 </blockquote>

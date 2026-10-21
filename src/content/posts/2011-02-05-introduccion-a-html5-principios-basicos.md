@@ -245,13 +245,13 @@ Es el primer ejercicio que nos han pedido, veremos a ver que nota me ponen! :)
   <ul>
     <li>Smashingshare:  <a href="http://smashingshare.com/2010/04/28/ultimate-collection-of-html5-and-css3-resources/" title="HTML5 & CSS3 ressources">ultimate-collection-of-html5-and-css3-resources</a></li>
     <li>Splashnology: <a href="http://www.splashnology.com/blog/html5/968.html" title="HTML5"> Useful HTML5 & CSS3 Toolbox For Web Developers </a> </li>
-    <li><a href="http://bit.ly/guvTze" title="Videotutoriales">Curso videotutoriales de HTML5 </a> creado por Jesús Conde (0utKast).</li>
-    <li>Curso en video HTML5 - First Look / Ingles (<a href="http://ir.pe/3tqb" title="Curso en video">Descarga gratuita</a>)</li>
-    <li>Libro HTML5: Designing Rich Internet Applications / Ingles - (<a href="http://ir.pe/3tqd" title="Libro HTML5">Descarga gratuita</a>) </li>
-    <li>Libro HTML5 for web designers/Ingles (<a href="http://ir.pe/3tqe" title="Libro HTML5">Descarga gratuita</a>)</li>
-    <li>Conferencia HTML5 para diseñadores-CampusParty / Español <a href="http://ir.pe/3tqf" title="Conferencia HTML5">http://ir.pe/3tqf</a></li>
-    <li>Conferencia HTML5 para principiantes / Español by @soska- <a href="http://ir.pe/3tqg" title="Conferencia HTML5">http://ir.pe/3tqg</a></li>
-    <li>Conferencia Introduction to HTML5 / Ingles by Google Developers <a href="http://ir.pe/3tqh" title="Conferencia Introduction to HTML5">http://ir.pe/3tqh</a></li>
+    <li>Curso videotutoriales de HTML5  creado por Jesús Conde (0utKast).</li>
+    <li>Curso en video HTML5 - First Look / Ingles (Descarga gratuita)</li>
+    <li>Libro HTML5: Designing Rich Internet Applications / Ingles - (Descarga gratuita) </li>
+    <li>Libro HTML5 for web designers/Ingles (Descarga gratuita)</li>
+    <li>Conferencia HTML5 para diseñadores-CampusParty / Español http://ir.pe/3tqf</li>
+    <li>Conferencia HTML5 para principiantes / Español by @soska- http://ir.pe/3tqg</li>
+    <li>Conferencia Introduction to HTML5 / Ingles by Google Developers http://ir.pe/3tqh</li>
     <li>Ejemplos y tutoriales de HTML5 <a href="http://www.html5rocks.com/" title="ejemplos y tutoriales de HTML5">http://www.html5rocks.com/</a></li>
   </ul>
   <p>PD: Gracias a los alumnos del curso por compartir estos enlaces tan interesantes!</p>

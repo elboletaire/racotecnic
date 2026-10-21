@@ -18,7 +18,7 @@ tags:
 - Java
 ---
 
-<a title="Ver artículo" href="/2009/01/cambiar-maquina-virtual-de-java-en-eclipse/" target="_self">Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de java utilizada por defecto en <a title="Visitar página oficial de Eclipse" href="http://www.eclipse.org" target="_blank">Eclipse</a>.
+<a title="Ver artículo" href="/2009/01/cambiar-maquina-virtual-de-java-en-eclipse/" target="_self">Hace un tiempo expliqué</a> cómo cambiar la máquina virtual de java utilizada por defecto en <a title="Visitar página oficial de Eclipse" href="http://www.eclipse.org" target="_blank" rel="noopener">Eclipse</a>.
 
 Ésta ha cambiado en la versión 3.4 respecto a la que yo expliqué (≤ 3.2). En
 lugar de utilizar un fichero llamado "java_home" para indicar la máquina virtual
@@ -62,6 +62,6 @@ _* Ignorad a partir de `-showsplash` cambiando la ruta por la que os convenga._
 <blockquote>
   Página de referencia:
   <ul>
-    <li><a title="Ir a la página original" href="http://wiki.eclipse.org/Eclipse.ini" target="_blank">Eclipsepedia - Eclipse.ini</a></li>
+    <li><a title="Ir a la página original" href="http://wiki.eclipse.org/Eclipse.ini" target="_blank" rel="noopener">Eclipsepedia - Eclipse.ini</a></li>
   </ul>
 </blockquote>
