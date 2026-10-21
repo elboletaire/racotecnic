@@ -78,6 +78,7 @@ const formatDate = (date: string) =>
       <ol aria-labelledby="archived-comments" class="mt-6 space-y-4">
         {rows.map(({ comment, depth }) => (
           <li
+            id={`comment-${comment.id}`}
             class:list={[
               "border-border rounded-md border p-4 text-sm",
               INDENT[Math.min(depth, INDENT.length - 1)],

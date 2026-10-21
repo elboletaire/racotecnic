@@ -9,7 +9,7 @@
 //   docker run --rm -d --name raco-export -e MARIADB_ROOT_PASSWORD=<pw> \
 //     -e MARIADB_DATABASE=racotecnic mariadb:11.8.9
 //   zcat racotecnic-db-2026-10-21.sql.gz | docker exec -i raco-export \
-//     sh -c 'mariadb -uroot -p"$MARIADB_ROOT_PASSWORD" --default-character-set=utf8 racotecnic'
+//     sh -c 'mariadb -uroot -p"$MARIADB_ROOT_PASSWORD" --default-character-set=utf8mb4 racotecnic'
 //   node scripts/export-comments.mjs
 //   docker stop raco-export
 //
@@ -35,6 +35,9 @@ const postsDir = join(root, "src/content/posts");
 const outDir = join(root, "src/data/comments");
 const container = process.env.RACO_DB_CONTAINER ?? "raco-export";
 const timeZone = "Europe/Madrid";
+
+// Comments dropped by hand: generic spam whose payload was the dropped author URL.
+const EXCLUDED_IDS = new Set([36381, 32473, 32747]);
 
 const ALLOWED_TAGS = [
   "p",
@@ -81,24 +84,37 @@ function safeHref(href) {
   }
 }
 
-function sanitizeContent(text) {
-  return sanitizeHtml(wpautop(text), {
-    allowedTags: ALLOWED_TAGS,
+// Anchors that are neither an http(s) link nor a reply to a comment of the
+// same post are unwrapped to their text, so no dead link is left behind.
+function sanitizeContent(text, commentIds) {
+  const marked = sanitizeHtml(wpautop(text), {
+    // `span` is only a placeholder for anchors to unwrap, removed below.
+    allowedTags: [...ALLOWED_TAGS, "span"],
     allowedAttributes: { a: ["href", "rel"] },
     allowedSchemes: ["http", "https"],
     allowProtocolRelative: false,
     transformTags: {
       a: (_tagName, attribs) => {
+        const reply = attribs.href?.match(/^#comment-(\d+)$/);
+        if (reply && commentIds.has(Number(reply[1]))) {
+          return { tagName: "a", attribs: { href: attribs.href } };
+        }
         const href = safeHref(attribs.href);
-        return {
-          tagName: "a",
-          attribs: {
-            ...(href && { href }),
-            rel: "nofollow ugc noopener",
-          },
-        };
+        if (href) {
+          return {
+            tagName: "a",
+            attribs: { href, rel: "nofollow ugc noopener" },
+          };
+        }
+        return { tagName: "span", attribs: {} };
       },
     },
+  });
+  return sanitizeHtml(marked, {
+    allowedTags: ALLOWED_TAGS,
+    allowedAttributes: { a: ["href", "rel"] },
+    allowedSchemes: ["http", "https"],
+    allowProtocolRelative: false,
   });
 }
 
@@ -118,12 +134,20 @@ function spamReasons(rawText) {
 }
 
 // Output must only ever contain the allowlist; this fails the export if not.
-// Checked inside tags only: comment text may legitimately say "javascript:".
+// Tags and attributes are checked, not plain text: comments may say "javascript:".
 const UNSAFE = [
   /<\/?(script|iframe)\b/i,
   /<[^>]*\son\w+\s*=/i,
-  /<a\b[^>]*\shref="(?!https?:\/\/)/i,
+  /<a\b[^>]*\shref="(?!https?:\/\/|#comment-\d+")/i,
 ];
+const TAG = /<\/?([a-z][a-z0-9]*)\b/gi;
+
+function isUnsafe(html) {
+  if (UNSAFE.some(pattern => pattern.test(html))) return true;
+  return [...html.matchAll(TAG)].some(
+    ([, tag]) => !ALLOWED_TAGS.includes(tag.toLowerCase())
+  );
+}
 
 // WordPress dates are in the blog's time zone, comment_date_gmt is UTC.
 function toMadridIso(gmt) {
@@ -185,6 +209,7 @@ function readComments() {
     ],
     { input: sql, encoding: "utf8", maxBuffer: 256 * 1024 * 1024 }
   );
+  // HEX, not TO_BASE64: base64 is wrapped every 76 characters.
   const decode = hex => Buffer.from(hex, "hex").toString("utf8");
   return output
     .split("\n")
@@ -203,7 +228,17 @@ function readComments() {
 }
 
 const posts = postsByWordpressId();
-const rows = readComments();
+const allRows = readComments();
+const rows = allRows.filter(row => !EXCLUDED_IDS.has(row.id));
+
+// Reply links only point at comments exported for the same post.
+const idsByPost = new Map();
+for (const row of rows) {
+  const ids = idsByPost.get(row.postId) ?? new Set();
+  ids.add(row.id);
+  idsByPost.set(row.postId, ids);
+}
+
 const byPost = new Map();
 const flagged = [];
 const unsafe = [];
@@ -213,8 +248,8 @@ for (const row of rows) {
   const raw = row.content;
   const cleaned = raw.replace(CONTROL_CHARS, "");
   if (cleaned !== raw) controlCharRows.push(row.id);
-  const content = sanitizeContent(cleaned);
-  if (UNSAFE.some(pattern => pattern.test(content))) unsafe.push(row.id);
+  const content = sanitizeContent(cleaned, idsByPost.get(row.postId));
+  if (isUnsafe(content)) unsafe.push(row.id);
   const reasons = spamReasons(raw);
   if (reasons.length > 0) flagged.push({ ...row, reasons });
   const list = byPost.get(row.postId) ?? [];
@@ -245,6 +280,7 @@ for (const [postId, list] of byPost) {
   );
 }
 
+console.log(`Comments excluded by id: ${allRows.length - rows.length}`);
 console.log(`Comments exported: ${rows.length}`);
 console.log(`Posts with comments: ${byPost.size}`);
 console.log(

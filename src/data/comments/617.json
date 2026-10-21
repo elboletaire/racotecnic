@@ -11,7 +11,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2009-06-18T19:58:30+02:00",
-    "content": "<p><a rel=\"nofollow ugc noopener\">@raquel</a><br />Me alegra mucho ver que le sirve a alguien ^^</p>\n<p>Ahora que me lo comentas veo que no he explicado muy bien ese punto. Tienes que colocar el código en la vista; vuelve a mirarte la entrada que la he ampliado para explicarme mejor. He ampliado <a href=\"http://racotecnic.underave.net/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/#ampliacio\" rel=\"nofollow ugc noopener\">desde después de haber insertado el código Javascript</a>.</p>\n<p>Confío en que ahora te quede más claro :)</p>\n<p>Salu2 y gracias por ayudarme a mejorar el apunte!</p>\n<p>PS. Si aún así tienes alguna duda no tengas reparo en preguntar ;)</p>"
+    "content": "<p><a href=\"#comment-1919\">@raquel</a><br />Me alegra mucho ver que le sirve a alguien ^^</p>\n<p>Ahora que me lo comentas veo que no he explicado muy bien ese punto. Tienes que colocar el código en la vista; vuelve a mirarte la entrada que la he ampliado para explicarme mejor. He ampliado <a href=\"http://racotecnic.underave.net/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/#ampliacio\" rel=\"nofollow ugc noopener\">desde después de haber insertado el código Javascript</a>.</p>\n<p>Confío en que ahora te quede más claro :)</p>\n<p>Salu2 y gracias por ayudarme a mejorar el apunte!</p>\n<p>PS. Si aún así tienes alguna duda no tengas reparo en preguntar ;)</p>"
   },
   {
     "id": 1923,
@@ -32,7 +32,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2009-07-08T22:47:54+02:00",
-    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">Christian</a>, mira que no tengas activado el debug en el fichero de configuración core.php</p>\n<p>A parte de eso no se me ocurre qué puede ser..</p>"
+    "content": "<p>Hola <a href=\"#comment-2021\">Christian</a>, mira que no tengas activado el debug en el fichero de configuración core.php</p>\n<p>A parte de eso no se me ocurre qué puede ser..</p>"
   },
   {
     "id": 2279,
@@ -67,7 +67,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2010-06-01T17:57:18+02:00",
-    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">@Rene</a>. Primero de todo te pido disculpas por la tardanza. Llevo bastante tiempo tan liado que apenas tengo tiempo de pasarme por aquí (y aun menos de contestar algunas de las preguntas que van cayendo de vez en cuando por estos lares..).</p>\n<p>Lo mejor que puedes hacer en estos casos (cuando algo debería guardarse y no lo hace) es impregnar tu código JS de \"console.log\" (método para mostrar mensajes por consola de Firebug), así como tu código PHP con \"$this-&gt;log\" (método de CakePHP para guardar logs en app/tmp/logs). De esta manera, paso por paso y con paciencia, seguramente averiguarás dónde está fallando tu código.</p>\n<p>Como comprenderás, con tan pocos detalles no puedo ayudarte mucho más; espero que tengas suerte y lo soluciones y, de ser así, no estaría de más que me lo comentaras e incluso que pusieras por aquí la solución que encontraste ;).</p>\n<p>Por otro lado, te recomiendo que eches un vistazo a un tema al respecto bastante más reciente que este (aunque más complicado..): <a href=\"http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/\" rel=\"nofollow ugc noopener\">http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/</a></p>\n<p>Salud</p>"
+    "content": "<p>Hola <a href=\"#comment-5377\">@Rene</a>. Primero de todo te pido disculpas por la tardanza. Llevo bastante tiempo tan liado que apenas tengo tiempo de pasarme por aquí (y aun menos de contestar algunas de las preguntas que van cayendo de vez en cuando por estos lares..).</p>\n<p>Lo mejor que puedes hacer en estos casos (cuando algo debería guardarse y no lo hace) es impregnar tu código JS de \"console.log\" (método para mostrar mensajes por consola de Firebug), así como tu código PHP con \"$this-&gt;log\" (método de CakePHP para guardar logs en app/tmp/logs). De esta manera, paso por paso y con paciencia, seguramente averiguarás dónde está fallando tu código.</p>\n<p>Como comprenderás, con tan pocos detalles no puedo ayudarte mucho más; espero que tengas suerte y lo soluciones y, de ser así, no estaría de más que me lo comentaras e incluso que pusieras por aquí la solución que encontraste ;).</p>\n<p>Por otro lado, te recomiendo que eches un vistazo a un tema al respecto bastante más reciente que este (aunque más complicado..): <a href=\"http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/\" rel=\"nofollow ugc noopener\">http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/</a></p>\n<p>Salud</p>"
   },
   {
     "id": 7894,
@@ -81,7 +81,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2010-08-07T13:55:07+02:00",
-    "content": "<p>Pues los que tú necesites <a rel=\"nofollow ugc noopener\">@dany</a>. Éste tutorial es totalmente abierto en este sentido. De hecho si te fijas en el momento de guardar no hago nada porque esa parte se supone que la hacéis vosotros.</p>\n<p>De todos modos, hice un tutorial algo más avanzado a éste donde sí muestro los campos de la BD.</p>\n<p>Puedes ver ese tutorial desde aquí:</p>\n<p>http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/</p>"
+    "content": "<p>Pues los que tú necesites <a href=\"#comment-7894\">@dany</a>. Éste tutorial es totalmente abierto en este sentido. De hecho si te fijas en el momento de guardar no hago nada porque esa parte se supone que la hacéis vosotros.</p>\n<p>De todos modos, hice un tutorial algo más avanzado a éste donde sí muestro los campos de la BD.</p>\n<p>Puedes ver ese tutorial desde aquí:</p>\n<p>http://racotecnic.underave.net/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/</p>"
   },
   {
     "id": 15478,

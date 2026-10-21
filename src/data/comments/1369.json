@@ -88,7 +88,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2010-12-16T20:06:52+01:00",
-    "content": "<p><a rel=\"nofollow ugc noopener\">@ChUsMa</a> permíteme una recomendación:</p>\n<p>yo de ti iría mirando en el resto de navegadores periódicamente. No digo que lo hagas cada hora, pero cada día al terminar no está de más ya que si esperas hasta el final, cuando llegue el momento te digo por experiencia que te va a costar mucho más arreglarlo.</p>\n<p>Las dos últimas webs en que lo dejé para el final se han quedado sin soporte para IE6 (que actualmente ya no lo doy..) e IE7 por lo terrible que es trabajar con algo tan destrozado. En cambio, si cada vez que haces una sección o un módulo echas un ojo con el resto de navegadores te ahorrarás muchos dolores de cabeza.</p>\n<p>A parte de esto, merci por tu comentario :) Es agradable ver de vez en cuando gente que sí aprecia lo que aquí hacemos.</p>\n<p>Bless</p>"
+    "content": "<p><a href=\"#comment-19953\">@ChUsMa</a> permíteme una recomendación:</p>\n<p>yo de ti iría mirando en el resto de navegadores periódicamente. No digo que lo hagas cada hora, pero cada día al terminar no está de más ya que si esperas hasta el final, cuando llegue el momento te digo por experiencia que te va a costar mucho más arreglarlo.</p>\n<p>Las dos últimas webs en que lo dejé para el final se han quedado sin soporte para IE6 (que actualmente ya no lo doy..) e IE7 por lo terrible que es trabajar con algo tan destrozado. En cambio, si cada vez que haces una sección o un módulo echas un ojo con el resto de navegadores te ahorrarás muchos dolores de cabeza.</p>\n<p>A parte de esto, merci por tu comentario :) Es agradable ver de vez en cuando gente que sí aprecia lo que aquí hacemos.</p>\n<p>Bless</p>"
   },
   {
     "id": 21993,
@@ -158,14 +158,14 @@
     "parent": 0,
     "author": "eduardo",
     "date": "2011-01-15T11:10:18+01:00",
-    "content": "<p>Lo hice todo desde dreamweaver. Lo que es el javascript me quedó así:</p>\n<p>function MM_preloadImages() { //v3.0<br />  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();<br />    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&lt;a.length; i++)<br />    if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}<br />}<br />function MM_swapImgRestore() { //v3.0<br />  var i,x,a=document.MM_sr; for(i=0;a&amp;&amp;i<a rel=\"nofollow ugc noopener\">0&amp;&amp;parent.frames.length) {<br />    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}<br />  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];<br />  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);<br />  if(!x &amp;&amp; d.getElementById) x=d.getElementById(n); return x;<br />}</a></p>\n<p>function MM_swapImage() { //v3.0<br />  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&lt;(a.length-2);i+=3)<br />   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}<br />}</p>\n<p>cada vez que lo toco los enlaces funcionan pero no hacen el cambio de color los botones (rollover es el nombre que le ponían en el tutorial donde aprendí)...<br />esto igual me ha venido grande...</p>"
+    "content": "<p>Lo hice todo desde dreamweaver. Lo que es el javascript me quedó así:</p>\n<p>function MM_preloadImages() { //v3.0<br />  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();<br />    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i&lt;a.length; i++)<br />    if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}<br />}<br />function MM_swapImgRestore() { //v3.0<br />  var i,x,a=document.MM_sr; for(i=0;a&amp;&amp;i0&amp;&amp;parent.frames.length) {<br />    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}<br />  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];<br />  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);<br />  if(!x &amp;&amp; d.getElementById) x=d.getElementById(n); return x;<br />}</p>\n<p>function MM_swapImage() { //v3.0<br />  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&lt;(a.length-2);i+=3)<br />   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}<br />}</p>\n<p>cada vez que lo toco los enlaces funcionan pero no hacen el cambio de color los botones (rollover es el nombre que le ponían en el tutorial donde aprendí)...<br />esto igual me ha venido grande...</p>"
   },
   {
     "id": 23164,
     "parent": 0,
     "author": "eduardo",
     "date": "2011-01-15T11:32:53+01:00",
-    "content": "<p>vaya, entre la negrita y el azul se ha saltado esto:<br /><a rel=\"nofollow ugc noopener\"><br />y cierro con:</a></p>\n<p>tenía puesto un cierre de:<br /> en la linea siguiente al cierre <br />pero no una apertura ¿Es necesario incluir  .... ?<br />¿de ser necesario donde estaría su ubicación?<br />Va a ser como que estas con un parvulario dando clases....;-)</p>"
+    "content": "<p>vaya, entre la negrita y el azul se ha saltado esto:<br /><br />y cierro con:</p>\n<p>tenía puesto un cierre de:<br /> en la linea siguiente al cierre <br />pero no una apertura ¿Es necesario incluir  .... ?<br />¿de ser necesario donde estaría su ubicación?<br />Va a ser como que estas con un parvulario dando clases....;-)</p>"
   },
   {
     "id": 23166,
@@ -292,13 +292,6 @@
     "author": "Monker",
     "date": "2013-02-04T17:20:54+01:00",
     "content": "<p>opera 12</p>\n<p>doesnotexist:-o-prefocus, .example {<br />  color: red;<br />}</p>"
-  },
-  {
-    "id": 36381,
-    "parent": 0,
-    "author": "Ropa niños outlet",
-    "date": "2013-07-22T10:26:52+02:00",
-    "content": "<p>buen puesto</p>"
   },
   {
     "id": 36398,

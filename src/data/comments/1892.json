@@ -25,7 +25,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2011-05-08T15:35:40+02:00",
-    "content": "<p>Ei <a rel=\"nofollow ugc noopener\">@Jacin </a> , perdona pero no había visto tu comentario hasta hoy mismo.</p>\n<p>Puedes indicar que el tamaño del watermark sea \"full\" y te lo pondrá ocupando el 100% de la imagen ;)</p>"
+    "content": "<p>Ei <a href=\"#comment-31007\">@Jacin </a> , perdona pero no había visto tu comentario hasta hoy mismo.</p>\n<p>Puedes indicar que el tamaño del watermark sea \"full\" y te lo pondrá ocupando el 100% de la imagen ;)</p>"
   },
   {
     "id": 31018,
@@ -88,7 +88,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2011-07-09T00:10:18+02:00",
-    "content": "<p>Ahí va, <a rel=\"nofollow ugc noopener\">@Luis Miguel </a>, te entendí mal la pregunta. Eso es lo que pasa cuando uno contesta preguntas recién levantado...</p>\n<p>Para hacer que la marca de agua ocupe el 100% de la imagen simplemente tienes que poner el parámetro 'size' del watermark a 'full':</p>\n<p><code>$this-&gt;Watermark-&gt;setWatermark(array('file' =&gt; 'fichero.png', 'size' =&gt; 'full'));</code></p>"
+    "content": "<p>Ahí va, <a href=\"#comment-31028\">@Luis Miguel </a>, te entendí mal la pregunta. Eso es lo que pasa cuando uno contesta preguntas recién levantado...</p>\n<p>Para hacer que la marca de agua ocupe el 100% de la imagen simplemente tienes que poner el parámetro 'size' del watermark a 'full':</p>\n<p><code>$this-&gt;Watermark-&gt;setWatermark(array('file' =&gt; 'fichero.png', 'size' =&gt; 'full'));</code></p>"
   },
   {
     "id": 36183,
@@ -102,7 +102,7 @@
     "parent": 0,
     "author": "Borja",
     "date": "2011-11-12T11:00:19+01:00",
-    "content": "<blockquote>\n<strong><a rel=\"nofollow ugc noopener\">Borja</a> :</strong>\nBuenas booleataire,\nde primeras agradecerte la clase, funciona muy bien, el unico inconveniente ya lo pusieron arriba y es que la marca de agua no respeta las transparencias en imagenes gif/png.\n¿Hay algun avance en cuanto este tema?, no soy muy dado a la edicion de imagen mediante PHP sinó ya hubiese echado una mano =)\n</blockquote>\nMil disculpas y fallo mio ^^ no le habia metido suficiente transparencia a la imagen como para que se notase el efecto, gracias de nuevo :D"
+    "content": "<blockquote>\n<strong><a href=\"#comment-36183\">Borja</a> :</strong>\nBuenas booleataire,\nde primeras agradecerte la clase, funciona muy bien, el unico inconveniente ya lo pusieron arriba y es que la marca de agua no respeta las transparencias en imagenes gif/png.\n¿Hay algun avance en cuanto este tema?, no soy muy dado a la edicion de imagen mediante PHP sinó ya hubiese echado una mano =)\n</blockquote>\nMil disculpas y fallo mio ^^ no le habia metido suficiente transparencia a la imagen como para que se notase el efecto, gracias de nuevo :D"
   },
   {
     "id": 36185,
@@ -137,14 +137,14 @@
     "parent": 0,
     "author": "Francisco",
     "date": "2011-12-26T18:00:22+01:00",
-    "content": "<p>Gracias @Booletaire, voy a investigar a ver si te puedo echar una mano.<br />Googleando encontré esto: http://www.akemapa.com/2008/07/10/php-gd-resize-transparent-image-png-gif/<br />A ver si apartir de ahí puedo averiguar algo ;)</p>\n<p><a rel=\"nofollow ugc noopener\">@Booletaire </a></p>"
+    "content": "<p>Gracias @Booletaire, voy a investigar a ver si te puedo echar una mano.<br />Googleando encontré esto: http://www.akemapa.com/2008/07/10/php-gd-resize-transparent-image-png-gif/<br />A ver si apartir de ahí puedo averiguar algo ;)</p>\n<p><a href=\"#comment-36189\">@Booletaire </a></p>"
   },
   {
     "id": 36191,
     "parent": 0,
     "author": "Francisco",
     "date": "2011-12-30T12:44:49+01:00",
-    "content": "<p>Buenos días de nuevo, os dejo buena noticia antes de finales de año y para comenzar bien 2012.<br />He conseguido que subiendo ficheros PNG me mantenga la transparencia con sólo sustituir todas las llamadas \"imagecreatetruecolor\" del método \"resize\" por \"imagecreate\". Ej:</p>\n<p>if ( !$dest_image = imagecreatetruecolor($new_x, $new_y) ) </p>\n<p>por:</p>\n<p>if ( !$dest_image = imagecreate($new_x, $new_y) ) </p>\n<p>Eso sí, si pudiérais hacer pruebas me sentiría más realizado ;)</p>\n<p><a rel=\"nofollow ugc noopener\">@Booletaire </a></p>"
+    "content": "<p>Buenos días de nuevo, os dejo buena noticia antes de finales de año y para comenzar bien 2012.<br />He conseguido que subiendo ficheros PNG me mantenga la transparencia con sólo sustituir todas las llamadas \"imagecreatetruecolor\" del método \"resize\" por \"imagecreate\". Ej:</p>\n<p>if ( !$dest_image = imagecreatetruecolor($new_x, $new_y) ) </p>\n<p>por:</p>\n<p>if ( !$dest_image = imagecreate($new_x, $new_y) ) </p>\n<p>Eso sí, si pudiérais hacer pruebas me sentiría más realizado ;)</p>\n<p><a href=\"#comment-36189\">@Booletaire </a></p>"
   },
   {
     "id": 36192,
@@ -228,7 +228,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2013-08-30T12:31:48+02:00",
-    "content": "<p>Gracias <a rel=\"nofollow ugc noopener\">Kalvin</a>!</p>\n<p><a rel=\"nofollow ugc noopener\">Luis</a>, lamento no haber contestado antes (sí, ha pasado casi un año). La verdad es que no dispongo del tiempo libre que me gustaría ni para poder ayudaros ni para poder hacer mejoras con la clase.</p>\n<p><a rel=\"nofollow ugc noopener\">Elí </a>, hace tiempo que tengo en mente sacar una nueva versión de la clase que permita trastear con el objeto de imagen antes de generarla. Es decir, que en lugar de trabajar internamente con la imagen, lo devuelva como valor y podamos modificar dicha variable:</p>\n<pre>// genreamos un resize con watimage\n$image = $this-&gt;Watermark-&gt;resize(array(...));\n// añadimos caracteres directamente con GD\nimagechar($image, 1, 0, 0, 'ola ke ase', imagecolorallocate($image, 0, 0, 0));</pre>\n<p>Desgraciadamente, como le comentaba a Luis, la verdad es que no dispongo de tiempo para hacerlo así que por ahora tendrás que crearte una función (o clase) que genere dicho espacio blanco en las imágenes (a partir del fichero resultante tratado con watimage).</p>"
+    "content": "<p>Gracias <a href=\"#comment-36253\">Kalvin</a>!</p>\n<p><a href=\"#comment-36257\">Luis</a>, lamento no haber contestado antes (sí, ha pasado casi un año). La verdad es que no dispongo del tiempo libre que me gustaría ni para poder ayudaros ni para poder hacer mejoras con la clase.</p>\n<p><a href=\"#comment-36389\">Elí </a>, hace tiempo que tengo en mente sacar una nueva versión de la clase que permita trastear con el objeto de imagen antes de generarla. Es decir, que en lugar de trabajar internamente con la imagen, lo devuelva como valor y podamos modificar dicha variable:</p>\n<pre>// genreamos un resize con watimage\n$image = $this-&gt;Watermark-&gt;resize(array(...));\n// añadimos caracteres directamente con GD\nimagechar($image, 1, 0, 0, 'ola ke ase', imagecolorallocate($image, 0, 0, 0));</pre>\n<p>Desgraciadamente, como le comentaba a Luis, la verdad es que no dispongo de tiempo para hacerlo así que por ahora tendrás que crearte una función (o clase) que genere dicho espacio blanco en las imágenes (a partir del fichero resultante tratado con watimage).</p>"
   },
   {
     "id": 36795,
@@ -242,7 +242,7 @@
     "parent": 0,
     "author": "Booletaire",
     "date": "2014-01-10T11:33:45+01:00",
-    "content": "<p>Hola <a rel=\"nofollow ugc noopener\">@Mauro </a>, me parece que hay algo que se te escapa. </p>\n<p>Efectivamente las imágenes tienen que estar cargadas en el servidor, este sistema no funciona si intentamos pasarle una imagen temporal, pero OJO, que esa imagen esté ubicada en el directorio temporal no significa que esa imagen no esté ocupando espacio, así que no veo qué problema te puede traer el guardar la imagen antes de tratarla.</p>\n<p>Por otro lado, es totalmente recomendable conservar la imagen subida por el usuario, así que más motivo para trabajar sobre una imagen guardada previamente.</p>\n<p>En github ya hay alguien que comentó algo parecido: https://github.com/elboletaire/Watimage/issues/2</p>"
+    "content": "<p>Hola <a href=\"#comment-36795\">@Mauro </a>, me parece que hay algo que se te escapa. </p>\n<p>Efectivamente las imágenes tienen que estar cargadas en el servidor, este sistema no funciona si intentamos pasarle una imagen temporal, pero OJO, que esa imagen esté ubicada en el directorio temporal no significa que esa imagen no esté ocupando espacio, así que no veo qué problema te puede traer el guardar la imagen antes de tratarla.</p>\n<p>Por otro lado, es totalmente recomendable conservar la imagen subida por el usuario, así que más motivo para trabajar sobre una imagen guardada previamente.</p>\n<p>En github ya hay alguien que comentó algo parecido: https://github.com/elboletaire/Watimage/issues/2</p>"
   },
   {
     "id": 54597,
