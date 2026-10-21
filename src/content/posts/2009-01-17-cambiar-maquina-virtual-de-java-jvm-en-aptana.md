@@ -1,21 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Cambiar máquina virtual de Java (JVM) en Aptana
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 132
-wordpress_url: http://racoinformatic.underave.net/?p=132
 date: '2009-01-17 16:17:17 +0100'
-date_gmt: '2009-01-17 15:17:17 +0100'
 categories:
 - Programació
 - Linux
@@ -38,7 +26,7 @@ Recordad que para ver cuáles tenéis disponibles podéis hacerlo desde consola 
 
     user@host:~$ ls /usr/lib/jvm/
 
-En la <a title="Cómo isntalar aptana (en inglés)" href="http://www.aptana.com/docs/index.php/Installing_Aptana_on_Linux" target="_blank">página web de Aptana</a> explican cómo cambiar la máquina virtual añadiendo una línea "export" a vuestro fichero ejecutable:
+En la <a title="Cómo isntalar aptana (en inglés)" href="http://www.aptana.com/docs/index.php/Installing_Aptana_on_Linux" target="_blank" rel="noopener">página web de Aptana</a> explican cómo cambiar la máquina virtual añadiendo una línea "export" a vuestro fichero ejecutable:
 
     export JAVA_HOME=/usr/lib/jvm/java-6-sun-1.6.0.10/bin/java
     export MOZILLA_FIVE_HOME=/usr/lib/xulrunner

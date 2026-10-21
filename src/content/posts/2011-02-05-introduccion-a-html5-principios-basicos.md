@@ -1,22 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Introducción a HTML5 - principios básicos
-author:
-  display_name: DPAM23
-  login: DPAM23
-  email: dpam23@hotmail.com
-  url: http://
-author_login: DPAM23
-author_email: dpam23@hotmail.com
-author_url: http://
-excerpt: "Desde hace unos días estoy inscrito en un curso gratuito y online de
-  HTML5, gestionado desde la P2PU con el soporte de Mozilla."
+excerpt: "Desde hace unos días estoy inscrito en un curso gratuito y online de HTML5, gestionado desde la P2PU con el soporte de Mozilla."
 wordpress_id: 1770
-wordpress_url: http://www.racotecnic.com/?p=1770
 date: '2011-02-05 14:14:20 +0100'
-date_gmt: '2011-02-05 13:14:20 +0100'
 categories:
 - Programació
 - Web
@@ -32,7 +20,7 @@ tags:
 - ejemplos
 ---
 
-<img class="alignleft size-thumbnail wp-image-1771" title="HTML5" src="{{ site.url }}/uploads/2011/02/HTML5-150x150.jpg" alt="HTML5 Logotype" width="150" height="150" />Desde hace unos días estoy inscrito en un curso gratuito y online de HTML5,  gestionado desde la <a href="http://p2pu.org/course/list">P2PU</a> con el soporte de <a href="http://www.drumbeat.org/project/p2p-university-open-web-career-track">Mozilla</a>.
+<img class="alignleft size-thumbnail wp-image-1771" title="HTML5" src="/uploads/2011/02/HTML5-150x150.jpg" alt="HTML5 Logotype" width="150" height="150" />Desde hace unos días estoy inscrito en un curso gratuito y online de HTML5,  gestionado desde la <a href="http://p2pu.org/course/list">P2PU</a> con el soporte de <a href="http://www.drumbeat.org/project/p2p-university-open-web-career-track">Mozilla</a>.
 Estos cursos los da gente anónima y desinteresada, por lo que en general no son docentes sino gente con conocimientos y ganas de explicar cosas.
 Es maravilloso que existan iniciativas de este tipo.
 
@@ -52,13 +40,13 @@ Por ejemplo, algunas de las más comunes:
 
 Su mismo nombre ya nos dice más o menos dónde irán ubicadas.
 
-En <a href="http://www.w3schools.com/html5/html5_reference.asp">w3schools</a> tienen una lista completa de todas las etiquetas nuevas.
+En [w3schools](http://www.w3schools.com/html5/html5_reference.asp) tienen una lista completa de todas las etiquetas nuevas.
 
-Vamos a comparar como se creaba antes la estructura de una web y como se hará com HTML5:<a id="more"></a><a id="more-1770"></a>
+Vamos a comparar como se creaba antes la estructura de una web y como se hará com HTML5:
 
 ## Antigua estructura:
 
-<img class="size-full wp-image-1779" title="html5_1" src="{{ site.url }}/uploads/2011/02/html5_11.png" alt="" width="270" height="251" />
+<img class="size-full wp-image-1779" title="html5_1" src="/uploads/2011/02/html5_11.png" alt="" width="270" height="251" />
 
 ~~~html
 <div id='header'><h1>Título de la página</h1></div>
@@ -80,7 +68,7 @@ Vamos a comparar como se creaba antes la estructura de una web y como se hará c
 
 ## Nueva estructura:
 
-<img class="size-full wp-image-1780" title="html5_2" src="{{ site.url }}/uploads/2011/02/html5_2.png" alt="" width="270" height="251" />
+<img class="size-full wp-image-1780" title="html5_2" src="/uploads/2011/02/html5_2.png" alt="" width="270" height="251" />
 
 ~~~html
 <header><h1>Título de la página</h1></header>
@@ -104,7 +92,7 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 
 ## Ejemplos reales : típicos usos:
 
-### <header>
+### `<header>`
 
 ~~~html
 <header>
@@ -121,7 +109,7 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 </header>
 ~~~
 
-### <nav>
+### `<nav>`
 
 ~~~html
 <nav>
@@ -133,7 +121,7 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 </nav>
 ~~~
 
-### <aside>
+### `<aside>`
 
 (Por ejemplo un sidebar de un blog)
 
@@ -154,7 +142,7 @@ Como podéis observar, las etiquetas son mucho más semánticas y específicas.
 </aside>
 ~~~
 
-### <footer>
+### `<footer>`
 
 ~~~html
 <footer>
@@ -249,7 +237,7 @@ Todo esto está muy bien, pero ¿y si lo vemos todo junto?
 Os dejo una página sencilla en HTML5 y algo de CSS3.
 Es el primer ejercicio que nos han pedido, veremos a ver que nota me ponen! :)
 
-<a href="http://demos.racotecnic.com/tutorials/2011/HTML5/" title="HTML5 example">http://demos.racotecnic.com/tutorials/2011/HTML5/</a>
+<a href="/tutorials/2011/HTML5/" title="HTML5 example">/tutorials/2011/HTML5/</a>
 
 ## Documentación interesante:
 
@@ -257,13 +245,13 @@ Es el primer ejercicio que nos han pedido, veremos a ver que nota me ponen! :)
   <ul>
     <li>Smashingshare:  <a href="http://smashingshare.com/2010/04/28/ultimate-collection-of-html5-and-css3-resources/" title="HTML5 & CSS3 ressources">ultimate-collection-of-html5-and-css3-resources</a></li>
     <li>Splashnology: <a href="http://www.splashnology.com/blog/html5/968.html" title="HTML5"> Useful HTML5 & CSS3 Toolbox For Web Developers </a> </li>
-    <li><a href="http://bit.ly/guvTze" title="Videotutoriales">Curso videotutoriales de HTML5 </a> creado por Jesús Conde (0utKast).</li>
-    <li>Curso en video HTML5 - First Look / Ingles (<a href="http://ir.pe/3tqb" title="Curso en video">Descarga gratuita</a>)</li>
-    <li>Libro HTML5: Designing Rich Internet Applications / Ingles - (<a href="http://ir.pe/3tqd" title="Libro HTML5">Descarga gratuita</a>) </li>
-    <li>Libro HTML5 for web designers/Ingles (<a href="http://ir.pe/3tqe" title="Libro HTML5">Descarga gratuita</a>)</li>
-    <li>Conferencia HTML5 para diseñadores-CampusParty / Español <a href="http://ir.pe/3tqf" title="Conferencia HTML5">http://ir.pe/3tqf</a></li>
-    <li>Conferencia HTML5 para principiantes / Español by @soska- <a href="http://ir.pe/3tqg" title="Conferencia HTML5">http://ir.pe/3tqg</a></li>
-    <li>Conferencia Introduction to HTML5 / Ingles by Google Developers <a href="http://ir.pe/3tqh" title="Conferencia Introduction to HTML5">http://ir.pe/3tqh</a></li>
+    <li>Curso videotutoriales de HTML5  creado por Jesús Conde (0utKast).</li>
+    <li>Curso en video HTML5 - First Look / Ingles (Descarga gratuita)</li>
+    <li>Libro HTML5: Designing Rich Internet Applications / Ingles - (Descarga gratuita) </li>
+    <li>Libro HTML5 for web designers/Ingles (Descarga gratuita)</li>
+    <li>Conferencia HTML5 para diseñadores-CampusParty / Español http://ir.pe/3tqf</li>
+    <li>Conferencia HTML5 para principiantes / Español by @soska- http://ir.pe/3tqg</li>
+    <li>Conferencia Introduction to HTML5 / Ingles by Google Developers http://ir.pe/3tqh</li>
     <li>Ejemplos y tutoriales de HTML5 <a href="http://www.html5rocks.com/" title="ejemplos y tutoriales de HTML5">http://www.html5rocks.com/</a></li>
   </ul>
   <p>PD: Gracias a los alumnos del curso por compartir estos enlaces tan interesantes!</p>

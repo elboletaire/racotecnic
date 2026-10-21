@@ -22,6 +22,7 @@ pnpm dev          # local server with hot reload
 ```bash
 pnpm build        # type checks, static build and search index (dist/)
 pnpm test:urls    # checks every URL in tests/old-urls.txt exists in dist/
+pnpm test:assets  # checks every root-relative src/href in dist/ resolves
 pnpm lint
 ```
 

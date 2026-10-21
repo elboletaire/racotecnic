@@ -1,28 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Crackear redes wifi con clave WEP desde Ubuntu linux
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Hace poco me volví a interesar por este tema y me costó tanto lograrlo
-  (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una
-  entrada reuniendo todos los pasos. Antes de continuar debéis tener presente
-  que esto es ilegal en la mayor parte de los países así que si vais a hacer
-  uso de ello **deberá ser sobre VUESTRA red WiFi**."
+excerpt: "Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos. Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello deberá ser sobre VUESTRA red WiFi."
 wordpress_id: 286
-wordpress_url: http://racotecnic.com/?p=286
 redirect_from:
 - "?p=286/"
 date: '2009-03-19 19:40:51 +0100'
-date_gmt: '2009-03-19 18:40:51 +0100'
 categories:
 - Linux
 - Mac
@@ -51,13 +35,13 @@ tags:
 
 <a name="intro"></a> Hace poco me volví a interesar por este tema y me costó tanto lograrlo (lo hice posible entre 4 o 5 páginas distintas) que he decidido hacer una entrada reuniendo todos los pasos.  Antes de continuar debéis tener presente que esto es ilegal en la mayor parte de los países así que si vais a hacer uso de ello** deberá ser sobre VUESTRA red WiFi**. Dicho esto, que seguramente pocos haréis caso alguno, procedamos a ello.
 
-<a id="more"></a><a id="more-286"></a>
+
 
 ## <a name="pasos"></a>Primeros pasos
 
 El primer paso será averiguar si nuestra tarjeta WiFi permite que la activemos en modo monitor. El modo monitor nos permite hacer un tipo de ataque que reduce considerablemente el tiempo de obtención de las claves (de unos días a unos minutos). No obstante, con cualquier tarjeta podéis obtener claves, el problema es que con una tarjeta sin modo monitor tardaréis días o semanas (o quizás nunca la consigáis).
 
-En <a title="Ver listado de tarjetas en elhacker.net" href="http://hwagm.elhacker.net/htm/tarjetas.htm" target="_blank">este enlace</a> hay un buen listado de tarjetas inalámbricas dónde se nos indica cuáles están preparadas para hacer inyección (modo monitor) y cuáles no.
+En <a title="Ver listado de tarjetas en elhacker.net" href="http://hwagm.elhacker.net/htm/tarjetas.htm" target="_blank" rel="noopener">este enlace</a> hay un buen listado de tarjetas inalámbricas dónde se nos indica cuáles están preparadas para hacer inyección (modo monitor) y cuáles no.
 
 Si vuestra tarjeta está en esta lista y en la celda de "Inyección" pone "Lx", ¡premio! Vuestra tarjeta permite la inyección de tráfico.
 
@@ -73,7 +57,7 @@ aptitude install build-essential linux-headers-$(uname -r)
 
 ## <a name="madwifi"></a>Instalar driver Madwifi
 
-Una vez instaladas las cabeceras procedemos a la instalación de Madwifi. Para ello descarguemos la última versión de la web <a title="Ir a la página del proyecto Madwifi" href="http://www.madwifi-project.org" target="_blank">madwifi-project</a>, actualmente la última versión (y la que estoy utilizando yo) es la siguiente:  <a title="Descargar drivers madwifi" href="http://snapshots.madwifi-project.org/madwifi-hal-0.10.5.6/madwifi-hal-0.10.5.6-r3942-20090205.tar.gz">madwifi-hal-0.10.5.6-r3942-20090205.tar.gz</a> Descargad el fichero en la carpeta /tmp/ (por ejemplo) y acceded a ella mediante consola para descomprimir e instalar el fichero:
+Una vez instaladas las cabeceras procedemos a la instalación de Madwifi. Para ello descarguemos la última versión de la web <a title="Ir a la página del proyecto Madwifi" href="http://www.madwifi-project.org" target="_blank" rel="noopener">madwifi-project</a>, actualmente la última versión (y la que estoy utilizando yo) es la siguiente:  [madwifi-hal-0.10.5.6-r3942-20090205.tar.gz](http://snapshots.madwifi-project.org/madwifi-hal-0.10.5.6/madwifi-hal-0.10.5.6-r3942-20090205.tar.gz "Descargar drivers madwifi") Descargad el fichero en la carpeta /tmp/ (por ejemplo) y acceded a ella mediante consola para descomprimir e instalar el fichero:
 
 ~~~bash
 #ACCEDEMOS A LA CARPETA DONDE HEMOS DESCARGADO MADWIFI
@@ -165,7 +149,7 @@ airodump-ng ath0
 La pantalla está dividida en dos partes importantes: la de AP (access points), en la parte superior y la de clientes, en la parte inferior.
 
 <figure>
-  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="{{ site.url }}/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>
+  <a rel="noopener lightbox" href="/uploads/2009/03/airodump-ng.png" target="_blank"><img title="airodump-ng_thumb" src="/uploads/2009/03/airodump-ng_thumb.png" alt="airodump-ng_thumb" width="379" height="68" /></a>
   <figcaption>
     airodump-ng (clic para ampliar)
   </figcaption>
@@ -213,7 +197,7 @@ ifconfig ath0 | grep HWaddr
 Si os da vuestra dirección separada por guiones recordad ponerla separada por puntos y sólo las 6 primeras parejas de números.  Hecho esto veréis como aireplay-ng empieza a enviar paquetes al AP. Puede que pasen unos minutos hasta que los "ARP" empiezan a incrementar, pero llegado ese momento podréis ver como los "#Data" de airodump-ng empiezan a subir rápidamente.
 
 <figure>
-  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng.png"><img class="size-full wp-image-327" title="aireplay-ng" src="{{ site.url }}/uploads/2009/03/aireplay-ng.png" alt="aireplay-ng" width="461" height="60" /></a>
+  <a rel="lightbox" href="/uploads/2009/03/aireplay-ng.png"><img class="size-full wp-image-327" title="aireplay-ng" src="/uploads/2009/03/aireplay-ng.png" alt="aireplay-ng" width="461" height="60" /></a>
   <figcaption>
     Inyección de tráfico con aireplay-ng
   </figcaption>
@@ -225,7 +209,7 @@ Si estamos atacando utilizando la mac de un STATION en lugar de la nuestra, nos 
 
       ifconfig ath0 hw ether 00:16:CB:BA:23:D2
 
-Esto es porque la mac que le hemos indicado no coincide con la de nuestra tarjeta de red. Para solucionar esto basta con cambiar la mac por la de la estación que estemos emulando (utilizad control+C para terminar el proceso de aireplay-ng, cambiad la MAC y volved a ejecutar aireplay-ng). Para cambiar la MAC pasad al punto <a href="#macchange">Cambiar dirección MAC de la interfaz de red</a>
+Esto es porque la mac que le hemos indicado no coincide con la de nuestra tarjeta de red. Para solucionar esto basta con cambiar la mac por la de la estación que estemos emulando (utilizad control+C para terminar el proceso de aireplay-ng, cambiad la MAC y volved a ejecutar aireplay-ng). Para cambiar la MAC pasad al punto [Cambiar dirección MAC de la interfaz de red](#macchange)
 
 ### <a name="macinjection"></a>Inyección de paquetes (con bloqueo MAC)
 
@@ -262,7 +246,7 @@ ifconfig ath0 up
 Haciendo esto nos aseguramos que el AP crea que somos uno de sus clientes y facilitará la obtención de paquetes ARP.
 
 <figure>
-  <a rel="lightbox" href="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png"><img class="size-full wp-image-332" title="aireplay-ng_sending" src="{{ site.url }}/uploads/2009/03/aireplay-ng_sending.png" alt="aireplay-ng enviando paquetes" width="561" height="60" /></a>
+  <a rel="lightbox" href="/uploads/2009/03/aireplay-ng_sending.png"><img class="size-full wp-image-332" title="aireplay-ng_sending" src="/uploads/2009/03/aireplay-ng_sending.png" alt="aireplay-ng enviando paquetes" width="561" height="60" /></a>
   <figcaption>
     aireplay-ng enviando paquetes
   </figcaption>
@@ -315,7 +299,7 @@ aircrack-ng jazztel2c-01.cap
 Y.. presto! Ya tenemos nuestra clave:
 
 <figure>
-  <a title="aircrack-ng (ampliar)" rel="lightbox" href="{{ site.url }}/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="{{ site.url }}/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>
+  <a title="aircrack-ng (ampliar)" rel="noopener lightbox" href="/uploads/2009/03/aircrack-ng.png" target="_blank"><img class="size-full wp-image-338" title="aircrack-ng_thumb" src="/uploads/2009/03/aircrack-ng_thumb.png" alt="aircrack-ng_thumb" width="286" height="33" /></a>
   <figcaption>
     Contraseña desencriptada (clic para ampliar)
   </figcaption>
@@ -327,9 +311,9 @@ En caso de que no pudierais utilizar "aptitude" porque la máquina desde la cual
 
 <blockquote>
   <ul>
-    <li><a title="Descargar build-essential" href="http://packages.ubuntu.com/intrepid/build-essential" target="_blank">build-essential</a></li>
-    <li><a title="Descargar linux-headers-*" href="http://packages.ubuntu.com/search?searchon=names&amp;keywords=linux-headers" target="_blank">linux-headers</a></li>
-    <li><a title="Descargar aircrack-ng" href="http://packages.ubuntu.com/intrepid/aircrack-ng" target="_blank">aircrack-ng</a></li>
+    <li><a title="Descargar build-essential" href="http://packages.ubuntu.com/intrepid/build-essential" target="_blank" rel="noopener">build-essential</a></li>
+    <li><a title="Descargar linux-headers-*" href="http://packages.ubuntu.com/search?searchon=names&amp;keywords=linux-headers" target="_blank" rel="noopener">linux-headers</a></li>
+    <li><a title="Descargar aircrack-ng" href="http://packages.ubuntu.com/intrepid/aircrack-ng" target="_blank" rel="noopener">aircrack-ng</a></li>
   </ul>
 </blockquote>
 
@@ -345,9 +329,9 @@ Recordad destruir la interfaz y reactivarla en modo standalone una vez tengáis 
 
 <blockquote>
   <ul>
-    <li><a title="Ver original" href="http://ubuntuforums.org/showthread.php?t=528276" target="_blank">HOWTO: Aircrack-NG</a></li>
-    <li><a title="Ver original" href="http://forums.remote-exploit.org/showthread.php?t=330" target="_blank">Howto get Madwifi-ng drivers to work properly!</a></li>
-    <li><a title="Ir a google" href="http://www.google.es" target="_blank">Ooh todopoderoso Google</a></li>
+    <li><a title="Ver original" href="http://ubuntuforums.org/showthread.php?t=528276" target="_blank" rel="noopener">HOWTO: Aircrack-NG</a></li>
+    <li><a title="Ver original" href="http://forums.remote-exploit.org/showthread.php?t=330" target="_blank" rel="noopener">Howto get Madwifi-ng drivers to work properly!</a></li>
+    <li><a title="Ir a google" href="http://www.google.es" target="_blank" rel="noopener">Ooh todopoderoso Google</a></li>
   </ul>
 </blockquote>
 

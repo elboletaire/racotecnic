@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Cracking cuenta premium de Megaupload vía Firefox
-author:
-  display_name: '909'
-  login: '909'
-  email: gerardperucha@hotmail.com
-author_login: '909'
-author_email: gerardperucha@hotmail.com
-excerpt: "Una de las maneras para hacernos con una
-  cuenta Premium de Megaupload, **totalmente gratis. **Es utilizando
-  el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se
-  de hacer para ello."
+excerpt: "Una de las maneras para hacernos con una cuenta Premium de Megaupload, totalmente gratis. Es utilizando el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se de hacer para ello."
 wordpress_id: 377
-wordpress_url: http://racotecnic.com/?p=377
 redirect_from:
 - "?p=377/"
 date: '2009-03-30 20:57:15 +0200'
-date_gmt: '2009-03-30 19:57:15 +0200'
 categories:
 - Linux
 - Web
@@ -32,7 +20,7 @@ tags:
 
 Una de las maneras para hacernos con una cuenta Premium de Megaupload, **totalmente gratis. **Es utilizando el navegador Firefox y un editor de cookies. Explicaremos, paso por paso, que se de hacer para ello.
 
-1. **Nos bajaremos e instalaremos el correspondiente addons para Firefox:** <span style="color: #888888;"><a href="http://anonym.to/?https://addons.mozilla.org/es-ES/firefox/addon/573" target="destino">Aquí</a></span>
+1. **Nos bajaremos e instalaremos el correspondiente addons para Firefox:** <span style="color: #888888;">Aquí</span>
 2. **Entras en**: htt://www.megaupload.com
 3. **Borras las cookies**
   - OSX/ LINUX: <em><span style="color: #888888;"> Firefox/Preferencias/Privacidad/Mostrar Cookies/Remove todas las cookies</span></em>

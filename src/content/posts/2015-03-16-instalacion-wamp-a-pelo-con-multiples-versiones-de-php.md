@@ -1,25 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalación WAMP a pelo con múltiples versiones de PHP o cómo configurar Apache
   para correr varias versiones de PHP en distintos servidores virtuales
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "En esta guía os explicaré cómo realizar la instalación de un servidor
-  Windows Apache + MySQL + PHP (WAMP) con múltiples versiones de PHP para
-  distintos servidores virtuales."
+excerpt: "En esta guía os explicaré cómo realizar la instalación de un servidor Windows Apache + MySQL + PHP (WAMP) con múltiples versiones de PHP para distintos servidores virtuales."
 wordpress_id: 2326
-wordpress_url: http://www.racotecnic.com/?p=2326
 date: '2015-03-16 23:50:52 +0100'
-date_gmt: '2015-03-16 22:50:52 +0100'
 categories:
 - Web
 - Windows
@@ -68,7 +54,7 @@ Todo ello utilizando las versiones de 64 bits, pero procuraré poneros los enlac
 <blockquote>
 Antes de empezar es importantísimo que comprobéis que tenéis todas las actualizaciones del sistema al día. Especialmente interesa tener <em>.NET Framework</em> instalado y actualizado para poder correr cualquiera de las aplicaciones que vamos a instalar. En mi caso la última actualización fue .NET Framework 4.5.2.</blockquote>
 
-<a id="more"></a><a id="more-2326"></a>
+
 
 ## <a id="user-content-estructura-de-la-instalación" class="anchor" href="#estructura-de-la-instalaci%C3%B3n"></a>Estructura de la instalación
 
@@ -86,9 +72,9 @@ MySQL dejo que se instale donde quiera ya que no me preocupa tener copia de sus 
 
 Desde hace relativamente poco la descarga de binarios de Apache ya no se realiza desde el sitio oficial. En su lugar ellos mismos te recomiendan varios sites alternativos desde los que efectuar la descarga.
 
-Podéis ver esto <a href="http://ftp.cixug.es/apache//httpd/binaries/win32/">desde cualquiera de los mirrors de descarga de apache, bajo `binaries/win32`</a>.
+Podéis ver esto [desde cualquiera de los mirrors de descarga de apache, bajo `binaries/win32`](http://ftp.cixug.es/apache//httpd/binaries/win32/).
 
-Yo personalmente recomiendo <a href="http://www.apachelounge.com/">ApacheLounge</a> y os guiaré para descargar desde ahí los ficheros.
+Yo personalmente recomiendo [ApacheLounge](http://www.apachelounge.com/) y os guiaré para descargar desde ahí los ficheros.
 
 Os guiaré, pero de todos modos pondré los enlaces directos a los ficheros que yo he utilizado (no os lo recomiendo ya que sacan versiones nuevas constantemente).
 
@@ -141,7 +127,7 @@ Para avanzar faena, cambiad `DirectoryIndex` para que coja ficheros php por defe
 
 Al final de todo del documento añadid las siguientes líneas:
 
-~~~conf
+~~~apache
 # 200MB of file upload limit
 FcgidMaxRequestLen 209715200
 # Set minimum timeouts
@@ -179,7 +165,7 @@ arreglarlo. En mi caso mientras hacía este tutorial olvidé crear el directorio
     Syntax error on line 243 of C:/httpd/apache/conf/httpd.conf:
     DocumentRoot must be a directory
 
-Utilizando vuestro navegador podéis acceder a <a href="http://localhost">http://localhost</a> y comprobar que el servidor funciona correctamente.
+Utilizando vuestro navegador podéis acceder a [http://localhost](http://localhost) y comprobar que el servidor funciona correctamente.
 
 Perfecto, pero no hemos instalado Apache. Sólo hemos comprobado que funcionaba correctamente antes de instalarlo.
 
@@ -191,21 +177,21 @@ Para instalarlo debéis ejecutar un terminal con derechos de administrador. Una 
 
 Para hacer que `ApacheMonitor` se ejecute cuando arranquéis el ordenador únicamente tenéis que crearle un acceso directo en la sección `Inicio` del menú Inicio (un poco redundante, sí).
 
-<a href="{{ site.url }}/uploads/2015/03/apache_monitor.png"><img src="{{ site.url }}/uploads/2015/03/apache_monitor.png" alt="En català no és pas tant redundant, oi?" width="233" height="77" class="aligncenter size-full wp-image-2334" /></a>
+<a href="/uploads/2015/03/apache_monitor.png"><img src="/uploads/2015/03/apache_monitor.png" alt="En català no és pas tant redundant, oi?" width="233" height="77" class="aligncenter size-full wp-image-2334" /></a>
 
-Hecho. Si os da el gusanillo reiniciad el ordenador y acceded de nuevo a <a href="http://localhost">http://localhost</a> para comprobar que todo sigue funcionando OK.
+Hecho. Si os da el gusanillo reiniciad el ordenador y acceded de nuevo a [http://localhost](http://localhost) para comprobar que todo sigue funcionando OK.
 
 ## <a id="user-content-instalando-php" class="anchor" href="#instalando-php"></a>Instalando PHP
 
-Id a la <a href="http://windows.php.net/download/">página de descargas de PHP para windows</a> y descargad todas las versiones de PHP que queráis tener instaladas.
+Id a la [página de descargas de PHP para windows](http://windows.php.net/download/) y descargad todas las versiones de PHP que queráis tener instaladas.
 
 Al descargarlas únicamente debéis tener en cuenta la arquitectura que estéis instalando (en mi caso x64) y que **Apache es Thread Safe**.
 
 <a href="https://instagram.com/elboletaire/">
-  <img src="{{ site.url }}/uploads/2015/03/thread_safe.jpg" alt="Thread safe" />
+  <img src="/uploads/2015/03/thread_safe.jpg" alt="Thread safe" />
 </a>
 
-En mi instalación descargo <a href="http://windows.php.net/downloads/releases/php-5.6.6-Win32-VC11-x64.zip">PHP 5.6 (5.6.6) VC11 x64 Thread Safe (2015-Feb-19 01:45:29)</a> y <a href="http://windows.php.net/downloads/releases/php-5.5.22-Win32-VC11-x64.zip">PHP 5.5 (5.5.22) VC11 x64 Thread Safe (2015-Feb-19 01:38:01)</a>.
+En mi instalación descargo [PHP 5.6 (5.6.6) VC11 x64 Thread Safe (2015-Feb-19 01:45:29)](http://windows.php.net/downloads/releases/php-5.6.6-Win32-VC11-x64.zip) y [PHP 5.5 (5.5.22) VC11 x64 Thread Safe (2015-Feb-19 01:38:01)](http://windows.php.net/downloads/releases/php-5.5.22-Win32-VC11-x64.zip).
 
 Una vez tenéis todo descargado, lo descomprimís y lo movéis hacia el directorio `C:\httpd`. Poned nombres cortos a los directorios:
 
@@ -248,7 +234,7 @@ Hecho esto en todos los ficheros `php.ini` de nuestras instalaciones, es momento
 
 Volved al fichero `httpd.conf` de apache y al final del documento, descomentad:
 
-~~~conf
+~~~apache
 # Set PHP 5.6 as default php-cgi executable
 AddHandler fcgid-script .php
 FcgidInitialEnv PHPRC "C:/httpd/php56"
@@ -262,7 +248,7 @@ Utilizando `ApacheMonitor` reiniciad Apache. Cread un fichero `index.php` en el 
 phpinfo();
 ~~~
 
-Y acceded a <a href="http://localhost">http://localhost</a> para verificar que PHP funciona correctamente.
+Y acceded a [http://localhost](http://localhost) para verificar que PHP funciona correctamente.
 
 ## <a id="user-content-utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales" class="anchor" href="#utilizando-distintas-versiones-de-php-en-nuestros-servidores-virtuales"></a>Utilizando distintas versiones de PHP en nuestros servidores virtuales
 
@@ -270,7 +256,7 @@ Ahora que ya tenéis Apache y la versión de PHP por defecto corriendo, llega el
 
 Para utilizar esta metodología es necesario el uso de servidores virtuales, así que en el fichero `httpd.conf` descomentáis la línea donde carga el fichero de VirtualHosts:
 
-~~~conf
+~~~apache
 # Virtual hosts
 Include conf/extra/httpd-vhosts.conf
 ~~~
@@ -316,15 +302,15 @@ Para ir acabando añadid al fichero hosts de sistema (`C:\Windows\System32\drive
 
 Copiad el fichero `index.php` que hemos creado antes en el directorio `www` a cada directorio de cada host virtual.
 
-Finalmente reiniciad apache utilizando ApacheMonitor y acceded con vuestro navegador a <a href="http://php55.loc">http://php55.loc</a> y <a href="http://php56.loc">http://php56.loc</a> para verificar que todo ha funcionado correctamente.
+Finalmente reiniciad apache utilizando ApacheMonitor y acceded con vuestro navegador a [http://php55.loc](http://php55.loc) y [http://php56.loc](http://php56.loc) para verificar que todo ha funcionado correctamente.
 
 Estoy seguro de que sí :)
 
-<a href="{{ site.url }}/uploads/2015/03/php.loc_.png"><img src="{{ site.url }}/uploads/2015/03/php.loc_-1024x732.png" alt="php.loc" class="aligncenter size-large wp-image-2336" /></a>
+<a href="/uploads/2015/03/php.loc_.png"><img src="/uploads/2015/03/php.loc_-1024x732.png" alt="php.loc" class="aligncenter size-large wp-image-2336" /></a>
 
 ## <a id="user-content-instalar-mysql" class="anchor" href="#instalar-mysql"></a>Instalar MySQL
 
-Descargad el <a href="http://dev.mysql.com/downloads/windows/installer/5.6.html">instalador de MySQL</a> y procurad instalar lo que os interese (con el servidor ya basta).
+Descargad el [instalador de MySQL](http://dev.mysql.com/downloads/windows/installer/5.6.html) y procurad instalar lo que os interese (con el servidor ya basta).
 
 Podéis optar por escoger la instalación por defecto para desarrolladores (os instalará cosas que no necesita un desarrollador PHP habitualmente), o bien podéis instalar los paquetes que queráis manualmente.
 

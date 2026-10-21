@@ -1,18 +1,6 @@
 ---
-layout: post
 title: "Guarda GRATIS en la nube tus partidas guardadas o cómo hacer copias de seguridad en la nube gratis"
 modified: 2016-05-25 19:15:51 +0200
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-image:
-  feature:
-  credit:
-  creditlink:
-comments:
-share:
 categories:
 - Windows
 - Linux
@@ -23,7 +11,7 @@ tags: [Consola]
 Ya hace unos años que hago esto y la verdad es que es muy práctico. Consiste
 básicamente en subir automáticamente las partidas guardadas a un servicio en la
 nube como
-<a href="https://db.tt/5HdFOXd" target="_blank" rel="nofollow">Dropbox</a>,
+<a href="https://db.tt/5HdFOXd" target="_blank" rel="noopener nofollow">Dropbox</a>,
 Mega u ownCloud.
 
 Me voy a centrar en hablar de partidas guardadas, pero el caso es que lo que

@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Cupones de promoción / descuento de dominios en Go Daddy
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 127
-wordpress_url: http://racoinformatic.underave.net/?p=127
 date: '2009-01-14 18:15:28 +0100'
-date_gmt: '2009-01-14 17:15:28 +0100'
 categories:
 - Domains & Hosting
 tags:
@@ -41,7 +30,7 @@ Para que no os salgan tan caros los dominios este año ;)
 <blockquote>
   Fuente y más descuentos:
   <ul>
-    <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank">Godaddy promo code and coupon list for 2009</a></li>
-    <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank">GoDaddy Coupon Code</a></li>
+    <li><a title="Ver más cupones" href="http://www.fatwallet.com/forums/hot-deals/725207" target="_blank" rel="noopener">Godaddy promo code and coupon list for 2009</a></li>
+    <li><a title="Ver más cupones" href="http://www.dealtaker.com/GoDaddy-coupon-code-a528-c.html" target="_blank" rel="noopener">GoDaddy Coupon Code</a></li>
   </ul>
 </blockquote>

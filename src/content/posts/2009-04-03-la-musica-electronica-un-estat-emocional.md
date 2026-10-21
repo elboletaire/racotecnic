@@ -1,26 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: La música electrònica, un estat emocional
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Molts col·legues i amics meus es queixen de que amb el software que hi
-  ha avui dia qualsevol pot convertir-se en un artista electrònic; creuen que
-  les noves generacions de productors ho han tingut tot més fàcil... Per Déu!
-  És el mateix argument que els productors de rock utilitzaven contra mi, contra
-  la nostra generació. Ens deien que no érem músics de veritat perquè
-  utilitzàvem màquines; que ells eren millors perquè sabien tocar la guitarra."
+excerpt: "Molts col·legues i amics meus es queixen de que amb el software que hi ha avui dia qualsevol pot convertir-se en un artista electrònic; creuen que les noves generacions de productors ho han tingut tot més fàcil... Per Déu! És el mateix argument que els productors de rock utilitzaven contra mi, contra la nostra generació. Ens deien que no érem músics de veritat perquè utilitzàvem màquines; que ells eren millors perquè sabien tocar la guitarra."
 wordpress_id: 1959
-wordpress_url: http://www.racotecnic.com/?p=1959
 date: '2009-04-03 13:58:51 +0200'
-date_gmt: '2009-04-03 12:58:51 +0200'
 categories:
 - General
 - Audioblog
@@ -30,7 +14,7 @@ tags:
 
 > Aquest article prové de l'audioblog, clausurat per desús i amb les entrades
 del qual mogudes a aquest blog per a que no es perdin en l'oblid. Entrada escrita
-originalment per **<a href="http://madame.musicavermella.com" title="Vés al seu blog!" target="_blank">madame</a>**.
+originalment per **<a href="http://madame.musicavermella.com" title="Vés al seu blog!" target="_blank" rel="noopener">madame</a>**.
 
 
 > Molts col·legues i amics meus es queixen de que amb el software que hi ha avui
@@ -52,46 +36,46 @@ Aquest treball de recerca, orientat a la recopilació d'informació i opinions s
 
 Així doncs, iniciem la recerca amb un conjunt d'informació referent a la descripció de la música i els seus efectes,  seguida d'una breu explicació de les diferents tendències musicals que s'originaren durant el segle XX (concretament en la seva segona meitat, arran de moviments avantguardistes, ja que gran part dels seus plantejaments foren el principi del que actualment entenem per música electrònica i, possiblement, aquesta última hagi gaudit de la capacitat de popularitzar i estendre els principis musicals de què parlaven aquestes tendències), per introduir-nos en l'explicació de la música electrònica actual i la possible conclusió que d'ella en puguem extreure referent als seus estats emocionals conseqüents.
 
-<a id="more"></a><a id="more-1959"></a>
+
 
 <ul>
   <li><a href="#presentacio">Presentació</a></li>
   <li><a href="#musica_definicio">La música; definició</a>
-    <ul>
-      <li><a href="#melodia">La melodia</a></li>
-      <li><a href="#harmonia">L'harmonia</a></li>
-      <li><a href="#tonalitat">La tonalitat</a></li>
-      <li><a href="#tempo">El tempo</a></li>
-      <li><a href="#ritme">El ritme</a></li>
-    </ul>
+<ul>
+<li><a href="#melodia">La melodia</a></li>
+<li><a href="#harmonia">L'harmonia</a></li>
+<li><a href="#tonalitat">La tonalitat</a></li>
+<li><a href="#tempo">El tempo</a></li>
+<li><a href="#ritme">El ritme</a></li>
+</ul>
   </li>
   <li><a href="#efectes">Efectes de la música sobre l'ésser humà</a>
-    <ul>
-      <li><a href="#emocio_sentiment_significat">Emoció, sentiment i significat en la música</a></li>
-      <li><a href="#capacitat_per_mourens">Capacitat de la música per moure l'ésser humà</a></li>
-    </ul>
+<ul>
+<li><a href="#emocio_sentiment_significat">Emoció, sentiment i significat en la música</a></li>
+<li><a href="#capacitat_per_mourens">Capacitat de la música per moure l'ésser humà</a></li>
+</ul>
   </li>
   <li><a href="#antecedents_musica_electronica">Antecedents històrics de la música electrònica</a>
-    <ul>
-      <li><a href="#introduccio_avantguardisme">Petita introducció a l'Avantguardisme</a></li>
-      <li><a href="#musica_avantguardista">Música en els moviments d'avantguarda</a></li>
-    </ul>
+<ul>
+<li><a href="#introduccio_avantguardisme">Petita introducció a l'Avantguardisme</a></li>
+<li><a href="#musica_avantguardista">Música en els moviments d'avantguarda</a></li>
+</ul>
   </li>
   <li><a href="#musica_electronica">La música electrònica: definició i estils principals</a>
-    <ul>
-      <li><a href="#musica_electronica">La música electrònica. Què és?</a></li>
-      <li><a href="#dj">El Disc Jockey</a></li>
-      <li><a href="#estils_musica_electronica">Estils principal en la música electrònica</a></li>
-    </ul>
+<ul>
+<li><a href="#musica_electronica">La música electrònica. Què és?</a></li>
+<li><a href="#dj">El Disc Jockey</a></li>
+<li><a href="#estils_musica_electronica">Estils principal en la música electrònica</a></li>
+</ul>
   </li>
   <li><a href="#xamans">Tradicions xamàniques, raves i possible relació</a>
-    <ul>
-      <li><a href="#xamans">Què és un xaman?</a></li>
-      <li><a href="#dansa_electronica">La dansa electrònica</a></li>
-      <li><a href="#transit_musical">L'estat del trànsit musical</a></li>
-      <li><a href="#rave">Rave. De què es tracta?</a></li>
-      <li><a href="#raves_i_religio">Raves i "religió"</a></li>
-    </ul>
+<ul>
+<li><a href="#xamans">Què és un xaman?</a></li>
+<li><a href="#dansa_electronica">La dansa electrònica</a></li>
+<li><a href="#transit_musical">L'estat del trànsit musical</a></li>
+<li><a href="#rave">Rave. De què es tracta?</a></li>
+<li><a href="#raves_i_religio">Raves i "religió"</a></li>
+</ul>
   </li>
   <li><a href="#estat_emocional">La música electrònica, un estat emocional</a></li>
   <li><a href="#bibliografia">Bibliografia</a></li>
@@ -225,11 +209,11 @@ Aquest és el tema més controvertit de la psicologia de la música perquè en e
   Tot i així, perquè tingui significat estètic, la tensió ha de ser seguida  per el compliment d'allò esperat i la resolució de la tensió.
 - **Sentiment:** La música expressa molt més allò que l'ésser humà sent que el que pensa. Aquest llenguatge és com l'esperanto de les emocions, més que de les idees. Ningú no ho dubta i és un fet perfectament notable, però com pot expressar sentiments la música? Aquesta és la qüestió. La filosofia ha tractat de desvetllar el misteri; per això, Susan Langer construí una teoria molt interessant. Aquesta teoria considera que la música pot expressar sentiments millor que les altres belles arts per cinc raons:
   <ol type="a">
-    <li>La música és una forma de llenguatge simbòlic.</li>
-    <li>La música té per objectiu expressar el món dels sentiments i pot fer-ho perquè, per la seva forma i estructura, s'assembla a la forma de les emocions, de manera que aquesta semblança fa possible la seva simbolització per part de la música. "...el que la música pot reflectir actualment és només la morfologia del sentiment".</li>
-    <li>La música és una forma simbòlica inacabada: "Perquè la música, en la seva més elevada expressió, encara que és una forma simbòlica és un símbol inacabat". Això permet al ser humà veure projectats en la música els seus estats d'ànim.</li>
-    <li>"Les formes dels sentiments humans són expressades amb major congruència sota formes musicals que en forma de llenguatge. La música pot revelar la naturalesa dels sentiments amb més detall i veritat que el llenguatge"; "Hi ha sentiments... que són tan constantment suprimits per les nostres passions, que només tímidament es mostren i que són pràcticament desconeguts per  nosaltres... fixem-nos, tot i així, en quin tipus de resposta evoca en els nostres cors un cert tipus de música: estem atents si la música és encantadora; no desperta ni tristesa ni alegria, pietat o angúnia, i tot i així som commoguts per ella. Som tan imperceptiblement, suaument commoguts, que no ens adonem de que estem afectats, o millor, que no podem donar nom a aquest efecte" (Marpurg).</li>
-    <li>La música gaudeix de la possibilitat d'expressar coses oposades simultàniament. Per això, Langer cita a Mersmann: "La possibilitat d'expressar coses oposades simultàniament confereix a la música la possibilitat més intricada d'expressió i aconsegueix amb això anar molt més lluny que altres arts".</li>
+<li>La música és una forma de llenguatge simbòlic.</li>
+<li>La música té per objectiu expressar el món dels sentiments i pot fer-ho perquè, per la seva forma i estructura, s'assembla a la forma de les emocions, de manera que aquesta semblança fa possible la seva simbolització per part de la música. "...el que la música pot reflectir actualment és només la morfologia del sentiment".</li>
+<li>La música és una forma simbòlica inacabada: "Perquè la música, en la seva més elevada expressió, encara que és una forma simbòlica és un símbol inacabat". Això permet al ser humà veure projectats en la música els seus estats d'ànim.</li>
+<li>"Les formes dels sentiments humans són expressades amb major congruència sota formes musicals que en forma de llenguatge. La música pot revelar la naturalesa dels sentiments amb més detall i veritat que el llenguatge"; "Hi ha sentiments... que són tan constantment suprimits per les nostres passions, que només tímidament es mostren i que són pràcticament desconeguts per  nosaltres... fixem-nos, tot i així, en quin tipus de resposta evoca en els nostres cors un cert tipus de música: estem atents si la música és encantadora; no desperta ni tristesa ni alegria, pietat o angúnia, i tot i així som commoguts per ella. Som tan imperceptiblement, suaument commoguts, que no ens adonem de que estem afectats, o millor, que no podem donar nom a aquest efecte" (Marpurg).</li>
+<li>La música gaudeix de la possibilitat d'expressar coses oposades simultàniament. Per això, Langer cita a Mersmann: "La possibilitat d'expressar coses oposades simultàniament confereix a la música la possibilitat més intricada d'expressió i aconsegueix amb això anar molt més lluny que altres arts".</li>
   </ol>
 
 ## <a name="capacitat_per_mourens"></a>Capacitat de la música per moure el ser humà
@@ -238,100 +222,100 @@ A través de la història de la musicoteràpia es constata un fet comú, i és l
 
 <ul>
   <li>
-    <strong>Efectes biològics:</strong> La música actua sobre la bioquímica del nostre organisme, positiva o negativament segons el tipus de música.
+<strong>Efectes biològics:</strong> La música actua sobre la bioquímica del nostre organisme, positiva o negativament segons el tipus de música.
   </li>
   <li>
-    <strong>Efectes fisiològics:</strong>
-    <ol type="a">
-      <li>
+<strong>Efectes fisiològics:</strong>
+<ol type="a">
+<li>
         Pressió a la sang: Segons sembla, la pressió a la sang canvia segons el tipus de música; aquests canvis no es produeixen necessàriament en funció de si aquesta música és estimulant o sedant, sinó més aviat és degut a motivacions personals.
-      </li>
-      <li>
+</li>
+<li>
         Ritme cardíac i pols: La disminució del HR (hearth rate) es relaciona amb la resolució del conflicte musical que s'expressa a través d'un tempo lent, cadències finals, textura de corda sostinguda i moviment harmònic lent. El HR s'accelera quan augmenta el so en tempo musical ràpid, mentre que el HR es retarda quan decreix el so i el tempo musical s'alenteix.
-      </li>
-      <li>
+</li>
+<li>
         Respiració: Qualsevol música tendeix a accelerar la respiració. Encara que sovint s'associa la música estimulant amb un augment més elevat de la respiració respecte al de la música sedant, s'han donat molts casos on la música sedant accelera més la respiració de l'oient.
-      </li>
-    </ol>
+</li>
+</ol>
   </li>
   <li>
-    <strong>Efectes psicològics:</strong> Característiques d'una música...
-    <table>
-      <thead>
-        <tr>
-          <th> </th>
-          <th>Estimulant</th>
-          <th>Sedant</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Volum del so:</td>
-          <td>alt</td>
-          <td>baix</td>
-        </tr>
-        <tr>
-          <td>Ritme:</td>
-          <td>ràpid</td>
-          <td>lent</td>
-        </tr>
-        <tr>
-          <td>Ritme:</td>
-          <td>irregular, canviant</td>
-          <td>regular, uniforme</td>
-        </tr>
-        <tr>
-          <td>Ritme:</td>
-          <td>marcat</td>
-          <td>que pràcticament no es noti</td>
-        </tr>
-        <tr>
-          <td>Tempo:</td>
-          <td>més aviat ràpid</td>
-          <td>més aviat lent</td>
-        </tr>
-        <tr>
-          <td>Notes:</td>
-          <td>agudes o mitjanes</td>
-          <td>greus o mitjanes</td>
-        </tr>
-        <tr>
-          <td>Línia melòdica:</td>
-          <td>amb salts bruscs</td>
-          <td>sense salts bruscs</td>
-        </tr>
-        <tr>
-          <td>Línia melòdica:</td>
-          <td>sense repeticions</td>
-          <td>amb repeticions</td>
-        </tr>
-        <tr>
-          <td>Harmonia:</td>
-          <td>acords dissonants</td>
-          <td>acords consonants</td>
-        </tr>
-        <tr>
-          <td>Timbre:</td>
-          <td>depèn de l’instrument</td>
-          <td>depèn de l’instrument</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
+<strong>Efectes psicològics:</strong> Característiques d'una música...
+<table>
+<thead>
+<tr>
+<th> </th>
+<th>Estimulant</th>
+<th>Sedant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Volum del so:</td>
+<td>alt</td>
+<td>baix</td>
+</tr>
+<tr>
+<td>Ritme:</td>
+<td>ràpid</td>
+<td>lent</td>
+</tr>
+<tr>
+<td>Ritme:</td>
+<td>irregular, canviant</td>
+<td>regular, uniforme</td>
+</tr>
+<tr>
+<td>Ritme:</td>
+<td>marcat</td>
+<td>que pràcticament no es noti</td>
+</tr>
+<tr>
+<td>Tempo:</td>
+<td>més aviat ràpid</td>
+<td>més aviat lent</td>
+</tr>
+<tr>
+<td>Notes:</td>
+<td>agudes o mitjanes</td>
+<td>greus o mitjanes</td>
+</tr>
+<tr>
+<td>Línia melòdica:</td>
+<td>amb salts bruscs</td>
+<td>sense salts bruscs</td>
+</tr>
+<tr>
+<td>Línia melòdica:</td>
+<td>sense repeticions</td>
+<td>amb repeticions</td>
+</tr>
+<tr>
+<td>Harmonia:</td>
+<td>acords dissonants</td>
+<td>acords consonants</td>
+</tr>
+<tr>
+<td>Timbre:</td>
+<td>depèn de l’instrument</td>
+<td>depèn de l’instrument</td>
+</tr>
+</tbody>
+</table>
+<p>
       De manera generalitzada, aquests serien, en teoria, els efectes contraposats d'aquests dos tipus de música. A la pràctica existeix una condició sine qua non perquè produeixi aquests efectes en l'ésser humà, i és, per exemple, el que la música sigui agradable pel qui l'escolta i que l'escolti en una situació personal i ambiental adequada.
-    </p>
-    <p>
+</p>
+<p>
       La música pot despertar, evocar, provocar, enfortir i desenvolupar qualsevol emoció o sentiment humà. És un fet inqüestionable que la música pot expressar sentiments d'amor, odi, tristesa, temor, alegria, desesperació, terror, por, angúnia, ràbia, etc. Tot i així, la gran qüestió no resolta és saber com la música és capaç de transformar-se en emoció.
-    </p>
+</p>
   </li>
   <li>
-    <strong>Efectes intel·lectuals:</strong> la música desenvolupa la capacitat d'atenció. Estimula la imaginació i la capacitat creadora. Desenvolupa un mètode peculiar d'expressió: el musical. Desenvolupa la memòria. La dansa ajuda en l'autodomini corporal. Desenvolupa el sentit d'ordre i anàlisi. Desenvolupa la capacitat i el gust artístic. Inicia els nens en la meditació i/o reflexió. El contrapunt exercita la intel·ligència perquè habitua a seguir diversos raonaments alhora, la qual cosa només és possible en la música. Ajuda el nen normal a transformar el seu pensament eminentment il·lògic en lògic, i això sense disminuir la seva afectivitat. En aquest aspecte la música és superior a les matemàtiques i altres ciències eminentment lògiques.
+<strong>Efectes intel·lectuals:</strong> la música desenvolupa la capacitat d'atenció. Estimula la imaginació i la capacitat creadora. Desenvolupa un mètode peculiar d'expressió: el musical. Desenvolupa la memòria. La dansa ajuda en l'autodomini corporal. Desenvolupa el sentit d'ordre i anàlisi. Desenvolupa la capacitat i el gust artístic. Inicia els nens en la meditació i/o reflexió. El contrapunt exercita la intel·ligència perquè habitua a seguir diversos raonaments alhora, la qual cosa només és possible en la música. Ajuda el nen normal a transformar el seu pensament eminentment il·lògic en lògic, i això sense disminuir la seva afectivitat. En aquest aspecte la música és superior a les matemàtiques i altres ciències eminentment lògiques.
   </li>
   <li>
-    <strong>Efectes socials:</strong> provoca i afavoreix l'expressió d'un mateix. Tendeix a unir les persones, sobretot a través del cant i l'execució instrumental comunitària, a l'expressar sentiments comuns. És l'art que millor provoca i expressa estats emocionals, independentment de tot individualisme.
+<strong>Efectes socials:</strong> provoca i afavoreix l'expressió d'un mateix. Tendeix a unir les persones, sobretot a través del cant i l'execució instrumental comunitària, a l'expressar sentiments comuns. És l'art que millor provoca i expressa estats emocionals, independentment de tot individualisme.
   </li>
   <li>
-    <strong>Efectes espirituals:</strong> com cap altre de les belles arts, una autèntica música de tal caràcter pot provocar l'enteniment d'allò sublim. En totes les religions se l'ha considerat un element imprescindible del culte.
+<strong>Efectes espirituals:</strong> com cap altre de les belles arts, una autèntica música de tal caràcter pot provocar l'enteniment d'allò sublim. En totes les religions se l'ha considerat un element imprescindible del culte.
   </li>
 </ul>
 
@@ -350,58 +334,58 @@ En la base de totes les teories que tracten de buscar els fonaments de l'acció 
   </li>
   <li>
     André Michel elaborà una teoria on senyala aspectes o qualitats de la música que la fan terapèutica i que les altres belles arts posseeixen en menor proporció:
-    <ol type="a">
-      <li>
+<ol type="a">
+<li>
         Categoria temporal: "La música és l'art del temps", afirma Michel. Tota música és tema de consciència ja que el temps és un element de realitat i categoria. L'art no és altra cosa que un redescobriment, una espècie de reencarnació d'aquesta realitat, fet que ha hagut de passar abans per la personalitat de l'artista. La música és la més viva, la més concreta, la més completa experiència del temps que es coneix. És cert que l'obra d'art visual permet a l'artista sobreviure al pas del temps; tot i això, la música fa més encara: permet reviure la duració viscuda.
-      </li>
-      <li>
+</li>
+<li>
         Pensament: Una altra qualitat molt important es refereix al camp de la consciència. Només la música fa possible la polivalència simultània de diversos raonaments alhora, la qual cosa fa que acumuli en un mateix instant la major profunditat psíquica possible. Cada part concertant segueix la seva pròpia lògica.
-      </li>
-      <li>
+</li>
+<li>
         Sentiment: Aquesta característica atribueix a la música un valor extraordinari. Es tracta d'una qualitat molt més vital, més essencial en l'ésser humà que el mateix raonament lògic, ja que sense la capacitat o qualitat de sentir-nos "afectats" no és possible bastir el raonament. La música expressa la nostra sensibilitat secundària, que és superior al pensament lògic, a la "raó freda", al raonament matemàtic. Aquesta sensibilitat secundària és més rica i variada que l'afectivitat elemental primària, i conté, a més, en el seu interior totes les virtuts de la raó lògica.
-      </li>
-    </ol>
+</li>
+</ol>
   </li>
 </ol>
 
 <ul>
   <li>
-    <strong>Musique concrète (música concreta):</strong> La música concreta va néixer l'any 1948 a la ràdio francesa (Ràdio França) aleshores sota la direcció de Pierre Schaeffer, qui proposà una nova música, elaborada mitjançant l'ajuda de màquines, a partir de sons enregistrats, component de forma directa, concretament, sense passar per notacions gramaticals, al mateix nivell del so. Sense donar importància al material sonor, instrumental, ambiental o sintètic emprat, el compositor era autor i responsable de la totalitat de les seves característiques morfològiques i qualitats sensibles. Al 1948 es creà el G.R.M.C. o Grup d'Investigacions de Música Concreta, que a finals de la dècada dels 50 canvià la seva denominació a la de G.R.M. o Grup d'Investigacions Musicals. Aquest centre de creació i investigació, ha aconseguit construir un cos experimental, instrumental y teòric que assentà, des dels seus principis, bases pel nou llenguatge de la música electroacústica. En els primers anys d'aquesta aventura s'hi uní Pierre Henry, qui al costat de Schaeffer creà un conjunt d'obres que avui són referència directa de la historia de la música contemporània. Schaeffer, amb el seu equip de col·laboradors, desenvolupà un extens camp de reflexió al voltant de l'objecte sonor gràcies al seu estudi, denominació y classificació tipològica i morfològica, concentrant la recerca en l'obra monumental i clàssica: el "Tractat dels Objectes Musicals" i el seu recolzament pràctic, el "Solfeig de l'Objecte Sonor", treballs recolzats amb el desenvolupament de màquines i tecnologies que permeteren la creació de composicions musicals d'acord amb les noves idees estètiques que esdevenien. El 1966, François Bayle, assumeix la direcció del G.R.M. i proposa la denominació de "Música Acusmàtica", que de fet ja estava present en la proposta teòrica de Schaeffer, com a herència històrica de la Música Concreta, ampliant la preocupació original que existí sobre l'objecte sonor, cap a una concepció i control integral de les imatges sonores, transcendint les investigacions sobre la tipologia i morfologia dels objectes sonors cap a l'estudi semiològic i cinemàtic de las imatges sonores, establint els mètodes d'organització formal i espacial del material sonor. La Música Concreta, o el que és igual, la Música Acusmàtica, és una música de sons fixats i d'imatges sonores projectades. Des de 1999, durant la transició del segle XX al XXI, la direcció del G.R.M, passà a Daniel Teruggi qui plantejà una renovadora obertura a la diversitat de modalitats de creació musical amb nous mitjans electrònics.
+<strong>Musique concrète (música concreta):</strong> La música concreta va néixer l'any 1948 a la ràdio francesa (Ràdio França) aleshores sota la direcció de Pierre Schaeffer, qui proposà una nova música, elaborada mitjançant l'ajuda de màquines, a partir de sons enregistrats, component de forma directa, concretament, sense passar per notacions gramaticals, al mateix nivell del so. Sense donar importància al material sonor, instrumental, ambiental o sintètic emprat, el compositor era autor i responsable de la totalitat de les seves característiques morfològiques i qualitats sensibles. Al 1948 es creà el G.R.M.C. o Grup d'Investigacions de Música Concreta, que a finals de la dècada dels 50 canvià la seva denominació a la de G.R.M. o Grup d'Investigacions Musicals. Aquest centre de creació i investigació, ha aconseguit construir un cos experimental, instrumental y teòric que assentà, des dels seus principis, bases pel nou llenguatge de la música electroacústica. En els primers anys d'aquesta aventura s'hi uní Pierre Henry, qui al costat de Schaeffer creà un conjunt d'obres que avui són referència directa de la historia de la música contemporània. Schaeffer, amb el seu equip de col·laboradors, desenvolupà un extens camp de reflexió al voltant de l'objecte sonor gràcies al seu estudi, denominació y classificació tipològica i morfològica, concentrant la recerca en l'obra monumental i clàssica: el "Tractat dels Objectes Musicals" i el seu recolzament pràctic, el "Solfeig de l'Objecte Sonor", treballs recolzats amb el desenvolupament de màquines i tecnologies que permeteren la creació de composicions musicals d'acord amb les noves idees estètiques que esdevenien. El 1966, François Bayle, assumeix la direcció del G.R.M. i proposa la denominació de "Música Acusmàtica", que de fet ja estava present en la proposta teòrica de Schaeffer, com a herència històrica de la Música Concreta, ampliant la preocupació original que existí sobre l'objecte sonor, cap a una concepció i control integral de les imatges sonores, transcendint les investigacions sobre la tipologia i morfologia dels objectes sonors cap a l'estudi semiològic i cinemàtic de las imatges sonores, establint els mètodes d'organització formal i espacial del material sonor. La Música Concreta, o el que és igual, la Música Acusmàtica, és una música de sons fixats i d'imatges sonores projectades. Des de 1999, durant la transició del segle XX al XXI, la direcció del G.R.M, passà a Daniel Teruggi qui plantejà una renovadora obertura a la diversitat de modalitats de creació musical amb nous mitjans electrònics.
   </li>
   <li>
-    <p>
-      <strong>Música electrònica:</strong> Els compositors Hebert Eimert, Karlheinz Stockhausen, György Ligeti i Gottfried Michael Koening, que varen treballar a l'estudi de la ràdio alemanya de Colònia, es van sentir atrets per la utilització del so electrònic per ampliar les tècniques de la música serial. També manifestaren el seu interès en potenciar una música complexa que excedís la capacitat dels intèrprets humans. Per crear aquestes composicions s'utilitzaven tècniques semblants a les de la musique concrète, que utilitzaven oscil·ladors enlloc de micròfons per captar la senyal sonora original
-    </p>
-    <p>
+<p>
+<strong>Música electrònica:</strong> Els compositors Hebert Eimert, Karlheinz Stockhausen, György Ligeti i Gottfried Michael Koening, que varen treballar a l'estudi de la ràdio alemanya de Colònia, es van sentir atrets per la utilització del so electrònic per ampliar les tècniques de la música serial. També manifestaren el seu interès en potenciar una música complexa que excedís la capacitat dels intèrprets humans. Per crear aquestes composicions s'utilitzaven tècniques semblants a les de la musique concrète, que utilitzaven oscil·ladors enlloc de micròfons per captar la senyal sonora original
+</p>
+<p>
       A finals de la dècada de 1950 tingué lloc la creació de nombrosos estudis especialitzats, amb el propòsit de proporcionar als compositors els costosos equips necessaris per a la producció d'electrònica. A Europa aquests estudis tingueren lloc especialment en les emissores públiques de ràdio. Aquests estudis, acostumaven a disposar de magnetòfons, grups d'oscil·ladors, micròfons, taules de mescles i dispositius de modificació com aparells de reverberació, filtres i moduladors d'anell. El descobriment de nous procediments i tècniques per gravar i alterar el so tingué lloc en un moment en que molts compositors desitjaven aïllar-se de les idees tradicionals de la música i la manera d'interpretar-la. El concepte de música experimental, impulsat pels avenços científics, va conduir a molts compositors als estudis de música electrònica.  Encara que els concerts d'"altaveus" atreien a un públic reduït, el gran creixement de la indústria discogràfica revelà l'existència d'un públic important, encara que especialitzat, de música electrònica.
-    </p>
+</p>
   </li>
   <li>
-    <p>
-      <strong>Composició sonoro-textual:</strong> en aquest gènere electroacústic, que evolucionà a partir de la poesia concreta, les paraules parlades, en oposició a les paraules cantades o als sons vocals sense significació, constitueixen el material musical fonamental.
-    </p>
-    <p>
+<p>
+<strong>Composició sonoro-textual:</strong> en aquest gènere electroacústic, que evolucionà a partir de la poesia concreta, les paraules parlades, en oposició a les paraules cantades o als sons vocals sense significació, constitueixen el material musical fonamental.
+</p>
+<p>
       El compositor francès Henri Chopin escrigué profusament sobre aquest intent d'obtenir música de la poesia per mitjà de l'electrònica. Els compositors americans  Charles Amirkhanian i Charles Dodge ampliaren el gènere. Dodge utilitzà un ordinador per modificar veus en obres com les seves Speech Songs.
-    </p>
+</p>
   </li>
   <li>
-    <p>
-      <strong>Els sintetitzadors:</strong> el Sintetitzador RCA va fer possible a principis de la dècada de 1950 un control significativament major dels equips existents per modificar i generar sons. Utilitzat profusament pel compositor Milton Babbitt, es tractava d'un sistema costós i experimental. A mitjans dels anys seixanta, animats pel creixent interès per la música electroacústica i per la disponibilitat de tecnologia de transistors a baix cost, els inventors Robert Moog i Donald Buchla fabricaren el primer sintetitzador amb control per voltatge. Mitjançant la interconnexió de mòduls, els voltatges podien aplicar-se a amplificadors, oscil·ladors i filtres, creant seqüències de sons contínuament canviants. Aquests procediments descobriren un nou i enorme vocabulari de sons.
-    </p>
-    <p>
+<p>
+<strong>Els sintetitzadors:</strong> el Sintetitzador RCA va fer possible a principis de la dècada de 1950 un control significativament major dels equips existents per modificar i generar sons. Utilitzat profusament pel compositor Milton Babbitt, es tractava d'un sistema costós i experimental. A mitjans dels anys seixanta, animats pel creixent interès per la música electroacústica i per la disponibilitat de tecnologia de transistors a baix cost, els inventors Robert Moog i Donald Buchla fabricaren el primer sintetitzador amb control per voltatge. Mitjançant la interconnexió de mòduls, els voltatges podien aplicar-se a amplificadors, oscil·ladors i filtres, creant seqüències de sons contínuament canviants. Aquests procediments descobriren un nou i enorme vocabulari de sons.
+</p>
+<p>
       A la dècada de 1980 ja existien nombrosos sintetitzadors comercials. La majoria dels sintetitzadors es toquen des d'un teclat i produeixen sons concrets la característica més destacada dels quals és l'existència d'harmònics invariables.
-    </p>
+</p>
   </li>
   <li>
-    <p>
-      <strong>Els ordinadors:</strong> els ordinadors s'han convertit en l'eina més important per als compositors de música electroacústica perquè poden utilitzar-los per tots els gèneres descrits més amunt. La primera utilització d'ordinadors consistí en compondre o ajudar als compositors a crear obres per instruments o per la interpretació electroacústica.
-    </p>
-    <p>
+<p>
+<strong>Els ordinadors:</strong> els ordinadors s'han convertit en l'eina més important per als compositors de música electroacústica perquè poden utilitzar-los per tots els gèneres descrits més amunt. La primera utilització d'ordinadors consistí en compondre o ajudar als compositors a crear obres per instruments o per la interpretació electroacústica.
+</p>
+<p>
       L'ús més significatiu dels ordinadors ha estat la síntesi d'ones sonores. Emmagatzemades com a números, les ones sonores es converteixen en voltatges que comanden els altaveus. Encara que els ordinadors puguin utilitzar-se també per controlar sintetitzadors analògics i altres equips de so com els mescladors, la síntesi digital directa és la que més interès ha despertat en els compositors perquè tots els sons poden gravar-se, resintetitzar-se, i modificar-se d'aquesta manera.
-    </p>
-    <p>
+</p>
+<p>
       Els avenços de les tècniques digitals d'àudio i la versatilitat de la síntesi de sons de l'ordinador han seguit ampliant les oportunitats en aquest camp per als compositors i intèrprets de música culta i popular. L'emmagatzematge digital i el control de sons obtinguts mitjançant micròfons enriqueix les opcions pels compositors de musique concrète i de compositors sonoro-textuals. La naturalesa experimental d'una gran part de la música electroacústica s'està reduint al temps que els compositors poden accedir amb una facilitat cada cop més elevada a sistemes de cost reduït. Finalment, la distinció entre música en viu i música gravada ha perdut tota la seva importància.
-    </p>
+</p>
   </li>
 </ul>
 

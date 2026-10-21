@@ -1,40 +1,19 @@
 ---
-layout: post
 status: publish
 published: true
 title: Ordenadores por 0€
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "De todos es sabido que si algo caracteriza la civilización occidental es básicamente que compra más de lo que necesita,
-  y entre esas cosas están los ordenadores con los que entramos a leer este foro.\r\n\r\nPues
-  bien, con unos mínimos conocimientos técnicos, resulta que podemos tener un ordenador
-  con el que no solo consultar este foro, sino hacer todo lo que una persona normal
-  hace con un ordenador.\r\n\r\nVamos a partir de la base de que los ordenadores actuales
-  están sobredimensionados para lo que se usan. Usando un símil automovílistico, comprar
-  un ordenador nuevo es como usar un coche con el motor de un ferrari, el equipamiento
-  de un mercedes y el maletero de un camión para ir y venir de trabajar a 2 km de
-  casa. Con un ordenador de ultima generacion que este equipado con 17 núcleos, chorrocientos
-  terabytes de ram y un pozo sin fondo de disco duro vas a terminar haciendo exactamente
-  lo mismo que con un ordenador de hace 4-5 años: ver tetas en Internet.\r\n\r\n"
+excerpt: "De todos es sabido que si algo caracteriza la civilización occidental es básicamente que compra más de lo que necesita, y entre esas cosas están los ordenadores con los que entramos a leer este foro. Pues bien, con unos mínimos conocimientos técnicos, resulta que podemos tener un ordenador con el que no solo consultar este foro, sino hacer todo lo que una persona normal hace con un ordenador. Vamos a partir de la base de que los ordenadores actuales están sobredimensionados para lo que se usan. Usando un símil automovílistico, comprar un ordenador nuevo es como usar un coche con el motor de un ferrari, el equipamiento de un mercedes y el maletero de un camión para ir y venir de trabajar a 2 km de casa. Con un ordenador de ultima generacion que este equipado con 17 núcleos, chorrocientos terabytes de ram y un pozo sin fondo de disco duro vas a terminar haciendo exactamente lo mismo que con un ordenador de hace 4-5 años: ver tetas en Internet."
 wordpress_id: 437
-wordpress_url: http://racotecnic.com/?p=437
 redirect_from:
 - "?p=437/"
 date: '2009-04-06 15:15:52 +0200'
-date_gmt: '2009-04-06 14:15:52 +0200'
 categories:
 - General
 - Hardware
 tags: []
 ---
 
-Desde los foros de <a title="Acceder a los foros para ver el original" href="http://www.burbuja.info/inmobiliaria/burbuja-inmobiliaria/106043-lonchafinismo-informatico-un-ordenador-por-0-a.html" target="_blank">burbuja.info</a>
+Desde los foros de <a title="Acceder a los foros para ver el original" href="http://www.burbuja.info/inmobiliaria/burbuja-inmobiliaria/106043-lonchafinismo-informatico-un-ordenador-por-0-a.html" target="_blank" rel="noopener">burbuja.info</a>
 
 <blockquote>
 De todos es sabido que si algo caracteriza la civilización occidental es básicamente que compra más de lo que necesita, y entre esas cosas están los ordenadores con los que entramos a leer este foro.
@@ -43,7 +22,7 @@ Pues bien, con unos mínimos conocimientos técnicos, resulta que podemos tener 
 
 Vamos a partir de la base de que los ordenadores actuales están sobredimensionados para lo que se usan. Usando un símil automovílistico, comprar un ordenador nuevo es como usar un coche con el motor de un ferrari, el equipamiento de un mercedes y el maletero de un camión para ir y venir de trabajar a 2 km de casa. Con un ordenador de ultima generacion que este equipado con 17 núcleos, chorrocientos terabytes de ram y un pozo sin fondo de disco duro vas a terminar haciendo exactamente lo mismo que con un ordenador de hace 4-5 años: ver tetas en Internet.
 
-<a id="more"></a><a id="more-437"></a>
+
 Así que comencemos nuestro viaje:
 
 Vamos al punto limpio de nuestra localidad con cualquier excusa. Hemos sacado el aceite de la freidora o llegamos con unos cartones que hemos cogido en el contenedor de la esquina debajo del brazo.

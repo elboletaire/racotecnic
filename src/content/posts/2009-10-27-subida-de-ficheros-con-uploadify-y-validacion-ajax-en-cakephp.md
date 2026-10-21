@@ -1,25 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Subida de ficheros con Uploadify y validación Ajax en CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Ya hacía tiempo que tenía ganas de escribir una entrada \"de estas\" :D
-  (de estas quiero decir de programación y con muuuucho muuuucho código, como a mí
-  me gustan :P)."
+excerpt: "Ya hacía tiempo que tenía ganas de escribir una entrada \"de estas\" :D (de estas quiero decir de programación y con muuuucho muuuucho código, como a mí me gustan :P)."
 wordpress_id: 746
-wordpress_url: http://racotecnic.com/?p=746
 redirect_from:
 - "?p=746/"
 date: '2009-10-27 01:25:16 +0100'
-date_gmt: '2009-10-27 00:25:16 +0100'
 categories:
 - Programació
 - Web
@@ -34,28 +21,25 @@ tags:
 
 Ya hacía tiempo que tenía ganas de escribir una entrada "de estas" :D (de estas quiero decir de programación y con muuuucho muuuucho código, como a mí me gustan :P).
 
-Hace unos meses conté <a title="Leer artículo" href="http://www.racotecnic.com/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/" target="_self">cómo podíais utilizar el plugin Uploadify (de jQuery) para subir ficheros a vuestro portal hecho con CakePHP</a>. Hoy iremos un poco más allá y crearemos un **upload de imágenes con validación de campos con Ajax**.
+Hace unos meses conté <a title="Leer artículo" href="/2009/06/subida-de-ficheros-en-cakephp-con-uploadify-y-jquery/" target="_self">cómo podíais utilizar el plugin Uploadify (de jQuery) para subir ficheros a vuestro portal hecho con CakePHP</a>. Hoy iremos un poco más allá y crearemos un **upload de imágenes con validación de campos con Ajax**.
 
 Antes de empezar estaría bien que hubierais leído el anterior tutorial —e incluso haberlo probado— para tener algo de práctica en el asunto. Este tutorial será (bastante) de ampliación del anterior. Quiero decir que habrá cosas en las que no profundizaré porque ya lo hice en el anterior, así como que en este hay mejoras, como la gestión de la respuesta de uploadify con JSON en lugar de con texto plano.
 
-Si queréis podéis ver el resultado del tutorial que voy a explicar en este enlace:
-
 <blockquote>
   <ul>
-    <li><a href="http://demos.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
-    <li><a href="http://demos.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
+    <li><a href="/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
   </ul>
 </blockquote>
 
-<a id="more"></a><a id="more-746"></a>
+
 
 Pongámonos a ello. Primero de todo, como siempre, ¿qué necesitamos?
 
 <ul>
-  <li><a rel="nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable])</li>
-  <li>Un componente para gestionar ficheros subidos, <a rel="nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">como este</a></li>
-  <li><a rel="nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)</li>
-  <li><a rel="nofollow" href="http://www.uploadify.com" target="_blank">Uploadify</a> (v. 2.1.0)</li>
+  <li><a rel="noopener nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable])</li>
+  <li>Un componente para gestionar ficheros subidos, <a rel="noopener nofollow" href="http://labs.iamkoa.net/2007/10/23/image-upload-component-cakephp/" target="_blank">como este</a></li>
+  <li><a rel="noopener nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)</li>
+  <li><a rel="noopener nofollow" href="http://www.uploadify.com" target="_blank">Uploadify</a> (v. 2.1.0)</li>
 </ul>
 
 _(las versiones que he puesto entre paréntesis son las que he utilizado yo para el tutorial)_
@@ -75,24 +59,24 @@ _(las versiones que he puesto entre paréntesis son las que he utilizado yo para
 Y este es un resultado aproximado de cómo os podría quedar (paso por paso):
 
 <div style="padding: 0 14%">
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges1.png">
-    <img title="upload_imatges1" src="{{ site.url }}/uploads/2009/09/upload_imatges1-150x150.png" alt="upload_imatges1" />
+  <a href="/uploads/2009/09/upload_imatges1.png">
+    <img title="upload_imatges1" src="/uploads/2009/09/upload_imatges1-150x150.png" alt="upload_imatges1" />
   </a>
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges2.png">
-    <img title="upload_imatges2" src="{{ site.url }}/uploads/2009/09/upload_imatges2-150x150.png" alt="upload_imatges2" />
+  <a href="/uploads/2009/09/upload_imatges2.png">
+    <img title="upload_imatges2" src="/uploads/2009/09/upload_imatges2-150x150.png" alt="upload_imatges2" />
   </a>
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges3.png">
-    <img title="upload_imatges3" src="{{ site.url }}/uploads/2009/09/upload_imatges3-150x150.png" alt="upload_imatges3" />
+  <a href="/uploads/2009/09/upload_imatges3.png">
+    <img title="upload_imatges3" src="/uploads/2009/09/upload_imatges3-150x150.png" alt="upload_imatges3" />
   </a>
 
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges4.png">
-    <img title="upload_imatges4" src="{{ site.url }}/uploads/2009/09/upload_imatges4-150x150.png" alt="upload_imatges4" />
+  <a href="/uploads/2009/09/upload_imatges4.png">
+    <img title="upload_imatges4" src="/uploads/2009/09/upload_imatges4-150x150.png" alt="upload_imatges4" />
   </a>
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges5.png">
-    <img title="upload_imatges5" src="{{ site.url }}/uploads/2009/09/upload_imatges5-150x150.png" alt="upload_imatges5" />
+  <a href="/uploads/2009/09/upload_imatges5.png">
+    <img title="upload_imatges5" src="/uploads/2009/09/upload_imatges5-150x150.png" alt="upload_imatges5" />
   </a>
-  <a href="{{ site.url }}/uploads/2009/09/upload_imatges6.png">
-    <img title="upload_imatges6" src="{{ site.url }}/uploads/2009/09/upload_imatges6-150x150.png" alt="upload_imatges6" />
+  <a href="/uploads/2009/09/upload_imatges6.png">
+    <img title="upload_imatges6" src="/uploads/2009/09/upload_imatges6-150x150.png" alt="upload_imatges6" />
   </a>
 </div>
 
@@ -117,13 +101,13 @@ Hay una cosa que no he mencionado en los pasos de "¿qué queremos hacer?" y que
 
 Una vez el usuario ha seleccionado las imágenes estas empiezan a subir. Cuando han subido todas generamos ficheros (miniaturas, así como el archivo original) que guardamos en el servidor y que, si el usuario no diera al botón de "Guardar" del formulario, quedarían en nuestro servidor ocupando espacio.
 
-Mi solución para este problema ha sido crear una tabla llamada "<em>tempfiles</em>" donde introduzco la ruta completa del fichero. Así después podré eliminar todos los ficheros temporales con un simple clic desde mi panel de administración o, si me gustara el contenido de estos ficheros temporales, podría añadirlos fácilmente a la base de datos sin tener que volver a subir los ficheros.
+Mi solución para este problema ha sido crear una tabla llamada "*tempfiles*" donde introduzco la ruta completa del fichero. Así después podré eliminar todos los ficheros temporales con un simple clic desde mi panel de administración o, si me gustara el contenido de estos ficheros temporales, podría añadirlos fácilmente a la base de datos sin tener que volver a subir los ficheros.
 
 A diferencia del anterior tutorial, en este os explicaré desde la creación de las tablas SQL (cosa que no hice en el anterior).
 
-Creemos entonces una tabla <em>tempfiles</em> con dos campos (id y <em>location</em>) y una tabla <em>images</em> con los campos que creamos necesarios:
+Creemos entonces una tabla *tempfiles* con dos campos (id y *location*) y una tabla *images* con los campos que creamos necesarios:
 
-<a href="{{ site.url }}/uploads/2009/09/model_tempfiles.png"><img class="alignnone size-full wp-image-757" style="vertical-align: middle;" title="model_tempfiles" src="{{ site.url }}/uploads/2009/09/model_tempfiles.png" alt="model_tempfiles" width="143" height="88" /></a><a href="{{ site.url }}/uploads/2009/09/model_images.png"><img class="alignnone size-full wp-image-756" style="vertical-align: middle;" title="model_images" src="{{ site.url }}/uploads/2009/09/model_images.png" alt="model_images" width="158" height="184" /></a>
+<a href="/uploads/2009/09/model_tempfiles.png"><img class="alignnone size-full wp-image-757" style="vertical-align: middle;" title="model_tempfiles" src="/uploads/2009/09/model_tempfiles.png" alt="model_tempfiles" width="143" height="88" /></a><a href="/uploads/2009/09/model_images.png"><img class="alignnone size-full wp-image-756" style="vertical-align: middle;" title="model_images" src="/uploads/2009/09/model_images.png" alt="model_images" width="158" height="184" /></a>
 
 ~~~sql
 CREATE  TABLE IF NOT EXISTS `images` (
@@ -179,7 +163,7 @@ class Image extends AppModel
 }
 ~~~
 
-Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a tamaño completo, otra para las miniaturas y otra para los ficheros temporales (las miniaturas que mostraremos al usuario). Creadlas en la carpeta <em>img</em> y dadles permiso de escritura:
+Necesitaremos tres carpetas para guardar las imágenes. Una para las imágenes a tamaño completo, otra para las miniaturas y otra para los ficheros temporales (las miniaturas que mostraremos al usuario). Creadlas en la carpeta *img* y dadles permiso de escritura:
 
 <ul>
   <li>/app/webroot/img/upload/full/</li>
@@ -315,15 +299,15 @@ La función **flashMessage** sirve para generar una capa "flashMessage" dinámic
 
 La función **onTimeOut** sólo es para los que utilicéis el componente Auth. En caso de terminarse la sesión muestra un mensaje al usuario y lo redirige hacia la página de login pasado un rato.
 
-> **Nota:** Esta no es la vía correcta para mostrar un error conforme  la sesión del usuario ha expirado. Podéis ver la explicación que hago al  respecto <a href="{{ site.url }}/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.
+> **Nota:** Esta no es la vía correcta para mostrar un error conforme  la sesión del usuario ha expirado. Podéis ver la explicación que hago al  respecto <a href="/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.
 
 Finalmente, en la función de carga de uploadify indicamos los parámetros que nos interesen y generamos una función **OnComplete** a nuestro gusto. En este ejemplo lo que he hecho es generar una capa (con id imatgeX, donde X es el número de ID actual, según el contador de IDs) con una miniatura de fondo que he generado exclusivamente para mostrársela al usuario en este formulario. Dentro de esta capa hay otra capa con las etiquetas y los inputs que necesito.
 
 Es importante que todos elementos del formulario que queráis meter dinámicamente aquí lleven una ID única con un número al final. Esto nos servirá más adelante para la validación con Ajax.
 
-Cuando todos los ficheros han terminado de subir mostramos un mensaje (con clase ".info"), eliminamos el botón de uploadify y eliminamos el atributo <em>disabled</em> del botón <em>submit</em> (y por tanto lo activamos).
+Cuando todos los ficheros han terminado de subir mostramos un mensaje (con clase ".info"), eliminamos el botón de uploadify y eliminamos el atributo *disabled* del botón *submit* (y por tanto lo activamos).
 
-Pasemos al controlador. Primero la construcción de éste, su función beforeRender (importante, lo expliqué en el anterior tutorial), el método <em>add</em> (vacío) y el método <em>upload</em>:
+Pasemos al controlador. Primero la construcción de éste, su función beforeRender (importante, lo expliqué en el anterior tutorial), el método *add* (vacío) y el método *upload*:
 
 ~~~php
 <?php
@@ -460,7 +444,7 @@ La cabecera que está comentada (Content-Type: text/x-json) la puse en su moment
 
 Respecto a los comentarios sobre el componente de autenticación (Auth)... en caso de que en vuestra web queráis restringir las subidas a usuarios registrados deberéis descomentar las líneas comentadas para que, en caso de que al usuario le expire la sesión mientras está subiendo imágenes, se le muestre un mensaje de error (sin esto, en caso de expirar la sesión, no se mostraría **nada** al usuario).
 
-> **Nota:** Esta no es la vía correcta para mostrar un error conforme la sesión del usuario ha expirado. Podéis ver la explicación que hago al respecto <a href="{{ site.url }}/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.
+> **Nota:** Esta no es la vía correcta para mostrar un error conforme la sesión del usuario ha expirado. Podéis ver la explicación que hago al respecto <a href="/2009/12/cakephp-auth-component-ajaxlogin/">aquí</a>.
 
 En cuanto al render de la vista... ahora pasaremos a la creación de la vista upload.ctp y veréis que el fichero es muy genérico. Quiero decir que con este mismo fichero podéis gestionar cualquier subida de ficheros que hagáis con Ajax, así que, tener que generar una vista idéntica para cada sección en que tengáis subida de ficheros, es algo absurdo.
 
@@ -513,11 +497,10 @@ Este fichero es el encargado de convertir el array que le enviemos desde el cont
   }
 }
 ~~~
-{: .no-line-numbers }
 
 El campo "data" no lo utilizaremos en este caso, pero está ahí para que veáis que se pueden enviar tantos datos de respuesta como queráis.
 
-Bien, con esto hemos terminado lo que sería la carga de ficheros. Nuestro método <em>upload</em> nos gestiona el fichero subido guardándolo en el servidor y devolviéndonos un mensaje como respuesta (tanto si la subida ha dado error como si no). Además nuestra función JavaScript se encarga de generarnos un formulario dinámicamente a medida que va recibiendo los nombres de imagen.
+Bien, con esto hemos terminado lo que sería la carga de ficheros. Nuestro método *upload* nos gestiona el fichero subido guardándolo en el servidor y devolviéndonos un mensaje como respuesta (tanto si la subida ha dado error como si no). Además nuestra función JavaScript se encarga de generarnos un formulario dinámicamente a medida que va recibiendo los nombres de imagen.
 
 Ahora nos faltaría hacer la validación con Ajax de nuestro formulario.
 
@@ -625,9 +608,9 @@ Si todas las imágenes se guardan correctamente se ejecuta **onSuccess** que se 
 
 El último método es el encargado de enviar el formulario mediante Ajax.
 
-De la vista ya no tenemos que tocar nada más así que pasemos al método <em>ajaxAdd</em> del controlador.
+De la vista ya no tenemos que tocar nada más así que pasemos al método *ajaxAdd* del controlador.
 
-~~~php?start_inline=1
+~~~php
 // /app/controllers/images_controller.php
 function ajaxAdd()
 {
@@ -785,16 +768,14 @@ Y su salida aproximada:
   'message':'<b>Todas las im\u00e1genes han sido guardadas correctamente<\/b>'
 }}
 ~~~
-{: .no-line-numbers }
 
 Pues ya está! Si habéis seguido todos los pasos correctamente deberíais tener vuestro upload funcionando.
 
-A continuación os dejo el ejemplo que he ido haciendo a medida que hacía el tutorial así como un fichero .zip con todos los ficheros del proyecto.
+A continuación os dejo un fichero .zip con todos los ficheros del proyecto.
 
 <blockquote>
   <ul>
-    <li><a href="http://demos.racotecnic.com/tutorials/cake/images/add">Ejemplo (las imágenes se borran cada vez que se accede a la página)</a></li>
-    <li><a href="http://demos.racotecnic.com/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
+    <li><a href="/tutorials/2009/10/image_upload.zip">Descargar archivos del ejemplo</a></li>
   </ul>
 </blockquote>
 
@@ -803,8 +784,8 @@ Nada más, como siempre.. espero que le sirva a alguien :) y si tenéis cualquie
 <blockquote>
   Páginas de referencia:
   <ul>
-    <li><a rel="nofollow" href="http://jamnite.blogspot.com/2009/05/cakephp-form-validation-with-ajax-using.html" target="_blank">CakePHP Form Validation with Ajax Using jQuery</a></li>
-    <li><a rel="nofollow" href="http://api.cakephp.org" target="_blank">API de CakePHP</a></li>
-    <li><a rel="nofollow" href="http://docs.jquery.org" target="_blank">API de jQuery</a></li>
+    <li><a rel="noopener nofollow" href="http://jamnite.blogspot.com/2009/05/cakephp-form-validation-with-ajax-using.html" target="_blank">CakePHP Form Validation with Ajax Using jQuery</a></li>
+    <li><a rel="noopener nofollow" href="http://api.cakephp.org" target="_blank">API de CakePHP</a></li>
+    <li><a rel="noopener nofollow" href="http://docs.jquery.org" target="_blank">API de jQuery</a></li>
   </ul>
 </blockquote>

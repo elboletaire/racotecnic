@@ -1,21 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalar PHP 5.4.X en Ubuntu 11.10 / 12.04.X
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 2071
-wordpress_url: http://www.racotecnic.com/?p=2071
 date: '2012-05-14 12:00:46 +0200'
-date_gmt: '2012-05-14 11:00:46 +0200'
 categories:
 - Programació
 - Linux

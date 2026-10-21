@@ -1,23 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Apple Store Barcelona (La Maquinista)
-author:
-  display_name: neosy
-  login: neosy
-  email: neosy8@gmail.com
-author_login: neosy
-author_email: neosy8@gmail.com
-excerpt: "Como la gran mayoría de gente sabe, ayer sábado 4 de septiembre Apple
-  abrió su primera Apple Store en España. El sitio elegido ha sido un local en
-  el centro comercial de La Maquinista (Barcelona)."
+excerpt: "Como la gran mayoría de gente sabe, ayer sábado 4 de septiembre Apple abrió su primera Apple Store en España. El sitio elegido ha sido un local en el centro comercial de La Maquinista (Barcelona)."
 wordpress_id: 1596
-wordpress_url: http://racotecnic.com/?p=1596
 redirect_from:
 - "?p=1596/"
 date: '2010-09-06 12:00:23 +0200'
-date_gmt: '2010-09-06 11:00:23 +0200'
 categories:
 - General
 - Mac
@@ -36,7 +25,7 @@ La cola empezó el viernes por la mañana, antes de la apertura del centro comer
 <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01814.jpg"><img class="size-medium wp-image-177      alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01814-300x225.jpg" alt="" width="270" height="205" /></a><a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01816.jpg"> <img class="size-medium wp-image-178      alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01816-300x225.jpg" alt="" width="270" height="205" /></a>
 <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01819.jpg"><img class="size-medium wp-image-180    alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01819-300x225.jpg" alt="" width="270" height="205" /></a><a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01817.jpg"> <img class="size-medium wp-image-179     alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01817-300x225.jpg" alt="" width="270" height="205" /></a>
 
-Llegado cierto punto, incluso ciertos empleados nos proporcionaban gratuitamente una botella de agua (desconozco si eran empleados por parte de Apple o de la propia marca, pues no llevaban la indumentaria azul de los vendedores).<a id="more"></a><a id="more-1596"></a>
+Llegado cierto punto, incluso ciertos empleados nos proporcionaban gratuitamente una botella de agua (desconozco si eran empleados por parte de Apple o de la propia marca, pues no llevaban la indumentaria azul de los vendedores).
 
 <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01821.jpg"><img class="size-medium wp-image-181  alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01821-300x225.jpg" alt="" width="270" height="205" /></a> <a href="http://www.neosy.net/wp-content/uploads/2010/09/DSC01824.jpg"><img class="size-medium wp-image-182  alignnone" src="http://www.neosy.net/wp-content/uploads/2010/09/DSC01824-300x225.jpg" alt="" width="270" height="205" /></a>
 
@@ -58,7 +47,7 @@ La tienda esta distribuida en 4 filas de mesas y dos filas en las paredes latera
 
 En cuanto al contenido, encontramos una gran cantidad de macbooks pro, muchos imacs de 21 pulgadas, muchos iphones, ipods, ipads... solo noté dos productos que estaban expuestos en poca cantidad. El imac de 27 pulgadas (solo tenían dos expuestos, uno con el core i3 y otro con el core i7) y el macbook clásico (solo encontré tres, justo a la izquierda de la entrada). A su vez, tenían un apple tv (version antigua) y un mac pro.
 
-La verdad es que cualquiera que se este pensando en adquirir un producto Apple debería pasarse por la tienda, puesto que puedes comparar diferentes configuraciones (en el caso de los ordenadores) o trastear con los gadgets. Estuve pasando tests de <em>geekbench </em>a varios ordenadores (todos con la versión gratuita de 32 bits). El imac i7 puntuó mas de 9000, macbook pro con i5 alrededor de los 7000 y el macbook superó ampliamente los 3000. Además, a partir del lunes 6 de septiembre, empiezan los talleres (puedes mirarlos <a title="Apple Store la maquinista" rel="nofollow" href="http://www.apple.com/es/retail/lamaquinista/#workshops_browser_gettingstarted" target="_blank">aquí</a>), ideales para todos aquellos que quieran iniciarse en el mundo Apple.
+La verdad es que cualquiera que se este pensando en adquirir un producto Apple debería pasarse por la tienda, puesto que puedes comparar diferentes configuraciones (en el caso de los ordenadores) o trastear con los gadgets. Estuve pasando tests de <em>geekbench </em>a varios ordenadores (todos con la versión gratuita de 32 bits). El imac i7 puntuó mas de 9000, macbook pro con i5 alrededor de los 7000 y el macbook superó ampliamente los 3000. Además, a partir del lunes 6 de septiembre, empiezan los talleres (puedes mirarlos <a title="Apple Store la maquinista" rel="noopener nofollow" href="http://www.apple.com/es/retail/lamaquinista/#workshops_browser_gettingstarted" target="_blank">aquí</a>), ideales para todos aquellos que quieran iniciarse en el mundo Apple.
 
 Para finalizar os muestro la camiseta que nos regalaron:
 
@@ -66,4 +55,4 @@ Para finalizar os muestro la camiseta que nos regalaron:
 
 > **Aviso:**
 >
-> - <a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank">Neosy</a>
+> - <a href="http://www.neosy.net/apple-store-barcelona-maquinista/" target="_self">Entrada original</a> en el blog de <a href="http://www.neosy.net/" target="_blank" rel="noopener">Neosy</a>

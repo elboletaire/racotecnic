@@ -12,6 +12,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
     "test:urls": "node tests/check-urls.mjs",
+    "test:assets": "node tests/check-assets.mjs",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",

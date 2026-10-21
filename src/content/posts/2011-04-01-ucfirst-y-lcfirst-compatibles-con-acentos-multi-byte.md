@@ -1,30 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: ucfirst y lcfirst compatibles con acentos (Multi Byte)
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "<a href=\"{{ site.url }}/uploads/2011/04/mb1.png\"><img
-  class=\"alignleft size-full wp-image-1884\" title=\"mb\" src=\"{{ site.url }}/uploads/2011/04/mb1.png\"
-  alt=\"\" width=\"205\" height=\"195\" /></a>Llevo un rato peleándome con esto y
-  finalmente he encontrado solución.\r\n\r\nEl caso es que los de PHP al hacer los
-  métodos <a title=\"PHP: MultiByte String Functions\" href=\"http://php.net/manual/en/ref.mbstring.php\">MultiByte</a>
-  (un apaño que harían al ver que se olvidaron del resto de juegos de caracteres...)
-  no hicieron ni el de primera letra mayúscula ni minúscula.\r\n\r\nAmbos métodos
-  me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario
-  no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así
-  que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)"
+excerpt: "Llevo un rato peleándome con esto y finalmente he encontrado solución. El caso es que los de PHP al hacer los métodos MultiByte (un apaño que harían al ver que se olvidaron del resto de juegos de caracteres...) no hicieron ni el de primera letra mayúscula ni minúscula. Ambos métodos me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)"
 wordpress_id: 1873
-wordpress_url: http://www.racotecnic.com/?p=1873
 date: '2011-04-01 15:44:46 +0200'
-date_gmt: '2011-04-01 14:44:46 +0200'
 categories:
 - Programació
 - Web
@@ -37,11 +17,11 @@ tags:
 - Codificació
 ---
 
-<a href="{{ site.url }}/uploads/2011/04/mb1.png"><img class="alignleft size-full wp-image-1884" title="mb" src="{{ site.url }}/uploads/2011/04/mb1.png" alt="" width="205" height="195" /></a>Llevo un rato peleándome con esto y finalmente he encontrado solución.
+<a href="/uploads/2011/04/mb1.png"><img class="alignleft size-full wp-image-1884" title="mb" src="/uploads/2011/04/mb1.png" alt="" width="205" height="195" /></a>Llevo un rato peleándome con esto y finalmente he encontrado solución.
 
-El caso es que los de PHP al hacer los métodos <a title="PHP: MultiByte String Functions" href="http://php.net/manual/en/ref.mbstring.php">MultiByte</a> (un apaño que harían al ver que se olvidaron del resto de juegos de caracteres...) no hicieron ni el de primera letra mayúscula ni minúscula.
+El caso es que los de PHP al hacer los métodos [MultiByte](http://php.net/manual/en/ref.mbstring.php "PHP: MultiByte String Functions") (un apaño que harían al ver que se olvidaron del resto de juegos de caracteres...) no hicieron ni el de primera letra mayúscula ni minúscula.
 
-Ambos métodos me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)<a id="more"></a><a id="more-1873"></a>
+Ambos métodos me son muy útiles para activar / desactivar usuarios de una wiki (ya que un usuario no puede acceder al sistema mediawiki si tiene la primera letra en minúscula), así que en realidad no he tenido más remedio que hacerlo (nooo, yo no queríaaa..!! xD)
 
 ~~~php
 <?php
@@ -75,4 +55,4 @@ Buen fin de semana!
 
 > **Referencias**
 >
-> - <a title="php.net" href="http://php.net/manual/en/ref.mbstring.php">PHP: Multibyte String Functions</a>
+> - [PHP: Multibyte String Functions](http://php.net/manual/en/ref.mbstring.php "php.net")

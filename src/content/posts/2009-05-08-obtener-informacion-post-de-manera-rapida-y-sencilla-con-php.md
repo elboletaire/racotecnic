@@ -1,29 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Obtener datos POST de manera rápida y sencilla con PHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Haciendo un poco de orden por el ordenador he encontrado una función que
-  hice para el último trabajo en el que estuve. Me dedicaba sobre todo a crear aplicaciones
-  de entrada de datos mediante PHP, así que me pasaba el día recuperando información
-  POST.\r\n\r\nHarto de pasarme el día haciendo esto:\r\n\r\n~~~php
-  $variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);
-  ~~~\r\n\r\n...decidí
-  hacer una función que me hiciera la tarea un poco más sencilla; aquí está:\r\n\r\n"
+excerpt: "Haciendo un poco de orden por el ordenador he encontrado una función que hice para el último trabajo en el que estuve. Me dedicaba sobre todo a crear aplicaciones de entrada de datos mediante PHP, así que me pasaba el día recuperando información POST. Harto de pasarme el día haciendo esto: $variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']); ...decidí hacer una función que me hiciera la tarea un poco más sencilla; aquí está:"
 wordpress_id: 525
-wordpress_url: http://racotecnic.com/?p=525
 redirect_from:
 - "?p=525/"
 date: '2009-05-08 02:10:43 +0200'
-date_gmt: '2009-05-08 01:10:43 +0200'
 categories:
 - Programació
 - Web
@@ -40,13 +23,13 @@ recuperando información POST.
 
 Harto de pasarme el día haciendo esto:
 
-~~~php?start_inline=1
+~~~php
 $variable = array($_POST['var1'],$_POST['var2'],$_POST['var3'],$_POST['varN']);
 ~~~
 
 ...decidí hacer una función que me hiciera la tarea un poco más sencilla; aquí está:
 
-~~~php?start_inline=1
+~~~php
 function fillPost($keys, $exclude = null)
 {
   $array = array();
@@ -126,7 +109,7 @@ También funciona a la inversa, es decir... si le pasámos como parámetro `$key
 
 Recuperando algunas claves $_POST:
 
-~~~php?start_inline=1
+~~~php
 $datos = array('nombre', 'password', 'email');
 $post = fillPost($datos);
 print_r($post);
@@ -140,11 +123,10 @@ Salida aproximada:
         ['password'] => "Valor de la variable $_POST['password']"
         ['email'] => "Valor de la variable $_POST['email']"
     )
-{: .no-line-numbers }
 
 Recuperando todas las claves $_POST menos algunas:
 
-~~~php?start_inline=1
+~~~php
 $excluir = array('nombre', 'password', 'email');
 $post = fillPost('ALL', $excluir);
 print_r($post);
@@ -158,6 +140,5 @@ Salida aproximada:
         ['fecha_nacimiento'] => "Valor de la variable $_POST['fecha_nacimiento']"
         ['cualquierVariablePostQueNoEstéEnExclude'] => ....
     )
-{: .no-line-numbers }
 
 Todavía se podría mejorar un poco añadiendo un tercer parámetro por referencia (por si nos interesa modificar la tabla por refencia) y probablemente alguna cosilla más, pero eso ya os lo dejo a vuestro gusto :)

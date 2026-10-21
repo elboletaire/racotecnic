@@ -1,24 +1,10 @@
 ---
-layout: post
 status: publish
 published: true
 title: Unir ficheros mp3 en un único fichero mp3 con CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Recientemente he creado un podcast para la página de Música Vermella
-  con el inconveniente añadido de que se suben mp3 independientes para cada publicación.
-  Para solucionarlo he utilizado la librería getid3 para unir los ficheros mp3 de
-  cada publicación en un único fichero mp3."
+excerpt: "Recientemente he creado un podcast para la página de Música Vermella con el inconveniente añadido de que se suben mp3 independientes para cada publicación. Para solucionarlo he utilizado la librería getid3 para unir los ficheros mp3 de cada publicación en un único fichero mp3."
 wordpress_id: 1751
-wordpress_url: http://www.racotecnic.com/?p=1751
 date: '2011-01-16 23:16:34 +0100'
-date_gmt: '2011-01-16 22:16:34 +0100'
 categories:
 - Programació
 - Web
@@ -32,19 +18,19 @@ tags:
 - CakePHP 1.2
 ---
 
-Recientemente he creado un podcast para la página de <a href="http://www.musicavermella.com" target="_blank">Música Vermella</a> con el inconveniente añadido de que se suben mp3 independientes para cada publicación.
+Recientemente he creado un podcast para la página de <a href="http://www.musicavermella.com" target="_blank" rel="noopener">Música Vermella</a> con el inconveniente añadido de que se suben mp3 independientes para cada publicación.
 
 Para solucionarlo he utilizado la librería getid3 para unir los ficheros mp3 de cada publicación en un único fichero mp3.
 
-Para verlo podéis agregar el <a href="http://musicavermella.com/releases.pod">Podcast de Música Vermella</a> a vuestro cliente de Podcast (iTunes, Rythmbox, Banshee, Miro...).
+Para verlo podéis agregar el [Podcast de Música Vermella](http://musicavermella.com/releases.pod) a vuestro cliente de Podcast (iTunes, Rythmbox, Banshee, Miro...).
 
 Quería hacer un tutorial sobre cómo crear un podcast con CakePHP pero lo dejaré para otro tutorial por tal de no complicar este.
 
-> **Puedes ver la segunda parte aquí:** <a href="http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/">Crear un Podcast en CakePHP</a>
+> **Puedes ver la segunda parte aquí:** [Crear un Podcast en CakePHP](/2011/02/crear-un-podcast-en-cakephp/)
 
-Para empezar necesitaréis descargar la librería <a href="http://getid3.org" target="_blank">Getid3</a>. Descargad la versión estable por si acaso ya que la versión beta falla con las etiquetas id3 (que no utilizaremos) así que si queréis utilizarla es bajo vuestra propia responsabilidad.<a id="more"></a><a id="more-1751"></a>
+Para empezar necesitaréis descargar la librería <a href="http://getid3.org" target="_blank" rel="noopener">Getid3</a>. Descargad la versión estable por si acaso ya que la versión beta falla con las etiquetas id3 (que no utilizaremos) así que si queréis utilizarla es bajo vuestra propia responsabilidad.
 
-<a href="http://sourceforge.net/project/showfiles.php?group_id=55859&amp;package_id=50965" target="_blank">Getid3 versión 1.8.2 (estable)</a>
+<a href="http://sourceforge.net/project/showfiles.php?group_id=55859&amp;package_id=50965" target="_blank" rel="noopener">Getid3 versión 1.8.2 (estable)</a>
 
 Descomprimid el contenido del fichero que descarguéis en Getid3 y ponedlo en la carpeta /app/vendors, de manera que quede así:
 
@@ -52,7 +38,6 @@ Descomprimid el contenido del fichero que descarguéis en Getid3 y ponedlo en la
     /app/vendors/getid3/getid3/
     /app/vendors/getid3/helperapps/
     /app/vendors/getid3/demás ficheros
-{: .no-line-numbers }
 
 Ahora necesitaremos el método para unir los mp3. Lo podéis encontrar en la carpeta de demos de getid3. De todos modos os dejo aquí un pequeño componente que tengo yo para utilizar getid3:
 
@@ -230,7 +215,7 @@ Con este componente podéis tanto unir mp3 como leer y escribir etiquetas id3.
 
 Evidentemente, antes de poder utilizar el componente debéis declararlo en el array de componentes de vuestro controlador:
 
-~~~php?start_inline=1
+~~~php
 class FooController extends AppController {
   $components = array('Getid3');
 }
@@ -238,7 +223,7 @@ class FooController extends AppController {
 
 Para unir mp3 en un solo fichero no tenéis más que pasarle como primer parámetro la ruta del fichero de salida y como segundo parámetro pasarle un array con las ubicaciones de los ficheros mp3:
 
-~~~php?start_inline=1
+~~~php
 $destino = WWW_ROOT . 'files' . DS . 'podcasts' . DS . 'fichero_destino.mp3';
 $mp3 = array(
   WWW_ROOT . 'files' . DS . 'mp3' . DS . 'fichero1.mp3',
@@ -256,4 +241,4 @@ if ($this->Getid3->joinMp3($destino, $mp3)) {
 
 Y con esto termina este sencillo tutorial sobre **cómo crear un podcast a partir de varios mp3**.
 
-Como he dicho al inicio, pronto explicaré <a href="http://www.racotecnic.com/2011/02/crear-un-podcast-en-cakephp/">cómo crear el XML de dicho Podcast</a> para que podáis agregarlo a iTunes o cualquier otro <em>podcatcher</em>.
+Como he dicho al inicio, pronto explicaré [cómo crear el XML de dicho Podcast](/2011/02/crear-un-podcast-en-cakephp/) para que podáis agregarlo a iTunes o cualquier otro *podcatcher*.

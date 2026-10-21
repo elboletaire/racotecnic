@@ -1,34 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalar Android SDK en Mac OS X y configurar Netbeans
-class: no-line-numbers
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Vamos a instalar el SDK Android (para desarrollar aplicaciones en Java*
-  para teléfonos móviles con sistema operativo Android) en nuestro Mac OS X (en mi
-  caso <em>Leopard</em>, no creo que haya muchas diferencias con versiones anteriores).\r\n\r\nDescarguemos
-  el SDK de la <a title=\"Ir a la página\" href=\"http://developer.android.com/\"
-  target=\"_blank\">página de desarrollo de Android,</a> en la <a title=\"Ir a la
-  página\" href=\"http://developer.android.com/sdk/1.1_r1/index.html\" target=\"_blank\">sección
-  de descargas</a>.\r\n\r\nLa versión actual es la 1.1 y mi versión de Java la 1.5
-  (no puedo actualizar dado que la 1.6 por el momento sólo está para Duo 2 Core).
-  El enlace para dicha revisión de Android es el siguiente:\r\n\r\n<a title=\"Ir a
-  la página\" href=\"http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip\"
-  target=\"_blank\">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>\r\n\r\n"
+excerpt: "Vamos a instalar el SDK Android (para desarrollar aplicaciones en Java* para teléfonos móviles con sistema operativo Android) en nuestro Mac OS X (en mi caso Leopard, no creo que haya muchas diferencias con versiones anteriores). Descarguemos el SDK de la página de desarrollo de Android, en la sección de descargas. La versión actual es la 1.1 y mi versión de Java la 1.5 (no puedo actualizar dado que la 1.6 por el momento sólo está para Duo 2 Core). El enlace para dicha revisión de Android es el siguiente: http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip"
 wordpress_id: 476
-wordpress_url: http://racotecnic.com/?p=476
 redirect_from:
 - "?p=476/"
 date: '2009-04-22 00:52:24 +0200'
-date_gmt: '2009-04-21 23:52:24 +0200'
 categories:
 - Programació
 - Aplicacions
@@ -41,13 +19,13 @@ tags:
 
 Vamos a instalar el SDK Android (para desarrollar aplicaciones en Java* para teléfonos móviles con sistema operativo Android) en nuestro Mac OS X (en mi caso <em>Leopard</em>, no creo que haya muchas diferencias con versiones anteriores).
 
-Descarguemos el SDK de la <a title="Ir a la página" href="http://developer.android.com/" target="_blank">página de desarrollo de Android,</a> en la <a title="Ir a la página" href="http://developer.android.com/sdk/1.1_r1/index.html" target="_blank">sección de descargas</a>.
+Descarguemos el SDK de la <a title="Ir a la página" href="http://developer.android.com/" target="_blank" rel="noopener">página de desarrollo de Android,</a> en la <a title="Ir a la página" href="http://developer.android.com/sdk/1.1_r1/index.html" target="_blank" rel="noopener">sección de descargas</a>.
 
 La versión actual es la 1.1 y mi versión de Java la 1.5 (no puedo actualizar dado que la 1.6 por el momento sólo está para Duo 2 Core). El enlace para dicha revisión de Android es el siguiente:
 
-<a title="Ir a la página" href="http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip" target="_blank">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>
+<a title="Ir a la página" href="http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip" target="_blank" rel="noopener">http://developer.android.com/sdk/download.html?v=android-sdk-mac_x86-1.1_r1.zip</a>
 
-<a id="more"></a><a id="more-476"></a>
+
 Una vez descargado lo descomprimimos y lo copiamos donde queramos. En mi caso lo he copiado en /Applications/Android
 
 Ahora debemos editar nuestro fichero ".profile" situado en nuestra carpeta de Inicio. Para ello abramos una terminal y tecleemos:
@@ -64,16 +42,16 @@ Ahora hay que añadir una línea a este fichero para indicar dónde tenemos las 
 export PATH=${PATH}:/Applications/Android/Tools
 ~~~
 
-Guardamos el fichero (con "control + o") y salimos de nano ("control + x"). Necesitamos reiniciar la sesión para que los cambios tengan efecto, así que ya sabéis... <em>manzanita / Cerrar sesión de x</em>.
+Guardamos el fichero (con "control + o") y salimos de nano ("control + x"). Necesitamos reiniciar la sesión para que los cambios tengan efecto, así que ya sabéis... *manzanita / Cerrar sesión de x*.
 
-Ya le hemos dicho al compilador de java dónde están ubicadas las librerías. Ahora sólo falta configurar Netbeans. Abrámoslo y vamos a <em>Herramientas / Conectores</em>. En <em>Conectores</em> seleccionamos la pestaña Configuración y le damos al botón "Agregar" para añadir un nuevo repositorio de actualización, que es el siguiente:
+Ya le hemos dicho al compilador de java dónde están ubicadas las librerías. Ahora sólo falta configurar Netbeans. Abrámoslo y vamos a *Herramientas / Conectores*. En *Conectores* seleccionamos la pestaña Configuración y le damos al botón "Agregar" para añadir un nuevo repositorio de actualización, que es el siguiente:
 
 http://kenai.com/downloads/nbandroid/updates.xml
 
-Una vez agregado seleccionáis la pestaña <em>Complementos disponibles</em>, buscáis Android y lo marcáis. El resto es "metodología windows" (siguiente, siguiente, siguiente...).
+Una vez agregado seleccionáis la pestaña *Complementos disponibles*, buscáis Android y lo marcáis. El resto es "metodología windows" (siguiente, siguiente, siguiente...).
 
-Cuando lo tengáis instalado, al crear un nuevo proyecto, podréis seleccionar <em>Android Application</em> como plantilla de proyecto.
+Cuando lo tengáis instalado, al crear un nuevo proyecto, podréis seleccionar *Android Application* como plantilla de proyecto.
 
-<a href="{{ site.url }}/uploads/2009/04/nuevo-proyecto-android.png"><img class="size-full wp-image-477 aligncenter" title="nuevo-proyecto-android" src="{{ site.url }}/uploads/2009/04/nuevo-proyecto-android.png" alt="nuevo-proyecto-android" width="375" height="95" /></a>
+<a href="/uploads/2009/04/nuevo-proyecto-android.png"><img class="size-full wp-image-477 aligncenter" title="nuevo-proyecto-android" src="/uploads/2009/04/nuevo-proyecto-android.png" alt="nuevo-proyecto-android" width="375" height="95" /></a>
 
 *Esto está mal dicho, ya que aunque la aplicación la desarrollemos en Java luego ésta es traducida a un lenguaje comprensible por los dispositivos con S.O. Android.

@@ -1,20 +1,9 @@
 ---
-layout: post
 status: publish
 published: true
 title: Hosting PHP + MySQL gratuït amb 5GB de capacitat
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 112
-wordpress_url: http://racoinformatic.underave.net/?p=112
 date: '2009-01-11 17:36:57 +0100'
-date_gmt: '2009-01-11 16:36:57 +0100'
 categories:
 - Domains & Hosting
 tags:
@@ -43,8 +32,8 @@ Ara fa poc hi vaig tornar a entrar i han millorat considerablement el seu servei
 
 L'instal·lador automàtic d'scripts ens permet instal·lar scripts com ara Wordpress, phpBB, Joomla... en pocs clics i sense tenir que pujar els fitxers al servidor via FTP.
 
-A més ens permeten escollir entre diferents dominis per a generar el nostre domini principal i també registren un compte amb el teu nom d'<em>usuari.co.cc</em> (per exemple "<em>booletaire.co.cc</em>") i en vinculen automàticament les DNS amb el subdomini de byethost (que podria ser "<em>booletaire.byethost22.com</em>" [segons el domini principal que haguem escollit]).
+A més ens permeten escollir entre diferents dominis per a generar el nostre domini principal i també registren un compte amb el teu nom d'*usuari.co.cc* (per exemple "*booletaire.co.cc*") i en vinculen automàticament les DNS amb el subdomini de byethost (que podria ser "*booletaire.byethost22.com*" [segons el domini principal que haguem escollit]).
 
 En definitiva, trobo que és una bona alternativa si esteu buscant hosting gratuït ;)
 
-<a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a>
+<a title="Visitar byethost.com" href="http://www.byethost.com" target="_blank" rel="noopener"><img class="aligncenter" title="ByetHost" src="http://byethost.com/templates/ja_erica/images/logo.png" alt="" width="270" height="54" /></a>

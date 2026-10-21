@@ -1,25 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Crear transición de imágenes para Gallery2 con jQuery
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Hoy os explicaré como aprovechar el módulo imageBlock de Gallery2 para
-  generar una transición de imágenes. Además le daremos un efecto entre
-  transición y transición, para dejarlo más majo :p"
+excerpt: "Hoy os explicaré como aprovechar el módulo imageBlock de Gallery2 para generar una transición de imágenes. Además le daremos un efecto entre transición y transición, para dejarlo más majo :p"
 wordpress_id: 403
-wordpress_url: http://racotecnic.com/?p=403
 redirect_from:
 - "?p=403/"
 date: '2009-04-02 01:12:50 +0200'
-date_gmt: '2009-04-02 00:12:50 +0200'
 categories:
 - Programació
 - Web
@@ -30,7 +17,7 @@ tags:
 - Gallery2
 ---
 
-Hoy os explicaré como aprovechar el módulo "<a title="Ver información de imageBlock en el códex de Gallery2" href="http://codex.gallery2.org/Gallery2:Modules:imageblock" target="_blank">imageBlock</a>" de <a title="Visitar web de Gallery2" href="http://gallery.menalto.com/" target="_blank">Gallery2</a> para generar una transición de imágenes. Además le daremos un efecto entre transición y transición, para dejarlo más majo :p
+Hoy os explicaré como aprovechar el módulo "<a title="Ver información de imageBlock en el códex de Gallery2" href="http://codex.gallery2.org/Gallery2:Modules:imageblock" target="_blank" rel="noopener">imageBlock</a>" de <a title="Visitar web de Gallery2" href="http://gallery.menalto.com/" target="_blank" rel="noopener">Gallery2</a> para generar una transición de imágenes. Además le daremos un efecto entre transición y transición, para dejarlo más majo :p
 
 <del>Podéis ver el resultado del ejemplo aquí.</del> Lamentablemente la galería de la que dependía el ejemplo ha dejado de funcionar.
 
@@ -40,14 +27,14 @@ Una vez lo tengáis activado os aparecerá en vuestro panel de administración d
 
 En esa misma página podéis ver un ejemplo de cómo utilizar el bloque de imágenes externamente, podéis utilizar ese método (es con el que haré el ejemplo) o bien el método que indican en el codex, incluyendo el fichero embed.php y utilizando los métodos propios de las clases de Gallery2.
 
-<a id="more"></a><a id="more-403"></a>
+
 El código es el siguiente:
 
-~~~php?start_inline=1
+~~~php
 @readfile('http://vuestra.galeria.com/main.php?g2_view=imageblock.External&amp;g2_blocks=randomImage&amp;g2_show=none&amp;g2_maxSize=130');
 ~~~
 
-Como veis lo que hacemos únicamente es importar el módulo image block con <a title="readfile function at php.net" href="http://es.php.net/readfile" target="_blank">readfile</a> para mostrar su contenido. A éste módulo podemos pasarle parámetros para mostrar las imágenes como más nos guste. Podéis ver toda la lista de parámetros desde vuestro panel de administración de Image Block, o bien desde el <a title="Ver demás opciones en el Codex" href="http://codex.gallery2.org/Gallery2:Modules:imageblock#External_Options" target="_blank">Codex de Gallery2</a>. Los parámetros que utilizaré para el ejemplo son:
+Como veis lo que hacemos únicamente es importar el módulo image block con <a title="readfile function at php.net" href="http://es.php.net/readfile" target="_blank" rel="noopener">readfile</a> para mostrar su contenido. A éste módulo podemos pasarle parámetros para mostrar las imágenes como más nos guste. Podéis ver toda la lista de parámetros desde vuestro panel de administración de Image Block, o bien desde el <a title="Ver demás opciones en el Codex" href="http://codex.gallery2.org/Gallery2:Modules:imageblock#External_Options" target="_blank" rel="noopener">Codex de Gallery2</a>. Los parámetros que utilizaré para el ejemplo son:
 
 - **g2\_blocks**: una lista separada de barras verticales (|) con aquellas
   imágenes que queramos mostrar. Estas pueden ser: _randomImage_, _recentImage_,
@@ -192,7 +179,7 @@ Aquí podéis ver el documento HTML/PHP entero:
 </html>
 ~~~
 
-Y ya está! Ya tenéis vuestra transición de imágenes para Gallery2. Podéis jugar con el CSS y mostrar cuadrículas con imágenes (consultad el <a title="Ir al códex de Gallery2" href="http://codex.gallery2.org/" target="_blank">Codex de Gallery</a> para más detalles), así como trastear las múltiples opciones de Image Block para mostrar el contenido que queráis.
+Y ya está! Ya tenéis vuestra transición de imágenes para Gallery2. Podéis jugar con el CSS y mostrar cuadrículas con imágenes (consultad el <a title="Ir al códex de Gallery2" href="http://codex.gallery2.org/" target="_blank" rel="noopener">Codex de Gallery</a> para más detalles), así como trastear las múltiples opciones de Image Block para mostrar el contenido que queráis.
 
 Como siempre, he intentado explicarlo lo mejor posible. Espero que os sirva de ayuda :D
 
@@ -203,13 +190,13 @@ Imagino que para hacerlo tendríamos que programar la transición más detenidam
 
 <ul>
 <li><del>Ver demo del tutorial</del></li>
-<li><a title="Descargar todos los ficheros" href="http://demos.racotecnic.com/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
+<li><a title="Descargar todos los ficheros" href="/tutorials/2009/04/random_image/random_image.zip">Descargar zip con todos los ficheros</a></li>
 </ul>
 
 Páginas de referencia:
 
 <ul>
-<li><a title="Consultar Codex de Gallery2" href="http://codex.gallery2.org" target="_blank">Codex de Gallery2</a></li>
-<li><a title="Consultar documentación de jQuery" href="http://docs.jquery.com/" target="_blank">jQuery Documentation</a></li>
+<li><a title="Consultar Codex de Gallery2" href="http://codex.gallery2.org" target="_blank" rel="noopener">Codex de Gallery2</a></li>
+<li><a title="Consultar documentación de jQuery" href="http://docs.jquery.com/" target="_blank" rel="noopener">jQuery Documentation</a></li>
 </ul>
 </blockquote>

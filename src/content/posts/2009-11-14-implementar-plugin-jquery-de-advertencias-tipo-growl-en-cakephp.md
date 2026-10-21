@@ -1,24 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Implementar plugin jQuery de advertencias tipo Growl en CakePHP
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Voy a explicaros una forma sencilla reemplazar vuestras capas flashMessage
-  por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl."
+excerpt: "Voy a explicaros una forma sencilla reemplazar vuestras capas flashMessage por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl."
 wordpress_id: 986
-wordpress_url: http://racotecnic.com/?p=986
 redirect_from:
 - "?p=986/"
 date: '2009-11-14 16:39:50 +0100'
-date_gmt: '2009-11-14 15:39:50 +0100'
 categories:
 - Programació
 - Web
@@ -40,7 +28,7 @@ utilizar $this->Html en lugar de $html por ejemplo).
 
 Voy a explicaros una forma sencilla reemplazar vuestras capas _**flashMessage**_ por bonitos mensajes dinámicos creados con jQuery imitando el estilo de Growl.
 
-Para los que no lo sepáis, <a rel="nofollow" href="http://www.growl.info/" target="_blank">Growl</a> es un sistema de advertencias de Mac que nos unifica todas las advertencias (tanto de sistema como las del resto de aplicaciones) siguiendo el mismo estilo y mostrándose y ocultándose con efectos de entrada y salida.
+Para los que no lo sepáis, <a rel="noopener nofollow" href="http://www.growl.info/" target="_blank">Growl</a> es un sistema de advertencias de Mac que nos unifica todas las advertencias (tanto de sistema como las del resto de aplicaciones) siguiendo el mismo estilo y mostrándose y ocultándose con efectos de entrada y salida.
 
 <figure>
   <a href="http://www.underave.net/barna23"><img src="http://blog.underave.net/wp-content/uploads/2009/11/gritter.png" alt="" /></a>
@@ -49,15 +37,15 @@ Para los que no lo sepáis, <a rel="nofollow" href="http://www.growl.info/" targ
   </figcaption>
 </figure>
 
-Hay varios plugins de jQuery que imitan Growl. En <a title="6 jQuery growl-like notification systems" rel="nofollow" href="http://webtoolkit4.me/2009/08/13/jquery-growl-likenotification-systems/" target="_blank">este enlace</a> podéis encontrar los que probablemente sean los más conocidos y utilizados. Para el ejemplo que voy a hacer me he valido de <a title="Gritter" rel="nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a>, que es el plugin que, a mi parecer, más se asemeja a Growl.
+Hay varios plugins de jQuery que imitan Growl. En <a title="6 jQuery growl-like notification systems" rel="noopener nofollow" href="http://webtoolkit4.me/2009/08/13/jquery-growl-likenotification-systems/" target="_blank">este enlace</a> podéis encontrar los que probablemente sean los más conocidos y utilizados. Para el ejemplo que voy a hacer me he valido de <a title="Gritter" rel="noopener nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a>, que es el plugin que, a mi parecer, más se asemeja a Growl.
 
-<a id="more"></a><a id="more-986"></a>
+
 
 ¿Qué necesitáis para este tutorial?
 
-- <a rel="nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable], la 1.3 también sirve)
-- <a rel="nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)
-- <a rel="nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a> (v. 1.5)
+- <a rel="noopener nofollow" href="http://www.cakephp.org" target="_blank">CakePHP</a> (v. 1.2.4.8284 [1.2.5 stable], la 1.3 también sirve)
+- <a rel="noopener nofollow" href="http://www.jquery.com" target="_blank">jQuery</a> (v. 1.3.2)
+- <a rel="noopener nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Gritter</a> (v. 1.5)
 
 _(las versiones que he puesto entre paréntesis son las que he utilizado yo para el tutorial)_
 
@@ -72,7 +60,7 @@ Descargad todo lo necesario y guardad todo donde más os plazca. En mi ejemplo l
 
 Fijaros que he renombrado el fichero CSS. Además de renombrarlo habrá que modificar las rutas de las imágenes hacia la ruta que toque. Si estáis siguiendo el tutorial al pie de la letra debéis reemplazar **../images/** por **../img/** en vuestro CSS.
 
-Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistema de notificaciones principal de CakePHP tenemos que modificar nuestro <em>layout</em> de HTML principal para cargar los JavaScripts en la cabecera:
+Dado que queremos utilizar este sistema de notificaciones tipo Growl como sistema de notificaciones principal de CakePHP tenemos que modificar nuestro *layout* de HTML principal para cargar los JavaScripts en la cabecera:
 
 ~~~php
 <?php
@@ -126,7 +114,7 @@ class AppController extends Controller {
 }
 ~~~
 
-En la **línea 10** creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre <a title="Subida de ficheros con uploadify y validación Ajax en CakePHP" href="http://www.racotecnic.com/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/">**cómo subir múltiples imágenes con uploadify en CakePHP**</a> quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
+En la **línea 10** creamos la variable de JavaScript "<em>webroot</em>" que nos servirá más adelante para las plantillas de gritter. Si habéis leído alguno de mis tutoriales sobre [**cómo subir múltiples imágenes con uploadify en CakePHP**](/2009/10/subida-de-ficheros-con-uploadify-y-validacion-ajax-en-cakephp/ "Subida de ficheros con uploadify y validación Ajax en CakePHP") quizás ya hayáis añadido esta variable a vuestro <em>layout</em>.
 
 En la **línea 12** añadimos el fichero CSS de Gritter.
 
@@ -134,7 +122,7 @@ Y en la **línea 20**, si no la teníais ya en vuestro <em>layout</em>, debéis 
 
 Ya solo nos queda una cosa por hacer: crear la plantilla para cada tipo de notificación.
 
-Como no quiero alargar mucho el tutorial haré sólo un par de <em>layouts</em>, uno para los errores y otro para las notificaciones normales.
+Como no quiero alargar mucho el tutorial haré sólo un par de *layouts*, uno para los errores y otro para las notificaciones normales.
 
 **Notificaciones informativas:**
 
@@ -171,31 +159,29 @@ $(function() {
 });') ?>
 ~~~
 
-Como podéis ver he utilizado la variable webroot para poder acceder fácilmente a nuestro directorio de imágenes. De todos modos, y dado que estamos insertando el JavaScript mediante PHP, podríamos haber hecho $this->webroot. También he activado la variable <em>sticky</em> de gritter para dejar la notificación mostrada en pantalla hasta que el usuario la cierre manualmente, ya que considero que los flashMessage deben comportarse así. Cuando trabajo con Ajax no utilizo la variable <em>sticky</em>.
+Como podéis ver he utilizado la variable webroot para poder acceder fácilmente a nuestro directorio de imágenes. De todos modos, y dado que estamos insertando el JavaScript mediante PHP, podríamos haber hecho $this->webroot. También he activado la variable *sticky* de gritter para dejar la notificación mostrada en pantalla hasta que el usuario la cierre manualmente, ya que considero que los flashMessage deben comportarse así. Cuando trabajo con Ajax no utilizo la variable *sticky*.
 
 En estos ejemplos he utilizado lo básico al configurar Growl. Id a su página si queréis informaros sobre los demás métodos y variables disponibles para configurarlo.
 
 Pues con esto habríamos terminado. Ahora cada vez que queráis mostrar notificaciones simplemente tendréis que especificar la plantilla a utilizar como segundo parámetro del método <em>$this->Session->setFlash()</em>:
 
-~~~php?start_inline=1
+~~~php
 // Notificación de error
 $this->Session->setFlash('Esto es un mensaje de error', 'flash_error');
 
 // Notificación informativa
 $this->Session->setFlash('Esto es un mensaje informativo', 'flash_info');
 ~~~
-{: .no-line-numbers }
 
 Pues ya está, ya lo tenemos ^^
 
-Si queréis podéis descargar los ficheros más importantes en <a href="http://demos.racotecnic.com/tutorials/2009/11/growl_cake.zip">el zip</a> que he preparado del tutorial. También <a href="http://demos.racotecnic.com/tutorials/cake/pages/growl">podéis ver el ejemplo</a> que he hecho a medida que hacía esta pequeña guía.
+Si queréis podéis descargar los ficheros más importantes en [el zip](/tutorials/2009/11/growl_cake.zip) que he preparado del tutorial.
 
 > **Ejemplo**:
 >
-> - <a href="http://demos.racotecnic.com/tutorials/cake/pages/growl">Ver ejemplo</a>
-> - <a href="http://demos.racotecnic.com/tutorials/2009/11/growl_cake.zip">Descargar ficheros del ejemplo</a>
+> - [Descargar ficheros del ejemplo](/tutorials/2009/11/growl_cake.zip)
 >
 > Páginas de referencia:
 >
-> - <a href="http://api.cakephp.org" target="_blank">API de CakePHP</a>
-> - <a rel="nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Documentación de Gritter</a>
+> - <a href="http://api.cakephp.org" target="_blank" rel="noopener">API de CakePHP</a>
+> - <a rel="noopener nofollow" href="http://boedesign.com/blog/2009/07/11/growl-for-jquery-gritter/" target="_blank">Documentación de Gritter</a>

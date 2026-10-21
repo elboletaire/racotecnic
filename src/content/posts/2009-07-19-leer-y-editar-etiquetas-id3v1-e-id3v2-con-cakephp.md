@@ -1,28 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Leer y editar etiquetas ID3v1 e ID3v2 con CakePHP 1.2
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
-excerpt: "Si, como yo, estáis interesados en editar y leer las etiquetas ID3 de los
-  ficheros mp3 que se suban a vuestro servidor, podéis hacerlo utilizando las funciones
-  propias de PHP para ello (necesitáis que vuestro hosting lo tenga instalado)
-  o bien, si os pasa igual que a mi que en mi hosting no tienen habilitadas estas
-  funciones (y si no tienes un servidor dedicado no te las instalarán para no detener
-  el servicio), podéis utilizar las classes de PHP GetID3"
+excerpt: "Si, como yo, estáis interesados en editar y leer las etiquetas ID3 de los ficheros mp3 que se suban a vuestro servidor, podéis hacerlo utilizando las funciones propias de PHP para ello (necesitáis que vuestro hosting lo tenga instalado) o bien, si os pasa igual que a mi que en mi hosting no tienen habilitadas estas funciones (y si no tienes un servidor dedicado no te las instalarán para no detener el servicio), podéis utilizar las classes de PHP GetID3"
 wordpress_id: 679
-wordpress_url: http://racotecnic.com/?p=679
 redirect_from:
 - "?p=679/"
 date: '2009-07-19 20:24:15 +0200'
-date_gmt: '2009-07-19 19:24:15 +0200'
 categories:
 - Programació
 - Web
@@ -34,76 +18,76 @@ tags:
 - mp3
 ---
 
-Si, como yo, estáis interesados en editar y leer las etiquetas ID3 de los ficheros mp3 que se suban a vuestro servidor, podéis hacerlo utilizando las <a title="ID3 en php.net" href="http://es.php.net/manual/en/book.id3.php" target="_blank">funciones propias de PHP para ello</a> (necesitáis que vuestro hosting lo tenga instalado) o bien, si os pasa igual que a mi que en mi hosting no tienen habilitadas estas funciones (y si no tienes un servidor dedicado no te las instalarán para no detener el servicio), podéis utilizar las classes de PHP <a title="Visitar página del proyecto GetID3" href="http://www.getid3.org" target="_blank">GetID3</a>.
+Si, como yo, estáis interesados en editar y leer las etiquetas ID3 de los ficheros mp3 que se suban a vuestro servidor, podéis hacerlo utilizando las <a title="ID3 en php.net" href="http://es.php.net/manual/en/book.id3.php" target="_blank" rel="noopener">funciones propias de PHP para ello</a> (necesitáis que vuestro hosting lo tenga instalado) o bien, si os pasa igual que a mi que en mi hosting no tienen habilitadas estas funciones (y si no tienes un servidor dedicado no te las instalarán para no detener el servicio), podéis utilizar las classes de PHP <a title="Visitar página del proyecto GetID3" href="http://www.getid3.org" target="_blank" rel="noopener">GetID3</a>.
 
 Si no la conocíais os recomiendo que la descarguéis y hagáis alguna prueba con ella, realmente se le puede sacar mucho jugo ya que con ella no sólo podemos editar etiquetas ID3; esto son algunos de los muchos formatos cuya información podéis consultar y / o editar con este magnífico conjunto de clases:
 
-<a id="more"></a><a id="more-679"></a>
+
 
 > **getID3()** is a PHP script that extracts useful information from MP3s &amp; other multimedia file formats:
 >
 > - **Tag formats:**
->   + <a href="http://www.id3.org/id3v1.html">ID3v1</a> (v1.0 &amp; v1.1)
->   + <a href="http://www.id3.org/">ID3v2 (v2.2, v2.3 &amp; v2.4)</a>
->   + <a href="http://www.personal.uni-jena.de/%7Epfk/mpp/sv8/apetag.html">APE tags (v1 &amp; v2)</a>
->   + <a href="http://www.xiph.org/ogg/vorbis/doc/v-comment.html">(Ogg) VorbisComment</a>
->   + Lyrics3 (<a href="http://www.id3.org/lyrics3.html">v1</a> &amp; <a href="http://www.id3.org/lyrics3200.html">v2</a>)
+>   + [ID3v1](http://www.id3.org/id3v1.html) (v1.0 &amp; v1.1)
+>   + [ID3v2 (v2.2, v2.3 &amp; v2.4)](http://www.id3.org/)
+>   + [APE tags (v1 &amp; v2)](http://www.personal.uni-jena.de/%7Epfk/mpp/sv8/apetag.html)
+>   + [(Ogg) VorbisComment](http://www.xiph.org/ogg/vorbis/doc/v-comment.html)
+>   + Lyrics3 ([v1](http://www.id3.org/lyrics3.html) &amp; [v2](http://www.id3.org/lyrics3200.html))
 > - **Lossy Audio-only formats:**
->   + <a href="http://www.mp3-tech.org/programmer/frame_header.html">MP3, MP2, MP1</a> (MPEG-1, layer III/II/I audio, including Fraunhofer, Xing and <a href="http://gabriel.mp3-tech.org/mp3infotag.html">LAME VBR/CBR headers</a>)
->   + <a href="http://www.xiph.org/">Ogg Vorbis</a>
->   + <a href="http://www.audiocoding.com/wiki/index.php?page=AAC">AAC</a> &amp; MP4
->   + <a href="http://www.dolby.com/digital/">AC-3</a>
->   + <a href="http://www.real.com/">RealAudio</a>
+>   + [MP3, MP2, MP1](http://www.mp3-tech.org/programmer/frame_header.html) (MPEG-1, layer III/II/I audio, including Fraunhofer, Xing and [LAME VBR/CBR headers](http://gabriel.mp3-tech.org/mp3infotag.html))
+>   + [Ogg Vorbis](http://www.xiph.org/)
+>   + [AAC](http://www.audiocoding.com/wiki/index.php?page=AAC) &amp; MP4
+>   + [AC-3](http://www.dolby.com/digital/)
+>   + [RealAudio](http://www.real.com/)
 > - **Lossless Audio-only formats:**
->   + <a href="http://en.wikipedia.org/wiki/Wav">WAV</a> (including extended chunks such as BWF and CART)
->   + <a href="http://en.wikipedia.org/wiki/Aiff">AIFF</a>
->   + <a href="http://flac.sourceforge.net/">FLAC</a> &amp; OggFLAC
->   + <a href="http://www-ft.ee.tu-berlin.de/%7Eliebchen/lpac.html">LPAC (Lossless Predictive Audio Compressor)</a>
->   + <a href="http://www.apple.com/itunes/import.html">Apple Lossless Audio Codec</a>
->   + <a href="http://www.real.com/">RealAudio Lossless</a>
->   + <a href="http://en.wikipedia.org/wiki/CD_Audio">CD-audio (*.cda)</a>
->   + <a href="http://en.wikipedia.org/wiki/Midi#MIDI_file_formats">MIDI</a>
+>   + [WAV](http://en.wikipedia.org/wiki/Wav) (including extended chunks such as BWF and CART)
+>   + [AIFF](http://en.wikipedia.org/wiki/Aiff)
+>   + [FLAC](http://flac.sourceforge.net/) &amp; OggFLAC
+>   + [LPAC (Lossless Predictive Audio Compressor)](http://www-ft.ee.tu-berlin.de/%7Eliebchen/lpac.html)
+>   + [Apple Lossless Audio Codec](http://www.apple.com/itunes/import.html)
+>   + [RealAudio Lossless](http://www.real.com/)
+>   + [CD-audio (*.cda)](http://en.wikipedia.org/wiki/CD_Audio)
+>   + [MIDI](http://en.wikipedia.org/wiki/Midi#MIDI_file_formats)
 > - **Audio-Video formats:**
->   + <a href="http://en.wikipedia.org/wiki/Audio_Video_Interleave">AVI</a>
->   + <a href="http://www.matroska.org/">Matroska</a>
->   + <a href="http://www.microsoft.com/windowsmedia/">ASF (ASF, Windows Media Audio (WMA), Windows Media Video (WMV))</a>
->   + <a href="http://en.wikipedia.org/wiki/MPEG-1">MPEG-1</a> &amp; <a href="http://en.wikipedia.org/wiki/MPEG-2">MPEG-2</a>
->   + <a href="http://www.apple.com/quicktime/">Quicktime</a>
->   + <a href="http://www.real.com/">RealVideo</a>
+>   + [AVI](http://en.wikipedia.org/wiki/Audio_Video_Interleave)
+>   + [Matroska](http://www.matroska.org/)
+>   + [ASF (ASF, Windows Media Audio (WMA), Windows Media Video (WMV))](http://www.microsoft.com/windowsmedia/)
+>   + [MPEG-1](http://en.wikipedia.org/wiki/MPEG-1) &amp; [MPEG-2](http://en.wikipedia.org/wiki/MPEG-2)
+>   + [Quicktime](http://www.apple.com/quicktime/)
+>   + [RealVideo](http://www.real.com/)
 > - **Graphic formats:**
->   + <a href="http://en.wikipedia.org/wiki/JPEG">JPEG</a>
->   + <a href="http://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG</a>
->   + <a href="http://en.wikipedia.org/wiki/Graphics_Interchange_Format">GIF</a>
->   + <a href="http://en.wikipedia.org/wiki/BMP_file_format">BMP (Windows &amp; OS/2)</a>
->   + <a href="http://en.wikipedia.org/wiki/Tagged_Image_File_Format">TIFF</a>
->   + <a href="http://www.openswf.org/">SWF (Flash)</a>
+>   + [JPEG](http://en.wikipedia.org/wiki/JPEG)
+>   + [PNG](http://en.wikipedia.org/wiki/Portable_Network_Graphics)
+>   + [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format)
+>   + [BMP (Windows &amp; OS/2)](http://en.wikipedia.org/wiki/BMP_file_format)
+>   + [TIFF](http://en.wikipedia.org/wiki/Tagged_Image_File_Format)
+>   + [SWF (Flash)](http://www.openswf.org/)
 > - **Data formats:**
->   + <a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">ZIP</a>
->   + <a href="http://en.wikipedia.org/wiki/Tar_%28file_format%29">TAR</a>
->   + <a href="http://en.wikipedia.org/wiki/Gzip">GZIP</a>
->   + <a href="http://en.wikipedia.org/wiki/ISO_image">ISO 9660 (CD-ROM image)</a>
+>   + [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29)
+>   + [TAR](http://en.wikipedia.org/wiki/Tar_%28file_format%29)
+>   + [GZIP](http://en.wikipedia.org/wiki/Gzip)
+>   + [ISO 9660 (CD-ROM image)](http://en.wikipedia.org/wiki/ISO_image)
 > - **Metadata types:**
->   + <a href="http://en.wikipedia.org/wiki/Exchangeable_image_file_format">EXIF (Exchangeable image file format)</a>
+>   + [EXIF (Exchangeable image file format)](http://en.wikipedia.org/wiki/Exchangeable_image_file_format)
 > - **getID3() can write:**
->   + <a href="http://en.wikipedia.org/wiki/ID3v1">ID3v1 (v1 &amp; v1.1)</a>
->   + <a href="http://en.wikipedia.org/wiki/ID3v1">ID3v2 (v2.3, v2.4)</a>
->   + <a href="http://en.wikipedia.org/wiki/APE_tag">APE (v2)</a>
->   + <a href="http://en.wikipedia.org/wiki/Ogg">Ogg Vorbis comments</a>
->   + <a href="http://en.wikipedia.org/wiki/Free_Lossless_Audio_Codec">FLAC comments</a>
+>   + [ID3v1 (v1 &amp; v1.1)](http://en.wikipedia.org/wiki/ID3v1)
+>   + [ID3v2 (v2.3, v2.4)](http://en.wikipedia.org/wiki/ID3v1)
+>   + [APE (v2)](http://en.wikipedia.org/wiki/APE_tag)
+>   + [Ogg Vorbis comments](http://en.wikipedia.org/wiki/Ogg)
+>   + [FLAC comments](http://en.wikipedia.org/wiki/Free_Lossless_Audio_Codec)
 
 He eliminado unos cuantos formatos de la lista, si queréis verlos todos id a su página web.
 
 ¡Al grano! Ya conocemos las clases ID3 (aunque sea un poco por encima, como yo..) y queremos implementarlas en nuestra aplicación de Cake.
 
-No es muy complicado si utilizamos las demos que nos dan en el zip que nos descargamos de getID3.org. Simplemente debemos tener en cuenta que los "require" que utilicen en las demos debemos substituirlas por <a href="http://api.cakephp.org/class/app#method-Appimport" rel="nofollow" target="_blank" title="Ver documentación del método">App::import('vendor','rutadelaclase')</a>.
+No es muy complicado si utilizamos las demos que nos dan en el zip que nos descargamos de getID3.org. Simplemente debemos tener en cuenta que los "require" que utilicen en las demos debemos substituirlas por <a href="http://api.cakephp.org/class/app#method-Appimport" rel="noopener nofollow" target="_blank" title="Ver documentación del método">App::import('vendor','rutadelaclase')</a>.
 
-Lo primero que deberemos hacer será descargar getID3. Si queréis editar etiquetas ID3v2 deberéis descargar la versión estable (actualmente la <a href="http://sourceforge.net/projects/getid3/files/getID3()%201.x/getid3-1.7.9.zip/download" target="_blank" rel="nofollow" title="Desargar">1.7.9</a>) ya que en la versión beta (actualmente la <a href="http://sourceforge.net/projects/getid3/files/getID3%28%29%20beta/getid3-2.0.0b5.zip/download" rel="nofollow" target="_blank" title="Descargar">2.0.0-b5</a>) no funcionan las clases necesarias.
+Lo primero que deberemos hacer será descargar getID3. Si queréis editar etiquetas ID3v2 deberéis descargar la versión estable (actualmente la <a href="http://sourceforge.net/projects/getid3/files/getID3()%201.x/getid3-1.7.9.zip/download" target="_blank" rel="noopener nofollow" title="Desargar">1.7.9</a>) ya que en la versión beta (actualmente la <a href="http://sourceforge.net/projects/getid3/files/getID3%28%29%20beta/getid3-2.0.0b5.zip/download" rel="noopener nofollow" target="_blank" title="Descargar">2.0.0-b5</a>) no funcionan las clases necesarias.
 
-Una vez descargado, lo descomprimimos y lo subimos a la carpeta vendors de nuestro proyecto Cake (para mayor comodidad renombrar la carpeta a "getid3"). Seguramente <a href="http://cakebaker.42dh.com/2006/08/11/why-are-there-two-vendors-folders-in-cakephp/" target="_blank" rel="nofollow" title="Why are there two vendors folders in CakePHP?">habréis visto que existen dos carpetas <em>vendor</em></a> en vuestra aplicación de Cake. Debéis ponerlo en la que se encuentra en la carpeta raíz (junto con las carpeta "app" y "cake").
+Una vez descargado, lo descomprimimos y lo subimos a la carpeta vendors de nuestro proyecto Cake (para mayor comodidad renombrar la carpeta a "getid3"). Seguramente <a href="http://cakebaker.42dh.com/2006/08/11/why-are-there-two-vendors-folders-in-cakephp/" target="_blank" rel="noopener nofollow" title="Why are there two vendors folders in CakePHP?">habréis visto que existen dos carpetas *vendor*</a> en vuestra aplicación de Cake. Debéis ponerlo en la que se encuentra en la carpeta raíz (junto con las carpeta "app" y "cake").
 
 Ahora que ya tenemos nuestro plugin en la aplicación debemos crear un componente que nos sirva de conexión entre las librerías getID3 y nuestro Cake.
 
-Para hacerlo utilizaremos como referencia las demos "demo.basic.php" y "demo.simple.write.php". Recordad que hay que substituir los <em>require</em> e <em>includes</em> por App::import(). Este es el resultado que he obtenido yo:
+Para hacerlo utilizaremos como referencia las demos "demo.basic.php" y "demo.simple.write.php". Recordad que hay que substituir los *require* e *includes* por App::import(). Este es el resultado que he obtenido yo:
 
 ~~~php
 <?php
@@ -188,7 +172,7 @@ class AudiosController extends AppController
 
 Y sólo nos queda saber cómo utilizarlo:
 
-~~~php?start_inline=1
+~~~php
 $datos = array(
   'album' => 'Nombre del álbum',
   'title' => 'Título del tema',
@@ -202,11 +186,11 @@ $this->Getid2->write('rutadelfichero.mp3', $datos);
 
 Y para leer los datos de un mp3:
 
-~~~php?start_inline=1
+~~~php
 $this->Getid2->extract('rutadelfichero.mp3')
 ~~~
 
-Que nos dará una salida similar a <a href="http://www.racotecnic.com/2009/07/leer-y-editar-etiquetas-id3v1-y-id3v2-con-cakephp/#sortida">ésta</a>.
+Que nos dará una salida similar a [ésta](/2009/07/leer-y-editar-etiquetas-id3v1-e-id3v2-con-cakephp/#sortida).
 
 Habéis visto más o menos el método de implementar funciones de getID3 en CakePHP. Ahora es tarea vuestra intentar añadir más funcionalidades a vuestro complemento según vuestras necesidades.
 
@@ -214,9 +198,9 @@ Como siempre, espero que le sirva a alguien!
 
 > Páginas de referencia:
 >
-> - <a href="http://www.getid3.org" target="_blank" rel="nofollow">getID3.org
-> - <a href="http://api.cakephp.org" target="_blank" rel="nofollow">API de CakePHP
-> - <a href="http://www.devarticles.in/cakephp/getid3-component-for-cakephp/" target="_blank" rel="nofollow">GetID3 component for CakePHP</a>
+> - <a href="http://www.getid3.org" target="_blank" rel="noopener nofollow">getID3.org
+> - <a href="http://api.cakephp.org" target="_blank" rel="noopener nofollow">API de CakePHP
+> - <a href="http://www.devarticles.in/cakephp/getid3-component-for-cakephp/" target="_blank" rel="noopener nofollow">GetID3 component for CakePHP</a>
 
 Salida de mi fichero de prueba mp3:
 
@@ -750,4 +734,3 @@ Salida de mi fichero de prueba mp3:
         [bitrate] => 128000
         [playtime_string] => 0:16
     )
-{: .no-line-numbers }

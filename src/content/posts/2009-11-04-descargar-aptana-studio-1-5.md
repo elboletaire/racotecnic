@@ -1,22 +1,11 @@
 ---
-layout: post
 status: publish
 published: true
 title: Descargar Aptana Studio 1.5
-author:
-  display_name: Booletaire
-  login: elboletaire
-  email: elboletaire@gmail.com
-  url: http://www.underave.net
-author_login: elboletaire
-author_email: elboletaire@gmail.com
-author_url: http://www.underave.net
 wordpress_id: 937
-wordpress_url: http://racotecnic.com/?p=937
 redirect_from:
 - "?p=937/"
 date: '2009-11-04 16:53:40 +0100'
-date_gmt: '2009-11-04 15:53:40 +0100'
 categories:
 - Programació
 - Linux
@@ -36,9 +25,9 @@ Así que si sois como yo y queréis volver a la versión antigua aquí os dejo l
 <blockquote>
 
 <ul>
-<li><a href="http://www.warianoz.com/foros/showthread.php?t=248900" rel="nofollow" target="_blank">Descargar Aptana 1.5.1 para Linux</a></li>
-<li><a href="http://www.viciowarez.com/descargar-warez-7/aptana-studio-professional-1-5-1-a-459113/" rel="nofollow" target="_blank">Descargar Aptana 1.5.1 para Windows</a></li>
-<li><a href="http://update15.aptana.org/php/25753/com.aptana.ide.feature.editor.php-1.1.0.25753-42-7IcIlLRWU5z-z01N8UEX.zip" target="_blank" rel="nofollow">Descargar Aptana PHP Plugin</a></li>
+<li>Descargar Aptana 1.5.1 para Linux</li>
+<li>Descargar Aptana 1.5.1 para Windows</li>
+<li><a href="http://update15.aptana.org/php/25753/com.aptana.ide.feature.editor.php-1.1.0.25753-42-7IcIlLRWU5z-z01N8UEX.zip" target="_blank" rel="noopener nofollow">Descargar Aptana PHP Plugin</a></li>
 </ul>
 </blockquote>
 

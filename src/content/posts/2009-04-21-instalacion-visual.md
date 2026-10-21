@@ -1,22 +1,12 @@
 ---
-layout: post
 status: publish
 published: true
 title: Instalación visual
-author:
-  display_name: psydObladelik
-  login: psydObladelik
-  email: priosanchez@gmail.com
-  url: http://www.priostudio.com/
-author_login: psydObladelik
-author_email: priosanchez@gmail.com
 excerpt: "En este blog os explicare todo el proceso para proyectar en distintas superficies."
 wordpress_id: 466
-wordpress_url: http://racotecnic.com/?p=466
 redirect_from:
 - "?p=466/"
 date: '2009-04-21 23:13:56 +0200'
-date_gmt: '2009-04-21 22:13:56 +0200'
 categories:
 - Visuals
 tags:
@@ -33,8 +23,8 @@ Primero diseñamos la instalación visual donde vamos a proyectar.
 
 Creamos un plano con el diseño de las telas, creando la forma deseada donde proyectaremos, aquí os muestro nuestra instalación:
 
-<a href="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg">
-  <img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="{{ site.url }}/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" />
+<a href="/uploads/2009/04/mephisto-escenario1.jpg">
+  <img class="size-full wp-image-468 aligncenter" title="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" src="/uploads/2009/04/mephisto-escenario1.jpg" alt="F:A_FIUZZSindar2008DeconewMephisto escenario02.dwg Model (1" width="482" height="275" />
 </a>
 
 Nosotros creamos las imágenes con el software AEE (Adobe alter effects).
