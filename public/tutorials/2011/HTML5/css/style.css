@@ -1,0 +1,112 @@
+html{
+	background-color:#d2d2d2; 
+	margin:0;
+	padding:0;
+}
+body{
+	width:900px;
+	margin:30px auto;
+	padding:0;
+	background-color:#fff;
+	/* CSS3 BOX shadow (http://www.css3.info/preview/box-shadow/)*/
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+
+
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article, section {  
+     display: block;  
+}  
+
+header{
+	background-color:#ececec; 
+	text-align:center;
+	color:#bbb;	
+	line-height:1.3em;
+	font-size:17px;
+	text-shadow:1px 1px 0 white;
+	border-bottom:1px solid #ebebeb;
+	/* CSS3 gradient layer (http://gradients.glrzad.com/)*/
+	background-image: -webkit-gradient(
+	linear,
+    left bottom,
+    left top,
+    color-stop(0.10, #F7F6F6),
+    color-stop(0.90, #E7E7E7)
+	);
+	background-image: -moz-linear-gradient(
+    center bottom,
+    #F7F6F6 10%,
+    #E7E7E7 90%
+    ); 
+}
+
+	header h1{
+		padding:30px 0 10px;
+		margin:0; 
+	}
+	header h2{
+		font-size:16px;
+	}
+
+article{
+	padding:30px;
+	width:570px;
+	float:left;
+	border-bottom:1px solid #ebebeb;
+}
+aside{
+	width:269px;
+	float:right;
+	border-left:1px solid #ebebeb;
+	background-color: #F7F6F6;
+}
+	aside nav, aside section{
+	padding:20px 30px 20px 30px;	
+	}
+footer{
+	clear:both;
+	background-color:#ececec; 
+	text-align:center;
+	color:#bbb;	
+	font-size:15px;
+	text-shadow:1px 1px 0 white;
+	border-top:1px solid #ebebeb;
+	/* CSS3 gradient layer (http://gradients.glrzad.com/)*/
+	background-image: -webkit-gradient(
+	linear,
+    left bottom,
+    left top,
+    color-stop(0.10, #E7E7E7),
+    color-stop(0.90, #F7F6F6)
+	);
+	background-image: -moz-linear-gradient(
+    center bottom,
+    #E7E7E7 10%,
+    #F7F6F6 90%
+    );
+}
+	footer a{
+		color:#bbb;	
+		text-decoration: none;
+	}
+	footer p{
+		margin:0;
+		padding:10px 0;
+	}
+
+section{
+	padding:20px 0;
+}
+
+ul{
+	padding-left:20px;
+}
+ul li{
+	margin:10px 0;
+}
+a{
+	color:#747474;
+}

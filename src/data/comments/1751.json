@@ -1,0 +1,30 @@
+[
+  {
+    "id": 36264,
+    "parent": 0,
+    "author": "Víctor",
+    "date": "2012-12-21T19:57:51+01:00",
+    "content": "<p>Hola,</p>\n<p>muy interesante, llevaba buscando esto desde hace tiempo. </p>\n<p>Una duda, al unir los archivos mp3, se crea algún corte entre ellos? Mi objetivo es lograr unir diferentes partes de una misma canción, con lo que esta función me vendría perfecto si no se crea ningún silencio, por mínimo que sea, en el archivo resultante.</p>\n<p>Muchas gracias!!!</p>"
+  },
+  {
+    "id": 36265,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-12-23T12:43:03+01:00",
+    "content": "<p>Yo diría que no deja ningún espacio ni nada. Escúchate este relase de <a href=\"http://musicavermella.com/\" rel=\"nofollow ugc noopener\">música vermella</a>:</p>\n<p>http://www.musicavermella.com/files/podcasts/chooko_boogeyman_sonata_ep.mp3</p>\n<p>Está hecho con este método que describo aquí y son 5 temas que no se distinguen entre ellos (o al menos eso creo yo).</p>\n<p>Si lo piensas fríamente, esto al final lo que hace es unir el último bit con el primero del siguiente tema, así que no debería dejar espacio.</p>"
+  },
+  {
+    "id": 36266,
+    "parent": 0,
+    "author": "Víctor",
+    "date": "2012-12-23T12:53:04+01:00",
+    "content": "<p>Muchas gracias por tu respuesta. Tiene muy buena pinta. Te decía lo del silencio porque hemos estado intentándolo con varias librerías de audio pero siempre deja un pequeño silencio entre ellos (entiendo que es por que lee la cabecera, o sea, datos que no son de audio). Voy a implementarlo, a ver qué tal. </p>\n<p>Si me funciona, me acabas de hacer un mundo! Mil gracias.</p>\n<p><a href=\"#comment-36265\">@Booletaire </a></p>"
+  },
+  {
+    "id": 36267,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-12-23T12:53:44+01:00",
+    "content": "<p>No te olvides de comentarnos qué tal los resultados ;)</p>"
+  }
+]

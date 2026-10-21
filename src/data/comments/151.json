@@ -1,0 +1,79 @@
+[
+  {
+    "id": 125,
+    "parent": 0,
+    "author": "Leonardo",
+    "date": "2009-02-18T18:57:21+01:00",
+    "content": "<p>Muchas Gracias!!<br />La verdad que me fue muy útil!<br />Saludos.</p>"
+  },
+  {
+    "id": 4554,
+    "parent": 0,
+    "author": "kantun",
+    "date": "2010-03-29T02:22:35+02:00",
+    "content": "<p>Solo una consulta, quizas me la veas estupida pero no la note. Disculpa?, como se llamaria el archivo o cada bloque de codigo es uno diferente o es el mismo.</p>\n<p>Espero no te moleste, no me he adentrado tanto en php, lo puedo entender pero esto es nuevo. PD: Exelente blog =D</p>"
+  },
+  {
+    "id": 4571,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-03-30T00:01:30+02:00",
+    "content": "<p>Si lees todo entero verás que es totalmente lineal ;)</p>\n<p>Suerte con tu aprendizaje! :D</p>"
+  },
+  {
+    "id": 7345,
+    "parent": 0,
+    "author": "fido-strike",
+    "date": "2010-07-27T01:10:01+02:00",
+    "content": "<p>De verdad estoy muy agradecido man, mira que tuve que pagar a un jiripollas para que no me logre nada,  y despues de haber intentado yo solo con uno y con otra opcion, al fin encuentro tu post y me ayudo mucho, gracias de verdad, ya si me permites publicare este post en uno de mis foros, obiamente poniendote un enlace.</p>\n<p>Saludos..</p>"
+  },
+  {
+    "id": 7388,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-07-27T23:30:06+02:00",
+    "content": "<p>Claro que sí fido, ningún problema en que publiques el post en otro foro. Ponme el enlace al foro por aquí una vez publicado por favor :)</p>"
+  },
+  {
+    "id": 7978,
+    "parent": 0,
+    "author": "Laura",
+    "date": "2010-08-06T06:21:29+02:00",
+    "content": "<p>y para la encriptacion numerica de fecha de registro y fecha de cambio de contraseañ ? como haces???</p>"
+  },
+  {
+    "id": 8050,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-08-07T13:59:37+02:00",
+    "content": "<p>Hola <a href=\"#comment-7978\">@Laura</a>, los datos de la fechas no están encriptados, simplemente están en formato \"UNIX time\", es decir, es el número de segundos desde el 1 de enero de 1970.</p>\n<p>Para convertir fechas MYQL (aaaa-mm-dd hh:mm:ss) a UNIX time puedes utilizar el método de PHP \"<a href=\"http://es2.php.net/manual/en/function.strtotime.php\" rel=\"nofollow ugc noopener\">strtotime</a>\" que te convierte fechas en formato string a UNIX time.</p>\n<p>Si necesitas convertir la fecha desde algún otro formato (como por ejemplo dd/mm/aaaa) tendrás que crear tu método para convertir dicha fecha a UNIX. En este caso seguramente necesitarás del método de PHP \"<a href=\"http://php.net/manual/en/function.mktime.php\" rel=\"nofollow ugc noopener\">mktime</a>\".</p>\n<p>Espero que te sirva :)</p>"
+  },
+  {
+    "id": 29757,
+    "parent": 0,
+    "author": "vic",
+    "date": "2011-03-25T18:24:55+01:00",
+    "content": "<p>Muy bueno el post y ¡funciona!<br />Bueno solo una pega que ahora la solucionare y es que por defecto el usuario que genera es un admin..<br />Supongo que tendré que cambiar \"group_id\"=&gt;2 y o \"user_type\"=&gt;1,<br />Muchas gracias un saludo.</p>"
+  },
+  {
+    "id": 29758,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2011-03-25T18:27:41+01:00",
+    "content": "<p>Pues en teoría es un usuario estándar el que registras.. pero claro, fíjate en la fecha del post (enero de 2009). Ésta versión es la 3.0 pelada. Es más, apostaría a que ni siquiera era estable xDD Así que puede que haya cosas que han cambiado.</p>\n<p>Y claro que funciona, o qué pensabas?? ;p</p>"
+  },
+  {
+    "id": 36211,
+    "parent": 0,
+    "author": "alfa0015",
+    "date": "2012-05-01T02:49:06+02:00",
+    "content": "<p>Tengo una pregunta existencial con respecto a ese codigo que si todo ese codigo es en un archivo en blanco y si es asi como se llama y en que directorio de todo las carpeta del proyecto phpbb la tengo que colocar o de lo contrario si es de editar un archivo en que directorio se encuentra y como se llama </p>\n<p>PD: aunque no viene al caso sabe alguien de alguna forma de implementar jquery en el editor de tags de bbcode para trabajar con facybox ??</p>\n<p>muchas gracias de antemano</p>"
+  },
+  {
+    "id": 36212,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2012-05-13T08:56:30+02:00",
+    "content": "<p>Este código no es más que la metodología a seguir a la hora de registrar usuarios externamente a phpBB. La implementación variará en función de tu código...</p>"
+  }
+]

@@ -1,0 +1,23 @@
+# Ignore everything
+/*
+
+# Except these files & folders
+!/src
+!/public
+!/.github
+!tsconfig.json
+!astro.config.ts
+!package.json
+!.prettierrc
+!eslint.config.js
+!readme.md
+!/scripts
+!/tests
+!.vscode
+
+# Ignore MDX files
+*.mdx
+# WordPress posts, bodies are cleaned separately
+src/content/posts/
+# Old tutorials, vetted and copied as-is
+public/tutorials/

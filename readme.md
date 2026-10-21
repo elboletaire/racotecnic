@@ -1,43 +1,46 @@
-Raco Tècnic website
-===================
+# Racó Tècnic website
 
-This is all the code of Racó Tècnic's website.
+Source of [racotecnic.com](https://racotecnic.com), built with
+[Astro](https://astro.build) on top of the
+[AstroPaper](https://github.com/satnaing/astro-paper) theme (v6.1.0).
 
-If you wanna improve something, or wanna colab with us, just fork the project
-and create a new post with `rake new_post`.
+Posts live in `src/content/posts/` as `YYYY-MM-DD-<slug>.md`. Each post is
+served at `/YYYY/MM/<slug>/`, the URL of the old WordPress site (the slug is
+the file name, percent-decoded). Uploaded images are in `public/uploads/`.
 
-Running locally
----------------
+Requirements: Node.js 22.23.4+ and [pnpm](https://pnpm.io).
 
-Obviously the first step is to clone the project:
+## Development
 
-~~~bash
-git clone git@github.com:elboletaire/racotecnic.git
-~~~
+```bash
+pnpm install
+pnpm dev          # local server with hot reload
+```
 
-> Note: If you wanna collab with us, first step is to fork the project and then clone
-from your fork.
+## Build and checks
 
-### Prerequisites
+```bash
+pnpm build        # type checks, static build and search index (dist/)
+pnpm test:urls    # checks every URL in tests/old-urls.txt exists in dist/
+pnpm test:assets  # checks every root-relative src/href in dist/ resolves
+pnpm lint
+```
 
+Site settings are in `astro-paper.config.ts`; old URLs that must redirect are
+listed in `astro.config.ts` (`redirects`).
 
+## Deployment
 
-### Running
+`.github/workflows/deploy.yml` builds the site and publishes it to GitHub
+Pages on every push to `master`. The workflow runs the build and all checks
+before uploading.
 
-After you have properly installed RVM on your machine you can safely run:
+One-time setup in GitHub Settings > Pages:
 
-~~~bash
-rvm use 2.3
-gem install bundler
-bundle install
-~~~
+- Source: "GitHub Actions". The custom domain is not read from the CNAME file
+  in this deployment mode.
+- Custom domain: `racotecnic.com`.
+- Enforce HTTPS.
 
-Ensure that `_config.yaml` has proper host configuration (under `url`) and,
-after that:
-
-~~~bash
-# theorically `serve` also builds, but just in case...
-jekyll build
-# run the local server (and watch for changes)
-jekyll serve
-~~~
+`public/CNAME` is kept for reference and portability; it documents the domain
+the site is served from.

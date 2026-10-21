@@ -1,0 +1,23 @@
+[
+  {
+    "id": 11078,
+    "parent": 0,
+    "author": "sílvia",
+    "date": "2010-09-25T02:41:12+02:00",
+    "content": "<p>Muy acertada la explicación, fantástico!<br />Pero quería hacer una consulta, pues estoy preparando una web cuya los mismos usuarios puedan publicar posts, sin tener que ser usuarios registrados (es decir, cualquier persona anónima). <br />Es acertado utilizar la plataforma wordpress? Ya tengo conocimiento pero no sé si es factible, y además, cómo puedo hacerlo para abrir los permisos para todos los usuarios?<br />Intento evitar tener q programar la web desde 0 ;)</p>\n<p>Muchísimas gracias! vuestros artículos son muy explicativos</p>"
+  },
+  {
+    "id": 11256,
+    "parent": 0,
+    "author": "Booletaire",
+    "date": "2010-09-27T09:20:35+02:00",
+    "content": "<p>No creo que sea desacertado.. Es decir, si a ti se te da bien o conoces Wordpress suficientemente como para tirarlo para adelante, pues adelante.</p>\n<p>No le veo mucha complicación al asunto, simplemente tienes que mirarte las opciones del blog ya que me suena que hay una que indica que no hace falta estar registrado para postear. Si no es así (vamos, si me he inventado esa opción) siempre puedes cambiar un poco los permisos para conseguir esto. Si no puedes hacerlo desde el panel de control siempre puedes trastear la base de datos directamente.</p>\n<p>Espero haber resuelto tu duda,</p>\n<p>salu2</p>"
+  },
+  {
+    "id": 31009,
+    "parent": 0,
+    "author": "paul",
+    "date": "2011-04-26T06:56:09+02:00",
+    "content": "<p>Hola muy buena pagina veo que conoces  de Jquery  te voy hacer una consulta es la siguiente</p>\n<p> tengo este theme que usa jquery y en incluido un plugin llamado Featured Content Gallery el problema esta que me tiene conflicto con el plugin y no muestra el slider post</p>\n<p>Luego descubri que al quitar esta linea de codigo  del footer si muestra el slider post pero me deja de funcionar los menus ya que utlizan ese llamado del scritp <br />alguna solucion?<br />este es el theme<br />http://su-paginaweb.com/website/Polished2.zip</p>\n<p>gracias de antemano</p>"
+  }
+]

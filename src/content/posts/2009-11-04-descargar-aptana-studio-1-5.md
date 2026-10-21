@@ -1,0 +1,36 @@
+---
+status: publish
+published: true
+title: Descargar Aptana Studio 1.5
+wordpress_id: 937
+redirect_from:
+- "?p=937/"
+date: '2009-11-04 16:53:40 +0100'
+categories:
+- Programació
+- Linux
+- Web
+- Aplicacions
+- Windows
+tags:
+- PHP
+- Aptana
+---
+
+Sí, sí.. ya lo sé.. ha salido recientemente la versión 2.0... pero entonces.. ¿a qué viene este post?
+
+Pues a que he estado probando la versión 2.0 y la verdad, no me ha acabado de convencer lo del plugin PDT que utiliza ahora. Principalmente porque no he logrado de ninguna de las maneras que me haga el debug en vivo como me hacía antes.
+
+Así que si sois como yo y queréis volver a la versión antigua aquí os dejo los enlaces de Aptana 1.5 y su plugin de PHP (que por cierto, ha costado un buen rato de encontrar..)..
+<blockquote>
+
+<ul>
+<li>Descargar Aptana 1.5.1 para Linux</li>
+<li>Descargar Aptana 1.5.1 para Windows</li>
+<li><a href="http://update15.aptana.org/php/25753/com.aptana.ide.feature.editor.php-1.1.0.25753-42-7IcIlLRWU5z-z01N8UEX.zip" target="_blank" rel="noopener nofollow">Descargar Aptana PHP Plugin</a></li>
+</ul>
+</blockquote>
+
+Recordad que para poder instalar el plugin de aptana no podéis utilizar la versión 2.0.
+
+¡Si falla algún enlace no dudéis en decirlo!
